@@ -442,6 +442,7 @@ ul {
     justify-content: center;
     gap: 40px;
     padding-top: 40px;
+    padding-bottom: 60px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     animation: fadeInUp 1s ease-out 0.6s both;
 }
