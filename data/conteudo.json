@@ -1,0 +1,104 @@
+{
+  "updated_at": "2026-03-24T12:00:00Z",
+  "items": [
+    {
+      "id": "incendio-florestal-multas",
+      "type": "artigo",
+      "category": "Direito Ambiental",
+      "title": "Minha propriedade rural foi atingida por um incêndio florestal. Como evitar multas ambientais?",
+      "summary": "Em caso de incêndios florestais em sua propriedade, é importante tomar medidas adequadas para evitar multas ambientais. Confira algumas recomendações do nosso escritório.",
+      "date": "2024-09-15",
+      "image": "img/news-forest.jpg",
+      "url": "https://kairoicaro.com.br/incendioflorestal/",
+      "featured": true
+    },
+    {
+      "id": "femarh-aceiros",
+      "type": "artigo",
+      "category": "Direito Agrário",
+      "title": "FEMARH autoriza construção de aceiros em propriedades rurais de Roraima",
+      "summary": "A FEMARH expediu orientação para a construção de Aceiros, por conta dos reflexos da seca e do El Niño no estado de Roraima.",
+      "date": "2024-08-20",
+      "image": "img/news-farm.jpg",
+      "url": "",
+      "featured": true
+    },
+    {
+      "id": "el-nino-agricultura",
+      "type": "artigo",
+      "category": "Agronegócio",
+      "title": "El Niño: Como o fenômeno climático afeta a agricultura em Roraima?",
+      "summary": "O fenômeno climático El Niño pode ter impactos significativos na agricultura e no produtor rural em Roraima. Entenda como se proteger.",
+      "date": "2024-07-10",
+      "image": "img/news-agriculture.jpg",
+      "url": "",
+      "featured": true
+    },
+    {
+      "id": "alerta-car-2026",
+      "type": "alerta",
+      "category": "Direito Ambiental",
+      "title": "Prazo para regularização do CAR encerra em junho de 2026",
+      "summary": "O Cadastro Ambiental Rural (CAR) é obrigatório para todos os imóveis rurais. O prazo para inscrição e retificação se encerra em 31 de junho de 2026. Regularize sua propriedade.",
+      "date": "2026-03-20",
+      "image": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "id": "guia-licenciamento-roraima",
+      "type": "guia",
+      "category": "Direito Ambiental",
+      "title": "Guia prático: Licenciamento Ambiental em Roraima",
+      "summary": "Passo a passo para obter licenças ambientais junto à FEMARH. Saiba quais documentos são necessários, prazos e custos para o produtor rural.",
+      "date": "2026-03-01",
+      "image": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "id": "reforma-tributaria-agro",
+      "type": "alerta",
+      "category": "Direito Tributário",
+      "title": "Reforma Tributária: impactos para o agronegócio em Roraima",
+      "summary": "A Reforma Tributária traz mudanças significativas para o setor agropecuário. Entenda como as novas regras do IBS e CBS afetam o produtor rural roraimense.",
+      "date": "2026-02-15",
+      "image": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "id": "lgpd-empresa-rural",
+      "type": "artigo",
+      "category": "Direito Empresarial",
+      "title": "LGPD para empresas rurais: o que você precisa saber",
+      "summary": "A Lei Geral de Proteção de Dados também se aplica ao agronegócio. Veja como adequar sua empresa rural às exigências da LGPD e evitar sanções.",
+      "date": "2026-01-20",
+      "image": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "id": "queimada-controlada-normas",
+      "type": "guia",
+      "category": "Direito Ambiental",
+      "title": "Queimada controlada: normas e procedimentos em Roraima",
+      "summary": "A queimada controlada exige autorização prévia da FEMARH. Conheça os requisitos legais, prazos e documentos necessários para realizar queimadas sem risco de autuação.",
+      "date": "2025-11-10",
+      "image": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "id": "georreferenciamento-obrigatorio",
+      "type": "alerta",
+      "category": "Direito Agrário",
+      "title": "Georreferenciamento obrigatório para imóveis rurais acima de 25 hectares",
+      "summary": "A partir de novembro de 2025, todos os imóveis rurais com área acima de 25 hectares devem ter o georreferenciamento certificado pelo INCRA para qualquer transação imobiliária.",
+      "date": "2025-10-05",
+      "image": "",
+      "url": "",
+      "featured": false
+    }
+  ]
+}

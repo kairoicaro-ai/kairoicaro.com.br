@@ -375,60 +375,37 @@
         </div>
     </section>
 
-    <!-- ==================== NEWS / BLOG ==================== -->
+    <!-- ==================== INSIGHTS HUB ==================== -->
     <section id="noticias" class="section news">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Notícias &amp; Artigos</span>
-                <h2 class="section-title">Fique por dentro do <span class="text-green">cenário jurídico</span></h2>
-                <p class="section-desc">Artigos e notas informativas sobre temas relevantes para o produtor rural e empresário em Roraima.</p>
+                <span class="section-tag">Insights KIAA</span>
+                <h2 class="section-title">Fique por dentro do <span class="text-green">cenario juridico</span></h2>
+                <p class="section-desc">Artigos, alertas regulatorios e guias praticos para o produtor rural e empresario em Roraima.</p>
             </div>
-            <div class="news-grid">
-                <article class="news-card" id="news-1">
-                    <div class="news-image">
-                        <img src="img/news-forest.jpg" alt="Incêndio Florestal em Roraima">
-                        <span class="news-category">Direito Ambiental</span>
-                    </div>
-                    <div class="news-content">
-                        <time class="news-date">2024</time>
-                        <h3>Minha propriedade rural foi atingida por um incêndio florestal. Como evitar multas ambientais?</h3>
-                        <p>Em caso de incêndios florestais em sua propriedade, é importante tomar medidas adequadas para evitar multas ambientais. Confira algumas recomendações.</p>
-                        <a href="https://kairoicaro.com.br/incendioflorestal/" target="_blank" class="news-link">
-                            Leia mais
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                        </a>
-                    </div>
-                </article>
-                <article class="news-card" id="news-2">
-                    <div class="news-image">
-                        <img src="img/news-farm.jpg" alt="Aceiros em propriedades rurais">
-                        <span class="news-category">Direito Agrário</span>
-                    </div>
-                    <div class="news-content">
-                        <time class="news-date">2024</time>
-                        <h3>FEMARH autoriza construção de aceiros em propriedades rurais de Roraima</h3>
-                        <p>A FEMARH expediu orientação para a construção de Aceiros, por conta dos reflexos da seca e do El Niño no estado de Roraima.</p>
-                        <span class="news-link news-link-soon">
-                            Em breve
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                        </span>
-                    </div>
-                </article>
-                <article class="news-card" id="news-3">
-                    <div class="news-image">
-                        <img src="img/news-agriculture.jpg" alt="Agricultura em Roraima">
-                        <span class="news-category">Agronegócio</span>
-                    </div>
-                    <div class="news-content">
-                        <time class="news-date">2024</time>
-                        <h3>El Niño: Como o fenômeno climático afeta a agricultura em Roraima?</h3>
-                        <p>O fenômeno climático El Niño pode ter impactos significativos na agricultura e no produtor rural em Roraima. Entenda como se proteger.</p>
-                        <span class="news-link news-link-soon">
-                            Em breve
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                        </span>
-                    </div>
-                </article>
+            <div class="content-type-filters">
+                <button class="content-filter active" data-type="todos">Todos</button>
+                <button class="content-filter" data-type="artigo">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2"/></svg>
+                    Artigos
+                </button>
+                <button class="content-filter" data-type="alerta">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v2m0 4h.01M5.07 19H18.93a2 2 0 001.72-2.98l-6.93-12a2 2 0 00-3.44 0l-6.93 12A2 2 0 005.07 19z"/></svg>
+                    Alertas
+                </button>
+                <button class="content-filter" data-type="guia">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                    Guias
+                </button>
+            </div>
+            <div class="news-grid" id="conteudo-grid">
+                <div class="informativos-loading">Carregando conteudo...</div>
+            </div>
+            <div class="informativos-footer">
+                <button class="btn-ver-mais" id="btn-ver-mais-conteudo" style="display:none;">
+                    Ver mais publicacoes
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                </button>
             </div>
         </div>
     </section>

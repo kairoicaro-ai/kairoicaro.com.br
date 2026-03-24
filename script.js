@@ -197,6 +197,123 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ==================== INSIGHTS HUB (CONTEUDO DINAMICO) ====================
+    const conteudoGrid = document.getElementById('conteudo-grid');
+    const btnVerMaisConteudo = document.getElementById('btn-ver-mais-conteudo');
+    let allConteudo = [];
+    let currentTypeFilter = 'todos';
+    let visibleConteudo = 6;
+
+    function formatDateBR(dateStr) {
+        if (!dateStr) return '';
+        const months = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+        const parts = dateStr.split('-');
+        if (parts.length === 3) {
+            return `${months[parseInt(parts[1])-1]} ${parts[0]}`;
+        }
+        return dateStr;
+    }
+
+    function renderConteudoCard(item) {
+        const hasImage = item.image && item.featured;
+        const hasUrl = item.url && item.url.length > 0;
+        const typeLabels = { artigo: 'Artigo', alerta: 'Alerta', guia: 'Guia Pratico' };
+
+        if (hasImage) {
+            return `
+            <article class="news-card reveal">
+                <div class="news-image">
+                    <img src="${item.image}" alt="${item.title}" loading="lazy">
+                    <span class="news-category">${item.category}</span>
+                </div>
+                <div class="news-content">
+                    <span class="news-type-badge" data-type="${item.type}">${typeLabels[item.type] || item.type}</span>
+                    <time class="news-date">${formatDateBR(item.date)}</time>
+                    <h3>${item.title}</h3>
+                    <p>${item.summary}</p>
+                    ${hasUrl
+                        ? `<a href="${item.url}" target="_blank" class="news-link">Leia mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>`
+                        : `<span class="news-link news-link-soon">Em breve <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>`
+                    }
+                </div>
+            </article>`;
+        }
+
+        return `
+        <article class="news-card-text reveal">
+            <span class="news-type-badge" data-type="${item.type}">${typeLabels[item.type] || item.type}</span>
+            <span class="news-category" style="position:static;display:inline-block;margin-bottom:8px;">${item.category}</span>
+            <time class="news-date">${formatDateBR(item.date)}</time>
+            <h3>${item.title}</h3>
+            <p>${item.summary}</p>
+            ${hasUrl
+                ? `<a href="${item.url}" target="_blank" class="news-link">Leia mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>`
+                : `<span class="news-link news-link-soon">Em breve <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></span>`
+            }
+        </article>`;
+    }
+
+    function renderConteudo() {
+        if (!conteudoGrid) return;
+
+        const filtered = currentTypeFilter === 'todos'
+            ? allConteudo
+            : allConteudo.filter(item => item.type === currentTypeFilter);
+
+        if (filtered.length === 0) {
+            conteudoGrid.innerHTML = '<div class="informativos-empty">Nenhuma publicacao encontrada.</div>';
+            if (btnVerMaisConteudo) btnVerMaisConteudo.style.display = 'none';
+            return;
+        }
+
+        const toShow = filtered.slice(0, visibleConteudo);
+        conteudoGrid.innerHTML = toShow.map(renderConteudoCard).join('');
+
+        if (btnVerMaisConteudo) {
+            btnVerMaisConteudo.style.display = filtered.length > visibleConteudo ? 'inline-flex' : 'none';
+        }
+
+        // Trigger reveal
+        conteudoGrid.querySelectorAll('.reveal').forEach((el, index) => {
+            el.style.transitionDelay = `${index * 0.08}s`;
+            setTimeout(() => el.classList.add('active'), 50);
+        });
+    }
+
+    function loadConteudo() {
+        if (!conteudoGrid) return;
+
+        fetch('data/conteudo.json')
+            .then(res => { if (!res.ok) throw new Error('Falha'); return res.json(); })
+            .then(data => {
+                allConteudo = (data.items || []).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+                renderConteudo();
+            })
+            .catch(() => {
+                conteudoGrid.innerHTML = '<div class="informativos-empty">Conteudo em atualizacao.</div>';
+            });
+    }
+
+    // Content type filter handlers
+    document.querySelectorAll('.content-filter').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.content-filter').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentTypeFilter = btn.dataset.type;
+            visibleConteudo = 6;
+            renderConteudo();
+        });
+    });
+
+    if (btnVerMaisConteudo) {
+        btnVerMaisConteudo.addEventListener('click', () => {
+            visibleConteudo += 6;
+            renderConteudo();
+        });
+    }
+
+    loadConteudo();
+
     // ==================== INFORMATIVOS DOS TRIBUNAIS ====================
     const informativosGrid = document.getElementById('informativos-grid');
     const btnVerMais = document.getElementById('btn-ver-mais-informativos');
