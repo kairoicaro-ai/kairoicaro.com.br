@@ -1454,3 +1454,207 @@ button:focus-visible {
 .skip-link:focus {
     top: 0;
 }
+
+/* ==================== INFORMATIVOS DOS TRIBUNAIS ==================== */
+.informativos-section {
+    background: var(--off-white);
+}
+
+.tribunal-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+}
+
+.tribunal-tab {
+    padding: 8px 20px;
+    border: 2px solid var(--gray-100);
+    border-radius: 100px;
+    background: transparent;
+    font-family: var(--font-primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.tribunal-tab:hover {
+    border-color: var(--verde);
+    color: var(--azul);
+}
+
+.tribunal-tab.active {
+    background: var(--azul);
+    border-color: var(--azul);
+    color: var(--white);
+}
+
+.informativos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.informativo-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-medium);
+    border: 1px solid var(--gray-100);
+    display: flex;
+    flex-direction: column;
+}
+
+.informativo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.informativo-header {
+    padding: 20px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.tribunal-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.tribunal-badge[data-tribunal="STF"] { background: #1B3A5C; }
+.tribunal-badge[data-tribunal="STJ"] { background: #2E7D32; }
+.tribunal-badge[data-tribunal="TRF1"] { background: #1565C0; }
+.tribunal-badge[data-tribunal="TRT11"] { background: #E65100; }
+.tribunal-badge[data-tribunal="TST"] { background: #6A1B9A; }
+
+.informativo-date {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.informativo-body {
+    padding: 16px 20px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.informativo-body h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--azul);
+    line-height: 1.45;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.informativo-body p {
+    font-size: 0.84rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 16px;
+    flex: 1;
+}
+
+.informativo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--verde-dark);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.informativo-link:hover {
+    gap: 10px;
+    color: var(--verde);
+}
+
+.informativos-footer {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.btn-ver-mais {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border: 2px solid var(--azul);
+    border-radius: 100px;
+    background: transparent;
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--azul);
+    cursor: pointer;
+    transition: var(--transition-medium);
+}
+
+.btn-ver-mais:hover {
+    background: var(--azul);
+    color: var(--white);
+}
+
+.informativos-updated {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 16px;
+}
+
+.informativos-loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 48px 20px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.informativos-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 48px 20px;
+    color: var(--text-secondary);
+}
+
+/* Responsive informativos */
+@media (max-width: 1024px) {
+    .informativos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .informativos-grid {
+        grid-template-columns: 1fr;
+    }
+    .tribunal-tabs {
+        gap: 6px;
+    }
+    .tribunal-tab {
+        padding: 6px 14px;
+        font-size: 0.8rem;
+    }
+}

@@ -197,6 +197,112 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ==================== INFORMATIVOS DOS TRIBUNAIS ====================
+    const informativosGrid = document.getElementById('informativos-grid');
+    const btnVerMais = document.getElementById('btn-ver-mais-informativos');
+    const informativosUpdated = document.getElementById('informativos-updated');
+    let allInformativos = [];
+    let currentFilter = 'todos';
+    let visibleCount = 6;
+
+    function formatDate(dateStr) {
+        if (!dateStr) return '';
+        const parts = dateStr.split('-');
+        if (parts.length === 3) {
+            return `${parts[2]}/${parts[1]}/${parts[0]}`;
+        }
+        return dateStr;
+    }
+
+    function renderInformativos() {
+        if (!informativosGrid) return;
+
+        const filtered = currentFilter === 'todos'
+            ? allInformativos
+            : allInformativos.filter(item => item.tribunal === currentFilter);
+
+        if (filtered.length === 0) {
+            informativosGrid.innerHTML = '<div class="informativos-empty">Nenhum informativo encontrado para este tribunal.</div>';
+            if (btnVerMais) btnVerMais.style.display = 'none';
+            return;
+        }
+
+        const toShow = filtered.slice(0, visibleCount);
+
+        informativosGrid.innerHTML = toShow.map(item => `
+            <article class="informativo-card reveal">
+                <div class="informativo-header">
+                    <span class="tribunal-badge" data-tribunal="${item.tribunal}">${item.tribunal}</span>
+                    <time class="informativo-date">${formatDate(item.date)}</time>
+                </div>
+                <div class="informativo-body">
+                    <h3>${item.title}</h3>
+                    <p>${item.summary || ''}</p>
+                    <a href="${item.url}" target="_blank" rel="noopener" class="informativo-link">
+                        Leia no tribunal
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                </div>
+            </article>
+        `).join('');
+
+        // Show/hide ver mais button
+        if (btnVerMais) {
+            btnVerMais.style.display = filtered.length > visibleCount ? 'inline-flex' : 'none';
+        }
+
+        // Trigger reveal animations on new cards
+        informativosGrid.querySelectorAll('.informativo-card').forEach((el, index) => {
+            el.style.transitionDelay = `${index * 0.08}s`;
+            setTimeout(() => el.classList.add('active'), 50);
+        });
+    }
+
+    function loadInformativos() {
+        if (!informativosGrid) return;
+
+        fetch('data/informativos.json')
+            .then(res => {
+                if (!res.ok) throw new Error('Falha ao carregar');
+                return res.json();
+            })
+            .then(data => {
+                allInformativos = data.items || [];
+                renderInformativos();
+
+                // Show update timestamp
+                if (informativosUpdated && data.updated_at) {
+                    const dt = new Date(data.updated_at);
+                    informativosUpdated.textContent = `Atualizado em ${dt.toLocaleDateString('pt-BR')} as ${dt.toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'})}`;
+                }
+            })
+            .catch(() => {
+                informativosGrid.innerHTML = '<div class="informativos-empty">Informativos em atualizacao. Tente novamente em instantes.</div>';
+            });
+    }
+
+    // Tab click handlers
+    document.querySelectorAll('.tribunal-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.tribunal-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            currentFilter = tab.dataset.tribunal;
+            visibleCount = 6;
+            renderInformativos();
+        });
+    });
+
+    // Ver mais button
+    if (btnVerMais) {
+        btnVerMais.addEventListener('click', () => {
+            visibleCount += 6;
+            renderInformativos();
+        });
+    }
+
+    // Load informativos on page load
+    loadInformativos();
+
     // ==================== Console branding ====================
     console.log(
         '%cKairo Icaro — Advogados Associados',

@@ -433,6 +433,36 @@
         </div>
     </section>
 
+    <!-- ==================== INFORMATIVOS DOS TRIBUNAIS ==================== -->
+    <section id="informativos" class="section informativos-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Informativos dos Tribunais</span>
+                <h2 class="section-title">Atualizacoes do <span class="text-green">Judiciario</span></h2>
+                <p class="section-desc">Noticias e informativos dos principais tribunais do pais, atualizados automaticamente.</p>
+            </div>
+            <div class="tribunal-tabs">
+                <button class="tribunal-tab active" data-tribunal="todos">Todos</button>
+                <button class="tribunal-tab" data-tribunal="STF">STF</button>
+                <button class="tribunal-tab" data-tribunal="STJ">STJ</button>
+                <button class="tribunal-tab" data-tribunal="TRF1">TRF1</button>
+                <button class="tribunal-tab" data-tribunal="TRT11">TRT11</button>
+                <button class="tribunal-tab" data-tribunal="TST">TST</button>
+            </div>
+            <div class="informativos-grid" id="informativos-grid">
+                <!-- Cards renderizados via JS -->
+                <div class="informativos-loading">Carregando informativos...</div>
+            </div>
+            <div class="informativos-footer">
+                <button class="btn-ver-mais" id="btn-ver-mais-informativos" style="display:none;">
+                    Ver mais informativos
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <p class="informativos-updated" id="informativos-updated"></p>
+            </div>
+        </div>
+    </section>
+
     <!-- ==================== CTA SECTION ==================== -->
     <section id="cta" class="section cta-section">
         <div class="cta-bg-pattern"></div>
@@ -487,6 +517,7 @@
                         <li><a href="#sobre">Sobre Nós</a></li>
                         <li><a href="#diferenciais">Diferenciais</a></li>
                         <li><a href="#noticias">Notícias</a></li>
+                        <li><a href="#informativos">Informativos</a></li>
                         <li><a href="https://kairoicaro.com.br" target="_blank">Blog</a></li>
                     </ul>
                 </div>
