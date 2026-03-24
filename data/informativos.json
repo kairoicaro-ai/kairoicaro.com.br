@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-03-24T15:51:24.696660+00:00",
+  "updated_at": "2026-03-24T20:03:07.614145+00:00",
   "total": 8,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "STF concede prisão domiciliar temporária ao ex-presidente Jair Bolsonaro",
+      "summary": "Ministro Alexandre de Moraes considerou que a medida é adequada para a plena recuperação de Bolsonaro; PGR se manifestou favoravelmente ao pedido da defesa",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-concede-prisao-domiciliar-temporaria-ao-ex-presidente-jair-bolsonaro/",
+      "date": "2026-03-24",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "STF determina prorrogação da CPMI do INSS",
@@ -11,12 +19,12 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "STF suspende bloqueios de bens da Dersa determinados para pagamento de dívidas judiciais",
-      "summary": "Liminar concedida pelo ministro Alexandre de Moraes atende a pedido do governo paulista",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-bloqueios-de-bens-da-dersa-determinados-para-pagamento-de-dividas-judiciais/",
+      "tribunal": "STJ",
+      "title": "Enunciados científicos são reunidos em nova página no portal do STJ",
+      "summary": "Enunciados científicos são reunidos em nova página no portal do STJ",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032025-Enunciados-cientificos-sao-reunidos-em-nova-pagina-no-portal-do-STJ.aspx",
       "date": "2026-03-24",
-      "category": "Constitucional"
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
@@ -31,14 +39,6 @@
       "title": "Página de Repetitivos traz julgados sobre não inclusão do IPI na base de cálculo de créditos de PIS/Pasep e Cofins",
       "summary": "Página de Repetitivos traz julgados sobre não inclusão do IPI na base de cálculo de créditos de PIS/Pasep e Cofins",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032026-Pagina-de-Repetitivos-inclui-julgados-sobre-nao-inclusao-do-IPI-na-base-de-calculo-dos-creditos-de-PISPasep-Cofins.aspx",
-      "date": "2026-03-24",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Primeira Seção fixará tese sobre exclusão de créditos presumidos de ICMS da base de cálculo de IRPJ e CSLL",
-      "summary": "Primeira Seção fixará tese sobre exclusão de créditos presumidos de ICMS da base de cálculo de IRPJ e CSLL",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032026-Primeira-Secao-fixara-tese-sobre-exclusao-de-creditos-presumidos-de-ICMS-da-base-de-calculo-de-IRPJ-e-CSLL.aspx",
       "date": "2026-03-24",
       "category": "Jurisprudencia"
     },
