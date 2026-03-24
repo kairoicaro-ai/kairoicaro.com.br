@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa de Atuação KIAA</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .map-container {
+    position: relative;
+    width: 900px;
+    height: 1000px;
+  }
+  svg { width: 100%; height: 100%; }
+
+  /* Default state style */
+  .state {
+    fill: #1a3350;
+    stroke: #0a1e33;
+    stroke-width: 0.8;
+    transition: all 0.3s ease;
+  }
+
+  /* Active states - green */
+  .state.active {
+    fill: #86E600;
+    stroke: #0F2944;
+    stroke-width: 1.2;
+    filter: drop-shadow(0 0 6px rgba(134, 230, 0, 0.4));
+  }
+
+  /* Headquarters - brighter green with glow */
+  .state.headquarters {
+    fill: #97F513;
+    stroke: #0F2944;
+    stroke-width: 1.8;
+    filter: drop-shadow(0 0 12px rgba(134, 230, 0, 0.7));
+  }
+
+  /* State labels */
+  .state-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    fill: #0F2944;
+    text-anchor: middle;
+    pointer-events: none;
+  }
+  .state-label.inactive {
+    fill: rgba(255,255,255,0.25);
+    font-weight: 500;
+    font-size: 9px;
+  }
+  .state-label.hq {
+    font-size: 12px;
+    font-weight: 800;
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="map-container">
+<svg viewBox="0 0 800 850" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- NORTH REGION -->
+  <!-- Amazonas (AM) - ACTIVE -->
+  <path class="state active" id="AM" d="M95,175 L110,140 L145,120 L180,110 L210,105 L240,108 L265,100 L290,105 L310,115 L325,105 L340,100 L355,110 L365,130 L370,155 L380,175 L375,200 L365,225 L360,250 L340,265 L320,275 L300,280 L280,290 L260,285 L240,275 L220,280 L200,290 L180,285 L160,275 L140,265 L120,250 L105,230 L95,210 L90,195 Z"/>
+  <text class="state-label" x="230" y="195">AM</text>
+
+  <!-- Roraima (RR) - HEADQUARTERS -->
+  <path class="state headquarters" id="RR" d="M180,110 L195,80 L210,55 L230,40 L255,35 L275,45 L290,60 L295,80 L290,105 L265,100 L240,108 L210,105 Z"/>
+  <text class="state-label hq" x="240" y="78">RR</text>
+
+  <!-- Acre (AC) - ACTIVE -->
+  <path class="state active" id="AC" d="M50,230 L70,215 L95,210 L95,175 L90,195 L95,210 L105,230 L120,250 L110,260 L95,265 L75,260 L55,255 L45,245 Z"/>
+  <text class="state-label" x="80" y="245">AC</text>
+
+  <!-- Pará (PA) - ACTIVE -->
+  <path class="state active" id="PA" d="M310,115 L325,105 L340,100 L355,110 L365,130 L370,155 L380,175 L395,165 L420,155 L445,150 L470,148 L490,155 L505,170 L510,190 L500,210 L490,225 L470,235 L450,240 L430,250 L410,260 L390,265 L370,260 L360,250 L340,265 L320,275 L300,280 L310,260 L325,240 L335,220 L330,200 L325,180 L320,160 L315,140 Z"/>
+  <text class="state-label" x="410" y="200">PA</text>
+
+  <!-- Amapá (AP) -->
+  <path class="state" id="AP" d="M390,60 L405,45 L425,40 L440,50 L450,70 L455,95 L450,115 L440,130 L425,140 L410,145 L395,140 L385,125 L380,105 L385,80 Z"/>
+  <text class="state-label inactive" x="420" y="95">AP</text>
+
+  <!-- Tocantins (TO) -->
+  <path class="state" id="TO" d="M410,260 L430,250 L450,240 L470,235 L475,255 L480,280 L478,310 L475,340 L468,365 L455,380 L440,385 L425,378 L415,360 L410,340 L405,315 L400,290 Z"/>
+  <text class="state-label inactive" x="440" y="315">TO</text>
+
+  <!-- Rondônia (RO) -->
+  <path class="state" id="RO" d="M240,275 L260,285 L280,290 L300,280 L310,260 L325,240 L335,260 L340,280 L335,300 L320,315 L300,320 L280,325 L260,320 L245,310 L235,295 Z"/>
+  <text class="state-label inactive" x="285" y="298">RO</text>
+
+  <!-- NORTHEAST REGION -->
+  <!-- Maranhão (MA) -->
+  <path class="state" id="MA" d="M490,155 L505,170 L510,190 L520,175 L540,165 L560,160 L575,165 L585,180 L580,200 L570,215 L555,225 L540,230 L520,235 L505,240 L490,250 L475,255 L470,235 L490,225 L500,210 Z"/>
+  <text class="state-label inactive" x="530" y="200">MA</text>
+
+  <!-- Piauí (PI) -->
+  <path class="state" id="PI" d="M555,225 L570,215 L580,200 L585,180 L600,185 L615,195 L620,215 L618,240 L610,260 L600,275 L585,280 L570,275 L558,265 L550,250 L548,235 Z"/>
+  <text class="state-label inactive" x="585" y="240">PI</text>
+
+  <!-- Ceará (CE) -->
+  <path class="state" id="CE" d="M600,185 L615,175 L635,170 L655,172 L668,180 L672,195 L665,210 L655,225 L640,235 L625,240 L615,235 L618,240 L620,215 L615,195 Z"/>
+  <text class="state-label inactive" x="640" y="205">CE</text>
+
+  <!-- Rio Grande do Norte (RN) -->
+  <path class="state" id="RN" d="M668,180 L680,178 L695,182 L710,190 L715,200 L705,210 L690,215 L675,212 L665,210 L672,195 Z"/>
+  <text class="state-label inactive" x="690" y="198">RN</text>
+
+  <!-- Paraíba (PB) - ACTIVE -->
+  <path class="state active" id="PB" d="M665,210 L675,212 L690,215 L705,210 L715,218 L715,230 L700,235 L680,232 L665,228 L655,225 Z"/>
+  <text class="state-label" x="688" y="225">PB</text>
+
+  <!-- Pernambuco (PE) -->
+  <path class="state" id="PE" d="M610,260 L625,255 L640,248 L655,240 L665,228 L680,232 L700,235 L715,240 L710,252 L695,258 L680,260 L660,262 L640,265 L620,268 Z"/>
+  <text class="state-label inactive" x="665" y="252">PE</text>
+
+  <!-- Alagoas (AL) -->
+  <path class="state" id="AL" d="M695,258 L710,252 L720,258 L722,268 L715,275 L705,272 L698,265 Z"/>
+  <text class="state-label inactive" x="712" y="266">AL</text>
+
+  <!-- Sergipe (SE) -->
+  <path class="state" id="SE" d="M690,275 L698,270 L705,272 L710,280 L705,288 L695,290 L688,283 Z"/>
+  <text class="state-label inactive" x="700" y="283">SE</text>
+
+  <!-- Bahia (BA) -->
+  <path class="state" id="BA" d="M540,290 L560,280 L580,275 L600,275 L610,260 L620,268 L640,265 L660,262 L680,260 L690,275 L688,283 L695,290 L690,310 L680,340 L665,365 L645,385 L625,395 L605,395 L585,385 L570,370 L555,350 L545,330 L540,310 Z"/>
+  <text class="state-label inactive" x="615" y="335">BA</text>
+
+  <!-- CENTRAL-WEST REGION -->
+  <!-- Mato Grosso (MT) - ACTIVE -->
+  <path class="state active" id="MT" d="M280,325 L300,320 L320,315 L335,300 L340,280 L360,290 L380,295 L400,290 L405,315 L410,340 L415,360 L425,378 L410,390 L390,395 L370,400 L350,405 L330,400 L315,390 L300,380 L285,365 L275,345 Z"/>
+  <text class="state-label" x="350" y="350">MT</text>
+
+  <!-- Goiás (GO) - ACTIVE -->
+  <path class="state active" id="GO" d="M425,378 L440,385 L455,380 L468,365 L478,375 L490,390 L498,410 L500,430 L495,445 L485,455 L475,460 L462,458 L450,450 L440,440 L430,430 L425,415 L420,400 L415,385 Z"/>
+  <text class="state-label" x="458" y="420">GO</text>
+
+  <!-- Distrito Federal (DF) - ACTIVE -->
+  <path class="state active" id="DF" d="M498,410 L510,405 L518,412 L515,422 L505,425 L498,418 Z"/>
+  <text class="state-label" x="508" y="416">DF</text>
+
+  <!-- Mato Grosso do Sul (MS) - ACTIVE -->
+  <path class="state active" id="MS" d="M315,390 L330,400 L350,405 L370,400 L390,395 L410,390 L420,400 L425,415 L430,430 L425,450 L415,470 L400,485 L380,490 L360,485 L340,478 L320,465 L310,445 L305,425 L308,405 Z"/>
+  <text class="state-label" x="365" y="445">MS</text>
+
+  <!-- SOUTHEAST REGION -->
+  <!-- Minas Gerais (MG) - ACTIVE -->
+  <path class="state active" id="MG" d="M475,460 L485,455 L495,445 L505,425 L515,422 L530,425 L550,420 L570,410 L590,400 L605,395 L620,400 L630,415 L635,435 L630,455 L620,475 L605,490 L585,498 L565,500 L545,495 L525,488 L510,480 L498,470 L490,462 Z"/>
+  <text class="state-label" x="560" y="455">MG</text>
+
+  <!-- São Paulo (SP) - ACTIVE -->
+  <path class="state active" id="SP" d="M415,470 L430,465 L440,460 L450,450 L462,458 L475,460 L490,462 L498,470 L510,480 L515,495 L510,510 L500,520 L485,525 L465,522 L445,515 L430,505 L420,492 Z"/>
+  <text class="state-label" x="465" y="495">SP</text>
+
+  <!-- Rio de Janeiro (RJ) -->
+  <path class="state" id="RJ" d="M565,500 L585,498 L605,490 L615,498 L620,510 L612,520 L598,525 L582,522 L570,515 Z"/>
+  <text class="state-label inactive" x="592" y="512">RJ</text>
+
+  <!-- Espírito Santo (ES) -->
+  <path class="state" id="ES" d="M620,475 L635,470 L645,478 L642,492 L632,500 L620,498 L615,490 Z"/>
+  <text class="state-label inactive" x="632" y="487">ES</text>
+
+  <!-- SOUTH REGION -->
+  <!-- Paraná (PR) -->
+  <path class="state" id="PR" d="M400,520 L415,510 L430,505 L445,515 L465,522 L485,525 L490,540 L482,555 L468,565 L450,568 L432,565 L415,555 L405,540 Z"/>
+  <text class="state-label inactive" x="445" y="543">PR</text>
+
+  <!-- Santa Catarina (SC) - ACTIVE -->
+  <path class="state active" id="SC" d="M415,570 L432,565 L450,568 L468,565 L478,575 L475,590 L465,600 L448,605 L430,602 L418,592 L412,580 Z"/>
+  <text class="state-label" x="445" y="588">SC</text>
+
+  <!-- Rio Grande do Sul (RS) -->
+  <path class="state" id="RS" d="M390,605 L412,595 L418,592 L430,602 L448,605 L465,600 L472,612 L468,630 L458,650 L445,665 L428,675 L410,678 L395,670 L382,655 L375,635 L378,618 Z"/>
+  <text class="state-label inactive" x="425" y="640">RS</text>
+
+  <!-- LEGEND -->
+  <g transform="translate(30, 720)">
+    <rect x="0" y="0" width="20" height="14" rx="3" fill="#97F513" stroke="#0F2944" stroke-width="1"/>
+    <text x="28" y="11" font-family="Montserrat" font-size="12" font-weight="700" fill="#FFFFFF">Sede — Roraima</text>
+
+    <rect x="0" y="24" width="20" height="14" rx="3" fill="#86E600" stroke="#0F2944" stroke-width="1"/>
+    <text x="28" y="35" font-family="Montserrat" font-size="12" font-weight="600" fill="#FFFFFF">Atuação</text>
+
+    <rect x="0" y="48" width="20" height="14" rx="3" fill="#1a3350" stroke="#0a1e33" stroke-width="1"/>
+    <text x="28" y="59" font-family="Montserrat" font-size="12" font-weight="400" fill="rgba(255,255,255,0.5)">Demais estados</text>
+  </g>
+
+  <!-- HQ marker for Roraima -->
+  <g transform="translate(240, 48)">
+    <circle cx="0" cy="0" r="6" fill="#97F513" stroke="#0F2944" stroke-width="2"/>
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#97F513" stroke-width="1.5" opacity="0.5">
+      <animate attributeName="r" from="8" to="16" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="0.6" to="0" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+</svg>
+</div>
+
+</body>
+</html>

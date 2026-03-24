@@ -129,8 +129,10 @@ document.addEventListener('DOMContentLoaded', () => {
         '.diff-card',
         '.news-card',
         '.team-card',
+        '.award-card',
         '.cta-content',
-        '.section-header'
+        '.section-header',
+        '.esg-pillar'
     ];
 
     animatableSelectors.forEach(selector => {
@@ -458,6 +460,70 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 800);
         });
     }
+
+    // ==================== PRAZOS REGULATÓRIOS ====================
+    const prazosStrip = document.getElementById('prazos-strip');
+
+    function loadPrazos() {
+        if (!prazosStrip) return;
+
+        fetch('data/prazos.json')
+            .then(res => { if (!res.ok) throw new Error('Falha'); return res.json(); })
+            .then(data => {
+                const hoje = new Date();
+                hoje.setHours(0, 0, 0, 0);
+                const limite = new Date(hoje);
+                limite.setDate(limite.getDate() + 90);
+
+                const proximos = (data.prazos || [])
+                    .map(p => {
+                        const d = new Date(p.date + 'T00:00:00');
+                        const diffMs = d - hoje;
+                        const diffDias = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+                        return { ...p, dateObj: d, dias: diffDias };
+                    })
+                    .filter(p => p.dias >= 0 && p.dateObj <= limite)
+                    .sort((a, b) => a.dias - b.dias);
+
+                if (proximos.length === 0) {
+                    prazosStrip.style.display = 'none';
+                    return;
+                }
+
+                const areaColors = {
+                    'Ambiental': '#2ecc71',
+                    'Trabalhista': '#3498db',
+                    'Tributário': '#e67e22',
+                    'Agrário': '#8b5cf6'
+                };
+
+                const badges = proximos.map(p => {
+                    const cor = areaColors[p.area] || '#6b7280';
+                    const urgente = p.dias <= 14;
+                    const diasTexto = p.dias === 0 ? 'Hoje' : p.dias === 1 ? '1 dia' : `${p.dias} dias`;
+                    return `
+                        <div class="prazo-badge${urgente ? ' prazo-urgente' : ''}" title="${p.desc}">
+                            <span class="prazo-area" style="background:${cor}">${p.area}</span>
+                            <span class="prazo-titulo">${p.title}</span>
+                            <span class="prazo-countdown">${diasTexto}</span>
+                        </div>
+                    `;
+                }).join('');
+
+                prazosStrip.innerHTML = `
+                    <div class="prazos-header">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <span>Alertas e Prazos</span>
+                    </div>
+                    <div class="prazos-badges">${badges}</div>
+                `;
+            })
+            .catch(() => {
+                if (prazosStrip) prazosStrip.style.display = 'none';
+            });
+    }
+
+    loadPrazos();
 
     // ==================== Console branding ====================
     console.log(

@@ -1295,6 +1295,175 @@ ul {
     }
 }
 
+/* ==================== AWARDS / PRÊMIOS ==================== */
+.awards-section {
+    background: var(--off-white);
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.award-card {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    padding: 32px 28px;
+    text-align: center;
+    transition: var(--transition-medium);
+}
+
+.award-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.award-card-main {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 36px;
+    text-align: left;
+    background: var(--azul);
+    border-color: var(--azul);
+    padding: 40px;
+}
+
+.award-card-main:hover {
+    border-color: var(--verde);
+}
+
+.award-card-main h3 {
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.award-card-main .award-source {
+    color: var(--verde);
+}
+
+.award-card-main .award-desc {
+    color: var(--text-light);
+}
+
+.award-seal {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(134,230,0,0.15), rgba(134,230,0,0.05));
+    border: 2px solid rgba(134,230,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.award-seal-sm {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 16px;
+}
+
+.award-seal-inner {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.award-year {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--verde);
+}
+
+.award-seal-sm .award-year {
+    font-size: 1.1rem;
+}
+
+.award-label {
+    display: block;
+    font-size: 0.55rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: rgba(134,230,0,0.7);
+    margin-top: 2px;
+}
+
+.award-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--azul);
+    margin-bottom: 4px;
+}
+
+.award-source {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--verde-dark);
+    margin-bottom: 10px;
+}
+
+.award-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.award-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--verde);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.award-link:hover {
+    gap: 10px;
+    color: var(--verde-neg);
+}
+
+.award-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: var(--verde-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--verde-dark);
+    margin: 0 auto 16px;
+}
+
+@media (max-width: 1024px) {
+    .awards-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .award-card-main {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+    .award-card-main {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 28px 24px;
+    }
+    .award-seal {
+        margin: 0 auto;
+    }
+}
+
 /* ==================== NEWSLETTER ==================== */
 .newsletter-section {
     background: var(--azul);
@@ -2141,5 +2310,200 @@ button:focus-visible {
     .tribunal-tab {
         padding: 6px 14px;
         font-size: 0.8rem;
+    }
+}
+
+/* ==================== ESG / COMPROMISSO AMAZÔNIA ==================== */
+.esg-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, var(--azul) 0%, var(--azul-dark) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.esg-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(134, 230, 0, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.esg-wrapper {
+    text-align: center;
+}
+
+.esg-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.esg-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--verde-glow);
+    border-radius: 50%;
+    color: var(--verde);
+}
+
+.esg-header h2 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--white);
+    margin: 0;
+}
+
+.esg-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.esg-pillar {
+    padding: 32px 24px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    transition: var(--transition-medium);
+}
+
+.esg-pillar:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--verde);
+    transform: translateY(-4px);
+}
+
+.esg-pillar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: var(--verde-glow);
+    border-radius: var(--radius-sm);
+    color: var(--verde);
+    margin: 0 auto 16px auto;
+}
+
+.esg-pillar h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--verde);
+    margin-bottom: 8px;
+}
+
+.esg-pillar p {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .esg-pillars {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .esg-section {
+        padding: 40px 0;
+    }
+}
+
+/* ==================== PRAZOS REGULATÓRIOS ==================== */
+.prazos-strip {
+    margin-bottom: 32px;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+}
+
+.prazos-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    color: var(--azul);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.prazos-header svg {
+    color: var(--verde);
+}
+
+.prazos-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.prazo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: 50px;
+    font-size: 0.82rem;
+    transition: var(--transition-fast);
+}
+
+.prazo-badge:hover {
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+}
+
+.prazo-urgente {
+    border-color: #ef4444;
+    background: #fef2f2;
+}
+
+.prazo-area {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.prazo-titulo {
+    font-weight: 600;
+    color: var(--azul);
+}
+
+.prazo-countdown {
+    font-weight: 700;
+    color: var(--verde-dark);
+    font-size: 0.78rem;
+}
+
+.prazo-urgente .prazo-countdown {
+    color: #ef4444;
+}
+
+@media (max-width: 768px) {
+    .prazos-badges {
+        flex-direction: column;
+    }
+    .prazo-badge {
+        width: 100%;
     }
 }

@@ -1,0 +1,10 @@
+{
+  "prazos": [
+    {"date": "2026-06-30", "title": "Prazo final CAR", "desc": "Cadastro Ambiental Rural", "area": "Ambiental"},
+    {"date": "2026-12-31", "title": "RAIS 2026", "desc": "Relação Anual de Informações Sociais", "area": "Trabalhista"},
+    {"date": "2026-01-31", "title": "DIRF 2026", "desc": "Declaração de Imposto Retido na Fonte", "area": "Tributário"},
+    {"date": "2026-03-31", "title": "DCTF Mensal", "desc": "Declaração de Débitos e Créditos Tributários", "area": "Tributário"},
+    {"date": "2026-05-31", "title": "IRPF 2026", "desc": "Declaração de Imposto de Renda Pessoa Física", "area": "Tributário"},
+    {"date": "2026-11-20", "title": "Georreferenciamento", "desc": "Prazo para imóveis acima de 25ha", "area": "Agrário"}
+  ]
+}
