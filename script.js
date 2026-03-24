@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderConteudoCard(item) {
         const hasImage = item.image && item.featured;
         const hasUrl = item.url && item.url.length > 0;
-        const typeLabels = { artigo: 'Artigo', alerta: 'Alerta', guia: 'Guia Pratico' };
+        const typeLabels = { artigo: 'Artigo', alerta: 'Alerta', guia: 'Guia Prático' };
 
         if (hasImage) {
             return `
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
             : allConteudo.filter(item => item.type === currentTypeFilter);
 
         if (filtered.length === 0) {
-            conteudoGrid.innerHTML = '<div class="informativos-empty">Nenhuma publicacao encontrada.</div>';
+            conteudoGrid.innerHTML = '<div class="informativos-empty">Nenhuma publicação encontrada.</div>';
             if (btnVerMaisConteudo) btnVerMaisConteudo.style.display = 'none';
             return;
         }
@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderConteudo();
             })
             .catch(() => {
-                conteudoGrid.innerHTML = '<div class="informativos-empty">Conteudo em atualizacao.</div>';
+                conteudoGrid.innerHTML = '<div class="informativos-empty">Conteúdo em atualização.</div>';
             });
     }
 
@@ -390,11 +390,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Show update timestamp
                 if (informativosUpdated && data.updated_at) {
                     const dt = new Date(data.updated_at);
-                    informativosUpdated.textContent = `Atualizado em ${dt.toLocaleDateString('pt-BR')} as ${dt.toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'})}`;
+                    informativosUpdated.textContent = `Atualizado em ${dt.toLocaleDateString('pt-BR')} às ${dt.toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'})}`;
                 }
             })
             .catch(() => {
-                informativosGrid.innerHTML = '<div class="informativos-empty">Informativos em atualizacao. Tente novamente em instantes.</div>';
+                informativosGrid.innerHTML = '<div class="informativos-empty">Informativos em atualização. Tente novamente em instantes.</div>';
             });
     }
 
@@ -419,6 +419,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load informativos on page load
     loadInformativos();
+
+    // ==================== NEWSLETTER FORM ====================
+    const newsletterForm = document.getElementById('newsletter-form');
+    const newsletterSuccess = document.getElementById('newsletter-success');
+    const newsletterSubmit = document.getElementById('newsletter-submit');
+
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(newsletterForm);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                interest: formData.get('interest'),
+                date: new Date().toISOString()
+            };
+
+            // Disable button during submission
+            if (newsletterSubmit) {
+                newsletterSubmit.disabled = true;
+                newsletterSubmit.textContent = 'Enviando...';
+            }
+
+            // Store locally as fallback (will integrate with email service later)
+            try {
+                const subscribers = JSON.parse(localStorage.getItem('kiaa-newsletter') || '[]');
+                subscribers.push(data);
+                localStorage.setItem('kiaa-newsletter', JSON.stringify(subscribers));
+            } catch(err) { /* silent */ }
+
+            // Show success message
+            setTimeout(() => {
+                newsletterForm.style.display = 'none';
+                if (newsletterSuccess) newsletterSuccess.style.display = 'block';
+            }, 800);
+        });
+    }
 
     // ==================== Console branding ====================
     console.log(

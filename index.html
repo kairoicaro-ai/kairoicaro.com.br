@@ -380,8 +380,8 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Insights KIAA</span>
-                <h2 class="section-title">Fique por dentro do <span class="text-green">cenario juridico</span></h2>
-                <p class="section-desc">Artigos, alertas regulatorios e guias praticos para o produtor rural e empresario em Roraima.</p>
+                <h2 class="section-title">Fique por dentro do <span class="text-green">cenário jurídico</span></h2>
+                <p class="section-desc">Artigos, alertas regulatórios e guias práticos para o produtor rural e empresário em Roraima.</p>
             </div>
             <div class="content-type-filters">
                 <button class="content-filter active" data-type="todos">Todos</button>
@@ -399,11 +399,11 @@
                 </button>
             </div>
             <div class="news-grid" id="conteudo-grid">
-                <div class="informativos-loading">Carregando conteudo...</div>
+                <div class="informativos-loading">Carregando conteúdo...</div>
             </div>
             <div class="informativos-footer">
                 <button class="btn-ver-mais" id="btn-ver-mais-conteudo" style="display:none;">
-                    Ver mais publicacoes
+                    Ver mais publicações
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
                 </button>
             </div>
@@ -415,8 +415,8 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Informativos dos Tribunais</span>
-                <h2 class="section-title">Atualizacoes do <span class="text-green">Judiciario</span></h2>
-                <p class="section-desc">Noticias e informativos dos principais tribunais do pais, atualizados automaticamente.</p>
+                <h2 class="section-title">Atualizações do <span class="text-green">Judiciário</span></h2>
+                <p class="section-desc">Notícias e informativos dos principais tribunais do país, atualizados automaticamente.</p>
             </div>
             <div class="tribunal-tabs">
                 <button class="tribunal-tab active" data-tribunal="todos">Todos</button>
@@ -436,6 +436,52 @@
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
                 </button>
                 <p class="informativos-updated" id="informativos-updated"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER ==================== -->
+    <section id="newsletter" class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-content">
+                    <div class="newsletter-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h2>Receba <span class="text-green">alertas jurídicos</span> para o produtor rural</h2>
+                    <p>Atualizações sobre legislação ambiental, prazos regulatórios e oportunidades jurídicas em Roraima. Direto no seu e-mail, sem spam.</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="newsletter-fields">
+                        <div class="newsletter-field">
+                            <input type="text" name="name" placeholder="Seu nome" required autocomplete="given-name">
+                        </div>
+                        <div class="newsletter-field">
+                            <input type="email" name="email" placeholder="Seu melhor e-mail" required autocomplete="email">
+                        </div>
+                        <div class="newsletter-field newsletter-field-select">
+                            <select name="interest" required>
+                                <option value="" disabled selected>Área de interesse</option>
+                                <option value="ambiental">Direito Ambiental</option>
+                                <option value="agrario">Direito Agrário</option>
+                                <option value="empresarial">Direito Empresarial</option>
+                                <option value="trabalhista">Direito Trabalhista</option>
+                                <option value="tributario">Direito Tributário</option>
+                                <option value="todas">Todas as áreas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="newsletter-btn" id="newsletter-submit">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        Inscrever-se gratuitamente
+                    </button>
+                    <p class="newsletter-disclaimer">Ao se inscrever, você concorda com nossa <a href="#">Política de Privacidade</a> conforme a LGPD.</p>
+                </form>
+                <div class="newsletter-success" id="newsletter-success" style="display:none;">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <h3>Inscrição confirmada!</h3>
+                    <p>Você receberá nossos alertas jurídicos em breve. Obrigado por se inscrever.</p>
+                </div>
             </div>
         </div>
     </section>
