@@ -1,0 +1,435 @@
+/* ============================================================
+   KIAA — Area Pages Shared Styles
+   ============================================================ */
+
+/* ==================== AREA HERO ==================== */
+.area-hero {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 60px;
+    overflow: hidden;
+}
+
+.area-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.area-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.area-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 41, 68, 0.6) 0%,
+        rgba(15, 41, 68, 0.92) 100%
+    );
+}
+
+.area-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.area-breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--verde);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 24px;
+    transition: var(--transition-fast);
+}
+
+.area-breadcrumb:hover {
+    gap: 10px;
+}
+
+.area-hero-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 16px;
+    background: rgba(134, 230, 0, 0.12);
+    border: 1px solid rgba(134, 230, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--verde);
+}
+
+.area-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.15;
+    margin-bottom: 16px;
+}
+
+.area-hero-desc {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.65;
+    max-width: 600px;
+}
+
+/* ==================== AREA INTRO ==================== */
+.area-intro {
+    background: var(--white);
+}
+
+.area-intro-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.area-intro-text h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--azul);
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.area-intro-text p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+.area-stat-card {
+    background: var(--off-white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.area-stat-icon {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    border-radius: 14px;
+    background: var(--verde-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--verde-dark);
+}
+
+.area-stat-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+}
+
+/* ==================== ACCORDION ==================== */
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.accordion-item {
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: var(--transition-medium);
+    background: var(--white);
+}
+
+.accordion-item:hover {
+    border-color: var(--gray-200);
+}
+
+.accordion-item.open {
+    border-color: var(--verde);
+    box-shadow: var(--shadow-md);
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    transition: var(--transition-fast);
+}
+
+.accordion-header:hover {
+    background: var(--off-white);
+}
+
+.accordion-number {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--verde-dark);
+    background: var(--verde-glow);
+    padding: 4px 10px;
+    border-radius: 6px;
+    min-width: 36px;
+    text-align: center;
+}
+
+.accordion-title {
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--azul);
+}
+
+.accordion-icon {
+    color: var(--gray-400);
+    transition: var(--transition-medium);
+    min-width: 24px;
+}
+
+.accordion-item.open .accordion-icon {
+    transform: rotate(180deg);
+    color: var(--verde-dark);
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+    padding: 0 24px;
+}
+
+.accordion-item.open .accordion-body {
+    max-height: 400px;
+    padding: 0 24px 24px;
+}
+
+.accordion-body p {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 12px;
+    padding-left: 52px;
+}
+
+.accordion-body ul {
+    padding-left: 72px;
+    list-style: none;
+}
+
+.accordion-body ul li {
+    position: relative;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    padding: 4px 0 4px 18px;
+    line-height: 1.5;
+}
+
+.accordion-body ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--verde);
+}
+
+/* ==================== AREA CTA ==================== */
+.area-cta {
+    background: var(--azul);
+    padding: 80px 0;
+}
+
+.area-cta-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.area-cta-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.area-cta-content p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.area-cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-green {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: var(--verde);
+    color: var(--azul);
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: var(--transition-medium);
+    border: 2px solid var(--verde);
+}
+
+.btn-green:hover {
+    background: var(--verde-neg);
+    box-shadow: var(--shadow-green);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    background: transparent;
+    color: var(--white);
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 100px;
+    text-decoration: none;
+    border: 2px solid rgba(255,255,255,0.3);
+    transition: var(--transition-medium);
+}
+
+.btn-outline:hover {
+    border-color: var(--white);
+    background: rgba(255,255,255,0.08);
+}
+
+/* ==================== AREA FOOTER ==================== */
+.area-footer {
+    background: var(--azul-dark);
+    padding: 40px 0;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.area-footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.area-footer-logo {
+    height: 32px;
+    opacity: 0.7;
+}
+
+.area-footer-content > p {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.4);
+}
+
+.area-footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.area-footer-links a {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.area-footer-links a:hover {
+    color: var(--verde);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1024px) {
+    .area-intro-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .area-hero {
+        min-height: 360px;
+        padding-bottom: 40px;
+    }
+
+    .area-hero h1 {
+        font-size: 2rem;
+    }
+
+    .area-hero-desc {
+        font-size: 0.95rem;
+    }
+
+    .area-intro-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .accordion-body p,
+    .accordion-body ul {
+        padding-left: 0;
+    }
+
+    .accordion-number {
+        display: none;
+    }
+
+    .area-cta-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .area-footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .area-footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .area-hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .area-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
