@@ -1464,6 +1464,139 @@ ul {
     }
 }
 
+/* ==================== JURIMETRIA ==================== */
+.jurimetria-section {
+    background: var(--azul);
+}
+
+.jurimetria-section .section-tag { color: var(--verde); }
+.jurimetria-section .section-title { color: var(--white); }
+.jurimetria-section .section-desc { color: var(--text-light); }
+
+.jurimetria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.jurimetria-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    transition: var(--transition-medium);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.jurimetria-card:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(134,230,0,0.2);
+    transform: translateY(-4px);
+}
+
+.jurimetria-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.jurimetria-card h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 8px;
+    line-height: 1.35;
+}
+
+.jurimetria-card p {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.55;
+    flex: 1;
+    margin-bottom: 16px;
+}
+
+.jurimetria-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--verde);
+}
+
+.jurimetria-card:hover .jurimetria-link { gap: 10px; }
+
+/* ==================== FONTES JURÍDICAS ==================== */
+.fontes-section {
+    background: var(--off-white);
+    padding: 80px 0;
+}
+
+.fontes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.fonte-group h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--azul);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--verde);
+    display: inline-block;
+}
+
+.fonte-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.fonte-item {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 50px;
+    border: 1px solid var(--gray-100);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--azul);
+    background: var(--white);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.fonte-item:hover {
+    border-color: var(--verde);
+    color: var(--verde-dark);
+    box-shadow: var(--shadow-sm);
+}
+
+.fonte-gov { border-color: #2ECC71; color: #1a8a4a; }
+.fonte-gov:hover { background: rgba(46,204,113,0.08); }
+.fonte-biz { border-color: #3498DB; color: #1a6b9e; }
+.fonte-biz:hover { background: rgba(52,152,219,0.08); }
+
+@media (max-width: 1024px) {
+    .jurimetria-grid { grid-template-columns: repeat(2, 1fr); }
+    .fontes-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .jurimetria-grid { grid-template-columns: 1fr; }
+    .fontes-grid { grid-template-columns: 1fr; }
+}
+
 /* ==================== NEWSLETTER ==================== */
 .newsletter-section {
     background: var(--azul);
@@ -1786,6 +1919,33 @@ ul {
     color: var(--verde);
 }
 
+.map-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.6);
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.map-link:hover {
+    background: rgba(134, 230, 0, 0.12);
+    border-color: rgba(134, 230, 0, 0.3);
+    color: #86E600;
+}
+
 .footer-bottom {
     padding: 24px 0;
     text-align: center;
@@ -1964,6 +2124,10 @@ ul {
 
     .section-title {
         font-size: 1.6rem;
+    }
+
+    .map-links {
+        flex-wrap: wrap;
     }
 }
 

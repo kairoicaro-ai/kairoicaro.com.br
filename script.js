@@ -132,7 +132,8 @@ document.addEventListener('DOMContentLoaded', () => {
         '.award-card',
         '.cta-content',
         '.section-header',
-        '.esg-pillar'
+        '.esg-pillar',
+        '.jurimetria-card'
     ];
 
     animatableSelectors.forEach(selector => {
