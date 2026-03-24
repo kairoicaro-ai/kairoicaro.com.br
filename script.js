@@ -323,6 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const informativosUpdated = document.getElementById('informativos-updated');
     let allInformativos = [];
     let currentFilter = 'todos';
+    let currentMateriaFilter = 'todos';
     let visibleCount = 6;
 
     function formatDate(dateStr) {
@@ -337,12 +338,16 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderInformativos() {
         if (!informativosGrid) return;
 
-        const filtered = currentFilter === 'todos'
+        let filtered = currentFilter === 'todos'
             ? allInformativos
             : allInformativos.filter(item => item.tribunal === currentFilter);
 
+        if (currentMateriaFilter !== 'todos') {
+            filtered = filtered.filter(item => item.category === currentMateriaFilter);
+        }
+
         if (filtered.length === 0) {
-            informativosGrid.innerHTML = '<div class="informativos-empty">Nenhum informativo encontrado para este tribunal.</div>';
+            informativosGrid.innerHTML = '<div class="informativos-empty">Nenhum informativo encontrado para os filtros selecionados.</div>';
             if (btnVerMais) btnVerMais.style.display = 'none';
             return;
         }
@@ -407,6 +412,17 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.tribunal-tab').forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
             currentFilter = tab.dataset.tribunal;
+            visibleCount = 6;
+            renderInformativos();
+        });
+    });
+
+    // Materia tab click handlers
+    document.querySelectorAll('.materia-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.materia-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            currentMateriaFilter = tab.dataset.materia;
             visibleCount = 6;
             renderInformativos();
         });
