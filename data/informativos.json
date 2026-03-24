@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-24T08:09:50.101392+00:00",
-  "total": 5,
+  "updated_at": "2026-03-24T15:51:24.696660+00:00",
+  "total": 8,
   "items": [
     {
       "tribunal": "STF",
@@ -19,18 +19,42 @@
       "category": "Constitucional"
     },
     {
+      "tribunal": "STJ",
+      "title": "Violar monitoração eletrônica é crime na Lei Maria da Penha: decisão é destaque no STJ Notícias",
+      "summary": "Violar monitoração eletrônica é crime na Lei Maria da Penha: decisão é destaque no STJ Notícias",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032026-Violar-monitoracao-eletronica-e-crime-na-Lei-Maria-da-Penha-decisao-e-destaque-no-STJ-Noticias.aspx",
+      "date": "2026-03-24",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Página de Repetitivos traz julgados sobre não inclusão do IPI na base de cálculo de créditos de PIS/Pasep e Cofins",
+      "summary": "Página de Repetitivos traz julgados sobre não inclusão do IPI na base de cálculo de créditos de PIS/Pasep e Cofins",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032026-Pagina-de-Repetitivos-inclui-julgados-sobre-nao-inclusao-do-IPI-na-base-de-calculo-dos-creditos-de-PISPasep-Cofins.aspx",
+      "date": "2026-03-24",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Primeira Seção fixará tese sobre exclusão de créditos presumidos de ICMS da base de cálculo de IRPJ e CSLL",
+      "summary": "Primeira Seção fixará tese sobre exclusão de créditos presumidos de ICMS da base de cálculo de IRPJ e CSLL",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032026-Primeira-Secao-fixara-tese-sobre-exclusao-de-creditos-presumidos-de-ICMS-da-base-de-calculo-de-IRPJ-e-CSLL.aspx",
+      "date": "2026-03-24",
+      "category": "Jurisprudencia"
+    },
+    {
       "tribunal": "TRT11",
-      "title": "Fabrício Carpinejar palestra no Fórum Trabalhista de Manaus nesta sexta (27/3)",
-      "summary": "Evento da Ejud11 é gratuito e aberto ao público. As inscrições podem ser feitas antecipadamente ou na hora do evento e darão certificado de 4h aos participantes.",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11210-fabricio-carpinejar-palestra-no-forum-trabalhista-de-manaus-nesta-sexta-27-3",
+      "title": "Assédio sexual com comentários sobre o corpo e pedidos de fotos íntimas resulta em condenação de R$ 40 mil a superatacado em Manaus",
+      "summary": "A juíza reconheceu violação à dignidade e à liberdade sexual de trabalhadora e confirmou responsabilidade da empresa pelos atos praticados por gerente",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11212-assedio-sexual-com-comentarios-sobre-o-corpo-e-pedidos-de-fotos-intimas-resulta-em-condenacao-de-r-40-mil-a-superatacado-em-manaus",
       "date": "2026-03-24",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "Presidência e Corregedoria do TRT-11 reúnem com juízes em Manaus",
-      "summary": "Nova ferramenta Concilia JT e metas do CNJ estavam na pauta da reunião.",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11207-presidencia-e-corregedoria-do-trt-11-reunem-com-juizes-em-manaus",
+      "title": "Elas em Pauta: mutirão do TRT-11 realiza 877 audiências e homologa 188 acordos trabalhistas",
+      "summary": "Conciliações envolvendo trabalhadoras mulheres movimentam quase R$ 2 milhões em uma semana",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11211-elas-em-pauta-mutirao-do-trt-11-realiza-877-audiencias-e-homologa-188-acordos-trabalhistas",
       "date": "2026-03-24",
       "category": "Trabalhista"
     },
