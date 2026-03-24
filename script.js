@@ -133,7 +133,10 @@ document.addEventListener('DOMContentLoaded', () => {
         '.cta-content',
         '.section-header',
         '.esg-pillar',
-        '.jurimetria-card'
+        '.dash-link-card',
+        '.case-card',
+        '.setorial-source-card',
+        '.panel-embed-card'
     ];
 
     animatableSelectors.forEach(selector => {
@@ -541,6 +544,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     loadPrazos();
+
+    // ==================== DASHBOARD TABS ====================
+    document.querySelectorAll('.dashboard-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.dashboard-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.dashboard-panel').forEach(p => p.classList.remove('active'));
+            tab.classList.add('active');
+            const panel = document.getElementById('panel-' + tab.dataset.panel);
+            if (panel) panel.classList.add('active');
+        });
+    });
+
+    // ==================== SETORIAL TABS ====================
+    document.querySelectorAll('.setorial-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.setorial-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.setorial-panel').forEach(p => p.classList.remove('active'));
+            tab.classList.add('active');
+            const panel = document.getElementById('setorial-' + tab.dataset.setorial);
+            if (panel) panel.classList.add('active');
+        });
+    });
 
     // ==================== Console branding ====================
     console.log(

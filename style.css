@@ -1464,137 +1464,492 @@ ul {
     }
 }
 
-/* ==================== JURIMETRIA ==================== */
-.jurimetria-section {
+/* ==================== DASHBOARD KIAA ==================== */
+.dashboard-section {
     background: var(--azul);
 }
 
-.jurimetria-section .section-tag { color: var(--verde); }
-.jurimetria-section .section-title { color: var(--white); }
-.jurimetria-section .section-desc { color: var(--text-light); }
+.dashboard-section .section-tag { color: var(--verde); }
+.dashboard-section .section-title { color: var(--white); }
+.dashboard-section .section-desc { color: var(--text-light); }
 
-.jurimetria-grid {
+.dashboard-live-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.6);
+}
+
+.live-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--verde);
+    animation: livePulse 2s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(134,230,0,0.4); }
+    50% { opacity: 0.6; box-shadow: 0 0 0 6px rgba(134,230,0,0); }
+}
+
+/* Dashboard Tabs */
+.dashboard-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.dashboard-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.04);
+    color: rgba(255,255,255,0.65);
+    font-size: 0.88rem;
+    font-weight: 600;
+    font-family: var(--font-main);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.dashboard-tab:hover {
+    background: rgba(255,255,255,0.08);
+    color: var(--white);
+    border-color: rgba(255,255,255,0.2);
+}
+
+.dashboard-tab.active {
+    background: var(--verde);
+    color: var(--azul);
+    border-color: var(--verde);
+}
+
+.dashboard-tab svg {
+    flex-shrink: 0;
+}
+
+/* Dashboard Panels */
+.dashboard-panel {
+    display: none;
+}
+
+.dashboard-panel.active {
+    display: block;
+    animation: fadeInPanel 0.35s ease-out;
+}
+
+@keyframes fadeInPanel {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Panel Grid — Featured layout (embed + links) */
+.panel-grid-featured {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/* Embed Card */
+.panel-embed-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.embed-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.embed-header h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.embed-external {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--verde);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.embed-external:hover {
+    color: var(--white);
+}
+
+.embed-frame {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+.embed-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.embed-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15,41,68,0.92);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    padding: 24px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.embed-frame:hover .embed-overlay,
+.embed-frame:focus-within .embed-overlay {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.embed-overlay p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    max-width: 320px;
+    line-height: 1.5;
+}
+
+.btn-green {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border-radius: 50px;
+    background: var(--verde);
+    color: var(--azul);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.btn-green:hover {
+    background: var(--verde-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(134,230,0,0.3);
+}
+
+/* Links Column */
+.panel-links-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dash-link-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.dash-link-card:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(134,230,0,0.25);
+    transform: translateX(4px);
+}
+
+.dash-link-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.dash-link-card h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 2px;
+}
+
+.dash-link-card p {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.4;
+}
+
+/* ==================== CASES KIAA ==================== */
+.cases-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.jurimetria-card {
-    background: rgba(255,255,255,0.04);
+.case-card {
+    position: relative;
+    background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.08);
+    border-left: 4px solid var(--verde);
     border-radius: var(--radius-lg);
-    padding: 28px;
+    padding: 28px 24px;
     transition: var(--transition-medium);
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
 }
 
-.jurimetria-card:hover {
-    background: rgba(255,255,255,0.08);
-    border-color: rgba(134,230,0,0.2);
+.case-card:hover {
+    background: rgba(255,255,255,0.1);
     transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
 }
 
-.jurimetria-icon {
-    width: 52px;
-    height: 52px;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
+.case-card-featured {
+    grid-column: span 2;
 }
 
-.jurimetria-card h3 {
-    font-size: 0.95rem;
+.case-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 12px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+}
+
+.case-badge-success {
+    background: rgba(134,230,0,0.15);
+    color: var(--verde);
+}
+
+.case-card h3 {
+    font-size: 1rem;
     font-weight: 700;
     color: var(--white);
     margin-bottom: 8px;
     line-height: 1.35;
 }
 
-.jurimetria-card p {
-    font-size: 0.82rem;
-    color: rgba(255,255,255,0.55);
-    line-height: 1.55;
-    flex: 1;
-    margin-bottom: 16px;
+.case-area {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--verde);
+    margin-bottom: 10px;
 }
 
-.jurimetria-link {
+.case-desc {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.6;
+    margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.case-result {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.case-result-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(255,255,255,0.4);
+}
+
+.case-result-value {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--verde);
+}
+
+/* ==================== INFORMATIVOS SETORIAIS ==================== */
+.setoriais-section {
+    background: var(--off-white);
+    padding: 100px 0;
+}
+
+.setoriais-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.setorial-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 50px;
+    border: 1px solid var(--gray-100);
+    background: var(--white);
+    color: var(--text);
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: var(--font-main);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.setorial-tab:hover {
+    border-color: var(--verde);
+    color: var(--verde-dark);
+}
+
+.setorial-tab.active {
+    background: var(--verde);
+    color: var(--azul);
+    border-color: var(--verde);
+}
+
+.setorial-tab svg {
+    flex-shrink: 0;
+}
+
+/* Setorial Panels */
+.setorial-panel {
+    display: none;
+}
+
+.setorial-panel.active {
+    display: block;
+    animation: fadeInPanel 0.35s ease-out;
+}
+
+.setorial-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.setorial-source-card {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    transition: var(--transition-fast);
+}
+
+.setorial-source-card:hover {
+    border-color: var(--verde);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.setorial-gov {
+    border-left: 4px solid var(--verde);
+}
+
+.setorial-source-card h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--azul);
+    margin-bottom: 8px;
+}
+
+.setorial-source-card p {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    line-height: 1.55;
+    margin-bottom: 14px;
+}
+
+.setorial-source-card a {
     display: inline-flex;
     align-items: center;
     gap: 6px;
     font-size: 0.8rem;
     font-weight: 600;
-    color: var(--verde);
-}
-
-.jurimetria-card:hover .jurimetria-link { gap: 10px; }
-
-/* ==================== FONTES JURÍDICAS ==================== */
-.fontes-section {
-    background: var(--off-white);
-    padding: 80px 0;
-}
-
-.fontes-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-}
-
-.fonte-group h4 {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--azul);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 16px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid var(--verde);
-    display: inline-block;
-}
-
-.fonte-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.fonte-item {
-    display: inline-block;
-    padding: 8px 18px;
-    border-radius: 50px;
-    border: 1px solid var(--gray-100);
-    font-size: 0.82rem;
-    font-weight: 600;
-    color: var(--azul);
-    background: var(--white);
+    color: var(--verde-dark);
     text-decoration: none;
     transition: var(--transition-fast);
 }
 
-.fonte-item:hover {
-    border-color: var(--verde);
-    color: var(--verde-dark);
-    box-shadow: var(--shadow-sm);
+.setorial-source-card a:hover {
+    color: var(--verde);
+    gap: 10px;
 }
 
-.fonte-gov { border-color: #2ECC71; color: #1a8a4a; }
-.fonte-gov:hover { background: rgba(46,204,113,0.08); }
-.fonte-biz { border-color: #3498DB; color: #1a6b9e; }
-.fonte-biz:hover { background: rgba(52,152,219,0.08); }
-
+/* ==================== DASHBOARD & SETORIAIS RESPONSIVE ==================== */
 @media (max-width: 1024px) {
-    .jurimetria-grid { grid-template-columns: repeat(2, 1fr); }
-    .fontes-grid { grid-template-columns: repeat(2, 1fr); }
+    .panel-grid-featured {
+        grid-template-columns: 1fr;
+    }
+    .embed-frame {
+        height: 350px;
+    }
+    .cases-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .case-card-featured {
+        grid-column: span 2;
+    }
+    .setorial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
-    .jurimetria-grid { grid-template-columns: 1fr; }
-    .fontes-grid { grid-template-columns: 1fr; }
+    .dashboard-tabs,
+    .setoriais-tabs {
+        gap: 6px;
+    }
+    .dashboard-tab,
+    .setorial-tab {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+    .panel-grid-featured {
+        grid-template-columns: 1fr;
+    }
+    .embed-frame {
+        height: 280px;
+    }
+    .cases-grid {
+        grid-template-columns: 1fr;
+    }
+    .case-card-featured {
+        grid-column: span 1;
+    }
+    .setorial-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ==================== NEWSLETTER ==================== */

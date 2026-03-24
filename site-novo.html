@@ -690,99 +690,333 @@
         </div>
     </section>
 
-    <!-- ==================== JURIMETRIA E OBSERVATÓRIO ==================== -->
-    <section id="jurimetria" class="section jurimetria-section">
+    <!-- ==================== DASHBOARD KIAA ==================== -->
+    <section id="dashboard" class="section dashboard-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Jurimetria e Observatório</span>
-                <h2 class="section-title">Dados do <span class="text-green">Judiciário</span> em tempo real</h2>
-                <p class="section-desc">Acompanhe estatísticas judiciais, multas ambientais e indicadores do setor produtivo em Roraima.</p>
+                <span class="section-tag">Dashboard KIAA</span>
+                <h2 class="section-title">Observatório <span class="text-green">em tempo real</span></h2>
+                <p class="section-desc">Dados públicos, jurimetria e monitoramento ambiental para tomada de decisão estratégica.</p>
+                <div class="dashboard-live-indicator">
+                    <span class="live-dot"></span>
+                    Atualizado diariamente às 04h
+                </div>
             </div>
-            <div class="jurimetria-grid">
-                <a href="https://smartlabbr.org/sst" target="_blank" rel="noopener" class="jurimetria-card">
-                    <div class="jurimetria-icon" style="background:rgba(231,76,60,0.1);color:#E74C3C;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 9v2m0 4h.01M5.07 19H18.93a2 2 0 001.72-2.98l-6.93-12a2 2 0 00-3.44 0l-6.93 12A2 2 0 005.07 19z"/></svg>
+
+            <!-- Dashboard Tabs -->
+            <div class="dashboard-tabs">
+                <button class="dashboard-tab active" data-panel="ambiental">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    Ambiental
+                </button>
+                <button class="dashboard-tab" data-panel="trabalhista">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    Trabalhista
+                </button>
+                <button class="dashboard-tab" data-panel="judiciario">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+                    Judiciário
+                </button>
+                <button class="dashboard-tab" data-panel="cases">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    Cases KIAA
+                </button>
+            </div>
+
+            <!-- Panel: Ambiental -->
+            <div class="dashboard-panel active" id="panel-ambiental">
+                <div class="panel-grid panel-grid-featured">
+                    <div class="panel-embed-card">
+                        <div class="embed-header">
+                            <h3>MapBiomas — Cobertura e Desmatamento</h3>
+                            <a href="https://plataforma.brasil.mapbiomas.org/" target="_blank" class="embed-external">Abrir em tela cheia <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+                        </div>
+                        <div class="embed-frame">
+                            <iframe src="https://plataforma.brasil.mapbiomas.org/" title="MapBiomas - Cobertura e Desmatamento" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+                            <div class="embed-overlay">
+                                <p>Mapa interativo de cobertura do solo e desmatamento na Amazônia</p>
+                                <a href="https://plataforma.brasil.mapbiomas.org/" target="_blank" class="btn-green">Acessar MapBiomas</a>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Observatório de Segurança do Trabalho</h3>
-                    <p>Acidentes de trabalho, afastamentos e óbitos no setor produtivo. Dados do SmartLab/MPT.</p>
-                    <span class="jurimetria-link">Acessar painel <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
-                </a>
-                <a href="https://dadosabertos.ibama.gov.br/" target="_blank" rel="noopener" class="jurimetria-card">
-                    <div class="jurimetria-icon" style="background:rgba(46,204,113,0.1);color:#2ECC71;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <div class="panel-links-col">
+                        <a href="https://alerta.mapbiomas.org/" target="_blank" class="dash-link-card">
+                            <div class="dash-link-icon" style="background:rgba(231,76,60,0.1);color:#E74C3C;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v2m0 4h.01M5.07 19H18.93a2 2 0 001.72-2.98l-6.93-12a2 2 0 00-3.44 0l-6.93 12A2 2 0 005.07 19z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Alertas de Desmatamento</h4>
+                                <p>MapBiomas Alerta — Alertas validados semanalmente</p>
+                            </div>
+                        </a>
+                        <a href="https://dadosabertos.ibama.gov.br/" target="_blank" class="dash-link-card">
+                            <div class="dash-link-icon" style="background:rgba(46,204,113,0.1);color:#2ECC71;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Dados Abertos IBAMA</h4>
+                                <p>Autuações, embargos e multas ambientais em Roraima</p>
+                            </div>
+                        </a>
+                        <a href="https://autuacoes.ibama.gov.br/" target="_blank" class="dash-link-card">
+                            <div class="dash-link-icon" style="background:rgba(230,126,34,0.1);color:#E67E22;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Consulta de Autuações</h4>
+                                <p>Pesquise autos de infração e áreas embargadas</p>
+                            </div>
+                        </a>
+                        <a href="https://siggarr.femarh.rr.gov.br/" target="_blank" class="dash-link-card">
+                            <div class="dash-link-icon" style="background:rgba(52,152,219,0.1);color:#3498DB;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                            </div>
+                            <div>
+                                <h4>SIGARR — FEMARH</h4>
+                                <p>Sistema de Gestão Ambiental de Roraima</p>
+                            </div>
+                        </a>
+                        <a href="https://dadosambientais.com.br/" target="_blank" class="dash-link-card">
+                            <div class="dash-link-icon" style="background:rgba(134,230,0,0.1);color:#86E600;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Painel Ambiental</h4>
+                                <p>Monitoramento em tempo real de infrações na Amazônia</p>
+                            </div>
+                        </a>
                     </div>
-                    <h3>Multas Ambientais — IBAMA</h3>
-                    <p>Autuações, embargos e infrações ambientais em Roraima. Dados abertos do IBAMA.</p>
-                    <span class="jurimetria-link">Acessar dados <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
-                </a>
-                <a href="https://painel-estatistica.stg.cloud.cnj.jus.br/" target="_blank" rel="noopener" class="jurimetria-card">
-                    <div class="jurimetria-icon" style="background:rgba(52,152,219,0.1);color:#3498DB;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                </div>
+            </div>
+
+            <!-- Panel: Trabalhista -->
+            <div class="dashboard-panel" id="panel-trabalhista">
+                <div class="panel-grid panel-grid-featured">
+                    <div class="panel-embed-card">
+                        <div class="embed-header">
+                            <h3>Observatório de Segurança e Saúde no Trabalho</h3>
+                            <a href="https://smartlabbr.org/sst" target="_blank" class="embed-external">Abrir em tela cheia <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+                        </div>
+                        <div class="embed-frame">
+                            <iframe src="https://smartlabbr.org/sst" title="SmartLab - Observatório SST" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+                            <div class="embed-overlay">
+                                <p>Painel interativo de acidentes de trabalho, afastamentos e óbitos</p>
+                                <a href="https://smartlabbr.org/sst" target="_blank" class="btn-green">Acessar SmartLab</a>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Estatísticas do Judiciário — CNJ</h3>
-                    <p>Volume processual, tempo médio de tramitação e produtividade dos tribunais brasileiros.</p>
-                    <span class="jurimetria-link">Acessar painel <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
-                </a>
-                <a href="https://dados.gov.br/dados/conjuntos-dados/quantidade-de-multas-ambientais-distribuidas-por-bens-tutelados" target="_blank" rel="noopener" class="jurimetria-card">
-                    <div class="jurimetria-icon" style="background:rgba(155,89,182,0.1);color:#9B59B6;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    <div class="panel-links-col">
+                        <a href="https://smartlabbr.org/sst/localidade/1400100" target="_blank" class="dash-link-card">
+                            <div class="dash-link-icon" style="background:rgba(231,76,60,0.1);color:#E74C3C;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Dados de Roraima</h4>
+                                <p>Acidentes de trabalho específicos do estado de Roraima</p>
+                            </div>
+                        </a>
+                        <a href="https://smartlabbr.org/trabalhodecente" target="_blank" class="dash-link-card">
+                            <div class="dash-link-icon" style="background:rgba(52,152,219,0.1);color:#3498DB;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Trabalho Decente</h4>
+                                <p>Indicadores de trabalho decente por município</p>
+                            </div>
+                        </a>
                     </div>
-                    <h3>Dados Abertos — Portal Gov.br</h3>
-                    <p>Multas ambientais por bens tutelados, fiscalizações e dados transparentes do governo federal.</p>
-                    <span class="jurimetria-link">Acessar portal <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
-                </a>
-                <a href="https://autuacoes.ibama.gov.br/" target="_blank" rel="noopener" class="jurimetria-card">
-                    <div class="jurimetria-icon" style="background:rgba(230,126,34,0.1);color:#E67E22;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                </div>
+            </div>
+
+            <!-- Panel: Judiciário -->
+            <div class="dashboard-panel" id="panel-judiciario">
+                <div class="panel-grid panel-grid-featured">
+                    <div class="panel-embed-card">
+                        <div class="embed-header">
+                            <h3>Estatísticas do Judiciário — CNJ</h3>
+                            <a href="https://painel-estatistica.stg.cloud.cnj.jus.br/" target="_blank" class="embed-external">Abrir em tela cheia <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+                        </div>
+                        <div class="embed-frame">
+                            <iframe src="https://painel-estatistica.stg.cloud.cnj.jus.br/" title="CNJ - Painel de Estatísticas" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+                            <div class="embed-overlay">
+                                <p>Volume processual, tempo de tramitação e produtividade dos tribunais</p>
+                                <a href="https://painel-estatistica.stg.cloud.cnj.jus.br/" target="_blank" class="btn-green">Acessar Painel CNJ</a>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Consulta de Autuações — IBAMA</h3>
-                    <p>Pesquise autos de infração, áreas embargadas e situação de processos ambientais.</p>
-                    <span class="jurimetria-link">Consultar <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
-                </a>
-                <a href="https://dadosambientais.com.br/" target="_blank" rel="noopener" class="jurimetria-card">
-                    <div class="jurimetria-icon" style="background:rgba(134,230,0,0.1);color:#86E600;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/></svg>
+                    <div class="panel-links-col">
+                        <a href="https://dados.gov.br/dados/conjuntos-dados/quantidade-de-multas-ambientais-distribuidas-por-bens-tutelados" target="_blank" class="dash-link-card">
+                            <div class="dash-link-icon" style="background:rgba(155,89,182,0.1);color:#9B59B6;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Dados Abertos Gov.br</h4>
+                                <p>Multas ambientais por bens tutelados e fiscalizações</p>
+                            </div>
+                        </a>
                     </div>
-                    <h3>Painel Ambiental Interativo</h3>
-                    <p>Monitoramento em tempo real de infrações, embargos e desmatamento na Amazônia.</p>
-                    <span class="jurimetria-link">Acessar painel <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
-                </a>
+                </div>
+            </div>
+
+            <!-- Panel: Cases KIAA -->
+            <div class="dashboard-panel" id="panel-cases">
+                <div class="cases-grid">
+                    <div class="case-card case-card-featured">
+                        <div class="case-badge case-badge-success">Caso de sucesso</div>
+                        <h3>Defesa em Auto de Infração Ambiental — R$ 2,8 milhões</h3>
+                        <p class="case-area">Direito Ambiental | Roraima</p>
+                        <p class="case-desc">Proprietário rural autuado pelo IBAMA por suposto desmatamento irregular. Após análise técnica detalhada e defesa administrativa, obtivemos a anulação integral do auto de infração, preservando o patrimônio do cliente.</p>
+                        <div class="case-result">
+                            <span class="case-result-label">Resultado</span>
+                            <span class="case-result-value">Auto de infração anulado integralmente</span>
+                        </div>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-badge case-badge-success">Caso de sucesso</div>
+                        <h3>Regularização Fundiária — 12.000 hectares</h3>
+                        <p class="case-area">Direito Agrário | Roraima</p>
+                        <p class="case-desc">Assessoria completa na regularização de propriedade rural com pendências no INCRA e sobreposição com área indígena. Solução negociada com preservação integral da posse.</p>
+                        <div class="case-result">
+                            <span class="case-result-label">Resultado</span>
+                            <span class="case-result-value">Propriedade regularizada e titulada</span>
+                        </div>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-badge case-badge-success">Caso de sucesso</div>
+                        <h3>Defesa Trabalhista — Reclamação de R$ 450 mil</h3>
+                        <p class="case-area">Direito Trabalhista | Roraima</p>
+                        <p class="case-desc">Empresa do agronegócio acionada com pedido de danos morais e materiais. Defesa estratégica resultou em acordo favorável com redução superior a 80% do valor pretendido.</p>
+                        <div class="case-result">
+                            <span class="case-result-label">Resultado</span>
+                            <span class="case-result-value">Acordo com redução de 82% do valor</span>
+                        </div>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-badge case-badge-success">Caso de sucesso</div>
+                        <h3>Licenciamento Ambiental — PCH no Rio Branco</h3>
+                        <p class="case-area">Direito Ambiental | Roraima</p>
+                        <p class="case-desc">Assessoria jurídica completa no processo de licenciamento ambiental para implantação de Pequena Central Hidrelétrica, incluindo EIA/RIMA e audiências públicas.</p>
+                        <div class="case-result">
+                            <span class="case-result-label">Resultado</span>
+                            <span class="case-result-value">Licenças obtidas dentro do prazo</span>
+                        </div>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-badge case-badge-success">Caso de sucesso</div>
+                        <h3>Mandado de Segurança — Embargo Ilegal</h3>
+                        <p class="case-area">Direito Administrativo | Roraima</p>
+                        <p class="case-desc">Produtor rural teve propriedade embargada sem notificação prévia. Impetração de mandado de segurança com liminar concedida em 48 horas, liberando a atividade produtiva.</p>
+                        <div class="case-result">
+                            <span class="case-result-label">Resultado</span>
+                            <span class="case-result-value">Liminar em 48h — embargo suspenso</span>
+                        </div>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-badge case-badge-success">Caso de sucesso</div>
+                        <h3>Recuperação de Crédito — R$ 1,2 milhão</h3>
+                        <p class="case-area">Direito Empresarial | Roraima</p>
+                        <p class="case-desc">Empresa credora com título prescrevendo. Ação de execução com penhora online e bloqueio de ativos, resultando na recuperação integral do crédito em 6 meses.</p>
+                        <div class="case-result">
+                            <span class="case-result-label">Resultado</span>
+                            <span class="case-result-value">Crédito recuperado integralmente</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== FONTES JURÍDICAS ==================== -->
-    <section id="fontes" class="section fontes-section">
+    <!-- ==================== INFORMATIVOS SEGMENTADOS ==================== -->
+    <section id="informativos-setoriais" class="section setoriais-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Fontes Jurídicas</span>
-                <h2 class="section-title">Nossas <span class="text-green">referências</span></h2>
-                <p class="section-desc">Acompanhamos as principais fontes de informação jurídica do Brasil para oferecer a melhor assessoria.</p>
+                <span class="section-tag">Informativos Setoriais</span>
+                <h2 class="section-title">Inteligência <span class="text-green">setorial</span></h2>
+                <p class="section-desc">Informações estratégicas para os setores que atendemos: varejo, meio ambiente e empresários.</p>
             </div>
-            <div class="fontes-grid">
-                <div class="fonte-group">
-                    <h4>Notícias Jurídicas</h4>
-                    <div class="fonte-items">
-                        <a href="https://www.migalhas.com.br" target="_blank" rel="noopener" class="fonte-item">Migalhas</a>
-                        <a href="https://www.conjur.com.br" target="_blank" rel="noopener" class="fonte-item">ConJur</a>
-                        <a href="https://www.jota.info" target="_blank" rel="noopener" class="fonte-item">JOTA</a>
-                        <a href="https://www.jusbrasil.com.br" target="_blank" rel="noopener" class="fonte-item">JusBrasil</a>
+            <div class="setoriais-tabs">
+                <button class="setorial-tab active" data-setorial="varejo">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                    Varejo e Consumo
+                </button>
+                <button class="setorial-tab" data-setorial="ambiental">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    Meio Ambiente
+                </button>
+                <button class="setorial-tab" data-setorial="empresario">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    Empresário
+                </button>
+            </div>
+            <div class="setorial-panel active" id="setorial-varejo">
+                <div class="setorial-grid">
+                    <div class="setorial-source-card">
+                        <h4>ABRAS — Clipping Economia</h4>
+                        <p>Notícias econômicas do varejo brasileiro, índices de consumo e tendências do setor supermercadista.</p>
+                        <a href="https://www.abras.com.br/clipping/economia" target="_blank">Acessar clipping</a>
+                    </div>
+                    <div class="setorial-source-card">
+                        <h4>ABRAS — Clipping Jurídico</h4>
+                        <p>Legislação trabalhista, tributária e regulatória aplicável ao varejo e comércio.</p>
+                        <a href="https://www.abras.com.br/clipping/juridico" target="_blank">Acessar clipping</a>
+                    </div>
+                    <div class="setorial-source-card">
+                        <h4>ABRAS — Sustentabilidade</h4>
+                        <p>Boas práticas ambientais, logística reversa e compliance ESG no varejo.</p>
+                        <a href="https://www.abras.com.br/clipping/sustentabilidade" target="_blank">Acessar clipping</a>
+                    </div>
+                    <div class="setorial-source-card">
+                        <h4>Econodata — Empresas</h4>
+                        <p>Dados de empresas, prospects e inteligência comercial para o setor produtivo.</p>
+                        <a href="https://www.econodata.com.br/" target="_blank">Acessar plataforma</a>
                     </div>
                 </div>
-                <div class="fonte-group">
-                    <h4>Órgãos Ambientais</h4>
-                    <div class="fonte-items">
-                        <a href="https://www.gov.br/ibama/" target="_blank" rel="noopener" class="fonte-item fonte-gov">IBAMA</a>
-                        <a href="https://femarh.rr.gov.br/" target="_blank" rel="noopener" class="fonte-item fonte-gov">FEMARH</a>
-                        <a href="https://www.gov.br/icmbio/" target="_blank" rel="noopener" class="fonte-item fonte-gov">ICMBio</a>
-                        <a href="https://www.econodata.com.br/" target="_blank" rel="noopener" class="fonte-item fonte-biz">Econodata</a>
+            </div>
+            <div class="setorial-panel" id="setorial-ambiental">
+                <div class="setorial-grid">
+                    <div class="setorial-source-card setorial-gov">
+                        <h4>IBAMA — Notícias</h4>
+                        <p>Fiscalizações, normas e atualizações do principal órgão ambiental federal.</p>
+                        <a href="https://www.gov.br/ibama/pt-br/assuntos/noticias" target="_blank">Acessar</a>
+                    </div>
+                    <div class="setorial-source-card setorial-gov">
+                        <h4>FEMARH — Notícias</h4>
+                        <p>Licenciamento, monitoramento e regulação ambiental em Roraima.</p>
+                        <a href="https://femarh.rr.gov.br/noticias/" target="_blank">Acessar</a>
+                    </div>
+                    <div class="setorial-source-card setorial-gov">
+                        <h4>ICMBio — Conservação</h4>
+                        <p>Unidades de conservação, biodiversidade e manejo na Amazônia.</p>
+                        <a href="https://www.gov.br/icmbio/" target="_blank">Acessar</a>
+                    </div>
+                    <div class="setorial-source-card">
+                        <h4>MapBiomas — Alertas</h4>
+                        <p>Alertas semanais validados de desmatamento em todos os biomas.</p>
+                        <a href="https://alerta.mapbiomas.org/" target="_blank">Acessar</a>
                     </div>
                 </div>
-                <div class="fonte-group">
-                    <h4>Tributário e Empresarial</h4>
-                    <div class="fonte-items">
-                        <a href="https://www.ibet.com.br/notus/" target="_blank" rel="noopener" class="fonte-item">NOTUS/IBET</a>
-                        <a href="https://baptistaluz.com.br/newsletter-janeiro-2026/" target="_blank" rel="noopener" class="fonte-item">Baptista Luz</a>
+            </div>
+            <div class="setorial-panel" id="setorial-empresario">
+                <div class="setorial-grid">
+                    <div class="setorial-source-card">
+                        <h4>Migalhas</h4>
+                        <p>Clipping diário de notícias jurídicas, decisões e análises para empresários.</p>
+                        <a href="https://www.migalhas.com.br" target="_blank">Acessar</a>
+                    </div>
+                    <div class="setorial-source-card">
+                        <h4>JOTA — Tributário</h4>
+                        <p>Reforma tributária, IBS/CBS e impactos para o setor produtivo.</p>
+                        <a href="https://www.jota.info" target="_blank">Acessar</a>
+                    </div>
+                    <div class="setorial-source-card">
+                        <h4>ConJur — Jurisprudência</h4>
+                        <p>Decisões dos tribunais superiores e análises de impacto para negócios.</p>
+                        <a href="https://www.conjur.com.br" target="_blank">Acessar</a>
+                    </div>
+                    <div class="setorial-source-card">
+                        <h4>NOTUS/IBET — Tributário</h4>
+                        <p>Informativo semanal gratuito com jurisprudência e pareceres tributários.</p>
+                        <a href="https://www.ibet.com.br/notus/" target="_blank">Acessar</a>
                     </div>
                 </div>
             </div>
