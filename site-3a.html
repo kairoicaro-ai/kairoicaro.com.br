@@ -200,42 +200,116 @@
                             <div class="map-header">
                                 <span class="map-badge">Presença Nacional</span>
                             </div>
-                            <svg viewBox="0 0 600 680" class="brazil-svg" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Active states (green) -->
-                                <path class="state-active state-hq" d="M175,85 L190,55 L210,40 L230,35 L250,40 L265,55 L268,75 L262,95 L240,100 L215,98 L195,100 Z" data-state="RR"><title>Roraima (Sede)</title></path>
-                                <path class="state-active" d="M85,165 L115,130 L150,115 L185,108 L215,98 L240,100 L262,95 L280,100 L295,110 L300,130 L305,155 L300,180 L290,205 L275,225 L255,235 L235,245 L215,240 L195,245 L175,240 L155,230 L135,218 L115,205 L100,190 Z" data-state="AM"><title>Amazonas</title></path>
-                                <path class="state-active" d="M50,195 L75,180 L100,190 L115,205 L105,215 L90,220 L75,218 L58,212 Z" data-state="AC"><title>Acre</title></path>
-                                <path class="state-active" d="M295,110 L315,100 L335,95 L350,105 L360,125 L365,150 L380,165 L405,155 L430,148 L455,145 L475,150 L490,165 L495,185 L485,200 L470,210 L450,215 L430,225 L410,230 L390,235 L370,230 L355,222 L335,235 L315,242 L300,248 L310,230 L320,210 L325,190 L315,170 L305,155 L300,130 Z" data-state="PA"><title>Pará</title></path>
-                                <path class="state-active" d="M245,240 L265,245 L280,250 L295,248 L310,230 L325,245 L330,265 L325,285 L310,298 L290,302 L270,305 L250,300 L238,290 L232,275 Z" data-state="MT"><title>Mato Grosso</title></path>
-                                <path class="state-active" d="M310,298 L325,285 L330,265 L345,275 L360,270 L375,265 L385,275 L390,290 L388,310 L380,330 L368,345 L350,350 L335,345 L320,335 L310,320 Z" data-state="GO"><title>Goiás</title></path>
-                                <path class="state-active" d="M388,310 L400,305 L408,312 L405,322 L395,325 L388,318 Z" data-state="DF"><title>Distrito Federal</title></path>
-                                <path class="state-active" d="M250,300 L270,305 L290,302 L310,298 L310,320 L320,335 L315,350 L305,365 L290,375 L275,378 L260,372 L248,360 L240,345 L238,325 Z" data-state="MS"><title>Mato Grosso do Sul</title></path>
-                                <path class="state-active" d="M365,345 L380,338 L390,330 L400,322 L415,325 L430,330 L445,325 L460,320 L470,330 L475,348 L468,365 L455,378 L440,385 L425,380 L412,370 L400,358 Z" data-state="MG"><title>Minas Gerais</title></path>
-                                <path class="state-active" d="M305,365 L320,358 L335,350 L350,350 L365,345 L370,358 L375,370 L370,385 L360,395 L345,400 L330,395 L318,385 Z" data-state="SP"><title>São Paulo</title></path>
-                                <path class="state-active" d="M330,410 L345,405 L360,400 L370,408 L368,420 L358,430 L345,435 L332,430 L325,420 Z" data-state="SC"><title>Santa Catarina</title></path>
-                                <path class="state-active" d="M515,198 L528,195 L540,200 L545,212 L540,222 L528,225 L518,218 Z" data-state="PB"><title>Paraíba</title></path>
-
-                                <!-- Inactive states (dark) -->
+                            <svg viewBox="0 0 700 720" class="brazil-svg" xmlns="http://www.w3.org/2000/svg">
+                                <!-- ===== NORTE (green #2ECC71) ===== -->
+                                <path class="state-active state-norte state-hq" d="M175,85 L190,55 L210,40 L230,35 L250,40 L265,55 L268,75 L262,95 L240,100 L215,98 L195,100 Z" data-state="RR"><title>Roraima (Sede)</title></path>
+                                <path class="state-active state-norte" d="M85,165 L115,130 L150,115 L185,108 L215,98 L240,100 L262,95 L280,100 L295,110 L300,130 L305,155 L300,180 L290,205 L275,225 L255,235 L235,245 L215,240 L195,245 L175,240 L155,230 L135,218 L115,205 L100,190 Z" data-state="AM"><title>Amazonas</title></path>
+                                <path class="state-active state-norte" d="M50,195 L75,180 L100,190 L115,205 L105,215 L90,220 L75,218 L58,212 Z" data-state="AC"><title>Acre</title></path>
+                                <path class="state-active state-norte" d="M295,110 L315,100 L335,95 L350,105 L360,125 L365,150 L380,165 L405,155 L430,148 L455,145 L475,150 L490,165 L495,185 L485,200 L470,210 L450,215 L430,225 L410,230 L390,235 L370,230 L355,222 L335,235 L315,242 L300,248 L310,230 L320,210 L325,190 L315,170 L305,155 L300,130 Z" data-state="PA"><title>Pará</title></path>
+                                <!-- Inactive Norte -->
                                 <path class="state-inactive" d="M350,50 L365,40 L385,38 L398,48 L405,65 L408,88 L402,108 L390,122 L375,130 L362,128 L350,118 L345,98 L348,75 Z" data-state="AP"><title>Amapá</title></path>
-                                <path class="state-inactive" d="M410,230 L430,225 L450,215 L460,228 L465,248 L462,275 L458,300 L450,318 L438,330 L425,328 L415,315 L410,295 L405,270 Z" data-state="TO"><title>Tocantins</title></path>
                                 <path class="state-inactive" d="M232,275 L245,260 L255,235 L270,240 L280,250 L275,270 L265,285 L250,292 L240,288 Z" data-state="RO"><title>Rondônia</title></path>
+                                <path class="state-inactive" d="M410,230 L430,225 L450,215 L460,228 L465,248 L462,275 L458,300 L450,318 L438,330 L425,328 L415,315 L410,295 L405,270 Z" data-state="TO"><title>Tocantins</title></path>
+
+                                <!-- ===== NORDESTE (orange #E67E22) ===== -->
+                                <path class="state-active state-nordeste" d="M515,198 L528,195 L540,200 L545,212 L540,222 L528,225 L518,218 Z" data-state="PB"><title>Paraíba</title></path>
+                                <!-- Inactive Nordeste -->
                                 <path class="state-inactive" d="M455,145 L475,150 L490,165 L500,155 L520,148 L540,145 L555,150 L560,168 L555,185 L545,195 L530,200 L515,198 L500,202 L485,210 L462,218 L460,200 L465,180 L470,160 Z" data-state="MA"><title>Maranhão</title></path>
                                 <path class="state-inactive" d="M540,195 L550,185 L560,168 L575,175 L588,188 L592,208 L588,230 L580,245 L568,252 L555,248 L545,238 L538,222 L535,208 Z" data-state="PI"><title>Piauí</title></path>
                                 <path class="state-inactive" d="M575,175 L590,168 L608,165 L625,170 L635,182 L632,198 L622,212 L608,218 L595,215 L588,208 L588,188 Z" data-state="CE"><title>Ceará</title></path>
-                                <path class="state-inactive" d="M635,182 L648,180 L660,185 L665,195 L658,205 L645,208 L635,198 L632,190 Z" data-state="RN"><title>Rio G. do Norte</title></path>
+                                <path class="state-inactive" d="M635,182 L648,180 L660,185 L665,195 L658,205 L645,208 L635,198 L632,190 Z" data-state="RN"><title>Rio Grande do Norte</title></path>
                                 <path class="state-inactive" d="M580,245 L595,240 L610,235 L622,225 L635,228 L650,232 L660,242 L655,252 L640,258 L620,260 L600,258 L585,255 Z" data-state="PE"><title>Pernambuco</title></path>
                                 <path class="state-inactive" d="M655,252 L665,248 L672,255 L670,265 L662,268 L655,262 Z" data-state="AL"><title>Alagoas</title></path>
                                 <path class="state-inactive" d="M648,272 L658,268 L665,275 L660,285 L650,282 Z" data-state="SE"><title>Sergipe</title></path>
                                 <path class="state-inactive" d="M530,260 L550,248 L568,252 L580,245 L585,255 L600,258 L620,260 L640,258 L648,272 L650,290 L642,315 L628,340 L610,360 L590,370 L570,368 L552,355 L540,335 L532,310 L528,280 Z" data-state="BA"><title>Bahia</title></path>
+
+                                <!-- ===== CENTRO-OESTE (orange #E67E22) ===== -->
+                                <path class="state-active state-centro-oeste" d="M245,240 L265,245 L280,250 L295,248 L310,230 L325,245 L330,265 L325,285 L310,298 L290,302 L270,305 L250,300 L238,290 L232,275 Z" data-state="MT"><title>Mato Grosso</title></path>
+                                <path class="state-active state-centro-oeste" d="M250,300 L270,305 L290,302 L310,298 L310,320 L320,335 L315,350 L305,365 L290,375 L275,378 L260,372 L248,360 L240,345 L238,325 Z" data-state="MS"><title>Mato Grosso do Sul</title></path>
+                                <path class="state-active state-centro-oeste" d="M310,298 L325,285 L330,265 L345,275 L360,270 L375,265 L385,275 L390,290 L388,310 L380,330 L368,345 L350,350 L335,345 L320,335 L310,320 Z" data-state="GO"><title>Goiás</title></path>
+                                <path class="state-active state-centro-oeste" d="M388,310 L400,305 L408,312 L405,322 L395,325 L388,318 Z" data-state="DF"><title>Distrito Federal</title></path>
+
+                                <!-- ===== SUDESTE (blue #3498DB) ===== -->
+                                <path class="state-active state-sudeste" d="M365,345 L380,338 L390,330 L400,322 L415,325 L430,330 L445,325 L460,320 L470,330 L475,348 L468,365 L455,378 L440,385 L425,380 L412,370 L400,358 Z" data-state="MG"><title>Minas Gerais</title></path>
+                                <path class="state-active state-sudeste" d="M305,365 L320,358 L335,350 L350,350 L365,345 L370,358 L375,370 L370,385 L360,395 L345,400 L330,395 L318,385 Z" data-state="SP"><title>São Paulo</title></path>
+                                <!-- Inactive Sudeste -->
                                 <path class="state-inactive" d="M475,348 L490,342 L500,350 L505,365 L498,378 L488,382 L478,375 Z" data-state="ES"><title>Espírito Santo</title></path>
                                 <path class="state-inactive" d="M445,385 L460,378 L475,375 L488,382 L492,395 L485,405 L472,410 L458,405 Z" data-state="RJ"><title>Rio de Janeiro</title></path>
+
+                                <!-- ===== SUL (orange #E67E22) ===== -->
+                                <path class="state-active state-sul" d="M330,410 L345,405 L360,400 L370,408 L368,420 L358,430 L345,435 L332,430 L325,420 Z" data-state="SC"><title>Santa Catarina</title></path>
+                                <!-- Inactive Sul -->
                                 <path class="state-inactive" d="M318,385 L330,395 L345,400 L358,398 L368,405 L365,418 L355,428 L340,432 L325,428 L315,418 Z" data-state="PR"><title>Paraná</title></path>
-                                <path class="state-inactive" d="M305,440 L318,432 L328,435 L340,440 L352,442 L358,455 L352,472 L342,488 L328,498 L315,502 L305,495 L298,478 L295,460 Z" data-state="RS"><title>Rio G. do Sul</title></path>
+                                <path class="state-inactive" d="M305,440 L318,432 L328,435 L340,440 L352,442 L358,455 L352,472 L342,488 L328,498 L315,502 L305,495 L298,478 L295,460 Z" data-state="RS"><title>Rio Grande do Sul</title></path>
+
+                                <!-- ===== STATE LABELS ===== -->
+                                <!-- Norte active -->
+                                <text x="222" y="72" class="state-label label-active" data-state="RR">RR</text>
+                                <text x="195" y="185" class="state-label label-active" data-state="AM">AM</text>
+                                <text x="78" y="205" class="state-label label-active" data-state="AC">AC</text>
+                                <text x="395" y="180" class="state-label label-active" data-state="PA">PA</text>
+                                <!-- Norte inactive -->
+                                <text x="378" y="82" class="state-label label-inactive" data-state="AP">AP</text>
+                                <text x="255" y="268" class="state-label label-inactive" data-state="RO">RO</text>
+                                <text x="435" y="278" class="state-label label-inactive" data-state="TO">TO</text>
+                                <!-- Nordeste active -->
+                                <text x="530" y="212" class="state-label label-active" data-state="PB">PB</text>
+                                <!-- Nordeste inactive -->
+                                <text x="490" y="178" class="state-label label-inactive" data-state="MA">MA</text>
+                                <text x="562" y="218" class="state-label label-inactive" data-state="PI">PI</text>
+                                <text x="605" y="192" class="state-label label-inactive" data-state="CE">CE</text>
+                                <text x="648" y="195" class="state-label label-inactive" data-state="RN">RN</text>
+                                <text x="618" y="248" class="state-label label-inactive" data-state="PE">PE</text>
+                                <text x="662" y="260" class="state-label label-inactive" data-state="AL">AL</text>
+                                <text x="654" y="278" class="state-label label-inactive" data-state="SE">SE</text>
+                                <text x="580" y="310" class="state-label label-inactive" data-state="BA">BA</text>
+                                <!-- Centro-Oeste active -->
+                                <text x="278" y="272" class="state-label label-active" data-state="MT">MT</text>
+                                <text x="278" y="345" class="state-label label-active" data-state="MS">MS</text>
+                                <text x="348" y="308" class="state-label label-active" data-state="GO">GO</text>
+                                <text x="396" y="316" class="state-label label-active" data-state="DF">DF</text>
+                                <!-- Sudeste active -->
+                                <text x="430" y="355" class="state-label label-active" data-state="MG">MG</text>
+                                <text x="342" y="378" class="state-label label-active" data-state="SP">SP</text>
+                                <!-- Sudeste inactive -->
+                                <text x="490" y="362" class="state-label label-inactive" data-state="ES">ES</text>
+                                <text x="470" y="398" class="state-label label-inactive" data-state="RJ">RJ</text>
+                                <!-- Sul active -->
+                                <text x="348" y="422" class="state-label label-active" data-state="SC">SC</text>
+                                <!-- Sul inactive -->
+                                <text x="342" y="410" class="state-label label-inactive" data-state="PR">PR</text>
+                                <text x="328" y="472" class="state-label label-inactive" data-state="RS">RS</text>
+
+                                <!-- ===== HQ PIN MARKER on RR ===== -->
+                                <g class="hq-pin" transform="translate(222, 48)">
+                                    <path d="M0,-18 C-5,-18 -9,-14 -9,-9 C-9,-4 0,4 0,4 C0,4 9,-4 9,-9 C9,-14 5,-18 0,-18 Z" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+                                    <circle cx="0" cy="-10" r="3" fill="#fff"/>
+                                </g>
                             </svg>
-                            <div class="map-legend">
-                                <span class="map-legend-item"><span class="legend-dot legend-active"></span> Atuação KIAA</span>
-                                <span class="map-legend-item"><span class="legend-dot legend-hq"></span> Sede (Roraima)</span>
-                            </div>
+                            <script>
+                            (function(){
+                                var w = document.querySelector('.brazil-map-widget');
+                                if (!w) return;
+                                var tip = document.createElement('div');
+                                tip.className = 'state-tooltip';
+                                w.style.position = 'relative';
+                                w.appendChild(tip);
+                                w.querySelectorAll('path[data-state]').forEach(function(p){
+                                    p.addEventListener('mouseenter', function(e){
+                                        var t = p.querySelector('title');
+                                        if(t){ tip.textContent = t.textContent; tip.style.opacity = '1'; }
+                                    });
+                                    p.addEventListener('mousemove', function(e){
+                                        var r = w.getBoundingClientRect();
+                                        tip.style.left = (e.clientX - r.left + 12) + 'px';
+                                        tip.style.top = (e.clientY - r.top - 30) + 'px';
+                                    });
+                                    p.addEventListener('mouseleave', function(){
+                                        tip.style.opacity = '0';
+                                    });
+                                });
+                            })();
+                            </script>
                         </div>
                         <div class="about-accent-card">
                             <img src="img/icone-positivo-verde.png" alt="Ícone KIAA" class="accent-icon">

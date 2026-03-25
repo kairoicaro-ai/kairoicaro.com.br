@@ -634,6 +634,7 @@ ul {
     border-radius: var(--radius-xl);
     padding: 28px 24px;
     overflow: hidden;
+    position: relative;
 }
 
 .map-header { margin-bottom: 16px; }
@@ -648,28 +649,33 @@ ul {
 
 .brazil-svg {
     width: 100%;
-    max-height: 400px;
+    max-height: 420px;
 }
 
+/* Region colors */
 .state-active {
-    fill: var(--verde);
-    fill-opacity: 0.7;
     stroke: var(--azul);
     stroke-width: 1;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
+.state-norte { fill: #2ECC71; fill-opacity: 0.78; }
+.state-centro-oeste { fill: #E67E22; fill-opacity: 0.78; }
+.state-sudeste { fill: #3498DB; fill-opacity: 0.78; }
+.state-sul { fill: #E67E22; fill-opacity: 0.78; }
+.state-nordeste { fill: #E67E22; fill-opacity: 0.78; }
+
 .state-active:hover {
     fill-opacity: 1;
-    filter: drop-shadow(0 0 8px rgba(134, 230, 0, 0.5));
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.25));
 }
 
 .state-hq {
-    fill: var(--verde-neg);
-    fill-opacity: 1;
+    fill-opacity: 1 !important;
+    stroke: #fff;
     stroke-width: 2;
-    filter: drop-shadow(0 0 6px rgba(134, 230, 0, 0.4));
+    filter: drop-shadow(0 0 8px rgba(46,204,113,0.5));
 }
 
 .state-inactive {
@@ -679,32 +685,52 @@ ul {
 }
 
 .state-inactive:hover {
-    fill: rgba(255,255,255,0.1);
+    fill: rgba(255,255,255,0.12);
 }
 
-.map-legend {
-    display: flex;
-    gap: 20px;
-    margin-top: 16px;
-    justify-content: center;
+/* State labels */
+.state-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-anchor: middle;
+    pointer-events: none;
+    font-family: var(--font-primary), 'Inter', sans-serif;
 }
 
-.map-legend-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.72rem;
-    color: rgba(255,255,255,0.5);
+.label-active {
+    fill: #fff;
 }
 
-.legend-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+.label-inactive {
+    fill: rgba(255,255,255,0.15);
 }
 
-.legend-active { background: var(--verde); opacity: 0.7; }
-.legend-hq { background: var(--verde-neg); }
+/* HQ pin animation */
+.hq-pin {
+    animation: hqPulse 2.5s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes hqPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Tooltip */
+.state-tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.85);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 10;
+    white-space: nowrap;
+}
 
 /* ==================== AREAS OF PRACTICE ==================== */
 .areas {
