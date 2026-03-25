@@ -29,6 +29,9 @@ jobs:
       - name: Buscar dados do dashboard
         run: python scripts/fetch_dashboard_data.py
 
+      - name: Buscar noticias setoriais
+        run: python scripts/fetch_setoriais.py
+
       - name: Commit e push se houver mudanças
         run: |
           git config user.name "github-actions[bot]"
