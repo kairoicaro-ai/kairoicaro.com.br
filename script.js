@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '.about-visual',
         '.area-card',
         '.area-card-mini',
+        '.area-card-uniform',
         '.diff-card',
         '.news-card',
         '.fifa-card',
@@ -565,6 +566,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const panel = document.getElementById('setorial-' + tab.dataset.setorial);
             if (panel) panel.classList.add('active');
         });
+    });
+
+    // ==================== CAROUSEL ARROWS ====================
+    const carouselTrack = document.querySelector('.clients-track');
+    document.getElementById('carousel-left')?.addEventListener('click', () => {
+        if (carouselTrack) carouselTrack.scrollLeft -= 200;
+    });
+    document.getElementById('carousel-right')?.addEventListener('click', () => {
+        if (carouselTrack) carouselTrack.scrollLeft += 200;
     });
 
     // ==================== Console branding ====================
