@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kairo Ícaro — Direito Empresarial e Negócios | Roraima</title>
+    <meta name="description" content="Kairo Ícaro Advogados Associados — Assessoria jurídica empresarial em Direito Empresarial, Contratos Comerciais, Trabalhista Empresarial e Direito Societário para empresas em Roraima e no Brasil.">
+    <meta name="keywords" content="advogado empresarial roraima, direito empresarial, contratos comerciais, trabalhista empresarial, direito societário, compliance, advogado boa vista, kairo ícaro">
+    <link rel="canonical" href="https://kairoicaro.com.br/negocios">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kairo Ícaro — Direito Empresarial e Negócios | Roraima">
+    <meta property="og:description" content="Assessoria jurídica empresarial para proteção do seu negócio, contratos e patrimônio. Mais de 14 anos de experiência.">
+    <meta property="og:url" content="https://kairoicaro.com.br/negocios">
+    <meta property="og:image" content="https://kairoicaro.com.br/img/logo-horizontal-positiva.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Kairo Ícaro Advogados Associados">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kairo Ícaro — Direito Empresarial e Negócios | Roraima">
+    <meta name="twitter:description" content="Assessoria jurídica empresarial para proteção do seu negócio, contratos e patrimônio.">
+    <meta name="twitter:image" content="https://kairoicaro.com.br/img/logo-horizontal-positiva.png">
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/icone-positivo-verde.png">
+    <link rel="apple-touch-icon" href="img/icone-positivo-verde.png">
+
+    <!-- ==================== BUSINESS THEME COLOR OVERRIDES ==================== -->
+    <style>
+        :root {
+            --verde: #1565C0;
+            --verde-neg: #1E88E5;
+            --verde-dark: #0D47A1;
+            --verde-glow: rgba(21, 101, 192, 0.15);
+            --verde-glow-strong: rgba(21, 101, 192, 0.3);
+            --shadow-green: 0 4px 20px rgba(21, 101, 192, 0.25);
+        }
+
+        /* Hero overlay with blue tint */
+        .hero-overlay {
+            background: linear-gradient(
+                135deg,
+                rgba(13, 71, 161, 0.92) 0%,
+                rgba(15, 41, 68, 0.95) 50%,
+                rgba(10, 25, 47, 0.97) 100%
+            ) !important;
+        }
+
+        /* Text-green override for blue theme */
+        .text-green {
+            color: #1E88E5 !important;
+        }
+
+        /* Hero badge blue variant */
+        .hero-badge {
+            background: rgba(21, 101, 192, 0.15) !important;
+            border-color: rgba(21, 101, 192, 0.3) !important;
+            color: #42A5F5 !important;
+        }
+
+        /* Section tag blue */
+        .section-tag {
+            color: #1E88E5 !important;
+            border-color: rgba(30, 136, 229, 0.3) !important;
+            background: rgba(21, 101, 192, 0.08) !important;
+        }
+
+        /* Buttons primary blue */
+        .btn-primary {
+            background: linear-gradient(135deg, #1565C0, #1E88E5) !important;
+            box-shadow: 0 4px 15px rgba(21, 101, 192, 0.4) !important;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #1E88E5, #42A5F5) !important;
+            box-shadow: 0 6px 25px rgba(21, 101, 192, 0.5) !important;
+        }
+
+        /* Outline button blue */
+        .btn-outline {
+            border-color: rgba(21, 101, 192, 0.5) !important;
+            color: #42A5F5 !important;
+        }
+        .btn-outline:hover {
+            background: rgba(21, 101, 192, 0.1) !important;
+            border-color: #1E88E5 !important;
+        }
+
+        /* Stat numbers blue */
+        .stat-number, .stat-suffix, .stat-prefix {
+            color: #42A5F5 !important;
+        }
+
+        /* About feature icons blue */
+        .feature-icon {
+            background: rgba(21, 101, 192, 0.1) !important;
+            color: #1E88E5 !important;
+        }
+
+        /* Area cards blue hover */
+        .area-card-uniform:hover {
+            border-color: rgba(21, 101, 192, 0.4) !important;
+            box-shadow: 0 8px 32px rgba(21, 101, 192, 0.15) !important;
+        }
+        .area-icon-uniform {
+            background: rgba(21, 101, 192, 0.1) !important;
+            color: #1E88E5 !important;
+        }
+        .area-card-uniform:hover .area-icon-uniform {
+            background: #1565C0 !important;
+            color: #fff !important;
+        }
+
+        /* Differentials blue */
+        .diff-number {
+            color: rgba(21, 101, 192, 0.15) !important;
+        }
+        .diff-icon {
+            color: #1E88E5 !important;
+        }
+        .diff-card:hover {
+            border-color: rgba(21, 101, 192, 0.3) !important;
+        }
+
+        /* FIFA cards blue accents */
+        .fifa-card-gold .fifa-card-inner {
+            background: linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1E88E5 100%) !important;
+        }
+        .fifa-card-silver .fifa-card-inner {
+            background: linear-gradient(135deg, #1a3a5c 0%, #1e4976 50%, #225990 100%) !important;
+        }
+        .fifa-stat-value {
+            color: #42A5F5 !important;
+        }
+
+        /* Newsletter blue */
+        .newsletter-wrapper {
+            border-color: rgba(21, 101, 192, 0.2) !important;
+        }
+        .newsletter-icon {
+            color: #1E88E5 !important;
+        }
+        .newsletter-btn {
+            background: linear-gradient(135deg, #1565C0, #1E88E5) !important;
+        }
+        .newsletter-btn:hover {
+            background: linear-gradient(135deg, #1E88E5, #42A5F5) !important;
+        }
+
+        /* CTA section blue */
+        .cta-section {
+            background: linear-gradient(135deg, #0D47A1, #1565C0) !important;
+        }
+        .btn-cta {
+            background: #fff !important;
+            color: #0D47A1 !important;
+        }
+        .btn-cta:hover {
+            background: #E3F2FD !important;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3) !important;
+        }
+
+        /* Nav CTA button blue */
+        .nav-cta {
+            background: rgba(21, 101, 192, 0.15) !important;
+            border-color: rgba(21, 101, 192, 0.4) !important;
+        }
+        .nav-cta:hover {
+            background: #1565C0 !important;
+        }
+
+        /* Scroll indicator blue */
+        .scroll-indicator {
+            color: rgba(21, 101, 192, 0.6) !important;
+        }
+
+        /* About accent card blue */
+        .about-accent-card {
+            border-color: rgba(21, 101, 192, 0.3) !important;
+            background: rgba(21, 101, 192, 0.05) !important;
+        }
+
+        /* Map active states blue */
+        .state-active {
+            fill: rgba(21, 101, 192, 0.35) !important;
+            stroke: #1E88E5 !important;
+        }
+        .state-active:hover {
+            fill: rgba(21, 101, 192, 0.5) !important;
+        }
+        .state-hq {
+            fill: rgba(21, 101, 192, 0.6) !important;
+        }
+        .legend-active {
+            background: #1E88E5 !important;
+        }
+        .legend-hq {
+            background: #0D47A1 !important;
+        }
+
+        /* Map badge blue */
+        .map-badge {
+            color: #1E88E5 !important;
+            border-color: rgba(21, 101, 192, 0.3) !important;
+        }
+
+        /* WhatsApp float stays green for recognition */
+        .whatsapp-float {
+            background: #25D366 !important;
+        }
+
+        /* Footer link hover blue */
+        .footer a:hover {
+            color: #42A5F5 !important;
+        }
+        .footer-social .social-link:hover {
+            background: rgba(21, 101, 192, 0.2) !important;
+            color: #42A5F5 !important;
+        }
+
+        /* Hub back link styling */
+        .nav-hub-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            padding: 4px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+            margin-right: 8px;
+        }
+        .nav-hub-link:hover {
+            color: #42A5F5;
+            border-color: rgba(21, 101, 192, 0.4);
+            background: rgba(21, 101, 192, 0.1);
+        }
+        .navbar.scrolled .nav-hub-link {
+            color: rgba(15, 41, 68, 0.5);
+        }
+        .navbar.scrolled .nav-hub-link:hover {
+            color: #1565C0;
+        }
+
+        /* LGPD button blue */
+        .lgpd-btn {
+            background: linear-gradient(135deg, #1565C0, #1E88E5) !important;
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Kairo Ícaro — Advogados Associados | Direito Empresarial",
+        "description": "Assessoria jurídica empresarial para proteção do seu negócio, contratos e patrimônio em Roraima e no Brasil.",
+        "url": "https://kairoicaro.com.br/negocios",
+        "logo": "https://kairoicaro.com.br/img/logo-horizontal-positiva.png",
+        "telephone": "+55-95-99177-5868",
+        "email": "advogados@kairoicaro.com.br",
+        "foundingDate": "2012-04",
+        "areaServed": {
+            "@type": "State",
+            "name": "Roraima"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Ville Roy, 4301 — Salas 206 e 208",
+            "addressLocality": "Boa Vista",
+            "addressRegion": "RR",
+            "postalCode": "69306-595",
+            "addressCountry": "BR"
+        },
+        "openingHours": ["Mo-Fr 08:00-12:00", "Mo-Fr 14:00-18:00"],
+        "sameAs": [
+            "https://www.instagram.com/kairoicaroadvogados/",
+            "https://www.linkedin.com/in/kairo-%C3%ADcaro-advogados-associados-770937237/"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <a href="#sobre" class="skip-link">Pular para o conteúdo</a>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div style="display:flex;align-items:center;gap:8px;">
+                <a href="novo-index.html" class="nav-hub-link">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 19l-7-7 7-7"/></svg>
+                    Hub
+                </a>
+                <a href="#hero" class="nav-logo" id="nav-logo">
+                    <img src="img/logo-horizontal-branca.png" alt="Kairo Ícaro Advogados Associados" class="logo-img" id="logo-white">
+                    <img src="img/logo-horizontal-positiva.png" alt="Kairo Ícaro Advogados Associados" class="logo-img logo-dark" id="logo-dark">
+                </a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+                <li><a href="#areas" class="nav-link">Áreas de Atuação</a></li>
+                <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                <li><a href="#equipe" class="nav-link">Equipe</a></li>
+                <li><a href="#contato" class="nav-link nav-cta">Fale Conosco</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="img/hero-banner.jpg" alt="Escritório de advocacia empresarial" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Negócios &bull; Assessoria Jurídica Empresarial</div>
+            <h1 class="hero-title">
+                Protegemos o seu <span class="text-green">negócio</span>,
+                os seus <span class="text-green">contratos</span> e o seu <span class="text-green">patrimônio</span>.
+            </h1>
+            <p class="hero-subtitle">
+                Assessoria jurídica estratégica para empresas, com soluções em Direito Empresarial, Contratos Comerciais, Trabalhista Empresarial e Direito Societário. Seu negócio protegido em todas as frentes.
+            </p>
+            <div class="hero-actions">
+                <a href="https://wa.me/5595991775868?text=Olá!%20Gostaria%20de%20uma%20consultoria%20empresarial." target="_blank" class="btn btn-primary" id="hero-whatsapp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Agende uma consultoria
+                </a>
+                <a href="#areas" class="btn btn-outline" id="hero-areas">
+                    Nossas Especialidades
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="14">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Anos de experiência</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="1500">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Processos gerenciados</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="12">0</span>
+                    <span class="stat-label">Estados de atuação</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-prefix">R$</span><span class="stat-number" data-target="500">0</span><span class="stat-suffix">mi+</span>
+                    <span class="stat-label">Em causas sob gestão</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scroll-indicator">
+            <span>Conheça nossa assessoria empresarial</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m-7-7l7 7 7-7"/></svg>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="sobre" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">Sobre Nós</span>
+                    <h2 class="section-title">Compromisso com a <span class="text-green">excelência empresarial</span> e a proteção do seu negócio</h2>
+                    <p class="about-text">
+                        Desde <strong>abril de 2012</strong>, o escritório <strong>Kairo Ícaro — Advogados Associados</strong> assessora empresas de todos os portes na proteção de seus interesses jurídicos, atuando de forma preventiva e estratégica para garantir segurança nos negócios.
+                    </p>
+                    <p class="about-text">
+                        Nossa equipe especializada em Direito Empresarial atua como uma <strong>extensão do seu departamento jurídico</strong>, oferecendo desde a elaboração e revisão de contratos até a defesa em contenciosos complexos, com foco em <strong>resultados mensuráveis</strong>.
+                    </p>
+                    <p class="about-text">
+                        Utilizamos <strong>tecnologia avançada</strong> e inteligência artificial para gerenciar processos, prazos e compliance, garantindo agilidade e precisão em todas as demandas da sua empresa.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Compliance Empresarial</h4>
+                                <p>Programas de conformidade sob medida para proteger sua empresa.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Tecnologia Jurídica</h4>
+                                <p>Gestão digital de contratos e processos com IA e automação.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Assessoria Personalizada</h4>
+                                <p>Cada empresa recebe um plano jurídico sob medida para suas necessidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-wrapper">
+                        <div class="brazil-map-widget">
+                            <div class="map-header">
+                                <span class="map-badge">Presença Nacional</span>
+                            </div>
+                            <svg viewBox="0 0 600 680" class="brazil-svg" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Active states -->
+                                <path class="state-active state-hq" d="M175,85 L190,55 L210,40 L230,35 L250,40 L265,55 L268,75 L262,95 L240,100 L215,98 L195,100 Z" data-state="RR"><title>Roraima (Sede)</title></path>
+                                <path class="state-active" d="M85,165 L115,130 L150,115 L185,108 L215,98 L240,100 L262,95 L280,100 L295,110 L300,130 L305,155 L300,180 L290,205 L275,225 L255,235 L235,245 L215,240 L195,245 L175,240 L155,230 L135,218 L115,205 L100,190 Z" data-state="AM"><title>Amazonas</title></path>
+                                <path class="state-active" d="M50,195 L75,180 L100,190 L115,205 L105,215 L90,220 L75,218 L58,212 Z" data-state="AC"><title>Acre</title></path>
+                                <path class="state-active" d="M295,110 L315,100 L335,95 L350,105 L360,125 L365,150 L380,165 L405,155 L430,148 L455,145 L475,150 L490,165 L495,185 L485,200 L470,210 L450,215 L430,225 L410,230 L390,235 L370,230 L355,222 L335,235 L315,242 L300,248 L310,230 L320,210 L325,190 L315,170 L305,155 L300,130 Z" data-state="PA"><title>Pará</title></path>
+                                <path class="state-active" d="M245,240 L265,245 L280,250 L295,248 L310,230 L325,245 L330,265 L325,285 L310,298 L290,302 L270,305 L250,300 L238,290 L232,275 Z" data-state="MT"><title>Mato Grosso</title></path>
+                                <path class="state-active" d="M310,298 L325,285 L330,265 L345,275 L360,270 L375,265 L385,275 L390,290 L388,310 L380,330 L368,345 L350,350 L335,345 L320,335 L310,320 Z" data-state="GO"><title>Goiás</title></path>
+                                <path class="state-active" d="M388,310 L400,305 L408,312 L405,322 L395,325 L388,318 Z" data-state="DF"><title>Distrito Federal</title></path>
+                                <path class="state-active" d="M250,300 L270,305 L290,302 L310,298 L310,320 L320,335 L315,350 L305,365 L290,375 L275,378 L260,372 L248,360 L240,345 L238,325 Z" data-state="MS"><title>Mato Grosso do Sul</title></path>
+                                <path class="state-active" d="M365,345 L380,338 L390,330 L400,322 L415,325 L430,330 L445,325 L460,320 L470,330 L475,348 L468,365 L455,378 L440,385 L425,380 L412,370 L400,358 Z" data-state="MG"><title>Minas Gerais</title></path>
+                                <path class="state-active" d="M305,365 L320,358 L335,350 L350,350 L365,345 L370,358 L375,370 L370,385 L360,395 L345,400 L330,395 L318,385 Z" data-state="SP"><title>São Paulo</title></path>
+                                <path class="state-active" d="M330,410 L345,405 L360,400 L370,408 L368,420 L358,430 L345,435 L332,430 L325,420 Z" data-state="SC"><title>Santa Catarina</title></path>
+                                <path class="state-active" d="M515,198 L528,195 L540,200 L545,212 L540,222 L528,225 L518,218 Z" data-state="PB"><title>Paraíba</title></path>
+                                <!-- Inactive states -->
+                                <path class="state-inactive" d="M350,50 L365,40 L385,38 L398,48 L405,65 L408,88 L402,108 L390,122 L375,130 L362,128 L350,118 L345,98 L348,75 Z" data-state="AP"><title>Amapá</title></path>
+                                <path class="state-inactive" d="M410,230 L430,225 L450,215 L460,228 L465,248 L462,275 L458,300 L450,318 L438,330 L425,328 L415,315 L410,295 L405,270 Z" data-state="TO"><title>Tocantins</title></path>
+                                <path class="state-inactive" d="M232,275 L245,260 L255,235 L270,240 L280,250 L275,270 L265,285 L250,292 L240,288 Z" data-state="RO"><title>Rondônia</title></path>
+                                <path class="state-inactive" d="M455,145 L475,150 L490,165 L500,155 L520,148 L540,145 L555,150 L560,168 L555,185 L545,195 L530,200 L515,198 L500,202 L485,210 L462,218 L460,200 L465,180 L470,160 Z" data-state="MA"><title>Maranhão</title></path>
+                                <path class="state-inactive" d="M540,195 L550,185 L560,168 L575,175 L588,188 L592,208 L588,230 L580,245 L568,252 L555,248 L545,238 L538,222 L535,208 Z" data-state="PI"><title>Piauí</title></path>
+                                <path class="state-inactive" d="M575,175 L590,168 L608,165 L625,170 L635,182 L632,198 L622,212 L608,218 L595,215 L588,208 L588,188 Z" data-state="CE"><title>Ceará</title></path>
+                                <path class="state-inactive" d="M635,182 L648,180 L660,185 L665,195 L658,205 L645,208 L635,198 L632,190 Z" data-state="RN"><title>Rio G. do Norte</title></path>
+                                <path class="state-inactive" d="M580,245 L595,240 L610,235 L622,225 L635,228 L650,232 L660,242 L655,252 L640,258 L620,260 L600,258 L585,255 Z" data-state="PE"><title>Pernambuco</title></path>
+                                <path class="state-inactive" d="M655,252 L665,248 L672,255 L670,265 L662,268 L655,262 Z" data-state="AL"><title>Alagoas</title></path>
+                                <path class="state-inactive" d="M648,272 L658,268 L665,275 L660,285 L650,282 Z" data-state="SE"><title>Sergipe</title></path>
+                                <path class="state-inactive" d="M530,260 L550,248 L568,252 L580,245 L585,255 L600,258 L620,260 L640,258 L648,272 L650,290 L642,315 L628,340 L610,360 L590,370 L570,368 L552,355 L540,335 L532,310 L528,280 Z" data-state="BA"><title>Bahia</title></path>
+                                <path class="state-inactive" d="M475,348 L490,342 L500,350 L505,365 L498,378 L488,382 L478,375 Z" data-state="ES"><title>Espírito Santo</title></path>
+                                <path class="state-inactive" d="M445,385 L460,378 L475,375 L488,382 L492,395 L485,405 L472,410 L458,405 Z" data-state="RJ"><title>Rio de Janeiro</title></path>
+                                <path class="state-inactive" d="M318,385 L330,395 L345,400 L358,398 L368,405 L365,418 L355,428 L340,432 L325,428 L315,418 Z" data-state="PR"><title>Paraná</title></path>
+                                <path class="state-inactive" d="M305,440 L318,432 L328,435 L340,440 L352,442 L358,455 L352,472 L342,488 L328,498 L315,502 L305,495 L298,478 L295,460 Z" data-state="RS"><title>Rio G. do Sul</title></path>
+                            </svg>
+                            <div class="map-legend">
+                                <span class="map-legend-item"><span class="legend-dot legend-active"></span> Atuação KIAA</span>
+                                <span class="map-legend-item"><span class="legend-dot legend-hq"></span> Sede (Roraima)</span>
+                            </div>
+                        </div>
+                        <div class="about-accent-card">
+                            <img src="img/icone-positivo-verde.png" alt="Ícone KIAA" class="accent-icon">
+                            <span>Atuação nacional — <strong>12 estados</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== AREAS OF PRACTICE ==================== -->
+    <section id="areas" class="section areas">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Áreas de Atuação</span>
+                <h2 class="section-title">Especialistas em <span class="text-green">Direito Empresarial</span></h2>
+                <p class="section-desc">Soluções jurídicas completas para proteger e impulsionar o crescimento do seu negócio.</p>
+            </div>
+            <div class="areas-grid areas-grid-uniform">
+                <a href="area-empresarial.html" class="area-card-uniform" id="area-empresarial">
+                    <div class="area-icon-uniform">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    </div>
+                    <h3>Direito Empresarial</h3>
+                    <p>Consultoria estratégica para constituição, reestruturação e operação de empresas, incluindo fusões, aquisições e due diligence corporativa.</p>
+                </a>
+                <a href="#" class="area-card-uniform" id="area-contratos">
+                    <div class="area-icon-uniform">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </div>
+                    <h3>Contratos Comerciais</h3>
+                    <p>Elaboração, revisão e negociação de contratos empresariais, comerciais, de prestação de serviços, franquias e acordos de confidencialidade.</p>
+                </a>
+                <a href="area-trabalhista.html" class="area-card-uniform" id="area-trabalhista">
+                    <div class="area-icon-uniform">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <h3>Trabalhista Empresarial</h3>
+                    <p>Defesa em reclamações trabalhistas, consultoria preventiva, compliance trabalhista e gestão de riscos para o empregador.</p>
+                </a>
+                <a href="#" class="area-card-uniform" id="area-societario">
+                    <div class="area-icon-uniform">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                    </div>
+                    <h3>Direito Societário</h3>
+                    <p>Acordos de sócios, governança corporativa, resolução de conflitos societários, planejamento sucessório empresarial e holdings familiares.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DIFFERENTIALS ==================== -->
+    <section id="diferenciais" class="section differentials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">DNA Empresarial</span>
+                <h2 class="section-title">Por que empresas escolhem a <span class="text-green">Kairo Ícaro</span>?</h2>
+            </div>
+            <div class="diff-grid">
+                <div class="diff-card">
+                    <div class="diff-number">01</div>
+                    <div class="diff-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                    </div>
+                    <h3>Estratégia Jurídica</h3>
+                    <p>Diagnósticos completos para prever cenários, gerenciar crises e garantir a proteção patrimonial da sua empresa.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-number">02</div>
+                    <div class="diff-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <h3>Compliance e Governança</h3>
+                    <p>Programas de conformidade, políticas internas e governança corporativa para mitigar riscos e proteger a reputação.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-number">03</div>
+                    <div class="diff-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3>Tecnologia e Inovação</h3>
+                    <p>Inteligência artificial, automação processual e gestão digital de contratos e processos com máxima eficiência.</p>
+                </div>
+                <div class="diff-card">
+                    <div class="diff-number">04</div>
+                    <div class="diff-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    </div>
+                    <h3>Resultados Mensuráveis</h3>
+                    <p>Foco em resultados concretos: redução de passivo trabalhista, recuperação de créditos e proteção patrimonial efetiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EQUIPE ==================== -->
+    <section id="equipe" class="section team-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nossa Equipe</span>
+                <h2 class="section-title">Especialistas em <span class="text-green">Direito Empresarial</span></h2>
+                <p class="section-desc">Advogados com expertise em negócios, contratos e contencioso estratégico empresarial.</p>
+            </div>
+            <div class="fifa-grid">
+                <!-- Founder Card -->
+                <div class="fifa-card fifa-card-gold">
+                    <div class="fifa-card-inner">
+                        <div class="fifa-photo"><img src="img/equipe/kairo.jpg" alt="Kairo Ícaro"></div>
+                        <div class="fifa-name">Kairo Ícaro</div>
+                        <div class="fifa-role">Sócio Fundador</div>
+                        <div class="fifa-stats">
+                            <div class="fifa-stat"><span class="fifa-stat-value">10</span><span class="fifa-stat-label">EMP</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">10</span><span class="fifa-stat-label">EST</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">10</span><span class="fifa-stat-label">LID</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">NEG</span></div>
+                        </div>
+                        <div class="fifa-specialty">Empresarial e Estratégia</div>
+                    </div>
+                </div>
+                <!-- Drielly -->
+                <div class="fifa-card fifa-card-silver">
+                    <div class="fifa-card-inner">
+                        <div class="fifa-photo"><img src="img/equipe/drielly.jpg" alt="Drielly Vasques"></div>
+                        <div class="fifa-name">Drielly Vasques</div>
+                        <div class="fifa-role">Advogada</div>
+                        <div class="fifa-stats">
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">ESG</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">COM</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">EMP</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">GOV</span></div>
+                        </div>
+                        <div class="fifa-specialty">Compliance, ESG, Governança</div>
+                    </div>
+                </div>
+                <!-- Gabriel -->
+                <div class="fifa-card">
+                    <div class="fifa-card-inner">
+                        <div class="fifa-photo"><img src="img/equipe/gabriel.jpg" alt="Gabriel Monteiro"></div>
+                        <div class="fifa-name">Gabriel Monteiro</div>
+                        <div class="fifa-role">Advogado</div>
+                        <div class="fifa-stats">
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">TRA</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">EMP</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">NEG</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">CON</span></div>
+                        </div>
+                        <div class="fifa-specialty">Trabalhista Empresarial</div>
+                    </div>
+                </div>
+                <!-- Mariana -->
+                <div class="fifa-card">
+                    <div class="fifa-card-inner">
+                        <div class="fifa-photo"><img src="img/equipe/mariana.jpg" alt="Mariana Martinelli"></div>
+                        <div class="fifa-name">Mariana Martinelli</div>
+                        <div class="fifa-role">Advogada</div>
+                        <div class="fifa-stats">
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">TRA</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">EMP</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">CON</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">NEG</span></div>
+                        </div>
+                        <div class="fifa-specialty">Trabalhista e Empresarial</div>
+                    </div>
+                </div>
+                <!-- Laura -->
+                <div class="fifa-card">
+                    <div class="fifa-card-inner">
+                        <div class="fifa-photo"><img src="img/equipe/laura.jpg" alt="Laura Barbosa"></div>
+                        <div class="fifa-name">Laura Barbosa</div>
+                        <div class="fifa-role">Advogada</div>
+                        <div class="fifa-stats">
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">TRA</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">EMP</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">CON</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">NEG</span></div>
+                        </div>
+                        <div class="fifa-specialty">Trabalhista Empresarial</div>
+                    </div>
+                </div>
+                <!-- Augusto -->
+                <div class="fifa-card">
+                    <div class="fifa-card-inner">
+                        <div class="fifa-photo"><div class="fifa-photo-placeholder">AQ</div></div>
+                        <div class="fifa-name">Augusto P. B. de Queiroz</div>
+                        <div class="fifa-role">Advogado</div>
+                        <div class="fifa-stats">
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">TRI</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">EMP</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">SOC</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">CON</span></div>
+                        </div>
+                        <div class="fifa-specialty">Tributário e Societário</div>
+                    </div>
+                </div>
+                <!-- Guilherme -->
+                <div class="fifa-card">
+                    <div class="fifa-card-inner">
+                        <div class="fifa-photo"><img src="img/equipe/guilherme.jpg" alt="Guilherme H. V. de Andrade"></div>
+                        <div class="fifa-name">Guilherme H. V. de Andrade</div>
+                        <div class="fifa-role">Advogado</div>
+                        <div class="fifa-stats">
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">TRA</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">EMP</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">CON</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">NEG</span></div>
+                        </div>
+                        <div class="fifa-specialty">Trabalhista e Contratos</div>
+                    </div>
+                </div>
+                <!-- Roney -->
+                <div class="fifa-card">
+                    <div class="fifa-card-inner">
+                        <div class="fifa-photo"><img src="img/equipe/roney.jpg" alt="Roney D'Montier"></div>
+                        <div class="fifa-name">Roney D'Montier</div>
+                        <div class="fifa-role">Ger. Desenvolvimento</div>
+                        <div class="fifa-stats">
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">EST</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">NEG</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">GES</span></div>
+                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">TEC</span></div>
+                        </div>
+                        <div class="fifa-specialty">Desenvolvimento Estratégico</div>
+                    </div>
+                </div>
+            </div>
+            <p class="team-footer-note">Além da equipe acima, contamos com uma rede de <strong>advogados colaboradores</strong> especializados em Direito Empresarial atuando em 12 estados brasileiros.</p>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER ==================== -->
+    <section id="newsletter" class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-content">
+                    <div class="newsletter-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h2>Receba <span class="text-green">inteligência jurídica</span> para sua empresa</h2>
+                    <p>Atualizações sobre legislação empresarial, trabalhista, tributária e tendências de compliance. Direto no seu e-mail, sem spam.</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="newsletter-fields">
+                        <div class="newsletter-field">
+                            <input type="text" name="name" placeholder="Seu nome" required autocomplete="given-name">
+                        </div>
+                        <div class="newsletter-field">
+                            <input type="email" name="email" placeholder="Seu melhor e-mail corporativo" required autocomplete="email">
+                        </div>
+                        <div class="newsletter-field newsletter-field-select">
+                            <select name="interest" required>
+                                <option value="" disabled selected>Área de interesse</option>
+                                <option value="empresarial">Direito Empresarial</option>
+                                <option value="contratos">Contratos Comerciais</option>
+                                <option value="trabalhista">Trabalhista Empresarial</option>
+                                <option value="societario">Direito Societário</option>
+                                <option value="todas">Todas as áreas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="newsletter-btn" id="newsletter-submit">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        Inscrever-se gratuitamente
+                    </button>
+                    <p class="newsletter-disclaimer">Ao se inscrever, você concorda com nossa <a href="#">Política de Privacidade</a> conforme a LGPD.</p>
+                </form>
+                <div class="newsletter-success" id="newsletter-success" style="display:none;">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <h3>Inscrição confirmada!</h3>
+                    <p>Você receberá nossas atualizações empresariais em breve. Obrigado por se inscrever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section id="cta" class="section cta-section">
+        <div class="cta-bg-pattern"></div>
+        <div class="container">
+            <div class="cta-content">
+                <img src="img/icone-negativo-branco.png" alt="KIAA" class="cta-icon">
+                <h2>Sua empresa precisa de assessoria jurídica estratégica?</h2>
+                <p>Nossa equipe está pronta para entender as necessidades do seu negócio e construir a melhor estratégia jurídica.</p>
+                <a href="https://wa.me/5595991775868?text=Olá!%20Gostaria%20de%20uma%20consultoria%20para%20minha%20empresa." target="_blank" class="btn btn-cta" id="cta-whatsapp">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Agende uma consultoria empresarial
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT / FOOTER ==================== -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="img/logo-horizontal-branca.png" alt="Kairo Ícaro Advogados Associados" class="footer-logo">
+                    <p>Assessoria jurídica empresarial para proteção do seu negócio, contratos e patrimônio em Roraima e no Brasil.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/kairoicaroadvogados/" target="_blank" aria-label="Instagram" class="social-link" id="social-instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/kairoicaroadvogadosassociados" target="_blank" aria-label="Facebook" class="social-link" id="social-facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kairo-%C3%ADcaro-advogados-associados-770937237/" target="_blank" aria-label="LinkedIn" class="social-link" id="social-linkedin">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" aria-label="YouTube" class="social-link" id="social-youtube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Especialidades</h4>
+                    <ul>
+                        <li><a href="area-empresarial.html">Direito Empresarial</a></li>
+                        <li><a href="#">Contratos Comerciais</a></li>
+                        <li><a href="area-trabalhista.html">Trabalhista Empresarial</a></li>
+                        <li><a href="#">Direito Societário</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#equipe">Equipe</a></li>
+                        <li><a href="novo-index.html">Voltar ao Hub</a></li>
+                        <li><a href="https://kairoicaro.com.br" target="_blank">Site Principal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        <a href="https://wa.me/5595991775868" target="_blank">+55 (95) 99177-5868</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <a href="mailto:advogados@kairoicaro.com.br">advogados@kairoicaro.com.br</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <span>Av. Ville Roy, 4301 — Salas 206 e 208<br>Canarinho, Boa Vista — RR, 69306-595</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <span>Seg a Sex: 08h às 12h / 14h às 18h</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                        <a href="https://kairoicaro.com.br" target="_blank">kairoicaro.com.br</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Google Maps -->
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.0!2d-60.6714!3d2.8198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Ville+Roy%2C+4301+-+Canarinho%2C+Boa+Vista+-+RR!5e0!3m2!1spt-BR!2sbr!4v1"
+                    width="100%"
+                    height="250"
+                    style="border:0; border-radius: 12px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Localização do escritório Kairo Ícaro Advogados">
+                </iframe>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kairo Ícaro — Advogados Associados. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== WHATSAPP FLOATING BUTTON ==================== -->
+    <a href="https://wa.me/5595991775868?text=Olá!%20Gostaria%20de%20uma%20consultoria%20empresarial." target="_blank" class="whatsapp-float" id="whatsapp-float" aria-label="Contato pelo WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- ==================== LGPD COOKIE BANNER ==================== -->
+    <div id="lgpd-banner" class="lgpd-banner" style="display: none;">
+        <div class="lgpd-content">
+            <p>Este site utiliza cookies para melhorar sua experiência de navegação. Ao continuar, você concorda com nossa <a href="#" onclick="return false;">Política de Privacidade</a> conforme a LGPD (Lei 13.709/2018).</p>
+            <button id="lgpd-accept" class="btn btn-primary lgpd-btn">Aceitar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
