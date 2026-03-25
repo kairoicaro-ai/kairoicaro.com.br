@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-25T05:26:25.137686+00:00",
-  "total": 5,
+  "updated_at": "2026-03-25T08:08:26.356246+00:00",
+  "total": 8,
   "items": [
     {
       "tribunal": "STF",
@@ -41,6 +41,30 @@
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032026-Violar-monitoracao-eletronica-e-crime-na-Lei-Maria-da-Penha-decisao-e-destaque-no-STJ-Noticias.aspx",
       "date": "2026-03-25",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "Assédio sexual com comentários sobre o corpo e pedidos de fotos íntimas resulta em condenação de R$ 40 mil a superatacado em Manaus",
+      "summary": "A juíza reconheceu violação à dignidade e à liberdade sexual de trabalhadora e confirmou responsabilidade da empresa pelos atos praticados por gerente",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11212-assedio-sexual-com-comentarios-sobre-o-corpo-e-pedidos-de-fotos-intimas-resulta-em-condenacao-de-r-40-mil-a-superatacado-em-manaus",
+      "date": "2026-03-25",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "Elas em Pauta: mutirão do TRT-11 realiza 877 audiências e homologa 188 acordos trabalhistas",
+      "summary": "Conciliações envolvendo trabalhadoras mulheres movimentam quase R$ 2 milhões em uma semana",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11211-elas-em-pauta-mutirao-do-trt-11-realiza-877-audiencias-e-homologa-188-acordos-trabalhistas",
+      "date": "2026-03-25",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TST",
+      "title": "Ir para o conteúdo",
+      "summary": "",
+      "url": "https://www.tst.jus.br#content",
+      "date": "2026-03-25",
+      "category": "Trabalhista"
     }
   ]
 }
