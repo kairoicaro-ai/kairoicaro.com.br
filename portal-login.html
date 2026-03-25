@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Cliente — Kairo Ícaro Advogados Associados</title>
+    <meta name="description" content="Acesse o portal exclusivo do cliente KIAA para acompanhar seus processos, documentos e financeiro.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" href="img/icone-positivo-verde.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --blue: #0F2944;
+            --blue-light: #153358;
+            --green: #86E600;
+            --green-light: #97F513;
+            --white: #FFFFFF;
+            --gray-100: #F5F7FA;
+            --gray-200: #E8ECF1;
+            --gray-400: #94A3B8;
+            --gray-600: #64748B;
+            --red: #EF4444;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--blue);
+            min-height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* ── Left Panel (branding) ── */
+        .brand-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0F2944 0%, #122d4a 50%, #0d2540 100%);
+        }
+
+        .brand-panel::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(134,230,0,0.08) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulseGlow 6s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.5; }
+            50% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+        }
+
+        .brand-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 480px;
+        }
+
+        .brand-logo {
+            max-width: 280px;
+            margin-bottom: 48px;
+            filter: drop-shadow(0 4px 20px rgba(0,0,0,0.3));
+        }
+
+        .brand-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        .brand-title span { color: var(--green); }
+
+        .brand-description {
+            font-size: 1rem;
+            font-weight: 300;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.7;
+            margin-bottom: 48px;
+        }
+
+        .brand-features {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: left;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+        .feature-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: rgba(134,230,0,0.1);
+            border: 1px solid rgba(134,230,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .feature-icon svg {
+            width: 20px;
+            height: 20px;
+            stroke: var(--green);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        /* ── Right Panel (login form) ── */
+        .login-panel {
+            width: 520px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            background: var(--white);
+            position: relative;
+        }
+
+        .login-panel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--green), var(--blue));
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 380px;
+        }
+
+        .login-header {
+            margin-bottom: 40px;
+        }
+
+        .login-header .mobile-logo {
+            display: none;
+            max-width: 200px;
+            margin-bottom: 32px;
+        }
+
+        .login-header h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--blue);
+            margin-bottom: 8px;
+        }
+
+        .login-header p {
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            line-height: 1.5;
+        }
+
+        /* ── Form ── */
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--blue);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 8px;
+        }
+
+        .form-input-wrapper {
+            position: relative;
+        }
+
+        .form-input-wrapper svg {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            stroke: var(--gray-400);
+            fill: none;
+            stroke-width: 2;
+            pointer-events: none;
+            transition: stroke 0.3s ease;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 14px 16px 14px 48px;
+            border: 2px solid var(--gray-200);
+            border-radius: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            color: var(--blue);
+            background: var(--gray-100);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .form-input:focus {
+            border-color: var(--green);
+            background: var(--white);
+            box-shadow: 0 0 0 4px rgba(134,230,0,0.1);
+        }
+
+        .form-input:focus + svg,
+        .form-input:focus ~ svg {
+            stroke: var(--green);
+        }
+
+        .form-input::placeholder {
+            color: var(--gray-400);
+            font-weight: 400;
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .password-toggle svg {
+            position: static;
+            transform: none;
+            width: 18px;
+            height: 18px;
+            stroke: var(--gray-400);
+            fill: none;
+            stroke-width: 2;
+            pointer-events: auto;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+
+        .remember-me input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--green);
+            cursor: pointer;
+        }
+
+        .remember-me span {
+            font-size: 0.85rem;
+            color: var(--gray-600);
+        }
+
+        .forgot-link {
+            font-size: 0.85rem;
+            color: var(--green);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .forgot-link:hover {
+            color: var(--blue);
+        }
+
+        /* ── Buttons ── */
+        .btn-primary {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--blue);
+            background: var(--green);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .btn-primary:hover {
+            background: var(--green-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(134,230,0,0.3);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .btn-primary svg {
+            width: 20px;
+            height: 20px;
+            stroke: var(--blue);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(15,41,68,0.2);
+            border-top-color: var(--blue);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* ── Error/Success Messages ── */
+        .alert {
+            padding: 12px 16px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 24px;
+            display: none;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .alert.error {
+            background: #FEF2F2;
+            color: var(--red);
+            border: 1px solid #FECACA;
+        }
+
+        .alert.success {
+            background: #F0FFF4;
+            color: #16A34A;
+            border: 1px solid #BBF7D0;
+        }
+
+        .alert.show { display: flex; }
+
+        /* ── Divider ── */
+        .divider-or {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin: 28px 0;
+            color: var(--gray-400);
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .divider-or::before,
+        .divider-or::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--gray-200);
+        }
+
+        /* ── WhatsApp CTA ── */
+        .whatsapp-cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px;
+            border: 2px solid var(--gray-200);
+            border-radius: 12px;
+            color: var(--gray-600);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-cta:hover {
+            border-color: #25D366;
+            color: #25D366;
+            background: rgba(37,211,102,0.05);
+        }
+
+        .whatsapp-cta svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        /* ── Footer ── */
+        .login-footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .login-footer p {
+            font-size: 0.75rem;
+            color: var(--gray-400);
+        }
+
+        .login-footer a {
+            color: var(--green);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 960px) {
+            body { flex-direction: column; }
+            .brand-panel { display: none; }
+            .login-panel {
+                width: 100%;
+                min-height: 100vh;
+                padding: 40px 24px;
+            }
+            .login-panel::before { display: none; }
+            .login-header .mobile-logo {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left: Branding Panel -->
+    <div class="brand-panel">
+        <div class="brand-content">
+            <img src="img/logo-horizontal-branca.png" alt="Kairo Ícaro Advogados Associados" class="brand-logo">
+
+            <h1 class="brand-title">Portal <span>exclusivo</span> do cliente</h1>
+            <p class="brand-description">
+                Acompanhe seus processos, documentos, agenda e financeiro em tempo real.
+                Transparência e tecnologia a serviço da sua tranquilidade.
+            </p>
+
+            <div class="brand-features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                    </div>
+                    <span>Movimentação processual em tempo real</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                    </div>
+                    <span>Documentos e peças processuais disponíveis 24h</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <span>Financeiro transparente com download de notas fiscais</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    </div>
+                    <span>Agenda de audiências e prazos sincronizada</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right: Login Form -->
+    <div class="login-panel">
+        <div class="login-container">
+
+            <div class="login-header">
+                <img src="img/logo-horizontal-positiva.png" alt="KIAA" class="mobile-logo">
+                <h2>Acesse sua conta</h2>
+                <p>Entre com suas credenciais para acessar o portal do cliente.</p>
+            </div>
+
+            <!-- Alert Messages -->
+            <div class="alert error" id="alertError">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <span id="errorMsg">E-mail ou senha incorretos.</span>
+            </div>
+
+            <div class="alert success" id="alertSuccess">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span id="successMsg">E-mail de recuperação enviado com sucesso.</span>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label class="form-label" for="email">E-mail</label>
+                    <div class="form-input-wrapper">
+                        <input type="email" id="email" class="form-input" placeholder="seu@email.com.br" required autocomplete="email">
+                        <svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="password">Senha</label>
+                    <div class="form-input-wrapper">
+                        <input type="password" id="password" class="form-input" placeholder="Digite sua senha" required autocomplete="current-password">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                        <button type="button" class="password-toggle" onclick="togglePassword()">
+                            <svg id="eyeIcon" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <span>Lembrar-me</span>
+                    </label>
+                    <a href="#" class="forgot-link" onclick="handleForgot(event)">Esqueci minha senha</a>
+                </div>
+
+                <button type="submit" class="btn-primary" id="btnLogin">
+                    <svg viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
+                    Entrar no portal
+                </button>
+            </form>
+
+            <div class="divider-or">ou</div>
+
+            <a href="https://wa.me/5595991775868?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20acesso%20ao%20portal%20do%20cliente." class="whatsapp-cta" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Solicitar acesso via WhatsApp
+            </a>
+
+            <div class="login-footer">
+                <p><a href="index.html">&larr; Voltar ao site</a></p>
+                <p style="margin-top: 12px;">&copy; 2026 Kairo Ícaro — Advogados Associados</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // ── Supabase Client ──
+        const SUPABASE_URL = 'https://jrsffuneyoglnyjvdqiv.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impyc2ZmdW5leW9nbG55anZkcWl2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ0MTM2MzcsImV4cCI6MjA4OTk4OTYzN30.s2ShvbnbPe0VtPQV7RO6f550CbrPS13jhg_4ieOH_BY';
+
+        const { createClient } = supabase;
+        const sb = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        // Check if already logged in
+        (async () => {
+            const { data: { session } } = await sb.auth.getSession();
+            if (session) {
+                window.location.href = 'portal-dashboard.html';
+            }
+        })();
+
+        // ── Toggle Password Visibility ──
+        function togglePassword() {
+            const input = document.getElementById('password');
+            const icon = document.getElementById('eyeIcon');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.innerHTML = '<path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/>';
+            } else {
+                input.type = 'password';
+                icon.innerHTML = '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>';
+            }
+        }
+
+        // ── Show Alert ──
+        function showAlert(type, message) {
+            document.getElementById('alertError').classList.remove('show');
+            document.getElementById('alertSuccess').classList.remove('show');
+            if (type === 'error') {
+                document.getElementById('errorMsg').textContent = message;
+                document.getElementById('alertError').classList.add('show');
+            } else {
+                document.getElementById('successMsg').textContent = message;
+                document.getElementById('alertSuccess').classList.add('show');
+            }
+        }
+
+        // ── Login Handler ──
+        async function handleLogin(e) {
+            e.preventDefault();
+            const btn = document.getElementById('btnLogin');
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value;
+
+            btn.disabled = true;
+            btn.innerHTML = '<div class="spinner"></div> Autenticando...';
+
+            try {
+                const { data, error } = await sb.auth.signInWithPassword({ email, password });
+
+                if (error) {
+                    showAlert('error', 'E-mail ou senha incorretos. Verifique e tente novamente.');
+                    btn.disabled = false;
+                    btn.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg> Entrar no portal';
+                    return;
+                }
+
+                showAlert('success', 'Login realizado com sucesso! Redirecionando...');
+                setTimeout(() => {
+                    window.location.href = 'portal-dashboard.html';
+                }, 800);
+
+            } catch (err) {
+                showAlert('error', 'Erro de conexão. Tente novamente em instantes.');
+                btn.disabled = false;
+                btn.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg> Entrar no portal';
+            }
+        }
+
+        // ── Forgot Password ──
+        async function handleForgot(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value.trim();
+            if (!email) {
+                showAlert('error', 'Digite seu e-mail antes de solicitar a recuperação.');
+                return;
+            }
+
+            const { error } = await sb.auth.resetPasswordForEmail(email, {
+                redirectTo: window.location.origin + '/portal-login.html'
+            });
+
+            if (error) {
+                showAlert('error', 'Não foi possível enviar o e-mail. Verifique o endereço informado.');
+            } else {
+                showAlert('success', 'E-mail de recuperação enviado! Verifique sua caixa de entrada.');
+            }
+        }
+    </script>
+
+</body>
+</html>
