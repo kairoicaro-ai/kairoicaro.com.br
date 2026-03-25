@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '.area-card-mini',
         '.diff-card',
         '.news-card',
-        '.team-card',
+        '.fifa-card',
         '.award-card',
         '.cta-content',
         '.section-header',
