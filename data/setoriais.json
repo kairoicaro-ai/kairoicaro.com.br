@@ -1,6 +1,55 @@
 {
-  "updated_at": "2026-03-25T08:00:00Z",
+  "updated_at": "2026-03-25T10:34:59.119659+00:00",
+  "total": 15,
   "items": [
+    {
+      "setor": "ambiental",
+      "title": "25.mar.2026Trybe lança Vade Mecum dos Prompts, um guia de IA no setor jurídicoO material auxilia profissionais do Direito a aplicar a IA de forma ética, estratégica e segura no dia a dia.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-25",
+      "url": "https://www.migalhas.com.br/quentes/452498/trybe-lanca-vade-mecum-dos-prompts-um-guia-de-ia-no-setor-juridico"
+    },
+    {
+      "setor": "empresarial",
+      "title": "25.mar.2026MPF adota tecnologia da Verifact para investigações eleitoraisFerramenta permite preservar conteúdos publicados na internet e apoiar atividades da Procuradoria-Geral Eleitoral e das Procuradorias Regionais Eleitorais.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-25",
+      "url": "https://www.migalhas.com.br/quentes/452492/mpf-adota-tecnologia-da-verifact-para-investigacoes-eleitorais"
+    },
+    {
+      "setor": "varejo",
+      "title": "25.mar.2026Mattos Filho assessora produtores rurais na emissão de cédulas CPR-FA operação auxiliou na captação de R$ 200 milhões em CPR-F e crédito do Banco XP.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-25",
+      "url": "https://www.migalhas.com.br/quentes/452566/mattos-filho-assessora-produtores-rurais-na-emissao-de-cedulas-cpr-f"
+    },
+    {
+      "setor": "empresarial",
+      "title": "25.mar.2026FGV Direito SP publica 1º relatório de pesquisa sobre evasão fiscalSegundo estudo que analisou acórdãos do STJ e do STF, foram identificadas falhas que comprometem a função preventiva do Direito Penal e criam vantagens para quem frauda o fisco.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-25",
+      "url": "https://www.migalhas.com.br/quentes/452545/fgv-direito-sp-publica-1-relatorio-de-pesquisa-sobre-evasao-fiscal"
+    },
+    {
+      "setor": "empresarial",
+      "title": "25.mar.2026Rubens Calixto lança obra \"A Improbidade Administrativa em Juízo\"Com abordagem que vai além da leitura tradicional da lei, o livro articula teoria e prática para oferecer uma análise estruturada da improbidade administrativa.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-25",
+      "url": "https://www.migalhas.com.br/quentes/452527/rubens-calixto-lanca-obra-a-improbidade-administrativa-em-juizo"
+    },
+    {
+      "setor": "empresarial",
+      "title": "24.mar.2026Lula sanciona \"PL Antifacção\" com dois vetosNorma endurece combate ao crime organizado, cria novos crimes e amplia restrições a condenados.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-25",
+      "url": "https://www.migalhas.com.br/quentes/452568/lula-sanciona-pl-antifaccao-com-dois-vetos"
+    },
     {
       "setor": "varejo",
       "title": "Reforma Tributária: impactos no setor varejista e novas regras do IBS/CBS",

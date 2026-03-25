@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T08:08:26.356246+00:00",
+  "updated_at": "2026-03-25T10:34:55.043471+00:00",
   "total": 8,
   "items": [
     {
@@ -20,6 +20,14 @@
     },
     {
       "tribunal": "STJ",
+      "title": "Corte Especial define que prévia intimação pessoal é pressuposto para cobrança de multa coercitiva",
+      "summary": "Em repetitivo, o colegiado concluiu que a Súmula 410, que exige a prévia intimação do devedor para o cumprimento da obrigação de fazer ou de não fazer, permanece válida na vigência do CPC/2015.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/25032026-Corte-Especial-define-que-previa-intimacao-pessoal-e-pressuposto-para-cobranca-de-multa-coercitiva.aspx",
+      "date": "2026-03-25",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
       "title": "ECA Digital, inteligência artificial e direitos da criança em ambientes digitais marcam primeiro dia de conferência",
       "summary": "ECA Digital, inteligência artificial e direitos da criança em ambientes digitais marcam primeiro dia de conferência",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032026-ECA-Digital--IA-e-direitos-da-crianca-em-ambientes-digitais-marcam-primeiro-dia-de-conferencia.aspx",
@@ -31,14 +39,6 @@
       "title": "Enunciados científicos são reunidos em nova página no portal do STJ",
       "summary": "Enunciados científicos são reunidos em nova página no portal do STJ",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032025-Enunciados-cientificos-sao-reunidos-em-nova-pagina-no-portal-do-STJ.aspx",
-      "date": "2026-03-25",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Violar monitoração eletrônica é crime na Lei Maria da Penha: decisão é destaque no STJ Notícias",
-      "summary": "Violar monitoração eletrônica é crime na Lei Maria da Penha: decisão é destaque no STJ Notícias",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032026-Violar-monitoracao-eletronica-e-crime-na-Lei-Maria-da-Penha-decisao-e-destaque-no-STJ-Noticias.aspx",
       "date": "2026-03-25",
       "category": "Jurisprudencia"
     },

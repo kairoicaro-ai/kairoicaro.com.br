@@ -1,0 +1,24 @@
+{
+  "updated_at": "2026-03-25T10:34:55.306124+00:00",
+  "sources": {
+    "ibama_roraima": {
+      "status": "unavailable",
+      "source": "IBAMA",
+      "message": "Dados serão atualizados em breve"
+    },
+    "mapbiomas_alerts": {
+      "status": "unavailable",
+      "source": "MapBiomas",
+      "message": "Dados serão atualizados em breve"
+    }
+  },
+  "embeds": {
+    "mapbiomas_plataforma": "https://plataforma.brasil.mapbiomas.org/",
+    "mapbiomas_alerta": "https://alerta.mapbiomas.org/",
+    "smartlab_sst": "https://smartlabbr.org/sst",
+    "cnj_estatisticas": "https://painel-estatistica.stg.cloud.cnj.jus.br/",
+    "ibama_autuacoes": "https://autuacoes.ibama.gov.br/",
+    "dados_ambientais": "https://dadosambientais.com.br/",
+    "ibama_dados_abertos": "https://dadosabertos.ibama.gov.br/"
+  }
+}
