@@ -628,6 +628,77 @@ ul {
     flex-shrink: 0;
 }
 
+/* ==================== STATES MAP WIDGET ==================== */
+.states-map-widget {
+    background: var(--azul);
+    border-radius: var(--radius-xl);
+    padding: 36px 32px;
+    color: var(--white);
+}
+
+.map-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--verde);
+    margin-bottom: 20px;
+}
+
+.states-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.state-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.7);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.2s ease;
+}
+
+.state-tag:hover {
+    background: rgba(134,230,0,0.15);
+    border-color: rgba(134,230,0,0.3);
+    color: var(--verde);
+}
+
+.state-hq {
+    background: rgba(134,230,0,0.2);
+    color: var(--verde);
+    border-color: rgba(134,230,0,0.4);
+    font-size: 0.9rem;
+    padding: 8px 18px;
+}
+
+.map-regions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.region {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.55);
+}
+
+.region-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
 /* ==================== AREAS OF PRACTICE ==================== */
 .areas {
     background: var(--off-white);
