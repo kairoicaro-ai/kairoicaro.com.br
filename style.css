@@ -732,240 +732,139 @@ ul {
     white-space: nowrap;
 }
 
-/* ==================== AREAS OF PRACTICE ==================== */
-.areas {
-    background: var(--off-white);
-}
+/* ==================== PRODUTOS JURÍDICOS ==================== */
+.produtos-section { background: var(--off-white); }
 
-.areas-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
-}
-
-.area-card {
-    background: var(--white);
+.produto-area {
+    border: 1px solid var(--gray-100);
     border-radius: var(--radius-lg);
+    margin-bottom: 12px;
     overflow: hidden;
-    box-shadow: var(--shadow-md);
-    transition: var(--transition-medium);
-    position: relative;
+    background: var(--white);
+    transition: all 0.3s ease;
 }
 
-.area-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
-}
+.produto-area:hover { border-color: var(--gray-200); }
+.produto-area.open { border-color: var(--verde); box-shadow: var(--shadow-md); }
 
-.area-card-image {
-    position: relative;
-    height: 200px;
-    overflow: hidden;
-}
-
-.area-card-image img {
+.produto-area-header {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition-slow);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    transition: background 0.2s;
 }
 
-.area-card:hover .area-card-image img {
-    transform: scale(1.08);
-}
+.produto-area-header:hover { background: var(--off-white); }
 
-.area-card-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(15, 41, 68, 0.5) 0%, transparent 60%);
-}
-
-.area-card-content {
-    padding: 28px;
-}
-
-.area-icon {
-    width: 52px;
-    height: 52px;
-    background: var(--verde-glow);
-    border-radius: var(--radius-sm);
+.produto-area-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.produto-area-title { flex: 1; }
+.produto-area-title h3 { font-size: 1.05rem; font-weight: 700; color: var(--azul); margin-bottom: 2px; }
+.produto-count { font-size: 0.75rem; color: var(--text-secondary); font-weight: 500; }
+
+.produto-chevron {
+    color: var(--gray-300);
+    transition: transform 0.3s ease;
+    min-width: 20px;
+}
+
+.produto-area.open .produto-chevron { transform: rotate(180deg); color: var(--verde); }
+
+.produto-area-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.produto-area.open .produto-area-body { max-height: 800px; }
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 0 24px 24px;
+}
+
+.produto-card {
+    background: var(--off-white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.produto-card:hover {
+    border-color: var(--verde);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-2px);
+}
+
+.produto-tier {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     color: var(--verde-dark);
-    margin-bottom: 16px;
-    transition: var(--transition-fast);
+    background: var(--verde-glow);
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
-.area-card:hover .area-icon {
-    background: var(--verde);
-    color: var(--azul);
-}
-
-.area-card-content h3 {
-    font-size: 1.25rem;
+.produto-card h4 {
+    font-size: 0.9rem;
     font-weight: 700;
     color: var(--azul);
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.produto-card p {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
     margin-bottom: 12px;
 }
 
-.area-card-content p {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: 16px;
-}
-
-.area-topics {
+.produto-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 4px;
 }
 
-.area-topics li {
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 5px 12px;
-    background: var(--verde-glow);
-    color: var(--verde-dark);
-    border-radius: 50px;
-    transition: var(--transition-fast);
-}
-
-.area-card:hover .area-topics li {
-    background: var(--verde-glow-strong);
-}
-
-/* Secondary areas mini cards */
-.areas-grid-secondary {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-top: 28px;
-}
-
-.area-card-mini {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    padding: 24px;
-    background: var(--white);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--gray-100);
-    transition: var(--transition-medium);
-}
-
-.area-card-mini:hover {
-    border-color: var(--verde);
-    box-shadow: var(--shadow-md);
-    transform: translateY(-4px);
-}
-
-.area-icon-mini {
-    flex-shrink: 0;
-    width: 44px;
-    height: 44px;
-    background: var(--verde-glow);
-    border-radius: var(--radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--verde-dark);
-    transition: var(--transition-fast);
-}
-
-.area-card-mini:hover .area-icon-mini {
-    background: var(--verde);
+.produto-tags span {
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: rgba(15,41,68,0.06);
     color: var(--azul);
-}
-
-.area-card-mini h4 {
-    font-size: 0.95rem;
-    font-weight: 700;
-    color: var(--azul);
-    margin-bottom: 4px;
-}
-
-.area-card-mini p {
-    font-size: 0.82rem;
-    color: var(--text-secondary);
-    line-height: 1.5;
-}
-
-/* Uniform area cards (8 equal cards, 4-column grid) */
-.areas-grid-uniform {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.area-card-uniform {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 32px 20px;
-    background: var(--white);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    border: 1px solid var(--gray-100);
-    transition: var(--transition-medium);
-}
-
-.area-card-uniform:hover {
-    border-color: var(--verde);
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-6px);
-}
-
-.area-icon-uniform {
-    width: 56px;
-    height: 56px;
-    background: var(--verde-glow);
-    border-radius: var(--radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--verde-dark);
-    margin-bottom: 16px;
-    transition: var(--transition-fast);
-}
-
-.area-card-uniform:hover .area-icon-uniform {
-    background: var(--verde);
-    color: var(--azul);
-}
-
-.area-card-uniform h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--azul);
-    margin-bottom: 8px;
-}
-
-.area-card-uniform p {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    line-height: 1.5;
 }
 
 @media (max-width: 1024px) {
-    .areas-grid-uniform {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    .produtos-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
-    .areas-grid-uniform {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .areas-grid-uniform {
-        grid-template-columns: 1fr;
-    }
+    .produtos-grid { grid-template-columns: 1fr; }
+    .produto-area.open .produto-area-body { max-height: 2000px; }
 }
 
 /* ==================== DIFFERENTIALS ==================== */
@@ -2590,14 +2489,6 @@ ul {
         gap: 48px;
     }
 
-    .areas-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .areas-grid-secondary {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .diff-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -2665,14 +2556,6 @@ ul {
     .stat-divider {
         width: 50px;
         height: 1px;
-    }
-
-    .areas-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .areas-grid-secondary {
-        grid-template-columns: 1fr;
     }
 
     .diff-grid {

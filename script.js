@@ -621,6 +621,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (carouselTrack) carouselTrack.scrollLeft += 200;
     });
 
+    // ==================== Produtos Jurídicos accordion ====================
+    document.querySelectorAll('.produto-area-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const area = header.parentElement;
+            const wasOpen = area.classList.contains('open');
+            // Close all
+            document.querySelectorAll('.produto-area').forEach(a => a.classList.remove('open'));
+            // Toggle current
+            if (!wasOpen) area.classList.add('open');
+        });
+    });
+
     // ==================== Console branding ====================
     console.log(
         '%cKairo Icaro — Advogados Associados',
