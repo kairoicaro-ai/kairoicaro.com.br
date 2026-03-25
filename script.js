@@ -557,16 +557,60 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ==================== SETORIAL TABS ====================
+    // ==================== RADAR SEARCH TABS ====================
+    document.querySelectorAll('.radar-search-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.radar-search-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            const input = document.getElementById('radar-input');
+            const placeholders = { car: 'Digite o número do CAR', cpf: 'Digite o CPF ou CNPJ', imovel: 'Digite o nome do imóvel' };
+            if (input) input.placeholder = placeholders[tab.dataset.search] || '';
+        });
+    });
+
+    // ==================== SETORIAL NEWS LOADER ====================
+    const setorialGrid = document.getElementById('setorial-grid');
+    let allSetoriais = [];
+    let currentSetorialFilter = 'todos';
+
+    function renderSetoriais() {
+        if (!setorialGrid) return;
+        const filtered = currentSetorialFilter === 'todos' ? allSetoriais : allSetoriais.filter(i => i.setor === currentSetorialFilter);
+        if (filtered.length === 0) {
+            setorialGrid.innerHTML = '<div class="informativos-empty">Nenhuma notícia encontrada.</div>';
+            return;
+        }
+        setorialGrid.innerHTML = filtered.map(item => `
+            <article class="news-card-text reveal">
+                <span class="news-type-badge" data-type="${item.setor === 'varejo' ? 'guia' : item.setor === 'ambiental' ? 'alerta' : 'artigo'}">${item.setor === 'varejo' ? 'Varejo' : item.setor === 'ambiental' ? 'Ambiental' : 'Empresarial'}</span>
+                <span class="news-category" style="position:static;display:inline-block;margin-bottom:8px;">${item.source}</span>
+                <time class="news-date">${item.date ? item.date.split('-').reverse().join('/') : ''}</time>
+                <h3>${item.title}</h3>
+                <p>${item.summary}</p>
+                ${item.url ? `<a href="${item.url}" target="_blank" class="news-link">Leia mais →</a>` : '<span class="news-link news-link-soon">Análise KIAA</span>'}
+            </article>
+        `).join('');
+        setorialGrid.querySelectorAll('.reveal').forEach((el, i) => { el.style.transitionDelay = `${i*0.08}s`; setTimeout(() => el.classList.add('active'), 50); });
+    }
+
+    function loadSetoriais() {
+        if (!setorialGrid) return;
+        fetch('data/setoriais.json')
+            .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+            .then(d => { allSetoriais = (d.items || []).sort((a,b) => (b.date||'').localeCompare(a.date||'')); renderSetoriais(); })
+            .catch(() => { setorialGrid.innerHTML = '<div class="informativos-empty">Notícias em atualização.</div>'; });
+    }
+
     document.querySelectorAll('.setorial-tab').forEach(tab => {
         tab.addEventListener('click', () => {
             document.querySelectorAll('.setorial-tab').forEach(t => t.classList.remove('active'));
-            document.querySelectorAll('.setorial-panel').forEach(p => p.classList.remove('active'));
             tab.classList.add('active');
-            const panel = document.getElementById('setorial-' + tab.dataset.setorial);
-            if (panel) panel.classList.add('active');
+            currentSetorialFilter = tab.dataset.setorial;
+            renderSetoriais();
         });
     });
+
+    loadSetoriais();
 
     // ==================== CAROUSEL ARROWS ====================
     const carouselTrack = document.querySelector('.clients-track');

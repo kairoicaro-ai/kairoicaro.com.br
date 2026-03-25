@@ -628,76 +628,83 @@ ul {
     flex-shrink: 0;
 }
 
-/* ==================== STATES MAP WIDGET ==================== */
-.states-map-widget {
+/* ==================== BRAZIL MAP WIDGET ==================== */
+.brazil-map-widget {
     background: var(--azul);
     border-radius: var(--radius-xl);
-    padding: 36px 32px;
-    color: var(--white);
+    padding: 28px 24px;
+    overflow: hidden;
 }
 
-.map-title {
-    font-size: 0.75rem;
+.map-header { margin-bottom: 16px; }
+
+.map-badge {
+    font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--verde);
-    margin-bottom: 20px;
 }
 
-.states-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 24px;
+.brazil-svg {
+    width: 100%;
+    max-height: 400px;
 }
 
-.state-tag {
-    display: inline-block;
-    padding: 6px 14px;
-    border-radius: 8px;
-    font-size: 0.82rem;
-    font-weight: 700;
-    background: rgba(255,255,255,0.08);
-    color: rgba(255,255,255,0.7);
-    border: 1px solid rgba(255,255,255,0.1);
-    transition: all 0.2s ease;
+.state-active {
+    fill: var(--verde);
+    fill-opacity: 0.7;
+    stroke: var(--azul);
+    stroke-width: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.state-tag:hover {
-    background: rgba(134,230,0,0.15);
-    border-color: rgba(134,230,0,0.3);
-    color: var(--verde);
+.state-active:hover {
+    fill-opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(134, 230, 0, 0.5));
 }
 
 .state-hq {
-    background: rgba(134,230,0,0.2);
-    color: var(--verde);
-    border-color: rgba(134,230,0,0.4);
-    font-size: 0.9rem;
-    padding: 8px 18px;
+    fill: var(--verde-neg);
+    fill-opacity: 1;
+    stroke-width: 2;
+    filter: drop-shadow(0 0 6px rgba(134, 230, 0, 0.4));
 }
 
-.map-regions {
+.state-inactive {
+    fill: rgba(255,255,255,0.06);
+    stroke: rgba(255,255,255,0.08);
+    stroke-width: 0.5;
+}
+
+.state-inactive:hover {
+    fill: rgba(255,255,255,0.1);
+}
+
+.map-legend {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    margin-top: 16px;
+    justify-content: center;
 }
 
-.region {
+.map-legend-item {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 0.8rem;
-    color: rgba(255,255,255,0.55);
+    gap: 6px;
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.5);
 }
 
-.region-dot {
-    width: 8px;
-    height: 8px;
+.legend-dot {
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    flex-shrink: 0;
 }
+
+.legend-active { background: var(--verde); opacity: 0.7; }
+.legend-hq { background: var(--verde-neg); }
 
 /* ==================== AREAS OF PRACTICE ==================== */
 .areas {
@@ -3391,3 +3398,80 @@ button:focus-visible {
         gap: 32px;
     }
 }
+
+/* ==================== RADAR AMBIENTAL ==================== */
+.radar-container { max-width: 900px; margin: 0 auto; }
+
+.radar-header { text-align: center; margin-bottom: 32px; }
+.radar-header h3 { font-size: 1.4rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+.radar-header p { font-size: 0.9rem; color: rgba(255,255,255,0.55); }
+
+.radar-search { margin-bottom: 32px; }
+
+.radar-search-tabs {
+    display: flex; justify-content: center; gap: 8px; margin-bottom: 16px;
+}
+
+.radar-search-tab {
+    padding: 8px 20px; border: 2px solid rgba(255,255,255,0.12); border-radius: 50px;
+    background: transparent; color: rgba(255,255,255,0.5); font-family: inherit;
+    font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.2s;
+}
+
+.radar-search-tab.active {
+    background: var(--verde); border-color: var(--verde); color: var(--azul);
+}
+
+.radar-input-group {
+    display: flex; gap: 12px; max-width: 600px; margin: 0 auto;
+}
+
+.radar-input {
+    flex: 1; padding: 14px 20px; border: 2px solid rgba(255,255,255,0.12);
+    border-radius: var(--radius-md); background: rgba(255,255,255,0.06);
+    color: var(--white); font-family: inherit; font-size: 0.9rem; outline: none;
+}
+
+.radar-input::placeholder { color: rgba(255,255,255,0.3); }
+.radar-input:focus { border-color: var(--verde); background: rgba(255,255,255,0.1); }
+
+.radar-search-btn {
+    display: flex; align-items: center; gap: 8px; padding: 14px 24px;
+    background: var(--verde); color: var(--azul); border: none; border-radius: var(--radius-md);
+    font-family: inherit; font-size: 0.9rem; font-weight: 700; cursor: pointer;
+    transition: all 0.2s;
+}
+
+.radar-search-btn:hover { background: var(--verde-neg); transform: translateY(-2px); }
+
+.radar-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+.radar-card {
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius-md); padding: 24px; transition: all 0.3s;
+}
+
+.radar-card:hover { background: rgba(255,255,255,0.08); border-color: rgba(134,230,0,0.2); transform: translateY(-4px); }
+
+.radar-card-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+
+.radar-card h4 { font-size: 0.9rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+.radar-card p { font-size: 0.8rem; color: rgba(255,255,255,0.5); line-height: 1.5; margin-bottom: 14px; }
+
+.radar-card-link {
+    font-size: 0.8rem; font-weight: 600; color: var(--verde); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 4px; transition: gap 0.2s;
+}
+
+.radar-card-link:hover { gap: 8px; }
+.radar-card-link-green { color: var(--verde); }
+
+.radar-card-cta { border-color: rgba(134,230,0,0.2); background: rgba(134,230,0,0.04); }
+
+@media (max-width: 768px) {
+    .radar-cards-grid { grid-template-columns: 1fr; }
+    .radar-input-group { flex-direction: column; }
+}
+
+/* ==================== JURIMETRIA KIAA ==================== */
+.jurimetria-kiaa-section { background: var(--off-white); }
