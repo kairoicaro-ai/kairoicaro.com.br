@@ -1,29 +1,37 @@
 {
-  "updated_at": "2026-03-24T20:03:07.614145+00:00",
-  "total": 8,
+  "updated_at": "2026-03-25T05:26:25.137686+00:00",
+  "total": 5,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF concede prisão domiciliar temporária ao ex-presidente Jair Bolsonaro",
-      "summary": "Ministro Alexandre de Moraes considerou que a medida é adequada para a plena recuperação de Bolsonaro; PGR se manifestou favoravelmente ao pedido da defesa",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-concede-prisao-domiciliar-temporaria-ao-ex-presidente-jair-bolsonaro/",
-      "date": "2026-03-24",
+      "title": "Confira a pauta do STF desta quarta-feira (25)",
+      "summary": "Plenário retoma análise de liminares que suspenderam pagamento de parcelas que superam o teto constitucional; sessão é transmitida pela Rádio e TV Justiça e pelo canal do STF no YouTube, a partir das 14h.",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quarta-feira-25-2/",
+      "date": "2026-03-25",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF determina prorrogação da CPMI do INSS",
-      "summary": "Segundo decisão do ministro André Mendonça, prazo deve ser definido pela comissão, mas não pode ultrapassar a atual legislatura",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-determina-prorrogacao-da-cpmi-do-inss/",
-      "date": "2026-03-24",
+      "title": "Municípios não podem fixar índice de correção monetária e juros de mora maiores que os da União, decide STF",
+      "summary": "Percentuais sobre créditos fiscais devem ser iguais ou inferiores à Selic",
+      "url": "https://noticias.stf.jus.br/postsnoticias/municipios-nao-podem-fixar-indice-de-correcao-monetaria-e-juros-de-mora-maiores-que-os-da-uniao-decide-stf/",
+      "date": "2026-03-25",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "ECA Digital, inteligência artificial e direitos da criança em ambientes digitais marcam primeiro dia de conferência",
+      "summary": "ECA Digital, inteligência artificial e direitos da criança em ambientes digitais marcam primeiro dia de conferência",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032026-ECA-Digital--IA-e-direitos-da-crianca-em-ambientes-digitais-marcam-primeiro-dia-de-conferencia.aspx",
+      "date": "2026-03-25",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
       "title": "Enunciados científicos são reunidos em nova página no portal do STJ",
       "summary": "Enunciados científicos são reunidos em nova página no portal do STJ",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032025-Enunciados-cientificos-sao-reunidos-em-nova-pagina-no-portal-do-STJ.aspx",
-      "date": "2026-03-24",
+      "date": "2026-03-25",
       "category": "Jurisprudencia"
     },
     {
@@ -31,40 +39,8 @@
       "title": "Violar monitoração eletrônica é crime na Lei Maria da Penha: decisão é destaque no STJ Notícias",
       "summary": "Violar monitoração eletrônica é crime na Lei Maria da Penha: decisão é destaque no STJ Notícias",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032026-Violar-monitoracao-eletronica-e-crime-na-Lei-Maria-da-Penha-decisao-e-destaque-no-STJ-Noticias.aspx",
-      "date": "2026-03-24",
+      "date": "2026-03-25",
       "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Página de Repetitivos traz julgados sobre não inclusão do IPI na base de cálculo de créditos de PIS/Pasep e Cofins",
-      "summary": "Página de Repetitivos traz julgados sobre não inclusão do IPI na base de cálculo de créditos de PIS/Pasep e Cofins",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032026-Pagina-de-Repetitivos-inclui-julgados-sobre-nao-inclusao-do-IPI-na-base-de-calculo-dos-creditos-de-PISPasep-Cofins.aspx",
-      "date": "2026-03-24",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Assédio sexual com comentários sobre o corpo e pedidos de fotos íntimas resulta em condenação de R$ 40 mil a superatacado em Manaus",
-      "summary": "A juíza reconheceu violação à dignidade e à liberdade sexual de trabalhadora e confirmou responsabilidade da empresa pelos atos praticados por gerente",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11212-assedio-sexual-com-comentarios-sobre-o-corpo-e-pedidos-de-fotos-intimas-resulta-em-condenacao-de-r-40-mil-a-superatacado-em-manaus",
-      "date": "2026-03-24",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Elas em Pauta: mutirão do TRT-11 realiza 877 audiências e homologa 188 acordos trabalhistas",
-      "summary": "Conciliações envolvendo trabalhadoras mulheres movimentam quase R$ 2 milhões em uma semana",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11211-elas-em-pauta-mutirao-do-trt-11-realiza-877-audiencias-e-homologa-188-acordos-trabalhistas",
-      "date": "2026-03-24",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TST",
-      "title": "Ir para o conteúdo",
-      "summary": "",
-      "url": "https://www.tst.jus.br#content",
-      "date": "2026-03-24",
-      "category": "Trabalhista"
     }
   ]
 }
