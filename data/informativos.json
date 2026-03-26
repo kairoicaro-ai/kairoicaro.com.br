@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-03-26T16:39:12.266169+00:00",
-  "total": 8,
+  "updated_at": "2026-03-26T20:01:18.007481+00:00",
+  "total": 5,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Confira a pauta do STF desta quinta-feira (26)",
-      "summary": "Sessão terá transmissão ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
-      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quinta-feira-26-2/",
+      "title": "Partidos acionam STF contra norma do TSE sobre suspensão de órgãos partidários",
+      "summary": "PRD e Solidariedade alegam invasão da competência do Congresso para legislar sobre direito eleitoral",
+      "url": "https://noticias.stf.jus.br/postsnoticias/partidos-acionam-stf-contra-norma-do-tse-sobre-suspensao-de-orgaos-partidarios/",
       "date": "2026-03-26",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Ministro Luiz Fux recebe homenagem da Escola Superior da AGU",
-      "summary": "Ministro recebeu placa em agradecimento por sua contribuição como presidente da comissão de juristas responsável pelo anteprojeto do CPC/2015",
-      "url": "https://noticias.stf.jus.br/postsnoticias/ministro-luiz-fux-recebe-homenagem-da-escola-superior-da-agu/",
+      "title": "STF veda concessão de florestas em terras indígenas e quilombolas",
+      "summary": "Decisão foi tomada na análise de dispositivo de lei federal que trata da matéria",
+      "url": "https://noticias.stf.jus.br/postsnoticias/161560/",
       "date": "2026-03-26",
       "category": "Constitucional"
     },
@@ -41,30 +41,6 @@
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26032026-Requisitos-para-reconhecimento-postumo-de-uniao-estavel-homoafetiva-e-tema-da-Pesquisa-Pronta.aspx",
       "date": "2026-03-26",
       "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Durante o mês de abril, 14 municípios do Amazonas e cinco de Roraima serão visitados pela Justiça Itinerante",
-      "summary": "Servidores da Justiça do Trabalho estarão à disposição da população para orientar e esclarecer dúvidas sobre os direitos do trabalhador",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11221-durante-o-mes-de-abril-14-municipios-do-amazonas-e-cinco-de-roraima-serao-visitados-pela-justica-itinerante",
-      "date": "2026-03-26",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Presidente em exercício do TRT-11 acompanha ação em Manacapuru e reforça diálogo institucional com o município",
-      "summary": "O presidente em exercício do Tribunal Regional do Trabalho da 11ª Região (AM/RR), desembargador David Alves de Mello Júnior, esteve em Manacapuru (AM) para acompanhar uma ação do programa Trabalho, Justiça e Cidadania (TJC), promovido pela Associação dos Magistrados da Justiça do Trabalho da 11ª Reg",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11216-presidente-em-exercicio-do-trt-11-acompanha-acao-em-manacapuru-e-reforca-dialogo-institucional-com-o-municipio",
-      "date": "2026-03-26",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TST",
-      "title": "Ir para o conteúdo",
-      "summary": "",
-      "url": "https://www.tst.jus.br#content",
-      "date": "2026-03-26",
-      "category": "Trabalhista"
     }
   ]
 }
