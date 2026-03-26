@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T09:46:15.988747+00:00",
+  "updated_at": "2026-03-26T10:39:37.746317+00:00",
   "total": 8,
   "items": [
     {
@@ -20,6 +20,14 @@
     },
     {
       "tribunal": "STJ",
+      "title": "Tribunal afasta contribuição previdenciária sobre valores pagos a previdência privada exclusiva de dirigentes",
+      "summary": "Ao unificar a posição da corte sobre o tema, o colegiado considerou que uma lei de 2001 afastou a universalidade do plano como condição para que os valores fossem excluídos da base de cálculo da contribuição previdenciária.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26032026-Tribunal-afasta-contribuicao-previdenciaria-sobre-valores-pagos-a-previdencia-privada-exclusiva-de-dirigentes.aspx",
+      "date": "2026-03-26",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
       "title": "Conferência destaca papel do Judiciário na proteção de crianças e adolescentes no ambiente digital",
       "summary": "Conferência destaca papel do Judiciário na proteção de crianças e adolescentes no ambiente digital",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/25032026-Conferencia-destaca-papel-do-Judiciario-na-protecao-de-criancas-e-adolescentes-no-ambiente-digital.aspx",
@@ -31,14 +39,6 @@
       "title": "Página de Repetitivos e IACs inclui julgado sobre prescrição da pena de multa",
       "summary": "Página de Repetitivos e IACs inclui julgado sobre prescrição da pena de multa",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/25032026-Pagina-de-Repetitivos-e-IACs-inclui-julgado-sobre-prescricao-da-pena-de-multa.aspx",
-      "date": "2026-03-26",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Podcast STJ No Seu Dia discute relativização do requisito da publicidade na união estável homoafetiva",
-      "summary": "Podcast STJ No Seu Dia discute relativização do requisito da publicidade na união estável homoafetiva",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/25032026-Podcast-STJ-No-Seu-Dia-discute-relativizacao-do-requisito-da-publicidade-na-uniao-estavel-homoafetiva.aspx",
       "date": "2026-03-26",
       "category": "Jurisprudencia"
     },
