@@ -468,6 +468,229 @@
         </div>
     </section>
 
+    <!-- ==================== CASES DE SUCESSO ==================== -->
+    <section id="cases" class="section cases-section">
+        <style>
+            .cases-section {
+                background: #0F2944;
+                padding: 100px 0;
+                position: relative;
+                overflow: hidden;
+            }
+            .cases-section::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                right: -20%;
+                width: 600px;
+                height: 600px;
+                background: radial-gradient(circle, rgba(134,230,0,0.06) 0%, transparent 70%);
+                pointer-events: none;
+            }
+            .cases-section::after {
+                content: '';
+                position: absolute;
+                bottom: -30%;
+                left: -10%;
+                width: 400px;
+                height: 400px;
+                background: radial-gradient(circle, rgba(134,230,0,0.04) 0%, transparent 70%);
+                pointer-events: none;
+            }
+            .cases-section .section-tag {
+                color: #86E600;
+                font-size: 0.85rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            .cases-section .section-title {
+                color: #fff;
+                font-size: 2.4rem;
+                font-weight: 800;
+                margin-top: 12px;
+            }
+            .cases-section .section-desc {
+                color: rgba(255,255,255,0.6);
+                font-size: 1.05rem;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .cases-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 28px;
+                margin-top: 48px;
+                position: relative;
+                z-index: 1;
+            }
+            .case-card {
+                background: rgba(255,255,255,0.04);
+                backdrop-filter: blur(16px);
+                -webkit-backdrop-filter: blur(16px);
+                border: 1px solid rgba(255,255,255,0.08);
+                border-radius: 20px;
+                padding: 36px 32px;
+                transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+                position: relative;
+                overflow: hidden;
+            }
+            .case-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: linear-gradient(90deg, #86E600, rgba(134,230,0,0.2));
+                opacity: 0;
+                transition: opacity 0.4s;
+            }
+            .case-card:hover {
+                transform: translateY(-6px);
+                background: rgba(255,255,255,0.07);
+                border-color: rgba(134,230,0,0.2);
+                box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            }
+            .case-card:hover::before {
+                opacity: 1;
+            }
+            .case-badge {
+                display: inline-block;
+                padding: 5px 14px;
+                border-radius: 20px;
+                font-size: 0.72rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 16px;
+            }
+            .case-badge--ambiental { background: rgba(46,204,113,0.15); color: #2ECC71; }
+            .case-badge--agrario { background: rgba(230,126,34,0.15); color: #E67E22; }
+            .case-badge--trabalhista { background: rgba(52,152,219,0.15); color: #3498DB; }
+            .case-badge--possessorio { background: rgba(155,89,182,0.15); color: #9B59B6; }
+            .case-card h3 {
+                color: #fff;
+                font-size: 1.15rem;
+                font-weight: 700;
+                margin: 0 0 12px 0;
+                line-height: 1.4;
+            }
+            .case-card p {
+                color: rgba(255,255,255,0.55);
+                font-size: 0.92rem;
+                line-height: 1.65;
+                margin: 0 0 24px 0;
+            }
+            .case-metric {
+                display: flex;
+                align-items: baseline;
+                gap: 10px;
+                margin-bottom: 16px;
+            }
+            .case-metric-value {
+                font-size: 2rem;
+                font-weight: 800;
+                color: #86E600;
+                line-height: 1;
+            }
+            .case-metric-label {
+                font-size: 0.82rem;
+                color: rgba(255,255,255,0.45);
+                font-weight: 500;
+            }
+            .case-resultado {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                padding: 6px 16px;
+                border-radius: 8px;
+                background: rgba(134,230,0,0.1);
+                border: 1px solid rgba(134,230,0,0.2);
+                color: #86E600;
+                font-size: 0.78rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+            .case-resultado svg {
+                flex-shrink: 0;
+            }
+            @media (max-width: 768px) {
+                .cases-grid { grid-template-columns: 1fr; gap: 20px; }
+                .cases-section { padding: 72px 0; }
+                .cases-section .section-title { font-size: 1.8rem; }
+                .case-card { padding: 28px 24px; }
+                .case-metric-value { font-size: 1.6rem; }
+            }
+        </style>
+        <div class="container">
+            <div class="section-header" style="text-align:center;">
+                <span class="section-tag">Cases de Sucesso</span>
+                <h2 class="section-title">Resultados que <span class="text-green">transformam</span></h2>
+                <p class="section-desc">Histórias reais de clientes que alcançaram resultados expressivos com a assessoria jurídica do KIAA.</p>
+            </div>
+            <div class="cases-grid">
+                <!-- Case 1 -->
+                <div class="case-card">
+                    <span class="case-badge case-badge--ambiental">Ambiental</span>
+                    <h3>Defesa Ambiental — Auto de Infração IBAMA</h3>
+                    <p>Empresa do agronegócio foi autuada pelo IBAMA com multas milionárias por suposta irregularidade ambiental. A equipe KIAA atuou na defesa administrativa e judicial, demonstrando a regularidade das operações e obtendo a anulação integral das autuações.</p>
+                    <div class="case-metric">
+                        <span class="case-metric-value">R$2,5M</span>
+                        <span class="case-metric-label">em multas anuladas</span>
+                    </div>
+                    <span class="case-resultado">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        Regularização ambiental conquistada
+                    </span>
+                </div>
+                <!-- Case 2 -->
+                <div class="case-card">
+                    <span class="case-badge case-badge--agrario">Agrário</span>
+                    <h3>Regularização Fundiária — 5.000 Hectares</h3>
+                    <p>Produtor rural enfrentava litígio fundiário há mais de 3 anos sem resolução. O KIAA assumiu o caso, conduziu a estratégia de regularização junto aos órgãos competentes e garantiu a titulação definitiva da propriedade.</p>
+                    <div class="case-metric">
+                        <span class="case-metric-value">5.000 ha</span>
+                        <span class="case-metric-label">regularizados e titulados</span>
+                    </div>
+                    <span class="case-resultado">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        Título de propriedade assegurado
+                    </span>
+                </div>
+                <!-- Case 3 -->
+                <div class="case-card">
+                    <span class="case-badge case-badge--trabalhista">Trabalhista</span>
+                    <h3>Trabalhista Empresarial — Economia de R$800K</h3>
+                    <p>Empresa foi acionada em reclamação trabalhista coletiva com pedidos que ultrapassavam R$1,2 milhão. A defesa estratégica conduzida pelo KIAA resultou na redução substancial dos valores e na preservação da saúde financeira do negócio.</p>
+                    <div class="case-metric">
+                        <span class="case-metric-value">R$800K</span>
+                        <span class="case-metric-label">de economia para a empresa</span>
+                    </div>
+                    <span class="case-resultado">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        Defesa integral bem-sucedida
+                    </span>
+                </div>
+                <!-- Case 4 -->
+                <div class="case-card">
+                    <span class="case-badge case-badge--possessorio">Possessório</span>
+                    <h3>Direito Agrário — Defesa Possessória</h3>
+                    <p>Propriedade rural em Roraima enfrentou conflito agrário com risco de esbulho possessório. A atuação do KIAA garantiu a manutenção da posse por meio de medida liminar e posterior sentença favorável, protegendo o patrimônio do produtor.</p>
+                    <div class="case-metric">
+                        <span class="case-metric-value">100%</span>
+                        <span class="case-metric-label">da propriedade protegida</span>
+                    </div>
+                    <span class="case-resultado">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        Posse mantida — sentença favorável
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ==================== EQUIPE ==================== -->
     <section id="equipe" class="section team-section">
         <div class="container">
@@ -778,6 +1001,191 @@
                     <h3>+14 Anos de Experiência</h3>
                     <p class="award-source">Desde abril de 2012</p>
                     <p class="award-desc">Mais de uma década de assessoria jurídica preventiva e contenciosa para empresas e produtores rurais na Amazônia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DEPOIMENTOS ==================== -->
+    <section id="depoimentos" class="section testimonials-section">
+        <style>
+            .testimonials-section {
+                background: #f7f8fa;
+                padding: 80px 0;
+            }
+            .testimonials-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 24px;
+                margin-top: 48px;
+            }
+            .testimonial-card {
+                background: #fff;
+                border-radius: 16px;
+                padding: 32px 28px 28px;
+                box-shadow: 0 2px 16px rgba(15,41,68,0.07);
+                position: relative;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            .testimonial-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 32px rgba(15,41,68,0.12);
+            }
+            .testimonial-quote-mark {
+                font-size: 3rem;
+                line-height: 1;
+                color: #86E600;
+                font-family: Georgia, serif;
+                margin-bottom: 8px;
+                display: block;
+            }
+            .testimonial-stars {
+                display: flex;
+                gap: 3px;
+                margin-bottom: 16px;
+            }
+            .testimonial-stars svg {
+                width: 18px;
+                height: 18px;
+                fill: #86E600;
+            }
+            .testimonial-text {
+                font-size: 0.95rem;
+                line-height: 1.7;
+                color: #3a4a5c;
+                margin-bottom: 24px;
+                font-style: italic;
+            }
+            .testimonial-author {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                border-top: 1px solid #eef0f3;
+                padding-top: 18px;
+            }
+            .testimonial-avatar {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #0F2944;
+                color: #86E600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 0.9rem;
+                letter-spacing: 1px;
+                flex-shrink: 0;
+            }
+            .testimonial-author-info {
+                display: flex;
+                flex-direction: column;
+            }
+            .testimonial-author-name {
+                font-weight: 600;
+                color: #0F2944;
+                font-size: 0.9rem;
+            }
+            .testimonial-author-role {
+                font-size: 0.8rem;
+                color: #7a8a9c;
+                margin-top: 2px;
+            }
+            @media (max-width: 991px) {
+                .testimonials-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            @media (max-width: 600px) {
+                .testimonials-section {
+                    padding: 60px 0;
+                }
+                .testimonials-grid {
+                    grid-template-columns: 1fr;
+                    gap: 16px;
+                }
+                .testimonial-card {
+                    padding: 24px 20px 20px;
+                }
+            }
+        </style>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Depoimentos</span>
+                <h2 class="section-title">O que nossos clientes <span class="text-green">dizem</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <span class="testimonial-quote-mark">&ldquo;</span>
+                    <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                    <p class="testimonial-text">A equipe da KIAA salvou nossa propriedade rural de um embargo ambiental injusto. A defesa foi precisa, técnica e extremamente ágil. Sou eternamente grato pelo trabalho realizado.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">R.S.</div>
+                        <div class="testimonial-author-info">
+                            <span class="testimonial-author-name">R.S.</span>
+                            <span class="testimonial-author-role">Produtor Rural em Roraima</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <span class="testimonial-quote-mark">&ldquo;</span>
+                    <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                    <p class="testimonial-text">Todo o processo de regularização do CAR da nossa fazenda foi conduzido com transparência e competência. Hoje estamos 100% regularizados graças à dedicação do escritório.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M.A.</div>
+                        <div class="testimonial-author-info">
+                            <span class="testimonial-author-name">M.A.</span>
+                            <span class="testimonial-author-role">Empresário Rural</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <span class="testimonial-quote-mark">&ldquo;</span>
+                    <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                    <p class="testimonial-text">Enfrentamos uma disputa agrária que parecia impossível de vencer. A KIAA montou uma estratégia sólida e garantiu a posse da nossa terra. Profissionais excepcionais.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">J.L.</div>
+                        <div class="testimonial-author-info">
+                            <span class="testimonial-author-name">J.L.</span>
+                            <span class="testimonial-author-role">Proprietário Rural</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <span class="testimonial-quote-mark">&ldquo;</span>
+                    <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                    <p class="testimonial-text">Recebemos uma multa do IBAMA que comprometeria gravemente nosso negócio. A defesa administrativa conduzida pela KIAA resultou na anulação total do auto de infração.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">C.F.</div>
+                        <div class="testimonial-author-info">
+                            <span class="testimonial-author-name">C.F.</span>
+                            <span class="testimonial-author-role">Empresário Rural</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <span class="testimonial-quote-mark">&ldquo;</span>
+                    <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                    <p class="testimonial-text">A consultoria trabalhista empresarial da KIAA reorganizou toda a nossa gestão de pessoal. Reduziu riscos e nos deu segurança para crescer. Atendimento diferenciado e humano.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">P.M.</div>
+                        <div class="testimonial-author-info">
+                            <span class="testimonial-author-name">P.M.</span>
+                            <span class="testimonial-author-role">Diretor de Supermercado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <span class="testimonial-quote-mark">&ldquo;</span>
+                    <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                    <p class="testimonial-text">Tivemos uma emergência ambiental numa madrugada e a equipe da KIAA respondeu em poucas horas. A agilidade e o domínio técnico evitaram prejuízos enormes para nossa operação.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A.B.</div>
+                        <div class="testimonial-author-info">
+                            <span class="testimonial-author-name">A.B.</span>
+                            <span class="testimonial-author-role">Gestor de Agronegócio</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
