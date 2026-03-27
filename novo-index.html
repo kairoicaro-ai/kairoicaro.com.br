@@ -150,8 +150,53 @@
             flex-direction: column;
         }
 
+        /* ======= VIDEO HERO ======= */
+        .video-hero-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .video-hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .video-hero-bg video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        .video-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                180deg,
+                rgba(15, 41, 68, 0.85) 0%,
+                rgba(15, 41, 68, 0.70) 40%,
+                rgba(15, 41, 68, 0.85) 100%
+            );
+            z-index: 1;
+        }
+
         /* ======= HEADER ======= */
         .header {
+            position: relative;
+            z-index: 2;
             text-align: center;
             padding: 60px 24px 20px;
             animation: fadeInDown 1s ease-out;
@@ -645,6 +690,46 @@
         body.light-mode .theme-toggle { background: rgba(255,255,255,0.9); color: #0F2944; border-color: #E2E8F0; }
         body.light-mode footer { background: rgba(0,0,0,0.05); }
         body.light-mode footer * { color: #1E293B; }
+
+        /* ======= LANGUAGE TOGGLE ======= */
+        .lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 72px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 0;
+            border-radius: 50px;
+            border: 2px solid rgba(255,255,255,0.2);
+            background: rgba(15, 41, 68, 0.8);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-toggle:hover { border-color: #86E600; }
+        .lang-toggle span {
+            padding: 10px 14px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: rgba(255,255,255,0.45);
+            transition: all 0.3s ease;
+            user-select: none;
+        }
+        .lang-toggle span.active {
+            color: #86E600;
+            background: rgba(134,230,0,0.12);
+        }
+        .lang-toggle .lang-divider {
+            width: 1px;
+            height: 20px;
+            background: rgba(255,255,255,0.15);
+        }
+        body.light-mode .lang-toggle { background: rgba(255,255,255,0.9); border-color: #E2E8F0; }
+        body.light-mode .lang-toggle span { color: rgba(30,41,59,0.4); }
+        body.light-mode .lang-toggle span.active { color: #0F2944; background: rgba(134,230,0,0.15); }
     </style>
 
     <script type="application/ld+json">
@@ -705,6 +790,12 @@
         <svg id="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
     </button>
 
+    <div class="lang-toggle" onclick="toggleLang()" aria-label="Toggle language" title="Alternar idioma / Toggle language">
+        <span id="lang-pt" class="active">PT</span>
+        <div class="lang-divider"></div>
+        <span id="lang-en">EN</span>
+    </div>
+
     <!-- Animated background -->
     <div class="bg-canvas">
         <div class="bg-gradient-orb"></div>
@@ -717,18 +808,28 @@
 
     <div class="main-wrapper">
 
+        <!-- VIDEO HERO -->
+        <div class="video-hero-wrapper">
+            <div class="video-hero-bg">
+                <video autoplay muted loop playsinline poster="img/hero-banner.jpg">
+                    <source src="https://cdn.coverr.co/videos/coverr-aerial-view-of-a-city-at-night-1573/1080p.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-hero-overlay"></div>
+
         <!-- HEADER -->
         <header class="header">
             <img src="img/logo-horizontal-branca.png" alt="Kairo Ícaro Advogados Associados" class="logo">
-            <p class="tagline">Kairo Ícaro — Advogados Associados</p>
-            <h1 class="subtitle">Escolha a área de atuação que você precisa</h1>
-            <p class="subtitle-desc">Soluções jurídicas especializadas com atuação nacional</p>
+            <p class="tagline" data-en="Kairo Ícaro — Attorneys at Law">Kairo Ícaro — Advogados Associados</p>
+            <h1 class="subtitle" data-en="Choose the practice area you need">Escolha a área de atuação que você precisa</h1>
+            <p class="subtitle-desc" data-en="Specialized legal solutions with nationwide practice">Soluções jurídicas especializadas com atuação nacional</p>
             <div class="header-divider"></div>
             <a href="portal-login.html" style="display:inline-flex;align-items:center;gap:8px;margin-top:20px;padding:12px 28px;background:rgba(134,230,0,0.15);border:1px solid rgba(134,230,0,0.4);border-radius:50px;color:#86E600;font-size:14px;font-weight:600;text-decoration:none;letter-spacing:0.5px;transition:all 0.3s ease;" onmouseover="this.style.background='#86E600';this.style.color='#0F2944'" onmouseout="this.style.background='rgba(134,230,0,0.15)';this.style.color='#86E600'">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-                Portal do Cliente
+                <span data-en="Client Portal">Portal do Cliente</span>
             </a>
         </header>
+        </div><!-- /.video-hero-wrapper -->
 
         <!-- CARDS -->
         <section class="cards-section">
@@ -750,10 +851,10 @@
                         </svg>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">3A — Ambiental, Agrário e Agronegócio</h2>
-                        <p class="card-subtitle">Proteção patrimonial e desenvolvimento sustentável</p>
-                        <p class="card-desc">Defesa ambiental, regularização fundiária, licenciamento, CAR, mercado de carbono e assessoria ao agronegócio na Amazônia.</p>
-                        <div class="card-cta">
+                        <h2 class="card-title" data-en="3A — Environmental, Agrarian & Agribusiness">3A — Ambiental, Agrário e Agronegócio</h2>
+                        <p class="card-subtitle" data-en="Asset protection and sustainable development">Proteção patrimonial e desenvolvimento sustentável</p>
+                        <p class="card-desc" data-en="Environmental defense, land regularization, licensing, CAR, carbon markets, and agribusiness advisory in the Amazon.">Defesa ambiental, regularização fundiária, licenciamento, CAR, mercado de carbono e assessoria ao agronegócio na Amazônia.</p>
+                        <div class="card-cta" data-en="Explore">
                             Explorar
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </div>
@@ -777,10 +878,10 @@
                         </svg>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Negócios — Empresarial, Contratos e Societário</h2>
-                        <p class="card-subtitle">Estratégia jurídica para o seu negócio</p>
-                        <p class="card-desc">Direito empresarial, contratos comerciais, trabalhista empresarial, societário, compliance, LGPD e recuperação de crédito.</p>
-                        <div class="card-cta">
+                        <h2 class="card-title" data-en="Business — Corporate, Contracts & Partnership Law">Negócios — Empresarial, Contratos e Societário</h2>
+                        <p class="card-subtitle" data-en="Legal strategy for your business">Estratégia jurídica para o seu negócio</p>
+                        <p class="card-desc" data-en="Corporate law, commercial contracts, employment law, partnership law, compliance, LGPD, and credit recovery.">Direito empresarial, contratos comerciais, trabalhista empresarial, societário, compliance, LGPD e recuperação de crédito.</p>
+                        <div class="card-cta" data-en="Explore">
                             Explorar
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </div>
@@ -803,10 +904,10 @@
                         </svg>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Alta Complexidade — Grandes Operações</h2>
-                        <p class="card-subtitle">Maxiprocessos e defesa estratégica</p>
-                        <p class="card-desc">Direito penal econômico, lavagem de dinheiro, grandes operações, defesa corporativa e contencioso de alto impacto.</p>
-                        <div class="card-cta">
+                        <h2 class="card-title" data-en="High Complexity — Major Operations">Alta Complexidade — Grandes Operações</h2>
+                        <p class="card-subtitle" data-en="Large-scale proceedings and strategic defense">Maxiprocessos e defesa estratégica</p>
+                        <p class="card-desc" data-en="White-collar criminal law, money laundering, major operations, corporate defense, and high-impact litigation.">Direito penal econômico, lavagem de dinheiro, grandes operações, defesa corporativa e contencioso de alto impacto.</p>
+                        <div class="card-cta" data-en="Explore">
                             Explorar
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </div>
@@ -831,10 +932,10 @@
                         </svg>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Direito Desportivo</h2>
-                        <p class="card-subtitle">Assessoria para o esporte</p>
-                        <p class="card-desc">Contratos desportivos, transferências, STJD, direito de imagem, SAF, agenciamento e contencioso desportivo.</p>
-                        <div class="card-cta">
+                        <h2 class="card-title" data-en="Sports Law">Direito Desportivo</h2>
+                        <p class="card-subtitle" data-en="Advisory for the sports industry">Assessoria para o esporte</p>
+                        <p class="card-desc" data-en="Sports contracts, player transfers, STJD, image rights, SAF, athlete management, and sports litigation.">Contratos desportivos, transferências, STJD, direito de imagem, SAF, agenciamento e contencioso desportivo.</p>
+                        <div class="card-cta" data-en="Explore">
                             Explorar
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </div>
@@ -861,10 +962,10 @@
                         </svg>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Consultoria Continuada</h2>
-                        <p class="card-subtitle">Parceria jurídica permanente</p>
-                        <p class="card-desc">Assessoria jurídica preventiva e contínua para empresas, com gestão de riscos, compliance e acompanhamento estratégico.</p>
-                        <div class="card-cta">
+                        <h2 class="card-title" data-en="Ongoing Advisory">Consultoria Continuada</h2>
+                        <p class="card-subtitle" data-en="Permanent legal partnership">Parceria jurídica permanente</p>
+                        <p class="card-desc" data-en="Preventive and ongoing legal advisory for companies, including risk management, compliance, and strategic support.">Assessoria jurídica preventiva e contínua para empresas, com gestão de riscos, compliance e acompanhamento estratégico.</p>
+                        <div class="card-cta" data-en="Explore">
                             Explorar
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </div>
@@ -877,10 +978,10 @@
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Direito Eleitoral</h2>
-                        <p class="card-subtitle">Assessoria política e partidária</p>
-                        <p class="card-desc">Consultoria eleitoral, prestação de contas, propaganda, contencioso e defesa perante a Justiça Eleitoral.</p>
-                        <div class="card-cta">
+                        <h2 class="card-title" data-en="Election Law">Direito Eleitoral</h2>
+                        <p class="card-subtitle" data-en="Political and party advisory">Assessoria política e partidária</p>
+                        <p class="card-desc" data-en="Election consulting, campaign finance, political advertising, litigation, and defense before the Electoral Courts.">Consultoria eleitoral, prestação de contas, propaganda, contencioso e defesa perante a Justiça Eleitoral.</p>
+                        <div class="card-cta" data-en="Explore">
                             Explorar
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </div>
@@ -893,10 +994,10 @@
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Processos Estratégicos</h2>
-                        <p class="card-subtitle">Contencioso de alto impacto</p>
-                        <p class="card-desc">Gestão de grandes litígios, teses inovadoras, tribunais superiores, KPIs processuais e análise de cenários.</p>
-                        <div class="card-cta">
+                        <h2 class="card-title" data-en="Strategic Litigation">Processos Estratégicos</h2>
+                        <p class="card-subtitle" data-en="High-impact litigation">Contencioso de alto impacto</p>
+                        <p class="card-desc" data-en="Management of major disputes, innovative legal theories, superior courts, litigation KPIs, and scenario analysis.">Gestão de grandes litígios, teses inovadoras, tribunais superiores, KPIs processuais e análise de cenários.</p>
+                        <div class="card-cta" data-en="Explore">
                             Explorar
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </div>
@@ -909,10 +1010,10 @@
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/></svg>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Inteligência Governamental</h2>
-                        <p class="card-subtitle">Relações institucionais</p>
-                        <p class="card-desc">Monitoramento legislativo, advocacy, licitações, contratos públicos e inteligência regulatória.</p>
-                        <div class="card-cta">
+                        <h2 class="card-title" data-en="Government Intelligence">Inteligência Governamental</h2>
+                        <p class="card-subtitle" data-en="Institutional relations">Relações institucionais</p>
+                        <p class="card-desc" data-en="Legislative monitoring, advocacy, public procurement, government contracts, and regulatory intelligence.">Monitoramento legislativo, advocacy, licitações, contratos públicos e inteligência regulatória.</p>
+                        <div class="card-cta" data-en="Explore">
                             Explorar
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </div>
@@ -925,10 +1026,10 @@
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Auditoria & Compliance</h2>
-                        <p class="card-subtitle">Integridade corporativa</p>
-                        <p class="card-desc">Compliance, LGPD, due diligence, investigações internas, governança corporativa e canal de denúncias.</p>
-                        <div class="card-cta">
+                        <h2 class="card-title" data-en="Audit &amp; Compliance">Auditoria & Compliance</h2>
+                        <p class="card-subtitle" data-en="Corporate integrity">Integridade corporativa</p>
+                        <p class="card-desc" data-en="Compliance, LGPD, due diligence, internal investigations, corporate governance, and whistleblower channels.">Compliance, LGPD, due diligence, investigações internas, governança corporativa e canal de denúncias.</p>
+                        <div class="card-cta" data-en="Explore">
                             Explorar
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </div>
@@ -941,10 +1042,10 @@
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00BCD4" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/><path d="M2 12h2M20 12h2M12 2v2M12 20v2" opacity="0.4"/></svg>
                     </div>
                     <div class="card-content">
-                        <h2 class="card-title">Centro de Inteligência</h2>
-                        <p class="card-subtitle">Radar ambiental e jurídico</p>
-                        <p class="card-desc">Monitoramento IBAMA, FEMARH, MapBiomas, observatório social, jurimetria e informativos setoriais em tempo real.</p>
-                        <div class="card-cta">
+                        <h2 class="card-title" data-en="Intelligence Center">Centro de Inteligência</h2>
+                        <p class="card-subtitle" data-en="Environmental and legal radar">Radar ambiental e jurídico</p>
+                        <p class="card-desc" data-en="IBAMA, FEMARH, MapBiomas monitoring, social observatory, jurimetrics, and real-time industry reports.">Monitoramento IBAMA, FEMARH, MapBiomas, observatório social, jurimetria e informativos setoriais em tempo real.</p>
+                        <div class="card-cta" data-en="Explore">
                             Explorar
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </div>
@@ -1011,9 +1112,9 @@
             </style>
 
             <div class="team-header">
-                <p class="team-label">Nossa Equipe</p>
-                <h2>Quem faz o <span>KIAA</span> acontecer</h2>
-                <p class="team-desc">16 advogados especializados com atuação nacional, prontos para defender seus interesses</p>
+                <p class="team-label" data-en="Our Team">Nossa Equipe</p>
+                <h2 data-en-html="Who makes <span>KIAA</span> happen">Quem faz o <span>KIAA</span> acontecer</h2>
+                <p class="team-desc" data-en="16 specialized attorneys with nationwide practice, ready to defend your interests">16 advogados especializados com atuação nacional, prontos para defender seus interesses</p>
             </div>
 
             <div class="team-scroll" style="display:flex; gap:32px; overflow-x:auto; padding:20px 24px; max-width:1200px; margin:0 auto; scrollbar-width:none; -webkit-overflow-scrolling:touch;">
@@ -1049,7 +1150,7 @@
                 </div>
             </div>
             <div style="text-align:center;margin-top:24px;">
-                <a href="site-3a.html#equipe" style="color:#86E600;font-size:.9rem;font-weight:600;text-decoration:none;transition:opacity .3s;" onmouseenter="this.style.opacity='0.7'" onmouseleave="this.style.opacity='1'">Ver equipe completa &rarr;</a>
+                <a href="site-3a.html#equipe" style="color:#86E600;font-size:.9rem;font-weight:600;text-decoration:none;transition:opacity .3s;" onmouseenter="this.style.opacity='0.7'" onmouseleave="this.style.opacity='1'"><span data-en="See full team">Ver equipe completa</span> &rarr;</a>
             </div>
 
         </section>
@@ -1057,8 +1158,8 @@
         <!-- CLIENTS CAROUSEL -->
         <section style="padding:60px 0; background:rgba(255,255,255,0.02);">
             <div style="max-width:1200px; margin:0 auto; padding:0 24px; text-align:center;">
-                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:3px; color:rgba(134,230,0,0.7); margin-bottom:12px;">Nossos Clientes</p>
-                <h3 style="font-size:1.6rem; font-weight:700; color:#fff; margin-bottom:32px;">Quem <span style="color:#86E600;">confia</span> em nós</h3>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:3px; color:rgba(134,230,0,0.7); margin-bottom:12px;" data-en="Our Clients">Nossos Clientes</p>
+                <h3 style="font-size:1.6rem; font-weight:700; color:#fff; margin-bottom:32px;" data-en-html="Who &lt;span style='color:#86E600;'&gt;trusts&lt;/span&gt; us">Quem <span style="color:#86E600;">confia</span> em nós</h3>
                 <div style="overflow:hidden; mask-image:linear-gradient(to right, transparent, black 10%, black 90%, transparent);">
                     <div style="display:flex; gap:48px; animation:hubScroll 30s linear infinite;">
                         <img src="img/clientes/nova-era.png" alt="Nova Era" style="height:50px; width:auto; object-fit:contain; opacity:0.6;" loading="lazy">
@@ -1087,18 +1188,18 @@
         <footer style="background:rgba(0,0,0,0.3); padding:40px 0; border-top:1px solid rgba(255,255,255,0.06);">
             <div style="max-width:1200px; margin:0 auto; padding:0 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px;">
                 <div>
-                    <img src="img/logo-horizontal-branca.png" alt="KIAA" style="height:28px; opacity:0.6; margin-bottom:8px;">
+                    <img src="img/logo-horizontal-branca.png" alt="KIAA" style="height:28px; opacity:0.6; margin-bottom:8px;" loading="lazy">
                     <p style="font-size:0.78rem; color:rgba(255,255,255,0.35);">Av. Ville Roy, 4301 — Salas 206 e 208, Canarinho, Boa Vista — RR</p>
                 </div>
                 <div>
-                    <p style="font-size:0.82rem; color:rgba(255,255,255,0.55); font-weight:600; margin-bottom:8px;">Links Rápidos</p>
+                    <p style="font-size:0.82rem; color:rgba(255,255,255,0.55); font-weight:600; margin-bottom:8px;" data-en="Quick Links">Links Rápidos</p>
                     <div style="display:flex; flex-direction:column; gap:4px;">
-                        <a href="#sobre" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Sobre Nós</a>
-                        <a href="#areas" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Áreas de Atuação</a>
-                        <a href="#diferenciais" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Diferenciais</a>
-                        <a href="blog.html" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Blog / Insights</a>
-                        <a href="calculadora.html" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">Simulador de Honorários</a>
-                        <a href="esg.html" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">ESG / Compromisso Social</a>
+                        <a href="#sobre" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.4)'" data-en="About Us">Sobre Nós</a>
+                        <a href="#areas" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.4)'" data-en="Practice Areas">Áreas de Atuação</a>
+                        <a href="#diferenciais" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.4)'" data-en="Why Choose Us">Diferenciais</a>
+                        <a href="blog.html" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.4)'" data-en="Blog / Insights">Blog / Insights</a>
+                        <a href="calculadora.html" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.4)'" data-en="Fee Calculator">Simulador de Honorários</a>
+                        <a href="esg.html" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.4)'" data-en="ESG / Social Commitment">ESG / Compromisso Social</a>
                     </div>
                 </div>
                 <div style="display:flex; gap:16px; align-items:center;">
@@ -1108,10 +1209,10 @@
                     <a href="mailto:advogados@kairoicaro.com.br" style="color:rgba(255,255,255,0.5); transition:color 0.2s; font-size:0.78rem;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">advogados@kairoicaro.com.br</a>
                     <a href="mailto:advogados@kairoicaro.com.br?subject=Candidatura%20-%20KIAA" style="color:rgba(255,255,255,0.5); transition:color 0.2s; font-size:0.78rem; display:flex; align-items:center; gap:4px;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
-                        Trabalhe Conosco
+                        <span data-en="Careers">Trabalhe Conosco</span>
                     </a>
                 </div>
-                <p style="font-size:0.72rem; color:rgba(255,255,255,0.25); width:100%; text-align:center; margin-top:12px;">&copy; 2026 Kairo Ícaro — Advogados Associados. Atuação Nacional.</p>
+                <p style="font-size:0.72rem; color:rgba(255,255,255,0.25); width:100%; text-align:center; margin-top:12px;" data-en-html="&amp;copy; 2026 Kairo &Iacute;caro &mdash; Attorneys at Law. Nationwide Practice.">&copy; 2026 Kairo Ícaro — Advogados Associados. Atuação Nacional.</p>
             </div>
         </footer>
 
@@ -1177,6 +1278,56 @@
                 header.style.opacity = Math.max(0.3, 1 - scroll / 800);
             }
         });
+    </script>
+
+    <script>
+        // ======= LANGUAGE TOGGLE (PT/EN) =======
+        function toggleLang() {
+            var isEn = document.body.classList.toggle('lang-en');
+            document.getElementById('lang-pt').classList.toggle('active', !isEn);
+            document.getElementById('lang-en').classList.toggle('active', isEn);
+            applyLang(isEn);
+            localStorage.setItem('kiaa-lang', isEn ? 'en' : 'pt');
+            document.documentElement.lang = isEn ? 'en' : 'pt-BR';
+        }
+
+        function applyLang(isEn) {
+            var text = isEn ? 'en' : 'pt';
+            // Swap textContent for elements with data-en
+            document.querySelectorAll('[data-en]').forEach(function(el) {
+                if (!el.dataset.pt) {
+                    el.dataset.pt = el.textContent.trim();
+                }
+                var newText = el.dataset[text];
+                // For card-cta, preserve the SVG arrow child
+                if (el.classList.contains('card-cta')) {
+                    var svg = el.querySelector('svg');
+                    if (svg) el.removeChild(svg);
+                    el.textContent = newText + ' ';
+                    if (svg) el.appendChild(svg);
+                } else {
+                    el.textContent = newText;
+                }
+            });
+            // Swap innerHTML for elements with data-en-html
+            document.querySelectorAll('[data-en-html]').forEach(function(el) {
+                if (!el.dataset.ptHtml) {
+                    el.dataset.ptHtml = el.innerHTML;
+                }
+                el.innerHTML = isEn ? el.dataset.enHtml : el.dataset.ptHtml;
+            });
+        }
+
+        // Restore saved language preference
+        (function() {
+            if (localStorage.getItem('kiaa-lang') === 'en') {
+                document.body.classList.add('lang-en');
+                document.getElementById('lang-pt').classList.remove('active');
+                document.getElementById('lang-en').classList.add('active');
+                document.documentElement.lang = 'en';
+                applyLang(true);
+            }
+        })();
     </script>
 
 </body>

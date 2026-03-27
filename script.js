@@ -633,6 +633,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // ==================== HERO PARALLAX EFFECT ====================
+    const heroSection = document.querySelector('.hero');
+    const heroContent = document.querySelector('.hero-content');
+    const heroBg = document.querySelector('.hero-bg');
+
+    if (heroSection && heroContent) {
+        heroContent.classList.add('parallax-active');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.pageYOffset;
+            const heroHeight = heroSection.offsetHeight;
+
+            if (scrollY <= heroHeight) {
+                // Subtle upward parallax on hero content
+                heroContent.style.transform = `translateY(${scrollY * 0.25}px)`;
+                heroContent.style.opacity = Math.max(0, 1 - scrollY / (heroHeight * 0.8));
+
+                // Slower parallax on background
+                if (heroBg) {
+                    heroBg.style.transform = `translateY(${scrollY * 0.15}px)`;
+                }
+            }
+        }, { passive: true });
+    }
+
     // ==================== Console branding ====================
     console.log(
         '%cKairo Icaro — Advogados Associados',

@@ -351,6 +351,15 @@ ul {
     position: absolute;
     inset: 0;
     z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Parallax scroll effect for hero content */
+.hero-content.parallax-active {
+    transition: transform 0.1s linear;
+    will-change: transform;
 }
 
 .hero-bg-img {
@@ -3451,6 +3460,31 @@ button:focus-visible {
 @media (max-width: 768px) {
     .radar-cards-grid { grid-template-columns: 1fr; }
     .radar-input-group { flex-direction: column; }
+}
+
+/* ==================== PRINT STYLES ==================== */
+@media print {
+    .navbar,
+    nav,
+    footer,
+    .area-footer,
+    .whatsapp-float,
+    .lgpd-banner,
+    .lgpd-btn {
+        display: none !important;
+    }
+
+    body {
+        background: #fff !important;
+        color: #000 !important;
+    }
+
+    a { color: #000 !important; text-decoration: underline; }
+
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
 }
 
 /* ==================== JURIMETRIA KIAA ==================== */

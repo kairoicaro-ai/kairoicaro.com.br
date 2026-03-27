@@ -39,6 +39,25 @@
             --shadow-green: 0 4px 20px rgba(21, 101, 192, 0.25);
         }
 
+        /* Parallax hero background */
+        .hero-bg {
+            background-image: url('img/hero-banner.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-bg .hero-bg-img {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .hero-bg {
+                background-attachment: scroll;
+            }
+            .hero-bg .hero-bg-img {
+                display: block;
+            }
+        }
+
         /* Hero overlay with blue tint */
         .hero-overlay {
             background: linear-gradient(
@@ -777,7 +796,7 @@
                             </div>
                         </div>
                         <div class="about-accent-card">
-                            <img src="img/icone-positivo-verde.png" alt="Ícone KIAA" class="accent-icon">
+                            <img src="img/icone-positivo-verde.png" alt="Ícone KIAA" class="accent-icon" loading="lazy">
                             <span>Atuação nacional — <strong>12 estados</strong></span>
                         </div>
                     </div>
@@ -976,7 +995,7 @@
                 <!-- Mariana -->
                 <div class="team-highlight-card">
                     <div class="team-avatar">
-                        <img src="img/equipe/mariana.jpg" alt="Mariana Martinelli">
+                        <img src="img/equipe/mariana.jpg" alt="Mariana Martinelli" loading="lazy">
                     </div>
                     <span class="team-role-badge">Advogada</span>
                     <h3>Mariana Martinelli</h3>
@@ -992,7 +1011,7 @@
                 <!-- Drielly -->
                 <div class="team-highlight-card">
                     <div class="team-avatar">
-                        <img src="img/equipe/drielly.jpg" alt="Drielly Vasques">
+                        <img src="img/equipe/drielly.jpg" alt="Drielly Vasques" loading="lazy">
                     </div>
                     <span class="team-role-badge">Advogada</span>
                     <h3>Drielly Vasques</h3>
@@ -1060,7 +1079,7 @@
         <div class="cta-bg-pattern"></div>
         <div class="container">
             <div class="cta-content">
-                <img src="img/icone-negativo-branco.png" alt="KIAA" class="cta-icon">
+                <img src="img/icone-negativo-branco.png" alt="KIAA" class="cta-icon" loading="lazy">
                 <h2>Sua empresa precisa de assessoria jurídica estratégica?</h2>
                 <p>Nossa equipe está pronta para entender as necessidades do seu negócio e construir a melhor estratégia jurídica.</p>
                 <a href="https://wa.me/5595991775868?text=Olá!%20Gostaria%20de%20uma%20consultoria%20para%20minha%20empresa." target="_blank" class="btn btn-cta" id="cta-whatsapp">
@@ -1076,7 +1095,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="img/logo-horizontal-branca.png" alt="Kairo Ícaro Advogados Associados" class="footer-logo">
+                    <img src="img/logo-horizontal-branca.png" alt="Kairo Ícaro Advogados Associados" class="footer-logo" loading="lazy">
                     <p>Assessoria jurídica empresarial para proteção do seu negócio, contratos e patrimônio em Roraima e no Brasil.</p>
                     <div class="footer-social">
                         <a href="https://www.instagram.com/kairoicaroadvogados/" target="_blank" aria-label="Instagram" class="social-link" id="social-instagram">
@@ -1168,6 +1187,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
