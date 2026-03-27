@@ -823,7 +823,33 @@
             .result-card-meta { grid-template-columns: 1fr 1fr; }
             .modal { padding: 24px; }
         }
+
+        /* Leaflet tooltip custom style */
+        .leaflet-tooltip-rr {
+            background: rgba(15, 41, 68, 0.95) !important;
+            border: 1px solid rgba(134, 230, 0, 0.3) !important;
+            border-radius: 12px !important;
+            padding: 14px 16px !important;
+            color: #E8EDF2 !important;
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 0.85rem !important;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+            max-width: 280px !important;
+        }
+        .leaflet-tooltip-rr::before {
+            border-top-color: rgba(15, 41, 68, 0.95) !important;
+        }
+        .leaflet-legend-rr {
+            pointer-events: auto;
+        }
+        #rr-map {
+            background: #0a1f33;
+        }
     </style>
+
+    <!-- Leaflet.js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body>
 
@@ -1089,71 +1115,8 @@
             <p class="section-subtitle" style="color:rgba(255,255,255,0.5);">Visualize a situacao ambiental de cada municipio do estado</p>
 
             <div class="map-layout">
-                <div class="map-container">
-                    <div class="map-svg-wrapper" id="mapWrapper">
-                        <!-- Simplified SVG of Roraima with municipality boundaries -->
-                        <svg viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Amajari (northwest - large, preserved) -->
-                            <path id="map-amajari" d="M80,50 L200,30 L260,80 L280,160 L240,220 L180,240 L100,200 L60,140 Z"
-                                  fill="#4CAF50" data-municipio="Amajari"/>
-                            <!-- Pacaraima (north - very preserved) -->
-                            <path id="map-pacaraima" d="M200,30 L340,20 L370,60 L350,120 L280,160 L260,80 Z"
-                                  fill="#2E7D32" data-municipio="Pacaraima"/>
-                            <!-- Normandia (northeast - very preserved) -->
-                            <path id="map-normandia" d="M340,20 L480,40 L500,120 L440,180 L370,160 L350,120 L370,60 Z"
-                                  fill="#1B5E20" data-municipio="Normandia"/>
-                            <!-- Uiramuta (east - most preserved) -->
-                            <path id="map-uiramuta" d="M480,40 L560,80 L540,180 L480,220 L440,180 L500,120 Z"
-                                  fill="#1B5E20" data-municipio="Uiramuta"/>
-                            <!-- Alto Alegre (central north) -->
-                            <path id="map-altoalegre" d="M180,240 L240,220 L280,160 L350,120 L370,160 L340,240 L280,280 L200,280 Z"
-                                  fill="#66BB6A" data-municipio="Alto Alegre"/>
-                            <!-- Boa Vista (central) -->
-                            <path id="map-boavista" d="M280,280 L340,240 L370,160 L440,180 L460,260 L420,320 L360,340 L300,320 Z"
-                                  fill="#FFA726" data-municipio="Boa Vista"/>
-                            <!-- Bonfim (east) -->
-                            <path id="map-bonfim" d="M440,180 L480,220 L540,180 L540,300 L480,340 L420,320 L460,260 Z"
-                                  fill="#66BB6A" data-municipio="Bonfim"/>
-                            <!-- Canta (central south) -->
-                            <path id="map-canta" d="M300,320 L360,340 L420,320 L440,400 L380,420 L320,400 Z"
-                                  fill="#FFA726" data-municipio="Canta"/>
-                            <!-- Mucajai (central west) -->
-                            <path id="map-mucajai" d="M100,200 L180,240 L200,280 L280,280 L300,320 L320,400 L240,420 L160,380 L80,300 Z"
-                                  fill="#66BB6A" data-municipio="Mucajai"/>
-                            <!-- Iracema (west) -->
-                            <path id="map-iracema" d="M80,300 L160,380 L240,420 L200,480 L120,460 L60,380 Z"
-                                  fill="#FFA726" data-municipio="Iracema"/>
-                            <!-- Caracarai (central south) -->
-                            <path id="map-caracarai" d="M240,420 L320,400 L380,420 L440,400 L480,340 L540,300 L540,460 L460,520 L360,540 L280,500 L200,480 Z"
-                                  fill="#66BB6A" data-municipio="Caracarai"/>
-                            <!-- Sao Luiz (south central) -->
-                            <path id="map-saoluiz" d="M200,480 L280,500 L300,560 L240,580 L160,540 L120,460 Z"
-                                  fill="#66BB6A" data-municipio="Sao Luiz"/>
-                            <!-- Rorainopolis (south) -->
-                            <path id="map-rorainopolis" d="M160,540 L240,580 L300,560 L360,540 L400,600 L340,660 L240,680 L140,640 L100,580 Z"
-                                  fill="#FF7043" data-municipio="Rorainopolis"/>
-                            <!-- Sao Joao da Baliza (southeast) -->
-                            <path id="map-saojoao" d="M300,560 L360,540 L460,520 L480,580 L440,620 L400,600 Z"
-                                  fill="#FFA726" data-municipio="Sao Joao da Baliza"/>
-                            <!-- Caroebe (southeast) -->
-                            <path id="map-caroebe" d="M440,620 L480,580 L460,520 L540,460 L560,540 L540,620 L480,660 Z"
-                                  fill="#FF7043" data-municipio="Caroebe"/>
-                        </svg>
-                        <div class="map-tooltip" id="mapTooltip">
-                            <h4 id="tooltipTitle">-</h4>
-                            <div class="map-tooltip-row"><span>CARs registrados</span><span id="tooltipCars">-</span></div>
-                            <div class="map-tooltip-row"><span>Autos IBAMA</span><span id="tooltipAutos">-</span></div>
-                            <div class="map-tooltip-row"><span>Area preservada</span><span id="tooltipPreservada">-</span></div>
-                            <div class="map-tooltip-row"><span>Status</span><span id="tooltipStatus">-</span></div>
-                        </div>
-                    </div>
-                    <div class="map-legend">
-                        <div class="legend-item"><div class="legend-dot" style="background:#1B5E20;"></div> Altamente preservado (&gt;90%)</div>
-                        <div class="legend-item"><div class="legend-dot" style="background:#4CAF50;"></div> Preservado (75-90%)</div>
-                        <div class="legend-item"><div class="legend-dot" style="background:#66BB6A;"></div> Bom (70-79%)</div>
-                        <div class="legend-item"><div class="legend-dot" style="background:#FFA726;"></div> Alerta (65-69%)</div>
-                        <div class="legend-item"><div class="legend-dot" style="background:#FF7043;"></div> Desmatamento (&lt;65%)</div>
-                    </div>
+                <div class="map-container" style="padding:0;overflow:hidden;">
+                    <div id="rr-map" style="width:100%;height:600px;border-radius:16px;overflow:hidden;"></div>
                 </div>
 
                 <div class="map-sidebar">
@@ -1623,59 +1586,195 @@
         }
 
         // ============================
-        // MAP INTERACTIVITY
+        // LEAFLET MAP — RORAIMA MUNICIPALITIES
         // ============================
-        var municipioData = {
-            'Boa Vista':           { cars: 342, autos: 45,  preservada: '68%', status: 'Alerta' },
-            'Caracarai':           { cars: 287, autos: 89,  preservada: '72%', status: 'Bom' },
-            'Rorainopolis':        { cars: 198, autos: 67,  preservada: '65%', status: 'Desmatamento' },
-            'Amajari':             { cars: 156, autos: 34,  preservada: '85%', status: 'Preservado' },
-            'Alto Alegre':         { cars: 134, autos: 28,  preservada: '78%', status: 'Bom' },
-            'Pacaraima':           { cars: 89,  autos: 12,  preservada: '92%', status: 'Altamente preservado' },
-            'Canta':               { cars: 245, autos: 56,  preservada: '70%', status: 'Bom' },
-            'Mucajai':             { cars: 178, autos: 43,  preservada: '73%', status: 'Bom' },
-            'Bonfim':              { cars: 112, autos: 21,  preservada: '80%', status: 'Preservado' },
-            'Iracema':             { cars: 98,  autos: 38,  preservada: '67%', status: 'Alerta' },
-            'Sao Luiz':            { cars: 87,  autos: 15,  preservada: '82%', status: 'Preservado' },
-            'Caroebe':             { cars: 134, autos: 52,  preservada: '63%', status: 'Desmatamento' },
-            'Sao Joao da Baliza':  { cars: 76,  autos: 31,  preservada: '69%', status: 'Alerta' },
-            'Normandia':           { cars: 45,  autos: 8,   preservada: '95%', status: 'Altamente preservado' },
-            'Uiramuta':            { cars: 23,  autos: 3,   preservada: '97%', status: 'Altamente preservado' }
+        var envData = {
+            'Amajari':             { cars: 156, autos: 34, preservado: 85, status: 'preservado' },
+            'Alto Alegre':         { cars: 134, autos: 28, preservado: 78, status: 'alerta' },
+            'Boa Vista':           { cars: 342, autos: 45, preservado: 68, status: 'alerta' },
+            'Bonfim':              { cars: 112, autos: 21, preservado: 80, status: 'preservado' },
+            'Cantá':               { cars: 245, autos: 56, preservado: 70, status: 'alerta' },
+            'Caracaraí':           { cars: 287, autos: 89, preservado: 72, status: 'alerta' },
+            'Caroebe':             { cars: 134, autos: 52, preservado: 63, status: 'critico' },
+            'Iracema':             { cars: 98,  autos: 38, preservado: 67, status: 'alerta' },
+            'Mucajaí':             { cars: 178, autos: 43, preservado: 73, status: 'alerta' },
+            'Normandia':           { cars: 45,  autos: 8,  preservado: 95, status: 'preservado' },
+            'Pacaraima':           { cars: 89,  autos: 12, preservado: 92, status: 'preservado' },
+            'Rorainópolis':        { cars: 198, autos: 67, preservado: 65, status: 'critico' },
+            'São João da Baliza':  { cars: 76,  autos: 31, preservado: 69, status: 'alerta' },
+            'São Luiz':            { cars: 87,  autos: 15, preservado: 82, status: 'preservado' },
+            'Uiramutã':            { cars: 23,  autos: 3,  preservado: 97, status: 'preservado' }
         };
 
-        var mapPaths = document.querySelectorAll('.map-svg-wrapper svg path');
-        var tooltip = document.getElementById('mapTooltip');
-        var mapWrapper = document.getElementById('mapWrapper');
+        function getColor(p) {
+            if (p > 90) return '#1B5E20';
+            if (p >= 75) return '#2E7D32';
+            if (p >= 70) return '#689F38';
+            if (p >= 65) return '#EF6C00';
+            return '#C62828';
+        }
 
-        mapPaths.forEach(function(path) {
-            path.addEventListener('mouseenter', function(e) {
-                var name = this.getAttribute('data-municipio');
-                var data = municipioData[name];
-                if (!data) return;
+        function getStatusLabel(s) {
+            var labels = { preservado: 'Preservado', alerta: 'Alerta', critico: 'Critico' };
+            return labels[s] || s;
+        }
 
-                document.getElementById('tooltipTitle').textContent = name;
-                document.getElementById('tooltipCars').textContent = data.cars.toLocaleString('pt-BR');
-                document.getElementById('tooltipAutos').textContent = data.autos.toLocaleString('pt-BR');
-                document.getElementById('tooltipPreservada').textContent = data.preservada;
-                document.getElementById('tooltipStatus').textContent = data.status;
-                tooltip.classList.add('visible');
-            });
+        function getStatusBadge(s) {
+            var colors = { preservado: '#2E7D32', alerta: '#EF6C00', critico: '#C62828' };
+            var bg = colors[s] || '#555';
+            return '<span style="display:inline-block;padding:2px 10px;border-radius:8px;font-size:0.75rem;font-weight:700;color:#fff;background:' + bg + ';">' + getStatusLabel(s) + '</span>';
+        }
 
-            path.addEventListener('mousemove', function(e) {
-                var rect = mapWrapper.getBoundingClientRect();
-                var x = e.clientX - rect.left + 16;
-                var y = e.clientY - rect.top - 10;
-                // Keep tooltip in bounds
-                if (x + 230 > rect.width) x = x - 260;
-                if (y + 150 > rect.height) y = y - 150;
-                tooltip.style.left = x + 'px';
-                tooltip.style.top = y + 'px';
-            });
+        // Find matching envData entry (handles accent variations)
+        function findEnvData(nome) {
+            if (envData[nome]) return envData[nome];
+            // Try removing accents for matching
+            var normalize = function(str) {
+                return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+            };
+            var normalized = normalize(nome);
+            for (var key in envData) {
+                if (normalize(key) === normalized) return envData[key];
+            }
+            return null;
+        }
 
-            path.addEventListener('mouseleave', function() {
-                tooltip.classList.remove('visible');
-            });
+        var rrMap = L.map('rr-map', {
+            center: [2.5, -61.0],
+            zoom: 7,
+            zoomControl: true,
+            scrollWheelZoom: true,
+            attributionControl: false
         });
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            maxZoom: 12,
+            opacity: 0.5
+        }).addTo(rrMap);
+
+        var geojsonLayer;
+        var highlightedLayer = null;
+
+        var defaultStyle = function(feature) {
+            var nome = feature.properties.NOME || feature.properties.nome || '';
+            var data = findEnvData(nome);
+            var pct = data ? data.preservado : 70;
+            return {
+                fillColor: getColor(pct),
+                weight: 1,
+                opacity: 0.8,
+                color: 'rgba(255,255,255,0.3)',
+                fillOpacity: 0.7
+            };
+        };
+
+        var highlightStyle = {
+            weight: 3,
+            color: '#86E600',
+            fillOpacity: 0.9
+        };
+
+        function onEachFeature(feature, layer) {
+            var nome = feature.properties.NOME || feature.properties.nome || 'Desconhecido';
+            var data = findEnvData(nome);
+
+            layer.on({
+                mouseover: function(e) {
+                    var l = e.target;
+                    l.setStyle(highlightStyle);
+                    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                        l.bringToFront();
+                    }
+                },
+                mouseout: function(e) {
+                    geojsonLayer.resetStyle(e.target);
+                },
+                click: function(e) {
+                    rrMap.fitBounds(e.target.getBounds());
+                }
+            });
+
+            if (data) {
+                var tooltipHtml =
+                    '<div style="font-family:Montserrat,sans-serif;min-width:220px;">' +
+                    '<div style="font-weight:800;font-size:1rem;color:#86E600;margin-bottom:8px;">' + nome + '</div>' +
+                    '<div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="opacity:0.7;">CARs registrados</span><span style="font-weight:700;">' + data.cars.toLocaleString('pt-BR') + '</span></div>' +
+                    '<div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="opacity:0.7;">Autos IBAMA</span><span style="font-weight:700;">' + data.autos.toLocaleString('pt-BR') + '</span></div>' +
+                    '<div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="opacity:0.7;">Area preservada</span><span style="font-weight:700;">' + data.preservado + '%</span></div>' +
+                    '<div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px;"><span style="opacity:0.7;">Status</span>' + getStatusBadge(data.status) + '</div>' +
+                    '</div>';
+
+                layer.bindTooltip(tooltipHtml, {
+                    sticky: true,
+                    className: 'leaflet-tooltip-rr',
+                    direction: 'auto',
+                    opacity: 0.95
+                });
+            }
+        }
+
+        fetch('data/geo/rr_municipios_light.json')
+            .then(function(res) { return res.json(); })
+            .then(function(geoData) {
+                geojsonLayer = L.geoJSON(geoData, {
+                    style: defaultStyle,
+                    onEachFeature: onEachFeature
+                }).addTo(rrMap);
+
+                rrMap.fitBounds(geojsonLayer.getBounds().pad(0.05));
+            })
+            .catch(function(err) {
+                console.warn('GeoJSON nao carregado:', err);
+            });
+
+        // Legend control
+        var legend = L.control({ position: 'bottomright' });
+        legend.onAdd = function() {
+            var div = L.DomUtil.create('div', 'leaflet-legend-rr');
+            div.innerHTML =
+                '<div style="background:rgba(15,41,68,0.92);padding:14px 18px;border-radius:12px;border:1px solid rgba(134,230,0,0.2);font-family:Montserrat,sans-serif;font-size:0.78rem;color:#E8EDF2;min-width:180px;">' +
+                '<div style="font-weight:700;margin-bottom:8px;font-size:0.85rem;">Preservacao</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#1B5E20;"></span> Preservado (&gt;90%)</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#2E7D32;"></span> Bom (75-90%)</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#689F38;"></span> Alerta (70-74%)</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#EF6C00;"></span> Critico (65-69%)</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#C62828;"></span> Emergencia (&lt;65%)</div>' +
+                '</div>';
+            return div;
+        };
+        legend.addTo(rrMap);
+
+        // Key location markers
+        var greenIcon = L.divIcon({
+            html: '<div style="background:#86E600;width:14px;height:14px;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.4);"></div>',
+            className: '',
+            iconSize: [14, 14],
+            iconAnchor: [7, 7]
+        });
+        var redIcon = L.divIcon({
+            html: '<div style="background:#EF6C00;width:12px;height:12px;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.4);"></div>',
+            className: '',
+            iconSize: [12, 12],
+            iconAnchor: [6, 6]
+        });
+        var blueIcon = L.divIcon({
+            html: '<div style="background:#42A5F5;width:12px;height:12px;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.4);"></div>',
+            className: '',
+            iconSize: [12, 12],
+            iconAnchor: [6, 6]
+        });
+
+        L.marker([2.8195, -60.6714], { icon: greenIcon })
+            .addTo(rrMap)
+            .bindTooltip('<b style="color:#86E600;">KIAA Advogados</b><br>Sede — Boa Vista', { className: 'leaflet-tooltip-rr', direction: 'top' });
+
+        L.marker([2.8125, -60.6753], { icon: redIcon })
+            .addTo(rrMap)
+            .bindTooltip('<b style="color:#EF6C00;">IBAMA</b><br>Escritorio Regional — Boa Vista', { className: 'leaflet-tooltip-rr', direction: 'top' });
+
+        L.marker([2.8155, -60.6830], { icon: blueIcon })
+            .addTo(rrMap)
+            .bindTooltip('<b style="color:#42A5F5;">FEMARH</b><br>Fundacao Estadual do Meio Ambiente', { className: 'leaflet-tooltip-rr', direction: 'top' });
 
         // ============================
         // ANIMATE MAP SIDEBAR BARS ON SCROLL
