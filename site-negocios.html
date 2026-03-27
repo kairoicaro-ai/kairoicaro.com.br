@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <title>Kairo Ícaro — Direito Empresarial e Negócios | Roraima</title>
     <meta name="description" content="Kairo Ícaro Advogados Associados — Assessoria jurídica empresarial em Direito Empresarial, Contratos Comerciais, Trabalhista Empresarial e Direito Societário para empresas em Roraima e no Brasil.">
     <meta name="keywords" content="advogado empresarial roraima, direito empresarial, contratos comerciais, trabalhista empresarial, direito societário, compliance, advogado boa vista, kairo ícaro">
@@ -1043,13 +1044,16 @@
                 <form class="newsletter-form" id="newsletter-form">
                     <div class="newsletter-fields">
                         <div class="newsletter-field">
-                            <input type="text" name="name" placeholder="Seu nome" required autocomplete="given-name">
+                            <label for="nl-name" class="sr-only">Seu nome</label>
+                            <input type="text" id="nl-name" name="name" placeholder="Seu nome" required autocomplete="given-name" aria-label="Seu nome">
                         </div>
                         <div class="newsletter-field">
-                            <input type="email" name="email" placeholder="Seu melhor e-mail corporativo" required autocomplete="email">
+                            <label for="nl-email" class="sr-only">Seu melhor e-mail corporativo</label>
+                            <input type="email" id="nl-email" name="email" placeholder="Seu melhor e-mail corporativo" required autocomplete="email" aria-label="Seu melhor e-mail corporativo">
                         </div>
                         <div class="newsletter-field newsletter-field-select">
-                            <select name="interest" required>
+                            <label for="nl-interest" class="sr-only">Área de interesse</label>
+                            <select id="nl-interest" name="interest" required aria-label="Área de interesse">
                                 <option value="" disabled selected>Área de interesse</option>
                                 <option value="empresarial">Direito Empresarial</option>
                                 <option value="contratos">Contratos Comerciais</option>

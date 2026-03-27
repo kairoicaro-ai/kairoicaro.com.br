@@ -3489,3 +3489,44 @@ button:focus-visible {
 
 /* ==================== JURIMETRIA KIAA ==================== */
 .jurimetria-kiaa-section { background: var(--off-white); }
+
+/* Screen reader only - WCAG */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Skip to content - WCAG 2.4.1 */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 16px;
+    z-index: 10000;
+    padding: 12px 24px;
+    background: #86E600;
+    color: #0F2944;
+    font-weight: 700;
+    border-radius: 0 0 8px 8px;
+    text-decoration: none;
+    transition: top 0.2s;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+/* WCAG 2.1 AA - Focus visible */
+:focus-visible {
+    outline: 2px solid #86E600;
+    outline-offset: 2px;
+}
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid #86E600;
+    outline-offset: 2px;
+}
