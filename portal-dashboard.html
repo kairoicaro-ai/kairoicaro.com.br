@@ -99,7 +99,7 @@
             gap: 12px;
             padding: 12px 14px;
             border-radius: 10px;
-            color: rgba(255,255,255,0.65);
+            color: rgba(255,255,255,0.85);
             text-decoration: none;
             font-size: 0.85rem;
             font-weight: 500;
@@ -1156,9 +1156,21 @@
             color: var(--red);
             border-color: var(--red);
         }
+
+        /* ── Accessibility: Focus indicators ── */
+        :focus-visible {
+            outline: 2px solid #86E600;
+            outline-offset: 2px;
+        }
+        button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+            outline: 2px solid #86E600;
+            outline-offset: 2px;
+            box-shadow: 0 0 0 4px rgba(134, 230, 0, 0.2);
+        }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link" style="position:absolute;top:-40px;left:0;background:#86E600;color:#0F2944;padding:8px 16px;z-index:10000;font-weight:600;transition:top 0.3s;" onfocus="this.style.top='0'" onblur="this.style.top='-40px'">Pular para o conteúdo</a>
 
     <!-- Loading State -->
     <div class="loading" id="loadingState">
@@ -1171,7 +1183,7 @@
             <img src="img/logo-horizontal-branca.png" alt="KIAA">
         </div>
 
-        <nav class="sidebar-nav">
+        <nav class="sidebar-nav" role="navigation" aria-label="Menu principal">
             <div class="nav-section-title">Principal</div>
 
             <a class="nav-item active" data-section="dashboard" onclick="showSection('dashboard')">
@@ -1228,7 +1240,7 @@
                     <div class="user-email" id="userEmail">...</div>
                 </div>
             </div>
-            <button class="btn-logout" onclick="handleLogout()">
+            <button class="btn-logout" onclick="handleLogout()" aria-label="Sair do sistema">
                 <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>
                 Sair do portal
             </button>
@@ -1237,11 +1249,13 @@
 
     <!-- Main Content -->
     <div class="main" id="mainContent" style="display: none;">
+    <!-- main-content anchor for skip link -->
+    <span id="main-content"></span>
 
         <!-- Header -->
         <header class="header">
             <div style="display: flex; align-items: center; gap: 16px;">
-                <button class="menu-toggle" onclick="toggleSidebar()">
+                <button class="menu-toggle" onclick="toggleSidebar()" aria-label="Abrir menu">
                     <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
                 </button>
                 <div class="header-left">
@@ -1269,11 +1283,11 @@
                 <!-- Filter Bar -->
                 <div class="filter-bar" id="filterBar">
                     <div class="filter-group">
-                        <label>Cliente</label>
+                        <label for="filterClient">Cliente</label>
                         <select id="filterClient" onchange="applyFilters()"><option value="">Todos</option></select>
                     </div>
                     <div class="filter-group">
-                        <label>Area</label>
+                        <label for="filterArea">Area</label>
                         <select id="filterArea" onchange="applyFilters()">
                             <option value="">Todas</option>
                             <option>AMBIENTAL</option><option>CIVEL</option><option>TRABALHISTA</option>
@@ -1282,11 +1296,11 @@
                         </select>
                     </div>
                     <div class="filter-group">
-                        <label>Advogado</label>
+                        <label for="filterLawyer">Advogado</label>
                         <select id="filterLawyer" onchange="applyFilters()"><option value="">Todos</option></select>
                     </div>
                     <div class="filter-group">
-                        <label>Status</label>
+                        <label for="filterStatus">Status</label>
                         <select id="filterStatus" onchange="applyFilters()">
                             <option value="">Todos</option>
                             <option value="Em andamento">Em andamento</option>
@@ -1295,15 +1309,15 @@
                         </select>
                     </div>
                     <div class="filter-group">
-                        <label>De</label>
+                        <label for="filterDateFrom">De</label>
                         <input type="date" id="filterDateFrom" onchange="applyFilters()">
                     </div>
                     <div class="filter-group">
-                        <label>Ate</label>
+                        <label for="filterDateTo">Ate</label>
                         <input type="date" id="filterDateTo" onchange="applyFilters()">
                     </div>
                     <div class="filter-group search">
-                        <label>Buscar</label>
+                        <label for="filterSearch">Buscar</label>
                         <input type="text" id="filterSearch" placeholder="Numero, titulo ou cliente..." oninput="applyFilters()">
                     </div>
                     <button class="btn-clear-filters" onclick="clearFilters()">Limpar filtros</button>
@@ -1547,15 +1561,15 @@
                         <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 20px;">Consulte o perfil financeiro de prospects e autuados para estratégia comercial</p>
                         <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end;">
                             <div style="flex: 1; min-width: 180px;">
-                                <label style="display: block; font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">CPF/CNPJ</label>
+                                <label for="creditoCpfCnpj" style="display: block; font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">CPF/CNPJ</label>
                                 <input type="text" id="creditoCpfCnpj" placeholder="000.000.000-00" style="width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.85rem; background: var(--bg); outline: none; transition: border-color 0.2s;">
                             </div>
                             <div style="flex: 1; min-width: 180px;">
-                                <label style="display: block; font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">Nome</label>
+                                <label for="creditoNome" style="display: block; font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">Nome</label>
                                 <input type="text" id="creditoNome" placeholder="Nome completo ou razão social" style="width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.85rem; background: var(--bg); outline: none; transition: border-color 0.2s;">
                             </div>
                             <div style="flex: 1; min-width: 180px;">
-                                <label style="display: block; font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">Origem</label>
+                                <label for="creditoOrigem" style="display: block; font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">Origem</label>
                                 <select id="creditoOrigem" style="width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.85rem; background: var(--bg); outline: none; cursor: pointer; transition: border-color 0.2s;">
                                     <option value="">Selecione...</option>
                                     <option value="Autuado IBAMA">Autuado IBAMA</option>
@@ -1638,7 +1652,7 @@
                     <div class="card-header" style="flex-wrap: wrap; gap: 12px;">
                         <span class="card-title">Leads Capturados — Radar Ambiental</span>
                         <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
-                            <select id="leadsFilterStatus" onchange="filterLeads()" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white); cursor: pointer;">
+                            <select id="leadsFilterStatus" onchange="filterLeads()" aria-label="Filtrar por status" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white); cursor: pointer;">
                                 <option value="">Todos os Status</option>
                                 <option value="Novo">Novo</option>
                                 <option value="Contatado">Contatado</option>
@@ -1646,15 +1660,15 @@
                                 <option value="Convertido">Convertido</option>
                                 <option value="Descartado">Descartado</option>
                             </select>
-                            <select id="leadsFilterTipo" onchange="filterLeads()" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white); cursor: pointer;">
+                            <select id="leadsFilterTipo" onchange="filterLeads()" aria-label="Filtrar por tipo" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white); cursor: pointer;">
                                 <option value="">Todos os Tipos</option>
                                 <option value="Autuado IBAMA">Autuado IBAMA</option>
                                 <option value="Autuado FEMARH">Autuado FEMARH</option>
                                 <option value="Prospect">Prospect</option>
                                 <option value="Lead Site">Lead Site</option>
                             </select>
-                            <input type="date" id="leadsFilterDateFrom" onchange="filterLeads()" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white);">
-                            <input type="date" id="leadsFilterDateTo" onchange="filterLeads()" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white);">
+                            <input type="date" id="leadsFilterDateFrom" onchange="filterLeads()" aria-label="Data inicial" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white);">
+                            <input type="date" id="leadsFilterDateTo" onchange="filterLeads()" aria-label="Data final" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white);">
                         </div>
                     </div>
                     <div class="card-body">

@@ -105,7 +105,7 @@
         .nav-item {
             display: flex; align-items: center; gap: 12px;
             padding: 12px 14px; border-radius: 10px;
-            color: rgba(255,255,255,0.65);
+            color: rgba(255,255,255,0.85);
             text-decoration: none; font-size: 0.85rem; font-weight: 500;
             transition: all 0.2s ease; cursor: pointer; margin-bottom: 2px;
         }
@@ -756,9 +756,21 @@
             animation: fadeUp 0.5s ease forwards;
             opacity: 0;
         }
+
+        /* ── Accessibility: Focus indicators ── */
+        :focus-visible {
+            outline: 2px solid #86E600;
+            outline-offset: 2px;
+        }
+        button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+            outline: 2px solid #86E600;
+            outline-offset: 2px;
+            box-shadow: 0 0 0 4px rgba(134, 230, 0, 0.2);
+        }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link" style="position:absolute;top:-40px;left:0;background:#86E600;color:#0F2944;padding:8px 16px;z-index:10000;font-weight:600;transition:top 0.3s;" onfocus="this.style.top='0'" onblur="this.style.top='-40px'">Pular para o conteúdo</a>
 
     <div class="loading" id="loadingState">
         <div class="loading-spinner"></div>
@@ -770,7 +782,7 @@
             <img src="img/logo-horizontal-branca.png" alt="KIAA">
         </div>
 
-        <nav class="sidebar-nav">
+        <nav class="sidebar-nav" role="navigation" aria-label="Menu principal">
             <div class="nav-section-title">Principal</div>
 
             <a class="nav-item" href="portal-dashboard.html">
@@ -804,7 +816,7 @@
                     <div class="user-email" id="userEmail">...</div>
                 </div>
             </div>
-            <button class="btn-logout" onclick="handleLogout()">
+            <button class="btn-logout" onclick="handleLogout()" aria-label="Sair do sistema">
                 <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>
                 Sair do portal
             </button>
@@ -813,11 +825,13 @@
 
     <!-- Main Content -->
     <div class="main" id="mainContent" style="display: none;">
+    <!-- main-content anchor for skip link -->
+    <span id="main-content"></span>
 
         <!-- Header -->
         <header class="main-header">
             <div style="display:flex;align-items:center;">
-                <button class="mobile-toggle" onclick="toggleSidebar()">
+                <button class="mobile-toggle" onclick="toggleSidebar()" aria-label="Abrir menu">
                     <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
                 </button>
                 <h1>KPI Dashboard <span class="subtitle">Inteligencia Operacional KIAA</span></h1>

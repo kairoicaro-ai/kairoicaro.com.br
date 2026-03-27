@@ -12,9 +12,10 @@
     <meta property="og:title" content="Kairo Ícaro — Advogados Associados">
     <meta property="og:description" content="Escritório de advocacia com atuação nacional. Direito Ambiental, Agrário, Empresarial, Penal Econômico e Desportivo.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="img/logo-horizontal-branca.png">
+    <meta property="og:image" content="https://kairoicaro.com.br/img/logo-horizontal-branca.png">
     <meta property="og:locale" content="pt_BR">
     <link rel="canonical" href="https://kairoicaro.com.br/novo-index.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/novo-index.html">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Kairo Ícaro — Advogados Associados">
     <meta name="twitter:description" content="Escritório de advocacia com atuação nacional. Direito Ambiental, Agrário, Empresarial, Penal Econômico e Desportivo.">
@@ -610,6 +611,40 @@
                 align-items: center;
             }
         }
+
+        /* ======= DARK MODE TOGGLE ======= */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255,0.2);
+            background: rgba(15, 41, 68, 0.8);
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            color: #E8EDF2;
+        }
+        .theme-toggle:hover { border-color: #86E600; transform: scale(1.1); }
+
+        /* Light theme overrides */
+        body.light-mode { background: #F5F7FA; color: #1E293B; }
+        body.light-mode .header { background: rgba(255,255,255,0.95); }
+        body.light-mode .tagline, body.light-mode .subtitle { color: #0F2944; }
+        body.light-mode .subtitle-desc { color: #64748B; }
+        body.light-mode .card { background: #FFFFFF; border-color: #E2E8F0; }
+        body.light-mode .card-title { color: #0F2944; }
+        body.light-mode .card-desc, body.light-mode .card-subtitle { color: #64748B; }
+        body.light-mode .card:hover { border-color: #86E600; }
+        body.light-mode .theme-toggle { background: rgba(255,255,255,0.9); color: #0F2944; border-color: #E2E8F0; }
+        body.light-mode footer { background: rgba(0,0,0,0.05); }
+        body.light-mode footer * { color: #1E293B; }
     </style>
 
     <script type="application/ld+json">
@@ -664,6 +699,11 @@
     </script>
 </head>
 <body>
+
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+        <svg id="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg id="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+    </button>
 
     <!-- Animated background -->
     <div class="bg-canvas">
@@ -1055,6 +1095,10 @@
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
                     </a>
                     <a href="mailto:advogados@kairoicaro.com.br" style="color:rgba(255,255,255,0.5); transition:color 0.2s; font-size:0.78rem;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">advogados@kairoicaro.com.br</a>
+                    <a href="mailto:advogados@kairoicaro.com.br?subject=Candidatura%20-%20KIAA" style="color:rgba(255,255,255,0.5); transition:color 0.2s; font-size:0.78rem; display:flex; align-items:center; gap:4px;" onmouseover="this.style.color='#86E600'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                        Trabalhe Conosco
+                    </a>
                 </div>
                 <p style="font-size:0.72rem; color:rgba(255,255,255,0.25); width:100%; text-align:center; margin-top:12px;">&copy; 2026 Kairo Ícaro — Advogados Associados. Atuação Nacional.</p>
             </div>
@@ -1095,6 +1139,33 @@
                 observer.observe(card);
             });
         }
+    </script>
+
+    <script>
+        // Dark/Light mode toggle
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+            const isLight = document.body.classList.contains('light-mode');
+            document.getElementById('theme-icon-moon').style.display = isLight ? 'none' : 'block';
+            document.getElementById('theme-icon-sun').style.display = isLight ? 'block' : 'none';
+            localStorage.setItem('kiaa-theme', isLight ? 'light' : 'dark');
+        }
+        // Restore saved theme
+        if (localStorage.getItem('kiaa-theme') === 'light') {
+            document.body.classList.add('light-mode');
+            document.getElementById('theme-icon-moon').style.display = 'none';
+            document.getElementById('theme-icon-sun').style.display = 'block';
+        }
+
+        // Parallax effect on header scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (header) {
+                const scroll = window.pageYOffset;
+                header.style.transform = `translateY(${scroll * 0.3}px)`;
+                header.style.opacity = Math.max(0.3, 1 - scroll / 800);
+            }
+        });
     </script>
 
 </body>
