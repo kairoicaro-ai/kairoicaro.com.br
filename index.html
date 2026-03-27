@@ -525,10 +525,8 @@
             let diff = TARGET - now;
 
             if (diff <= 0) {
-                document.getElementById('days').textContent = '00';
-                document.getElementById('hours').textContent = '00';
-                document.getElementById('minutes').textContent = '00';
-                document.getElementById('seconds').textContent = '00';
+                // Auto-redirect when countdown reaches zero
+                window.location.href = 'novo-index.html';
                 return;
             }
 
