@@ -2,9 +2,19 @@
 // KIAA Portal — Service Worker v1
 // ══════════════════════════════════════════════════════════════
 
-const CACHE_VERSION = 'kiaa-portal-v1';
+const CACHE_VERSION = 'kiaa-site-v2';
 
 const STATIC_ASSETS = [
+    '/novo-index.html',
+    '/site-3a.html',
+    '/site-negocios.html',
+    '/site-complexidade.html',
+    '/site-desportivo.html',
+    '/site-consultoria.html',
+    '/site-eleitoral.html',
+    '/site-estrategicos.html',
+    '/site-governamental.html',
+    '/site-auditoria.html',
     '/portal-login.html',
     '/portal-dashboard.html',
     '/portal-kpi.html',
@@ -12,6 +22,8 @@ const STATIC_ASSETS = [
     '/blog.html',
     '/calculadora.html',
     '/esg.html',
+    '/cartao-digital.html',
+    '/mapa-brasil-kiaa.html',
     '/offline.html',
     '/manifest.json',
     '/style.css',

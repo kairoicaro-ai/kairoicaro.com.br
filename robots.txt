@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /portal-login.html
 Disallow: /portal-dashboard.html
-Disallow: /mapa-brasil-kiaa.html
+Disallow: /portal-kpi.html
 Disallow: /scripts/
 Disallow: /data/
 Disallow: /.claude/
