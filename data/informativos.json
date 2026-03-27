@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-27T15:12:27.128759+00:00",
-  "total": 8,
+  "updated_at": "2026-03-27T19:54:59.080903+00:00",
+  "total": 5,
   "items": [
     {
       "tribunal": "STF",
@@ -20,6 +20,14 @@
     },
     {
       "tribunal": "STJ",
+      "title": "Semana Santa: tribunal não terá expediente de 1º a 5 de abril",
+      "summary": "Semana Santa: tribunal não terá expediente de 1º a 5 de abril",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27032026-Semana-Santa-tribunal-nao-tera-expediente-de-1o-a-5-de-abril.aspx",
+      "date": "2026-03-27",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
       "title": "Legitimidade de provedor para remover conteúdo que viola termos de uso é destaque do Informativo",
       "summary": "Legitimidade de provedor para remover conteúdo que viola termos de uso é destaque do Informativo",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27032026-Legitimidade-de-provedor-para-remover-conteudo-que-viola-termos-de-uso-e-destaque-do-Informativo.aspx",
@@ -33,38 +41,6 @@
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27032026-Podcast-STJ-No-Seu-Dia-aborda-impossibilidade-de-estender-carencia-do-Fies-apos-inicio-da-amortizacao.aspx",
       "date": "2026-03-27",
       "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Página de Repetitivos inclui julgados sobre indeferimento da gratuidade de justiça",
-      "summary": "Página de Repetitivos inclui julgados sobre indeferimento da gratuidade de justiça",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27032026-Pagina-de-Repetitivos-inclui-julgados-sobre-indeferimento-da-gratuidade-de-justica.aspx",
-      "date": "2026-03-27",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Durante o mês de abril, 14 municípios do Amazonas e cinco de Roraima serão visitados pela Justiça Itinerante",
-      "summary": "Servidores da Justiça do Trabalho estarão à disposição da população para orientar e esclarecer dúvidas sobre os direitos do trabalhador",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11221-durante-o-mes-de-abril-14-municipios-do-amazonas-e-cinco-de-roraima-serao-visitados-pela-justica-itinerante",
-      "date": "2026-03-27",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Presidente em exercício do TRT-11 acompanha ação em Manacapuru e reforça diálogo institucional com o município",
-      "summary": "O presidente em exercício do Tribunal Regional do Trabalho da 11ª Região (AM/RR), desembargador David Alves de Mello Júnior, esteve em Manacapuru (AM) para acompanhar uma ação do programa Trabalho, Justiça e Cidadania (TJC), promovido pela Associação dos Magistrados da Justiça do Trabalho da 11ª Reg",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11216-presidente-em-exercicio-do-trt-11-acompanha-acao-em-manacapuru-e-reforca-dialogo-institucional-com-o-municipio",
-      "date": "2026-03-27",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TST",
-      "title": "Ir para o conteúdo",
-      "summary": "",
-      "url": "https://www.tst.jus.br#content",
-      "date": "2026-03-27",
-      "category": "Trabalhista"
     }
   ]
 }
