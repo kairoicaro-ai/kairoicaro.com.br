@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-27T05:54:16.387201+00:00",
-  "total": 5,
+  "updated_at": "2026-03-27T10:34:32.895557+00:00",
+  "total": 8,
   "items": [
     {
       "tribunal": "STF",
@@ -20,6 +20,14 @@
     },
     {
       "tribunal": "STJ",
+      "title": "Prazo prescricional da pena de multa continua regido pelo Código Penal mesmo após trânsito em julgado",
+      "summary": "Em recurso repetitivo, o tribunal estabeleceu que a mudança promovida no artigo 51 do Código Penal pela Lei 13.964/2019 não afastou da pena de multa o seu caráter de sanção criminal.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27032026-Prazo-prescricional-da-pena-de-multa-continua-regido-pelo-Codigo-Penal-mesmo-apos-transito-em-julgado.aspx",
+      "date": "2026-03-27",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
       "title": "Página de Repetitivos traz inclusão dos valores de PIS/Cofins na base de cálculo do IRPJ e da CSLL",
       "summary": "Página de Repetitivos traz inclusão dos valores de PIS/Cofins na base de cálculo do IRPJ e da CSLL",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26032026-Pagina-de-Repetitivos-traz-inclusao-dos-valores-de-PISCofins-na-base-de-calculo-do-IRPJ-e-da-CSLL.aspx",
@@ -35,12 +43,28 @@
       "category": "Jurisprudencia"
     },
     {
-      "tribunal": "STJ",
-      "title": "Requisitos para reconhecimento póstumo de união estável homoafetiva é tema da Pesquisa Pronta",
-      "summary": "Requisitos para reconhecimento póstumo de união estável homoafetiva é tema da Pesquisa Pronta",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26032026-Requisitos-para-reconhecimento-postumo-de-uniao-estavel-homoafetiva-e-tema-da-Pesquisa-Pronta.aspx",
+      "tribunal": "TRT11",
+      "title": "Durante o mês de abril, 14 municípios do Amazonas e cinco de Roraima serão visitados pela Justiça Itinerante",
+      "summary": "Servidores da Justiça do Trabalho estarão à disposição da população para orientar e esclarecer dúvidas sobre os direitos do trabalhador",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11221-durante-o-mes-de-abril-14-municipios-do-amazonas-e-cinco-de-roraima-serao-visitados-pela-justica-itinerante",
       "date": "2026-03-27",
-      "category": "Jurisprudencia"
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "Presidente em exercício do TRT-11 acompanha ação em Manacapuru e reforça diálogo institucional com o município",
+      "summary": "O presidente em exercício do Tribunal Regional do Trabalho da 11ª Região (AM/RR), desembargador David Alves de Mello Júnior, esteve em Manacapuru (AM) para acompanhar uma ação do programa Trabalho, Justiça e Cidadania (TJC), promovido pela Associação dos Magistrados da Justiça do Trabalho da 11ª Reg",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11216-presidente-em-exercicio-do-trt-11-acompanha-acao-em-manacapuru-e-reforca-dialogo-institucional-com-o-municipio",
+      "date": "2026-03-27",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TST",
+      "title": "Ir para o conteúdo",
+      "summary": "",
+      "url": "https://www.tst.jus.br#content",
+      "date": "2026-03-27",
+      "category": "Trabalhista"
     }
   ]
 }
