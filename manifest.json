@@ -1,0 +1,16 @@
+{
+  "name": "KIAA — Portal do Cliente",
+  "short_name": "KIAA Portal",
+  "description": "Portal exclusivo do escritório Kairo Ícaro Advogados Associados",
+  "start_url": "/portal-login.html",
+  "display": "standalone",
+  "background_color": "#0F2944",
+  "theme_color": "#0F2944",
+  "orientation": "portrait-primary",
+  "icons": [
+    {"src": "img/icone-positivo-verde.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "img/icone-positivo-verde.png", "sizes": "512x512", "type": "image/png"}
+  ],
+  "categories": ["business", "productivity"],
+  "lang": "pt-BR"
+}

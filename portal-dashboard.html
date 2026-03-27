@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Painel — Portal KIAA</title>
     <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self' https://*.supabase.co; img-src 'self' data:; frame-ancestors 'none';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="icon" type="image/png" href="img/icone-positivo-verde.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="KIAA Portal">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -1057,6 +1065,97 @@
             .filter-group { min-width: 100%; }
             .filter-bar { flex-direction: column; }
         }
+
+        /* ── Session Timeout Warning Modal ── */
+        .timeout-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .timeout-overlay.show {
+            display: flex;
+        }
+
+        .timeout-modal {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 420px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .timeout-modal svg {
+            width: 48px;
+            height: 48px;
+            stroke: var(--orange);
+            fill: none;
+            stroke-width: 2;
+            margin-bottom: 16px;
+        }
+
+        .timeout-modal h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--blue);
+            margin-bottom: 8px;
+        }
+
+        .timeout-modal p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        .timeout-modal .timeout-countdown {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--red);
+            font-variant-numeric: tabular-nums;
+            margin-bottom: 24px;
+        }
+
+        .timeout-modal button {
+            padding: 12px 32px;
+            border: none;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .timeout-modal .btn-stay {
+            background: var(--green);
+            color: var(--blue);
+            margin-right: 12px;
+        }
+
+        .timeout-modal .btn-stay:hover {
+            background: var(--green-light);
+        }
+
+        .timeout-modal .btn-leave {
+            background: var(--bg);
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+        }
+
+        .timeout-modal .btn-leave:hover {
+            color: var(--red);
+            border-color: var(--red);
+        }
     </style>
 </head>
 <body>
@@ -1393,7 +1492,144 @@
 
     </div>
 
+    <!-- Session Timeout Warning Modal -->
+    <div class="timeout-overlay" id="timeoutOverlay">
+        <div class="timeout-modal">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <h3>Sua sessao esta prestes a expirar</h3>
+            <p>Por seguranca, voce sera desconectado automaticamente por inatividade.</p>
+            <div class="timeout-countdown" id="timeoutCountdown">5:00</div>
+            <button class="btn-stay" onclick="Security.extendSession()">Continuar conectado</button>
+            <button class="btn-leave" onclick="Security.forceLogout()">Sair agora</button>
+        </div>
+    </div>
+
     <script>
+        // ════════════════════════════════════════════════════════════════════
+        // SECURITY MODULE
+        // ════════════════════════════════════════════════════════════════════
+        const Security = (() => {
+            const SESSION_TIMEOUT_MS = 30 * 60 * 1000;     // 30 minutes
+            const WARNING_BEFORE_MS = 5 * 60 * 1000;       // 5 minutes warning
+            const HEARTBEAT_INTERVAL_MS = 10 * 60 * 1000;  // 10 minutes
+            let inactivityTimer = null;
+            let warningTimer = null;
+            let countdownInterval = null;
+            let heartbeatInterval = null;
+
+            // Anti-clickjacking: break out of iframes
+            if (window.top !== window.self) {
+                try { window.top.location = window.self.location; }
+                catch (e) { document.body.innerHTML = '<h1>Acesso negado: este portal nao pode ser carregado em um iframe.</h1>'; }
+            }
+
+            // XSS sanitizer for DOM rendering
+            function sanitizeHTML(str) {
+                if (str == null) return '';
+                const div = document.createElement('div');
+                div.textContent = String(str);
+                return div.innerHTML;
+            }
+
+            // Start inactivity tracking
+            function resetInactivityTimer() {
+                if (inactivityTimer) clearTimeout(inactivityTimer);
+                if (warningTimer) clearTimeout(warningTimer);
+                if (countdownInterval) clearInterval(countdownInterval);
+
+                // Hide warning if showing
+                const overlay = document.getElementById('timeoutOverlay');
+                if (overlay) overlay.classList.remove('show');
+
+                // Show warning 5 minutes before timeout
+                warningTimer = setTimeout(() => {
+                    showTimeoutWarning();
+                }, SESSION_TIMEOUT_MS - WARNING_BEFORE_MS);
+
+                // Auto-logout at timeout
+                inactivityTimer = setTimeout(() => {
+                    forceLogout();
+                }, SESSION_TIMEOUT_MS);
+            }
+
+            function showTimeoutWarning() {
+                const overlay = document.getElementById('timeoutOverlay');
+                const countdownEl = document.getElementById('timeoutCountdown');
+                if (!overlay || !countdownEl) return;
+
+                overlay.classList.add('show');
+                let remaining = WARNING_BEFORE_MS / 1000; // 300 seconds
+
+                function updateCountdown() {
+                    const min = Math.floor(remaining / 60);
+                    const sec = remaining % 60;
+                    countdownEl.textContent = `${min}:${sec.toString().padStart(2, '0')}`;
+                    if (remaining <= 0) {
+                        clearInterval(countdownInterval);
+                        forceLogout();
+                    }
+                    remaining--;
+                }
+
+                updateCountdown();
+                countdownInterval = setInterval(updateCountdown, 1000);
+            }
+
+            function extendSession() {
+                resetInactivityTimer();
+                // Also refresh Supabase session
+                if (typeof sb !== 'undefined' && sb.auth) {
+                    sb.auth.refreshSession().catch(() => {});
+                }
+                console.log('[SECURITY] Session extended by user at', new Date().toISOString());
+            }
+
+            async function forceLogout() {
+                if (inactivityTimer) clearTimeout(inactivityTimer);
+                if (warningTimer) clearTimeout(warningTimer);
+                if (countdownInterval) clearInterval(countdownInterval);
+                if (heartbeatInterval) clearInterval(heartbeatInterval);
+                console.log('[SECURITY] Session terminated at', new Date().toISOString());
+                if (typeof sb !== 'undefined' && sb.auth) {
+                    await sb.auth.signOut();
+                }
+                window.location.href = 'portal-login.html';
+            }
+
+            // Activity heartbeat: refresh token every 10 minutes
+            function startHeartbeat() {
+                heartbeatInterval = setInterval(async () => {
+                    try {
+                        if (typeof sb !== 'undefined' && sb.auth) {
+                            const { data, error } = await sb.auth.refreshSession();
+                            if (error) {
+                                console.warn('[SECURITY] Heartbeat token refresh failed:', error.message);
+                                forceLogout();
+                            } else {
+                                console.log('[SECURITY] Session token refreshed at', new Date().toISOString());
+                            }
+                        }
+                    } catch (e) {
+                        console.warn('[SECURITY] Heartbeat error:', e);
+                    }
+                }, HEARTBEAT_INTERVAL_MS);
+            }
+
+            // Listen for user activity
+            function init() {
+                ['mousemove', 'keydown', 'click', 'scroll', 'touchstart'].forEach(evt => {
+                    document.addEventListener(evt, resetInactivityTimer, { passive: true });
+                });
+                resetInactivityTimer();
+                startHeartbeat();
+            }
+
+            return { init, sanitizeHTML, extendSession, forceLogout, resetInactivityTimer };
+        })();
+
+        // Initialize security module
+        Security.init();
+
         // ════════════════════════════════════════════════════════════════════
         // SUPABASE CONNECTION
         // ════════════════════════════════════════════════════════════════════
@@ -1452,9 +1688,9 @@
             document.getElementById('loadingState').style.display = 'none';
             document.getElementById('mainContent').style.display = 'block';
 
-            // User info in sidebar
-            const email = currentUser.email || '';
-            const name = currentUser.user_metadata?.name || email.split('@')[0];
+            // User info in sidebar (sanitized)
+            const email = Security.sanitizeHTML(currentUser.email || '');
+            const name = Security.sanitizeHTML(currentUser.user_metadata?.name || (currentUser.email || '').split('@')[0]);
             const initials = name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
             document.getElementById('userName').textContent = name;
             document.getElementById('userEmail').textContent = email;
@@ -1510,7 +1746,7 @@
                 .forEach(c => {
                     const opt = document.createElement('option');
                     opt.value = c.id;
-                    opt.textContent = c.name || c.email || c.id;
+                    opt.textContent = Security.sanitizeHTML(c.name || c.email || c.id);
                     clientSel.appendChild(opt);
                 });
 
@@ -1639,11 +1875,11 @@
         // HELPER: get client name for a case
         // ════════════════════════════════════════════════════════════════════
         function clientName(clientId) {
-            return clientMap[clientId]?.name || '-';
+            return Security.sanitizeHTML(clientMap[clientId]?.name || '-');
         }
 
         function caseNumber(caseId) {
-            return caseMap[caseId]?.case_number || '-';
+            return Security.sanitizeHTML(caseMap[caseId]?.case_number || '-');
         }
 
         // ════════════════════════════════════════════════════════════════════
@@ -1654,7 +1890,7 @@
             if (s.includes('andamento') || s === 'active' || s === 'em andamento') return `<span class="badge badge-status-em-andamento">Em andamento</span>`;
             if (s.includes('conclu') || s === 'closed') return `<span class="badge badge-status-concluido">Concluido</span>`;
             if (s.includes('arquiv')) return `<span class="badge badge-status-arquivado">Arquivado</span>`;
-            return `<span class="badge" style="background:#f1f5f9;color:#64748B">${status || '-'}</span>`;
+            return `<span class="badge" style="background:#f1f5f9;color:#64748B">${Security.sanitizeHTML(status) || '-'}</span>`;
         }
 
         function areaBadge(area) {
@@ -1670,7 +1906,7 @@
                 comercial: 'badge-area-comercial'
             };
             const cls = map[a] || '';
-            return `<span class="badge ${cls}">${area || '-'}</span>`;
+            return `<span class="badge ${cls}">${Security.sanitizeHTML(area) || '-'}</span>`;
         }
 
         function finStatusBadge(status) {
@@ -1678,7 +1914,7 @@
             if (s === 'pago') return `<span class="badge badge-fin-pago">Pago</span>`;
             if (s === 'pendente') return `<span class="badge badge-fin-pendente">Pendente</span>`;
             if (s === 'vencido') return `<span class="badge badge-fin-vencido">Vencido</span>`;
-            return `<span class="badge" style="background:#f1f5f9;color:#64748B">${status || '-'}</span>`;
+            return `<span class="badge" style="background:#f1f5f9;color:#64748B">${Security.sanitizeHTML(status) || '-'}</span>`;
         }
 
         function finTypeBadge(type) {
@@ -1686,7 +1922,7 @@
             if (t === 'invoice') return `<span class="badge badge-type-invoice">Fatura</span>`;
             if (t === 'payment') return `<span class="badge badge-type-payment">Pagamento</span>`;
             if (t === 'fee') return `<span class="badge badge-type-fee">Honorario</span>`;
-            return `<span class="badge" style="background:#f1f5f9;color:#64748B">${type || '-'}</span>`;
+            return `<span class="badge" style="background:#f1f5f9;color:#64748B">${Security.sanitizeHTML(type) || '-'}</span>`;
         }
 
         function formatDate(d) {
@@ -1792,8 +2028,8 @@
 
             tbody.innerHTML = sorted.map(c => `
                 <tr>
-                    <td class="cell-number">${c.case_number || '-'}</td>
-                    <td>${c.title || '-'}</td>
+                    <td class="cell-number">${Security.sanitizeHTML(c.case_number) || '-'}</td>
+                    <td>${Security.sanitizeHTML(c.title) || '-'}</td>
                     <td>${clientName(c.client_id)}</td>
                     <td>${areaBadge(c.area)}</td>
                     <td>${statusBadge(c.status)}</td>
@@ -1820,13 +2056,13 @@
             } else {
                 tbody.innerHTML = pageData.map(c => `
                     <tr>
-                        <td class="cell-number">${c.case_number || '-'}</td>
-                        <td>${c.title || '-'}</td>
+                        <td class="cell-number">${Security.sanitizeHTML(c.case_number) || '-'}</td>
+                        <td>${Security.sanitizeHTML(c.title) || '-'}</td>
                         <td>${clientName(c.client_id)}</td>
                         <td>${areaBadge(c.area)}</td>
-                        <td>${c.responsible_lawyer || '-'}</td>
+                        <td>${Security.sanitizeHTML(c.responsible_lawyer) || '-'}</td>
                         <td>${statusBadge(c.status)}</td>
-                        <td class="cell-muted">${c.court || '-'}</td>
+                        <td class="cell-muted">${Security.sanitizeHTML(c.court) || '-'}</td>
                         <td class="cell-muted">${formatDate(c.created_at)}</td>
                     </tr>
                 `).join('');
@@ -1863,7 +2099,7 @@
                         <td>${finTypeBadge(f.type)}</td>
                         <td style="font-weight:600">${formatBRL(parseFloat(f.amount) || 0)}</td>
                         <td>${finStatusBadge(f.status)}</td>
-                        <td class="cell-muted" style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${f.description || ''}">${f.description || '-'}</td>
+                        <td class="cell-muted" style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${Security.sanitizeHTML(f.description) || ''}">${Security.sanitizeHTML(f.description) || '-'}</td>
                     </tr>
                 `).join('');
             }
@@ -1918,7 +2154,7 @@
                 <div class="doc-item">
                     <div class="doc-icon">${fileIcon(d.file_type)}</div>
                     <div class="doc-info">
-                        <div class="doc-name">${d.name || 'Documento'}</div>
+                        <div class="doc-name">${Security.sanitizeHTML(d.name) || 'Documento'}</div>
                         <div class="doc-meta">Processo: ${caseNumber(d.case_id)} &middot; Cliente: ${clientName(d.client_id)}</div>
                     </div>
                     <div class="doc-size">${formatBytes(d.size_bytes)}</div>
@@ -1949,12 +2185,12 @@
                 .sort((a, b) => (a.name || '').localeCompare(b.name || ''))
                 .map(c => `
                     <div class="client-card">
-                        <div class="client-card-name">${c.name || '-'}</div>
-                        <div class="client-card-info">Email: <span>${c.email || '-'}</span></div>
-                        <div class="client-card-info">Telefone: <span>${c.phone || '-'}</span></div>
-                        <div class="client-card-info">CPF/CNPJ: <span>${c.cpf_cnpj || '-'}</span></div>
+                        <div class="client-card-name">${Security.sanitizeHTML(c.name) || '-'}</div>
+                        <div class="client-card-info">Email: <span>${Security.sanitizeHTML(c.email) || '-'}</span></div>
+                        <div class="client-card-info">Telefone: <span>${Security.sanitizeHTML(c.phone) || '-'}</span></div>
+                        <div class="client-card-info">CPF/CNPJ: <span>${Security.sanitizeHTML(c.cpf_cnpj) || '-'}</span></div>
                         <div class="client-card-info">Processos: <span>${casesPerClient[c.id] || 0}</span></div>
-                        ${c.type ? `<span class="client-card-type">${c.type}</span>` : ''}
+                        ${c.type ? `<span class="client-card-type">${Security.sanitizeHTML(c.type)}</span>` : ''}
                     </div>
                 `).join('');
         }
@@ -1995,6 +2231,17 @@
         async function handleLogout() {
             await sb.auth.signOut();
             window.location.href = 'portal-login.html';
+        }
+    </script>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('SW registered:', reg.scope))
+                    .catch(err => console.warn('SW registration failed:', err));
+            });
         }
     </script>
 
