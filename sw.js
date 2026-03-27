@@ -7,6 +7,8 @@ const CACHE_VERSION = 'kiaa-portal-v1';
 const STATIC_ASSETS = [
     '/portal-login.html',
     '/portal-dashboard.html',
+    '/portal-kpi.html',
+    '/inteligencia.html',
     '/offline.html',
     '/manifest.json',
     '/style.css',
