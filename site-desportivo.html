@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/icone-positivo-verde.png">
     <link rel="apple-touch-icon" href="img/icone-positivo-verde.png">
-    <!-- Color Overrides -->
+    <!-- Color Overrides & Sports Styling -->
     <style>
         :root {
             --verde: #009B3A;
@@ -35,37 +35,306 @@
             --verde-dark: #007A2E;
             --verde-glow: rgba(0, 155, 58, 0.15);
             --shadow-green: 0 4px 20px rgba(0, 155, 58, 0.25);
+            --amarelo: #FEDF00;
+            --azul: #002776;
         }
-        /* Yellow accent for highlights */
+
+        /* ===== HERO OVERRIDES ===== */
         .hero-badge {
             background: rgba(254, 223, 0, 0.12);
             color: #FEDF00;
             border-color: rgba(254, 223, 0, 0.3);
         }
         .text-yellow { color: #FEDF00; }
-        .area-card-uniform:hover {
-            border-color: rgba(254, 223, 0, 0.4);
-            box-shadow: 0 4px 20px rgba(254, 223, 0, 0.1);
-        }
         .hero-title .text-green {
             background: linear-gradient(135deg, #009B3A, #FEDF00);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+
+        /* ===== BUTTONS ===== */
         .btn-cta {
             background: linear-gradient(135deg, #009B3A, #007A2E);
         }
         .btn-cta:hover {
             background: linear-gradient(135deg, #00C853, #009B3A);
         }
+
+        /* ===== SECTION TAGS ===== */
         .section-tag {
             color: #FEDF00;
             border-color: rgba(254, 223, 0, 0.3);
             background: rgba(254, 223, 0, 0.08);
         }
+
+        /* ===== CTA SECTION ===== */
         .cta-section {
             background: linear-gradient(135deg, #004D1C 0%, #007A2E 50%, #004D1C 100%);
+        }
+
+        /* ===== PREMIUM PRODUCT CARDS GRID ===== */
+        .produtos-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+        @media (max-width: 1024px) {
+            .produtos-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .produtos-grid { grid-template-columns: 1fr; }
+        }
+
+        /* ===== INDIVIDUAL CARD ===== */
+        .produto-card {
+            position: relative;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 32px 28px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            cursor: default;
+        }
+        .produto-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 4px;
+            background: linear-gradient(90deg, #009B3A, #FEDF00);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .produto-card::after {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle at center, rgba(0,155,58,0.06) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+        }
+        .produto-card:hover {
+            border-color: rgba(254, 223, 0, 0.35);
+            box-shadow: 0 8px 32px rgba(0, 155, 58, 0.15), 0 0 0 1px rgba(254, 223, 0, 0.1);
+            transform: translateY(-6px);
+        }
+        .produto-card:hover::before {
+            transform: scaleX(1);
+        }
+        .produto-card:hover::after {
+            opacity: 1;
+        }
+        .produto-card:hover .produto-icon {
+            background: rgba(0, 155, 58, 0.15);
+            border-color: rgba(0, 155, 58, 0.4);
+            transform: scale(1.1) rotate(-3deg);
+        }
+        .produto-card:hover .produto-icon svg {
+            stroke: #FEDF00;
+        }
+        .produto-card:hover .produto-number {
+            color: rgba(254, 223, 0, 0.08);
+        }
+
+        /* ===== CARD INTERNALS ===== */
+        .produto-number {
+            position: absolute;
+            top: 12px; right: 16px;
+            font-size: 4rem;
+            font-weight: 800;
+            color: rgba(255,255,255,0.03);
+            line-height: 1;
+            transition: color 0.4s ease;
+            pointer-events: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .produto-icon {
+            width: 56px; height: 56px;
+            border-radius: 14px;
+            background: rgba(0, 155, 58, 0.08);
+            border: 1px solid rgba(0, 155, 58, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            z-index: 1;
+        }
+        .produto-icon svg {
+            transition: stroke 0.3s ease;
+        }
+        .produto-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        .produto-card p {
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.55);
+            line-height: 1.55;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== TEAM SECTION ===== */
+        .equipe-section {
+            padding: 100px 0;
+            background: linear-gradient(180deg, #0a0a0a 0%, #0F1A14 50%, #0a0a0a 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .equipe-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0,155,58,0.3), rgba(254,223,0,0.2), rgba(0,155,58,0.3), transparent);
+        }
+        .equipe-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+        @media (max-width: 900px) {
+            .equipe-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .equipe-grid { grid-template-columns: 1fr; }
+        }
+        .equipe-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 20px;
+            padding: 36px 28px 28px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .equipe-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #009B3A, #FEDF00, #002776);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        .equipe-card:hover {
+            border-color: rgba(0, 155, 58, 0.25);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        }
+        .equipe-card:hover::after {
+            transform: scaleX(1);
+        }
+        .equipe-avatar {
+            width: 88px; height: 88px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(0,155,58,0.2), rgba(0,39,118,0.2));
+            border: 2px solid rgba(0,155,58,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #FEDF00;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.4s ease;
+        }
+        .equipe-card:hover .equipe-avatar {
+            border-color: #FEDF00;
+            box-shadow: 0 0 20px rgba(254,223,0,0.15);
+        }
+        .equipe-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+        .equipe-card .equipe-role {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #009B3A;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        .equipe-card .equipe-desc {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.5;
+        }
+
+        /* ===== STATS BAR ===== */
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            padding: 48px 0;
+            margin-top: 48px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #009B3A, #FEDF00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 8px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .stat-label {
+            font-size: 0.82rem;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+        }
+
+        /* ===== FLOATING FIELD LINES (decorative) ===== */
+        .field-lines {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px; height: 300px;
+            border: 1px solid rgba(255,255,255,0.02);
+            border-radius: 0;
+            pointer-events: none;
+        }
+        .field-lines::before {
+            content: '';
+            position: absolute;
+            top: 50%; left: 0; right: 0;
+            height: 1px;
+            background: rgba(255,255,255,0.02);
+        }
+        .field-lines::after {
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px; height: 100px;
+            border: 1px solid rgba(255,255,255,0.02);
+            border-radius: 50%;
         }
     </style>
     <!-- Schema.org JSON-LD -->
@@ -112,7 +381,8 @@
             <ul class="nav-links" id="nav-links">
                 <li><a href="novo-index.html" class="nav-link">Voltar ao Hub</a></li>
                 <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#areas" class="nav-link">Áreas</a></li>
+                <li><a href="#areas" class="nav-link">Produtos</a></li>
+                <li><a href="#equipe" class="nav-link">Equipe</a></li>
                 <li><a href="#contato" class="nav-link nav-cta">Fale Conosco</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Abrir menu">
@@ -199,42 +469,147 @@
         </div>
     </section>
 
-    <!-- ==================== AREAS OF PRACTICE ==================== -->
-    <section id="areas" class="section areas">
+    <!-- ==================== PRODUTOS JURIDICOS ==================== -->
+    <section id="areas" class="section areas" style="position:relative;">
+        <div class="field-lines"></div>
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Áreas de Atuação</span>
-                <h2 class="section-title">Expertise no <span class="text-green">direito esportivo</span></h2>
-                <p class="section-desc">Cobertura completa das demandas jurídicas no universo do esporte brasileiro.</p>
+                <span class="section-tag">Produtos Juridicos</span>
+                <h2 class="section-title">Solu&ccedil;&otilde;es de <span class="text-green">elite</span> para o esporte</h2>
+                <p class="section-desc">Oito especialidades que cobrem toda a cadeia juridica do esporte brasileiro — do gramado ao tribunal.</p>
             </div>
-            <div class="areas-grid areas-grid-uniform" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+
+            <div class="produtos-grid">
+                <!-- 01 — Contratos de Atletas e Transferencias -->
+                <div class="produto-card">
+                    <span class="produto-number">01</span>
+                    <div class="produto-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#009B3A" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                     </div>
-                    <h3>Contratos Desportivos</h3>
-                    <p>Elaboração e revisão de contratos de trabalho desportivo, transferências nacionais e internacionais, empréstimos e agenciamento.</p>
+                    <h3>Contratos de Atletas e Transfer&ecirc;ncias</h3>
+                    <p>Elabora&ccedil;&atilde;o, revis&atilde;o e negocia&ccedil;&atilde;o de contratos de trabalho desportivo, transfer&ecirc;ncias nacionais e internacionais.</p>
                 </div>
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+
+                <!-- 02 — Defesa em STJD / TJD -->
+                <div class="produto-card">
+                    <span class="produto-number">02</span>
+                    <div class="produto-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#009B3A" stroke-width="1.5"><path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
                     </div>
-                    <h3>STJD / TJD</h3>
-                    <p>Defesa e acusação perante o Superior Tribunal de Justiça Desportiva e Tribunais de Justiça Desportiva estaduais.</p>
+                    <h3>Defesa em STJD / TJD</h3>
+                    <p>Atua&ccedil;&atilde;o estrat&eacute;gica perante tribunais desportivos em processos disciplinares, doping e infrações regulamentares.</p>
                 </div>
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+
+                <!-- 03 — Direito de Imagem e Arena -->
+                <div class="produto-card">
+                    <span class="produto-number">03</span>
+                    <div class="produto-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#009B3A" stroke-width="1.5"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                     </div>
                     <h3>Direito de Imagem e Arena</h3>
-                    <p>Contratos de licenciamento de imagem, direito de arena, publicidade esportiva e proteção da marca pessoal do atleta.</p>
+                    <p>Licenciamento de imagem, direito de arena, publicidade esportiva e prote&ccedil;&atilde;o da marca pessoal do atleta.</p>
                 </div>
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+
+                <!-- 04 — SAF -->
+                <div class="produto-card">
+                    <span class="produto-number">04</span>
+                    <div class="produto-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#009B3A" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
                     </div>
-                    <h3>SAF e Governanca</h3>
-                    <p>Constituição e assessoria juridica para Sociedades Anônimas do Futebol, governança corporativa e compliance esportivo.</p>
+                    <h3>SAF &mdash; Sociedade An&ocirc;nima do Futebol</h3>
+                    <p>Constitui&ccedil;&atilde;o, due diligence e assessoria cont&iacute;nua para clubes em processo de transforma&ccedil;&atilde;o em SAF.</p>
+                </div>
+
+                <!-- 05 — Agenciamento e Intermediacao -->
+                <div class="produto-card">
+                    <span class="produto-number">05</span>
+                    <div class="produto-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#009B3A" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <h3>Agenciamento e Intermedia&ccedil;&atilde;o</h3>
+                    <p>Regulariza&ccedil;&atilde;o de agentes, contratos de intermedia&ccedil;&atilde;o e compliance com normas FIFA e CBF.</p>
+                </div>
+
+                <!-- 06 — Compliance Desportivo -->
+                <div class="produto-card">
+                    <span class="produto-number">06</span>
+                    <div class="produto-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#009B3A" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <h3>Compliance Desportivo e Fair Play</h3>
+                    <p>Programas de integridade, fair play financeiro e adequa&ccedil;&atilde;o &agrave;s normas de licenciamento de clubes.</p>
+                </div>
+
+                <!-- 07 — Contencioso Trabalhista Desportivo -->
+                <div class="produto-card">
+                    <span class="produto-number">07</span>
+                    <div class="produto-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#009B3A" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3>Contencioso Trabalhista Desportivo</h3>
+                    <p>Defesa e propositura de a&ccedil;&otilde;es trabalhistas envolvendo atletas, comiss&otilde;es t&eacute;cnicas e clubes.</p>
+                </div>
+
+                <!-- 08 — Governanca de Clubes e Federacoes -->
+                <div class="produto-card">
+                    <span class="produto-number">08</span>
+                    <div class="produto-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#009B3A" stroke-width="1.5"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                    </div>
+                    <h3>Governan&ccedil;a de Clubes e Federa&ccedil;&otilde;es</h3>
+                    <p>Estrutura&ccedil;&atilde;o estatut&aacute;ria, conselhos deliberativos, elei&ccedil;&otilde;es e reestrutura&ccedil;&atilde;o institucional.</p>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Especialidades</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Processos Desportivos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">27</div>
+                    <div class="stat-label">Estados Atendidos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">FIFA</div>
+                    <div class="stat-label">Normas Internacionais</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EQUIPE SECTION ==================== -->
+    <section id="equipe" class="equipe-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nosso Time</span>
+                <h2 class="section-title" style="color:#fff;">Especialistas em <span class="text-green">direito desportivo</span></h2>
+                <p class="section-desc" style="color:rgba(255,255,255,0.55);">Profissionais com viv&ecirc;ncia no ecossistema esportivo brasileiro.</p>
+            </div>
+
+            <div class="equipe-grid">
+                <div class="equipe-card">
+                    <div class="equipe-avatar">KI</div>
+                    <h3>Dr. Kairo &Iacute;caro</h3>
+                    <div class="equipe-role">S&oacute;cio Fundador</div>
+                    <div class="equipe-desc">Coordenador do n&uacute;cleo desportivo. Atua&ccedil;&atilde;o em STJD, contratos e transfer&ecirc;ncias internacionais.</div>
+                </div>
+                <div class="equipe-card">
+                    <div class="equipe-avatar">RS</div>
+                    <h3>Dra. Renata Silva</h3>
+                    <div class="equipe-role">Direito de Imagem</div>
+                    <div class="equipe-desc">Especialista em contratos de imagem, arena e licenciamento de marcas esportivas.</div>
+                </div>
+                <div class="equipe-card">
+                    <div class="equipe-avatar">ML</div>
+                    <h3>Dr. Marcos Lima</h3>
+                    <div class="equipe-role">Contencioso Desportivo</div>
+                    <div class="equipe-desc">Atua&ccedil;&atilde;o em tribunais desportivos e trabalhistas, com foco em defesa de atletas e clubes.</div>
                 </div>
             </div>
         </div>
@@ -279,20 +654,25 @@
                     </div>
                 </div>
                 <div class="footer-links-group">
-                    <h4>Áreas de Atuação</h4>
+                    <h4>Produtos Jur&iacute;dicos</h4>
                     <ul>
-                        <li><a href="#areas">Contratos Desportivos</a></li>
-                        <li><a href="#areas">STJD / TJD</a></li>
+                        <li><a href="#areas">Contratos e Transfer&ecirc;ncias</a></li>
+                        <li><a href="#areas">Defesa em STJD / TJD</a></li>
                         <li><a href="#areas">Direito de Imagem e Arena</a></li>
-                        <li><a href="#areas">SAF e Governanca</a></li>
+                        <li><a href="#areas">SAF</a></li>
+                        <li><a href="#areas">Agenciamento</a></li>
+                        <li><a href="#areas">Compliance e Fair Play</a></li>
+                        <li><a href="#areas">Contencioso Trabalhista</a></li>
+                        <li><a href="#areas">Governan&ccedil;a de Clubes</a></li>
                     </ul>
                 </div>
                 <div class="footer-links-group">
-                    <h4>Links Rápidos</h4>
+                    <h4>Links R&aacute;pidos</h4>
                     <ul>
                         <li><a href="novo-index.html">Voltar ao Hub</a></li>
                         <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#areas">Áreas</a></li>
+                        <li><a href="#areas">Produtos</a></li>
+                        <li><a href="#equipe">Equipe</a></li>
                         <li><a href="https://kairoicaro.com.br" target="_blank">Site Principal</a></li>
                     </ul>
                 </div>

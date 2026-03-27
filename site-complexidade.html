@@ -46,6 +46,196 @@
         .footer-bottom { border-top-color: rgba(201, 168, 76, 0.15); }
         .area-card-uniform { background: rgba(201, 168, 76, 0.04); border-color: rgba(201, 168, 76, 0.1); }
         .area-card-uniform:hover { border-color: rgba(201, 168, 76, 0.4); background: rgba(201, 168, 76, 0.08); }
+
+        /* ===== PREMIUM PRODUCT CARDS ===== */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            margin-top: 48px;
+        }
+        .product-card {
+            position: relative;
+            background: linear-gradient(160deg, rgba(26,26,46,0.95) 0%, rgba(15,15,25,0.98) 100%);
+            border: 1px solid rgba(201, 168, 76, 0.12);
+            border-radius: 16px;
+            padding: 36px 30px 32px;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            overflow: hidden;
+        }
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #C9A84C, transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-6px) scale(1.02);
+            border-color: rgba(201, 168, 76, 0.45);
+            box-shadow: 0 12px 48px rgba(201, 168, 76, 0.15), 0 0 80px rgba(201, 168, 76, 0.06);
+        }
+        .product-card:hover::before { opacity: 1; }
+        .product-card-icon {
+            width: 56px; height: 56px;
+            display: flex; align-items: center; justify-content: center;
+            background: linear-gradient(135deg, rgba(201,168,76,0.12) 0%, rgba(201,168,76,0.04) 100%);
+            border: 1px solid rgba(201,168,76,0.18);
+            border-radius: 14px;
+            margin-bottom: 20px;
+            color: #C9A84C;
+            transition: all 0.3s ease;
+        }
+        .product-card:hover .product-card-icon {
+            background: linear-gradient(135deg, rgba(201,168,76,0.22) 0%, rgba(201,168,76,0.08) 100%);
+            border-color: rgba(201,168,76,0.4);
+            box-shadow: 0 0 24px rgba(201,168,76,0.15);
+        }
+        .product-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+        }
+        .product-card p {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.55);
+            line-height: 1.65;
+            margin-bottom: 20px;
+        }
+        .complexity-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        .complexity-alta {
+            background: rgba(201,168,76,0.1);
+            color: #C9A84C;
+            border: 1px solid rgba(201,168,76,0.2);
+        }
+        .complexity-muito-alta {
+            background: rgba(220,120,50,0.1);
+            color: #E8935A;
+            border: 1px solid rgba(220,120,50,0.2);
+        }
+        .complexity-excepcional {
+            background: rgba(200,60,60,0.1);
+            color: #E06060;
+            border: 1px solid rgba(200,60,60,0.2);
+        }
+        .complexity-dot {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.3); }
+        }
+
+        /* ===== TEAM SECTION ===== */
+        .team-complexidade { background: #0F0F0F; }
+        .team-cards-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 48px;
+            flex-wrap: wrap;
+        }
+        .team-member-card {
+            position: relative;
+            width: 340px;
+            background: linear-gradient(160deg, rgba(26,26,46,0.9) 0%, rgba(12,12,20,0.95) 100%);
+            border: 1px solid rgba(201,168,76,0.1);
+            border-radius: 20px;
+            padding: 40px 32px 36px;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+        .team-member-card:hover {
+            border-color: rgba(201,168,76,0.35);
+            box-shadow: 0 16px 56px rgba(201,168,76,0.1);
+            transform: translateY(-4px);
+        }
+        .team-avatar {
+            width: 88px; height: 88px;
+            margin: 0 auto 24px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(201,168,76,0.15), rgba(201,168,76,0.05));
+            border: 2px solid rgba(201,168,76,0.25);
+            display: flex; align-items: center; justify-content: center;
+            color: #C9A84C;
+        }
+        .team-member-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 0.06em;
+            margin-bottom: 4px;
+        }
+        .team-role {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #C9A84C;
+            letter-spacing: 0.04em;
+            margin-bottom: 16px;
+        }
+        .team-pen-score {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 16px;
+            background: rgba(201,168,76,0.08);
+            border: 1px solid rgba(201,168,76,0.15);
+            border-radius: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: rgba(255,255,255,0.7);
+            letter-spacing: 0.03em;
+            margin-bottom: 18px;
+        }
+        .team-pen-value {
+            color: #C9A84C;
+            font-weight: 800;
+            font-size: 0.85rem;
+        }
+        .team-desc {
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.6;
+        }
+        .team-separator {
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #C9A84C, transparent);
+            margin: 16px auto;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 960px) {
+            .products-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        }
+        @media (max-width: 640px) {
+            .products-grid { grid-template-columns: 1fr; gap: 16px; }
+            .product-card { padding: 28px 22px 24px; }
+            .team-cards-row { gap: 24px; }
+            .team-member-card { width: 100%; max-width: 340px; padding: 32px 24px 28px; }
+        }
     </style>
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -178,43 +368,114 @@
         </div>
     </section>
 
-    <!-- ==================== AREAS OF PRACTICE ==================== -->
+    <!-- ==================== PRODUCTS / SERVICES ==================== -->
     <section id="areas" class="section areas">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Áreas de Atuação</span>
-                <h2 class="section-title">Expertise em <span class="text-green">alta complexidade</span></h2>
-                <p class="section-desc">Atuação especializada nas áreas mais críticas do direito penal econômico e contencioso de alto impacto.</p>
+                <span class="section-tag">Produtos Jurídicos</span>
+                <h2 class="section-title">Soluções de <span class="text-green">alta complexidade</span></h2>
+                <p class="section-desc">Cada caso exige uma estratégia sob medida. Conheça nossos produtos jurídicos especializados em defesa penal de alto impacto.</p>
             </div>
-            <div class="areas-grid areas-grid-uniform" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    </div>
-                    <h3>Penal Econômico</h3>
-                    <p>Defesa em crimes contra a ordem econômica e tributária, sonegação fiscal, evasão de divisas e crimes financeiros.</p>
-                </div>
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                    </div>
-                    <h3>Lavagem de Dinheiro</h3>
-                    <p>Defesa técnica em investigações e processos envolvendo ocultação de bens, capitais e valores de origem ilícita.</p>
-                </div>
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
+            <div class="products-grid">
+
+                <!-- Card 1: Maxiprocessos -->
+                <div class="product-card">
+                    <div class="product-card-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
                     </div>
-                    <h3>Maxiprocessos</h3>
-                    <p>Atuação em grandes operações policiais e ações penais com múltiplos réus, perante justiça federal e estadual.</p>
+                    <h3>Defesa em Maxiprocessos</h3>
+                    <p>Atuação estratégica em operações policiais complexas com dezenas de investigados, múltiplas fases e repercussão midiática. Coordenação de defesa em juízos federais e estaduais.</p>
+                    <span class="complexity-badge complexity-excepcional"><span class="complexity-dot"></span>Excepcional</span>
                 </div>
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+
+                <!-- Card 2: Lavagem de Dinheiro -->
+                <div class="product-card">
+                    <div class="product-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                     </div>
-                    <h3>Defesa Corporativa</h3>
-                    <p>Proteção jurídica de empresas e executivos em investigações corporativas, compliance e gestão de crises.</p>
+                    <h3>Lavagem de Dinheiro e Compliance Criminal</h3>
+                    <p>Defesa técnica em investigações de ocultação de patrimônio e capitais. Estruturação de programas de compliance criminal e prevenção a riscos regulatórios.</p>
+                    <span class="complexity-badge complexity-excepcional"><span class="complexity-dot"></span>Excepcional</span>
                 </div>
+
+                <!-- Card 3: Crimes Econômicos e Tributários -->
+                <div class="product-card">
+                    <div class="product-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3>Crimes Contra a Ordem Econômica e Tributária</h3>
+                    <p>Defesa em sonegação fiscal, evasão de divisas, crimes contra o sistema financeiro e infrações econômicas perante a Receita Federal e MPF.</p>
+                    <span class="complexity-badge complexity-muito-alta"><span class="complexity-dot"></span>Muito Alta</span>
+                </div>
+
+                <!-- Card 4: Defesa Corporativa -->
+                <div class="product-card">
+                    <div class="product-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3>Defesa Corporativa em Investigações</h3>
+                    <p>Proteção jurídica de empresas e executivos em CPIs, inquéritos civis, investigações do CADE e procedimentos de órgãos de controle.</p>
+                    <span class="complexity-badge complexity-muito-alta"><span class="complexity-dot"></span>Muito Alta</span>
+                </div>
+
+                <!-- Card 5: Habeas Corpus -->
+                <div class="product-card">
+                    <div class="product-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <h3>Habeas Corpus Estratégico</h3>
+                    <p>Impetração de HC em caráter de urgência perante TJs, TRFs, STJ e STF. Atuação imediata em prisões preventivas, temporárias e flagrantes ilegais.</p>
+                    <span class="complexity-badge complexity-alta"><span class="complexity-dot"></span>Alta</span>
+                </div>
+
+                <!-- Card 6: ANPP -->
+                <div class="product-card">
+                    <div class="product-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </div>
+                    <h3>Acordo de Não Persecução Penal (ANPP)</h3>
+                    <p>Negociação estratégica de ANPPs com o Ministério Público. Análise de viabilidade, condições e termos mais favoráveis ao cliente.</p>
+                    <span class="complexity-badge complexity-alta"><span class="complexity-dot"></span>Alta</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TEAM SECTION ==================== -->
+    <section class="section team-complexidade">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Equipe Especializada</span>
+                <h2 class="section-title">Quem <span class="text-green">defende</span> você</h2>
+                <p class="section-desc">Advogados com classificação máxima em Direito Penal, dedicados exclusivamente à defesa em casos de alta complexidade.</p>
+            </div>
+            <div class="team-cards-row">
+
+                <!-- Kairo Icaro -->
+                <div class="team-member-card">
+                    <div class="team-avatar">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    </div>
+                    <h3>KAIRO ICARO</h3>
+                    <div class="team-role">S&oacute;cio Fundador</div>
+                    <div class="team-pen-score">Penal: <span class="team-pen-value">9/10</span></div>
+                    <div class="team-separator"></div>
+                    <p class="team-desc">Lideran&ccedil;a em maxiprocessos e opera&ccedil;&otilde;es de grande porte. Experi&ecirc;ncia consolidada em tribunais superiores e ju&iacute;zos federais em todo o Brasil.</p>
+                </div>
+
+                <!-- Welington Albuquerque -->
+                <div class="team-member-card">
+                    <div class="team-avatar">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    </div>
+                    <h3>WELINGTON ALBUQUERQUE</h3>
+                    <div class="team-role">Advogado S&ecirc;nior</div>
+                    <div class="team-pen-score">Penal: <span class="team-pen-value">9/10</span></div>
+                    <div class="team-separator"></div>
+                    <p class="team-desc">Especialista em lavagem de dinheiro e crimes econ&ocirc;micos. Atua&ccedil;&atilde;o t&eacute;cnica rigorosa em investiga&ccedil;&otilde;es complexas e defesa perante &oacute;rg&atilde;os de controle.</p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -258,12 +519,14 @@
                     </div>
                 </div>
                 <div class="footer-links-group">
-                    <h4>Áreas de Atuação</h4>
+                    <h4>Produtos Jurídicos</h4>
                     <ul>
-                        <li><a href="#areas">Penal Econômico</a></li>
-                        <li><a href="#areas">Lavagem de Dinheiro</a></li>
                         <li><a href="#areas">Maxiprocessos</a></li>
+                        <li><a href="#areas">Lavagem de Dinheiro</a></li>
+                        <li><a href="#areas">Crimes Econômicos</a></li>
                         <li><a href="#areas">Defesa Corporativa</a></li>
+                        <li><a href="#areas">Habeas Corpus</a></li>
+                        <li><a href="#areas">ANPP</a></li>
                     </ul>
                 </div>
                 <div class="footer-links-group">

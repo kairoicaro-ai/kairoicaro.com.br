@@ -30,11 +30,232 @@
     <!-- Color Overrides -->
     <style>
         :root {
-            --verde: #7B1FA2;
-            --verde-neg: #9C27B0;
-            --verde-dark: #4A148C;
-            --verde-glow: rgba(123, 31, 162, 0.15);
-            --shadow-green: 0 4px 20px rgba(123, 31, 162, 0.25);
+            --verde: #0D9488;
+            --verde-neg: #14B8A6;
+            --verde-dark: #0F766E;
+            --verde-glow: rgba(13, 148, 136, 0.12);
+            --shadow-green: 0 4px 20px rgba(13, 148, 136, 0.25);
+        }
+
+        /* ── Premium Product Cards ── */
+        .produtos-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+            margin-top: 48px;
+        }
+        .produto-card {
+            position: relative;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 36px 28px 32px;
+            transition: all .35s cubic-bezier(.4,0,.2,1);
+            overflow: hidden;
+        }
+        .produto-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #0D9488, #0F2944);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform .35s cubic-bezier(.4,0,.2,1);
+        }
+        .produto-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(15,41,68,.12), 0 4px 12px rgba(13,148,136,.10);
+            border-color: #0D9488;
+        }
+        .produto-card:hover::before { transform: scaleX(1); }
+        .produto-card-icon {
+            width: 56px; height: 56px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, rgba(13,148,136,.08), rgba(15,41,68,.06));
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 20px;
+            transition: background .35s;
+        }
+        .produto-card-icon svg { color: #0D9488; transition: color .35s; }
+        .produto-card:hover .produto-card-icon {
+            background: linear-gradient(135deg, #0D9488, #0F766E);
+        }
+        .produto-card:hover .produto-card-icon svg { color: #fff; }
+        .produto-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #0F2944;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        .produto-card p {
+            font-size: .92rem;
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .produto-card-number {
+            position: absolute;
+            top: 16px; right: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .75rem;
+            font-weight: 700;
+            color: rgba(13,148,136,.2);
+            letter-spacing: .05em;
+        }
+
+        /* ── Methodology Section ── */
+        .methodology {
+            background: #0F2944;
+            position: relative;
+            overflow: hidden;
+        }
+        .methodology::before {
+            content: '';
+            position: absolute;
+            top: -50%; right: -20%;
+            width: 600px; height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(13,148,136,.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .methodology .section-tag { color: #14B8A6; }
+        .methodology .section-title { color: #fff; }
+        .methodology .section-desc { color: #94a3b8; }
+        .method-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+            counter-reset: step;
+        }
+        .method-step {
+            text-align: center;
+            position: relative;
+            counter-increment: step;
+        }
+        .method-step::before {
+            content: counter(step, decimal-leading-zero);
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: rgba(13,148,136,.15);
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+        .method-step h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .method-step p {
+            font-size: .88rem;
+            color: #94a3b8;
+            line-height: 1.6;
+        }
+        .method-connector {
+            display: none;
+        }
+
+        /* ── Team Section ── */
+        .team-compliance {
+            background: #f8fafc;
+        }
+        .team-compliance .section-tag { color: #0D9488; }
+        .team-grid-compliance {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+        .team-member-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 40px 28px 32px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            transition: all .3s ease;
+        }
+        .team-member-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(15,41,68,.08);
+        }
+        .team-avatar {
+            width: 88px; height: 88px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(13,148,136,.1), rgba(15,41,68,.08));
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 20px;
+        }
+        .team-avatar svg { color: #0D9488; }
+        .team-member-card h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #0F2944;
+            margin-bottom: 4px;
+        }
+        .team-member-card .team-role {
+            font-size: .85rem;
+            color: #0D9488;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .team-member-card p {
+            font-size: .88rem;
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* ── Trust Badges ── */
+        .trust-bar {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+            padding: 40px 0;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+            margin: 48px 0 0;
+        }
+        .trust-item {
+            text-align: center;
+        }
+        .trust-item strong {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: #0D9488;
+            line-height: 1.1;
+        }
+        .trust-item span {
+            font-size: .82rem;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            font-weight: 600;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 1024px) {
+            .produtos-grid { grid-template-columns: repeat(2, 1fr); }
+            .method-steps { grid-template-columns: repeat(2, 1fr); }
+            .team-grid-compliance { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .produtos-grid { grid-template-columns: 1fr; gap: 20px; }
+            .method-steps { grid-template-columns: 1fr; gap: 28px; }
+            .team-grid-compliance { grid-template-columns: 1fr; }
+            .trust-bar { gap: 28px; }
+            .trust-item strong { font-size: 1.6rem; }
+            .produto-card { padding: 28px 22px 24px; }
         }
     </style>
     <!-- Schema.org JSON-LD -->
@@ -81,7 +302,8 @@
             <ul class="nav-links" id="nav-links">
                 <li><a href="novo-index.html" class="nav-link">Voltar ao Hub</a></li>
                 <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#areas" class="nav-link">Áreas</a></li>
+                <li><a href="#areas" class="nav-link">Produtos</a></li>
+                <li><a href="#equipe" class="nav-link">Equipe</a></li>
                 <li><a href="#contato" class="nav-link nav-cta">Fale Conosco</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Abrir menu">
@@ -104,7 +326,7 @@
                 <span class="text-green">Compliance</span>, integridade e <span class="text-green">governanca</span> corporativa.
             </h1>
             <p class="hero-subtitle">
-                Programas de compliance, auditoria jurídica, canal de denúncias, LGPD, due diligence, investigações internas e governança corporativa.
+                Oito produtos juridicos estruturados para proteger sua empresa: compliance corporativo, canal de denuncias, LGPD, due diligence, investigacoes internas e governanca.
             </p>
             <div class="hero-actions">
                 <a href="https://wa.me/5595991775868?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20auditoria%20e%20compliance." target="_blank" class="btn btn-primary" id="hero-whatsapp">
@@ -126,14 +348,14 @@
     <!-- ==================== ABOUT SECTION ==================== -->
     <section id="sobre" class="section about">
         <div class="container">
-            <div class="about-content" style="max-width: 800px; margin: 0 auto;">
+            <div class="about-content" style="max-width: 820px; margin: 0 auto;">
                 <span class="section-tag">Auditoria e Compliance</span>
-                <h2 class="section-title"><span class="text-green">Integridade</span> corporativa como estratégia de negócio</h2>
+                <h2 class="section-title"><span class="text-green">Integridade</span> corporativa como estrategia de negocio</h2>
                 <p class="about-text">
-                    A área de <strong>Auditoria e Compliance</strong> do escritório Kairo Ícaro é dedicada a estruturar programas de integridade robustos, alinhados aos <strong>frameworks ISO 37001</strong> (antissuborno), <strong>SOX</strong> e melhores práticas de governança. Nosso <strong>OCR (Organizational Compliance Review)</strong> garante uma avaliação completa do nível de maturidade da sua organização.
+                    A area de <strong>Auditoria e Compliance</strong> do escritorio Kairo Icaro e dedicada a estruturar programas de integridade robustos, alinhados aos <strong>frameworks ISO 37001</strong> (antissuborno), <strong>SOX</strong> e melhores praticas de governanca. Nosso <strong>OCR (Organizational Compliance Review)</strong> garante uma avaliacao completa do nivel de maturidade da sua organizacao.
                 </p>
                 <p class="about-text">
-                    Atuamos na <strong>adequação à LGPD</strong>, estruturação de canais de denúncia, investigações internas, due diligence em operacoes de M&A e implantacao de <strong>politicas de governança corporativa</strong>. Cada projeto é desenhado sob medida para o porte e setor da empresa, garantindo conformidade e <strong>redução de riscos reputacionais</strong>.
+                    Atuamos na <strong>adequacao a LGPD</strong>, estruturacao de canais de denuncia, investigacoes internas, due diligence em operacoes de M&amp;A e implantacao de <strong>politicas de governanca corporativa</strong>. Cada projeto e desenhado sob medida para o porte e setor da empresa, garantindo conformidade e <strong>reducao de riscos reputacionais</strong>.
                 </p>
                 <div class="about-features">
                     <div class="feature-item">
@@ -142,7 +364,7 @@
                         </div>
                         <div>
                             <h4>Framework ISO 37001</h4>
-                            <p>Programas de integridade alinhados a padrões internacionais antissuborno.</p>
+                            <p>Programas de integridade alinhados a padroes internacionais antissuborno.</p>
                         </div>
                     </div>
                     <div class="feature-item">
@@ -159,51 +381,180 @@
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                         </div>
                         <div>
-                            <h4>Investigações Internas</h4>
-                            <p>Apurações independentes com metodologia forense e preservação de evidências.</p>
+                            <h4>Investigacoes Internas</h4>
+                            <p>Apuracoes independentes com metodologia forense e preservacao de evidencias.</p>
                         </div>
+                    </div>
+                </div>
+                <!-- Trust Badges -->
+                <div class="trust-bar">
+                    <div class="trust-item">
+                        <strong>ISO 37001</strong>
+                        <span>Framework Antissuborno</span>
+                    </div>
+                    <div class="trust-item">
+                        <strong>LGPD</strong>
+                        <span>Conformidade Total</span>
+                    </div>
+                    <div class="trust-item">
+                        <strong>SOX</strong>
+                        <span>Controles Internos</span>
+                    </div>
+                    <div class="trust-item">
+                        <strong>CGU</strong>
+                        <span>Programa Pro-Etica</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== AREAS OF PRACTICE ==================== -->
+    <!-- ==================== PRODUTOS JURIDICOS ==================== -->
     <section id="areas" class="section areas">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Serviços</span>
-                <h2 class="section-title">Atuação em <span class="text-green">Auditoria e Compliance</span></h2>
-                <p class="section-desc">Soluções completas de integridade, conformidade e governança corporativa.</p>
+                <span class="section-tag">Produtos Juridicos</span>
+                <h2 class="section-title">Solucoes em <span class="text-green">Auditoria e Compliance</span></h2>
+                <p class="section-desc">Oito produtos estruturados para blindar sua empresa com integridade, conformidade e governanca.</p>
             </div>
-            <div class="areas-grid areas-grid-uniform" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
+            <div class="produtos-grid">
+                <!-- 01 -->
+                <div class="produto-card">
+                    <span class="produto-card-number">01</span>
+                    <div class="produto-card-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                     </div>
-                    <h3>Programas de Compliance</h3>
-                    <p>Estruturação de programas de integridade com framework ISO 37001, código de ética e canal de denúncias.</p>
+                    <h3>Programa de Compliance Corporativo</h3>
+                    <p>Estruturacao completa de programas de integridade com framework ISO 37001, mapeamento de riscos, politicas internas e treinamentos periodicos para toda a organizacao.</p>
                 </div>
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                <!-- 02 -->
+                <div class="produto-card">
+                    <span class="produto-card-number">02</span>
+                    <div class="produto-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
                     </div>
-                    <h3>LGPD e Proteção de Dados</h3>
-                    <p>Adequação completa a LGPD, DPO as a Service, RIPD, mapeamento de dados e resposta a incidentes.</p>
+                    <h3>Canal de Denuncias (Whistleblowing)</h3>
+                    <p>Implantacao de canais anonimos e seguros para relatos de irregularidades, com protocolos de triagem, confidencialidade e protecao ao denunciante conforme a Lei 14.457/2022.</p>
                 </div>
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
+                <!-- 03 -->
+                <div class="produto-card">
+                    <span class="produto-card-number">03</span>
+                    <div class="produto-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    </div>
+                    <h3>Investigacoes Internas</h3>
+                    <p>Apuracoes independentes com metodologia forense, preservacao de cadeia de custodia, entrevistas estruturadas e relatorios conclusivos para tomada de decisao.</p>
+                </div>
+                <!-- 04 -->
+                <div class="produto-card">
+                    <span class="produto-card-number">04</span>
+                    <div class="produto-card-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                     </div>
-                    <h3>Due Diligence e Investigações</h3>
-                    <p>Auditoria jurídica em M&A, investigações internas, background check e análise de riscos corporativos.</p>
+                    <h3>Due Diligence Juridica</h3>
+                    <p>Auditoria juridica completa em operacoes de M&amp;A, parcerias estrategicas e investimentos. Background check, analise de passivos e relatorio de riscos detalhado.</p>
                 </div>
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
+                <!-- 05 -->
+                <div class="produto-card">
+                    <span class="produto-card-number">05</span>
+                    <div class="produto-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    </div>
+                    <h3>Adequacao LGPD</h3>
+                    <p>Programa completo de adequacao a Lei Geral de Protecao de Dados: mapeamento de dados, RIPD, DPO as a Service, politica de privacidade e resposta a incidentes.</p>
+                </div>
+                <!-- 06 -->
+                <div class="produto-card">
+                    <span class="produto-card-number">06</span>
+                    <div class="produto-card-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
                     </div>
-                    <h3>Governança Corporativa</h3>
-                    <p>Estruturação de conselhos, políticas internas, manuais de governanca e treinamentos de compliance.</p>
+                    <h3>Governanca Corporativa</h3>
+                    <p>Estruturacao de conselhos de administracao, comites de auditoria, politicas de conflito de interesses, manuais de governanca e boas praticas de gestao.</p>
+                </div>
+                <!-- 07 -->
+                <div class="produto-card">
+                    <span class="produto-card-number">07</span>
+                    <div class="produto-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                    </div>
+                    <h3>Codigo de Etica e Conduta</h3>
+                    <p>Elaboracao de codigos de etica personalizados, com diretrizes claras de conduta, politicas anticorrupcao, conflito de interesses e programa de treinamento.</p>
+                </div>
+                <!-- 08 -->
+                <div class="produto-card">
+                    <span class="produto-card-number">08</span>
+                    <div class="produto-card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                    </div>
+                    <h3>Auditoria de Riscos Juridicos</h3>
+                    <p>Diagnostico completo de vulnerabilidades juridicas, matriz de riscos, plano de mitigacao e monitoramento continuo com indicadores de conformidade (KPIs).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== METHODOLOGY ==================== -->
+    <section class="section methodology">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Metodologia</span>
+                <h2 class="section-title">Como <span class="text-green">trabalhamos</span></h2>
+                <p class="section-desc">Processo estruturado em quatro fases para garantir resultados concretos e mensuraveis.</p>
+            </div>
+            <div class="method-steps">
+                <div class="method-step">
+                    <h4>Diagnostico</h4>
+                    <p>Avaliacao do nivel de maturidade em compliance, mapeamento de riscos e gap analysis da organizacao.</p>
+                </div>
+                <div class="method-step">
+                    <h4>Planejamento</h4>
+                    <p>Desenho do programa sob medida, definicao de politicas, procedimentos e cronograma de implantacao.</p>
+                </div>
+                <div class="method-step">
+                    <h4>Implantacao</h4>
+                    <p>Execucao do plano com treinamentos, canal de denuncias, adequacao LGPD e estruturacao de governanca.</p>
+                </div>
+                <div class="method-step">
+                    <h4>Monitoramento</h4>
+                    <p>Acompanhamento continuo com KPIs, auditorias periodicas, relatorios e ajustes do programa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TEAM SECTION ==================== -->
+    <section id="equipe" class="section team-compliance">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Equipe</span>
+                <h2 class="section-title">Especialistas em <span class="text-green">Compliance</span></h2>
+                <p class="section-desc">Profissionais com formacao multidisciplinar e experiencia em programas de integridade.</p>
+            </div>
+            <div class="team-grid-compliance">
+                <div class="team-member-card">
+                    <div class="team-avatar">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    </div>
+                    <h4>Dr. Kairo Icaro</h4>
+                    <span class="team-role">Socio Fundador &bull; Compliance Officer</span>
+                    <p>Advogado com especializacao em Compliance Corporativo e Governanca. Coordena programas de integridade para empresas de diversos portes e setores.</p>
+                </div>
+                <div class="team-member-card">
+                    <div class="team-avatar">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    </div>
+                    <h4>Equipe de Auditoria</h4>
+                    <span class="team-role">Auditoria Juridica &bull; Due Diligence</span>
+                    <p>Profissionais especializados em investigacoes internas, analise de riscos corporativos, background check e auditoria forense.</p>
+                </div>
+                <div class="team-member-card">
+                    <div class="team-avatar">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    </div>
+                    <h4>Equipe LGPD</h4>
+                    <span class="team-role">Protecao de Dados &bull; DPO</span>
+                    <p>Time dedicado a adequacao LGPD, atuando como DPO terceirizado, elaborando RIPD e gerenciando incidentes de seguranca da informacao.</p>
                 </div>
             </div>
         </div>
@@ -248,12 +599,14 @@
                     </div>
                 </div>
                 <div class="footer-links-group">
-                    <h4>Serviços</h4>
+                    <h4>Produtos</h4>
                     <ul>
-                        <li><a href="#areas">Programas de Compliance</a></li>
-                        <li><a href="#areas">LGPD e Proteção de Dados</a></li>
-                        <li><a href="#areas">Due Diligence e Investigações</a></li>
-                        <li><a href="#areas">Governança Corporativa</a></li>
+                        <li><a href="#areas">Compliance Corporativo</a></li>
+                        <li><a href="#areas">Canal de Denuncias</a></li>
+                        <li><a href="#areas">Investigacoes Internas</a></li>
+                        <li><a href="#areas">Due Diligence</a></li>
+                        <li><a href="#areas">Adequacao LGPD</a></li>
+                        <li><a href="#areas">Governanca Corporativa</a></li>
                     </ul>
                 </div>
                 <div class="footer-links-group">

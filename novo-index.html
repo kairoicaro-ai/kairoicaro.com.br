@@ -843,6 +843,594 @@
             </div>
         </section>
 
+        <!-- TEAM SECTION -->
+        <section id="equipe" class="team-section">
+            <style>
+                /* ======= TEAM SECTION ======= */
+                .team-section {
+                    padding: 80px 0 60px;
+                    position: relative;
+                }
+                .team-section::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80px;
+                    height: 2px;
+                    background: linear-gradient(90deg, transparent, #C9A84C, transparent);
+                }
+                .team-header {
+                    text-align: center;
+                    margin-bottom: 48px;
+                    padding: 0 24px;
+                }
+                .team-header .team-label {
+                    font-size: 0.7rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    color: rgba(134,230,0,0.7);
+                    margin-bottom: 12px;
+                }
+                .team-header h2 {
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    color: #fff;
+                    margin-bottom: 12px;
+                }
+                .team-header h2 span {
+                    color: #86E600;
+                }
+                .team-header .team-desc {
+                    font-size: 1rem;
+                    font-weight: 300;
+                    color: rgba(255,255,255,0.45);
+                    max-width: 560px;
+                    margin: 0 auto;
+                }
+                .team-grid {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 24px;
+                    max-width: 1280px;
+                    margin: 0 auto;
+                    padding: 0 24px;
+                }
+
+                /* ======= TEAM CARD ======= */
+                .team-card {
+                    position: relative;
+                    background: linear-gradient(145deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 100%);
+                    backdrop-filter: blur(20px);
+                    -webkit-backdrop-filter: blur(20px);
+                    border: 1px solid rgba(255,255,255,0.08);
+                    border-radius: 16px;
+                    overflow: hidden;
+                    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                    cursor: default;
+                    animation: teamFadeIn 0.8s ease-out both;
+                }
+                .team-card::before {
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    border-radius: 16px;
+                    background: radial-gradient(ellipse at 50% 0%, rgba(134,230,0,0.06) 0%, transparent 70%);
+                    opacity: 0;
+                    transition: opacity 0.4s ease;
+                    pointer-events: none;
+                    z-index: 0;
+                }
+                .team-card:hover {
+                    transform: translateY(-8px) scale(1.02);
+                    border-color: rgba(134,230,0,0.25);
+                    box-shadow:
+                        0 20px 60px rgba(0,0,0,0.4),
+                        0 0 40px rgba(134,230,0,0.08),
+                        inset 0 1px 0 rgba(255,255,255,0.1);
+                }
+                .team-card:hover::before {
+                    opacity: 1;
+                }
+
+                @keyframes teamFadeIn {
+                    from { opacity: 0; transform: translateY(30px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+
+                /* Photo area */
+                .team-card-photo {
+                    position: relative;
+                    width: 100%;
+                    aspect-ratio: 1 / 1;
+                    overflow: hidden;
+                    background: linear-gradient(135deg, #0a1f35, #162d48);
+                }
+                .team-card-photo img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top center;
+                    transition: transform 0.5s ease, filter 0.5s ease;
+                    filter: grayscale(20%) contrast(1.05);
+                }
+                .team-card:hover .team-card-photo img {
+                    transform: scale(1.05);
+                    filter: grayscale(0%) contrast(1.1);
+                }
+                /* Gradient overlay on photo */
+                .team-card-photo::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 60%;
+                    background: linear-gradient(to top, rgba(15,41,68,0.95) 0%, rgba(15,41,68,0.4) 50%, transparent 100%);
+                    pointer-events: none;
+                }
+                /* Role badge */
+                .team-card-role-badge {
+                    position: absolute;
+                    top: 12px;
+                    right: 12px;
+                    padding: 4px 10px;
+                    font-size: 0.55rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                    color: #fff;
+                    background: rgba(134,230,0,0.15);
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    border: 1px solid rgba(134,230,0,0.25);
+                    border-radius: 20px;
+                    z-index: 2;
+                    white-space: nowrap;
+                }
+                .team-card-role-badge.founder {
+                    background: linear-gradient(135deg, rgba(201,168,76,0.3), rgba(201,168,76,0.15));
+                    border-color: rgba(201,168,76,0.4);
+                    color: #C9A84C;
+                }
+                .team-card-role-badge.senior {
+                    background: linear-gradient(135deg, rgba(21,101,192,0.3), rgba(21,101,192,0.15));
+                    border-color: rgba(21,101,192,0.4);
+                    color: #42A5F5;
+                }
+
+                /* Card info area */
+                .team-card-info {
+                    position: relative;
+                    z-index: 1;
+                    padding: 16px 16px 18px;
+                }
+                .team-card-name {
+                    font-size: 0.82rem;
+                    font-weight: 700;
+                    color: #fff;
+                    margin-bottom: 2px;
+                    line-height: 1.25;
+                    letter-spacing: 0.3px;
+                }
+                .team-card-title {
+                    font-size: 0.65rem;
+                    font-weight: 400;
+                    color: rgba(134,230,0,0.7);
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin-bottom: 14px;
+                }
+
+                /* Skill bars */
+                .team-skills {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                }
+                .team-skill-row {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+                .team-skill-label {
+                    font-size: 0.6rem;
+                    font-weight: 700;
+                    color: rgba(255,255,255,0.5);
+                    letter-spacing: 0.5px;
+                    width: 32px;
+                    flex-shrink: 0;
+                    text-align: right;
+                }
+                .team-skill-bar-bg {
+                    flex: 1;
+                    height: 4px;
+                    background: rgba(255,255,255,0.06);
+                    border-radius: 4px;
+                    overflow: hidden;
+                    position: relative;
+                }
+                .team-skill-bar-fill {
+                    height: 100%;
+                    border-radius: 4px;
+                    background: linear-gradient(90deg, rgba(134,230,0,0.4), #86E600);
+                    transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                    position: relative;
+                }
+                .team-skill-bar-fill::after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: -1px;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background: #86E600;
+                    box-shadow: 0 0 6px rgba(134,230,0,0.6);
+                    opacity: 0;
+                    transition: opacity 0.4s ease 1s;
+                }
+                .team-card:hover .team-skill-bar-fill::after {
+                    opacity: 1;
+                }
+                .team-skill-score {
+                    font-size: 0.6rem;
+                    font-weight: 700;
+                    color: #86E600;
+                    width: 18px;
+                    text-align: left;
+                    flex-shrink: 0;
+                }
+
+                /* Founder card special styling */
+                .team-card.is-founder {
+                    border-color: rgba(201,168,76,0.2);
+                    background: linear-gradient(145deg, rgba(201,168,76,0.08) 0%, rgba(255,255,255,0.03) 100%);
+                }
+                .team-card.is-founder:hover {
+                    border-color: rgba(201,168,76,0.35);
+                    box-shadow:
+                        0 20px 60px rgba(0,0,0,0.4),
+                        0 0 40px rgba(201,168,76,0.1),
+                        inset 0 1px 0 rgba(255,255,255,0.1);
+                }
+                .team-card.is-founder::before {
+                    background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.08) 0%, transparent 70%);
+                }
+                .team-card.is-founder .team-skill-bar-fill {
+                    background: linear-gradient(90deg, rgba(201,168,76,0.4), #C9A84C);
+                }
+                .team-card.is-founder .team-skill-bar-fill::after {
+                    background: #C9A84C;
+                    box-shadow: 0 0 6px rgba(201,168,76,0.6);
+                }
+                .team-card.is-founder .team-skill-score {
+                    color: #C9A84C;
+                }
+                .team-card.is-founder .team-card-title {
+                    color: rgba(201,168,76,0.8);
+                }
+
+                /* Senior card special styling */
+                .team-card.is-senior .team-card-title {
+                    color: rgba(66,165,245,0.8);
+                }
+
+                /* Responsive */
+                @media (max-width: 1024px) {
+                    .team-grid {
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 20px;
+                    }
+                }
+                @media (max-width: 768px) {
+                    .team-grid {
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 16px;
+                    }
+                    .team-header h2 {
+                        font-size: 1.5rem;
+                    }
+                }
+                @media (max-width: 480px) {
+                    .team-grid {
+                        grid-template-columns: 1fr;
+                        gap: 16px;
+                        max-width: 340px;
+                    }
+                    .team-section {
+                        padding: 60px 0 40px;
+                    }
+                }
+            </style>
+
+            <div class="team-header">
+                <p class="team-label">Nossa Equipe</p>
+                <h2>Quem faz o <span>KIAA</span> acontecer</h2>
+                <p class="team-desc">16 advogados especializados com atuação nacional, prontos para defender seus interesses</p>
+            </div>
+
+            <div class="team-grid">
+
+                <!-- 1. KAIRO ICARO -->
+                <div class="team-card is-founder" style="animation-delay: 0.05s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/Kairo.jpg" alt="Kairo Ícaro Alves dos Santos" loading="lazy">
+                        <span class="team-card-role-badge founder">Fundador</span>
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Kairo Ícaro Alves dos Santos</h3>
+                        <p class="team-card-title">Sócio Fundador</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">AMB</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:100%"></div></div><span class="team-skill-score">10</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">EMP</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">AGR</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">PEN</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. WELINGTON -->
+                <div class="team-card is-senior" style="animation-delay: 0.1s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/Welington.jpg" alt="Welington Albuquerque Oliveira" loading="lazy">
+                        <span class="team-card-role-badge senior">Sênior</span>
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Welington Albuquerque Oliveira</h3>
+                        <p class="team-card-title">Advogado Sênior</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">CIV</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:100%"></div></div><span class="team-skill-score">10</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">AMB</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">FAM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">PEN</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. DRIELLY -->
+                <div class="team-card" style="animation-delay: 0.15s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/drielly.jpg" alt="Drielly Faria Vasques" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Drielly Faria Vasques</h3>
+                        <p class="team-card-title">Advogada</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">AMB</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:100%"></div></div><span class="team-skill-score">10</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">ESG</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">REG</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">COM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. GABRIEL -->
+                <div class="team-card" style="animation-delay: 0.2s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/gabriel.jpg" alt="Gabriel Monteiro Vieira" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Gabriel Monteiro Vieira</h3>
+                        <p class="team-card-title">Advogado</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">TRA</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:100%"></div></div><span class="team-skill-score">10</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">CIV</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">ADM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">NEG</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. GUILHERME -->
+                <div class="team-card" style="animation-delay: 0.25s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/guilherme.jpg" alt="Guilherme Henrique Viana de Andrade" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Guilherme H. Viana de Andrade</h3>
+                        <p class="team-card-title">Advogado</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">ADM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:100%"></div></div><span class="team-skill-score">10</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">CIV</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">TRA</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">AMB</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. JOAO -->
+                <div class="team-card" style="animation-delay: 0.3s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/joao.jpg" alt="João Alves da Silva Júnior" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">João Alves da Silva Júnior</h3>
+                        <p class="team-card-title">Advogado</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">CIV</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">TRA</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">FAM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">CON</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. MARIANA -->
+                <div class="team-card" style="animation-delay: 0.35s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/mariana.jpg" alt="Mariana Martinelli Pedroso" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Mariana Martinelli Pedroso</h3>
+                        <p class="team-card-title">Advogada</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">TRA</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:100%"></div></div><span class="team-skill-score">10</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">EMP</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">NEG</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">COM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. LAURA -->
+                <div class="team-card" style="animation-delay: 0.4s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/laura.jpg" alt="Laura Barbosa Rodrigues" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Laura Barbosa Rodrigues</h3>
+                        <p class="team-card-title">Advogada</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">TRA</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">CIV</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">ADM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">NEG</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. THALES -->
+                <div class="team-card" style="animation-delay: 0.45s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/thales.jpg" alt="Thales Menezes" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Thales Menezes</h3>
+                        <p class="team-card-title">Advogado</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">FAM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:100%"></div></div><span class="team-skill-score">10</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">CIV</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">ORG</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">CON</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. MARCELA -->
+                <div class="team-card" style="animation-delay: 0.5s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/marcela.jpg" alt="Marcela Borges" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Marcela Borges</h3>
+                        <p class="team-card-title">Advogada</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">FAM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">SUC</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">CIV</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">MED</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. LUANE -->
+                <div class="team-card" style="animation-delay: 0.55s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/luane.jpg" alt="Luane Lopes Salazar" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Luane Lopes Salazar</h3>
+                        <p class="team-card-title">Advogada</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">CIV</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">TRA</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">ADM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">NEG</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. YURY -->
+                <div class="team-card" style="animation-delay: 0.6s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/yury.jpg" alt="Yury Gadelha" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Yury Gadelha</h3>
+                        <p class="team-card-title">Advogado</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">CIV</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">TRA</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">ADM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">NEG</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13. PLINIO -->
+                <div class="team-card" style="animation-delay: 0.65s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/plinio.jpg" alt="Plínio Eduardo Diogo da Silva" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Plínio Eduardo Diogo da Silva</h3>
+                        <p class="team-card-title">Advogado</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">AMB</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:100%"></div></div><span class="team-skill-score">10</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">AGR</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">EMP</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">TRI</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14. ABMAEL -->
+                <div class="team-card" style="animation-delay: 0.7s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/abmael.jpg" alt="Abmael Alves" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Abmael Alves</h3>
+                        <p class="team-card-title">Advogado</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">TRA</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">CIV</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">ADM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">NEG</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15. LUCAS -->
+                <div class="team-card" style="animation-delay: 0.75s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/lucas.jpg" alt="Lucas Matheus Alves" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Lucas Matheus Alves</h3>
+                        <p class="team-card-title">Advogado</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">CIV</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">TRA</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">ADM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">CON</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 16. RONEY -->
+                <div class="team-card" style="animation-delay: 0.8s;">
+                    <div class="team-card-photo">
+                        <img src="img/equipe/roney.jpg" alt="Roney D Montier Lourenço Silva" loading="lazy">
+                    </div>
+                    <div class="team-card-info">
+                        <h3 class="team-card-name">Roney D Montier Lourenço Silva</h3>
+                        <p class="team-card-title">Advogado</p>
+                        <div class="team-skills">
+                            <div class="team-skill-row"><span class="team-skill-label">CIV</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:90%"></div></div><span class="team-skill-score">9</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">TRA</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">ADM</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                            <div class="team-skill-row"><span class="team-skill-label">NEG</span><div class="team-skill-bar-bg"><div class="team-skill-bar-fill" style="width:80%"></div></div><span class="team-skill-score">8</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <!-- CLIENTS CAROUSEL -->
         <section style="padding:60px 0; background:rgba(255,255,255,0.02);">
             <div style="max-width:1200px; margin:0 auto; padding:0 24px; text-align:center;">
@@ -918,6 +1506,9 @@
             }, { threshold: 0.1 });
 
             document.querySelectorAll('.card').forEach(function(card) {
+                observer.observe(card);
+            });
+            document.querySelectorAll('.team-card').forEach(function(card) {
                 observer.observe(card);
             });
         }
