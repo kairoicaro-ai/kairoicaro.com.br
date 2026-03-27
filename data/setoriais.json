@@ -1,7 +1,55 @@
 {
-  "updated_at": "2026-03-25T10:34:59.119659+00:00",
+  "updated_at": "2026-03-26T10:39:40.349280+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "26.mar.2026OAB/RJ - Subseção Leopoldina promove a 2ª edição do \"Mulher em Foco\"O evento será gratuito, das 10 às 16h, em comemoração ao mês da mulher.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-26",
+      "url": "https://www.migalhas.com.br/quentes/452590/oab-rj--subsecao-leopoldina-promove-a-2-edicao-do-mulher-em-foco"
+    },
+    {
+      "setor": "empresarial",
+      "title": "25.mar.2026Quais \"penduricalhos\" STF manteve e quais suspendeu? ConfiraCorte fixou critérios provisórios, limitou verbas indenizatórias e determinou corte de benefícios sem previsão legal.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-26",
+      "url": "https://www.migalhas.com.br/quentes/452673/quais-penduricalhos-stf-manteve-e-quais-suspendeu-confira"
+    },
+    {
+      "setor": "empresarial",
+      "title": "25.mar.2026Fernanda Tórtima aponta necessidade de reforma do sistema penal tributárioCriminalista afirma que a reforma tributária não resolve problemas do direito penal, ainda complexo, e que o princípio da simplicidade, agora com status constitucional, deve ser aplicado a este sistema.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-26",
+      "url": "https://www.migalhas.com.br/quentes/452669/advogada-fernanda-tortima-defende-reforma-do-sistema-penal-tributario"
+    },
+    {
+      "setor": "empresarial",
+      "title": "25.mar.2026Qual a origem do termo penduricalhos? Ministra Cármen explicaMinistra afirmou que expressão já era usada desde o século XIX para designar vantagens ocultas a servidores.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-26",
+      "url": "https://www.migalhas.com.br/quentes/452672/qual-a-origem-do-termo-penduricalhos-ministra-carmen-explica"
+    },
+    {
+      "setor": "empresarial",
+      "title": "25.mar.2026Everardo Maciel avalia reforma tributária como \"um novo manicômio\"Ex-secretário da Receita Federal criticou novo modelo, afirmando que a reforma tende a reproduzir distorções já existentes, em vez de eliminá-las.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-26",
+      "url": "https://www.migalhas.com.br/quentes/452671/everardo-maciel-avalia-reforma-tributaria-como-um-novo-manicomio"
+    },
+    {
+      "setor": "ambiental",
+      "title": "25.mar.2026Coautor do projeto, Eurico Santi diz que \"cidadania\" define reforma tributáriaJurista afirmou que novo modelo amplia transparência e fortalece a participação do cidadão na definição da carga tributária.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-26",
+      "url": "https://www.migalhas.com.br/quentes/452670/coautor-do-texto-eurico-diz-que-cidadania-define-reforma-tributaria"
+    },
     {
       "setor": "ambiental",
       "title": "25.mar.2026Trybe lança Vade Mecum dos Prompts, um guia de IA no setor jurídicoO material auxilia profissionais do Direito a aplicar a IA de forma ética, estratégica e segura no dia a dia.",
@@ -72,54 +120,6 @@
       "summary": "A obrigatoriedade de relatórios de transparência salarial traz novas exigências de compliance para o setor.",
       "source": "ConJur / Análise KIAA",
       "date": "2026-03-15",
-      "url": ""
-    },
-    {
-      "setor": "ambiental",
-      "title": "IBAMA intensifica fiscalização na região amazônica em 2026",
-      "summary": "Operações de combate ao desmatamento ilegal ganham reforço em Roraima, Amazonas e Pará. Produtores devem regularizar documentação.",
-      "source": "IBAMA / Análise KIAA",
-      "date": "2026-03-22",
-      "url": ""
-    },
-    {
-      "setor": "ambiental",
-      "title": "Prazo do CAR: regularização deve ser concluída até junho de 2026",
-      "summary": "Produtores rurais que não inscreverem ou retificarem o Cadastro Ambiental Rural estão sujeitos a restrições e multas.",
-      "source": "FEMARH / Análise KIAA",
-      "date": "2026-03-19",
-      "url": ""
-    },
-    {
-      "setor": "ambiental",
-      "title": "Mercado de carbono no Brasil: regulamentação avança com nova legislação",
-      "summary": "A regulamentação do mercado de carbono brasileiro cria oportunidades para proprietários rurais na Amazônia.",
-      "source": "ICMBio / Análise KIAA",
-      "date": "2026-03-14",
-      "url": ""
-    },
-    {
-      "setor": "empresarial",
-      "title": "LGPD: sanções mais rigorosas para empresas a partir de 2026",
-      "summary": "A ANPD reforça a aplicação de multas e sanções para empresas que não cumprem a Lei Geral de Proteção de Dados.",
-      "source": "Migalhas / Análise KIAA",
-      "date": "2026-03-21",
-      "url": ""
-    },
-    {
-      "setor": "empresarial",
-      "title": "Recuperação de crédito: novas ferramentas judiciais para empresários",
-      "summary": "Recentes decisões do STJ facilitam a recuperação de créditos empresariais via penhora online e bloqueio de ativos.",
-      "source": "JOTA / Análise KIAA",
-      "date": "2026-03-17",
-      "url": ""
-    },
-    {
-      "setor": "empresarial",
-      "title": "Compliance empresarial: tendências e exigências para 2026",
-      "summary": "Programas de integridade e compliance se tornam obrigatórios para contratações com o poder público.",
-      "source": "ConJur / Análise KIAA",
-      "date": "2026-03-12",
       "url": ""
     }
   ]

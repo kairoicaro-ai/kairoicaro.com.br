@@ -1,70 +1,46 @@
 {
-  "updated_at": "2026-03-25T10:34:55.043471+00:00",
-  "total": 8,
+  "updated_at": "2026-03-26T20:01:18.007481+00:00",
+  "total": 5,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Confira a pauta do STF desta quarta-feira (25)",
-      "summary": "Plenário retoma análise de liminares que suspenderam pagamento de parcelas que superam o teto constitucional; sessão é transmitida pela Rádio e TV Justiça e pelo canal do STF no YouTube, a partir das 14h.",
-      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quarta-feira-25-2/",
-      "date": "2026-03-25",
+      "title": "Partidos acionam STF contra norma do TSE sobre suspensão de órgãos partidários",
+      "summary": "PRD e Solidariedade alegam invasão da competência do Congresso para legislar sobre direito eleitoral",
+      "url": "https://noticias.stf.jus.br/postsnoticias/partidos-acionam-stf-contra-norma-do-tse-sobre-suspensao-de-orgaos-partidarios/",
+      "date": "2026-03-26",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Municípios não podem fixar índice de correção monetária e juros de mora maiores que os da União, decide STF",
-      "summary": "Percentuais sobre créditos fiscais devem ser iguais ou inferiores à Selic",
-      "url": "https://noticias.stf.jus.br/postsnoticias/municipios-nao-podem-fixar-indice-de-correcao-monetaria-e-juros-de-mora-maiores-que-os-da-uniao-decide-stf/",
-      "date": "2026-03-25",
+      "title": "STF veda concessão de florestas em terras indígenas e quilombolas",
+      "summary": "Decisão foi tomada na análise de dispositivo de lei federal que trata da matéria",
+      "url": "https://noticias.stf.jus.br/postsnoticias/161560/",
+      "date": "2026-03-26",
       "category": "Constitucional"
     },
     {
       "tribunal": "STJ",
-      "title": "Corte Especial define que prévia intimação pessoal é pressuposto para cobrança de multa coercitiva",
-      "summary": "Em repetitivo, o colegiado concluiu que a Súmula 410, que exige a prévia intimação do devedor para o cumprimento da obrigação de fazer ou de não fazer, permanece válida na vigência do CPC/2015.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/25032026-Corte-Especial-define-que-previa-intimacao-pessoal-e-pressuposto-para-cobranca-de-multa-coercitiva.aspx",
-      "date": "2026-03-25",
+      "title": "Página de Repetitivos traz inclusão dos valores de PIS/Cofins na base de cálculo do IRPJ e da CSLL",
+      "summary": "Página de Repetitivos traz inclusão dos valores de PIS/Cofins na base de cálculo do IRPJ e da CSLL",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26032026-Pagina-de-Repetitivos-traz-inclusao-dos-valores-de-PISCofins-na-base-de-calculo-do-IRPJ-e-da-CSLL.aspx",
+      "date": "2026-03-26",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "ECA Digital, inteligência artificial e direitos da criança em ambientes digitais marcam primeiro dia de conferência",
-      "summary": "ECA Digital, inteligência artificial e direitos da criança em ambientes digitais marcam primeiro dia de conferência",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032026-ECA-Digital--IA-e-direitos-da-crianca-em-ambientes-digitais-marcam-primeiro-dia-de-conferencia.aspx",
-      "date": "2026-03-25",
+      "title": "Rádio Decidendi analisa precedente do STJ sobre medidas executivas atípicas na execução civil",
+      "summary": "Rádio Decidendi analisa precedente do STJ sobre medidas executivas atípicas na execução civil",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26032026-Radio-Decidendi-analisa-precedente-do-STJ-sobre-medidas-executivas-atipicas-na-execucao-civil.aspx",
+      "date": "2026-03-26",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Enunciados científicos são reunidos em nova página no portal do STJ",
-      "summary": "Enunciados científicos são reunidos em nova página no portal do STJ",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24032025-Enunciados-cientificos-sao-reunidos-em-nova-pagina-no-portal-do-STJ.aspx",
-      "date": "2026-03-25",
+      "title": "Requisitos para reconhecimento póstumo de união estável homoafetiva é tema da Pesquisa Pronta",
+      "summary": "Requisitos para reconhecimento póstumo de união estável homoafetiva é tema da Pesquisa Pronta",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26032026-Requisitos-para-reconhecimento-postumo-de-uniao-estavel-homoafetiva-e-tema-da-Pesquisa-Pronta.aspx",
+      "date": "2026-03-26",
       "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Assédio sexual com comentários sobre o corpo e pedidos de fotos íntimas resulta em condenação de R$ 40 mil a superatacado em Manaus",
-      "summary": "A juíza reconheceu violação à dignidade e à liberdade sexual de trabalhadora e confirmou responsabilidade da empresa pelos atos praticados por gerente",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11212-assedio-sexual-com-comentarios-sobre-o-corpo-e-pedidos-de-fotos-intimas-resulta-em-condenacao-de-r-40-mil-a-superatacado-em-manaus",
-      "date": "2026-03-25",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Elas em Pauta: mutirão do TRT-11 realiza 877 audiências e homologa 188 acordos trabalhistas",
-      "summary": "Conciliações envolvendo trabalhadoras mulheres movimentam quase R$ 2 milhões em uma semana",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11211-elas-em-pauta-mutirao-do-trt-11-realiza-877-audiencias-e-homologa-188-acordos-trabalhistas",
-      "date": "2026-03-25",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TST",
-      "title": "Ir para o conteúdo",
-      "summary": "",
-      "url": "https://www.tst.jus.br#content",
-      "date": "2026-03-25",
-      "category": "Trabalhista"
     }
   ]
 }
