@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Inteligencia Juridica — Kairo Icaro Advogados</title>
+    <meta name="description" content="Monitoramento em tempo real de dados ambientais, juridicos e regulatorios. Radar ambiental, observatorio social e jurimetria publica.">
+    <meta name="keywords" content="inteligencia juridica, monitoramento ambiental, IBAMA, ICMBio, MapBiomas, jurimetria, KIAA">
+    <meta name="author" content="Kairo Icaro Advogados Associados">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Centro de Inteligencia Juridica — Kairo Icaro Advogados">
+    <meta property="og:description" content="Monitoramento em tempo real de dados ambientais, juridicos e regulatorios.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kairoicaro.com.br/img/logo-horizontal-positiva.png">
+    <meta property="og:url" content="https://kairoicaro.com.br/inteligencia.html">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="canonical" href="https://kairoicaro.com.br/inteligencia.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Centro de Inteligencia Juridica — Kairo Icaro Advogados">
+    <meta name="twitter:description" content="Monitoramento em tempo real de dados ambientais, juridicos e regulatorios.">
+    <meta name="twitter:image" content="https://kairoicaro.com.br/img/logo-horizontal-positiva.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/icone-positivo-verde.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #0F2944;
+            color: #E8EDF2;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        a { text-decoration: none; color: inherit; }
+
+        /* ======= LAYOUT ======= */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .section { padding: 80px 0; }
+        .section-light { background: #F5F7FA; color: #1a1a2e; }
+        .section-dark { background: #0F2944; color: #E8EDF2; }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .section-title span { color: #86E600; }
+        .section-subtitle {
+            text-align: center;
+            opacity: 0.75;
+            margin-bottom: 48px;
+            font-size: 1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section-light .section-subtitle { color: #555; }
+
+        /* ======= HERO ======= */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 24px 80px;
+            background: linear-gradient(135deg, #0a1f33 0%, #0F2944 40%, #132d4a 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(134,230,0,0.08) 0%, transparent 70%);
+            top: -100px;
+            right: -100px;
+            border-radius: 50%;
+        }
+        .hero-logo { height: 48px; margin-bottom: 32px; }
+        .hero-back {
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .hero-back:hover { color: #86E600; }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 16px;
+        }
+        .hero h1 span { color: #86E600; }
+        .hero p {
+            font-size: 1.15rem;
+            opacity: 0.8;
+            max-width: 640px;
+            line-height: 1.6;
+        }
+
+        /* ======= CARD GRIDS ======= */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        /* Dark section cards — glassmorphism */
+        .section-dark .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 28px 24px;
+            backdrop-filter: blur(12px);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .section-dark .card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(134,230,0,0.3);
+        }
+
+        /* Light section cards — white with shadow */
+        .section-light .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border: 1px solid #e8ecf0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .section-light .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            font-size: 1.5rem;
+        }
+        .section-dark .card-icon { background: rgba(134,230,0,0.12); }
+        .section-light .card-icon { background: rgba(15,41,68,0.08); }
+
+        .card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+        .card p { font-size: 0.88rem; opacity: 0.75; line-height: 1.55; margin-bottom: 16px; }
+        .section-light .card p { color: #555; }
+
+        .card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #86E600;
+            transition: gap 0.3s;
+        }
+        .section-light .card-link { color: #0F2944; }
+        .card-link:hover { gap: 10px; }
+
+        .card-update {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 0.72rem;
+            opacity: 0.5;
+            font-style: italic;
+        }
+
+        /* ======= JURIMETRIA BARS ======= */
+        .jurimetria-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .jurimetria-text h3 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+        .jurimetria-text h3 span { color: #86E600; }
+        .jurimetria-text p {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        .stat-bar { margin-bottom: 16px; }
+        .stat-bar-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .stat-bar-track {
+            height: 10px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .stat-bar-fill {
+            height: 100%;
+            border-radius: 5px;
+            background: linear-gradient(90deg, #86E600, #97F513);
+            transition: width 1.2s ease;
+        }
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #86E600;
+            color: #0F2944;
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 14px 28px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .btn-whatsapp:hover { background: #97F513; transform: translateY(-2px); }
+
+        /* ======= NEWSLETTER SECTION ======= */
+        .newsletter-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        /* ======= FOOTER ======= */
+        .footer {
+            background: rgba(0,0,0,0.3);
+            padding: 48px 0 24px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+            gap: 32px;
+        }
+        .footer-logo { height: 36px; margin-bottom: 12px; }
+        .footer-brand p { font-size: 0.82rem; opacity: 0.6; line-height: 1.6; }
+        .footer-social { display: flex; gap: 12px; margin-top: 16px; }
+        .social-link {
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+            display: flex; align-items: center; justify-content: center;
+            color: rgba(255,255,255,0.6);
+            transition: background 0.3s, color 0.3s;
+        }
+        .social-link:hover { background: #86E600; color: #0F2944; }
+        .footer h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 16px; color: #86E600; }
+        .footer ul { list-style: none; }
+        .footer li { margin-bottom: 8px; }
+        .footer li a { font-size: 0.82rem; opacity: 0.6; transition: opacity 0.3s; }
+        .footer li a:hover { opacity: 1; }
+        .footer .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+            font-size: 0.82rem;
+            opacity: 0.7;
+        }
+        .footer .contact-item a { transition: color 0.3s; }
+        .footer .contact-item a:hover { color: #86E600; }
+        .footer .contact-item svg { flex-shrink: 0; margin-top: 2px; }
+        .footer-copy {
+            text-align: center;
+            font-size: 0.75rem;
+            opacity: 0.4;
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+
+        /* ======= BACK TO TOP ======= */
+        .back-to-top {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #86E600;
+            color: #0F2944;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 100;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
+        .back-to-top.visible { opacity: 1; pointer-events: auto; }
+        .back-to-top:hover { transform: translateY(-3px); }
+
+        /* ======= RESPONSIVE ======= */
+        @media (max-width: 1024px) {
+            .card-grid, .newsletter-grid { grid-template-columns: repeat(2, 1fr); }
+            .jurimetria-wrapper { grid-template-columns: 1fr; gap: 32px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+        }
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero { min-height: 50vh; padding: 100px 20px 60px; }
+            .section { padding: 56px 0; }
+            .section-title { font-size: 1.5rem; }
+            .card-grid, .newsletter-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .jurimetria-text h3 { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+        <a href="novo-index.html" class="hero-back">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 19l-7-7 7-7"/></svg>
+            Voltar ao site
+        </a>
+        <img src="img/logo-horizontal-branca.png" alt="KIAA" class="hero-logo">
+        <h1>Centro de <span>Inteligencia Juridica</span></h1>
+        <p>Monitoramento em tempo real de dados ambientais, juridicos e regulatorios</p>
+    </section>
+
+    <!-- RADAR AMBIENTAL -->
+    <section class="section section-dark" id="radar">
+        <div class="container">
+            <h2 class="section-title">Radar <span>Ambiental</span></h2>
+            <p class="section-subtitle">Fontes oficiais monitoradas para antecipar riscos e identificar oportunidades no cenario ambiental</p>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">&#127981;</div>
+                    <h3>IBAMA</h3>
+                    <p>Consulta de autos de infracao, areas embargadas e processos administrativos ambientais em ambito federal.</p>
+                    <a href="https://servicos.ibama.gov.br/ctf/publico/areasembargadas/ConsultaPublicaAreasEmbargadas.php" target="_blank" rel="noopener" class="card-link">Acessar <span>&rarr;</span></a>
+                    <span class="card-update">Atualizado diariamente</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#127795;</div>
+                    <h3>FEMARH</h3>
+                    <p>Sistema de licenciamento ambiental do Estado de Roraima. Acompanhe licencas, condicionantes e prazos.</p>
+                    <a href="https://www.femarh.rr.gov.br/" target="_blank" rel="noopener" class="card-link">Acessar <span>&rarr;</span></a>
+                    <span class="card-update">Fonte estadual oficial</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#127966;</div>
+                    <h3>ICMBio</h3>
+                    <p>Unidades de conservacao federais, planos de manejo e autorizacoes para atividades em areas protegidas.</p>
+                    <a href="https://www.gov.br/icmbio/" target="_blank" rel="noopener" class="card-link">Acessar <span>&rarr;</span></a>
+                    <span class="card-update">Atualizado semanalmente</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128752;</div>
+                    <h3>MapBiomas Alerta</h3>
+                    <p>Alertas de desmatamento validados com imagens de satelite. Cobertura de todos os biomas brasileiros.</p>
+                    <a href="https://alerta.mapbiomas.org/" target="_blank" rel="noopener" class="card-link">Acessar <span>&rarr;</span></a>
+                    <span class="card-update">Alertas em tempo real</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#127758;</div>
+                    <h3>SIGARR</h3>
+                    <p>Sistema de Gestao Ambiental de Roraima. Acompanhamento de processos de licenciamento estadual.</p>
+                    <a href="https://sigarr.rr.gov.br/" target="_blank" rel="noopener" class="card-link">Acessar <span>&rarr;</span></a>
+                    <span class="card-update">Fonte estadual oficial</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128225;</div>
+                    <h3>INPE/DETER</h3>
+                    <p>Alertas de desmatamento em tempo real na Amazonia Legal via sistema TerraBrasilis do INPE.</p>
+                    <a href="http://terrabrasilis.dpi.inpe.br/" target="_blank" rel="noopener" class="card-link">Acessar <span>&rarr;</span></a>
+                    <span class="card-update">Atualizacao diaria</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBSERVATORIO SOCIAL -->
+    <section class="section section-light" id="observatorio">
+        <div class="container">
+            <h2 class="section-title">Observatorio <span style="color:#0F2944;">Social</span></h2>
+            <p class="section-subtitle">Dados publicos sobre relacoes de trabalho, estatisticas judiciais e transparencia governamental</p>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">&#128200;</div>
+                    <h3>SmartLab (MPT/OIT)</h3>
+                    <p>Observatorio de seguranca e saude no trabalho. Acidentes, afastamentos e indicadores por municipio e setor.</p>
+                    <a href="https://smartlabbr.org/" target="_blank" rel="noopener" class="card-link">Acessar <span>&rarr;</span></a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#9878;</div>
+                    <h3>Painel CNJ</h3>
+                    <p>Estatisticas do Poder Judiciario: tempo medio de tramitacao, acervo processual e produtividade por tribunal.</p>
+                    <a href="https://painel-estatistica.stg.cloud.cnj.jus.br/" target="_blank" rel="noopener" class="card-link">Acessar <span>&rarr;</span></a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128218;</div>
+                    <h3>DataJud</h3>
+                    <p>Base de dados abertos do Judiciario brasileiro. Pesquisa por assunto, classe processual e orgao julgador.</p>
+                    <a href="https://www.cnj.jus.br/sistemas/datajud/" target="_blank" rel="noopener" class="card-link">Acessar <span>&rarr;</span></a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128269;</div>
+                    <h3>Portal da Transparencia</h3>
+                    <p>Consulta de multas, sancoes administrativas, impedimentos e dados de licitacoes do governo federal.</p>
+                    <a href="https://portaldatransparencia.gov.br/" target="_blank" rel="noopener" class="card-link">Acessar <span>&rarr;</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFORMATIVOS SETORIAIS -->
+    <section class="section section-dark" id="setoriais">
+        <div class="container">
+            <h2 class="section-title">Informativos <span>Setoriais</span></h2>
+            <p class="section-subtitle">Acompanhamento de entidades representativas para inteligencia de mercado</p>
+            <div class="card-grid" id="setoriais-grid">
+                <div class="card">
+                    <div class="card-icon">&#128722;</div>
+                    <h3>ABRAS</h3>
+                    <p>Associacao Brasileira de Supermercados. Indices de vendas, tendencias de consumo e regulacao do varejo alimentar.</p>
+                    <a href="https://www.abras.com.br/" target="_blank" rel="noopener" class="card-link">Ver informativos <span>&rarr;</span></a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#127806;</div>
+                    <h3>CNA</h3>
+                    <p>Confederacao da Agricultura e Pecuaria do Brasil. Boletins do agronegocio, precos e politicas publicas para o setor rural.</p>
+                    <a href="https://www.cnabrasil.org.br/" target="_blank" rel="noopener" class="card-link">Ver informativos <span>&rarr;</span></a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#127981;</div>
+                    <h3>FIESP</h3>
+                    <p>Federacao das Industrias do Estado de Sao Paulo. Pesquisas de conjuntura, indicadores industriais e agenda regulatoria.</p>
+                    <a href="https://www.fiesp.com.br/" target="_blank" rel="noopener" class="card-link">Ver informativos <span>&rarr;</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JURIMETRIA PUBLICA -->
+    <section class="section section-light" id="jurimetria">
+        <div class="container">
+            <h2 class="section-title">Jurimetria <span style="color:#0F2944;">Publica</span></h2>
+            <p class="section-subtitle">Dados agregados e anonimizados sobre a atuacao do escritorio</p>
+            <div class="jurimetria-wrapper">
+                <div class="jurimetria-text">
+                    <h3>O KIAA monitora mais de <span>1.500 processos</span> ativos em 12 estados</h3>
+                    <p>Nosso radar identifica oportunidades e riscos antes que impactem seu negocio. Utilizamos dados publicos e inteligencia analitica para antecipar cenarios e proteger sua operacao.</p>
+                    <a href="https://wa.me/5595991775868?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20especialista%20do%20KIAA." target="_blank" rel="noopener" class="btn-whatsapp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Fale com nossos especialistas
+                    </a>
+                </div>
+                <div class="jurimetria-bars">
+                    <div class="stat-bar">
+                        <div class="stat-bar-label"><span>Trabalhista</span><span>29%</span></div>
+                        <div class="stat-bar-track"><div class="stat-bar-fill" style="width:0%" data-width="29%"></div></div>
+                    </div>
+                    <div class="stat-bar">
+                        <div class="stat-bar-label"><span>Administrativo</span><span>25%</span></div>
+                        <div class="stat-bar-track"><div class="stat-bar-fill" style="width:0%" data-width="25%"></div></div>
+                    </div>
+                    <div class="stat-bar">
+                        <div class="stat-bar-label"><span>Civel</span><span>22%</span></div>
+                        <div class="stat-bar-track"><div class="stat-bar-fill" style="width:0%" data-width="22%"></div></div>
+                    </div>
+                    <div class="stat-bar">
+                        <div class="stat-bar-label"><span>Ambiental</span><span>14%</span></div>
+                        <div class="stat-bar-track"><div class="stat-bar-fill" style="width:0%" data-width="14%"></div></div>
+                    </div>
+                    <div class="stat-bar">
+                        <div class="stat-bar-label"><span>Outros</span><span>10%</span></div>
+                        <div class="stat-bar-track"><div class="stat-bar-fill" style="width:0%" data-width="10%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTERS -->
+    <section class="section section-dark" id="newsletters">
+        <div class="container">
+            <h2 class="section-title">Newsletters e <span>Informes</span></h2>
+            <p class="section-subtitle">Receba diretamente as atualizacoes que importam para o seu negocio</p>
+            <div class="newsletter-grid">
+                <div class="card">
+                    <div class="card-icon">&#128232;</div>
+                    <h3>IBAMA Newsletter</h3>
+                    <p>Resumo semanal de autos de infracao, embargos e novidades regulatorias do IBAMA.</p>
+                    <a href="https://wa.me/5595991775868?text=Quero%20receber%20a%20newsletter%20IBAMA%20do%20KIAA" target="_blank" rel="noopener" class="card-link">Inscrever-se <span>&rarr;</span></a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128232;</div>
+                    <h3>FEMARH Newsletter</h3>
+                    <p>Atualizacoes sobre licenciamento ambiental e condicionantes no Estado de Roraima.</p>
+                    <a href="https://wa.me/5595991775868?text=Quero%20receber%20a%20newsletter%20FEMARH%20do%20KIAA" target="_blank" rel="noopener" class="card-link">Inscrever-se <span>&rarr;</span></a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128232;</div>
+                    <h3>ICMBio Newsletter</h3>
+                    <p>Novidades sobre unidades de conservacao, autorizacoes e planos de manejo.</p>
+                    <a href="https://wa.me/5595991775868?text=Quero%20receber%20a%20newsletter%20ICMBio%20do%20KIAA" target="_blank" rel="noopener" class="card-link">Inscrever-se <span>&rarr;</span></a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128172;</div>
+                    <h3>Grupo de WhatsApp</h3>
+                    <p>Entre no grupo exclusivo de atualizacoes juridicas e regulatorias do KIAA.</p>
+                    <a href="https://wa.me/5595991775868?text=Quero%20entrar%20no%20grupo%20de%20WhatsApp%20do%20KIAA" target="_blank" rel="noopener" class="card-link">Participar <span>&rarr;</span></a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128202;</div>
+                    <h3>Econodata</h3>
+                    <p>Business intelligence com dados de empresas, setores e oportunidades de negocio.</p>
+                    <a href="https://www.econodata.com.br/" target="_blank" rel="noopener" class="card-link">Acessar <span>&rarr;</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="img/logo-horizontal-branca.png" alt="Kairo Icaro Advogados Associados" class="footer-logo">
+                    <p>Assessoria juridica preventiva e contenciosa para empresas e produtores rurais na Amazonia e no Brasil.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/kairoicaroadvogados/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/kairoicaroadvogadosassociados" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kairo-%C3%ADcaro-advogados-associados-770937237/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@kairoicaro" target="_blank" rel="noopener" aria-label="YouTube" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Areas de Atuacao</h4>
+                    <ul>
+                        <li><a href="area-ambiental.html">Direito Ambiental</a></li>
+                        <li><a href="area-agrario.html">Direito Agrario</a></li>
+                        <li><a href="area-trabalhista.html">Trabalhista Empresarial</a></li>
+                        <li><a href="area-empresarial.html">Direito Empresarial</a></li>
+                        <li><a href="area-penal.html">Penal Economico</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Links Rapidos</h4>
+                    <ul>
+                        <li><a href="novo-index.html">Pagina Inicial</a></li>
+                        <li><a href="#radar">Radar Ambiental</a></li>
+                        <li><a href="#observatorio">Observatorio Social</a></li>
+                        <li><a href="#jurimetria">Jurimetria</a></li>
+                        <li><a href="#newsletters">Newsletters</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contato</h4>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        <a href="https://wa.me/5595991775868" target="_blank" rel="noopener">+55 (95) 99177-5868</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <a href="mailto:advogados@kairoicaro.com.br">advogados@kairoicaro.com.br</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <span>Av. Ville Roy, 4301 — Salas 206 e 208<br>Canarinho, Boa Vista — RR</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <span>Seg a Sex: 08h as 12h / 14h as 18h</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 Kairo Icaro Advogados Associados. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script>
+        // Back to top visibility
+        window.addEventListener('scroll', function() {
+            var btn = document.getElementById('backToTop');
+            if (window.scrollY > 400) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        });
+
+        // Animate jurimetria bars on scroll
+        if ('IntersectionObserver' in window) {
+            var barObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        var fills = entry.target.querySelectorAll('.stat-bar-fill');
+                        fills.forEach(function(fill) {
+                            fill.style.width = fill.getAttribute('data-width');
+                        });
+                        barObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+            var barsSection = document.querySelector('.jurimetria-bars');
+            if (barsSection) barObserver.observe(barsSection);
+        }
+
+        // Try to load setoriais from JSON
+        (function() {
+            fetch('data/setoriais.json')
+                .then(function(r) { if (!r.ok) throw new Error('not found'); return r.json(); })
+                .then(function(data) {
+                    var grid = document.getElementById('setoriais-grid');
+                    if (!data || !data.length) return;
+                    grid.innerHTML = '';
+                    data.forEach(function(item) {
+                        var card = document.createElement('div');
+                        card.className = 'card';
+                        card.innerHTML = '<div class="card-icon">' + (item.icon || '&#128196;') + '</div>' +
+                            '<h3>' + item.title + '</h3>' +
+                            '<p>' + item.description + '</p>' +
+                            '<a href="' + item.link + '" target="_blank" rel="noopener" class="card-link">Ver informativos <span>&rarr;</span></a>';
+                        grid.appendChild(card);
+                    });
+                })
+                .catch(function() { /* keep static cards */ });
+        })();
+    </script>
+
+</body>
+</html>
