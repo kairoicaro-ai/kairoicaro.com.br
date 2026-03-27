@@ -693,10 +693,351 @@
         .section { display: none; }
         .section.active { display: block; }
 
+        /* ── Filter Bar ── */
+        .filter-bar {
+            background: var(--card);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            padding: 20px 24px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: flex-end;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            flex: 1;
+            min-width: 160px;
+        }
+
+        .filter-group.search {
+            min-width: 240px;
+            flex: 2;
+        }
+
+        .filter-group label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .filter-group select,
+        .filter-group input {
+            height: 40px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0 12px;
+            font-family: inherit;
+            font-size: 0.82rem;
+            color: var(--text);
+            background: var(--white);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .filter-group select:focus,
+        .filter-group input:focus {
+            border-color: var(--green);
+            box-shadow: 0 0 0 3px rgba(134,230,0,0.1);
+        }
+
+        .filter-group select { cursor: pointer; }
+
+        .btn-clear-filters {
+            height: 40px;
+            padding: 0 20px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--white);
+            font-family: inherit;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .btn-clear-filters:hover {
+            border-color: var(--red);
+            color: var(--red);
+            background: rgba(239,68,68,0.04);
+        }
+
+        /* ── Data Table ── */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .data-table thead {
+            background: var(--bg);
+            position: sticky;
+            top: 0;
+        }
+
+        .data-table th {
+            padding: 12px 16px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+            transition: color 0.2s;
+        }
+
+        .data-table th:hover { color: var(--blue); }
+
+        .data-table th .sort-icon {
+            display: inline-block;
+            margin-left: 4px;
+            opacity: 0.3;
+            font-size: 0.65rem;
+        }
+
+        .data-table th.sorted-asc .sort-icon,
+        .data-table th.sorted-desc .sort-icon {
+            opacity: 1;
+            color: var(--green);
+        }
+
+        .data-table td {
+            padding: 14px 16px;
+            font-size: 0.84rem;
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
+            vertical-align: middle;
+        }
+
+        .data-table tbody tr { transition: background 0.15s; }
+        .data-table tbody tr:hover { background: rgba(134,230,0,0.03); }
+        .data-table tbody tr:last-child td { border-bottom: none; }
+
+        .data-table .cell-number {
+            font-weight: 600;
+            color: var(--blue);
+            font-size: 0.82rem;
+        }
+
+        .data-table .cell-muted {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        /* ── Badges ── */
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .badge-status-em-andamento { background: rgba(134,230,0,0.12); color: #4d8a00; }
+        .badge-status-concluido { background: rgba(59,130,246,0.1); color: #2563EB; }
+        .badge-status-arquivado { background: rgba(148,163,184,0.15); color: #64748B; }
+
+        .badge-area-ambiental { background: rgba(16,185,129,0.1); color: #059669; }
+        .badge-area-civel { background: rgba(59,130,246,0.1); color: #2563EB; }
+        .badge-area-trabalhista { background: rgba(245,158,11,0.1); color: #D97706; }
+        .badge-area-administrativo { background: rgba(139,92,246,0.1); color: #7C3AED; }
+        .badge-area-penal { background: rgba(239,68,68,0.1); color: #DC2626; }
+        .badge-area-tributario { background: rgba(20,184,166,0.1); color: #0D9488; }
+        .badge-area-empresarial { background: rgba(15,41,68,0.1); color: var(--blue); }
+        .badge-area-comercial { background: rgba(234,88,12,0.1); color: #EA580C; }
+
+        .badge-fin-pago { background: rgba(16,185,129,0.1); color: #059669; }
+        .badge-fin-pendente { background: rgba(245,158,11,0.1); color: #D97706; }
+        .badge-fin-vencido { background: rgba(239,68,68,0.1); color: #DC2626; }
+
+        .badge-type-invoice { background: rgba(59,130,246,0.1); color: #2563EB; }
+        .badge-type-payment { background: rgba(16,185,129,0.1); color: #059669; }
+        .badge-type-fee { background: rgba(139,92,246,0.1); color: #7C3AED; }
+
+        /* ── Pagination ── */
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            border-top: 1px solid var(--border);
+        }
+
+        .pagination-info {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .pagination-buttons {
+            display: flex;
+            gap: 4px;
+        }
+
+        .pagination-buttons button {
+            min-width: 36px;
+            height: 36px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--white);
+            font-family: inherit;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--text);
+            cursor: pointer;
+            transition: all 0.2s;
+            padding: 0 10px;
+        }
+
+        .pagination-buttons button:hover:not(:disabled) {
+            border-color: var(--green);
+            background: rgba(134,230,0,0.05);
+        }
+
+        .pagination-buttons button.active {
+            background: var(--blue);
+            border-color: var(--blue);
+            color: var(--white);
+        }
+
+        .pagination-buttons button:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        /* ── Total Row ── */
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            background: var(--bg);
+            border-top: 2px solid var(--border);
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--blue);
+        }
+
+        /* ── Table scroll wrapper ── */
+        .table-scroll {
+            overflow-x: auto;
+        }
+
+        /* ── Client list cards ── */
+        .client-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 16px;
+            padding: 24px;
+        }
+
+        .client-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.2s;
+        }
+
+        .client-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            transform: translateY(-1px);
+        }
+
+        .client-card-name {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--blue);
+            margin-bottom: 8px;
+        }
+
+        .client-card-info {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .client-card-info span {
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .client-card-type {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            background: rgba(15,41,68,0.06);
+            color: var(--blue);
+        }
+
+        /* ── Document list ── */
+        .doc-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 14px 24px;
+            border-bottom: 1px solid var(--border);
+            transition: background 0.15s;
+        }
+
+        .doc-item:hover { background: rgba(134,230,0,0.03); }
+        .doc-item:last-child { border-bottom: none; }
+
+        .doc-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background: rgba(15,41,68,0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--blue);
+            text-transform: uppercase;
+        }
+
+        .doc-info { flex: 1; }
+
+        .doc-name {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--blue);
+        }
+
+        .doc-meta {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .doc-size {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
         /* ── Responsive ── */
         @media (max-width: 1024px) {
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
             .content-grid { grid-template-columns: 1fr; }
+            .filter-bar { gap: 10px; }
+            .filter-group { min-width: 140px; }
         }
 
         @media (max-width: 768px) {
@@ -713,6 +1054,8 @@
             .stats-grid { grid-template-columns: 1fr; }
             .gamification { flex-direction: column; text-align: center; }
             .gamification-stats { justify-content: center; }
+            .filter-group { min-width: 100%; }
+            .filter-bar { flex-direction: column; }
         }
     </style>
 </head>
@@ -734,7 +1077,7 @@
 
             <a class="nav-item active" data-section="dashboard" onclick="showSection('dashboard')">
                 <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-                Painel
+                Painel Geral
             </a>
 
             <a class="nav-item" data-section="processos" onclick="showSection('processos')">
@@ -743,28 +1086,26 @@
                 <span class="nav-badge" id="processCount">0</span>
             </a>
 
-            <a class="nav-item" data-section="documentos" onclick="showSection('documentos')">
-                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                Documentos
-            </a>
-
-            <div class="nav-section-title">Financeiro</div>
-
             <a class="nav-item" data-section="financeiro" onclick="showSection('financeiro')">
                 <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
                 Financeiro
             </a>
 
-            <a class="nav-item" data-section="notas" onclick="showSection('notas')">
-                <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-                Notas Fiscais
+            <a class="nav-item" data-section="documentos" onclick="showSection('documentos')">
+                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Documentos
             </a>
 
-            <div class="nav-section-title">Agenda</div>
+            <div class="nav-section-title">Gestao</div>
 
             <a class="nav-item" data-section="agenda" onclick="showSection('agenda')">
                 <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 Agenda
+            </a>
+
+            <a class="nav-item" data-section="clientes" onclick="showSection('clientes')">
+                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                Clientes
             </a>
         </nav>
 
@@ -808,34 +1149,53 @@
             </div>
         </header>
 
-        <!-- Dashboard Section -->
+        <!-- ================================================================ -->
+        <!-- DASHBOARD SECTION -->
+        <!-- ================================================================ -->
         <div class="section active" id="sec-dashboard">
             <div class="page-content">
 
-                <!-- Gamification Bar -->
-                <div class="gamification">
-                    <div class="gamification-badge">⚖️</div>
-                    <div class="gamification-info">
-                        <div class="gamification-title">Nível: Cliente Premium</div>
-                        <div class="gamification-desc">Acompanhe a evolução dos seus processos</div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 0%" id="progressFill"></div>
-                        </div>
+                <!-- Filter Bar -->
+                <div class="filter-bar" id="filterBar">
+                    <div class="filter-group">
+                        <label>Cliente</label>
+                        <select id="filterClient" onchange="applyFilters()"><option value="">Todos</option></select>
                     </div>
-                    <div class="gamification-stats">
-                        <div class="gam-stat">
-                            <div class="gam-stat-value" id="gamProcessos">0</div>
-                            <div class="gam-stat-label">Processos</div>
-                        </div>
-                        <div class="gam-stat">
-                            <div class="gam-stat-value" id="gamDocs">0</div>
-                            <div class="gam-stat-label">Documentos</div>
-                        </div>
-                        <div class="gam-stat">
-                            <div class="gam-stat-value" id="gamMoves">0</div>
-                            <div class="gam-stat-label">Movimentações</div>
-                        </div>
+                    <div class="filter-group">
+                        <label>Area</label>
+                        <select id="filterArea" onchange="applyFilters()">
+                            <option value="">Todas</option>
+                            <option>AMBIENTAL</option><option>CIVEL</option><option>TRABALHISTA</option>
+                            <option>ADMINISTRATIVO</option><option>PENAL</option><option>TRIBUTARIO</option>
+                            <option>EMPRESARIAL</option><option>COMERCIAL</option>
+                        </select>
                     </div>
+                    <div class="filter-group">
+                        <label>Advogado</label>
+                        <select id="filterLawyer" onchange="applyFilters()"><option value="">Todos</option></select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Status</label>
+                        <select id="filterStatus" onchange="applyFilters()">
+                            <option value="">Todos</option>
+                            <option value="Em andamento">Em andamento</option>
+                            <option value="Concluido">Concluido</option>
+                            <option value="Arquivado">Arquivado</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>De</label>
+                        <input type="date" id="filterDateFrom" onchange="applyFilters()">
+                    </div>
+                    <div class="filter-group">
+                        <label>Ate</label>
+                        <input type="date" id="filterDateTo" onchange="applyFilters()">
+                    </div>
+                    <div class="filter-group search">
+                        <label>Buscar</label>
+                        <input type="text" id="filterSearch" placeholder="Numero, titulo ou cliente..." oninput="applyFilters()">
+                    </div>
+                    <button class="btn-clear-filters" onclick="clearFilters()">Limpar filtros</button>
                 </div>
 
                 <!-- Stats -->
@@ -843,76 +1203,54 @@
                     <div class="stat-card">
                         <div class="stat-header">
                             <div class="stat-icon green"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/></svg></div>
-                            <span class="stat-trend up" id="trendProcessos">Ativo</span>
                         </div>
-                        <div class="stat-value" id="statProcessos">0</div>
-                        <div class="stat-label">Processos ativos</div>
+                        <div class="stat-value" id="statTotalProcessos">0</div>
+                        <div class="stat-label">Total de Processos</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-header">
-                            <div class="stat-icon blue"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/></svg></div>
-                            <span class="stat-trend neutral">Total</span>
+                            <div class="stat-icon blue"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
                         </div>
-                        <div class="stat-value" id="statDocumentos">0</div>
-                        <div class="stat-label">Documentos disponíveis</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-header">
-                            <div class="stat-icon orange"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/></svg></div>
-                            <span class="stat-trend neutral">Próximos</span>
-                        </div>
-                        <div class="stat-value" id="statPrazos">0</div>
-                        <div class="stat-label">Prazos esta semana</div>
+                        <div class="stat-value" id="statClientesAtivos">0</div>
+                        <div class="stat-label">Clientes Ativos</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-header">
                             <div class="stat-icon teal"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
-                            <span class="stat-trend up">Em dia</span>
                         </div>
-                        <div class="stat-value" id="statFinanceiro">R$ 0</div>
-                        <div class="stat-label">Situação financeira</div>
+                        <div class="stat-value" id="statHonorarios">R$ 0</div>
+                        <div class="stat-label">Honorarios</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon orange"><svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+                        </div>
+                        <div class="stat-value" id="statPendente">R$ 0</div>
+                        <div class="stat-label">Pendente</div>
                     </div>
                 </div>
 
-                <!-- Content Grid -->
-                <div class="content-grid">
-                    <!-- Processes -->
-                    <div class="card">
-                        <div class="card-header">
-                            <span class="card-title">Seus Processos</span>
-                            <span class="card-action" onclick="showSection('processos')">Ver todos →</span>
-                        </div>
-                        <div class="card-body" id="processList">
-                            <div class="empty-state">
-                                <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/></svg>
-                                <h3>Nenhum processo encontrado</h3>
-                                <p>Seus processos aparecerão aqui assim que forem vinculados à sua conta.</p>
-                            </div>
-                        </div>
+                <!-- Recent Cases Table -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Processos Recentes</span>
+                        <span class="card-action" onclick="showSection('processos')">Ver todos</span>
                     </div>
-
-                    <!-- Activity + Upcoming -->
-                    <div>
-                        <div class="card" style="margin-bottom: 24px;">
-                            <div class="card-header">
-                                <span class="card-title">Próximos Prazos</span>
-                            </div>
-                            <div class="card-body" id="upcomingList">
-                                <div class="empty-state" style="padding: 32px 24px;">
-                                    <p>Nenhum prazo próximo.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-header">
-                                <span class="card-title">Atividade Recente</span>
-                            </div>
-                            <div class="card-body" id="activityList">
-                                <div class="empty-state" style="padding: 32px 24px;">
-                                    <p>Nenhuma atividade recente.</p>
-                                </div>
-                            </div>
+                    <div class="card-body">
+                        <div class="table-scroll">
+                            <table class="data-table" id="dashRecentTable">
+                                <thead>
+                                    <tr>
+                                        <th>Numero</th>
+                                        <th>Titulo</th>
+                                        <th>Cliente</th>
+                                        <th>Area</th>
+                                        <th>Status</th>
+                                        <th>Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="dashRecentBody"></tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -920,90 +1258,133 @@
             </div>
         </div>
 
-        <!-- Processos Section -->
+        <!-- ================================================================ -->
+        <!-- PROCESSOS SECTION -->
+        <!-- ================================================================ -->
         <div class="section" id="sec-processos">
             <div class="page-content">
                 <div class="card">
                     <div class="card-header">
                         <span class="card-title">Todos os Processos</span>
+                        <span class="card-action" id="processosCountLabel">0 registros</span>
                     </div>
-                    <div class="card-body" id="allProcesses">
-                        <div class="empty-state">
-                            <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/></svg>
-                            <h3>Nenhum processo vinculado</h3>
-                            <p>Entre em contato com o escritório para vincular seus processos.</p>
+                    <div class="card-body">
+                        <div class="table-scroll">
+                            <table class="data-table" id="processosTable">
+                                <thead>
+                                    <tr>
+                                        <th data-sort="case_number" onclick="sortTable('processos','case_number',this)">Numero <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="title" onclick="sortTable('processos','title',this)">Titulo <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="client_name" onclick="sortTable('processos','client_name',this)">Cliente <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="area" onclick="sortTable('processos','area',this)">Area <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="responsible_lawyer" onclick="sortTable('processos','responsible_lawyer',this)">Advogado <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="status" onclick="sortTable('processos','status',this)">Status <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="court" onclick="sortTable('processos','court',this)">Tribunal <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="created_at" onclick="sortTable('processos','created_at',this)">Data <span class="sort-icon">&#9650;&#9660;</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="processosBody"></tbody>
+                            </table>
                         </div>
+                        <div class="pagination" id="processosPagination"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Documentos Section -->
-        <div class="section" id="sec-documentos">
-            <div class="page-content">
-                <div class="card">
-                    <div class="card-header">
-                        <span class="card-title">Documentos e Peças Processuais</span>
-                    </div>
-                    <div class="card-body" id="allDocuments">
-                        <div class="empty-state">
-                            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/></svg>
-                            <h3>Nenhum documento disponível</h3>
-                            <p>Documentos do seu processo serão compartilhados aqui.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Financeiro Section -->
+        <!-- ================================================================ -->
+        <!-- FINANCEIRO SECTION -->
+        <!-- ================================================================ -->
         <div class="section" id="sec-financeiro">
             <div class="page-content">
                 <div class="card">
                     <div class="card-header">
                         <span class="card-title">Extrato Financeiro</span>
+                        <span class="card-action" id="finCountLabel">0 registros</span>
                     </div>
-                    <div class="card-body" id="financialList">
-                        <div class="empty-state">
-                            <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-                            <h3>Nenhum registro financeiro</h3>
-                            <p>Seu extrato financeiro aparecerá aqui.</p>
+                    <div class="card-body">
+                        <div class="table-scroll">
+                            <table class="data-table" id="financeiroTable">
+                                <thead>
+                                    <tr>
+                                        <th data-sort="due_date" onclick="sortTable('financeiro','due_date',this)">Data <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="client_name" onclick="sortTable('financeiro','client_name',this)">Cliente <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="case_number" onclick="sortTable('financeiro','case_number',this)">Processo <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="type" onclick="sortTable('financeiro','type',this)">Tipo <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="amount" onclick="sortTable('financeiro','amount',this)">Valor <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="status" onclick="sortTable('financeiro','status',this)">Status <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th>Descricao</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="financeiroBody"></tbody>
+                            </table>
                         </div>
+                        <div class="total-row" id="financeiroTotal">
+                            <span>Total filtrado:</span>
+                            <span id="finTotalValue">R$ 0,00</span>
+                        </div>
+                        <div class="pagination" id="financeiroPagination"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Notas Fiscais Section -->
-        <div class="section" id="sec-notas">
+        <!-- ================================================================ -->
+        <!-- DOCUMENTOS SECTION -->
+        <!-- ================================================================ -->
+        <div class="section" id="sec-documentos">
             <div class="page-content">
                 <div class="card">
                     <div class="card-header">
-                        <span class="card-title">Notas Fiscais para Download</span>
+                        <span class="card-title">Documentos</span>
+                        <span class="card-action" id="docsCountLabel">0 documentos</span>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" id="documentsList">
                         <div class="empty-state">
-                            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-                            <h3>Nenhuma nota fiscal disponível</h3>
-                            <p>Notas fiscais emitidas ficarão disponíveis para download aqui.</p>
+                            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/></svg>
+                            <h3>Nenhum documento disponivel</h3>
+                            <p>Documentos serao listados aqui.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Agenda Section -->
+        <!-- ================================================================ -->
+        <!-- AGENDA SECTION (placeholder) -->
+        <!-- ================================================================ -->
         <div class="section" id="sec-agenda">
             <div class="page-content">
                 <div class="card">
                     <div class="card-header">
-                        <span class="card-title">Agenda de Audiências e Prazos</span>
+                        <span class="card-title">Agenda de Audiencias e Prazos</span>
                     </div>
                     <div class="card-body">
                         <div class="empty-state">
                             <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/></svg>
-                            <h3>Nenhum compromisso agendado</h3>
-                            <p>Audiências e prazos sincronizados aparecerão aqui.</p>
+                            <h3>Em breve</h3>
+                            <p>A agenda sera integrada em uma proxima atualizacao.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================================================ -->
+        <!-- CLIENTES SECTION -->
+        <!-- ================================================================ -->
+        <div class="section" id="sec-clientes">
+            <div class="page-content">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Clientes</span>
+                        <span class="card-action" id="clientesCountLabel">0 clientes</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="client-grid" id="clientesGrid">
+                            <div class="empty-state">
+                                <h3>Nenhum cliente cadastrado</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1013,15 +1394,47 @@
     </div>
 
     <script>
-        // ── Supabase ──
+        // ════════════════════════════════════════════════════════════════════
+        // SUPABASE CONNECTION
+        // ════════════════════════════════════════════════════════════════════
         const SUPABASE_URL = 'https://jrsffuneyoglnyjvdqiv.supabase.co';
         const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impyc2ZmdW5leW9nbG55anZkcWl2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ0MTM2MzcsImV4cCI6MjA4OTk4OTYzN30.s2ShvbnbPe0VtPQV7RO6f550CbrPS13jhg_4ieOH_BY';
         const { createClient } = supabase;
         const sb = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
+        // ════════════════════════════════════════════════════════════════════
+        // GLOBAL STATE
+        // ════════════════════════════════════════════════════════════════════
         let currentUser = null;
 
-        // ── Auth Check ──
+        // Raw data from Supabase (loaded once)
+        let allClients = [];
+        let allCases = [];
+        let allFinancials = [];
+        let allDocuments = [];
+
+        // Client lookup map: id -> client object
+        let clientMap = {};
+        // Case lookup map: id -> case object
+        let caseMap = {};
+
+        // Filtered subsets (recomputed on every filter change)
+        let filteredCases = [];
+        let filteredFinancials = [];
+
+        // Sort state per table
+        let sortState = {
+            processos: { key: 'created_at', dir: 'desc' },
+            financeiro: { key: 'due_date', dir: 'desc' }
+        };
+
+        // Pagination state
+        const PAGE_SIZE = 20;
+        let pageState = { processos: 1, financeiro: 1 };
+
+        // ════════════════════════════════════════════════════════════════════
+        // AUTH CHECK
+        // ════════════════════════════════════════════════════════════════════
         (async () => {
             const { data: { session } } = await sb.auth.getSession();
             if (!session) {
@@ -1032,115 +1445,553 @@
             initDashboard();
         })();
 
-        // ── Init Dashboard ──
+        // ════════════════════════════════════════════════════════════════════
+        // INIT
+        // ════════════════════════════════════════════════════════════════════
         async function initDashboard() {
             document.getElementById('loadingState').style.display = 'none';
             document.getElementById('mainContent').style.display = 'block';
 
-            // Set user info
+            // User info in sidebar
             const email = currentUser.email || '';
             const name = currentUser.user_metadata?.name || email.split('@')[0];
             const initials = name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
-
             document.getElementById('userName').textContent = name;
             document.getElementById('userEmail').textContent = email;
             document.getElementById('userAvatar').textContent = initials;
 
-            // Load data
-            await loadDashboardData();
+            // Load all data in parallel
+            await loadAllData();
+
+            // Build lookup maps
+            clientMap = {};
+            allClients.forEach(c => { clientMap[c.id] = c; });
+            caseMap = {};
+            allCases.forEach(c => { caseMap[c.id] = c; });
+
+            // Populate filter dropdowns
+            populateFilterDropdowns();
+
+            // Apply initial (no) filters
+            applyFilters();
         }
 
-        // ── Load Data ──
-        async function loadDashboardData() {
+        // ════════════════════════════════════════════════════════════════════
+        // LOAD ALL DATA FROM SUPABASE
+        // ════════════════════════════════════════════════════════════════════
+        async function loadAllData() {
             try {
-                // Fetch cases
-                const { data: cases } = await sb.from('cases').select('*');
-                const activeCases = cases ? cases.filter(c => c.status === 'active') : [];
+                const [clientsRes, casesRes, financialsRes, documentsRes] = await Promise.all([
+                    sb.from('clients').select('*'),
+                    sb.from('cases').select('*'),
+                    sb.from('financials').select('*'),
+                    sb.from('documents').select('*')
+                ]);
 
-                document.getElementById('statProcessos').textContent = activeCases.length;
-                document.getElementById('processCount').textContent = activeCases.length;
-                document.getElementById('gamProcessos').textContent = cases ? cases.length : 0;
+                allClients = clientsRes.data || [];
+                allCases = casesRes.data || [];
+                allFinancials = financialsRes.data || [];
+                allDocuments = documentsRes.data || [];
 
-                // Render processes
-                if (cases && cases.length > 0) {
-                    renderProcesses(cases.slice(0, 5), 'processList');
-                    renderProcesses(cases, 'allProcesses');
-                }
-
-                // Fetch documents
-                const { data: docs } = await sb.from('documents').select('*');
-                document.getElementById('statDocumentos').textContent = docs ? docs.length : 0;
-                document.getElementById('gamDocs').textContent = docs ? docs.length : 0;
-
-                // Fetch financials
-                const { data: financials } = await sb.from('financials').select('*');
-                if (financials && financials.length > 0) {
-                    const total = financials.reduce((sum, f) => sum + (f.amount || 0), 0);
-                    document.getElementById('statFinanceiro').textContent = 'R$ ' + total.toLocaleString('pt-BR');
-                }
-
-                // Animate progress
-                const progress = cases ? Math.min((activeCases.length / Math.max(cases.length, 1)) * 100, 100) : 0;
-                setTimeout(() => {
-                    document.getElementById('progressFill').style.width = progress + '%';
-                }, 500);
-
+                console.log(`Loaded: ${allClients.length} clients, ${allCases.length} cases, ${allFinancials.length} financials, ${allDocuments.length} documents`);
             } catch (err) {
                 console.error('Erro ao carregar dados:', err);
             }
         }
 
-        // ── Render Processes ──
-        function renderProcesses(cases, containerId) {
-            const container = document.getElementById(containerId);
-            if (!cases || cases.length === 0) return;
+        // ════════════════════════════════════════════════════════════════════
+        // FILTER DROPDOWN POPULATION
+        // ════════════════════════════════════════════════════════════════════
+        function populateFilterDropdowns() {
+            // Client dropdown
+            const clientSel = document.getElementById('filterClient');
+            allClients
+                .sort((a, b) => (a.name || '').localeCompare(b.name || ''))
+                .forEach(c => {
+                    const opt = document.createElement('option');
+                    opt.value = c.id;
+                    opt.textContent = c.name || c.email || c.id;
+                    clientSel.appendChild(opt);
+                });
 
-            container.innerHTML = cases.map(c => `
-                <div class="process-item">
-                    <div class="process-status ${c.status || 'active'}"></div>
-                    <div class="process-info">
-                        <div class="process-number">${c.case_number || 'Processo'}</div>
-                        <div class="process-subject">${c.subject || 'Em andamento'}</div>
+            // Lawyer dropdown (distinct responsible_lawyer from cases)
+            const lawyerSel = document.getElementById('filterLawyer');
+            const lawyers = [...new Set(allCases.map(c => c.responsible_lawyer).filter(Boolean))].sort();
+            lawyers.forEach(l => {
+                const opt = document.createElement('option');
+                opt.value = l;
+                opt.textContent = l;
+                lawyerSel.appendChild(opt);
+            });
+        }
+
+        // ════════════════════════════════════════════════════════════════════
+        // FILTER LOGIC
+        // ════════════════════════════════════════════════════════════════════
+        function getFilters() {
+            return {
+                clientId: document.getElementById('filterClient').value,
+                area: document.getElementById('filterArea').value,
+                lawyer: document.getElementById('filterLawyer').value,
+                status: document.getElementById('filterStatus').value,
+                dateFrom: document.getElementById('filterDateFrom').value,
+                dateTo: document.getElementById('filterDateTo').value,
+                search: document.getElementById('filterSearch').value.toLowerCase().trim()
+            };
+        }
+
+        function clearFilters() {
+            document.getElementById('filterClient').value = '';
+            document.getElementById('filterArea').value = '';
+            document.getElementById('filterLawyer').value = '';
+            document.getElementById('filterStatus').value = '';
+            document.getElementById('filterDateFrom').value = '';
+            document.getElementById('filterDateTo').value = '';
+            document.getElementById('filterSearch').value = '';
+            applyFilters();
+        }
+
+        function normalizeStr(s) {
+            return (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+        }
+
+        function applyFilters() {
+            const f = getFilters();
+
+            // Filter cases
+            filteredCases = allCases.filter(c => {
+                if (f.clientId && String(c.client_id) !== f.clientId) return false;
+                if (f.area && normalizeStr(c.area) !== normalizeStr(f.area)) return false;
+                if (f.lawyer && c.responsible_lawyer !== f.lawyer) return false;
+                if (f.status && normalizeStr(c.status) !== normalizeStr(f.status)) return false;
+                if (f.dateFrom && c.created_at && c.created_at < f.dateFrom) return false;
+                if (f.dateTo && c.created_at && c.created_at > f.dateTo + 'T23:59:59') return false;
+                if (f.search) {
+                    const clientName = normalizeStr(clientMap[c.client_id]?.name);
+                    const haystack = normalizeStr(c.case_number) + ' ' + normalizeStr(c.title) + ' ' + clientName;
+                    if (!haystack.includes(normalizeStr(f.search))) return false;
+                }
+                return true;
+            });
+
+            // Derive the set of matching client_ids and case_ids for filtering financials
+            const matchingClientIds = new Set(filteredCases.map(c => c.client_id));
+            const matchingCaseIds = new Set(filteredCases.map(c => c.id));
+
+            // Filter financials: must relate to a matching case or client
+            filteredFinancials = allFinancials.filter(fin => {
+                // If there are active filters, restrict financials to matching cases/clients
+                const hasFilter = f.clientId || f.area || f.lawyer || f.status || f.dateFrom || f.dateTo || f.search;
+                if (hasFilter) {
+                    const matchByCase = fin.case_id && matchingCaseIds.has(fin.case_id);
+                    const matchByClient = fin.client_id && matchingClientIds.has(fin.client_id);
+                    if (!matchByCase && !matchByClient) return false;
+                }
+                return true;
+            });
+
+            // Reset pagination
+            pageState.processos = 1;
+            pageState.financeiro = 1;
+
+            // Update everything
+            updateStats();
+            renderDashboardRecent();
+            renderProcessosTable();
+            renderFinanceiroTable();
+            renderDocuments();
+            renderClientes();
+        }
+
+        // ════════════════════════════════════════════════════════════════════
+        // STATS CARDS
+        // ════════════════════════════════════════════════════════════════════
+        function formatBRL(value) {
+            return 'R$ ' + (value || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
+        function updateStats() {
+            // Total de processos
+            document.getElementById('statTotalProcessos').textContent = filteredCases.length;
+            document.getElementById('processCount').textContent = filteredCases.length;
+
+            // Clientes ativos
+            const uniqueClients = new Set(filteredCases.map(c => c.client_id));
+            document.getElementById('statClientesAtivos').textContent = uniqueClients.size;
+
+            // Honorarios (type = 'fee')
+            const honorarios = filteredFinancials
+                .filter(f => normalizeStr(f.type) === 'fee')
+                .reduce((sum, f) => sum + (parseFloat(f.amount) || 0), 0);
+            document.getElementById('statHonorarios').textContent = formatBRL(honorarios);
+
+            // Pendente (status = 'pendente' or 'vencido')
+            const pendente = filteredFinancials
+                .filter(f => {
+                    const s = normalizeStr(f.status);
+                    return s === 'pendente' || s === 'vencido';
+                })
+                .reduce((sum, f) => sum + (parseFloat(f.amount) || 0), 0);
+            document.getElementById('statPendente').textContent = formatBRL(pendente);
+        }
+
+        // ════════════════════════════════════════════════════════════════════
+        // HELPER: get client name for a case
+        // ════════════════════════════════════════════════════════════════════
+        function clientName(clientId) {
+            return clientMap[clientId]?.name || '-';
+        }
+
+        function caseNumber(caseId) {
+            return caseMap[caseId]?.case_number || '-';
+        }
+
+        // ════════════════════════════════════════════════════════════════════
+        // STATUS / AREA BADGE HELPERS
+        // ════════════════════════════════════════════════════════════════════
+        function statusBadge(status) {
+            const s = normalizeStr(status);
+            if (s.includes('andamento') || s === 'active' || s === 'em andamento') return `<span class="badge badge-status-em-andamento">Em andamento</span>`;
+            if (s.includes('conclu') || s === 'closed') return `<span class="badge badge-status-concluido">Concluido</span>`;
+            if (s.includes('arquiv')) return `<span class="badge badge-status-arquivado">Arquivado</span>`;
+            return `<span class="badge" style="background:#f1f5f9;color:#64748B">${status || '-'}</span>`;
+        }
+
+        function areaBadge(area) {
+            const a = normalizeStr(area);
+            const map = {
+                ambiental: 'badge-area-ambiental',
+                civel: 'badge-area-civel',
+                trabalhista: 'badge-area-trabalhista',
+                administrativo: 'badge-area-administrativo',
+                penal: 'badge-area-penal',
+                tributario: 'badge-area-tributario',
+                empresarial: 'badge-area-empresarial',
+                comercial: 'badge-area-comercial'
+            };
+            const cls = map[a] || '';
+            return `<span class="badge ${cls}">${area || '-'}</span>`;
+        }
+
+        function finStatusBadge(status) {
+            const s = normalizeStr(status);
+            if (s === 'pago') return `<span class="badge badge-fin-pago">Pago</span>`;
+            if (s === 'pendente') return `<span class="badge badge-fin-pendente">Pendente</span>`;
+            if (s === 'vencido') return `<span class="badge badge-fin-vencido">Vencido</span>`;
+            return `<span class="badge" style="background:#f1f5f9;color:#64748B">${status || '-'}</span>`;
+        }
+
+        function finTypeBadge(type) {
+            const t = normalizeStr(type);
+            if (t === 'invoice') return `<span class="badge badge-type-invoice">Fatura</span>`;
+            if (t === 'payment') return `<span class="badge badge-type-payment">Pagamento</span>`;
+            if (t === 'fee') return `<span class="badge badge-type-fee">Honorario</span>`;
+            return `<span class="badge" style="background:#f1f5f9;color:#64748B">${type || '-'}</span>`;
+        }
+
+        function formatDate(d) {
+            if (!d) return '-';
+            const dt = new Date(d);
+            if (isNaN(dt)) return d;
+            return dt.toLocaleDateString('pt-BR');
+        }
+
+        // ════════════════════════════════════════════════════════════════════
+        // SORTING
+        // ════════════════════════════════════════════════════════════════════
+        function sortTable(tableId, key, thEl) {
+            const st = sortState[tableId];
+            if (st.key === key) {
+                st.dir = st.dir === 'asc' ? 'desc' : 'asc';
+            } else {
+                st.key = key;
+                st.dir = 'asc';
+            }
+            // Update header styles
+            const table = thEl.closest('table');
+            table.querySelectorAll('th').forEach(th => th.classList.remove('sorted-asc', 'sorted-desc'));
+            thEl.classList.add(st.dir === 'asc' ? 'sorted-asc' : 'sorted-desc');
+
+            if (tableId === 'processos') renderProcessosTable();
+            if (tableId === 'financeiro') renderFinanceiroTable();
+        }
+
+        function sortedData(data, tableId) {
+            const { key, dir } = sortState[tableId];
+            return [...data].sort((a, b) => {
+                let va = a[key], vb = b[key];
+                // For joined fields like client_name
+                if (key === 'client_name') {
+                    va = clientName(a.client_id);
+                    vb = clientName(b.client_id);
+                }
+                if (key === 'case_number' && tableId === 'financeiro') {
+                    va = caseNumber(a.case_id);
+                    vb = caseNumber(b.case_id);
+                }
+                if (key === 'amount') {
+                    va = parseFloat(va) || 0;
+                    vb = parseFloat(vb) || 0;
+                }
+                if (va == null) va = '';
+                if (vb == null) vb = '';
+                if (typeof va === 'number' && typeof vb === 'number') {
+                    return dir === 'asc' ? va - vb : vb - va;
+                }
+                const cmp = String(va).localeCompare(String(vb), 'pt-BR', { sensitivity: 'base' });
+                return dir === 'asc' ? cmp : -cmp;
+            });
+        }
+
+        // ════════════════════════════════════════════════════════════════════
+        // PAGINATION
+        // ════════════════════════════════════════════════════════════════════
+        function renderPagination(containerId, tableId, totalItems) {
+            const container = document.getElementById(containerId);
+            const totalPages = Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
+            const current = pageState[tableId];
+
+            const start = (current - 1) * PAGE_SIZE + 1;
+            const end = Math.min(current * PAGE_SIZE, totalItems);
+
+            let html = `<span class="pagination-info">Mostrando ${totalItems ? start : 0}-${end} de ${totalItems}</span>`;
+            html += '<div class="pagination-buttons">';
+            html += `<button ${current <= 1 ? 'disabled' : ''} onclick="goPage('${tableId}',${current - 1})">&laquo;</button>`;
+
+            // Show max 7 page buttons
+            let startPage = Math.max(1, current - 3);
+            let endPage = Math.min(totalPages, startPage + 6);
+            if (endPage - startPage < 6) startPage = Math.max(1, endPage - 6);
+
+            for (let p = startPage; p <= endPage; p++) {
+                html += `<button class="${p === current ? 'active' : ''}" onclick="goPage('${tableId}',${p})">${p}</button>`;
+            }
+
+            html += `<button ${current >= totalPages ? 'disabled' : ''} onclick="goPage('${tableId}',${current + 1})">&raquo;</button>`;
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        function goPage(tableId, page) {
+            pageState[tableId] = page;
+            if (tableId === 'processos') renderProcessosTable();
+            if (tableId === 'financeiro') renderFinanceiroTable();
+        }
+
+        // ════════════════════════════════════════════════════════════════════
+        // RENDER: DASHBOARD RECENT CASES
+        // ════════════════════════════════════════════════════════════════════
+        function renderDashboardRecent() {
+            const tbody = document.getElementById('dashRecentBody');
+            const sorted = sortedData(filteredCases, 'processos').slice(0, 10);
+
+            if (sorted.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:32px;color:var(--text-muted);">Nenhum processo encontrado com os filtros aplicados.</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = sorted.map(c => `
+                <tr>
+                    <td class="cell-number">${c.case_number || '-'}</td>
+                    <td>${c.title || '-'}</td>
+                    <td>${clientName(c.client_id)}</td>
+                    <td>${areaBadge(c.area)}</td>
+                    <td>${statusBadge(c.status)}</td>
+                    <td class="cell-muted">${formatDate(c.created_at)}</td>
+                </tr>
+            `).join('');
+        }
+
+        // ════════════════════════════════════════════════════════════════════
+        // RENDER: PROCESSOS TABLE (full, with pagination)
+        // ════════════════════════════════════════════════════════════════════
+        function renderProcessosTable() {
+            const sorted = sortedData(filteredCases, 'processos');
+            const total = sorted.length;
+            const page = pageState.processos;
+            const start = (page - 1) * PAGE_SIZE;
+            const pageData = sorted.slice(start, start + PAGE_SIZE);
+
+            document.getElementById('processosCountLabel').textContent = total + ' registros';
+
+            const tbody = document.getElementById('processosBody');
+            if (pageData.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;padding:32px;color:var(--text-muted);">Nenhum processo encontrado.</td></tr>';
+            } else {
+                tbody.innerHTML = pageData.map(c => `
+                    <tr>
+                        <td class="cell-number">${c.case_number || '-'}</td>
+                        <td>${c.title || '-'}</td>
+                        <td>${clientName(c.client_id)}</td>
+                        <td>${areaBadge(c.area)}</td>
+                        <td>${c.responsible_lawyer || '-'}</td>
+                        <td>${statusBadge(c.status)}</td>
+                        <td class="cell-muted">${c.court || '-'}</td>
+                        <td class="cell-muted">${formatDate(c.created_at)}</td>
+                    </tr>
+                `).join('');
+            }
+
+            renderPagination('processosPagination', 'processos', total);
+        }
+
+        // ════════════════════════════════════════════════════════════════════
+        // RENDER: FINANCEIRO TABLE (full, with pagination + total)
+        // ════════════════════════════════════════════════════════════════════
+        function renderFinanceiroTable() {
+            const sorted = sortedData(filteredFinancials, 'financeiro');
+            const total = sorted.length;
+            const page = pageState.financeiro;
+            const start = (page - 1) * PAGE_SIZE;
+            const pageData = sorted.slice(start, start + PAGE_SIZE);
+
+            document.getElementById('finCountLabel').textContent = total + ' registros';
+
+            // Total value
+            const totalValue = filteredFinancials.reduce((sum, f) => sum + (parseFloat(f.amount) || 0), 0);
+            document.getElementById('finTotalValue').textContent = formatBRL(totalValue);
+
+            const tbody = document.getElementById('financeiroBody');
+            if (pageData.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:32px;color:var(--text-muted);">Nenhum registro financeiro encontrado.</td></tr>';
+            } else {
+                tbody.innerHTML = pageData.map(f => `
+                    <tr>
+                        <td class="cell-muted">${formatDate(f.due_date || f.paid_date)}</td>
+                        <td>${clientName(f.client_id)}</td>
+                        <td class="cell-number">${caseNumber(f.case_id)}</td>
+                        <td>${finTypeBadge(f.type)}</td>
+                        <td style="font-weight:600">${formatBRL(parseFloat(f.amount) || 0)}</td>
+                        <td>${finStatusBadge(f.status)}</td>
+                        <td class="cell-muted" style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${f.description || ''}">${f.description || '-'}</td>
+                    </tr>
+                `).join('');
+            }
+
+            renderPagination('financeiroPagination', 'financeiro', total);
+        }
+
+        // ════════════════════════════════════════════════════════════════════
+        // RENDER: DOCUMENTS
+        // ════════════════════════════════════════════════════════════════════
+        function renderDocuments() {
+            const container = document.getElementById('documentsList');
+
+            // Filter docs by matching cases/clients if filters active
+            const f = getFilters();
+            const hasFilter = f.clientId || f.area || f.lawyer || f.status || f.dateFrom || f.dateTo || f.search;
+            let docs = allDocuments;
+
+            if (hasFilter) {
+                const matchingClientIds = new Set(filteredCases.map(c => c.client_id));
+                const matchingCaseIds = new Set(filteredCases.map(c => c.id));
+                docs = allDocuments.filter(d => {
+                    return (d.case_id && matchingCaseIds.has(d.case_id)) || (d.client_id && matchingClientIds.has(d.client_id));
+                });
+            }
+
+            document.getElementById('docsCountLabel').textContent = docs.length + ' documentos';
+
+            if (docs.length === 0) {
+                container.innerHTML = `<div class="empty-state"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/></svg><h3>Nenhum documento encontrado</h3><p>Ajuste os filtros ou aguarde novos uploads.</p></div>`;
+                return;
+            }
+
+            function formatBytes(b) {
+                if (!b) return '';
+                if (b < 1024) return b + ' B';
+                if (b < 1048576) return (b / 1024).toFixed(1) + ' KB';
+                return (b / 1048576).toFixed(1) + ' MB';
+            }
+
+            function fileIcon(type) {
+                if (!type) return 'DOC';
+                const t = type.toLowerCase();
+                if (t.includes('pdf')) return 'PDF';
+                if (t.includes('image') || t.includes('png') || t.includes('jpg')) return 'IMG';
+                if (t.includes('word') || t.includes('doc')) return 'DOC';
+                if (t.includes('excel') || t.includes('xls')) return 'XLS';
+                return type.split('/').pop()?.substring(0, 3).toUpperCase() || 'ARQ';
+            }
+
+            container.innerHTML = docs.map(d => `
+                <div class="doc-item">
+                    <div class="doc-icon">${fileIcon(d.file_type)}</div>
+                    <div class="doc-info">
+                        <div class="doc-name">${d.name || 'Documento'}</div>
+                        <div class="doc-meta">Processo: ${caseNumber(d.case_id)} &middot; Cliente: ${clientName(d.client_id)}</div>
                     </div>
-                    <span class="process-area">${c.area || 'Geral'}</span>
+                    <div class="doc-size">${formatBytes(d.size_bytes)}</div>
                 </div>
             `).join('');
         }
 
-        // ── Section Navigation ──
+        // ════════════════════════════════════════════════════════════════════
+        // RENDER: CLIENTES
+        // ════════════════════════════════════════════════════════════════════
+        function renderClientes() {
+            const grid = document.getElementById('clientesGrid');
+
+            // Count cases per client
+            const casesPerClient = {};
+            allCases.forEach(c => {
+                casesPerClient[c.client_id] = (casesPerClient[c.client_id] || 0) + 1;
+            });
+
+            document.getElementById('clientesCountLabel').textContent = allClients.length + ' clientes';
+
+            if (allClients.length === 0) {
+                grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1;"><h3>Nenhum cliente cadastrado</h3></div>';
+                return;
+            }
+
+            grid.innerHTML = allClients
+                .sort((a, b) => (a.name || '').localeCompare(b.name || ''))
+                .map(c => `
+                    <div class="client-card">
+                        <div class="client-card-name">${c.name || '-'}</div>
+                        <div class="client-card-info">Email: <span>${c.email || '-'}</span></div>
+                        <div class="client-card-info">Telefone: <span>${c.phone || '-'}</span></div>
+                        <div class="client-card-info">CPF/CNPJ: <span>${c.cpf_cnpj || '-'}</span></div>
+                        <div class="client-card-info">Processos: <span>${casesPerClient[c.id] || 0}</span></div>
+                        ${c.type ? `<span class="client-card-type">${c.type}</span>` : ''}
+                    </div>
+                `).join('');
+        }
+
+        // ════════════════════════════════════════════════════════════════════
+        // SECTION NAVIGATION
+        // ════════════════════════════════════════════════════════════════════
         function showSection(section) {
-            // Hide all sections
             document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            // Show target
             document.getElementById('sec-' + section).classList.add('active');
-            // Update nav
+
             document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
             document.querySelector(`[data-section="${section}"]`)?.classList.add('active');
 
-            // Update header
             const titles = {
-                dashboard: ['Painel Geral', 'Bem-vindo ao seu portal exclusivo'],
-                processos: ['Processos', 'Acompanhe todos os seus processos'],
-                documentos: ['Documentos', 'Peças processuais e documentos disponíveis'],
-                financeiro: ['Financeiro', 'Extrato e histórico financeiro'],
-                notas: ['Notas Fiscais', 'Download de notas fiscais emitidas'],
-                agenda: ['Agenda', 'Audiências e prazos agendados']
+                dashboard: ['Painel Geral', 'Visao geral de todos os dados do escritorio'],
+                processos: ['Processos', 'Gestao completa de processos'],
+                financeiro: ['Financeiro', 'Extrato e historico financeiro'],
+                documentos: ['Documentos', 'Documentos e pecas processuais'],
+                agenda: ['Agenda', 'Audiencias e prazos agendados'],
+                clientes: ['Clientes', 'Base de clientes do escritorio']
             };
 
             const [title, subtitle] = titles[section] || ['Painel', ''];
             document.getElementById('pageTitle').textContent = title;
             document.getElementById('pageSubtitle').textContent = subtitle;
 
-            // Close mobile sidebar
             document.getElementById('sidebar').classList.remove('open');
         }
 
-        // ── Sidebar Toggle ──
+        // ════════════════════════════════════════════════════════════════════
+        // SIDEBAR TOGGLE & LOGOUT
+        // ════════════════════════════════════════════════════════════════════
         function toggleSidebar() {
             document.getElementById('sidebar').classList.toggle('open');
         }
 
-        // ── Logout ──
         async function handleLogout() {
             await sb.auth.signOut();
             window.location.href = 'portal-login.html';
