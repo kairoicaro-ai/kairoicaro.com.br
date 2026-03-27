@@ -1,7 +1,55 @@
 {
-  "updated_at": "2026-03-26T10:39:40.349280+00:00",
+  "updated_at": "2026-03-27T10:34:35.256743+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "27.mar.2026OAB/RJ firma compromisso para enfrentar a violência contra a mulherAções estratégicas incluem plantões jurídicos, mutirões, cursos e parcerias para fortalecer a proteção e os direitos das mulheres.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-27",
+      "url": "https://www.migalhas.com.br/quentes/452734/oab-rj-firma-compromisso-para-enfrentar-a-violencia-contra-a-mulher"
+    },
+    {
+      "setor": "empresarial",
+      "title": "27.mar.2026Sorteio de obra: \"Compêndio de Filosofia do Direito\"A publicação aborda temas cruciais para o cenário jurídico atual a partir de referenciais teóricos inovadores.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-27",
+      "url": "https://www.migalhas.com.br/quentes/452742/sorteio-de-obra--compendio-de-filosofia-do-direito"
+    },
+    {
+      "setor": "empresarial",
+      "title": "26.mar.2026Preso por mais de sete anos, STF mantém indenização por erro judiciário1ª turma reconheceu falha grave no processo penal e responsabilizou o Estado de São Paulo por prisão indevida após absolvição.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-27",
+      "url": "https://www.migalhas.com.br/quentes/452766/preso-por-mais-de-7-anos-stf-mantem-indenizacao-por-erro-judiciario"
+    },
+    {
+      "setor": "empresarial",
+      "title": "26.mar.2026\"Falta de escrúpulo\": Gilmar critica quebra de sigilo e vazamentos em CPMIsDecano do STF aponta falhas procedimentais e alerta para impacto institucional dessas condutas.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-27",
+      "url": "https://www.migalhas.com.br/quentes/452765/falta-escrupulos-gilmar-critica-quebra-de-sigilo-e-vazamentos-em-cpmi"
+    },
+    {
+      "setor": "empresarial",
+      "title": "26.mar.2026Governança, diversidade e protagonismo feminino marcam encontro na B3Evento promovido pelo Grupo Conselheiras, reforçou o protagonismo de executivos e conselheiros na construção de ambientes corporativos mais sólidos, transparentes e diversos.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-27",
+      "url": "https://www.migalhas.com.br/quentes/452757/governanca-diversidade-e-protagonismo-feminino-marcam-encontro-na-b3"
+    },
+    {
+      "setor": "ambiental",
+      "title": "26.mar.2026\"Abominável e criminoso\", diz Gilmar sobre vazamento de conversas de VorcaroDurante julgamento sobre a prorrogação da CPMI do INSS, ministro criticou o vazamento de mensagens íntimas do banqueiro com a ex-noiva, extraídas de celular apreendido pela PF.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-03-27",
+      "url": "https://www.migalhas.com.br/quentes/452755/abominavel--diz-gilmar-sobre-vazamento-de-conversas-de-vorcaro"
+    },
     {
       "setor": "empresarial",
       "title": "26.mar.2026OAB/RJ - Subseção Leopoldina promove a 2ª edição do \"Mulher em Foco\"O evento será gratuito, das 10 às 16h, em comemoração ao mês da mulher.",
@@ -73,54 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-03-25",
       "url": "https://www.migalhas.com.br/quentes/452566/mattos-filho-assessora-produtores-rurais-na-emissao-de-cedulas-cpr-f"
-    },
-    {
-      "setor": "empresarial",
-      "title": "25.mar.2026FGV Direito SP publica 1º relatório de pesquisa sobre evasão fiscalSegundo estudo que analisou acórdãos do STJ e do STF, foram identificadas falhas que comprometem a função preventiva do Direito Penal e criam vantagens para quem frauda o fisco.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-03-25",
-      "url": "https://www.migalhas.com.br/quentes/452545/fgv-direito-sp-publica-1-relatorio-de-pesquisa-sobre-evasao-fiscal"
-    },
-    {
-      "setor": "empresarial",
-      "title": "25.mar.2026Rubens Calixto lança obra \"A Improbidade Administrativa em Juízo\"Com abordagem que vai além da leitura tradicional da lei, o livro articula teoria e prática para oferecer uma análise estruturada da improbidade administrativa.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-03-25",
-      "url": "https://www.migalhas.com.br/quentes/452527/rubens-calixto-lanca-obra-a-improbidade-administrativa-em-juizo"
-    },
-    {
-      "setor": "empresarial",
-      "title": "24.mar.2026Lula sanciona \"PL Antifacção\" com dois vetosNorma endurece combate ao crime organizado, cria novos crimes e amplia restrições a condenados.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-03-25",
-      "url": "https://www.migalhas.com.br/quentes/452568/lula-sanciona-pl-antifaccao-com-dois-vetos"
-    },
-    {
-      "setor": "varejo",
-      "title": "Reforma Tributária: impactos no setor varejista e novas regras do IBS/CBS",
-      "summary": "As mudanças tributárias trazem desafios e oportunidades para o varejo. Entenda como o IBS e a CBS afetam supermercados e redes de distribuição.",
-      "source": "ABRAS / Análise KIAA",
-      "date": "2026-03-20",
-      "url": ""
-    },
-    {
-      "setor": "varejo",
-      "title": "Nova legislação trabalhista para o comércio: o que muda na escala 6x1",
-      "summary": "Projeto de lei sobre a escala de trabalho 6x1 avança no Congresso e impacta diretamente operações varejistas.",
-      "source": "ABRAS / Análise KIAA",
-      "date": "2026-03-18",
-      "url": ""
-    },
-    {
-      "setor": "varejo",
-      "title": "Transparência salarial: empresas do varejo devem se adequar às novas regras",
-      "summary": "A obrigatoriedade de relatórios de transparência salarial traz novas exigências de compliance para o setor.",
-      "source": "ConJur / Análise KIAA",
-      "date": "2026-03-15",
-      "url": ""
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T08:10:21.385670+00:00",
+  "updated_at": "2026-03-27T10:34:32.895557+00:00",
   "total": 8,
   "items": [
     {
@@ -20,6 +20,14 @@
     },
     {
       "tribunal": "STJ",
+      "title": "Prazo prescricional da pena de multa continua regido pelo Código Penal mesmo após trânsito em julgado",
+      "summary": "Em recurso repetitivo, o tribunal estabeleceu que a mudança promovida no artigo 51 do Código Penal pela Lei 13.964/2019 não afastou da pena de multa o seu caráter de sanção criminal.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27032026-Prazo-prescricional-da-pena-de-multa-continua-regido-pelo-Codigo-Penal-mesmo-apos-transito-em-julgado.aspx",
+      "date": "2026-03-27",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
       "title": "Página de Repetitivos traz inclusão dos valores de PIS/Cofins na base de cálculo do IRPJ e da CSLL",
       "summary": "Página de Repetitivos traz inclusão dos valores de PIS/Cofins na base de cálculo do IRPJ e da CSLL",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26032026-Pagina-de-Repetitivos-traz-inclusao-dos-valores-de-PISCofins-na-base-de-calculo-do-IRPJ-e-da-CSLL.aspx",
@@ -31,14 +39,6 @@
       "title": "Rádio Decidendi analisa precedente do STJ sobre medidas executivas atípicas na execução civil",
       "summary": "Rádio Decidendi analisa precedente do STJ sobre medidas executivas atípicas na execução civil",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26032026-Radio-Decidendi-analisa-precedente-do-STJ-sobre-medidas-executivas-atipicas-na-execucao-civil.aspx",
-      "date": "2026-03-27",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Requisitos para reconhecimento póstumo de união estável homoafetiva é tema da Pesquisa Pronta",
-      "summary": "Requisitos para reconhecimento póstumo de união estável homoafetiva é tema da Pesquisa Pronta",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26032026-Requisitos-para-reconhecimento-postumo-de-uniao-estavel-homoafetiva-e-tema-da-Pesquisa-Pronta.aspx",
       "date": "2026-03-27",
       "category": "Jurisprudencia"
     },
