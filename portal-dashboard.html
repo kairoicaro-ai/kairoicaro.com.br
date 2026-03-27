@@ -1207,6 +1207,11 @@
                 Clientes
             </a>
 
+            <a class="nav-item" data-section="credito" onclick="showSection('credito')">
+                <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                Análise de Crédito
+            </a>
+
             <div class="nav-section-title">Inteligência</div>
 
             <a class="nav-item" href="portal-kpi.html">
@@ -1497,6 +1502,192 @@
             </div>
         </div>
 
+        <!-- ═══════════ ANÁLISE DE CRÉDITO ═══════════ -->
+        <div class="section" id="sec-credito">
+            <div class="page-content">
+
+                <!-- Metrics Cards -->
+                <div class="stats-grid" style="margin-bottom: 24px;">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon green"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+                        </div>
+                        <div class="stat-value" id="creditoLeadsMes">0</div>
+                        <div class="stat-label">Leads este mês</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon blue"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+                        </div>
+                        <div class="stat-value" id="creditoTaxaConversao">0%</div>
+                        <div class="stat-label">Taxa de conversão</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon" style="background:rgba(139,92,246,0.1);color:var(--purple);"><svg viewBox="0 0 24 24" style="stroke:var(--purple);"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+                        </div>
+                        <div class="stat-value" id="creditoTicketMedio">R$ 0</div>
+                        <div class="stat-label">Ticket médio</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon" style="background:rgba(245,158,11,0.1);color:var(--orange);"><svg viewBox="0 0 24 24" style="stroke:var(--orange);"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                        </div>
+                        <div class="stat-value" id="creditoLeadsQualificados">0</div>
+                        <div class="stat-label">Leads qualificados</div>
+                    </div>
+                </div>
+
+                <!-- Credit Analysis Search -->
+                <div class="card" style="margin-bottom: 24px;">
+                    <div class="card-header">
+                        <span class="card-title">Análise de Crédito — Perfil Econômico</span>
+                    </div>
+                    <div class="card-body" style="padding: 24px;">
+                        <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 20px;">Consulte o perfil financeiro de prospects e autuados para estratégia comercial</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end;">
+                            <div style="flex: 1; min-width: 180px;">
+                                <label style="display: block; font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">CPF/CNPJ</label>
+                                <input type="text" id="creditoCpfCnpj" placeholder="000.000.000-00" style="width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.85rem; background: var(--bg); outline: none; transition: border-color 0.2s;">
+                            </div>
+                            <div style="flex: 1; min-width: 180px;">
+                                <label style="display: block; font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">Nome</label>
+                                <input type="text" id="creditoNome" placeholder="Nome completo ou razão social" style="width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.85rem; background: var(--bg); outline: none; transition: border-color 0.2s;">
+                            </div>
+                            <div style="flex: 1; min-width: 180px;">
+                                <label style="display: block; font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">Origem</label>
+                                <select id="creditoOrigem" style="width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.85rem; background: var(--bg); outline: none; cursor: pointer; transition: border-color 0.2s;">
+                                    <option value="">Selecione...</option>
+                                    <option value="Autuado IBAMA">Autuado IBAMA</option>
+                                    <option value="Autuado FEMARH">Autuado FEMARH</option>
+                                    <option value="Prospect">Prospect</option>
+                                    <option value="Cliente Atual">Cliente Atual</option>
+                                    <option value="Lead Site">Lead Site</option>
+                                </select>
+                            </div>
+                            <div style="flex-shrink: 0;">
+                                <button onclick="analisarCredito()" style="padding: 10px 28px; background: linear-gradient(135deg, var(--green), var(--green-light)); color: var(--blue); font-family: inherit; font-size: 0.85rem; font-weight: 700; border: none; border-radius: 8px; cursor: pointer; transition: all 0.2s; white-space: nowrap;">Analisar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Credit Result Panel (hidden by default) -->
+                <div class="card" id="creditoResultPanel" style="margin-bottom: 24px; display: none;">
+                    <div class="card-header">
+                        <span class="card-title">Resultado da Análise</span>
+                        <span class="card-action" id="creditoResultNome" style="font-weight: 600;"></span>
+                    </div>
+                    <div class="card-body" style="padding: 24px;">
+                        <div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start;">
+                            <!-- Score Gauge -->
+                            <div style="text-align: center; min-width: 200px;">
+                                <div id="creditoGauge" style="position: relative; width: 180px; height: 100px; margin: 0 auto 12px;">
+                                    <svg viewBox="0 0 180 100" style="width: 100%; height: 100%;">
+                                        <!-- Background arc -->
+                                        <path d="M 10 90 A 80 80 0 0 1 170 90" fill="none" stroke="#E2E8F0" stroke-width="12" stroke-linecap="round"/>
+                                        <!-- Score arc -->
+                                        <path id="creditoGaugeArc" d="M 10 90 A 80 80 0 0 1 170 90" fill="none" stroke="var(--green)" stroke-width="12" stroke-linecap="round" stroke-dasharray="0 251.33"/>
+                                    </svg>
+                                    <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); text-align: center;">
+                                        <div id="creditoScoreValue" style="font-size: 2rem; font-weight: 800; line-height: 1;"></div>
+                                        <div id="creditoScoreLabel" style="font-size: 0.7rem; font-weight: 600; margin-top: 2px;"></div>
+                                    </div>
+                                </div>
+                                <div style="display: flex; justify-content: center; gap: 8px; margin-top: 8px; flex-wrap: wrap;">
+                                    <span style="font-size: 0.65rem; padding: 2px 8px; border-radius: 100px; background: rgba(239,68,68,0.1); color: #EF4444;">0-300 Alto Risco</span>
+                                    <span style="font-size: 0.65rem; padding: 2px 8px; border-radius: 100px; background: rgba(245,158,11,0.1); color: #F59E0B;">301-500 Moderado</span>
+                                    <span style="font-size: 0.65rem; padding: 2px 8px; border-radius: 100px; background: rgba(234,179,8,0.1); color: #EAB308;">501-700 Baixo</span>
+                                    <span style="font-size: 0.65rem; padding: 2px 8px; border-radius: 100px; background: rgba(34,197,94,0.1); color: #22C55E;">701-1000 Baixo Risco</span>
+                                </div>
+                            </div>
+
+                            <!-- Details Grid -->
+                            <div style="flex: 1; min-width: 280px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                                <div style="padding: 16px; background: var(--bg); border-radius: 10px;">
+                                    <div style="font-size: 0.7rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Faixa de Renda Estimada</div>
+                                    <div id="creditoRenda" style="font-size: 1rem; font-weight: 700; color: var(--text);"></div>
+                                </div>
+                                <div style="padding: 16px; background: var(--bg); border-radius: 10px;">
+                                    <div style="font-size: 0.7rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Pendências Financeiras</div>
+                                    <div id="creditoPendencias" style="font-size: 1rem; font-weight: 700; color: var(--text);"></div>
+                                </div>
+                                <div style="padding: 16px; background: var(--bg); border-radius: 10px;">
+                                    <div style="font-size: 0.7rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Protestos</div>
+                                    <div id="creditoProtestos" style="font-size: 1rem; font-weight: 700; color: var(--text);"></div>
+                                </div>
+                                <div style="padding: 16px; background: var(--bg); border-radius: 10px;">
+                                    <div style="font-size: 0.7rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Ações Judiciais</div>
+                                    <div id="creditoAcoes" style="font-size: 1rem; font-weight: 700; color: var(--text);"></div>
+                                </div>
+                                <div style="padding: 16px; background: var(--bg); border-radius: 10px;">
+                                    <div style="font-size: 0.7rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Recomendação de Pagamento</div>
+                                    <div id="creditoRecomendacao" style="font-size: 1rem; font-weight: 700; color: var(--green);"></div>
+                                </div>
+                                <div style="padding: 16px; background: var(--bg); border-radius: 10px;">
+                                    <div style="font-size: 0.7rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Valor Estimado de Honorários</div>
+                                    <div id="creditoHonorarios" style="font-size: 1rem; font-weight: 700; color: var(--text);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leads Table -->
+                <div class="card">
+                    <div class="card-header" style="flex-wrap: wrap; gap: 12px;">
+                        <span class="card-title">Leads Capturados — Radar Ambiental</span>
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+                            <select id="leadsFilterStatus" onchange="filterLeads()" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white); cursor: pointer;">
+                                <option value="">Todos os Status</option>
+                                <option value="Novo">Novo</option>
+                                <option value="Contatado">Contatado</option>
+                                <option value="Qualificado">Qualificado</option>
+                                <option value="Convertido">Convertido</option>
+                                <option value="Descartado">Descartado</option>
+                            </select>
+                            <select id="leadsFilterTipo" onchange="filterLeads()" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white); cursor: pointer;">
+                                <option value="">Todos os Tipos</option>
+                                <option value="Autuado IBAMA">Autuado IBAMA</option>
+                                <option value="Autuado FEMARH">Autuado FEMARH</option>
+                                <option value="Prospect">Prospect</option>
+                                <option value="Lead Site">Lead Site</option>
+                            </select>
+                            <input type="date" id="leadsFilterDateFrom" onchange="filterLeads()" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white);">
+                            <input type="date" id="leadsFilterDateTo" onchange="filterLeads()" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white);">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div style="overflow-x: auto;">
+                            <table id="leadsTable" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+                                <thead>
+                                    <tr style="background: var(--bg); border-bottom: 2px solid var(--border);">
+                                        <th style="padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Data</th>
+                                        <th style="padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Nome</th>
+                                        <th style="padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Email</th>
+                                        <th style="padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Telefone</th>
+                                        <th style="padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Tipo Consulta</th>
+                                        <th style="padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Score</th>
+                                        <th style="padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Status</th>
+                                        <th style="padding: 12px 16px; text-align: left; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="leadsTableBody">
+                                    <tr>
+                                        <td colspan="8" style="padding: 48px 16px; text-align: center; color: var(--text-muted);">
+                                            <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 4px;">Nenhum lead capturado</div>
+                                            <div style="font-size: 0.8rem;">Os leads do Radar Ambiental aparecerão aqui automaticamente.</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
     <!-- Session Timeout Warning Modal -->
@@ -1717,6 +1908,9 @@
 
             // Apply initial (no) filters
             applyFilters();
+
+            // Load leads for credit analysis section
+            loadLeads();
         }
 
         // ════════════════════════════════════════════════════════════════════
@@ -2203,6 +2397,173 @@
         }
 
         // ════════════════════════════════════════════════════════════════════
+        // ANÁLISE DE CRÉDITO
+        // ════════════════════════════════════════════════════════════════════
+        let allLeads = [];
+
+        function analisarCredito() {
+            const cpfCnpj = document.getElementById('creditoCpfCnpj').value.trim();
+            const nome = document.getElementById('creditoNome').value.trim();
+            const origem = document.getElementById('creditoOrigem').value;
+
+            if (!cpfCnpj && !nome) {
+                alert('Informe ao menos o CPF/CNPJ ou Nome para consultar.');
+                return;
+            }
+
+            // Simulated credit data
+            const score = Math.floor(Math.random() * 850) + 150;
+            const pendencias = Math.floor(Math.random() * 8);
+            const protestos = Math.floor(Math.random() * 4);
+            const acoes = Math.floor(Math.random() * 3);
+
+            const rendaMin = [3000, 5000, 8000, 15000, 25000, 50000][Math.floor(Math.random() * 6)];
+            const rendaMax = rendaMin + Math.floor(Math.random() * 3 + 1) * 5000;
+
+            let recomendacao, corRecomendacao;
+            if (score >= 701) { recomendacao = 'Parcelado 12x'; corRecomendacao = 'var(--green)'; }
+            else if (score >= 501) { recomendacao = 'Parcelado 6x'; corRecomendacao = '#EAB308'; }
+            else if (score >= 301) { recomendacao = 'Parcelado 3x'; corRecomendacao = 'var(--orange)'; }
+            else if (score >= 200) { recomendacao = 'À Vista'; corRecomendacao = 'var(--orange)'; }
+            else { recomendacao = 'Não Recomendado'; corRecomendacao = 'var(--red)'; }
+
+            const honorariosBase = { 'Autuado IBAMA': 15000, 'Autuado FEMARH': 12000, 'Prospect': 8000, 'Cliente Atual': 10000, 'Lead Site': 6000 };
+            const honorarios = (honorariosBase[origem] || 10000) + Math.floor(Math.random() * 10000);
+
+            // Update gauge
+            let gaugeColor;
+            if (score <= 300) gaugeColor = '#EF4444';
+            else if (score <= 500) gaugeColor = '#F59E0B';
+            else if (score <= 700) gaugeColor = '#EAB308';
+            else gaugeColor = '#22C55E';
+
+            const ratio = Math.min(score / 1000, 1);
+            const arcLen = ratio * 251.33;
+            const arc = document.getElementById('creditoGaugeArc');
+            arc.setAttribute('stroke-dasharray', arcLen + ' 251.33');
+            arc.setAttribute('stroke', gaugeColor);
+
+            document.getElementById('creditoScoreValue').textContent = score;
+            document.getElementById('creditoScoreValue').style.color = gaugeColor;
+
+            let labelText;
+            if (score <= 300) labelText = 'Alto Risco';
+            else if (score <= 500) labelText = 'Risco Moderado';
+            else if (score <= 700) labelText = 'Risco Baixo';
+            else labelText = 'Baixo Risco';
+            const labelEl = document.getElementById('creditoScoreLabel');
+            labelEl.textContent = labelText;
+            labelEl.style.color = gaugeColor;
+
+            document.getElementById('creditoResultNome').textContent = nome || cpfCnpj;
+            document.getElementById('creditoRenda').textContent = 'R$ ' + rendaMin.toLocaleString('pt-BR') + ' - R$ ' + rendaMax.toLocaleString('pt-BR');
+            document.getElementById('creditoPendencias').textContent = pendencias + ' registros';
+            document.getElementById('creditoProtestos').textContent = protestos + ' registros';
+            document.getElementById('creditoAcoes').textContent = acoes + ' registros';
+            document.getElementById('creditoRecomendacao').textContent = recomendacao;
+            document.getElementById('creditoRecomendacao').style.color = corRecomendacao;
+            document.getElementById('creditoHonorarios').textContent = 'R$ ' + honorarios.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+
+            document.getElementById('creditoResultPanel').style.display = 'block';
+        }
+
+        async function loadLeads() {
+            try {
+                const { data, error } = await sb.from('leads').select('*').order('created_at', { ascending: false });
+                if (error) throw error;
+                allLeads = data || [];
+                renderLeads(allLeads);
+                updateLeadMetrics(allLeads);
+            } catch (e) {
+                console.warn('Leads table not available:', e.message);
+                allLeads = [];
+                renderLeads([]);
+                updateLeadMetrics([]);
+            }
+        }
+
+        function updateLeadMetrics(leads) {
+            const now = new Date();
+            const monthStart = new Date(now.getFullYear(), now.getMonth(), 1);
+            const thisMonth = leads.filter(l => new Date(l.created_at) >= monthStart);
+            const converted = leads.filter(l => l.status === 'Convertido');
+            const qualified = leads.filter(l => l.status === 'Qualificado');
+            const totalValue = converted.reduce((sum, l) => sum + (l.valor || 0), 0);
+            const ticketMedio = converted.length > 0 ? totalValue / converted.length : 0;
+            const taxa = leads.length > 0 ? ((converted.length / leads.length) * 100).toFixed(1) : '0';
+
+            document.getElementById('creditoLeadsMes').textContent = thisMonth.length;
+            document.getElementById('creditoTaxaConversao').textContent = taxa + '%';
+            document.getElementById('creditoTicketMedio').textContent = 'R$ ' + ticketMedio.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+            document.getElementById('creditoLeadsQualificados').textContent = qualified.length;
+        }
+
+        function filterLeads() {
+            const status = document.getElementById('leadsFilterStatus').value;
+            const tipo = document.getElementById('leadsFilterTipo').value;
+            const dateFrom = document.getElementById('leadsFilterDateFrom').value;
+            const dateTo = document.getElementById('leadsFilterDateTo').value;
+
+            let filtered = [...allLeads];
+            if (status) filtered = filtered.filter(l => l.status === status);
+            if (tipo) filtered = filtered.filter(l => l.tipo_consulta === tipo);
+            if (dateFrom) filtered = filtered.filter(l => l.created_at >= dateFrom);
+            if (dateTo) filtered = filtered.filter(l => l.created_at <= dateTo + 'T23:59:59');
+
+            renderLeads(filtered);
+        }
+
+        function renderLeads(leads) {
+            const tbody = document.getElementById('leadsTableBody');
+            if (!leads || leads.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="8" style="padding: 48px 16px; text-align: center; color: var(--text-muted);"><div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 4px;">Nenhum lead capturado</div><div style="font-size: 0.8rem;">Os leads do Radar Ambiental aparecerão aqui automaticamente.</div></td></tr>`;
+                return;
+            }
+
+            const statusColors = {
+                'Novo': 'background:rgba(59,130,246,0.1);color:#3B82F6;',
+                'Contatado': 'background:rgba(245,158,11,0.1);color:#F59E0B;',
+                'Qualificado': 'background:rgba(134,230,0,0.12);color:#65A30D;',
+                'Convertido': 'background:rgba(34,197,94,0.1);color:#22C55E;',
+                'Descartado': 'background:rgba(107,114,128,0.1);color:#6B7280;'
+            };
+
+            tbody.innerHTML = leads.map(l => {
+                const date = l.created_at ? new Date(l.created_at).toLocaleDateString('pt-BR') : '-';
+                const scoreColor = (l.score || 0) > 700 ? '#22C55E' : (l.score || 0) > 500 ? '#EAB308' : (l.score || 0) > 300 ? '#F59E0B' : '#EF4444';
+                const sStyle = statusColors[l.status] || 'background:rgba(107,114,128,0.1);color:#6B7280;';
+                const phone = l.telefone ? l.telefone.replace(/\D/g, '') : '';
+                const whatsLink = phone ? 'https://wa.me/55' + phone : '#';
+
+                return `<tr style="border-bottom: 1px solid var(--border);">
+                    <td style="padding: 12px 16px; white-space: nowrap;">${Security.sanitizeHTML ? Security.sanitizeHTML(date) : date}</td>
+                    <td style="padding: 12px 16px; font-weight: 600;">${Security.sanitizeHTML ? Security.sanitizeHTML(l.nome || '-') : (l.nome || '-')}</td>
+                    <td style="padding: 12px 16px; color: var(--text-muted);">${Security.sanitizeHTML ? Security.sanitizeHTML(l.email || '-') : (l.email || '-')}</td>
+                    <td style="padding: 12px 16px;">${Security.sanitizeHTML ? Security.sanitizeHTML(l.telefone || '-') : (l.telefone || '-')}</td>
+                    <td style="padding: 12px 16px;">${Security.sanitizeHTML ? Security.sanitizeHTML(l.tipo_consulta || '-') : (l.tipo_consulta || '-')}</td>
+                    <td style="padding: 12px 16px; font-weight: 700; color: ${scoreColor};">${l.score || '-'}</td>
+                    <td style="padding: 12px 16px;"><span style="padding: 4px 10px; border-radius: 100px; font-size: 0.75rem; font-weight: 600; ${sStyle}">${l.status || 'Novo'}</span></td>
+                    <td style="padding: 12px 16px; white-space: nowrap;">
+                        <a href="${whatsLink}" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; background: rgba(34,197,94,0.1); color: #22C55E; text-decoration: none; margin-right: 4px;" title="Contatar via WhatsApp">Contatar</a>
+                        <button onclick="updateLeadStatus('${l.id}','Qualificado')" style="padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; background: rgba(134,230,0,0.12); color: #65A30D; border: none; cursor: pointer; font-family: inherit; margin-right: 4px;">Qualificar</button>
+                        <button onclick="updateLeadStatus('${l.id}','Convertido')" style="padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; background: rgba(59,130,246,0.1); color: #3B82F6; border: none; cursor: pointer; font-family: inherit;">Converter</button>
+                    </td>
+                </tr>`;
+            }).join('');
+        }
+
+        async function updateLeadStatus(id, newStatus) {
+            try {
+                const { error } = await sb.from('leads').update({ status: newStatus }).eq('id', id);
+                if (error) throw error;
+                await loadLeads();
+            } catch (e) {
+                console.error('Error updating lead:', e.message);
+                alert('Erro ao atualizar status do lead.');
+            }
+        }
+
+        // ════════════════════════════════════════════════════════════════════
         // SECTION NAVIGATION
         // ════════════════════════════════════════════════════════════════════
         function showSection(section) {
@@ -2218,7 +2579,8 @@
                 financeiro: ['Financeiro', 'Extrato e historico financeiro'],
                 documentos: ['Documentos', 'Documentos e pecas processuais'],
                 agenda: ['Agenda', 'Audiencias e prazos agendados'],
-                clientes: ['Clientes', 'Base de clientes do escritorio']
+                clientes: ['Clientes', 'Base de clientes do escritorio'],
+                credito: ['Análise de Crédito', 'Perfil econômico e gestão de leads']
             };
 
             const [title, subtitle] = titles[section] || ['Painel', ''];
