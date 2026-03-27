@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/icone-positivo-verde.png">
     <link rel="apple-touch-icon" href="img/icone-positivo-verde.png">
-    <!-- Color Overrides -->
+    <!-- Color Overrides & Microsite Styles -->
     <style>
         :root {
             --verde: #78909C;
@@ -35,6 +35,338 @@
             --verde-dark: #546E7A;
             --verde-glow: rgba(120, 144, 156, 0.15);
             --shadow-green: 0 4px 20px rgba(120, 144, 156, 0.25);
+            --navy: #0B1D33;
+            --navy-light: #132B4A;
+            --steel: #1E3A5F;
+            --steel-light: #2A4D6E;
+            --accent-blue: #4A90D9;
+            --accent-gold: #C9A84C;
+        }
+
+        /* ===== KPI METRICS BAR ===== */
+        .kpi-bar {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 100%);
+            padding: 56px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .kpi-bar::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 20% 50%, rgba(74,144,217,0.08) 0%, transparent 60%),
+                        radial-gradient(ellipse at 80% 50%, rgba(120,144,156,0.06) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+        .kpi-item {
+            text-align: center;
+            padding: 20px 12px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .kpi-item:hover {
+            transform: translateY(-4px);
+            background: rgba(255,255,255,0.06);
+        }
+        .kpi-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 30%, var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            margin-bottom: 6px;
+        }
+        .kpi-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: rgba(255,255,255,0.6);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* ===== PREMIUM PRODUCT CARDS ===== */
+        .produtos-section {
+            background: linear-gradient(180deg, #F5F7FA 0%, #E8ECF1 100%);
+            padding: 100px 0;
+        }
+        .produtos-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .produto-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px 28px 28px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(11,29,51,0.06);
+            box-shadow: 0 2px 12px rgba(11,29,51,0.04);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            display: flex;
+            flex-direction: column;
+        }
+        .produto-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--steel), var(--accent-blue));
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .produto-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 48px rgba(11,29,51,0.12);
+            border-color: rgba(74,144,217,0.2);
+        }
+        .produto-card:hover::before {
+            opacity: 1;
+        }
+        .produto-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--navy), var(--steel));
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+        .produto-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, rgba(11,29,51,0.06), rgba(74,144,217,0.08));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            transition: background 0.3s ease;
+        }
+        .produto-card:hover .produto-icon {
+            background: linear-gradient(135deg, var(--navy), var(--steel));
+        }
+        .produto-icon svg {
+            color: var(--steel);
+            transition: color 0.3s ease;
+        }
+        .produto-card:hover .produto-icon svg {
+            color: #fff;
+        }
+        .produto-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        .produto-card p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.88rem;
+            color: #5A6978;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            flex: 1;
+        }
+        .produto-complexity {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: auto;
+        }
+        .produto-complexity span {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #8A95A3;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .complexity-dots {
+            display: flex;
+            gap: 4px;
+        }
+        .complexity-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #D5DAE1;
+            transition: background 0.3s ease;
+        }
+        .complexity-dot.active {
+            background: var(--accent-blue);
+        }
+        .complexity-dot.active.high {
+            background: #E07A3A;
+        }
+
+        /* ===== TEAM SECTION ===== */
+        .equipe-section {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 50%, var(--steel) 100%);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .equipe-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 70%, rgba(74,144,217,0.06) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        .equipe-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+        .equipe-card {
+            text-align: center;
+            padding: 40px 28px 32px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(8px);
+            transition: all 0.4s ease;
+        }
+        .equipe-card:hover {
+            background: rgba(255,255,255,0.08);
+            transform: translateY(-6px);
+            border-color: rgba(74,144,217,0.3);
+        }
+        .equipe-avatar {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, var(--steel-light), var(--accent-blue));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #fff;
+            position: relative;
+        }
+        .equipe-avatar::after {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            border: 2px solid rgba(74,144,217,0.3);
+        }
+        .equipe-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+        .equipe-role {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--accent-blue);
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 14px;
+        }
+        .equipe-card p.equipe-desc {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.55);
+            line-height: 1.6;
+        }
+
+        /* ===== SECTION HEADER (white variant) ===== */
+        .section-header-white {
+            text-align: center;
+            margin-bottom: 56px;
+            position: relative;
+            z-index: 1;
+        }
+        .section-header-white .section-tag {
+            color: var(--accent-blue);
+            border-color: rgba(74,144,217,0.3);
+        }
+        .section-header-white .section-title {
+            color: #fff;
+        }
+        .section-header-white .section-desc {
+            color: rgba(255,255,255,0.55);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .produtos-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .kpi-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            .equipe-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+        }
+        @media (max-width: 768px) {
+            .kpi-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+            .kpi-number {
+                font-size: 2rem;
+            }
+            .produtos-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            .produtos-section {
+                padding: 72px 0;
+            }
+            .equipe-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            .equipe-section {
+                padding: 72px 0;
+            }
         }
     </style>
     <!-- Schema.org JSON-LD -->
@@ -168,42 +500,228 @@
         </div>
     </section>
 
-    <!-- ==================== AREAS OF PRACTICE ==================== -->
-    <section id="areas" class="section areas">
+    <!-- ==================== KPI METRICS BAR ==================== -->
+    <section class="kpi-bar">
+        <div class="kpi-grid">
+            <div class="kpi-item">
+                <div class="kpi-number">R$500M+</div>
+                <div class="kpi-label">Em causas gerenciadas</div>
+            </div>
+            <div class="kpi-item">
+                <div class="kpi-number">1.500+</div>
+                <div class="kpi-label">Processos estratégicos</div>
+            </div>
+            <div class="kpi-item">
+                <div class="kpi-number">95%</div>
+                <div class="kpi-label">Taxa de êxito</div>
+            </div>
+            <div class="kpi-item">
+                <div class="kpi-number">12</div>
+                <div class="kpi-label">Estados de atuação</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRODUTOS JURÍDICOS ==================== -->
+    <section id="areas" class="produtos-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Serviços</span>
-                <h2 class="section-title">Atuacao em <span class="text-green">Processos Estratégicos</span></h2>
-                <p class="section-desc">Inteligência processual e gestão estratégica para casos de alto impacto.</p>
+                <span class="section-tag">Produtos Jurídicos</span>
+                <h2 class="section-title">Soluções de <span class="text-green">alto desempenho</span> para litígios complexos</h2>
+                <p class="section-desc">Oito frentes de atuação estratégica com metodologia proprietária, jurimetria e gestão orientada por resultados.</p>
             </div>
-            <div class="areas-grid areas-grid-uniform" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <div class="produtos-grid">
+
+                <!-- Card 01 -->
+                <div class="produto-card">
+                    <span class="produto-badge">01</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                     </div>
                     <h3>Gestão de Grandes Litígios</h3>
-                    <p>Framework KIAA de gestão processual com KPIs, dashboards e relatórios executivos.</p>
-                </div>
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    <p>Framework KIAA de gestão processual com KPIs, dashboards executivos e relatórios de performance para controle total do contencioso.</p>
+                    <div class="produto-complexity">
+                        <span>Complexidade</span>
+                        <div class="complexity-dots">
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                        </div>
                     </div>
-                    <h3>Teses Inovadoras</h3>
-                    <p>Desenvolvimento de teses jurídicas disruptivas com análise jurimétrica e precedentes.</p>
                 </div>
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+
+                <!-- Card 02 -->
+                <div class="produto-card">
+                    <span class="produto-badge">02</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
                     </div>
-                    <h3>Tribunais Superiores</h3>
-                    <p>Atuação perante STF, STJ, TST e tribunais regionais com estratégia recursal avançada.</p>
+                    <h3>Jurimetria e Análise Preditiva</h3>
+                    <p>Análise estatística de precedentes, probabilidades de êxito por instância e modelagem preditiva para decisões informadas.</p>
+                    <div class="produto-complexity">
+                        <span>Complexidade</span>
+                        <div class="complexity-dots">
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="area-card-uniform">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+
+                <!-- Card 03 -->
+                <div class="produto-card">
+                    <span class="produto-badge">03</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
                     </div>
-                    <h3>Análise de Cenários</h3>
-                    <p>Matriz de risco, probabilidades de êxito, OKRs processuais e mapa de calor decisório.</p>
+                    <h3>Estratégia Recursal Avançada</h3>
+                    <p>Atuação perante STF, STJ, TST e tribunais regionais com teses inovadoras e timing recursal estratégico.</p>
+                    <div class="produto-complexity">
+                        <span>Complexidade</span>
+                        <div class="complexity-dots">
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 04 -->
+                <div class="produto-card">
+                    <span class="produto-badge">04</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3>Contencioso de Alto Valor</h3>
+                    <p>Gestão de causas com valores expressivos, análise de risco-retorno e estratégia de maximização de resultados financeiros.</p>
+                    <div class="produto-complexity">
+                        <span>Complexidade</span>
+                        <div class="complexity-dots">
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 05 -->
+                <div class="produto-card">
+                    <span class="produto-badge">05</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+                    </div>
+                    <h3>Arbitragem e Mediação</h3>
+                    <p>Representação em câmaras arbitrais e mediação estratégica para resolução eficiente de disputas empresariais complexas.</p>
+                    <div class="produto-complexity">
+                        <span>Complexidade</span>
+                        <div class="complexity-dots">
+                            <div class="complexity-dot active"></div>
+                            <div class="complexity-dot active"></div>
+                            <div class="complexity-dot active"></div>
+                            <div class="complexity-dot"></div>
+                            <div class="complexity-dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 06 -->
+                <div class="produto-card">
+                    <span class="produto-badge">06</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <h3>Ações Coletivas e ACP</h3>
+                    <p>Defesa e propositura de ações civis públicas e ações coletivas com impacto sistêmico e abrangência multi-jurisdicional.</p>
+                    <div class="produto-complexity">
+                        <span>Complexidade</span>
+                        <div class="complexity-dots">
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                            <div class="complexity-dot active high"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 07 -->
+                <div class="produto-card">
+                    <span class="produto-badge">07</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                    </div>
+                    <h3>Recuperação de Ativos</h3>
+                    <p>Rastreamento patrimonial, medidas constritivas e execução de créditos com inteligência investigativa e ferramentas digitais.</p>
+                    <div class="produto-complexity">
+                        <span>Complexidade</span>
+                        <div class="complexity-dots">
+                            <div class="complexity-dot active"></div>
+                            <div class="complexity-dot active"></div>
+                            <div class="complexity-dot active"></div>
+                            <div class="complexity-dot active"></div>
+                            <div class="complexity-dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 08 -->
+                <div class="produto-card">
+                    <span class="produto-badge">08</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </div>
+                    <h3>Consultoria Pré-Contencioso</h3>
+                    <p>Parecer estratégico, análise de viabilidade, mapeamento de riscos e planejamento preventivo antes da judicialização.</p>
+                    <div class="produto-complexity">
+                        <span>Complexidade</span>
+                        <div class="complexity-dots">
+                            <div class="complexity-dot active"></div>
+                            <div class="complexity-dot active"></div>
+                            <div class="complexity-dot active"></div>
+                            <div class="complexity-dot"></div>
+                            <div class="complexity-dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EQUIPE SECTION ==================== -->
+    <section class="equipe-section">
+        <div class="container">
+            <div class="section-header-white">
+                <span class="section-tag">Equipe Estratégica</span>
+                <h2 class="section-title">Profissionais que <span style="color: var(--accent-blue);">lideram</span> resultados</h2>
+                <p class="section-desc">Advogados com experiência em tribunais superiores e gestão de litígios de alto impacto.</p>
+            </div>
+            <div class="equipe-grid">
+                <div class="equipe-card">
+                    <div class="equipe-avatar">KI</div>
+                    <h3>Kairo Ícaro</h3>
+                    <div class="equipe-role">Sócio Fundador</div>
+                    <p class="equipe-desc">Estrategista jurídico com foco em grandes litígios, tribunais superiores e gestão processual orientada por dados.</p>
+                </div>
+                <div class="equipe-card">
+                    <div class="equipe-avatar">WA</div>
+                    <h3>Welington Albuquerque</h3>
+                    <div class="equipe-role">Sócio</div>
+                    <p class="equipe-desc">Especialista em contencioso estratégico, arbitragem e recuperação de ativos em múltiplas jurisdições.</p>
+                </div>
+                <div class="equipe-card">
+                    <div class="equipe-avatar">DV</div>
+                    <h3>Drielly Vasques</h3>
+                    <div class="equipe-role">Advogada Sênior</div>
+                    <p class="equipe-desc">Atuação em ações coletivas, jurimetria aplicada e contencioso de alto valor com foco em resultados mensuráveis.</p>
                 </div>
             </div>
         </div>
@@ -251,9 +769,9 @@
                     <h4>Serviços</h4>
                     <ul>
                         <li><a href="#areas">Gestão de Grandes Litígios</a></li>
-                        <li><a href="#areas">Teses Inovadoras</a></li>
-                        <li><a href="#areas">Tribunais Superiores</a></li>
-                        <li><a href="#areas">Análise de Cenários</a></li>
+                        <li><a href="#areas">Jurimetria e Análise Preditiva</a></li>
+                        <li><a href="#areas">Estratégia Recursal Avançada</a></li>
+                        <li><a href="#areas">Contencioso de Alto Valor</a></li>
                     </ul>
                 </div>
                 <div class="footer-links-group">

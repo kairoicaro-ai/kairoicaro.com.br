@@ -254,6 +254,272 @@
         .lgpd-btn {
             background: linear-gradient(135deg, #1565C0, #1E88E5) !important;
         }
+
+        /* ==================== PREMIUM PRODUTO JURIDICO CARDS ==================== */
+        .produtos-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+        @media (max-width: 1024px) {
+            .produtos-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .produtos-grid { grid-template-columns: 1fr; }
+        }
+        .produto-card {
+            position: relative;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(21, 101, 192, 0.12);
+            border-radius: 16px;
+            padding: 32px 28px 28px;
+            transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+            cursor: default;
+            overflow: hidden;
+        }
+        .produto-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #1565C0, #42A5F5);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .produto-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(21, 101, 192, 0.5);
+            box-shadow: 0 12px 40px rgba(21, 101, 192, 0.2), 0 0 0 1px rgba(21, 101, 192, 0.15);
+            background: rgba(21, 101, 192, 0.04);
+        }
+        .produto-card:hover::before {
+            opacity: 1;
+        }
+        .produto-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            color: rgba(21, 101, 192, 0.2);
+            line-height: 1;
+        }
+        .produto-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: rgba(21, 101, 192, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1E88E5;
+            margin-bottom: 20px;
+            transition: all 0.4s ease;
+        }
+        .produto-card:hover .produto-icon {
+            background: #1565C0;
+            color: #fff;
+            transform: scale(1.05);
+        }
+        .produto-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        .produto-card p {
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.55);
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        /* ==================== METHODOLOGY SECTION ==================== */
+        .methodology-section {
+            background: linear-gradient(180deg, rgba(13,71,161,0.04) 0%, transparent 100%);
+        }
+        .method-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            margin-top: 48px;
+            position: relative;
+        }
+        .method-grid::before {
+            content: '';
+            position: absolute;
+            top: 44px;
+            left: 12.5%;
+            right: 12.5%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(21,101,192,0.3), rgba(21,101,192,0.3), transparent);
+            z-index: 0;
+        }
+        @media (max-width: 768px) {
+            .method-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .method-grid::before {
+                display: none;
+            }
+        }
+        .method-step {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 0 16px;
+        }
+        .method-number {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: rgba(21, 101, 192, 0.1);
+            border: 2px solid rgba(21, 101, 192, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #42A5F5;
+            transition: all 0.3s ease;
+        }
+        .method-step:hover .method-number {
+            background: #1565C0;
+            color: #fff;
+            border-color: #1565C0;
+            transform: scale(1.1);
+        }
+        .method-step h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .method-step p {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.5;
+        }
+
+        /* ==================== TEAM HIGHLIGHT ==================== */
+        .team-highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+        @media (max-width: 768px) {
+            .team-highlight-grid { grid-template-columns: 1fr; }
+        }
+        .team-highlight-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(21, 101, 192, 0.15);
+            border-radius: 20px;
+            padding: 36px 28px;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+        .team-highlight-card:hover {
+            border-color: rgba(21, 101, 192, 0.4);
+            box-shadow: 0 12px 40px rgba(21, 101, 192, 0.15);
+            transform: translateY(-4px);
+        }
+        .team-highlight-card.lead {
+            border-color: rgba(21, 101, 192, 0.3);
+            background: rgba(21, 101, 192, 0.05);
+        }
+        .team-avatar {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 3px solid rgba(21, 101, 192, 0.3);
+        }
+        .team-highlight-card.lead .team-avatar {
+            border-color: #1565C0;
+            width: 96px;
+            height: 96px;
+        }
+        .team-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .team-avatar-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(21, 101, 192, 0.15);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #42A5F5;
+        }
+        .team-role-badge {
+            display: inline-block;
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #42A5F5;
+            background: rgba(21, 101, 192, 0.1);
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+        .team-highlight-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+        .team-highlight-card .team-title {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 16px;
+        }
+        .team-stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .team-stat-item {
+            text-align: center;
+        }
+        .team-stat-item .ts-value {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #42A5F5;
+        }
+        .team-stat-item .ts-label {
+            display: block;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: rgba(255,255,255,0.4);
+        }
+        .team-specialty-tag {
+            display: inline-block;
+            margin-top: 16px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: rgba(255,255,255,0.6);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 5px 14px;
+            border-radius: 20px;
+        }
     </style>
 
     <!-- Schema.org JSON-LD -->
@@ -306,8 +572,9 @@
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
-                <li><a href="#areas" class="nav-link">Áreas de Atuação</a></li>
+                <li><a href="#areas" class="nav-link">Produtos Jurídicos</a></li>
                 <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                <li><a href="#metodologia" class="nav-link">Metodologia</a></li>
                 <li><a href="#equipe" class="nav-link">Equipe</a></li>
                 <li><a href="#contato" class="nav-link nav-cta">Fale Conosco</a></li>
             </ul>
@@ -470,43 +737,87 @@
         </div>
     </section>
 
-    <!-- ==================== AREAS OF PRACTICE ==================== -->
+    <!-- ==================== PRODUTOS JURIDICOS ==================== -->
     <section id="areas" class="section areas">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Áreas de Atuação</span>
-                <h2 class="section-title">Especialistas em <span class="text-green">Direito Empresarial</span></h2>
-                <p class="section-desc">Soluções jurídicas completas para proteger e impulsionar o crescimento do seu negócio.</p>
+                <span class="section-tag">Produtos Jurídicos</span>
+                <h2 class="section-title">Soluções especializadas para o seu <span class="text-green">negócio</span></h2>
+                <p class="section-desc">Cada serviço foi desenhado para atender demandas reais de empresas com segurança, estratégia e resultados mensuráveis.</p>
             </div>
-            <div class="areas-grid areas-grid-uniform">
-                <a href="area-empresarial.html" class="area-card-uniform" id="area-empresarial">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            <div class="produtos-grid">
+                <!-- 01 -->
+                <div class="produto-card">
+                    <span class="produto-badge">01</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
                     </div>
-                    <h3>Direito Empresarial</h3>
-                    <p>Consultoria estratégica para constituição, reestruturação e operação de empresas, incluindo fusões, aquisições e due diligence corporativa.</p>
-                </a>
-                <a href="#" class="area-card-uniform" id="area-contratos">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    <h3>Direito Empresarial e Societário</h3>
+                    <p>Constituição, reestruturação e governança corporativa. Acordos de sócios e resolução de conflitos societários.</p>
+                </div>
+                <!-- 02 -->
+                <div class="produto-card">
+                    <span class="produto-badge">02</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                     </div>
                     <h3>Contratos Comerciais</h3>
-                    <p>Elaboração, revisão e negociação de contratos empresariais, comerciais, de prestação de serviços, franquias e acordos de confidencialidade.</p>
-                </a>
-                <a href="area-trabalhista.html" class="area-card-uniform" id="area-trabalhista">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    <p>Elaboração, revisão e negociação de contratos empresariais, franquias, NDAs e acordos de distribuição.</p>
+                </div>
+                <!-- 03 -->
+                <div class="produto-card">
+                    <span class="produto-badge">03</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                     </div>
                     <h3>Trabalhista Empresarial</h3>
-                    <p>Defesa em reclamações trabalhistas, consultoria preventiva, compliance trabalhista e gestão de riscos para o empregador.</p>
-                </a>
-                <a href="#" class="area-card-uniform" id="area-societario">
-                    <div class="area-icon-uniform">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                    <p>Defesa em reclamações, compliance trabalhista, auditoria de riscos e gestão preventiva para empregadores.</p>
+                </div>
+                <!-- 04 -->
+                <div class="produto-card">
+                    <span class="produto-badge">04</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                     </div>
-                    <h3>Direito Societário</h3>
-                    <p>Acordos de sócios, governança corporativa, resolução de conflitos societários, planejamento sucessório empresarial e holdings familiares.</p>
-                </a>
+                    <h3>Compliance Corporativo</h3>
+                    <p>Programas de conformidade, políticas internas, canal de denúncias e governança ESG sob medida.</p>
+                </div>
+                <!-- 05 -->
+                <div class="produto-card">
+                    <span class="produto-badge">05</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3>Recuperação de Crédito</h3>
+                    <p>Cobrança estratégica judicial e extrajudicial, execução de títulos e recuperação de ativos empresariais.</p>
+                </div>
+                <!-- 06 -->
+                <div class="produto-card">
+                    <span class="produto-badge">06</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    </div>
+                    <h3>M&amp;A e Due Diligence</h3>
+                    <p>Fusões, aquisições, auditorias legais e suporte na estruturação de operações societárias complexas.</p>
+                </div>
+                <!-- 07 -->
+                <div class="produto-card">
+                    <span class="produto-badge">07</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    </div>
+                    <h3>LGPD e Proteção de Dados</h3>
+                    <p>Adequação à LGPD, políticas de privacidade, DPO as a Service e gestão de incidentes de dados.</p>
+                </div>
+                <!-- 08 -->
+                <div class="produto-card">
+                    <span class="produto-badge">08</span>
+                    <div class="produto-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1m-2 0h2"/></svg>
+                    </div>
+                    <h3>Planejamento Sucessório</h3>
+                    <p>Holdings familiares, testamentos, doações e estruturação patrimonial para proteção intergeracional.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -555,137 +866,98 @@
         </div>
     </section>
 
+    <!-- ==================== METODOLOGIA ==================== -->
+    <section id="metodologia" class="section methodology-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nossa Metodologia</span>
+                <h2 class="section-title">Como entregamos <span class="text-green">resultados</span> para sua empresa</h2>
+                <p class="section-desc">Um processo estruturado que combina expertise jurídica, tecnologia e visão estratégica de negócios.</p>
+            </div>
+            <div class="method-grid">
+                <div class="method-step">
+                    <div class="method-number">1</div>
+                    <h3>Diagnóstico</h3>
+                    <p>Análise completa da situação jurídica da empresa, riscos existentes e oportunidades de proteção.</p>
+                </div>
+                <div class="method-step">
+                    <div class="method-number">2</div>
+                    <h3>Estratégia</h3>
+                    <p>Planejamento jurídico personalizado com cenários, prazos e métricas claras de sucesso.</p>
+                </div>
+                <div class="method-step">
+                    <div class="method-number">3</div>
+                    <h3>Execução</h3>
+                    <p>Implementação ágil com acompanhamento em tempo real via plataforma digital e IA.</p>
+                </div>
+                <div class="method-step">
+                    <div class="method-number">4</div>
+                    <h3>Monitoramento</h3>
+                    <p>Relatórios periódicos, alertas proativos e ajustes estratégicos para proteção contínua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ==================== EQUIPE ==================== -->
     <section id="equipe" class="section team-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Nossa Equipe</span>
-                <h2 class="section-title">Especialistas em <span class="text-green">Direito Empresarial</span></h2>
-                <p class="section-desc">Advogados com expertise em negócios, contratos e contencioso estratégico empresarial.</p>
+                <span class="section-tag">Equipe Especializada</span>
+                <h2 class="section-title">Quem cuida do seu <span class="text-green">negócio</span></h2>
+                <p class="section-desc">Advogados dedicados à área empresarial, com experiência comprovada em contencioso e assessoria corporativa.</p>
             </div>
-            <div class="fifa-grid">
-                <!-- Founder Card -->
-                <div class="fifa-card fifa-card-gold">
-                    <div class="fifa-card-inner">
-                        <div class="fifa-photo"><img src="img/equipe/kairo.jpg" alt="Kairo Ícaro"></div>
-                        <div class="fifa-name">Kairo Ícaro</div>
-                        <div class="fifa-role">Sócio Fundador</div>
-                        <div class="fifa-stats">
-                            <div class="fifa-stat"><span class="fifa-stat-value">10</span><span class="fifa-stat-label">EMP</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">10</span><span class="fifa-stat-label">EST</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">10</span><span class="fifa-stat-label">LID</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">NEG</span></div>
-                        </div>
-                        <div class="fifa-specialty">Empresarial e Estratégia</div>
+            <div class="team-highlight-grid">
+                <!-- Welington -->
+                <div class="team-highlight-card lead">
+                    <div class="team-avatar">
+                        <div class="team-avatar-placeholder">WA</div>
                     </div>
-                </div>
-                <!-- Drielly -->
-                <div class="fifa-card fifa-card-silver">
-                    <div class="fifa-card-inner">
-                        <div class="fifa-photo"><img src="img/equipe/drielly.jpg" alt="Drielly Vasques"></div>
-                        <div class="fifa-name">Drielly Vasques</div>
-                        <div class="fifa-role">Advogada</div>
-                        <div class="fifa-stats">
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">ESG</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">COM</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">EMP</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">GOV</span></div>
-                        </div>
-                        <div class="fifa-specialty">Compliance, ESG, Governança</div>
+                    <span class="team-role-badge">Advogado Sênior</span>
+                    <h3>Welington Albuquerque</h3>
+                    <p class="team-title">Coordenador de Direito Empresarial</p>
+                    <div class="team-stats-row">
+                        <div class="team-stat-item"><span class="ts-value">10</span><span class="ts-label">CIV</span></div>
+                        <div class="team-stat-item"><span class="ts-value">9</span><span class="ts-label">EMP</span></div>
+                        <div class="team-stat-item"><span class="ts-value">9</span><span class="ts-label">CON</span></div>
+                        <div class="team-stat-item"><span class="ts-value">9</span><span class="ts-label">EST</span></div>
                     </div>
-                </div>
-                <!-- Gabriel -->
-                <div class="fifa-card">
-                    <div class="fifa-card-inner">
-                        <div class="fifa-photo"><img src="img/equipe/gabriel.jpg" alt="Gabriel Monteiro"></div>
-                        <div class="fifa-name">Gabriel Monteiro</div>
-                        <div class="fifa-role">Advogado</div>
-                        <div class="fifa-stats">
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">TRA</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">EMP</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">NEG</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">CON</span></div>
-                        </div>
-                        <div class="fifa-specialty">Trabalhista Empresarial</div>
-                    </div>
+                    <span class="team-specialty-tag">Cível, Empresarial, Contratos</span>
                 </div>
                 <!-- Mariana -->
-                <div class="fifa-card">
-                    <div class="fifa-card-inner">
-                        <div class="fifa-photo"><img src="img/equipe/mariana.jpg" alt="Mariana Martinelli"></div>
-                        <div class="fifa-name">Mariana Martinelli</div>
-                        <div class="fifa-role">Advogada</div>
-                        <div class="fifa-stats">
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">TRA</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">EMP</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">CON</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">NEG</span></div>
-                        </div>
-                        <div class="fifa-specialty">Trabalhista e Empresarial</div>
+                <div class="team-highlight-card">
+                    <div class="team-avatar">
+                        <img src="img/equipe/mariana.jpg" alt="Mariana Martinelli">
                     </div>
+                    <span class="team-role-badge">Advogada</span>
+                    <h3>Mariana Martinelli</h3>
+                    <p class="team-title">Direito Empresarial e Trabalhista</p>
+                    <div class="team-stats-row">
+                        <div class="team-stat-item"><span class="ts-value">9</span><span class="ts-label">EMP</span></div>
+                        <div class="team-stat-item"><span class="ts-value">9</span><span class="ts-label">TRA</span></div>
+                        <div class="team-stat-item"><span class="ts-value">8</span><span class="ts-label">CON</span></div>
+                        <div class="team-stat-item"><span class="ts-value">8</span><span class="ts-label">NEG</span></div>
+                    </div>
+                    <span class="team-specialty-tag">Trabalhista, Empresarial</span>
                 </div>
-                <!-- Laura -->
-                <div class="fifa-card">
-                    <div class="fifa-card-inner">
-                        <div class="fifa-photo"><img src="img/equipe/laura.jpg" alt="Laura Barbosa"></div>
-                        <div class="fifa-name">Laura Barbosa</div>
-                        <div class="fifa-role">Advogada</div>
-                        <div class="fifa-stats">
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">TRA</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">EMP</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">CON</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">NEG</span></div>
-                        </div>
-                        <div class="fifa-specialty">Trabalhista Empresarial</div>
+                <!-- Drielly -->
+                <div class="team-highlight-card">
+                    <div class="team-avatar">
+                        <img src="img/equipe/drielly.jpg" alt="Drielly Vasques">
                     </div>
-                </div>
-                <!-- Augusto -->
-                <div class="fifa-card">
-                    <div class="fifa-card-inner">
-                        <div class="fifa-photo"><div class="fifa-photo-placeholder">AQ</div></div>
-                        <div class="fifa-name">Augusto P. B. de Queiroz</div>
-                        <div class="fifa-role">Advogado</div>
-                        <div class="fifa-stats">
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">TRI</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">EMP</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">SOC</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">CON</span></div>
-                        </div>
-                        <div class="fifa-specialty">Tributário e Societário</div>
+                    <span class="team-role-badge">Advogada</span>
+                    <h3>Drielly Vasques</h3>
+                    <p class="team-title">Compliance, ESG e Governança</p>
+                    <div class="team-stats-row">
+                        <div class="team-stat-item"><span class="ts-value">9</span><span class="ts-label">ESG</span></div>
+                        <div class="team-stat-item"><span class="ts-value">9</span><span class="ts-label">COM</span></div>
+                        <div class="team-stat-item"><span class="ts-value">9</span><span class="ts-label">EMP</span></div>
+                        <div class="team-stat-item"><span class="ts-value">8</span><span class="ts-label">GOV</span></div>
                     </div>
-                </div>
-                <!-- Guilherme -->
-                <div class="fifa-card">
-                    <div class="fifa-card-inner">
-                        <div class="fifa-photo"><img src="img/equipe/guilherme.jpg" alt="Guilherme H. V. de Andrade"></div>
-                        <div class="fifa-name">Guilherme H. V. de Andrade</div>
-                        <div class="fifa-role">Advogado</div>
-                        <div class="fifa-stats">
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">TRA</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">EMP</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">CON</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">8</span><span class="fifa-stat-label">NEG</span></div>
-                        </div>
-                        <div class="fifa-specialty">Trabalhista e Contratos</div>
-                    </div>
-                </div>
-                <!-- Roney -->
-                <div class="fifa-card">
-                    <div class="fifa-card-inner">
-                        <div class="fifa-photo"><img src="img/equipe/roney.jpg" alt="Roney D'Montier"></div>
-                        <div class="fifa-name">Roney D'Montier</div>
-                        <div class="fifa-role">Ger. Desenvolvimento</div>
-                        <div class="fifa-stats">
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">EST</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">NEG</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">GES</span></div>
-                            <div class="fifa-stat"><span class="fifa-stat-value">9</span><span class="fifa-stat-label">TEC</span></div>
-                        </div>
-                        <div class="fifa-specialty">Desenvolvimento Estratégico</div>
-                    </div>
+                    <span class="team-specialty-tag">ESG, Compliance, Governança</span>
                 </div>
             </div>
-            <p class="team-footer-note">Além da equipe acima, contamos com uma rede de <strong>advogados colaboradores</strong> especializados em Direito Empresarial atuando em 12 estados brasileiros.</p>
+            <p class="team-footer-note">Além da equipe dedicada, contamos com o suporte de <strong>advogados colaboradores</strong> especializados em Direito Empresarial atuando em 12 estados brasileiros.</p>
         </div>
     </section>
 
