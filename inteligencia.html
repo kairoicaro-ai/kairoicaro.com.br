@@ -824,6 +824,157 @@
             .modal { padding: 24px; }
         }
 
+        /* ======= MAP FILTER PANEL ======= */
+        .map-filter-panel {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 24px 28px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(12px);
+        }
+        .map-filter-panel h3 {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: #86E600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .filter-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr auto auto;
+            gap: 14px;
+            align-items: end;
+        }
+        .filter-group { display: flex; flex-direction: column; }
+        .filter-group label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .filter-group input,
+        .filter-group select {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            color: #E8EDF2;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .filter-group input:focus,
+        .filter-group select:focus {
+            border-color: #86E600;
+        }
+        .filter-group select option { background: #0F2944; color: #E8EDF2; }
+        .filter-group input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(0.7);
+        }
+        .btn-filter {
+            padding: 10px 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .btn-filter:hover { transform: translateY(-1px); }
+        .btn-filter-apply {
+            background: linear-gradient(135deg, #86E600, #97F513);
+            color: #0F2944;
+        }
+        .btn-filter-apply:hover { box-shadow: 0 4px 16px rgba(134,230,0,0.3); }
+        .btn-filter-reset {
+            background: rgba(255,255,255,0.08);
+            color: rgba(255,255,255,0.7);
+            border: 1px solid rgba(255,255,255,0.12);
+        }
+        .btn-filter-reset:hover { background: rgba(255,255,255,0.12); }
+
+        /* Map loading overlay */
+        .map-loading-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(10, 31, 51, 0.85);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            border-radius: 16px;
+            transition: opacity 0.4s;
+        }
+        .map-loading-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .map-loading-spinner {
+            width: 40px; height: 40px;
+            border: 3px solid rgba(134,230,0,0.2);
+            border-top-color: #86E600;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 12px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .map-loading-text {
+            font-size: 0.82rem;
+            color: rgba(255,255,255,0.6);
+            font-weight: 600;
+        }
+
+        /* Leaflet layer control custom styling */
+        .leaflet-control-layers {
+            background: rgba(15, 41, 68, 0.95) !important;
+            border: 1px solid rgba(134,230,0,0.2) !important;
+            border-radius: 12px !important;
+            color: #E8EDF2 !important;
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: 0.78rem !important;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4) !important;
+            padding: 12px 16px !important;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .leaflet-control-layers-separator {
+            border-top-color: rgba(255,255,255,0.1) !important;
+            margin: 8px 0 !important;
+        }
+        .leaflet-control-layers label {
+            margin-bottom: 4px;
+            display: flex !important;
+            align-items: center;
+            gap: 6px;
+        }
+        .leaflet-control-layers-base label {
+            font-weight: 600;
+        }
+
+        @media (max-width: 900px) {
+            .filter-row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 600px) {
+            .filter-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Leaflet tooltip custom style */
         .leaflet-tooltip-rr {
             background: rgba(15, 41, 68, 0.95) !important;
@@ -850,6 +1001,8 @@
     <!-- Leaflet.js -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Esri Leaflet (for ArcGIS REST layers) -->
+    <script src="https://unpkg.com/esri-leaflet@3.0.12/dist/esri-leaflet.js"></script>
 </head>
 <body>
 
@@ -1114,9 +1267,46 @@
             <h2 class="section-title">Mapa de Monitoramento <span>Ambiental</span> — Roraima</h2>
             <p class="section-subtitle" style="color:rgba(255,255,255,0.5);">Visualize a situacao ambiental de cada municipio do estado</p>
 
+            <!-- Filter Panel -->
+            <div class="map-filter-panel">
+                <h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg> Filtros de Camadas Ambientais</h3>
+                <div class="filter-row">
+                    <div class="filter-group">
+                        <label>Camada de dados</label>
+                        <select id="filter-layer">
+                            <option value="">Todas as camadas</option>
+                            <option value="ibama">Embargos IBAMA</option>
+                            <option value="car">CAR - Cadastro Ambiental</option>
+                            <option value="deter">Desmatamento (DETER)</option>
+                            <option value="queimadas">Focos de Calor</option>
+                            <option value="icmbio">Unidades Conservacao</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Buscar por municipio</label>
+                        <input type="text" id="filter-municipio" placeholder="Ex: Boa Vista" list="municipios-list">
+                        <datalist id="municipios-list"></datalist>
+                    </div>
+                    <div class="filter-group">
+                        <label>Periodo (inicio)</label>
+                        <input type="date" id="filter-date-start">
+                    </div>
+                    <div class="filter-group">
+                        <label>Periodo (fim)</label>
+                        <input type="date" id="filter-date-end">
+                    </div>
+                    <button class="btn-filter btn-filter-apply" id="btn-aplicar-filtro" title="Aplicar filtros">Aplicar</button>
+                    <button class="btn-filter btn-filter-reset" id="btn-resetar-filtro" title="Resetar filtros">Resetar</button>
+                </div>
+            </div>
+
             <div class="map-layout">
-                <div class="map-container" style="padding:0;overflow:hidden;">
+                <div class="map-container" style="padding:0;overflow:hidden;position:relative;">
                     <div id="rr-map" style="width:100%;height:600px;border-radius:16px;overflow:hidden;"></div>
+                    <div class="map-loading-overlay" id="map-loading">
+                        <div class="map-loading-spinner"></div>
+                        <div class="map-loading-text">Carregando camadas...</div>
+                    </div>
                 </div>
 
                 <div class="map-sidebar">
@@ -1639,6 +1829,21 @@
             return null;
         }
 
+        // ============================
+        // MAP INITIALIZATION WITH DATA LAYERS
+        // ============================
+        var mapLoading = document.getElementById('map-loading');
+        var layersLoading = 0;
+
+        function showMapLoading() {
+            layersLoading++;
+            if (mapLoading) mapLoading.classList.remove('hidden');
+        }
+        function hideMapLoading() {
+            layersLoading = Math.max(0, layersLoading - 1);
+            if (layersLoading === 0 && mapLoading) mapLoading.classList.add('hidden');
+        }
+
         var rrMap = L.map('rr-map', {
             center: [2.5, -61.0],
             zoom: 7,
@@ -1647,13 +1852,107 @@
             attributionControl: false
         });
 
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-            maxZoom: 12,
+        // === BASE LAYERS ===
+        var darkTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            maxZoom: 18,
             opacity: 0.5
-        }).addTo(rrMap);
+        });
+        darkTiles.addTo(rrMap);
 
+        var satelliteTiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Esri',
+            maxZoom: 18
+        });
+
+        // === OVERLAY LAYERS ===
+
+        // 1. IBAMA Embargos (Esri Dynamic Map Layer)
+        var ibamaEmbargos = null;
+        try {
+            ibamaEmbargos = L.esri.dynamicMapLayer({
+                url: 'https://pamgia.ibama.gov.br/server/rest/services/01_Publicacoes_Bases/embargos_siscom_brasil/MapServer',
+                opacity: 0.7,
+                layers: [2]
+            });
+            ibamaEmbargos.on('loading', showMapLoading);
+            ibamaEmbargos.on('load', hideMapLoading);
+            ibamaEmbargos.on('error', function() { hideMapLoading(); console.warn('IBAMA layer failed to load'); });
+        } catch(e) {
+            console.warn('Esri Leaflet not available or IBAMA layer error:', e);
+        }
+
+        // 2. SICAR - Cadastro Ambiental Rural (WMS)
+        var sicarCAR = null;
+        try {
+            sicarCAR = L.tileLayer.wms('https://geoserver.car.gov.br/geoserver/sicar/wms', {
+                layers: 'sicar:sicar_imoveis_rr',
+                format: 'image/png',
+                transparent: true,
+                opacity: 0.6,
+                attribution: 'SICAR/SFB'
+            });
+            sicarCAR.on('loading', showMapLoading);
+            sicarCAR.on('load', hideMapLoading);
+            sicarCAR.on('tileerror', function() { hideMapLoading(); console.warn('SICAR layer tile error'); });
+        } catch(e) {
+            console.warn('SICAR CAR layer error:', e);
+        }
+
+        // 3. INPE DETER - Desmatamento (WMS)
+        var deterDesmat = null;
+        try {
+            deterDesmat = L.tileLayer.wms('https://terrabrasilis.dpi.inpe.br/geoserver/deter-amz/wms', {
+                layers: 'deter_public',
+                format: 'image/png',
+                transparent: true,
+                opacity: 0.7,
+                attribution: 'INPE/DETER'
+            });
+            deterDesmat.on('loading', showMapLoading);
+            deterDesmat.on('load', hideMapLoading);
+            deterDesmat.on('tileerror', function() { hideMapLoading(); console.warn('DETER layer tile error'); });
+        } catch(e) {
+            console.warn('DETER layer error:', e);
+        }
+
+        // 4. INPE Queimadas - Focos de calor (WMS)
+        var queimadas = null;
+        try {
+            queimadas = L.tileLayer.wms('https://terrabrasilis.dpi.inpe.br/geoserver/queimadas/wms', {
+                layers: 'focos',
+                format: 'image/png',
+                transparent: true,
+                opacity: 0.8,
+                attribution: 'INPE/Queimadas'
+            });
+            queimadas.on('loading', showMapLoading);
+            queimadas.on('load', hideMapLoading);
+            queimadas.on('tileerror', function() { hideMapLoading(); console.warn('Queimadas layer tile error'); });
+        } catch(e) {
+            console.warn('Queimadas layer error:', e);
+        }
+
+        // 5. ICMBio - Unidades de Conservacao (WMS)
+        var icmbioUCs = null;
+        try {
+            icmbioUCs = L.tileLayer.wms('https://geoservicos.inde.gov.br/geoserver/ICMBio/wms', {
+                layers: 'ICMBio:ucstodas',
+                format: 'image/png',
+                transparent: true,
+                opacity: 0.5,
+                attribution: 'ICMBio'
+            });
+            icmbioUCs.on('loading', showMapLoading);
+            icmbioUCs.on('load', hideMapLoading);
+            icmbioUCs.on('tileerror', function() { hideMapLoading(); console.warn('ICMBio layer tile error'); });
+        } catch(e) {
+            console.warn('ICMBio layer error:', e);
+        }
+
+        // === MUNICIPIOS GEOJSON LAYER (default visible) ===
         var geojsonLayer;
         var highlightedLayer = null;
+        var municipioBounds = {}; // store bounds for each municipality for search
 
         var defaultStyle = function(feature) {
             var nome = feature.properties.NOME || feature.properties.nome || '';
@@ -1677,6 +1976,11 @@
         function onEachFeature(feature, layer) {
             var nome = feature.properties.NOME || feature.properties.nome || 'Desconhecido';
             var data = findEnvData(nome);
+
+            // Store bounds for municipality search
+            layer.on('add', function() {
+                try { municipioBounds[nome] = layer.getBounds(); } catch(e) {}
+            });
 
             layer.on({
                 mouseover: function(e) {
@@ -1713,6 +2017,7 @@
             }
         }
 
+        showMapLoading();
         fetch('data/geo/rr_municipios_light.json')
             .then(function(res) { return res.json(); })
             .then(function(geoData) {
@@ -1722,29 +2027,80 @@
                 }).addTo(rrMap);
 
                 rrMap.fitBounds(geojsonLayer.getBounds().pad(0.05));
+
+                // Populate municipality datalist for search filter
+                var datalist = document.getElementById('municipios-list');
+                if (datalist) {
+                    geojsonLayer.eachLayer(function(layer) {
+                        var nome = layer.feature.properties.NOME || layer.feature.properties.nome || '';
+                        if (nome) {
+                            municipioBounds[nome] = layer.getBounds();
+                            var opt = document.createElement('option');
+                            opt.value = nome;
+                            datalist.appendChild(opt);
+                        }
+                    });
+                }
+
+                hideMapLoading();
             })
             .catch(function(err) {
                 console.warn('GeoJSON nao carregado:', err);
+                hideMapLoading();
             });
 
-        // Legend control
+        // === LAYER CONTROL ===
+        var baseLayers = {
+            'Mapa Escuro': darkTiles,
+            'Satelite (Esri)': satelliteTiles
+        };
+
+        var overlays = {
+            '\ud83d\udfe2 Municipios (Preservacao)': geojsonLayer || L.layerGroup()
+        };
+        if (ibamaEmbargos) overlays['\ud83d\udd34 Areas Embargadas (IBAMA)'] = ibamaEmbargos;
+        if (sicarCAR) overlays['\ud83d\udfe1 CAR - Cadastro Ambiental'] = sicarCAR;
+        if (deterDesmat) overlays['\ud83d\udfe0 Desmatamento (DETER/INPE)'] = deterDesmat;
+        if (queimadas) overlays['\ud83d\udd25 Focos de Calor (INPE)'] = queimadas;
+        if (icmbioUCs) overlays['\ud83c\udf3f Unidades Conservacao (ICMBio)'] = icmbioUCs;
+
+        var layerControl = L.control.layers(baseLayers, overlays, {
+            collapsed: false,
+            position: 'topright'
+        }).addTo(rrMap);
+
+        // Update layer control reference once geojsonLayer is loaded
+        fetch('data/geo/rr_municipios_light.json').then(function() {
+            // geojsonLayer already loaded above, layer control will reference the object
+        }).catch(function() {});
+
+        // === UPDATED LEGEND ===
         var legend = L.control({ position: 'bottomright' });
         legend.onAdd = function() {
             var div = L.DomUtil.create('div', 'leaflet-legend-rr');
             div.innerHTML =
-                '<div style="background:rgba(15,41,68,0.92);padding:14px 18px;border-radius:12px;border:1px solid rgba(134,230,0,0.2);font-family:Montserrat,sans-serif;font-size:0.78rem;color:#E8EDF2;min-width:180px;">' +
-                '<div style="font-weight:700;margin-bottom:8px;font-size:0.85rem;">Preservacao</div>' +
-                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#1B5E20;"></span> Preservado (&gt;90%)</div>' +
-                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#2E7D32;"></span> Bom (75-90%)</div>' +
-                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#689F38;"></span> Alerta (70-74%)</div>' +
-                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#EF6C00;"></span> Critico (65-69%)</div>' +
-                '<div style="display:flex;align-items:center;gap:8px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#C62828;"></span> Emergencia (&lt;65%)</div>' +
+                '<div style="background:rgba(15,41,68,0.95);padding:16px 18px;border-radius:12px;border:1px solid rgba(134,230,0,0.2);font-family:Montserrat,sans-serif;font-size:0.75rem;color:#E8EDF2;min-width:200px;max-height:320px;overflow-y:auto;">' +
+                '<div style="font-weight:700;margin-bottom:10px;font-size:0.85rem;">Legenda</div>' +
+                '<div style="font-weight:600;margin-bottom:6px;font-size:0.78rem;color:#86E600;">Preservacao Municipal</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#1B5E20;"></span> Preservado (&gt;90%)</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#2E7D32;"></span> Bom (75-90%)</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#689F38;"></span> Alerta (70-74%)</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#EF6C00;"></span> Critico (65-69%)</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#C62828;"></span> Emergencia (&lt;65%)</div>' +
+                '<div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:8px;margin-top:4px;">' +
+                '<div style="font-weight:600;margin-bottom:6px;font-size:0.78rem;color:rgba(255,255,255,0.8);">Camadas de Dados</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#C62828;opacity:0.7;"></span> Embargos IBAMA</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;border:2px solid #FDD835;background:transparent;"></span> Imoveis CAR</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#EF6C00;opacity:0.7;"></span> Desmatamento DETER</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;margin-bottom:3px;"><span style="display:inline-block;width:14px;height:10px;border-radius:50%;background:#FF1744;"></span> Focos de Calor</div>' +
+                '<div style="display:flex;align-items:center;gap:8px;"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:repeating-linear-gradient(45deg,#4CAF50,#4CAF50 2px,transparent 2px,transparent 4px);border:1px solid #4CAF50;"></span> Unidades Conservacao</div>' +
+                '</div>' +
                 '</div>';
             return div;
         };
         legend.addTo(rrMap);
 
-        // Key location markers
+        // === KEY LOCATION MARKERS ===
         var greenIcon = L.divIcon({
             html: '<div style="background:#86E600;width:14px;height:14px;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.4);"></div>',
             className: '',
@@ -1775,6 +2131,77 @@
         L.marker([2.8155, -60.6830], { icon: blueIcon })
             .addTo(rrMap)
             .bindTooltip('<b style="color:#42A5F5;">FEMARH</b><br>Fundacao Estadual do Meio Ambiente', { className: 'leaflet-tooltip-rr', direction: 'top' });
+
+        // === FILTER PANEL LOGIC ===
+        var overlayMap = {
+            'ibama': ibamaEmbargos,
+            'car': sicarCAR,
+            'deter': deterDesmat,
+            'queimadas': queimadas,
+            'icmbio': icmbioUCs
+        };
+
+        document.getElementById('btn-aplicar-filtro').addEventListener('click', function() {
+            var selectedLayer = document.getElementById('filter-layer').value;
+            var municipioSearch = document.getElementById('filter-municipio').value.trim();
+
+            // Toggle the selected overlay layer on
+            if (selectedLayer && overlayMap[selectedLayer]) {
+                var layer = overlayMap[selectedLayer];
+                if (!rrMap.hasLayer(layer)) {
+                    layer.addTo(rrMap);
+                }
+            }
+
+            // Zoom to municipality if provided
+            if (municipioSearch) {
+                var normalize = function(str) {
+                    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+                };
+                var normalizedSearch = normalize(municipioSearch);
+                var found = false;
+
+                for (var mName in municipioBounds) {
+                    if (normalize(mName) === normalizedSearch || normalize(mName).indexOf(normalizedSearch) !== -1) {
+                        rrMap.fitBounds(municipioBounds[mName], { maxZoom: 10 });
+                        found = true;
+                        break;
+                    }
+                }
+
+                if (!found) {
+                    // Try partial match
+                    for (var mName2 in municipioBounds) {
+                        if (normalize(mName2).indexOf(normalizedSearch) !== -1) {
+                            rrMap.fitBounds(municipioBounds[mName2], { maxZoom: 10 });
+                            break;
+                        }
+                    }
+                }
+            }
+        });
+
+        document.getElementById('btn-resetar-filtro').addEventListener('click', function() {
+            // Reset form
+            document.getElementById('filter-layer').value = '';
+            document.getElementById('filter-municipio').value = '';
+            document.getElementById('filter-date-start').value = '';
+            document.getElementById('filter-date-end').value = '';
+
+            // Remove all overlay data layers
+            for (var key in overlayMap) {
+                if (overlayMap[key] && rrMap.hasLayer(overlayMap[key])) {
+                    rrMap.removeLayer(overlayMap[key]);
+                }
+            }
+
+            // Reset zoom to Roraima
+            if (geojsonLayer) {
+                rrMap.fitBounds(geojsonLayer.getBounds().pad(0.05));
+            } else {
+                rrMap.setView([2.5, -61.0], 7);
+            }
+        });
 
         // ============================
         // ANIMATE MAP SIDEBAR BARS ON SCROLL
