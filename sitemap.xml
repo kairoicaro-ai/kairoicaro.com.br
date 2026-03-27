@@ -1,153 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kairoicaro.com.br/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/novo-index.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/novo-index.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/site-3a.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/site-3a.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/site-negocios.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/site-negocios.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/site-complexidade.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/site-complexidade.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/site-desportivo.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/site-desportivo.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/site-consultoria.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/site-consultoria.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/site-eleitoral.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/site-eleitoral.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/site-estrategicos.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/site-estrategicos.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/site-governamental.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/site-governamental.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/site-auditoria.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/site-auditoria.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kairoicaro.com.br/area-ambiental.html</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kairoicaro.com.br/area-agrario.html</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kairoicaro.com.br/area-empresarial.html</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kairoicaro.com.br/area-trabalhista.html</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kairoicaro.com.br/area-civil.html</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kairoicaro.com.br/area-penal.html</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kairoicaro.com.br/area-tributario.html</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kairoicaro.com.br/area-administrativo.html</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kairoicaro.com.br/area-consumidor.html</loc>
-    <lastmod>2026-03-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kairoicaro.com.br/inteligencia.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/inteligencia.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/cartao-digital.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/cartao-digital.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/blog.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/calculadora.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/calculadora.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kairoicaro.com.br/esg.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/esg.html"/>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kairoicaro.com.br/mapa-brasil-kiaa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/mapa-brasil-kiaa.html"/>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kairoicaro.com.br/em-breve.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kairoicaro.com.br/em-breve.html"/>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
