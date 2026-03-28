@@ -1030,7 +1030,7 @@
             <p class="section-subtitle">Pesquise dados publicos de CAR, autos de infracao, imoveis rurais e propriedades</p>
 
             <div class="search-form-container">
-                <form id="searchForm" onsubmit="return handleSearch(event)">
+                <form id="searchForm">
                     <div class="search-form-grid">
                         <div class="form-group">
                             <label for="cpfCnpj">CPF / CNPJ</label>
@@ -1077,6 +1077,11 @@
                             </select>
                         </div>
                     </div>
+                    <!-- Anti-bot: honeypot -->
+                    <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                        <input type="text" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+                    <input type="hidden" name="_loaded" value="">
                     <button type="submit" class="btn-consultar">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
                         Consultar
@@ -1125,7 +1130,7 @@
                             2.8195 N, 60.6735 W
                         </div>
                     </div>
-                    <button class="btn-detalhes" onclick="openLeadModal('CAR', 'Fazenda Sao Marcos')">
+                    <button class="btn-detalhes" data-tipo="CAR" data-nome="Fazenda Sao Marcos">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
                         Ver detalhes completos
                     </button>
@@ -1165,7 +1170,7 @@
                             1.8167 N, 61.1278 W
                         </div>
                     </div>
-                    <button class="btn-detalhes" onclick="openLeadModal('CAR', 'Sitio Bela Vista')">
+                    <button class="btn-detalhes" data-tipo="CAR" data-nome="Sitio Bela Vista">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
                         Ver detalhes completos
                     </button>
@@ -1205,7 +1210,7 @@
                             0.8314 N, 60.3895 W
                         </div>
                     </div>
-                    <button class="btn-detalhes" onclick="openLeadModal('Auto de Infracao IBAMA', 'Fazenda Rio Branco')">
+                    <button class="btn-detalhes" data-tipo="Auto de Infracao IBAMA" data-nome="Fazenda Rio Branco">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
                         Ver detalhes completos
                     </button>
@@ -1219,7 +1224,7 @@
     <!-- ============================================================ -->
     <div class="modal-overlay" id="leadModal">
         <div class="modal">
-            <button class="modal-close" onclick="closeLeadModal()" aria-label="Fechar formulário">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Fechar formulário">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </button>
 
@@ -1227,7 +1232,7 @@
                 <h3>Receba o <span>relatorio completo</span></h3>
                 <p>Preencha seus dados para receber o relatorio detalhado com analise juridica</p>
 
-                <form id="leadForm" onsubmit="return handleLeadSubmit(event)">
+                <form id="leadForm">
                     <div class="form-group">
                         <label for="leadNome">Nome completo</label>
                         <input type="text" id="leadNome" placeholder="Seu nome completo" required>
@@ -1248,6 +1253,11 @@
                         <input type="checkbox" id="leadLgpd">
                         <label for="leadLgpd">Aceito receber comunicacoes do KIAA</label>
                     </div>
+                    <!-- Anti-bot: honeypot -->
+                    <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                        <input type="text" name="website_lead" tabindex="-1" autocomplete="off">
+                    </div>
+                    <input type="hidden" name="_loaded_lead" value="">
                     <button type="submit" class="btn-enviar-lead" id="btnEnviarLead">Enviar e receber relatorio</button>
                 </form>
                 <p class="modal-lgpd">Seus dados estao protegidos conforme a LGPD.<br>Lei Geral de Protecao de Dados (Lei 13.709/2018)</p>
@@ -1612,7 +1622,7 @@
     </footer>
 
     <!-- BACK TO TOP -->
-    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
     </button>
 
@@ -1688,6 +1698,43 @@
         });
 
         // ============================
+        // ANTI-BOT / CSRF PROTECTION
+        // ============================
+        (function() {
+            var ts = Date.now().toString();
+            var loadedFields = document.querySelectorAll('[name="_loaded"], [name="_loaded_lead"]');
+            for (var i = 0; i < loadedFields.length; i++) {
+                loadedFields[i].value = ts;
+            }
+        })();
+
+        function isBot(form, loadedFieldName) {
+            // Origin check
+            var origin = window.location.origin;
+            if (origin !== 'https://kairoicaro.com.br' && origin !== 'http://localhost' && origin.indexOf('localhost') === -1 && origin.indexOf('127.0.0.1') === -1 && origin.indexOf('github.io') === -1) {
+                console.warn('CSRF: origin mismatch');
+                return true;
+            }
+            // Honeypot check
+            var honeypotName = loadedFieldName === '_loaded_lead' ? 'website_lead' : 'website';
+            var honeypot = form.querySelector('[name="' + honeypotName + '"]');
+            if (honeypot && honeypot.value) {
+                console.warn('CSRF: honeypot filled');
+                return true;
+            }
+            // Timestamp check (submitted < 2s after page load)
+            var loadedField = form.querySelector('[name="' + loadedFieldName + '"]');
+            if (loadedField && loadedField.value) {
+                var elapsed = Date.now() - parseInt(loadedField.value, 10);
+                if (elapsed < 2000) {
+                    console.warn('CSRF: form submitted too quickly (' + elapsed + 'ms)');
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        // ============================
         // SEARCH FORM
         // ============================
         var currentConsultaTipo = '';
@@ -1695,6 +1742,7 @@
 
         function handleSearch(e) {
             e.preventDefault();
+            if (isBot(document.getElementById('searchForm'), '_loaded')) { return false; }
             var tipo = document.getElementById('tipoConsulta').value;
             var municipio = document.getElementById('municipio').value;
             var nome = document.getElementById('nomeProprietario').value;
@@ -1743,6 +1791,7 @@
 
         function handleLeadSubmit(e) {
             e.preventDefault();
+            if (isBot(document.getElementById('leadForm'), '_loaded_lead')) { return false; }
             var btn = document.getElementById('btnEnviarLead');
             btn.disabled = true;
             btn.textContent = 'Enviando...';
@@ -2279,6 +2328,52 @@
                 })
                 .catch(function() { /* keep static cards */ });
         })();
+    </script>
+
+    <!-- Event listeners replacing inline handlers (XSS hardening) -->
+    <script>
+    (function() {
+        // Search form submit
+        var searchForm = document.getElementById('searchForm');
+        if (searchForm) {
+            searchForm.addEventListener('submit', function(event) {
+                handleSearch(event);
+                return false;
+            });
+        }
+
+        // Lead form submit
+        var leadForm = document.getElementById('leadForm');
+        if (leadForm) {
+            leadForm.addEventListener('submit', function(event) {
+                handleLeadSubmit(event);
+                return false;
+            });
+        }
+
+        // Detail buttons — event delegation
+        document.querySelectorAll('.btn-detalhes[data-tipo]').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                openLeadModal(this.getAttribute('data-tipo'), this.getAttribute('data-nome'));
+            });
+        });
+
+        // Modal close button
+        var modalCloseBtn = document.getElementById('modalCloseBtn');
+        if (modalCloseBtn) {
+            modalCloseBtn.addEventListener('click', function() {
+                closeLeadModal();
+            });
+        }
+
+        // Back to top button
+        var backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            backToTop.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    })();
     </script>
 
 </body>

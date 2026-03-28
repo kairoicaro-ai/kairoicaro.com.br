@@ -124,7 +124,7 @@
         <h1>Sem <span>conexão</span></h1>
         <p>Verifique sua internet e tente novamente. O portal precisa de conexão para carregar seus dados.</p>
 
-        <button class="btn-retry" onclick="window.location.reload()">
+        <button class="btn-retry" id="btnRetry">
             <svg viewBox="0 0 24 24"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
             Tentar novamente
         </button>
@@ -132,5 +132,10 @@
         <p class="footer-text">KIAA — Kairo Ícaro Advogados Associados</p>
     </div>
 
+    <script>
+    document.getElementById('btnRetry').addEventListener('click', function() {
+        window.location.reload();
+    });
+    </script>
 </body>
 </html>

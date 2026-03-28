@@ -449,9 +449,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const newsletterSuccess = document.getElementById('newsletter-success');
     const newsletterSubmit = document.getElementById('newsletter-submit');
 
+    // Anti-bot: set timestamp on page load
+    if (newsletterForm) {
+        const nlLoaded = newsletterForm.querySelector('[name="_loaded"]');
+        if (nlLoaded) nlLoaded.value = Date.now().toString();
+    }
+
     if (newsletterForm) {
         newsletterForm.addEventListener('submit', function(e) {
             e.preventDefault();
+
+            // Anti-bot: origin check
+            const origin = window.location.origin;
+            if (origin !== 'https://kairoicaro.com.br' && !origin.includes('localhost') && !origin.includes('127.0.0.1') && !origin.includes('github.io')) {
+                console.warn('CSRF: origin mismatch');
+                return;
+            }
+            // Anti-bot: honeypot check
+            const honeypot = newsletterForm.querySelector('[name="website"]');
+            if (honeypot && honeypot.value) {
+                console.warn('CSRF: honeypot filled');
+                return;
+            }
+            // Anti-bot: timestamp check (< 2s = bot)
+            const loadedField = newsletterForm.querySelector('[name="_loaded"]');
+            if (loadedField && loadedField.value) {
+                const elapsed = Date.now() - parseInt(loadedField.value, 10);
+                if (elapsed < 2000) {
+                    console.warn('CSRF: form submitted too quickly (' + elapsed + 'ms)');
+                    return;
+                }
+            }
 
             const formData = new FormData(newsletterForm);
             const data = {

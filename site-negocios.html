@@ -1066,6 +1066,11 @@
                             </select>
                         </div>
                     </div>
+                    <!-- Anti-bot: honeypot -->
+                    <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                        <input type="text" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+                    <input type="hidden" name="_loaded" value="">
                     <button type="submit" class="newsletter-btn" id="newsletter-submit">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
                         Inscrever-se gratuitamente
@@ -1189,11 +1194,17 @@
     <!-- ==================== LGPD COOKIE BANNER ==================== -->
     <div id="lgpd-banner" class="lgpd-banner" style="display: none;">
         <div class="lgpd-content">
-            <p>Este site utiliza cookies para melhorar sua experiência de navegação. Ao continuar, você concorda com nossa <a href="#" onclick="return false;">Política de Privacidade</a> conforme a LGPD (Lei 13.709/2018).</p>
+            <p>Este site utiliza cookies para melhorar sua experiência de navegação. Ao continuar, você concorda com nossa <a href="#" class="privacy-policy-link">Política de Privacidade</a> conforme a LGPD (Lei 13.709/2018).</p>
             <button id="lgpd-accept" class="btn btn-primary lgpd-btn">Aceitar</button>
         </div>
     </div>
 
     <script src="script.js" defer></script>
+    <!-- Event listener replacing inline handler (XSS hardening) -->
+    <script>
+    document.querySelectorAll('.privacy-policy-link').forEach(function(link) {
+        link.addEventListener('click', function(e) { e.preventDefault(); });
+    });
+    </script>
 </body>
 </html>
