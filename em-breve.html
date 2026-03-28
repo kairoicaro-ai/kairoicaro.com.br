@@ -25,7 +25,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <style>
         *, *::before, *::after {
@@ -399,9 +399,26 @@
                 height: 42px;
             }
         }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #0F2944;
+            color: #86E600;
+            padding: 8px 16px;
+            z-index: 10000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+            transition: top 0.3s;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
 
     <!-- Animated background -->
     <div class="bg-gradient"></div>
@@ -410,7 +427,7 @@
     <div class="particles" id="particles"></div>
 
     <!-- Main content -->
-    <div class="wrapper">
+    <div class="wrapper" id="main-content">
 
         <!-- Logo -->
         <div class="logo">

@@ -47,7 +47,7 @@ sed -i 's|href="novo-index.html"|href="index.html"|g' portal-login.html
 echo "[7/7] Atualizar sw.js cache (novo-index → index)"
 sed -i "s|'/novo-index.html'|'/index.html'|g" sw.js
 # Bump cache version
-sed -i "s|kiaa-site-v2|kiaa-site-v3|g" sw.js
+sed -i "s|kiaa-site-v2.1|kiaa-site-v3|g" sw.js
 
 echo ""
 echo "═══ SWAP CONCLUÍDO ═══"

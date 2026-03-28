@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="img/icone-positivo-verde.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -52,14 +52,31 @@
         .links { margin-top: 24px; display: flex; gap: 24px; }
         .links a { color: #86E600; text-decoration: none; font-size: 14px; font-weight: 500; }
         .links a:hover { text-decoration: underline; }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #0F2944;
+            color: #86E600;
+            padding: 8px 16px;
+            z-index: 10000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+            transition: top 0.3s;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
     </style>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SH839K2LD3"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SH839K2LD3');</script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
     <img src="img/logo-horizontal-branca.png" alt="KIAA" class="logo">
-    <div class="code">404</div>
+    <div class="code" id="main-content">404</div>
     <h1>Pagina nao encontrada</h1>
     <p>O endereço que você acessou não existe ou foi movido. Verifique o link ou volte para a página inicial.</p>
     <a href="novo-index.html" class="btn">

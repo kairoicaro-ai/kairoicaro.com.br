@@ -104,11 +104,28 @@
             font-size: 0.75rem;
             color: rgba(255, 255, 255, 0.3);
         }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #0F2944;
+            color: #86E600;
+            padding: 8px 16px;
+            z-index: 10000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+            transition: top 0.3s;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
 
-    <div class="offline-container">
+    <div class="offline-container" id="main-content">
         <div class="offline-icon">
             <svg viewBox="0 0 24 24">
                 <line x1="1" y1="1" x2="23" y2="23"/>

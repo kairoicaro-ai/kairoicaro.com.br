@@ -17,7 +17,7 @@
     <meta name="twitter:image" content="https://kairoicaro.com.br/img/logo-horizontal-positiva.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -349,14 +349,31 @@
             color: rgba(134,230,0,0.5);
             text-decoration: none;
         }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #0F2944;
+            color: #86E600;
+            padding: 8px 16px;
+            z-index: 10000;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+            transition: top 0.3s;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
     </style>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SH839K2LD3"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SH839K2LD3');</script>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Pular para o conteúdo</a>
 
-<div class="card">
+<div class="card" id="main-content">
     <!-- HEADER -->
     <div class="card-header">
         <div class="logo-icon">

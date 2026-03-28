@@ -75,18 +75,35 @@
     font-size: 12px;
     font-weight: 800;
   }
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0F2944;
+    color: #86E600;
+    padding: 8px 16px;
+    z-index: 10000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: top 0.3s;
+  }
+  .skip-link:focus {
+    top: 0;
+  }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SH839K2LD3"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SH839K2LD3');</script>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Pular para o conteúdo</a>
 
 <h1 class="sr-only">Mapa de Atuação — Kairo Ícaro Advogados Associados</h1>
-<div class="map-container">
+<div class="map-container" id="main-content">
 <svg viewBox="0 0 800 850" xmlns="http://www.w3.org/2000/svg">
 
   <!-- NORTH REGION -->

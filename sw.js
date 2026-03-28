@@ -2,7 +2,7 @@
 // KIAA Portal — Service Worker v1
 // ══════════════════════════════════════════════════════════════
 
-const CACHE_VERSION = 'kiaa-site-v2';
+const CACHE_VERSION = 'kiaa-site-v2.1';
 
 const STATIC_ASSETS = [
     '/novo-index.html',
@@ -24,6 +24,16 @@ const STATIC_ASSETS = [
     '/esg.html',
     '/cartao-digital.html',
     '/mapa-brasil-kiaa.html',
+    '/area-administrativo.html',
+    '/area-agrario.html',
+    '/area-ambiental.html',
+    '/area-civil.html',
+    '/area-consumidor.html',
+    '/area-empresarial.html',
+    '/area-penal.html',
+    '/area-trabalhista.html',
+    '/area-tributario.html',
+    '/area-page.css',
     '/offline.html',
     '/manifest.json',
     '/style.css',
