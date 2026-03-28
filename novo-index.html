@@ -1299,12 +1299,12 @@
 
             <div class="team-scroll" style="display:flex; gap:32px; overflow-x:auto; padding:20px 24px; max-width:1200px; margin:0 auto; scrollbar-width:none; -webkit-overflow-scrolling:touch;">
                 <div class="team-thumb" style="flex:0 0 auto; text-align:center; cursor:default; transition:transform .3s;" onmouseenter="this.style.transform='scale(1.08)'" onmouseleave="this.style.transform='scale(1)'">
-                    <img src="img/equipe/kairo.jpg" alt="Kairo Ícaro" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid rgba(134,230,0,0.4);" loading="lazy">
+                    <img src="img/equipe/Kairo.jpg" alt="Kairo Ícaro" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid rgba(134,230,0,0.4);" loading="lazy">
                     <p style="color:#fff;font-size:.85rem;font-weight:600;margin:10px 0 2px;">Kairo Ícaro</p>
                     <p style="color:rgba(134,230,0,.7);font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:1px;">Sócio Fundador</p>
                 </div>
                 <div class="team-thumb" style="flex:0 0 auto; text-align:center; cursor:default; transition:transform .3s;" onmouseenter="this.style.transform='scale(1.08)'" onmouseleave="this.style.transform='scale(1)'">
-                    <img src="img/equipe/welington.jpg" alt="Welington Albuquerque" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.15);" loading="lazy">
+                    <img src="img/equipe/Welington.jpg" alt="Welington Albuquerque" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.15);" loading="lazy">
                     <p style="color:#fff;font-size:.85rem;font-weight:600;margin:10px 0 2px;">Welington Albuquerque</p>
                     <p style="color:rgba(134,230,0,.7);font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:1px;">Advogado Sênior</p>
                 </div>
@@ -2108,7 +2108,7 @@
                 return 'Nossas áreas de atuação: <strong>Direito Ambiental</strong>, <strong>Agrário</strong>, <strong>Empresarial</strong>, <strong>Penal Econômico</strong>, <strong>Desportivo</strong>, <strong>Minerário</strong>, <strong>Indígena</strong>, <strong>Tributário</strong> e <strong>Família</strong>. Sobre qual área deseja saber mais?';
             }
             if (/consulta|agendar|horario|reuniao|falar|advogado|whatsapp/.test(t)) {
-                return 'Para agendar uma consulta ou falar diretamente com um advogado, entre em contato pelo nosso WhatsApp: <a href="' + WA_LINK + '" target="_blank" rel="noopener">Chamar no WhatsApp →</a>';
+                return 'Para agendar uma consulta ou falar diretamente com um advogado, entre em contato pelo nosso WhatsApp: <a href="' + WA_LINK + '" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp →</a>';
             }
             if (/ola|oi|bom dia|boa tarde|boa noite|hey|hello/.test(t)) {
                 return 'Olá! Como posso ajudar? Selecione uma opção abaixo ou digite sua dúvida.';
@@ -2117,7 +2117,7 @@
                 return 'Por nada! Se precisar de algo mais, estamos à disposição. 😊';
             }
             // Default
-            return 'Obrigado pela mensagem! Para atendimento personalizado, entre em contato pelo nosso WhatsApp: <a href="' + WA_LINK + '" target="_blank" rel="noopener">Chamar no WhatsApp →</a>';
+            return 'Obrigado pela mensagem! Para atendimento personalizado, entre em contato pelo nosso WhatsApp: <a href="' + WA_LINK + '" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp →</a>';
         }
 
         function processInput(text) {

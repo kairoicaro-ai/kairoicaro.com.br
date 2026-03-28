@@ -34,7 +34,6 @@ cp novo-index.html index.html
 
 echo "[3/7] Atualizar canonical em index.html"
 sed -i 's|href="https://kairoicaro.com.br/novo-index.html"|href="https://kairoicaro.com.br/"|g' index.html
-sed -i 's|href="https://kairoicaro.com.br/novo-index.html"|href="https://kairoicaro.com.br/"|g' index.html
 
 echo "[4/7] Atualizar robots meta em index.html (noindex → index)"
 sed -i 's|content="noindex, nofollow"|content="index, follow"|g' index.html
