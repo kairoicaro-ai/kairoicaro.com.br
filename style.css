@@ -416,7 +416,7 @@ ul {
     letter-spacing: 4px;
     color: var(--verde);
     padding: 8px 20px;
-    border: 1px solid rgba(134, 230, 0, 0.3);
+    border: 1px solid var(--verde-border);
     border-radius: 50px;
     margin-bottom: 32px;
     backdrop-filter: blur(4px);
@@ -771,7 +771,7 @@ ul {
 
 .produto-area.open {
     border-color: var(--verde);
-    box-shadow: 0 8px 32px rgba(15,41,68,0.1), 0 0 0 1px rgba(134,230,0,0.15);
+    box-shadow: 0 8px 32px rgba(15,41,68,0.1), 0 0 0 1px var(--verde-glow);
 }
 
 .produto-area-header {
@@ -965,7 +965,7 @@ ul {
 }
 
 .diff-card:hover .diff-number {
-    color: rgba(134, 230, 0, 0.15);
+    color: var(--verde-glow);
 }
 
 .diff-icon {
@@ -1164,7 +1164,7 @@ ul {
 }
 
 .news-type-badge[data-type="artigo"] {
-    background: rgba(134, 230, 0, 0.12);
+    background: var(--verde-glow);
     color: var(--verde-dark);
 }
 
@@ -1288,8 +1288,8 @@ ul {
 
 .fifa-card:hover .fifa-card-inner {
     transform: translateY(-10px) scale(1.02);
-    border-color: rgba(134,230,0,0.3);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.3), 0 0 40px rgba(134,230,0,0.08);
+    border-color: var(--verde-border);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3), 0 0 40px var(--verde-glow-subtle);
 }
 
 .fifa-card:hover .fifa-card-inner::before {
@@ -1534,8 +1534,8 @@ ul {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(134,230,0,0.15), rgba(134,230,0,0.05));
-    border: 2px solid rgba(134,230,0,0.3);
+    background: linear-gradient(135deg, var(--verde-glow), var(--verde-glow-subtle));
+    border: 2px solid var(--verde-border);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1570,7 +1570,8 @@ ul {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    color: rgba(134,230,0,0.7);
+    color: var(--verde);
+    opacity: 0.7;
     margin-top: 2px;
 }
 
@@ -1710,8 +1711,8 @@ ul {
 }
 
 @keyframes livePulse {
-    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(134,230,0,0.4); }
-    50% { opacity: 0.6; box-shadow: 0 0 0 6px rgba(134,230,0,0); }
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 var(--verde-glow); }
+    50% { opacity: 0.6; box-shadow: 0 0 0 6px transparent; }
 }
 
 /* Dashboard Tabs */
@@ -1793,7 +1794,7 @@ ul {
 
 .dash-hero-card:hover {
     background: rgba(255,255,255,0.08);
-    border-color: rgba(134,230,0,0.25);
+    border-color: var(--verde-border);
     transform: translateY(-4px);
 }
 
@@ -1860,7 +1861,7 @@ ul {
 .btn-green:hover {
     background: var(--verde-dark);
     transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(134,230,0,0.3);
+    box-shadow: 0 4px 20px var(--verde-glow);
 }
 
 /* Links Column */
@@ -1884,7 +1885,7 @@ ul {
 
 .dash-link-card:hover {
     background: rgba(255,255,255,0.08);
-    border-color: rgba(134,230,0,0.25);
+    border-color: var(--verde-border);
     transform: translateX(4px);
 }
 
@@ -1950,7 +1951,7 @@ ul {
 }
 
 .case-badge-success {
-    background: rgba(134,230,0,0.15);
+    background: var(--verde-glow);
     color: var(--verde);
 }
 
@@ -2172,8 +2173,8 @@ ul {
     width: 64px;
     height: 64px;
     border-radius: 16px;
-    background: rgba(134, 230, 0, 0.12);
-    border: 1px solid rgba(134, 230, 0, 0.2);
+    background: var(--verde-glow);
+    border: 1px solid var(--verde-border);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -2335,8 +2336,8 @@ ul {
     position: absolute;
     inset: 0;
     background-image:
-        radial-gradient(circle at 20% 50%, rgba(134, 230, 0, 0.06) 0%, transparent 50%),
-        radial-gradient(circle at 80% 50%, rgba(134, 230, 0, 0.04) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, var(--verde-glow-subtle) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, var(--verde-glow-subtle) 0%, transparent 50%);
 }
 
 .cta-content {
@@ -2500,8 +2501,8 @@ ul {
 }
 
 .map-link:hover {
-    background: rgba(134, 230, 0, 0.12);
-    border-color: rgba(134, 230, 0, 0.3);
+    background: var(--verde-glow);
+    border-color: var(--verde-border);
     color: #86E600;
 }
 
@@ -3035,7 +3036,7 @@ button:focus-visible {
     right: -10%;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(134, 230, 0, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, var(--verde-glow-subtle) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -3442,7 +3443,7 @@ button:focus-visible {
     border-radius: var(--radius-md); padding: 24px; transition: all 0.3s;
 }
 
-.radar-card:hover { background: rgba(255,255,255,0.08); border-color: rgba(134,230,0,0.2); transform: translateY(-4px); }
+.radar-card:hover { background: rgba(255,255,255,0.08); border-color: var(--verde-border); transform: translateY(-4px); }
 
 .radar-card-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
 
@@ -3457,7 +3458,7 @@ button:focus-visible {
 .radar-card-link:hover { gap: 8px; }
 .radar-card-link-green { color: var(--verde); }
 
-.radar-card-cta { border-color: rgba(134,230,0,0.2); background: rgba(134,230,0,0.04); }
+.radar-card-cta { border-color: var(--verde-border); background: var(--verde-glow-subtle); }
 
 @media (max-width: 768px) {
     .radar-cards-grid { grid-template-columns: 1fr; }

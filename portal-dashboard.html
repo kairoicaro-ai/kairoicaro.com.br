@@ -1228,40 +1228,40 @@
         <nav class="sidebar-nav" role="navigation" aria-label="Menu principal">
             <div class="nav-section-title">Principal</div>
 
-            <a class="nav-item active" data-section="dashboard" onclick="showSection('dashboard')">
+            <a class="nav-item active" data-section="dashboard">
                 <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
                 Painel Geral
             </a>
 
-            <a class="nav-item" data-section="processos" onclick="showSection('processos')">
+            <a class="nav-item" data-section="processos">
                 <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
                 Processos
                 <span class="nav-badge" id="processCount">0</span>
             </a>
 
-            <a class="nav-item" data-section="financeiro" onclick="showSection('financeiro')">
+            <a class="nav-item" data-section="financeiro">
                 <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
                 Financeiro
             </a>
 
-            <a class="nav-item" data-section="documentos" onclick="showSection('documentos')">
+            <a class="nav-item" data-section="documentos">
                 <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
                 Documentos
             </a>
 
             <div class="nav-section-title">Gestao</div>
 
-            <a class="nav-item" data-section="agenda" onclick="showSection('agenda')">
+            <a class="nav-item" data-section="agenda">
                 <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 Agenda
             </a>
 
-            <a class="nav-item" data-section="clientes" onclick="showSection('clientes')">
+            <a class="nav-item" data-section="clientes">
                 <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
                 Clientes
             </a>
 
-            <a class="nav-item" data-section="credito" onclick="showSection('credito')">
+            <a class="nav-item" data-section="credito">
                 <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
                 Análise de Crédito
             </a>
@@ -1282,7 +1282,7 @@
                     <div class="user-email" id="userEmail">...</div>
                 </div>
             </div>
-            <button class="btn-logout" onclick="handleLogout()" aria-label="Sair do sistema">
+            <button class="btn-logout" aria-label="Sair do sistema">
                 <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>
                 Sair do portal
             </button>
@@ -1297,7 +1297,7 @@
         <!-- Header -->
         <header class="header">
             <div style="display: flex; align-items: center; gap: 16px;">
-                <button class="menu-toggle" onclick="toggleSidebar()" aria-label="Abrir menu">
+                <button class="menu-toggle" aria-label="Abrir menu">
                     <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
                 </button>
                 <div class="header-left">
@@ -1360,9 +1360,9 @@
                     </div>
                     <div class="filter-group search">
                         <label for="filterSearch">Buscar</label>
-                        <input type="text" id="filterSearch" placeholder="Numero, titulo ou cliente..." oninput="applyFilters()">
+                        <input type="text" id="filterSearch" placeholder="Numero, titulo ou cliente...">
                     </div>
-                    <button class="btn-clear-filters" onclick="clearFilters()">Limpar filtros</button>
+                    <button class="btn-clear-filters">Limpar filtros</button>
                 </div>
 
                 <!-- Stats -->
@@ -1404,7 +1404,7 @@
                 <div class="card">
                     <div class="card-header">
                         <span class="card-title">Processos Recentes</span>
-                        <span class="card-action" onclick="showSection('processos')">Ver todos</span>
+                        <span class="card-action" data-section="processos">Ver todos</span>
                     </div>
                     <div class="card-body">
                         <div class="table-scroll">
@@ -1443,14 +1443,14 @@
                             <table class="data-table" id="processosTable">
                                 <thead>
                                     <tr>
-                                        <th data-sort="case_number" onclick="sortTable('processos','case_number',this)">Numero <span class="sort-icon">&#9650;&#9660;</span></th>
-                                        <th data-sort="title" onclick="sortTable('processos','title',this)">Titulo <span class="sort-icon">&#9650;&#9660;</span></th>
-                                        <th data-sort="client_name" onclick="sortTable('processos','client_name',this)">Cliente <span class="sort-icon">&#9650;&#9660;</span></th>
-                                        <th data-sort="area" onclick="sortTable('processos','area',this)">Area <span class="sort-icon">&#9650;&#9660;</span></th>
-                                        <th data-sort="responsible_lawyer" onclick="sortTable('processos','responsible_lawyer',this)">Advogado <span class="sort-icon">&#9650;&#9660;</span></th>
-                                        <th data-sort="status" onclick="sortTable('processos','status',this)">Status <span class="sort-icon">&#9650;&#9660;</span></th>
-                                        <th data-sort="court" onclick="sortTable('processos','court',this)">Tribunal <span class="sort-icon">&#9650;&#9660;</span></th>
-                                        <th data-sort="created_at" onclick="sortTable('processos','created_at',this)">Data <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="case_number" data-table="processos">Numero <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="title" data-table="processos">Titulo <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="client_name" data-table="processos">Cliente <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="area" data-table="processos">Area <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="responsible_lawyer" data-table="processos">Advogado <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="status" data-table="processos">Status <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="court" data-table="processos">Tribunal <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="created_at" data-table="processos">Data <span class="sort-icon">&#9650;&#9660;</span></th>
                                     </tr>
                                 </thead>
                                 <tbody id="processosBody"></tbody>
@@ -1477,12 +1477,12 @@
                             <table class="data-table" id="financeiroTable">
                                 <thead>
                                     <tr>
-                                        <th data-sort="due_date" onclick="sortTable('financeiro','due_date',this)">Data <span class="sort-icon">&#9650;&#9660;</span></th>
-                                        <th data-sort="client_name" onclick="sortTable('financeiro','client_name',this)">Cliente <span class="sort-icon">&#9650;&#9660;</span></th>
-                                        <th data-sort="case_number" onclick="sortTable('financeiro','case_number',this)">Processo <span class="sort-icon">&#9650;&#9660;</span></th>
-                                        <th data-sort="type" onclick="sortTable('financeiro','type',this)">Tipo <span class="sort-icon">&#9650;&#9660;</span></th>
-                                        <th data-sort="amount" onclick="sortTable('financeiro','amount',this)">Valor <span class="sort-icon">&#9650;&#9660;</span></th>
-                                        <th data-sort="status" onclick="sortTable('financeiro','status',this)">Status <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="due_date" data-table="financeiro">Data <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="client_name" data-table="financeiro">Cliente <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="case_number" data-table="financeiro">Processo <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="type" data-table="financeiro">Tipo <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="amount" data-table="financeiro">Valor <span class="sort-icon">&#9650;&#9660;</span></th>
+                                        <th data-sort="status" data-table="financeiro">Status <span class="sort-icon">&#9650;&#9660;</span></th>
                                         <th>Descricao</th>
                                     </tr>
                                 </thead>
@@ -1625,7 +1625,7 @@
                                 </select>
                             </div>
                             <div style="flex-shrink: 0;">
-                                <button onclick="analisarCredito()" style="padding: 10px 28px; background: linear-gradient(135deg, var(--green), var(--green-light)); color: var(--blue); font-family: inherit; font-size: 0.85rem; font-weight: 700; border: none; border-radius: 8px; cursor: pointer; transition: all 0.2s; white-space: nowrap;">Analisar</button>
+                                <button class="btn-analisar-credito" style="padding: 10px 28px; background: linear-gradient(135deg, var(--green), var(--green-light)); color: var(--blue); font-family: inherit; font-size: 0.85rem; font-weight: 700; border: none; border-radius: 8px; cursor: pointer; transition: all 0.2s; white-space: nowrap;">Analisar</button>
                             </div>
                         </div>
                     </div>
@@ -1756,8 +1756,8 @@
             <h3>Sua sessao esta prestes a expirar</h3>
             <p>Por seguranca, voce sera desconectado automaticamente por inatividade.</p>
             <div class="timeout-countdown" id="timeoutCountdown">5:00</div>
-            <button class="btn-stay" onclick="Security.extendSession()">Continuar conectado</button>
-            <button class="btn-leave" onclick="Security.forceLogout()">Sair agora</button>
+            <button class="btn-stay">Continuar conectado</button>
+            <button class="btn-leave">Sair agora</button>
         </div>
     </div>
 
@@ -2355,7 +2355,7 @@
 
             let html = `<span class="pagination-info">Mostrando ${totalItems ? start : 0}-${end} de ${totalItems}</span>`;
             html += '<div class="pagination-buttons">';
-            html += `<button ${current <= 1 ? 'disabled' : ''} onclick="goPage('${tableId}',${current - 1})">&laquo;</button>`;
+            html += `<button ${current <= 1 ? 'disabled' : ''} data-table-id="${tableId}" data-go-page="${current - 1}">&laquo;</button>`;
 
             // Show max 7 page buttons
             let startPage = Math.max(1, current - 3);
@@ -2363,10 +2363,10 @@
             if (endPage - startPage < 6) startPage = Math.max(1, endPage - 6);
 
             for (let p = startPage; p <= endPage; p++) {
-                html += `<button class="${p === current ? 'active' : ''}" onclick="goPage('${tableId}',${p})">${p}</button>`;
+                html += `<button class="${p === current ? 'active' : ''}" data-table-id="${tableId}" data-go-page="${p}">${p}</button>`;
             }
 
-            html += `<button ${current >= totalPages ? 'disabled' : ''} onclick="goPage('${tableId}',${current + 1})">&raquo;</button>`;
+            html += `<button ${current >= totalPages ? 'disabled' : ''} data-table-id="${tableId}" data-go-page="${current + 1}">&raquo;</button>`;
             html += '</div>';
             container.innerHTML = html;
         }
@@ -2707,8 +2707,8 @@
                     <td style="padding: 12px 16px;"><span style="padding: 4px 10px; border-radius: 100px; font-size: 0.75rem; font-weight: 600; ${sStyle}">${l.status || 'Novo'}</span></td>
                     <td style="padding: 12px 16px; white-space: nowrap;">
                         <a href="${whatsLink}" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; background: rgba(34,197,94,0.1); color: #22C55E; text-decoration: none; margin-right: 4px;" title="Contatar via WhatsApp">Contatar</a>
-                        <button onclick="updateLeadStatus('${l.id}','Qualificado')" style="padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; background: rgba(134,230,0,0.12); color: #65A30D; border: none; cursor: pointer; font-family: inherit; margin-right: 4px;">Qualificar</button>
-                        <button onclick="updateLeadStatus('${l.id}','Convertido')" style="padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; background: rgba(59,130,246,0.1); color: #3B82F6; border: none; cursor: pointer; font-family: inherit;">Converter</button>
+                        <button data-lead-id="${l.id}" data-lead-action="Qualificado" style="padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; background: rgba(134,230,0,0.12); color: #65A30D; border: none; cursor: pointer; font-family: inherit; margin-right: 4px;">Qualificar</button>
+                        <button data-lead-id="${l.id}" data-lead-action="Convertido" style="padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; background: rgba(59,130,246,0.1); color: #3B82F6; border: none; cursor: pointer; font-family: inherit;">Converter</button>
                     </td>
                 </tr>`;
             }).join('');
@@ -2776,7 +2776,7 @@
         }
     </script>
 
-    <!-- Event listeners replacing inline handlers (XSS hardening) -->
+    <!-- Event listeners (XSS hardening — no inline handlers) -->
     <script>
     (function() {
         // Skip link
@@ -2787,38 +2787,45 @@
         }
         // Logout button
         var logoutBtn = document.querySelector('.btn-logout');
-        if (logoutBtn) {
-            logoutBtn.removeAttribute('onclick');
-            logoutBtn.addEventListener('click', function() { handleLogout(); });
-        }
+        if (logoutBtn) logoutBtn.addEventListener('click', function() { handleLogout(); });
         // Mobile toggle
         var mobileBtn = document.querySelector('.menu-toggle');
-        if (mobileBtn) {
-            mobileBtn.removeAttribute('onclick');
-            mobileBtn.addEventListener('click', function() { toggleSidebar(); });
-        }
+        if (mobileBtn) mobileBtn.addEventListener('click', function() { toggleSidebar(); });
         // Sidebar nav items with showSection
-        document.querySelectorAll('.nav-item[data-section]').forEach(function(el) {
-            var section = el.getAttribute('data-section');
-            if (section) {
-                el.removeAttribute('onclick');
-                el.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    showSection(section);
-                });
-            }
+        document.querySelectorAll('[data-section]').forEach(function(el) {
+            el.addEventListener('click', function(e) {
+                e.preventDefault();
+                showSection(el.getAttribute('data-section'));
+            });
         });
         // Session timeout buttons
         var btnStay = document.querySelector('.btn-stay');
-        if (btnStay) {
-            btnStay.removeAttribute('onclick');
-            btnStay.addEventListener('click', function() { Security.extendSession(); });
-        }
+        if (btnStay) btnStay.addEventListener('click', function() { Security.extendSession(); });
         var btnLeave = document.querySelector('.btn-leave');
-        if (btnLeave) {
-            btnLeave.removeAttribute('onclick');
-            btnLeave.addEventListener('click', function() { Security.forceLogout(); });
-        }
+        if (btnLeave) btnLeave.addEventListener('click', function() { Security.forceLogout(); });
+        // Clear filters
+        var btnClear = document.querySelector('.btn-clear-filters');
+        if (btnClear) btnClear.addEventListener('click', function() { clearFilters(); });
+        // Search input
+        var searchInput = document.getElementById('filterSearch');
+        if (searchInput) searchInput.addEventListener('input', function() { applyFilters(); });
+        // Table header sort — delegation
+        document.querySelectorAll('th[data-sort][data-table]').forEach(function(th) {
+            th.style.cursor = 'pointer';
+            th.addEventListener('click', function() {
+                sortTable(th.getAttribute('data-table'), th.getAttribute('data-sort'), th);
+            });
+        });
+        // Analisar Credito button
+        var btnCredito = document.querySelector('.btn-analisar-credito');
+        if (btnCredito) btnCredito.addEventListener('click', function() { analisarCredito(); });
+        // Pagination — delegate via document (buttons are generated dynamically)
+        document.addEventListener('click', function(e) {
+            var btn = e.target.closest('[data-go-page]');
+            if (btn) goPage(btn.getAttribute('data-table-id'), parseInt(btn.getAttribute('data-go-page')));
+            var leadBtn = e.target.closest('[data-lead-action]');
+            if (leadBtn) updateLeadStatus(leadBtn.getAttribute('data-lead-id'), leadBtn.getAttribute('data-lead-action'));
+        });
         // Restore section from localStorage (e.g., clicking "Processos" from KPI page)
         var savedSection = localStorage.getItem('portalSection');
         if (savedSection) {
