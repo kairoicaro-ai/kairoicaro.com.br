@@ -35,6 +35,8 @@
             --verde-neg: #D32F2F;
             --verde-dark: #8B0000;
             --verde-glow: rgba(183, 28, 28, 0.15);
+            --verde-glow-subtle: rgba(183, 28, 28, 0.06);
+            --verde-border: rgba(183, 28, 28, 0.2);
             --shadow-green: 0 4px 20px rgba(183, 28, 28, 0.25);
         }
 
@@ -42,6 +44,7 @@
         .hero-bg { background-image: url('img/hero-banner.jpg'); background-attachment: fixed; background-size: cover; background-position: center; }
         .hero-bg .hero-bg-img { display: none; }
         @media (max-width: 768px) { .hero-bg { background-attachment: scroll; } .hero-bg .hero-bg-img { display: block; } }
+        .hero-overlay { background: linear-gradient(135deg, rgba(183,28,28,0.85) 0%, rgba(15,41,68,0.92) 50%, rgba(10,25,47,0.95) 100%); }
 
         /* ===== PREMIUM SERVICE CARDS ===== */
         .servicos-grid {

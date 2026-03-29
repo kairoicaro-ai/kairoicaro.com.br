@@ -35,6 +35,8 @@
             --verde-neg: #14B8A6;
             --verde-dark: #0F766E;
             --verde-glow: rgba(13, 148, 136, 0.12);
+            --verde-glow-subtle: rgba(13, 148, 136, 0.06);
+            --verde-border: rgba(13, 148, 136, 0.2);
             --shadow-green: 0 4px 20px rgba(13, 148, 136, 0.25);
         }
 
@@ -42,6 +44,7 @@
         .hero-bg { background-image: url('img/hero-banner.jpg'); background-attachment: fixed; background-size: cover; background-position: center; }
         .hero-bg .hero-bg-img { display: none; }
         @media (max-width: 768px) { .hero-bg { background-attachment: scroll; } .hero-bg .hero-bg-img { display: block; } }
+        .hero-overlay { background: linear-gradient(135deg, rgba(13,148,136,0.85) 0%, rgba(15,41,68,0.92) 50%, rgba(10,25,47,0.95) 100%); }
 
         /* ── Premium Product Cards ── */
         .produtos-grid {

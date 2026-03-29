@@ -35,6 +35,8 @@
             --verde-neg: #90A4AE;
             --verde-dark: #546E7A;
             --verde-glow: rgba(120, 144, 156, 0.15);
+            --verde-glow-subtle: rgba(120, 144, 156, 0.06);
+            --verde-border: rgba(120, 144, 156, 0.2);
             --shadow-green: 0 4px 20px rgba(120, 144, 156, 0.25);
             --navy: #0B1D33;
             --navy-light: #132B4A;
@@ -48,6 +50,7 @@
         .hero-bg { background-image: url('img/hero-banner.jpg'); background-attachment: fixed; background-size: cover; background-position: center; }
         .hero-bg .hero-bg-img { display: none; }
         @media (max-width: 768px) { .hero-bg { background-attachment: scroll; } .hero-bg .hero-bg-img { display: block; } }
+        .hero-overlay { background: linear-gradient(135deg, rgba(120,144,156,0.85) 0%, rgba(15,41,68,0.92) 50%, rgba(10,25,47,0.95) 100%); }
 
         /* ===== KPI METRICS BAR ===== */
         .kpi-bar {

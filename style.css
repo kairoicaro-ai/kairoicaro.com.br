@@ -19,6 +19,8 @@
     --verde-dark: #6bbf00;
     --verde-glow: rgba(134, 230, 0, 0.15);
     --verde-glow-strong: rgba(134, 230, 0, 0.3);
+    --verde-glow-subtle: rgba(134, 230, 0, 0.06);
+    --verde-border: rgba(134, 230, 0, 0.2);
 
     /* Neutrals */
     --white: #FFFFFF;
@@ -209,7 +211,7 @@ ul {
 .btn-outline:hover {
     border-color: var(--verde);
     color: var(--verde);
-    background: rgba(134, 230, 0, 0.08);
+    background: var(--verde-glow-subtle);
 }
 
 .btn-cta {
@@ -854,7 +856,7 @@ ul {
 
 .produto-card:hover {
     border-color: transparent;
-    box-shadow: 0 12px 40px rgba(15, 41, 68, 0.12), 0 0 0 1px rgba(134, 230, 0, 0.15);
+    box-shadow: 0 12px 40px rgba(15, 41, 68, 0.12), 0 0 0 1px var(--verde-glow);
     transform: translateY(-6px);
 }
 
@@ -871,9 +873,9 @@ ul {
     padding: 4px 14px;
     border-radius: 100px;
     margin-bottom: 12px;
-    background: linear-gradient(135deg, rgba(134,230,0,0.08), rgba(134,230,0,0.15));
+    background: linear-gradient(135deg, var(--verde-glow-subtle), var(--verde-glow));
     color: var(--verde-dark);
-    border: 1px solid rgba(134,230,0,0.2);
+    border: 1px solid var(--verde-border);
 }
 
 .produto-card h4 {
@@ -909,8 +911,8 @@ ul {
 }
 
 .produto-card:hover .produto-tags span {
-    background: rgba(134,230,0,0.06);
-    border-color: rgba(134,230,0,0.2);
+    background: var(--verde-glow-subtle);
+    border-color: var(--verde-border);
     color: var(--verde-dark);
 }
 

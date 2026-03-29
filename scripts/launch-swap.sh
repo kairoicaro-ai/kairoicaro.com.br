@@ -1,6 +1,6 @@
 #!/bin/bash
 # ══════════════════════════════════════════════════════════════
-# KIAA Launch Swap — Executa em 01/04/2026 12h BRT
+# KIAA Launch Swap — Executa em 01/06/2026 12h BRT
 # Troca index.html (placeholder) ↔ novo-index.html (site real)
 # ══════════════════════════════════════════════════════════════
 set -euo pipefail
