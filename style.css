@@ -2759,7 +2759,7 @@ ul {
 }
 
 .lgpd-content a {
-    color: var(--green);
+    color: var(--verde);
     text-decoration: underline;
 }
 
@@ -2832,7 +2832,7 @@ ul {
 /* Focus states for keyboard navigation */
 a:focus-visible,
 button:focus-visible {
-    outline: 2px solid var(--green);
+    outline: 2px solid var(--verde);
     outline-offset: 3px;
     border-radius: 4px;
 }
@@ -2846,8 +2846,8 @@ button:focus-visible {
     position: absolute;
     top: -100%;
     left: 16px;
-    background: var(--green);
-    color: var(--blue);
+    background: var(--verde);
+    color: var(--azul);
     padding: 12px 24px;
     border-radius: 0 0 8px 8px;
     font-weight: 600;

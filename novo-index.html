@@ -92,16 +92,17 @@
             overflow: hidden;
         }
 
-        .video-hero-bg video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            transform: translate(-50%, -50%);
+        .video-hero-bg img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
+            transform: scale(1.05);
+            animation: heroZoom 20s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroZoom {
+            0% { transform: scale(1.05); }
+            100% { transform: scale(1.12); }
         }
 
         .video-hero-overlay {
@@ -839,9 +840,7 @@
         <!-- VIDEO HERO -->
         <div class="video-hero-wrapper">
             <div class="video-hero-bg">
-                <video autoplay muted loop playsinline poster="img/hero-banner.jpg">
-                    <source src="https://cdn.coverr.co/videos/coverr-aerial-view-of-a-city-at-night-1573/1080p.mp4" type="video/mp4">
-                </video>
+                <img src="img/hero-banner.jpg" alt="" class="hero-bg-img" loading="eager">
             </div>
             <div class="video-hero-overlay"></div>
 

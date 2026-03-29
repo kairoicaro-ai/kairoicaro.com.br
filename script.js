@@ -40,12 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==================== SMOOTH SCROLL for anchor links ====================
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener('click', function(e) {
-            const target = document.querySelector(this.getAttribute('href'));
+            var target = document.querySelector(this.getAttribute('href'));
             if (target) {
                 e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                var offsetTop = target.getBoundingClientRect().top + window.scrollY - 80;
+                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
             }
         });
     });
@@ -700,18 +701,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
-    // ==================== SMOOTH SCROLL (native) ====================
-    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-        anchor.addEventListener('click', function(e) {
-            var target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                e.preventDefault();
-                var offsetTop = target.getBoundingClientRect().top + window.scrollY - 80;
-                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
-            }
-        });
-    });
 
     // ==================== Console branding ====================
     console.log(

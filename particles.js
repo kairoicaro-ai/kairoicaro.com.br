@@ -7,6 +7,9 @@
 (function () {
     'use strict';
 
+    // --- Reduced motion: respect user preference ---
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
     var hero = document.querySelector('.hero');
     if (!hero) return;
 
@@ -151,11 +154,6 @@
             rafId = null;
         }
     }, { threshold: 0.1 });
-
-    // --- Reduced motion: respect user preference ---
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        return; // Don't animate
-    }
 
     // --- Start ---
     resize();
