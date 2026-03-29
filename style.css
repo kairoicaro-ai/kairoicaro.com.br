@@ -5,8 +5,11 @@
      Azul:  #0F2944
      Verde (positivo): #86E600
      Verde (negativo): #97F513
-   Typography: Montserrat
+   Typography: Montserrat (UI) + Libre Baskerville (headings)
    ============================================================ */
+
+/* Font pairing: serif for authority */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 /* ==================== CSS VARIABLES ==================== */
 :root {
@@ -142,10 +145,11 @@ ul {
 .section-tag::after { right: 0; }
 
 .section-title {
-    font-size: clamp(2rem, 4.5vw, 3rem);
-    font-weight: 800;
+    font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+    font-size: clamp(2rem, 4.5vw, 2.8rem);
+    font-weight: 700;
     color: var(--text-primary);
-    line-height: 1.15;
+    line-height: 1.2;
     margin-bottom: 16px;
     letter-spacing: -0.5px;
 }
@@ -199,7 +203,6 @@ ul {
     background: var(--verde-neg);
     border-color: var(--verde-neg);
     box-shadow: var(--shadow-green);
-    transform: translateY(-2px);
 }
 
 .btn-outline {
@@ -388,13 +391,23 @@ ul {
     );
 }
 
+.hero-particles {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero:hover .hero-particles {
+    pointer-events: auto;
+}
+
 .hero-content {
     position: relative;
     z-index: 2;
     max-width: 800px;
     padding: 0 24px;
     text-align: center;
-    animation: fadeInUp 1s ease-out;
 }
 
 @keyframes fadeInUp {
@@ -419,17 +432,16 @@ ul {
     border: 1px solid var(--verde-border);
     border-radius: 50px;
     margin-bottom: 32px;
-    backdrop-filter: blur(4px);
-    animation: fadeInUp 1s ease-out 0.2s both;
+    background: rgba(15, 41, 68, 0.45);
 }
 
 .hero-title {
-    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
     font-weight: 700;
     color: var(--white);
-    line-height: 1.15;
+    line-height: 1.2;
     margin-bottom: 24px;
-    animation: fadeInUp 1s ease-out 0.3s both;
 }
 
 .hero-title .text-green {
@@ -444,7 +456,6 @@ ul {
     max-width: 640px;
     margin: 0 auto 36px auto;
     font-weight: 300;
-    animation: fadeInUp 1s ease-out 0.4s both;
 }
 
 .hero-actions {
@@ -453,7 +464,6 @@ ul {
     justify-content: center;
     gap: 16px;
     margin-bottom: 60px;
-    animation: fadeInUp 1s ease-out 0.5s both;
 }
 
 .hero-stats {
@@ -464,7 +474,6 @@ ul {
     padding-top: 40px;
     padding-bottom: 60px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    animation: fadeInUp 1s ease-out 0.6s both;
 }
 
 .stat {
@@ -1264,15 +1273,15 @@ ul {
 }
 
 .fifa-card-inner {
-    background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.01));
-    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(15, 41, 68, 0.65);
+    border: 1px solid rgba(255,255,255,0.06);
     border-radius: 20px;
     padding: 28px 22px 22px;
     text-align: center;
     position: relative;
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    backdrop-filter: blur(8px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .fifa-card-inner::before {
@@ -1281,15 +1290,20 @@ ul {
     top: 0;
     left: 0;
     right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
-    transition: background 0.4s;
+    height: 2px;
+    background: var(--verde);
+    opacity: 0.4;
+    transition: opacity 0.4s;
 }
 
 .fifa-card:hover .fifa-card-inner {
-    transform: translateY(-10px) scale(1.02);
-    border-color: var(--verde-border);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.3), 0 0 40px var(--verde-glow-subtle);
+    transform: translateY(-6px);
+    border-color: rgba(255,255,255,0.1);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2), 0 12px 40px rgba(0,0,0,0.15);
+}
+
+.fifa-card:hover .fifa-card-inner::before {
+    opacity: 0.8;
 }
 
 .fifa-card:hover .fifa-card-inner::before {
@@ -2324,6 +2338,26 @@ ul {
     }
 }
 
+/* ==================== ANIMATED GRADIENT UTILITY ==================== */
+.gradient-alive {
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-alive::after {
+    content: '';
+    position: absolute;
+    inset: -30%;
+    width: 160%;
+    height: 160%;
+    background:
+        radial-gradient(ellipse 40% 50% at 25% 35%, rgba(134,230,0,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 35% 45% at 75% 65%, rgba(21,101,192,0.04) 0%, transparent 60%);
+    animation: gradientDrift 12s ease-in-out infinite alternate;
+    pointer-events: none;
+    z-index: 0;
+}
+
 /* ==================== CTA SECTION ==================== */
 .cta-section {
     background: var(--azul);
@@ -2334,10 +2368,18 @@ ul {
 
 .cta-bg-pattern {
     position: absolute;
-    inset: 0;
+    inset: -50%;
+    width: 200%;
+    height: 200%;
     background-image:
-        radial-gradient(circle at 20% 50%, var(--verde-glow-subtle) 0%, transparent 50%),
-        radial-gradient(circle at 80% 50%, var(--verde-glow-subtle) 0%, transparent 50%);
+        radial-gradient(ellipse 40% 50% at 30% 40%, rgba(134,230,0,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 35% 45% at 70% 60%, rgba(21,101,192,0.05) 0%, transparent 60%);
+    animation: gradientDrift 12s ease-in-out infinite alternate;
+}
+
+@keyframes gradientDrift {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    100% { transform: translate(5%, -3%) rotate(2deg); }
 }
 
 .cta-content {

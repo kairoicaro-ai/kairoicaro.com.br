@@ -141,9 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     animatableSelectors.forEach(selector => {
-        document.querySelectorAll(selector).forEach((el, index) => {
+        document.querySelectorAll(selector).forEach((el) => {
             el.classList.add('reveal');
-            el.style.transitionDelay = `${index * 0.1}s`;
         });
     });
 
@@ -685,6 +684,34 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, { passive: true });
     }
+
+    // ==================== MAGNETIC BUTTONS ====================
+    // CTA buttons subtly follow the cursor on hover (desktop only)
+    if (window.matchMedia('(pointer: fine)').matches) {
+        document.querySelectorAll('.btn-primary, .btn-secondary, .cta-btn').forEach(function(btn) {
+            btn.addEventListener('mousemove', function(e) {
+                var rect = btn.getBoundingClientRect();
+                var x = e.clientX - rect.left - rect.width / 2;
+                var y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = 'translate(' + (x * 0.15) + 'px, ' + (y * 0.15) + 'px)';
+            });
+            btn.addEventListener('mouseleave', function() {
+                btn.style.transform = '';
+            });
+        });
+    }
+
+    // ==================== SMOOTH SCROLL (native) ====================
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            var target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                var offsetTop = target.getBoundingClientRect().top + window.scrollY - 80;
+                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+            }
+        });
+    });
 
     // ==================== Console branding ====================
     console.log(
