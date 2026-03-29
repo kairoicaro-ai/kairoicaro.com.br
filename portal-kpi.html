@@ -800,14 +800,14 @@
                 KPI Dashboard
             </a>
 
-            <div class="nav-section-title">Gestao</div>
+            <div class="nav-section-title">Gestão</div>
 
-            <a class="nav-item" href="portal-dashboard.html" onclick="localStorage.setItem('portalSection','processos')">
+            <a class="nav-item" href="portal-dashboard.html" data-section="processos">
                 <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
                 Processos
             </a>
 
-            <a class="nav-item" href="portal-dashboard.html" onclick="localStorage.setItem('portalSection','financeiro')">
+            <a class="nav-item" href="portal-dashboard.html" data-section="financeiro">
                 <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
                 Financeiro
             </a>
@@ -821,7 +821,7 @@
                     <div class="user-email" id="userEmail">...</div>
                 </div>
             </div>
-            <button class="btn-logout" onclick="handleLogout()" aria-label="Sair do sistema">
+            <button class="btn-logout" aria-label="Sair do sistema">
                 <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>
                 Sair do portal
             </button>
@@ -836,10 +836,10 @@
         <!-- Header -->
         <header class="main-header">
             <div style="display:flex;align-items:center;">
-                <button class="mobile-toggle" onclick="toggleSidebar()" aria-label="Abrir menu">
+                <button class="mobile-toggle" aria-label="Abrir menu">
                     <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
                 </button>
-                <h1>KPI Dashboard <span class="subtitle">Inteligencia Operacional KIAA</span></h1>
+                <h1>KPI Dashboard <span class="subtitle">Inteligência Operacional KIAA</span></h1>
             </div>
             <div class="header-actions">
                 <span class="header-badge"><span class="dot"></span> Dados AdvBox &mdash; Mar/2026</span>
@@ -1028,7 +1028,7 @@
             if (score >= 80) return 'Excelente';
             if (score >= 60) return 'Bom';
             if (score >= 40) return 'Regular';
-            return 'Critico';
+            return 'Crítico';
         }
 
         // ================================================================
@@ -1100,15 +1100,15 @@
         function renderExecutiveSummary() {
             const cards = [
                 { label: 'Processos Ativos', value: totalCases.toLocaleString('pt-BR'), sub: `${archivedCases} arquivados`, accent: 'var(--blue)' },
-                { label: 'Valor Sob Gestao', value: fmt(totalExpected), sub: 'Expectativa total', accent: 'var(--green)' },
+                { label: 'Valor Sob Gestão', value: fmt(totalExpected), sub: 'Expectativa total', accent: 'var(--green)' },
                 { label: 'Receita Realizada', value: fmt(totalReceived), sub: pct(totalReceived, totalExpected) + '% convertido', accent: 'var(--teal)', cls: 'green-badge' },
-                { label: 'Taxa de Conversao', value: conversionRate + '%', sub: 'Recebido / Esperado', accent: 'var(--indigo)' },
+                { label: 'Taxa de Conversão', value: conversionRate + '%', sub: 'Recebido / Esperado', accent: 'var(--indigo)' },
                 { label: 'Clientes Ativos', value: totalClients.toLocaleString('pt-BR') + '+', sub: 'Base total', accent: 'var(--purple)' },
                 { label: 'Advogados', value: totalLawyers.toString(), sub: 'Equipe ativa', accent: 'var(--cyan)' },
                 { label: 'Prazos Vencidos', value: overdueDeadlines.toString(), sub: 'Vencem ontem', accent: 'var(--red)', cls: 'red-badge' },
-                { label: 'Prazos Criticos', value: criticalDeadlines.toString(), sub: 'Hoje a 7 dias', accent: 'var(--orange)', cls: 'orange-badge' },
-                { label: 'Tarefas Pendentes', value: pendingTasks.toString(), sub: 'Aguardando acao', accent: '#D97706' },
-                { label: 'Ticket Medio', value: fmt(ticketMedio), sub: 'Por processo', accent: 'var(--gold)' }
+                { label: 'Prazos Críticos', value: criticalDeadlines.toString(), sub: 'Hoje a 7 dias', accent: 'var(--orange)', cls: 'orange-badge' },
+                { label: 'Tarefas Pendentes', value: pendingTasks.toString(), sub: 'Aguardando ação', accent: '#D97706' },
+                { label: 'Ticket Médio', value: fmt(ticketMedio), sub: 'Por processo', accent: 'var(--gold)' }
             ];
 
             return `
@@ -1119,7 +1119,7 @@
                             <svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
                         </div>
                         Resumo Executivo
-                        <span class="section-subtitle">&mdash; Visao geral em tempo real</span>
+                        <span class="section-subtitle">&mdash; Visão geral em tempo real</span>
                     </div>
                 </div>
                 <div class="metrics-grid">
@@ -1148,7 +1148,7 @@
                     <div class="ns-subs">
                         <div class="ns-sub">
                             <div class="ns-sub-val">1.778+</div>
-                            <div class="ns-sub-label">Clientes confiaram em nos</div>
+                            <div class="ns-sub-label">Clientes confiaram em nós</div>
                         </div>
                         <div class="ns-sub">
                             <div class="ns-sub-val">1.573</div>
@@ -1156,7 +1156,7 @@
                         </div>
                         <div class="ns-sub">
                             <div class="ns-sub-val">R$9,05M</div>
-                            <div class="ns-sub-label">Ja convertido em receita</div>
+                            <div class="ns-sub-label">Já convertido em receita</div>
                         </div>
                         <div class="ns-sub">
                             <div class="ns-sub-val">27</div>
@@ -1174,10 +1174,10 @@
             const okrs = [
                 {
                     tag: 'OKR 1',
-                    objective: 'Aumentar taxa de conversao financeira',
+                    objective: 'Aumentar taxa de conversão financeira',
                     krs: [
-                        { label: 'KR1: Converter R$20M ate Q2 2026', detail: 'Atual: R$9,05M de R$20M target', pct: 45, status: 'at-risk', statusLabel: 'Em Risco' },
-                        { label: 'KR2: Reduzir inadimplencia a <5%', detail: 'Atual: estimado ~8% com base no gap de R$159,8M', pct: 35, status: 'behind', statusLabel: 'Atrasado' },
+                        { label: 'KR1: Converter R$20M até Q2 2026', detail: 'Atual: R$9,05M de R$20M target', pct: 45, status: 'at-risk', statusLabel: 'Em Risco' },
+                        { label: 'KR2: Reduzir inadimplência a <5%', detail: 'Atual: estimado ~8% com base no gap de R$159,8M', pct: 35, status: 'behind', statusLabel: 'Atrasado' },
                         { label: 'KR3: Fechar 50 novos contratos Q1', detail: 'Monitorar pipeline de entrada de clientes', pct: 60, status: 'on-track', statusLabel: 'No Prazo' }
                     ]
                 },
@@ -1185,8 +1185,8 @@
                     tag: 'OKR 2',
                     objective: 'Otimizar carga de trabalho da equipe',
                     krs: [
-                        { label: 'KR1: Nenhum advogado com >30% da carga', detail: 'Welington: 46,9% — ALERTA CRITICO', pct: 15, status: 'critical', statusLabel: 'Critico' },
-                        { label: 'KR2: Redistribuir 100 processos', detail: 'Target: rebalancear de Welington para equipe', pct: 0, status: 'behind', statusLabel: 'Nao Iniciado' },
+                        { label: 'KR1: Nenhum advogado com >30% da carga', detail: 'Welington: 46,9% — ALERTA CRITICO', pct: 15, status: 'critical', statusLabel: 'Crítico' },
+                        { label: 'KR2: Redistribuir 100 processos', detail: 'Target: rebalancear de Welington para equipe', pct: 0, status: 'behind', statusLabel: 'Não Iniciado' },
                         { label: 'KR3: Contratar 3 advogados', detail: 'Para rebalancear a carga operacional', pct: 10, status: 'behind', statusLabel: 'Atrasado' }
                     ]
                 },
@@ -1195,8 +1195,8 @@
                     objective: 'Reduzir processos arquivados sem retorno',
                     krs: [
                         { label: 'KR1: Taxa arquivamento por acordo >50%', detail: 'Atual: ~45/305 = 14,8% encerrados com acordo', pct: 30, status: 'behind', statusLabel: 'Atrasado' },
-                        { label: 'KR2: Zero prazos fatais vencidos/mes', detail: '26 prazos vencidos ontem — acao imediata', pct: 0, status: 'critical', statusLabel: 'Critico' },
-                        { label: 'KR3: 100% processos ativos com proxima acao', detail: 'Garantir que cada processo tenha tarefa agendada', pct: 55, status: 'at-risk', statusLabel: 'Em Risco' }
+                        { label: 'KR2: Zero prazos fatais vencidos/mes', detail: '26 prazos vencidos ontem — ação imediata', pct: 0, status: 'critical', statusLabel: 'Crítico' },
+                        { label: 'KR3: 100% processos ativos com próxima ação', detail: 'Garantir que cada processo tenha tarefa agendada', pct: 55, status: 'at-risk', statusLabel: 'Em Risco' }
                     ]
                 }
             ];
@@ -1281,14 +1281,14 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th onclick="sortTable(1)">Advogado</th>
-                                        <th onclick="sortTable(2)">Processos</th>
-                                        <th onclick="sortTable(3)">%</th>
-                                        <th onclick="sortTable(4)">Esperado</th>
-                                        <th onclick="sortTable(5)">Recebido</th>
-                                        <th onclick="sortTable(6)">Conversao</th>
+                                        <th data-sort-col="1">Advogado</th>
+                                        <th data-sort-col="2">Processos</th>
+                                        <th data-sort-col="3">%</th>
+                                        <th data-sort-col="4">Esperado</th>
+                                        <th data-sort-col="5">Recebido</th>
+                                        <th data-sort-col="6">Conversão</th>
                                         <th>Carga</th>
-                                        <th onclick="sortTable(8)">Eficiencia</th>
+                                        <th data-sort-col="8">Eficiência</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -1320,14 +1320,14 @@
                         <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
                     </div>
                     <div>
-                        <div class="ra-text">46,9% da carga concentrada em 1 advogado &mdash; risco operacional critico</div>
-                        <div class="ra-sub">Welington Albuquerque responde por 738 dos 1.573 processos. Caso se ausente, quase metade do escritorio fica paralisado. Redistribuicao imediata recomendada.</div>
+                        <div class="ra-text">46,9% da carga concentrada em 1 advogado &mdash; risco operacional crítico</div>
+                        <div class="ra-sub">Welington Albuquerque responde por 738 dos 1.573 processos. Caso se ausente, quase metade do escritório fica paralisado. Redistribuição imediata recomendada.</div>
                     </div>
                 </div>
 
                 <div class="card" style="margin-top:20px;">
                     <div class="card-header">
-                        <div class="card-title">Distribuicao de Carga por Advogado</div>
+                        <div class="card-title">Distribuição de Carga por Advogado</div>
                     </div>
                     <div class="card-body">
                         ${barChart}
@@ -1371,13 +1371,13 @@
                                 <div class="icon" style="background:#2563EB;">
                                     <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
                                 </div>
-                                Inteligencia por Area
+                                Inteligência por Área
                             </div>
                         </div>
 
                         <div class="card" style="margin-bottom:20px;">
                             <div class="card-header">
-                                <div class="card-title">Distribuicao de Processos</div>
+                                <div class="card-title">Distribuição de Processos</div>
                             </div>
                             <div class="card-body">
                                 <div class="donut-container">
@@ -1403,7 +1403,7 @@
 
                         <div class="card" style="margin-bottom:20px;">
                             <div class="card-header">
-                                <div class="card-title">Receita Esperada por Area</div>
+                                <div class="card-title">Receita Esperada por Área</div>
                             </div>
                             <div class="card-body">
                                 <div class="hbar-list">
@@ -1424,7 +1424,7 @@
 
                         <div class="card">
                             <div class="card-header">
-                                <div class="card-title">Ticket Medio por Area (Receita/Processo)</div>
+                                <div class="card-title">Ticket Médio por Área (Receita/Processo)</div>
                             </div>
                             <div class="card-body">
                                 <div class="ratio-grid">
@@ -1479,13 +1479,13 @@
                                 <div style="display:flex;gap:12px;flex-wrap:wrap;">
                                     <div style="flex:1;min-width:120px;padding:16px;border-radius:10px;background:#DCFCE7;text-align:center;">
                                         <div style="font-size:1.6rem;font-weight:900;color:#16A34A;">645</div>
-                                        <div style="font-size:0.7rem;font-weight:600;color:#16A34A;">Em Elaboracao</div>
-                                        <div style="font-size:0.6rem;color:#15803D;">Documentos + Pecas + Parecer</div>
+                                        <div style="font-size:0.7rem;font-weight:600;color:#16A34A;">Em Elaboração</div>
+                                        <div style="font-size:0.6rem;color:#15803D;">Documentos + Peças + Parecer</div>
                                     </div>
                                     <div style="flex:1;min-width:120px;padding:16px;border-radius:10px;background:#DBEAFE;text-align:center;">
                                         <div style="font-size:1.6rem;font-weight:900;color:#2563EB;">461</div>
                                         <div style="font-size:0.7rem;font-weight:600;color:#2563EB;">Protocolados</div>
-                                        <div style="font-size:0.6rem;color:#1D4ED8;">Acao + Requerimento</div>
+                                        <div style="font-size:0.6rem;color:#1D4ED8;">Ação + Requerimento</div>
                                     </div>
                                     <div style="flex:1;min-width:120px;padding:16px;border-radius:10px;background:#F1F5F9;text-align:center;">
                                         <div style="font-size:1.6rem;font-weight:900;color:#64748B;">235</div>
@@ -1494,8 +1494,8 @@
                                     </div>
                                     <div style="flex:1;min-width:120px;padding:16px;border-radius:10px;background:#FEF3C7;text-align:center;">
                                         <div style="font-size:1.6rem;font-weight:900;color:#D97706;">64</div>
-                                        <div style="font-size:0.7rem;font-weight:600;color:#D97706;">Em Analise</div>
-                                        <div style="font-size:0.6rem;color:#92400E;">Avaliacao inicial</div>
+                                        <div style="font-size:0.7rem;font-weight:600;color:#D97706;">Em Análise</div>
+                                        <div style="font-size:0.6rem;color:#92400E;">Avaliação inicial</div>
                                     </div>
                                 </div>
                             </div>
@@ -1527,23 +1527,23 @@
                     <div class="deadline-card dc-red">
                         <div class="dc-number">${overdueDeadlines}</div>
                         <div class="dc-title">Vencidos</div>
-                        <div class="dc-desc">Prazos expirados ontem. Acao imediata necessaria para evitar prejuizo processual.</div>
+                        <div class="dc-desc">Prazos expirados ontem. Ação imediata necessária para evitar prejuízo processual.</div>
                     </div>
                     <div class="deadline-card dc-orange">
                         <div class="dc-number">${criticalDeadlines}</div>
-                        <div class="dc-title">Criticos</div>
-                        <div class="dc-desc">Vencem entre hoje e os proximos 7 dias. Priorizar triagem e delegacao.</div>
+                        <div class="dc-title">Críticos</div>
+                        <div class="dc-desc">Vencem entre hoje e os próximos 7 dias. Priorizar triagem e delegação.</div>
                     </div>
                     <div class="deadline-card dc-blue">
                         <div class="dc-number">${pendingTasks}</div>
-                        <div class="dc-title">Tarefas Proximas</div>
+                        <div class="dc-title">Tarefas Próximas</div>
                         <div class="dc-desc">Total de tarefas pendentes no pipeline. Organizar por prioridade e advogado.</div>
                     </div>
                 </div>
 
                 <div class="card" style="margin-top:20px;">
                     <div class="card-header">
-                        <div class="card-title">Timeline de Prazos &mdash; Proximos 7 dias</div>
+                        <div class="card-title">Timeline de Prazos &mdash; Próximos 7 dias</div>
                     </div>
                     <div class="card-body">
                         <div class="timeline">
@@ -1581,14 +1581,14 @@
                             <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
                         </div>
                         Aprofundamento Financeiro
-                        <span class="section-subtitle">&mdash; Receita, conversao e gaps</span>
+                        <span class="section-subtitle">&mdash; Receita, conversão e gaps</span>
                     </div>
                 </div>
 
                 <!-- Gap Analysis -->
                 <div class="card" style="margin-bottom:20px;">
                     <div class="card-header">
-                        <div class="card-title">Analise de Gap Financeiro</div>
+                        <div class="card-title">Análise de Gap Financeiro</div>
                     </div>
                     <div class="card-body">
                         <div class="gap-display">
@@ -1604,7 +1604,7 @@
                             <div class="gap-arrow">&rarr;</div>
                             <div class="gap-block">
                                 <div class="gb-val" style="color:var(--red);">${fmt(gap)}</div>
-                                <div class="gb-label">Gap Nao Realizado</div>
+                                <div class="gb-label">Gap Não Realizado</div>
                             </div>
                         </div>
                         <div style="text-align:center;margin-top:12px;">
@@ -1612,7 +1612,7 @@
                                 <div class="progress-fill green" style="width:${(totalReceived / totalExpected * 100).toFixed(1)}%;"></div>
                             </div>
                             <div style="font-size:0.7rem;color:var(--text-muted);margin-top:6px;">
-                                ${(totalReceived / totalExpected * 100).toFixed(1)}% convertido &mdash; R$${(gap / 1e6).toFixed(1).replace('.', ',')}M pendente de realizacao
+                                ${(totalReceived / totalExpected * 100).toFixed(1)}% convertido &mdash; R$${(gap / 1e6).toFixed(1).replace('.', ',')}M pendente de realização
                             </div>
                         </div>
                     </div>
@@ -1640,8 +1640,8 @@
                                 `).join('')}
                             </div>`}
                             <div style="margin-top:16px;padding:12px;border-radius:8px;background:#F0FDF4;border:1px solid #BBF7D0;">
-                                <div style="font-size:0.72rem;font-weight:600;color:#16A34A;">Destaque: Kairo Icaro</div>
-                                <div style="font-size:0.68rem;color:#15803D;">87,7% de conversao &mdash; referencia em efetividade financeira do escritorio.</div>
+                                <div style="font-size:0.72rem;font-weight:600;color:#16A34A;">Destaque: Kairo Ícaro</div>
+                                <div style="font-size:0.68rem;color:#15803D;">87,7% de conversão &mdash; referência em efetividade financeira do escritório.</div>
                             </div>
                         </div>
                     </div>
@@ -1649,7 +1649,7 @@
                     <!-- Monthly Trend -->
                     <div class="card">
                         <div class="card-header">
-                            <div class="card-title">Tendencia Mensal (Ultimos 6 meses)</div>
+                            <div class="card-title">Tendência Mensal (Últimos 6 meses)</div>
                         </div>
                         <div class="card-body">
                             <div style="display:flex;gap:8px;margin-bottom:12px;">
@@ -1685,7 +1685,7 @@
                 <!-- Expected vs Received Waterfall -->
                 <div class="card" style="margin-top:20px;">
                     <div class="card-header">
-                        <div class="card-title">Waterfall: Esperado vs Recebido por Area</div>
+                        <div class="card-title">Waterfall: Esperado vs Recebido por Área</div>
                     </div>
                     <div class="card-body">
                         <div class="waterfall">
@@ -1712,15 +1712,15 @@
             // Risk assessment per area
             const heatData = [
                 { area: 'Trabalhista', workload: 'hm-orange', revenue: 'hm-yellow', deadlines: 'hm-orange', aging: 'hm-red', score: 'Alto' },
-                { area: 'Administrativo', workload: 'hm-orange', revenue: 'hm-red', deadlines: 'hm-yellow', aging: 'hm-yellow', score: 'Medio' },
-                { area: 'Civel', workload: 'hm-yellow', revenue: 'hm-green', deadlines: 'hm-yellow', aging: 'hm-orange', score: 'Medio' },
+                { area: 'Administrativo', workload: 'hm-orange', revenue: 'hm-red', deadlines: 'hm-yellow', aging: 'hm-yellow', score: 'Médio' },
+                { area: 'Cível', workload: 'hm-yellow', revenue: 'hm-green', deadlines: 'hm-yellow', aging: 'hm-orange', score: 'Médio' },
                 { area: 'Ambiental', workload: 'hm-yellow', revenue: 'hm-green', deadlines: 'hm-green', aging: 'hm-yellow', score: 'Baixo' },
-                { area: 'Penal', workload: 'hm-green', revenue: 'hm-red', deadlines: 'hm-orange', aging: 'hm-yellow', score: 'Medio' },
-                { area: 'Tributario', workload: 'hm-green', revenue: 'hm-yellow', deadlines: 'hm-green', aging: 'hm-green', score: 'Baixo' }
+                { area: 'Penal', workload: 'hm-green', revenue: 'hm-red', deadlines: 'hm-orange', aging: 'hm-yellow', score: 'Médio' },
+                { area: 'Tributário', workload: 'hm-green', revenue: 'hm-yellow', deadlines: 'hm-green', aging: 'hm-green', score: 'Baixo' }
             ];
 
-            const scoreColor = s => s === 'Alto' ? 'hm-red' : s === 'Medio' ? 'hm-orange' : 'hm-green';
-            const cellLabel = cls => cls === 'hm-green' ? 'Baixo' : cls === 'hm-yellow' ? 'Moderado' : cls === 'hm-orange' ? 'Alto' : 'Critico';
+            const scoreColor = s => s === 'Alto' ? 'hm-red' : s === 'Médio' ? 'hm-orange' : 'hm-green';
+            const cellLabel = cls => cls === 'hm-green' ? 'Baixo' : cls === 'hm-yellow' ? 'Moderado' : cls === 'hm-orange' ? 'Alto' : 'Crítico';
 
             return `
             <div class="section">
@@ -1730,7 +1730,7 @@
                             <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
                         </div>
                         Mapa de Riscos
-                        <span class="section-subtitle">&mdash; Avaliacao multidimensional por area</span>
+                        <span class="section-subtitle">&mdash; Avaliação multidimensional por área</span>
                     </div>
                 </div>
                 <div class="card">
@@ -1739,7 +1739,7 @@
                             <table class="heatmap">
                                 <thead>
                                     <tr>
-                                        <th>Area</th>
+                                        <th>Área</th>
                                         <th>Carga de Trabalho</th>
                                         <th>Receita</th>
                                         <th>Prazos</th>
@@ -1776,7 +1776,7 @@
                             </div>
                             <div style="display:flex;align-items:center;gap:6px;font-size:0.65rem;">
                                 <div style="width:16px;height:16px;border-radius:3px;background:#FEE2E2;"></div>
-                                <span style="color:var(--text-muted);">Critico</span>
+                                <span style="color:var(--text-muted);">Crítico</span>
                             </div>
                         </div>
                     </div>
@@ -1793,57 +1793,57 @@
                     priority: 'Urgente', priorityColor: 'var(--red)',
                     iconBg: 'var(--red)',
                     icon: '<svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
-                    text: '26 prazos vencidos ontem — acao imediata necessaria',
-                    detail: 'Realizar triagem emergencial dos 26 prazos vencidos. Identificar quais sao fatais e quais admitem purgacao da mora. Distribuir entre advogados disponiveis hoje.'
+                    text: '26 prazos vencidos ontem — ação imediata necessária',
+                    detail: 'Realizar triagem emergencial dos 26 prazos vencidos. Identificar quais são fatais e quais admitem purgação da mora. Distribuir entre advogados disponíveis hoje.'
                 },
                 {
-                    priority: 'Critico', priorityColor: 'var(--red-dark)',
+                    priority: 'Crítico', priorityColor: 'var(--red-dark)',
                     iconBg: '#DC2626',
                     icon: '<svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>',
                     text: 'Redistribuir 200+ processos de Welington para advogados com <50 processos',
-                    detail: 'Concentracao de 46,9% em 1 profissional e risco operacional grave. Gabriel (98), Joao (62), Laura (24), Augusto (21), Plinio (20) e Mariana (19) somam apenas 244 processos e podem absorver carga.'
+                    detail: 'Concentração de 46,9% em 1 profissional é risco operacional grave. Gabriel (98), Joao (62), Laura (24), Augusto (21), Plinio (20) e Mariana (19) somam apenas 244 processos e podem absorver carga.'
                 },
                 {
-                    priority: 'Estrategico', priorityColor: 'var(--orange)',
+                    priority: 'Estratégico', priorityColor: 'var(--orange)',
                     iconBg: '#D97706',
                     icon: '<svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>',
-                    text: 'Priorizar cobranca dos R$159,8M nao convertidos',
-                    detail: 'Apenas 5,4% do valor esperado foi recebido. Implementar processo sistematico de cobranca. Focar nos 10 maiores devedores e em processos com sentenca favoravel ja transitada em julgado.'
+                    text: 'Priorizar cobrança dos R$159,8M não convertidos',
+                    detail: 'Apenas 5,4% do valor esperado foi recebido. Implementar processo sistemático de cobrança. Focar nos 10 maiores devedores e em processos com sentença favorável já transitada em julgado.'
                 },
                 {
                     priority: 'Oportunidade', priorityColor: '#16A34A',
                     iconBg: '#16A34A',
                     icon: '<svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>',
-                    text: 'Ambiental tem maior ticket medio (R$235K) — expandir atuacao',
-                    detail: 'A area Ambiental gera R$235K/processo vs R$36K no Trabalhista. Investir em captacao de clientes ambientais pode multiplicar a receita com menos processos.'
+                    text: 'Ambiental tem maior ticket médio (R$235K) — expandir atuação',
+                    detail: 'A área Ambiental gera R$235K/processo vs R$36K no Trabalhista. Investir em captação de clientes ambientais pode multiplicar a receita com menos processos.'
                 },
                 {
-                    priority: 'Estrategico', priorityColor: 'var(--orange)',
+                    priority: 'Estratégico', priorityColor: 'var(--orange)',
                     iconBg: '#6366F1',
                     icon: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
-                    text: 'Replicar modelo de Kairo Icaro (87,7% conversao) no escritorio',
-                    detail: 'Com 136 processos e R$7,8M recebidos de R$8,9M esperados, Kairo tem a maior taxa de conversao. Documentar e escalar seu processo de trabalho para os demais advogados.'
+                    text: 'Replicar modelo de Kairo Ícaro (87,7% conversão) no escritório',
+                    detail: 'Com 136 processos e R$7,8M recebidos de R$8,9M esperados, Kairo tem a maior taxa de conversão. Documentar e escalar seu processo de trabalho para os demais advogados.'
                 },
                 {
-                    priority: 'Medio Prazo', priorityColor: 'var(--indigo)',
+                    priority: 'Médio Prazo', priorityColor: 'var(--indigo)',
                     iconBg: '#8B5CF6',
                     icon: '<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>',
-                    text: 'Administrativo: 390 processos com apenas R$343K esperado — revisar estrategia',
-                    detail: 'O ticket medio de R$880/processo sugere que muitos casos administrativos nao tem retorno financeiro. Avaliar se vale manter volume ou focar em casos de maior valor.'
+                    text: 'Administrativo: 390 processos com apenas R$343K esperado — revisar estratégia',
+                    detail: 'O ticket médio de R$880/processo sugere que muitos casos administrativos não têm retorno financeiro. Avaliar se vale manter volume ou focar em casos de maior valor.'
                 },
                 {
-                    priority: 'Medio Prazo', priorityColor: 'var(--indigo)',
+                    priority: 'Médio Prazo', priorityColor: 'var(--indigo)',
                     iconBg: '#0891B2',
                     icon: '<svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>',
-                    text: 'Contratar 3 advogados seniors para rebalancear carga',
-                    detail: 'Com 27 advogados e 1.573 processos, a media e 58 processos/advogado. Porem a mediana e muito menor. Novas contratacoes focadas em Trabalhista e Administrativo resolveriam o gargalo.'
+                    text: 'Contratar 3 advogados sêniors para rebalancear carga',
+                    detail: 'Com 27 advogados e 1.573 processos, a média é 58 processos/advogado. Porém a mediana é muito menor. Novas contratações focadas em Trabalhista e Administrativo resolveriam o gargalo.'
                 },
                 {
                     priority: 'Monitorar', priorityColor: 'var(--text-muted)',
                     iconBg: '#64748B',
                     icon: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
                     text: '305 processos arquivados — apenas 14,8% por acordo',
-                    detail: 'A maioria dos arquivamentos nao gera retorno. Meta: elevar taxa de acordo para >50%. Implementar mediacao pre-processual e negociacao ativa.'
+                    detail: 'A maioria dos arquivamentos não gera retorno. Meta: elevar taxa de acordo para >50%. Implementar mediação pré-processual e negociação ativa.'
                 }
             ];
 
@@ -1854,7 +1854,7 @@
                         <div class="icon" style="background:linear-gradient(135deg, var(--green), var(--green-light));">
                             <svg viewBox="0 0 24 24" style="stroke:var(--blue);"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
                         </div>
-                        Recomendacoes Estrategicas
+                        Recomendações Estratégicas
                         <span class="section-subtitle">&mdash; Insights gerados a partir dos dados</span>
                     </div>
                 </div>
@@ -1873,8 +1873,8 @@
             </div>
 
             <div style="text-align:center;padding:32px 0 48px;color:var(--text-light);font-size:0.7rem;">
-                Dashboard gerado com dados AdvBox &mdash; Atualizado em Marco/2026<br>
-                KIAA Advocacia &mdash; Inteligencia Operacional
+                Dashboard gerado com dados AdvBox &mdash; Atualizado em Março/2026<br>
+                KIAA Advocacia &mdash; Inteligência Operacional
             </div>`;
         }
 
@@ -1927,7 +1927,7 @@
         }
     </script>
 
-    <!-- Event listeners replacing inline handlers (XSS hardening) -->
+    <!-- Event delegation replacing inline handlers (XSS hardening) -->
     <script>
     (function() {
         // Skip link
@@ -1936,25 +1936,32 @@
             skipLink.addEventListener('focus', function() { this.style.top = '0'; });
             skipLink.addEventListener('blur', function() { this.style.top = '-40px'; });
         }
+
         // Logout button
         var logoutBtn = document.querySelector('.btn-logout');
         if (logoutBtn) {
-            logoutBtn.removeAttribute('onclick');
             logoutBtn.addEventListener('click', function() { handleLogout(); });
         }
+
         // Mobile toggle
         var mobileBtn = document.querySelector('.mobile-toggle');
         if (mobileBtn) {
-            mobileBtn.removeAttribute('onclick');
             mobileBtn.addEventListener('click', function() { toggleSidebar(); });
         }
-        // Sidebar nav items with localStorage
-        document.querySelectorAll('.nav-item[onclick]').forEach(function(el) {
-            var section = el.getAttribute('onclick').match(/setItem\('portalSection','(\w+)'\)/);
-            if (section) {
-                var sectionName = section[1];
-                el.removeAttribute('onclick');
-                el.addEventListener('click', function() { localStorage.setItem('portalSection', sectionName); });
+
+        // Sidebar nav items with data-section → localStorage
+        document.querySelectorAll('.nav-item[data-section]').forEach(function(el) {
+            el.addEventListener('click', function() {
+                localStorage.setItem('portalSection', el.getAttribute('data-section'));
+            });
+        });
+
+        // Table header sort delegation (for dynamically rendered table)
+        document.addEventListener('click', function(e) {
+            var th = e.target.closest('th[data-sort-col]');
+            if (th) {
+                var col = parseInt(th.getAttribute('data-sort-col'), 10);
+                if (!isNaN(col)) sortTable(col);
             }
         });
     })();

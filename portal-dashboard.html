@@ -1326,11 +1326,11 @@
                 <div class="filter-bar" id="filterBar">
                     <div class="filter-group">
                         <label for="filterClient">Cliente</label>
-                        <select id="filterClient" onchange="applyFilters()"><option value="">Todos</option></select>
+                        <select id="filterClient"><option value="">Todos</option></select>
                     </div>
                     <div class="filter-group">
-                        <label for="filterArea">Area</label>
-                        <select id="filterArea" onchange="applyFilters()">
+                        <label for="filterArea">Área</label>
+                        <select id="filterArea">
                             <option value="">Todas</option>
                             <option>AMBIENTAL</option><option>CIVEL</option><option>TRABALHISTA</option>
                             <option>ADMINISTRATIVO</option><option>PENAL</option><option>TRIBUTARIO</option>
@@ -1339,28 +1339,28 @@
                     </div>
                     <div class="filter-group">
                         <label for="filterLawyer">Advogado</label>
-                        <select id="filterLawyer" onchange="applyFilters()"><option value="">Todos</option></select>
+                        <select id="filterLawyer"><option value="">Todos</option></select>
                     </div>
                     <div class="filter-group">
                         <label for="filterStatus">Status</label>
-                        <select id="filterStatus" onchange="applyFilters()">
+                        <select id="filterStatus">
                             <option value="">Todos</option>
                             <option value="Em andamento">Em andamento</option>
-                            <option value="Concluido">Concluido</option>
+                            <option value="Concluído">Concluído</option>
                             <option value="Arquivado">Arquivado</option>
                         </select>
                     </div>
                     <div class="filter-group">
                         <label for="filterDateFrom">De</label>
-                        <input type="date" id="filterDateFrom" onchange="applyFilters()">
+                        <input type="date" id="filterDateFrom">
                     </div>
                     <div class="filter-group">
-                        <label for="filterDateTo">Ate</label>
-                        <input type="date" id="filterDateTo" onchange="applyFilters()">
+                        <label for="filterDateTo">Até</label>
+                        <input type="date" id="filterDateTo">
                     </div>
                     <div class="filter-group search">
                         <label for="filterSearch">Buscar</label>
-                        <input type="text" id="filterSearch" placeholder="Numero, titulo ou cliente...">
+                        <input type="text" id="filterSearch" placeholder="Número, título ou cliente...">
                     </div>
                     <button class="btn-clear-filters">Limpar filtros</button>
                 </div>
@@ -1697,7 +1697,7 @@
                     <div class="card-header" style="flex-wrap: wrap; gap: 12px;">
                         <span class="card-title">Leads Capturados — Radar Ambiental</span>
                         <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
-                            <select id="leadsFilterStatus" onchange="filterLeads()" aria-label="Filtrar por status" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white); cursor: pointer;">
+                            <select id="leadsFilterStatus" aria-label="Filtrar por status" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white); cursor: pointer;">
                                 <option value="">Todos os Status</option>
                                 <option value="Novo">Novo</option>
                                 <option value="Contatado">Contatado</option>
@@ -1705,15 +1705,15 @@
                                 <option value="Convertido">Convertido</option>
                                 <option value="Descartado">Descartado</option>
                             </select>
-                            <select id="leadsFilterTipo" onchange="filterLeads()" aria-label="Filtrar por tipo" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white); cursor: pointer;">
+                            <select id="leadsFilterTipo" aria-label="Filtrar por tipo" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white); cursor: pointer;">
                                 <option value="">Todos os Tipos</option>
                                 <option value="Autuado IBAMA">Autuado IBAMA</option>
                                 <option value="Autuado FEMARH">Autuado FEMARH</option>
                                 <option value="Prospect">Prospect</option>
                                 <option value="Lead Site">Lead Site</option>
                             </select>
-                            <input type="date" id="leadsFilterDateFrom" onchange="filterLeads()" aria-label="Data inicial" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white);">
-                            <input type="date" id="leadsFilterDateTo" onchange="filterLeads()" aria-label="Data final" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white);">
+                            <input type="date" id="leadsFilterDateFrom" aria-label="Data inicial" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white);">
+                            <input type="date" id="leadsFilterDateTo" aria-label="Data final" style="padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.8rem; background: var(--white);">
                         </div>
                     </div>
                     <div class="card-body">
@@ -1753,8 +1753,8 @@
     <div class="timeout-overlay" id="timeoutOverlay">
         <div class="timeout-modal">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <h3>Sua sessao esta prestes a expirar</h3>
-            <p>Por seguranca, voce sera desconectado automaticamente por inatividade.</p>
+            <h3>Sua sessão está prestes a expirar</h3>
+            <p>Por segurança, você será desconectado automaticamente por inatividade.</p>
             <div class="timeout-countdown" id="timeoutCountdown">5:00</div>
             <button class="btn-stay">Continuar conectado</button>
             <button class="btn-leave">Sair agora</button>
@@ -1777,7 +1777,7 @@
             // Anti-clickjacking: break out of iframes
             if (window.top !== window.self) {
                 try { window.top.location = window.self.location; }
-                catch (e) { document.body.innerHTML = '<h1>Acesso negado: este portal nao pode ser carregado em um iframe.</h1>'; }
+                catch (e) { document.body.innerHTML = '<h1>Acesso negado: este portal não pode ser carregado em um iframe.</h1>'; }
             }
 
             // XSS sanitizer for DOM rendering
@@ -2819,6 +2819,16 @@
         // Analisar Credito button
         var btnCredito = document.querySelector('.btn-analisar-credito');
         if (btnCredito) btnCredito.addEventListener('click', function() { analisarCredito(); });
+        // Filter selects/dates — applyFilters
+        ['filterClient','filterArea','filterLawyer','filterStatus','filterDateFrom','filterDateTo'].forEach(function(id) {
+            var el = document.getElementById(id);
+            if (el) el.addEventListener('change', function() { applyFilters(); });
+        });
+        // Leads filter selects/dates — filterLeads
+        ['leadsFilterStatus','leadsFilterTipo','leadsFilterDateFrom','leadsFilterDateTo'].forEach(function(id) {
+            var el = document.getElementById(id);
+            if (el) el.addEventListener('change', function() { filterLeads(); });
+        });
         // Pagination — delegate via document (buttons are generated dynamically)
         document.addEventListener('click', function(e) {
             var btn = e.target.closest('[data-go-page]');
