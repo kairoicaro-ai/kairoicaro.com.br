@@ -204,15 +204,11 @@
             transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
             overflow: hidden;
             cursor: pointer;
-            opacity: 0;
-            transform: translateY(20px);
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        .card.active {
             opacity: 1;
             transform: translateY(0);
-            transition: opacity 0.6s ease, transform 0.6s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.08);
+            transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.16,1,0.3,1),
+                        box-shadow 0.4s ease, border-color 0.3s ease;
         }
 
         /* Accent top bar — intentional, not gradient border */
@@ -295,7 +291,7 @@
         .card-desc {
             font-size: 0.82rem;
             font-weight: 300;
-            color: rgba(255, 255, 255, 0.55);
+            color: rgba(255, 255, 255, 0.65);
             line-height: 1.6;
             flex: 1;
         }
@@ -308,7 +304,7 @@
             margin-top: 20px;
             font-size: 0.78rem;
             font-weight: 600;
-            color: rgba(255,255,255,0.3);
+            color: rgba(255,255,255,0.6);
             transition: color 0.35s ease, gap 0.35s ease;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -403,7 +399,7 @@
         .footer-copy {
             font-size: 0.78rem;
             font-weight: 300;
-            color: rgba(255,255,255,0.3);
+            color: rgba(255,255,255,0.55);
             letter-spacing: 0.5px;
         }
 
@@ -884,7 +880,7 @@
 
         <!-- CARDS -->
         <section class="cards-section" id="main-content">
-            <div class="cards-grid stagger-children">
+            <div class="cards-grid">
 
                 <!-- 1. 3A — Ambiental, Agrário e Agronegócio -->
                 <a href="site-3a.html" class="card card--3a">
@@ -1149,7 +1145,7 @@
                 .team-header .team-desc {
                     font-size: 1rem;
                     font-weight: 300;
-                    color: rgba(255,255,255,0.45);
+                    color: rgba(255,255,255,0.65);
                     max-width: 560px;
                     margin: 0 auto;
                 }
@@ -1374,17 +1370,17 @@
             <div style="max-width:1200px; margin:0 auto; padding:0 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px;">
                 <div>
                     <img src="img/logo-horizontal-branca.png" alt="KIAA" style="height:28px; opacity:0.6; margin-bottom:8px;" loading="lazy">
-                    <p style="font-size:0.78rem; color:rgba(255,255,255,0.35);">Av. Ville Roy, 4301 — Salas 206 e 208, Canarinho, Boa Vista — RR</p>
+                    <p style="font-size:0.78rem; color:rgba(255,255,255,0.55);">Av. Ville Roy, 4301 — Salas 206 e 208, Canarinho, Boa Vista — RR</p>
                 </div>
                 <div>
                     <p style="font-size:0.82rem; color:rgba(255,255,255,0.55); font-weight:600; margin-bottom:8px;" data-en="Quick Links">Links Rápidos</p>
                     <div style="display:flex; flex-direction:column; gap:4px;">
-                        <a href="site-3a.html#sobre" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="About Us">Sobre Nós</a>
-                        <a href="#main-content" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="Practice Areas">Áreas de Atuação</a>
-                        <a href="site-3a.html#premios" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="Awards & Recognition">Prêmios e Reconhecimento</a>
-                        <a href="blog.html" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="Blog / Insights">Blog / Insights</a>
-                        <a href="calculadora.html" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="Fee Calculator">Simulador de Honorários</a>
-                        <a href="esg.html" style="font-size:0.78rem; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="ESG / Social Commitment">ESG / Compromisso Social</a>
+                        <a href="site-3a.html#sobre" style="font-size:0.78rem; color:rgba(255,255,255,0.6); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="About Us">Sobre Nós</a>
+                        <a href="#main-content" style="font-size:0.78rem; color:rgba(255,255,255,0.6); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="Practice Areas">Áreas de Atuação</a>
+                        <a href="site-3a.html#premios" style="font-size:0.78rem; color:rgba(255,255,255,0.6); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="Awards & Recognition">Prêmios e Reconhecimento</a>
+                        <a href="blog.html" style="font-size:0.78rem; color:rgba(255,255,255,0.6); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="Blog / Insights">Blog / Insights</a>
+                        <a href="calculadora.html" style="font-size:0.78rem; color:rgba(255,255,255,0.6); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="Fee Calculator">Simulador de Honorários</a>
+                        <a href="esg.html" style="font-size:0.78rem; color:rgba(255,255,255,0.6); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="ESG / Social Commitment">ESG / Compromisso Social</a>
                     </div>
                 </div>
                 <div style="display:flex; gap:16px; align-items:center;">
@@ -2074,13 +2070,16 @@ window.addEventListener('load', function() {
     // --- Cards grid: stagger from bottom with per-row timing ---
     var cardsGrid = document.querySelector('.cards-grid');
     if (cardsGrid) {
-        gsap.from(cardsGrid.querySelectorAll('.card'), {
-            y: 50, opacity: 0, duration: 0.7,
-            ease: 'power2.out',
-            stagger: { amount: 0.6, grid: [3, 3], from: 'start' },
-            scrollTrigger: { trigger: cardsGrid, start: 'top 80%', once: true },
-            onComplete: function() {
-                cardsGrid.querySelectorAll('.card').forEach(function(c) { c.classList.add('active'); });
+        ScrollTrigger.create({
+            trigger: cardsGrid,
+            start: 'top 95%',
+            once: true,
+            onEnter: function() {
+                gsap.from(cardsGrid.querySelectorAll('.card'), {
+                    y: 40, opacity: 0, duration: 0.7,
+                    ease: 'power2.out',
+                    stagger: { amount: 0.6, grid: [3, 3], from: 'start' }
+                });
             }
         });
     }

@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ==================== COUNTER ANIMATION ====================
     function animateCounters() {
-        const counters = document.querySelectorAll('.stat-number[data-target]');
+        const counters = document.querySelectorAll('.stat-number[data-target], .counter-number[data-target]');
         
         counters.forEach(counter => {
             if (counter.dataset.animated) return;
