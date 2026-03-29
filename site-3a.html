@@ -26,8 +26,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="icon" type="image/png" href="img/icone-positivo-verde.png">
     <link rel="apple-touch-icon" href="img/icone-positivo-verde.png">
     <!-- Schema.org JSON-LD -->
@@ -178,12 +176,11 @@
                 <img src="img/logo-horizontal-positiva.png" alt="Kairo Ícaro Advogados Associados" class="logo-img logo-dark" id="logo-dark">
             </a>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
-                <li><a href="#areas" class="nav-link">Áreas de Atuação</a></li>
+                <li><a href="novo-index.html" class="nav-link">&larr; Hub</a></li>
+                <li><a href="#solucoes" class="nav-link">Soluções</a></li>
+                <li><a href="#cases" class="nav-link">Resultados</a></li>
                 <li><a href="#equipe" class="nav-link">Equipe</a></li>
-                <li><a href="#noticias" class="nav-link">Notícias</a></li>
-                <li><a href="#informativos" class="nav-link">Informativos</a></li>
-                <li><a href="inteligencia.html" class="nav-link">Inteligência</a></li>
+                <li><a href="inteligencia.html" class="nav-link">Radar Ambiental</a></li>
                 <li><a href="#contato" class="nav-link nav-cta">Fale Conosco</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Abrir menu">
@@ -201,173 +198,107 @@
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <div class="hero-badge">Amazônia &bull; Assessoria Jurídica Especializada</div>
+            <div class="hero-badge">3A — Ambiental &bull; Agrário &bull; Agronegócio</div>
             <h1 class="hero-title">
-                Protegemos o seu <span class="text-green">patrimônio</span>,
-                a sua <span class="text-green">terra</span> e o seu <span class="text-green">futuro</span>.
+                Especialistas em proteger sua <span class="text-green">terra</span>, seu <span class="text-green">negócio</span> e o <span class="text-green">meio ambiente</span>.
             </h1>
             <p class="hero-subtitle">
-                Assessoria jurídica preventiva e contenciosa para empresas e produtores rurais, com soluções estratégicas em Direito Ambiental, Agrário, Trabalhista e mais 6 áreas de atuação.
+                Referência em Direito Ambiental, Agrário e do Agronegócio na Amazônia. Assessoria jurídica estratégica para produtores rurais, empresas do agro e questões ambientais.
             </p>
             <div class="hero-actions">
                 <a href="https://wa.me/5595991775868" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="hero-whatsapp">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     Agende uma consulta
                 </a>
-                <a href="#areas" class="btn btn-outline" id="hero-areas">
-                    Nossas Áreas
+                <a href="inteligencia.html" class="btn btn-outline" id="hero-areas">
+                    Radar Ambiental
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
                 </a>
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-number" data-target="14">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Anos de experiência</span>
+                    <span class="stat-number" data-target="200">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Processos ambientais e agrários</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-target="1500">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Processos gerenciados</span>
+                    <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Licenciamentos assessorados</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-prefix">R$</span><span class="stat-number" data-target="150">0</span><span class="stat-suffix">mi+</span>
+                    <span class="stat-label">Em causas do agro sob gestão</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
                     <span class="stat-number" data-target="12">0</span>
-                    <span class="stat-label">Estados de atuação</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-prefix">R$</span><span class="stat-number" data-target="500">0</span><span class="stat-suffix">mi+</span>
-                    <span class="stat-label">Em causas sob gestão</span>
+                    <span class="stat-label">Estados com atuação ativa</span>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator" id="scroll-indicator">
-            <span>Conheça nosso escritório</span>
+            <span>Conheça nossas soluções</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m-7-7l7 7 7-7"/></svg>
         </div>
     </section>
 
-    <!-- ==================== ABOUT SECTION ==================== -->
-    <section id="sobre" class="section about">
+    <!-- ==================== AUTORIDADE & REPUTAÇÃO ==================== -->
+    <section id="autoridade" class="section about">
         <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Por que o KIAA</span>
+                <h2 class="section-title">Referência em <span class="text-green">Direito Ambiental</span> na Amazônia</h2>
+                <p class="section-desc">Reconhecidos pela Análise Advocacia 2025 entre os escritórios mais admirados do Brasil na área ambiental e agrária.</p>
+            </div>
             <div class="about-grid">
                 <div class="about-content">
-                    <span class="section-tag">Sobre Nós</span>
-                    <h2 class="section-title">Compromisso com a <span class="text-green">excelência jurídica</span> na Amazônia e no Brasil</h2>
-                    <p class="about-text">
-                        Em atividade desde <strong>abril de 2012</strong>, o escritório <strong>Kairo Ícaro — Advogados Associados</strong> possui uma equipe especializada na gestão de grandes carteiras, oferecendo um atendimento focado não somente na qualidade processual, como na qualidade administrativa.
-                    </p>
-                    <p class="about-text">
-                        Contamos com um setor responsável pela <strong>gestão dos sistemas</strong> de cada um dos nossos clientes, tornando-nos uma <strong>extensão da companhia</strong>. Atuamos nas principais comarcas do estado de Roraima e em mais <strong>11 estados</strong> brasileiros.
-                    </p>
-                    <p class="about-text">
-                        Utilizamos <strong>tecnologia avançada</strong> para gerenciar documentos, processos e prazos, contando com uma vasta rede de colaboradores que proporcionam dinamismo, agilidade e capilaridade — fatores imprescindíveis para o segmento.
-                    </p>
                     <div class="about-features">
-                        <div class="feature-item">
+                        <div class="about-feature">
                             <div class="feature-icon">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                             </div>
                             <div>
-                                <h4>Assessoria Preventiva</h4>
-                                <p>Antecipamos riscos e criamos estratégias para evitar litígios.</p>
+                                <h3>Atuação perante IBAMA, ICMBio e órgãos ambientais</h3>
+                                <p>Experiência consolidada em defesas administrativas, embargos, licenciamentos e TACs junto aos principais órgãos de fiscalização ambiental.</p>
                             </div>
                         </div>
-                        <div class="feature-item">
+                        <div class="about-feature">
                             <div class="feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
                             </div>
                             <div>
-                                <h4>Tecnologia Jurídica</h4>
-                                <p>Gestão digital de processos com máxima eficiência e segurança.</p>
+                                <h3>INCRA, regularização fundiária e questões agrárias</h3>
+                                <p>Assessoria em regularização de imóveis rurais, georreferenciamento, desapropriação e defesa possessória com atuação nacional.</p>
                             </div>
                         </div>
-                        <div class="feature-item">
+                        <div class="about-feature">
                             <div class="feature-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
                             </div>
                             <div>
-                                <h4>Atendimento Personalizado</h4>
-                                <p>Cada cliente recebe atenção individualizada e soluções sob medida.</p>
+                                <h3>Inteligência ambiental com dados em tempo real</h3>
+                                <p>Radar Ambiental próprio com monitoramento de autuações IBAMA, alertas de desmatamento, análise de CAR e jurimetria aplicada ao agro.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="about-visual">
-                    <div class="about-image-wrapper">
-                        <img src="img/hero-banner.jpg" alt="Escritório KIAA em Roraima" loading="lazy" style="width:100%;border-radius:16px;object-fit:cover;aspect-ratio:4/3;">
-                        <div class="about-accent-card">
-                            <img src="img/icone-positivo-verde.png" alt="Ícone KIAA" class="accent-icon" loading="lazy">
-                            <span>Atuação nacional — <strong>12 estados</strong></span>
-                        </div>
+                    <img src="img/hero-banner.jpg" alt="Atuação ambiental KIAA na Amazônia" loading="lazy">
+                    <div class="about-badge">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                        Análise Advocacia 2025 — Escritório Mais Admirado
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== BRAZIL MAP SECTION ==================== -->
-    <section id="mapa" class="section map-section">
-        <style>
-            .map-section { background: #0a1e33; padding: 80px 0; overflow: hidden; }
-            .map-section .section-tag { color: #86E600; }
-            .map-section .section-title { color: #fff; }
-            .map-section .section-desc { color: rgba(255,255,255,0.7); }
-            #brazil-map { background: #0a1e33; }
-            .leaflet-map-legend {
-                background: rgba(10, 30, 51, 0.92);
-                backdrop-filter: blur(8px);
-                border: 1px solid rgba(134,230,0,0.2);
-                border-radius: 12px;
-                padding: 16px 20px;
-                color: #fff;
-                font-family: 'Montserrat', sans-serif;
-                font-size: 0.85rem;
-                line-height: 1.8;
-            }
-            .leaflet-map-legend .legend-row {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            }
-            .leaflet-map-legend .legend-dot {
-                width: 12px;
-                height: 12px;
-                border-radius: 50%;
-                flex-shrink: 0;
-                display: inline-block;
-            }
-            .leaflet-map-legend .legend-badge {
-                display: inline-block;
-                background: #86E600;
-                color: #0F2944;
-                font-weight: 700;
-                font-size: 0.75rem;
-                padding: 3px 10px;
-                border-radius: 20px;
-                margin-top: 8px;
-            }
-            @media (max-width: 768px) {
-                #brazil-map { height: 400px !important; }
-            }
-        </style>
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Presenca Nacional</span>
-                <h2 class="section-title">Atuacao em <span class="text-green">12 estados</span> brasileiros</h2>
-                <p class="section-desc">Sede em Roraima com rede de colaboradores em todas as regioes do pais.</p>
-            </div>
-            <div style="margin-top:40px;">
-                <div id="brazil-map" style="width:100%;height:500px;border-radius:16px;overflow:hidden;"></div>
-            </div>
-        </div>
-    </section>
-
     <!-- ==================== AREAS OF PRACTICE ==================== -->
-    <section id="areas" class="section areas-grid-section">
+    <section id="solucoes" class="section areas-grid-section">
         <style>
             .areas-grid-section { background: #f8f9fa; }
-            .areas-cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px; }
+            .areas-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
             .area-nav-card { background: #fff; border-radius: 16px; padding: 32px 24px; text-align: center; text-decoration: none; color: inherit; border: 1px solid rgba(15,41,68,0.08); transition: all 0.35s cubic-bezier(0.4,0,0.2,1); cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 12px; position: relative; overflow: hidden; }
             .area-nav-card::before { content: ''; position: absolute; inset: 0; border-radius: 16px; border: 2px solid transparent; transition: border-color 0.35s; }
             .area-nav-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(15,41,68,0.12); }
@@ -383,9 +314,9 @@
         </style>
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Areas de Atuacao</span>
-                <h2 class="section-title">Solucoes <span class="text-green">sob medida</span></h2>
-                <p class="section-desc">Servicos juridicos premium em 8 areas estrategicas. Clique para conhecer nossos produtos.</p>
+                <span class="section-tag">Soluções Jurídicas</span>
+                <h2 class="section-title">Soluções sob medida para o <span class="text-green">agro e o meio ambiente</span></h2>
+                <p class="section-desc">Produtos jurídicos especializados nas áreas ambiental, agrária e do agronegócio.</p>
             </div>
             <div class="areas-cards-grid">
                 <!-- 1. Ambiental -->
@@ -395,7 +326,7 @@
                     </div>
                     <h3>Direito Ambiental</h3>
                     <span class="area-nav-count">6 produtos</span>
-                    <p class="area-nav-desc">Desembargo, licenciamento, defesa em ACP, TAC, creditos de carbono e REDD+.</p>
+                    <p class="area-nav-desc">Desembargo, licenciamento, defesa em ACP, TAC, créditos de carbono e REDD+.</p>
                     <span class="area-nav-arrow">Explorar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg></span>
                 </a>
                 <!-- 2. Agrario -->
@@ -403,9 +334,9 @@
                     <div class="area-nav-icon" style="background:rgba(139,195,74,0.1);color:#8BC34A;">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
                     </div>
-                    <h3>Direito Agrario</h3>
+                    <h3>Direito Agrário</h3>
                     <span class="area-nav-count">5 produtos</span>
-                    <p class="area-nav-desc">Regularizacao fundiaria, desapropriacao, georreferenciamento, usucapiao e consultoria rural.</p>
+                    <p class="area-nav-desc">Regularização fundiária, desapropriação, georreferenciamento, usucapião e consultoria rural.</p>
                     <span class="area-nav-arrow">Explorar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg></span>
                 </a>
                 <!-- 3. Agronegocio -->
@@ -413,60 +344,10 @@
                     <div class="area-nav-icon" style="background:rgba(255,152,0,0.1);color:#FF9800;">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
                     </div>
-                    <h3>Direito do Agronegocio</h3>
+                    <h3>Direito do Agronegócio</h3>
                     <span class="area-nav-count">5 produtos</span>
-                    <p class="area-nav-desc">Financiamento agro, M&amp;A, governanca de cooperativas, barter e compliance ESG.</p>
+                    <p class="area-nav-desc">Financiamento agro, M&amp;A, governança de cooperativas, barter e compliance ESG.</p>
                     <span class="area-nav-arrow">Explorar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg></span>
-                </a>
-                <!-- 4. Trabalhista Empresarial -->
-                <a href="site-negocios.html" class="area-nav-card">
-                    <div class="area-nav-icon" style="background:rgba(33,150,243,0.1);color:#2196F3;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                    </div>
-                    <h3>Trabalhista Empresarial</h3>
-                    <span class="area-nav-count">5 produtos</span>
-                    <p class="area-nav-desc">Defesa em acoes coletivas, contencioso patronal, reestruturacao e compliance trabalhista.</p>
-                    <span class="area-nav-arrow">Ver microsite <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg></span>
-                </a>
-                <!-- 5. Empresarial -->
-                <a href="site-negocios.html" class="area-nav-card">
-                    <div class="area-nav-icon" style="background:rgba(21,101,192,0.1);color:#1565C0;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-                    </div>
-                    <h3>Direito Empresarial</h3>
-                    <span class="area-nav-count">5 produtos</span>
-                    <p class="area-nav-desc">M&amp;A, holding, recuperacao de credito, compliance e LGPD.</p>
-                    <span class="area-nav-arrow">Ver microsite <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg></span>
-                </a>
-                <!-- 6. Contratos -->
-                <a href="site-negocios.html" class="area-nav-card">
-                    <div class="area-nav-icon" style="background:rgba(0,150,136,0.1);color:#009688;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                    </div>
-                    <h3>Contratos</h3>
-                    <span class="area-nav-count">4 produtos</span>
-                    <p class="area-nav-desc">Alta complexidade, revisao estrategica, negociacao BATNA/ZOPA e contratos internacionais.</p>
-                    <span class="area-nav-arrow">Ver microsite <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg></span>
-                </a>
-                <!-- 7. Penal Economico -->
-                <a href="site-complexidade.html" class="area-nav-card">
-                    <div class="area-nav-icon" style="background:rgba(201,168,76,0.1);color:#C9A84C;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                    </div>
-                    <h3>Penal Economico</h3>
-                    <span class="area-nav-count">5 produtos</span>
-                    <p class="area-nav-desc">Maxiprocessos, crimes ambientais corporativos, lavagem, tributario e habeas corpus.</p>
-                    <span class="area-nav-arrow">Ver microsite <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg></span>
-                </a>
-                <!-- 8. Desportivo -->
-                <a href="site-desportivo.html" class="area-nav-card">
-                    <div class="area-nav-icon" style="background:rgba(0,155,58,0.1);color:#009B3A;">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/><path d="M2 12h20"/></svg>
-                    </div>
-                    <h3>Direito Desportivo</h3>
-                    <span class="area-nav-count">4 produtos</span>
-                    <p class="area-nav-desc">Transferencias, STJD/TJD, direito de imagem e arena, SAF e governanca desportiva.</p>
-                    <span class="area-nav-arrow">Ver microsite <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg></span>
                 </a>
             </div>
         </div>
@@ -663,20 +544,6 @@
                         Título de propriedade assegurado
                     </span>
                 </div>
-                <!-- Case 3 -->
-                <div class="case-card">
-                    <span class="case-badge case-badge--trabalhista">Trabalhista</span>
-                    <h3>Trabalhista Empresarial — Economia de R$800K</h3>
-                    <p>Empresa foi acionada em reclamação trabalhista coletiva com pedidos que ultrapassavam R$1,2 milhão. A defesa estratégica conduzida pelo KIAA resultou na redução substancial dos valores e na preservação da saúde financeira do negócio.</p>
-                    <div class="case-metric">
-                        <span class="case-metric-value">R$800K</span>
-                        <span class="case-metric-label">de economia para a empresa</span>
-                    </div>
-                    <span class="case-resultado">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                        Defesa integral bem-sucedida
-                    </span>
-                </div>
                 <!-- Case 4 -->
                 <div class="case-card">
                     <span class="case-badge case-badge--possessorio">Possessório</span>
@@ -692,6 +559,36 @@
                     </span>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- ==================== RADAR AMBIENTAL ==================== -->
+    <section id="radar" class="section" style="background: linear-gradient(135deg, #0a1e33 0%, #0F2944 50%, #1a3a5c 100%); position: relative; overflow: hidden;">
+        <div style="position: absolute; inset: 0; background-image: radial-gradient(circle at 20% 50%, rgba(134,230,0,0.06) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(134,230,0,0.04) 0%, transparent 50%);"></div>
+        <div class="container" style="position: relative; z-index: 2; text-align: center;">
+            <span class="section-tag" style="color: var(--verde); border-color: rgba(134,230,0,0.3);">Inteligência Ambiental</span>
+            <h2 class="section-title" style="color: #fff;">Radar Ambiental <span class="text-green">KIAA</span></h2>
+            <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 32px; font-size: 1.05rem; line-height: 1.7;">
+                Monitoramento em tempo real de autuações IBAMA, alertas de desmatamento, análise de CAR, jurimetria ambiental e dados regulatórios. Tecnologia exclusiva do escritório para antecipar riscos e proteger seu patrimônio.
+            </p>
+            <div style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+                <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px 28px; min-width: 160px;">
+                    <div style="font-size: 1.8rem; font-weight: 800; color: var(--verde);">IBAMA</div>
+                    <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 4px;">Autuações em tempo real</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px 28px; min-width: 160px;">
+                    <div style="font-size: 1.8rem; font-weight: 800; color: var(--verde);">CAR</div>
+                    <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 4px;">Consulta e análise</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px 28px; min-width: 160px;">
+                    <div style="font-size: 1.8rem; font-weight: 800; color: var(--verde);">DETER</div>
+                    <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 4px;">Alertas de desmatamento</div>
+                </div>
+            </div>
+            <a href="inteligencia.html" class="btn btn-primary" style="padding: 16px 40px; font-size: 1rem;">
+                Acessar Radar Ambiental
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+            </a>
         </div>
     </section>
 
@@ -964,52 +861,6 @@
         </div>
     </section>
 
-    <!-- ==================== PRÊMIOS E RECONHECIMENTOS ==================== -->
-    <section id="premios" class="section awards-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Reconhecimento</span>
-                <h2 class="section-title">Excelência <span class="text-green">reconhecida</span></h2>
-            </div>
-            <div class="awards-grid">
-                <div class="award-card award-card-main">
-                    <div class="award-seals-row">
-                        <img src="img/selos/selo-escritorio-2025.png" alt="Escritório Mais Admirado 2025" class="award-seal-img-lg" loading="lazy">
-                        <img src="img/selos/selo-adv-2025.png" alt="Advogado Mais Admirado 2025" class="award-seal-img-lg" loading="lazy">
-                    </div>
-                    <div class="award-info">
-                        <h3>Escritório e Advogado Mais Admirados do Brasil</h3>
-                        <p class="award-source">Análise Advocacia 2025 — 19ª Edição</p>
-                        <p class="award-desc">Reconhecidos pela publicação Análise Advocacia 2025 entre os escritórios e advogados mais admirados do Brasil.</p>
-                        <a href="https://analise.com/publicacoes/analise-advocacia" target="_blank" rel="noopener noreferrer" class="award-link">
-                            Ver publicação oficial
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="award-card">
-                    <img src="img/selos/selo-associate.png" alt="Associate" class="award-seal-img-sm" style="margin:0 auto 16px;" loading="lazy">
-                    <h3>Membro Associate</h3>
-                    <p class="award-source">Certificação Profissional</p>
-                </div>
-                <div class="award-card">
-                    <img src="img/selos/selo-logo.jpg" alt="KIAA" class="award-seal-img-sm" style="margin:0 auto 16px;" loading="lazy">
-                    <h3>Atuação em 12 Estados</h3>
-                    <p class="award-source">Presença Nacional</p>
-                    <p class="award-desc">Atuação consolidada na Amazônia e mais 11 estados brasileiros, com rede de colaboradores em todas as regiões do país.</p>
-                </div>
-                <div class="award-card">
-                    <div class="award-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    </div>
-                    <h3>+14 Anos de Experiência</h3>
-                    <p class="award-source">Desde abril de 2012</p>
-                    <p class="award-desc">Mais de uma década de assessoria jurídica preventiva e contenciosa para empresas e produtores rurais na Amazônia.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- ==================== DEPOIMENTOS ==================== -->
     <section id="depoimentos" class="section testimonials-section">
         <style>
@@ -1170,18 +1021,6 @@
                 <div class="testimonial-card">
                     <span class="testimonial-quote-mark">&ldquo;</span>
                     <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-                    <p class="testimonial-text">A consultoria trabalhista empresarial da KIAA reorganizou toda a nossa gestão de pessoal. Reduziu riscos e nos deu segurança para crescer. Atendimento diferenciado e humano.</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">P.M.</div>
-                        <div class="testimonial-author-info">
-                            <span class="testimonial-author-name">P.M.</span>
-                            <span class="testimonial-author-role">Diretor de Supermercado</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <span class="testimonial-quote-mark">&ldquo;</span>
-                    <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
                     <p class="testimonial-text">Tivemos uma emergência ambiental numa madrugada e a equipe da KIAA respondeu em poucas horas. A agilidade e o domínio técnico evitaram prejuízos enormes para nossa operação.</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">A.B.</div>
@@ -1195,139 +1034,14 @@
         </div>
     </section>
 
-    <!-- ==================== CLIENTES ==================== -->
-    <section id="clientes" class="section clients-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Nossos Clientes</span>
-                <h2 class="section-title">Quem <span class="text-green">confia</span> em nós</h2>
-                <p class="section-desc">Empresas e produtores rurais que confiam na assessoria jurídica do KIAA.</p>
-            </div>
-            <div class="clients-carousel-wrapper">
-                <button class="carousel-arrow carousel-arrow-left" id="carousel-left" aria-label="Anterior">&#8249;</button>
-                <div class="clients-carousel" id="clients-carousel">
-                    <div class="clients-track">
-                        <div class="client-logo"><a href="https://www.superatacadonovaera.com.br/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/nova-era.png" alt="Nova Era" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/brasmol_rr/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/brasmol.jpg" alt="Brasmol" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="javascript:void(0)"><img src="img/clientes/casa-da-roca.png" alt="Casa da Roça" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/colteliacai/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/colteli.jpg" alt="Colteli" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/supermercado_diadiarr/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/dia-dia.png" alt="Dia Dia" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.facebook.com/people/Agropecu%C3%A1ria-garrote/100063180460899/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/garrote.png" alt="Garrote" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.supermercadogaviao.com.br/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/gaviao-supemercado.png" alt="Supermercado Gavião" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/sushigaviao/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/sushi-gaviao.jpg" alt="Sushi Gavião" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/royalpetbv/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/royalpet.png" alt="Royal Pet" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.cressrr.org.br/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/cress.jpg" alt="CRESS" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/boutiquegeladaoficial/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/boutique-gelada.png" alt="Boutique Gelada" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="javascript:void(0)"><img src="img/clientes/inovar-rh.jpg" alt="Inovar RH" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/platofilmes/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/plato-filmes.jpg" alt="Plato Filmes" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.aprosoja.com.br/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/aprosojarr.png" alt="Aprosoja RR" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/novotemposupermercadorr/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/novo-tempo.png" alt="Novo Tempo" loading="lazy"></a></div>
-                        <!-- Duplicate for infinite scroll -->
-                        <div class="client-logo"><a href="https://www.superatacadonovaera.com.br/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/nova-era.png" alt="Nova Era" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/brasmol_rr/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/brasmol.jpg" alt="Brasmol" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="javascript:void(0)"><img src="img/clientes/casa-da-roca.png" alt="Casa da Roça" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/colteliacai/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/colteli.jpg" alt="Colteli" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/supermercado_diadiarr/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/dia-dia.png" alt="Dia Dia" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.facebook.com/people/Agropecu%C3%A1ria-garrote/100063180460899/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/garrote.png" alt="Garrote" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.supermercadogaviao.com.br/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/gaviao-supemercado.png" alt="Supermercado Gavião" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/sushigaviao/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/sushi-gaviao.jpg" alt="Sushi Gavião" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/royalpetbv/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/royalpet.png" alt="Royal Pet" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.cressrr.org.br/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/cress.jpg" alt="CRESS" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/boutiquegeladaoficial/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/boutique-gelada.png" alt="Boutique Gelada" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="javascript:void(0)"><img src="img/clientes/inovar-rh.jpg" alt="Inovar RH" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/platofilmes/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/plato-filmes.jpg" alt="Plato Filmes" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.aprosoja.com.br/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/aprosojarr.png" alt="Aprosoja RR" loading="lazy"></a></div>
-                        <div class="client-logo"><a href="https://www.instagram.com/novotemposupermercadorr/" target="_blank" rel="noopener noreferrer"><img src="img/clientes/novo-tempo.png" alt="Novo Tempo" loading="lazy"></a></div>
-                    </div>
-                </div>
-                <button class="carousel-arrow carousel-arrow-right" id="carousel-right" aria-label="Próximo">&#8250;</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== INSIGHTS HUB ==================== -->
-    <section id="noticias" class="section news">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Insights KIAA</span>
-                <h2 class="section-title">Fique por dentro do <span class="text-green">cenário jurídico</span></h2>
-                <p class="section-desc">Artigos, alertas regulatórios e guias práticos para o produtor rural e empresário na Amazônia e no Brasil.</p>
-            </div>
-            <div class="content-type-filters">
-                <button class="content-filter active" data-type="todos">Todos</button>
-                <button class="content-filter" data-type="artigo">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2"/></svg>
-                    Artigos
-                </button>
-                <button class="content-filter" data-type="alerta">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v2m0 4h.01M5.07 19H18.93a2 2 0 001.72-2.98l-6.93-12a2 2 0 00-3.44 0l-6.93 12A2 2 0 005.07 19z"/></svg>
-                    Alertas
-                </button>
-                <button class="content-filter" data-type="guia">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-                    Guias
-                </button>
-            </div>
-            <!-- Alertas e Prazos Regulatórios -->
-            <div class="prazos-strip" id="prazos-strip"></div>
-            <div class="news-grid" id="conteudo-grid">
-                <div class="informativos-loading">Carregando conteúdo...</div>
-            </div>
-            <div class="informativos-footer">
-                <button class="btn-ver-mais" id="btn-ver-mais-conteudo" style="display:none;">
-                    Ver mais publicações
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== INFORMATIVOS DOS TRIBUNAIS ==================== -->
-    <section id="informativos" class="section informativos-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Informativos dos Tribunais</span>
-                <h2 class="section-title">Atualizações do <span class="text-green">Judiciário</span></h2>
-                <p class="section-desc">Notícias e informativos dos principais tribunais do país, atualizados automaticamente.</p>
-            </div>
-            <div class="tribunal-tabs">
-                <button class="tribunal-tab active" data-tribunal="todos">Todos</button>
-                <button class="tribunal-tab" data-tribunal="STF">STF</button>
-                <button class="tribunal-tab" data-tribunal="STJ">STJ</button>
-                <button class="tribunal-tab" data-tribunal="TRF1">TRF1</button>
-                <button class="tribunal-tab" data-tribunal="TRT11">TRT11</button>
-                <button class="tribunal-tab" data-tribunal="TST">TST</button>
-            </div>
-            <div class="materia-tabs">
-                <span class="materia-label">Filtrar por matéria:</span>
-                <button class="materia-tab active" data-materia="todos">Todas</button>
-                <button class="materia-tab" data-materia="Constitucional">Constitucional</button>
-                <button class="materia-tab" data-materia="Jurisprudência">Jurisprudência</button>
-                <button class="materia-tab" data-materia="Trabalhista">Trabalhista</button>
-                <button class="materia-tab" data-materia="Federal">Federal</button>
-            </div>
-            <div class="informativos-grid" id="informativos-grid">
-                <!-- Cards renderizados via JS -->
-                <div class="informativos-loading">Carregando informativos...</div>
-            </div>
-            <div class="informativos-footer">
-                <button class="btn-ver-mais" id="btn-ver-mais-informativos" style="display:none;">
-                    Ver mais informativos
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
-                </button>
-                <p class="informativos-updated" id="informativos-updated"></p>
-            </div>
-        </div>
-    </section>
-
     <!-- ==================== CTA SECTION ==================== -->
     <section id="cta" class="section cta-section">
         <div class="cta-bg-pattern"></div>
         <div class="container">
             <div class="cta-content">
                 <img src="img/icone-negativo-branco.png" alt="KIAA" class="cta-icon" loading="lazy">
-                <h2>Podemos ajudar com o seu caso?</h2>
-                <p>Nossa equipe está pronta para ouvir você e encontrar a melhor solução jurídica para a sua situação.</p>
+                <h2>Precisa de assessoria <span class="text-green">ambiental, agrária</span> ou do <span class="text-green">agronegócio</span>?</h2>
+                <p>Nossa equipe está pronta para analisar seu caso. Consulta inicial sem compromisso.</p>
                 <a href="https://wa.me/5595991775868" target="_blank" rel="noopener noreferrer" class="btn btn-cta" id="cta-whatsapp">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     Agende uma consulta estratégica
@@ -1363,22 +1077,16 @@
                     <ul>
                         <li><a href="area-ambiental.html">Direito Ambiental</a></li>
                         <li><a href="area-agrario.html">Direito Agrário</a></li>
-                        <li><a href="site-3a.html#agronegocio">Direito do Agronegócio</a></li>
-                        <li><a href="area-trabalhista.html">Trabalhista Empresarial</a></li>
-                        <li><a href="area-empresarial.html">Direito Empresarial</a></li>
-                        <li><a href="site-negocios.html">Contratos</a></li>
-                        <li><a href="area-penal.html">Penal Econômico</a></li>
-                        <li><a href="site-desportivo.html">Direito Desportivo</a></li>
+                        <li><a href="#solucoes">Direito do Agronegócio</a></li>
                     </ul>
                 </div>
                 <div class="footer-links-group">
                     <h4>Links Rápidos</h4>
                     <ul>
-                        <li><a href="#sobre">Sobre Nós</a></li>
-                        <li><a href="#premios">Diferenciais</a></li>
-                        <li><a href="#noticias">Notícias</a></li>
-                        <li><a href="#informativos">Informativos</a></li>
-                        <li><a href="https://kairoicaro.com.br" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                        <li><a href="#autoridade">Por que o KIAA</a></li>
+                        <li><a href="#solucoes">Soluções 3A</a></li>
+                        <li><a href="inteligencia.html">Radar Ambiental</a></li>
+                        <li><a href="novo-index.html">Hub de Áreas</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
@@ -1452,158 +1160,5 @@
     </div>
 
     <script src="script.js" defer></script>
-
-    <!-- Leaflet Brazil Map -->
-    <script>
-    (function() {
-        var mapEl = document.getElementById('brazil-map');
-        if (!mapEl) return;
-
-        var ACTIVE_STATES = ['RR','AM','PA','AC','SP','MG','MT','MS','GO','DF','SC','PB'];
-        var HQ_STATE = 'RR';
-
-        var map = L.map('brazil-map', {
-            center: [-14, -53],
-            zoom: 4,
-            zoomControl: false,
-            scrollWheelZoom: false,
-            dragging: false,
-            attributionControl: false,
-            doubleClickZoom: false
-        });
-
-        // State name map for tooltips
-        var stateNames = {
-            'AC':'Acre','AL':'Alagoas','AM':'Amazonas','AP':'Amapa','BA':'Bahia',
-            'CE':'Ceara','DF':'Distrito Federal','ES':'Espirito Santo','GO':'Goias',
-            'MA':'Maranhao','MG':'Minas Gerais','MS':'Mato Grosso do Sul',
-            'MT':'Mato Grosso','PA':'Para','PB':'Paraiba','PE':'Pernambuco',
-            'PI':'Piaui','PR':'Parana','RJ':'Rio de Janeiro','RN':'Rio Grande do Norte',
-            'RO':'Rondonia','RR':'Roraima','RS':'Rio Grande do Sul','SC':'Santa Catarina',
-            'SE':'Sergipe','SP':'Sao Paulo','TO':'Tocantins'
-        };
-
-        function getStyle(feature) {
-            var sigla = feature.properties.SIGLA || feature.id;
-            var isActive = ACTIVE_STATES.indexOf(sigla) !== -1;
-            var isHQ = sigla === HQ_STATE;
-
-            if (isHQ) {
-                return {
-                    fillColor: '#97F513',
-                    color: '#0F2944',
-                    weight: 3,
-                    opacity: 1,
-                    fillOpacity: 0.85
-                };
-            } else if (isActive) {
-                return {
-                    fillColor: '#86E600',
-                    color: '#0F2944',
-                    weight: 1.5,
-                    opacity: 1,
-                    fillOpacity: 0.75
-                };
-            } else {
-                return {
-                    fillColor: '#1a3350',
-                    color: '#0a1e33',
-                    weight: 1,
-                    opacity: 1,
-                    fillOpacity: 0.9
-                };
-            }
-        }
-
-        function highlightFeature(e) {
-            var layer = e.target;
-            var sigla = layer.feature.properties.SIGLA || layer.feature.id;
-            var isActive = ACTIVE_STATES.indexOf(sigla) !== -1;
-            if (!isActive) return;
-
-            layer.setStyle({
-                fillColor: '#97F513',
-                fillOpacity: 0.95,
-                weight: 2.5
-            });
-
-            var name = layer.feature.properties.Estado || stateNames[sigla] || sigla;
-            var label = sigla === HQ_STATE ? name + ' — Sede' : name + ' — Atuacao';
-            layer.bindTooltip(label, {
-                sticky: true,
-                className: 'kiaa-map-tooltip',
-                direction: 'top',
-                offset: [0, -10]
-            }).openTooltip();
-        }
-
-        function resetHighlight(e) {
-            if (geojsonLayer) {
-                geojsonLayer.resetStyle(e.target);
-            }
-            e.target.unbindTooltip();
-        }
-
-        function onEachFeature(feature, layer) {
-            layer.on({
-                mouseover: highlightFeature,
-                mouseout: resetHighlight
-            });
-        }
-
-        var geojsonLayer;
-
-        fetch('data/geo/br_states_light.json')
-            .then(function(r) { return r.json(); })
-            .then(function(data) {
-                geojsonLayer = L.geoJSON(data, {
-                    style: getStyle,
-                    onEachFeature: onEachFeature
-                }).addTo(map);
-
-                // Fit map to Brazil bounds
-                map.fitBounds(geojsonLayer.getBounds(), { padding: [20, 20] });
-            });
-
-        // Add pin marker on Boa Vista, Roraima
-        var hqIcon = L.divIcon({
-            className: 'kiaa-hq-marker',
-            html: '<div style="background:#86E600;width:18px;height:18px;border-radius:50%;border:3px solid #0F2944;box-shadow:0 0 12px rgba(134,230,0,0.6),0 0 24px rgba(134,230,0,0.3);"></div>',
-            iconSize: [18, 18],
-            iconAnchor: [9, 9],
-            popupAnchor: [0, -12]
-        });
-
-        L.marker([2.8235, -60.6758], { icon: hqIcon })
-            .addTo(map)
-            .bindPopup(
-                '<div style="font-family:Montserrat,sans-serif;text-align:center;padding:4px 8px;">' +
-                '<strong style="color:#0F2944;font-size:0.9rem;">Kairo Ícaro Advogados Associados</strong><br>' +
-                '<span style="color:#666;font-size:0.8rem;">Sede — Boa Vista, Roraima</span></div>',
-                { className: 'kiaa-popup' }
-            );
-
-        // Legend control
-        var legend = L.control({ position: 'bottomleft' });
-        legend.onAdd = function() {
-            var div = L.DomUtil.create('div', 'leaflet-map-legend');
-            div.innerHTML =
-                '<div class="legend-row"><span class="legend-dot" style="background:#97F513;box-shadow:0 0 6px rgba(151,245,19,0.5);"></span> Sede — Roraima</div>' +
-                '<div class="legend-row"><span class="legend-dot" style="background:#86E600;"></span> Estados de atuacao</div>' +
-                '<div class="legend-row"><span class="legend-dot" style="background:#1a3350;border:1px solid rgba(255,255,255,0.2);"></span> Demais estados</div>' +
-                '<div><span class="legend-badge">12 estados</span></div>';
-            return div;
-        };
-        legend.addTo(map);
-
-        // Tooltip styling
-        var tooltipStyle = document.createElement('style');
-        tooltipStyle.textContent =
-            '.kiaa-map-tooltip { background: rgba(15,41,68,0.95) !important; color: #fff !important; border: 1px solid rgba(134,230,0,0.3) !important; border-radius: 8px !important; padding: 6px 14px !important; font-family: Montserrat, sans-serif !important; font-size: 0.82rem !important; font-weight: 500 !important; box-shadow: 0 4px 16px rgba(0,0,0,0.3) !important; }' +
-            '.kiaa-map-tooltip::before { border-top-color: rgba(15,41,68,0.95) !important; }' +
-            '.leaflet-tooltip-top.kiaa-map-tooltip::before { border-top-color: rgba(15,41,68,0.95) !important; }';
-        document.head.appendChild(tooltipStyle);
-    })();
-    </script>
 </body>
 </html>
