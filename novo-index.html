@@ -325,6 +325,18 @@
             transform: translateX(4px);
         }
 
+        /* Focus-visible for keyboard navigation */
+        .card:focus-visible {
+            outline: 3px solid #86E600;
+            outline-offset: 4px;
+            border-color: #86E600;
+        }
+        .theme-toggle:focus-visible,
+        .lang-toggle:focus-visible {
+            outline: 3px solid #86E600;
+            outline-offset: 4px;
+        }
+
         /* ======= FOOTER ======= */
         .footer {
             position: relative;
@@ -396,6 +408,17 @@
             height: 20px;
         }
 
+        .footer-link {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .footer-social {
+            color: rgba(255,255,255,0.5);
+            transition: color 0.2s;
+            font-size: 0.78rem;
+        }
         .footer-copy {
             font-size: 0.78rem;
             font-weight: 300;
@@ -685,17 +708,48 @@
         .theme-toggle:hover { border-color: #86E600; transform: scale(1.1); }
 
         /* Light theme overrides */
-        body.light-mode { background: #F5F7FA; color: #1E293B; }
-        body.light-mode .header { background: rgba(255,255,255,0.95); }
-        body.light-mode .tagline, body.light-mode .subtitle { color: #0F2944; }
-        body.light-mode .subtitle-desc { color: #64748B; }
-        body.light-mode .card { background: #FFFFFF; border-color: #E2E8F0; }
-        body.light-mode .card-title { color: #0F2944; }
-        body.light-mode .card-desc, body.light-mode .card-subtitle { color: #64748B; }
-        body.light-mode .card:hover { border-color: #86E600; }
-        body.light-mode .theme-toggle { background: rgba(255,255,255,0.9); color: #0F2944; border-color: #E2E8F0; }
-        body.light-mode footer { background: rgba(0,0,0,0.05); }
-        body.light-mode footer * { color: #1E293B; }
+        body.light-mode { background: #F5F7FA !important; color: #1E293B !important; }
+        body.light-mode .video-hero-overlay {
+            background: linear-gradient(180deg, rgba(255,255,255,0.88) 0%, rgba(245,247,250,0.92) 50%, #F5F7FA 100%) !important;
+        }
+        body.light-mode .header { background: transparent !important; }
+        body.light-mode .header .logo { filter: brightness(0) saturate(100%) !important; }
+        body.light-mode .tagline, body.light-mode .subtitle { color: #0F2944 !important; }
+        body.light-mode .subtitle-desc { color: #64748B !important; }
+        body.light-mode .header-divider { background: linear-gradient(90deg, transparent, #CBD5E1, transparent) !important; }
+        body.light-mode .counter-section { background: rgba(15,41,68,0.04) !important; border-radius: 16px; margin: 0 24px; }
+        body.light-mode .counter-number { color: #5A9E00 !important; }
+        body.light-mode .counter-label { color: #64748B !important; }
+        body.light-mode .cards-section { background: transparent !important; }
+        body.light-mode .section-glow { background: linear-gradient(90deg, transparent, #E2E8F0, transparent) !important; }
+        body.light-mode .card { background: #FFFFFF !important; border-color: #E2E8F0 !important; box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04) !important; }
+        body.light-mode .card::before { background: var(--card-accent); opacity: 0.7; }
+        body.light-mode .card-title { color: #0F2944 !important; }
+        body.light-mode .card-desc, body.light-mode .card-subtitle { color: #64748B !important; }
+        body.light-mode .card-cta { color: #5A9E00 !important; }
+        body.light-mode .card-icon svg { filter: brightness(0.5) !important; }
+        body.light-mode .card:hover { border-color: #86E600 !important; box-shadow: 0 4px 16px rgba(0,0,0,0.08), 0 12px 40px rgba(0,0,0,0.06) !important; }
+        body.light-mode .card:hover .card-cta { color: #86E600 !important; }
+        body.light-mode .theme-toggle { background: rgba(255,255,255,0.9) !important; color: #0F2944 !important; border-color: #E2E8F0 !important; }
+        body.light-mode .team-header h2 { color: #0F2944 !important; }
+        body.light-mode .team-header .team-desc { color: #64748B !important; }
+        body.light-mode .team-thumb p { color: #0F2944 !important; }
+        body.light-mode .depoimento-card { background: #FFFFFF !important; border-color: #E2E8F0 !important; }
+        body.light-mode .depoimento-card p { color: #1E293B !important; }
+        body.light-mode .depoimento-card .dep-author { color: #64748B !important; }
+        body.light-mode footer { background: #F0F3F7 !important; border-top: 1px solid #E2E8F0 !important; }
+        body.light-mode footer p { color: #475569 !important; }
+        body.light-mode .footer-link { color: #475569 !important; }
+        body.light-mode .footer-link:hover { color: #86E600 !important; }
+        body.light-mode .footer-social { color: #475569 !important; }
+        body.light-mode .footer-social:hover { color: #86E600 !important; }
+        body.light-mode .footer-copy { color: #94A3B8 !important; }
+        body.light-mode footer img { filter: brightness(0) saturate(100%) !important; }
+        body.light-mode .scroll-indicator svg { stroke: #0F2944 !important; }
+        body.light-mode .footer-contact a { color: #475569 !important; }
+        body.light-mode .footer-contact a:hover { color: #86E600 !important; }
+        body.light-mode .footer-social a { color: #475569 !important; background: rgba(15,41,68,0.06) !important; border-color: #E2E8F0 !important; }
+        body.light-mode .footer-social a:hover { color: #86E600 !important; background: rgba(134,230,0,0.1) !important; border-color: rgba(134,230,0,0.3) !important; }
 
         /* ======= LANGUAGE TOGGLE ======= */
         .lang-toggle {
@@ -733,10 +787,9 @@
             height: 20px;
             background: rgba(255,255,255,0.15);
         }
-        body.light-mode .lang-toggle { background: rgba(255,255,255,0.9); border-color: #E2E8F0; }
-        body.light-mode .lang-toggle span { color: rgba(30,41,59,0.4); }
-        body.light-mode .lang-toggle span.active { color: #0F2944; background: rgba(134,230,0,0.15); }
-        body.light-mode .counter-number { color: #5A9E00; }
+        body.light-mode .lang-toggle { background: rgba(255,255,255,0.9) !important; border-color: #E2E8F0 !important; }
+        body.light-mode .lang-toggle span { color: rgba(30,41,59,0.4) !important; }
+        body.light-mode .lang-toggle span.active { color: #0F2944 !important; background: rgba(134,230,0,0.15) !important; }
     </style>
 
     <script type="application/ld+json">
@@ -817,7 +870,7 @@
 <body>
     <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
 
-    <button class="theme-toggle" id="themeToggleBtn" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+    <button class="theme-toggle" id="themeToggleBtn" aria-label="Alternar tema claro/escuro" aria-pressed="false" title="Alternar tema">
         <svg id="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
         <svg id="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
     </button>
@@ -836,7 +889,7 @@
         <!-- VIDEO HERO -->
         <div class="video-hero-wrapper">
             <div class="video-hero-bg">
-                <img src="img/hero-banner.jpg" alt="" class="hero-bg-img" loading="eager">
+                <img src="img/hero-banner.jpg" alt="Escritório de advocacia KIAA — Sede em Boa Vista, Roraima" class="hero-bg-img" loading="eager">
             </div>
             <div class="video-hero-overlay"></div>
 
@@ -1149,7 +1202,63 @@
                     max-width: 560px;
                     margin: 0 auto;
                 }
+                .team-scroll {
+                    display: flex;
+                    gap: 32px;
+                    overflow-x: auto;
+                    padding: 20px 24px;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    scrollbar-width: none;
+                    -webkit-overflow-scrolling: touch;
+                }
                 .team-scroll::-webkit-scrollbar { display: none; }
+                .team-thumb {
+                    flex: 0 0 auto;
+                    text-align: center;
+                    cursor: default;
+                    transition: transform .3s;
+                }
+                .team-thumb img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 2px solid rgba(255,255,255,0.15);
+                }
+                .team-thumb img.founder-border {
+                    border-color: rgba(134,230,0,0.4);
+                }
+                .team-thumb .team-name {
+                    color: #fff;
+                    font-size: .85rem;
+                    font-weight: 600;
+                    margin: 10px 0 2px;
+                }
+                .team-thumb .team-role {
+                    color: rgba(134,230,0,.7);
+                    font-size: .7rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                .team-cta-wrap {
+                    text-align: center;
+                    margin-top: 24px;
+                }
+                .team-link {
+                    color: #86E600;
+                    font-size: .9rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                    transition: opacity .3s;
+                }
+                /* Light mode overrides for team */
+                body.light-mode .team-thumb .team-name { color: #0F2944 !important; }
+                body.light-mode .team-thumb .team-role { color: #5A9E00 !important; }
+                body.light-mode .team-thumb img { border-color: #E2E8F0 !important; }
+                body.light-mode .team-thumb img.founder-border { border-color: rgba(134,230,0,0.5) !important; }
+                body.light-mode .team-link { color: #5A9E00 !important; }
                 @media (max-width: 480px) {
                     .team-section { padding: 60px 0 40px; }
                 }
@@ -1164,40 +1273,40 @@
                 <p class="team-desc" data-en="16 specialized attorneys with nationwide practice, ready to defend your interests">16 advogados especializados com atuação nacional, prontos para defender seus interesses</p>
             </div>
 
-            <div class="team-scroll" style="display:flex; gap:32px; overflow-x:auto; padding:20px 24px; max-width:1200px; margin:0 auto; scrollbar-width:none; -webkit-overflow-scrolling:touch;">
-                <div class="team-thumb" style="flex:0 0 auto; text-align:center; cursor:default; transition:transform .3s;">
-                    <img src="img/equipe/Kairo.jpg" alt="Kairo Ícaro" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid rgba(134,230,0,0.4);" loading="lazy">
-                    <p style="color:#fff;font-size:.85rem;font-weight:600;margin:10px 0 2px;">Kairo Ícaro</p>
-                    <p style="color:rgba(134,230,0,.7);font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:1px;">Sócio Fundador</p>
+            <div class="team-scroll">
+                <div class="team-thumb">
+                    <img src="img/equipe/Kairo.jpg" alt="Kairo Ícaro — Sócio Fundador do KIAA" class="founder-border" loading="lazy">
+                    <p class="team-name">Kairo Ícaro</p>
+                    <p class="team-role">Sócio Fundador</p>
                 </div>
-                <div class="team-thumb" style="flex:0 0 auto; text-align:center; cursor:default; transition:transform .3s;">
-                    <img src="img/equipe/Welington.jpg" alt="Welington Albuquerque" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.15);" loading="lazy">
-                    <p style="color:#fff;font-size:.85rem;font-weight:600;margin:10px 0 2px;">Welington Albuquerque</p>
-                    <p style="color:rgba(134,230,0,.7);font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:1px;">Advogado Sênior</p>
+                <div class="team-thumb">
+                    <img src="img/equipe/Welington.jpg" alt="Welington Albuquerque — Advogado Sênior do KIAA" loading="lazy">
+                    <p class="team-name">Welington Albuquerque</p>
+                    <p class="team-role">Advogado Sênior</p>
                 </div>
-                <div class="team-thumb" style="flex:0 0 auto; text-align:center; cursor:default; transition:transform .3s;">
-                    <img src="img/equipe/drielly.jpg" alt="Drielly Vasques" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.15);" loading="lazy">
-                    <p style="color:#fff;font-size:.85rem;font-weight:600;margin:10px 0 2px;">Drielly Vasques</p>
-                    <p style="color:rgba(134,230,0,.7);font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:1px;">Advogada</p>
+                <div class="team-thumb">
+                    <img src="img/equipe/drielly.jpg" alt="Drielly Vasques — Advogada do KIAA" loading="lazy">
+                    <p class="team-name">Drielly Vasques</p>
+                    <p class="team-role">Advogada</p>
                 </div>
-                <div class="team-thumb" style="flex:0 0 auto; text-align:center; cursor:default; transition:transform .3s;">
-                    <img src="img/equipe/gabriel.jpg" alt="Gabriel Monteiro" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.15);" loading="lazy">
-                    <p style="color:#fff;font-size:.85rem;font-weight:600;margin:10px 0 2px;">Gabriel Monteiro</p>
-                    <p style="color:rgba(134,230,0,.7);font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:1px;">Advogado</p>
+                <div class="team-thumb">
+                    <img src="img/equipe/gabriel.jpg" alt="Gabriel Monteiro — Advogado do KIAA" loading="lazy">
+                    <p class="team-name">Gabriel Monteiro</p>
+                    <p class="team-role">Advogado</p>
                 </div>
-                <div class="team-thumb" style="flex:0 0 auto; text-align:center; cursor:default; transition:transform .3s;">
-                    <img src="img/equipe/guilherme.jpg" alt="Guilherme Andrade" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.15);" loading="lazy">
-                    <p style="color:#fff;font-size:.85rem;font-weight:600;margin:10px 0 2px;">Guilherme Andrade</p>
-                    <p style="color:rgba(134,230,0,.7);font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:1px;">Advogado</p>
+                <div class="team-thumb">
+                    <img src="img/equipe/guilherme.jpg" alt="Guilherme Andrade — Advogado do KIAA" loading="lazy">
+                    <p class="team-name">Guilherme Andrade</p>
+                    <p class="team-role">Advogado</p>
                 </div>
-                <div class="team-thumb" style="flex:0 0 auto; text-align:center; cursor:default; transition:transform .3s;">
-                    <img src="img/equipe/plinio.jpg" alt="Plínio Silva" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.15);" loading="lazy">
-                    <p style="color:#fff;font-size:.85rem;font-weight:600;margin:10px 0 2px;">Plínio Silva</p>
-                    <p style="color:rgba(134,230,0,.7);font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:1px;">Advogado</p>
+                <div class="team-thumb">
+                    <img src="img/equipe/plinio.jpg" alt="Plínio Silva — Advogado do KIAA" loading="lazy">
+                    <p class="team-name">Plínio Silva</p>
+                    <p class="team-role">Advogado</p>
                 </div>
             </div>
-            <div style="text-align:center;margin-top:24px;">
-                <a href="site-3a.html#equipe" class="team-link" style="color:#86E600;font-size:.9rem;font-weight:600;text-decoration:none;transition:opacity .3s;"><span data-en="See full team">Ver equipe completa</span> &rarr;</a>
+            <div class="team-cta-wrap">
+                <a href="site-3a.html#equipe" class="team-link"><span data-en="See full team">Ver equipe completa</span> &rarr;</a>
             </div>
 
         </section>
@@ -1369,26 +1478,26 @@
         <footer style="background:rgba(0,0,0,0.3); padding:40px 0; border-top:1px solid rgba(255,255,255,0.06);">
             <div style="max-width:1200px; margin:0 auto; padding:0 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px;">
                 <div>
-                    <img src="img/logo-horizontal-branca.png" alt="KIAA" style="height:28px; opacity:0.6; margin-bottom:8px;" loading="lazy">
+                    <img src="img/logo-horizontal-branca.png" alt="KIAA — Kairo Ícaro Advogados Associados" style="height:28px; opacity:0.6; margin-bottom:8px;" loading="lazy">
                     <p style="font-size:0.78rem; color:rgba(255,255,255,0.55);">Av. Ville Roy, 4301 — Salas 206 e 208, Canarinho, Boa Vista — RR</p>
                 </div>
                 <div>
                     <p style="font-size:0.82rem; color:rgba(255,255,255,0.55); font-weight:600; margin-bottom:8px;" data-en="Quick Links">Links Rápidos</p>
                     <div style="display:flex; flex-direction:column; gap:4px;">
-                        <a href="site-3a.html#sobre" style="font-size:0.78rem; color:rgba(255,255,255,0.6); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="About Us">Sobre Nós</a>
-                        <a href="#main-content" style="font-size:0.78rem; color:rgba(255,255,255,0.6); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="Practice Areas">Áreas de Atuação</a>
-                        <a href="site-3a.html#premios" style="font-size:0.78rem; color:rgba(255,255,255,0.6); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="Awards & Recognition">Prêmios e Reconhecimento</a>
-                        <a href="blog.html" style="font-size:0.78rem; color:rgba(255,255,255,0.6); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="Blog / Insights">Blog / Insights</a>
-                        <a href="calculadora.html" style="font-size:0.78rem; color:rgba(255,255,255,0.6); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="Fee Calculator">Simulador de Honorários</a>
-                        <a href="esg.html" style="font-size:0.78rem; color:rgba(255,255,255,0.6); text-decoration:none; transition:color 0.2s;" class="footer-link" data-en="ESG / Social Commitment">ESG / Compromisso Social</a>
+                        <a href="site-3a.html#sobre" class="footer-link" data-en="About Us">Sobre Nós</a>
+                        <a href="#main-content" class="footer-link" data-en="Practice Areas">Áreas de Atuação</a>
+                        <a href="site-3a.html#premios" class="footer-link" data-en="Awards & Recognition">Prêmios e Reconhecimento</a>
+                        <a href="blog.html" class="footer-link" data-en="Blog / Insights">Blog / Insights</a>
+                        <a href="calculadora.html" class="footer-link" data-en="Fee Calculator">Simulador de Honorários</a>
+                        <a href="esg.html" class="footer-link" data-en="ESG / Social Commitment">ESG / Compromisso Social</a>
                     </div>
                 </div>
                 <div style="display:flex; gap:16px; align-items:center;">
-                    <a href="https://wa.me/5595991775868" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.5); transition:color 0.2s;" class="footer-social">
+                    <a href="https://wa.me/5595991775868" target="_blank" rel="noopener noreferrer" class="footer-social">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
                     </a>
-                    <a href="mailto:advogados@kairoicaro.com.br" style="color:rgba(255,255,255,0.5); transition:color 0.2s; font-size:0.78rem;" class="footer-social">advogados@kairoicaro.com.br</a>
-                    <a href="mailto:advogados@kairoicaro.com.br?subject=Candidatura%20-%20KIAA" style="color:rgba(255,255,255,0.5); transition:color 0.2s; font-size:0.78rem; display:flex; align-items:center; gap:4px;" class="footer-social">
+                    <a href="mailto:advogados@kairoicaro.com.br" class="footer-social">advogados@kairoicaro.com.br</a>
+                    <a href="mailto:advogados@kairoicaro.com.br?subject=Candidatura%20-%20KIAA" style="display:flex; align-items:center; gap:4px;" class="footer-social">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
                         <span data-en="Careers">Trabalhe Conosco</span>
                     </a>
@@ -1511,6 +1620,7 @@
             const isLight = document.body.classList.contains('light-mode');
             document.getElementById('theme-icon-moon').style.display = isLight ? 'none' : 'block';
             document.getElementById('theme-icon-sun').style.display = isLight ? 'block' : 'none';
+            document.getElementById('themeToggleBtn').setAttribute('aria-pressed', isLight ? 'true' : 'false');
             localStorage.setItem('kiaa-theme', isLight ? 'light' : 'dark');
         }
         // Restore saved theme
@@ -1518,6 +1628,7 @@
             document.body.classList.add('light-mode');
             document.getElementById('theme-icon-moon').style.display = 'none';
             document.getElementById('theme-icon-sun').style.display = 'block';
+            document.getElementById('themeToggleBtn').setAttribute('aria-pressed', 'true');
         }
 
         // Parallax effect on header scroll
@@ -1856,7 +1967,7 @@
     <div id="kiaa-chat-panel">
         <div class="kiaa-chat-header">
             <div class="kiaa-chat-header-left">
-                <img src="img/icone-positivo-verde.png" alt="KIAA" loading="lazy">
+                <img src="img/icone-positivo-verde.png" alt="Ícone KIAA — Kairo Ícaro Advogados" loading="lazy">
                 <div>
                     <div class="kiaa-chat-header-title">KIAA Assistente</div>
                     <div class="kiaa-chat-header-sub">Online agora</div>
