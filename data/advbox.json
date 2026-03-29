@@ -1,0 +1,82 @@
+{
+  "updated_at": "2026-03-29T03:00:00Z",
+  "resumo": {
+    "processos_ativos": 1220,
+    "processos_encerrados": 2985,
+    "processos_total": 4205,
+    "clientes_total": 1778,
+    "advogados_total": 27,
+    "tarefas_hoje": 4,
+    "prazos_fatais_3dias": 12,
+    "prazos_vencidos": 32,
+    "prazos_criticos_14dias": 84
+  },
+  "financeiro": {
+    "honorarios_esperados": 149679334.58,
+    "honorarios_recebidos": 590370.32,
+    "honorarios_a_receber": 149088964.26,
+    "taxa_recebimento_pct": 0.39
+  },
+  "por_area": [
+    { "area": "CÍVEL", "processos": 299, "pct": 24.5, "esperado": 85656740.22, "recebido": 0, "pct_recebido": 0 },
+    { "area": "ADMINISTRATIVO", "processos": 331, "pct": 27.1, "esperado": 343145.80, "recebido": 0, "pct_recebido": 0 },
+    { "area": "TRABALHISTA", "processos": 282, "pct": 23.1, "esperado": 11082632.77, "recebido": 515370.32, "pct_recebido": 4.7 },
+    { "area": "AMBIENTAL", "processos": 201, "pct": 16.5, "esperado": 48568434.06, "recebido": 0, "pct_recebido": 0 },
+    { "area": "PENAL", "processos": 76, "pct": 6.2, "esperado": 205894.20, "recebido": 0, "pct_recebido": 0 },
+    { "area": "TRIBUTÁRIO", "processos": 21, "pct": 1.7, "esperado": 3822487.53, "recebido": 0, "pct_recebido": 0 },
+    { "area": "EMPRESARIAL", "processos": 9, "pct": 0.7, "esperado": 0, "recebido": 75000, "pct_recebido": 100 },
+    { "area": "JUSTIÇA FEDERAL", "processos": 1, "pct": 0.1, "esperado": 0, "recebido": 0, "pct_recebido": 0 }
+  ],
+  "por_responsavel": [
+    { "nome": "Welington Albuquerque", "processos": 533, "pct": 43.7, "esperado": 42740472.78, "recebido": 453628.64 },
+    { "nome": "Guilherme Viana", "processos": 159, "pct": 13.0, "esperado": 913232.84, "recebido": 0 },
+    { "nome": "Drielly Vasques", "processos": 146, "pct": 12.0, "esperado": 25865363.28, "recebido": 75000 },
+    { "nome": "Kairo Ícaro", "processos": 96, "pct": 7.9, "esperado": 8086847.22, "recebido": 0 },
+    { "nome": "Gabriel Monteiro", "processos": 75, "pct": 6.1, "esperado": 138851.25, "recebido": 0 },
+    { "nome": "João Alves Jr.", "processos": 62, "pct": 5.1, "esperado": 1048618.94, "recebido": 0 },
+    { "nome": "Romero Magalhães", "processos": 18, "pct": 1.5, "esperado": 585000, "recebido": 0 },
+    { "nome": "Laura Rodrigues", "processos": 18, "pct": 1.5, "esperado": 292365.76, "recebido": 61741.68 },
+    { "nome": "Plínio Eduardo", "processos": 17, "pct": 1.4, "esperado": 21141454.09, "recebido": 0 },
+    { "nome": "Marcela Borges", "processos": 14, "pct": 1.1, "esperado": 469875.95, "recebido": 0 },
+    { "nome": "Thales Menezes", "processos": 11, "pct": 0.9, "esperado": 20600022.70, "recebido": 0 },
+    { "nome": "Mariana Martinelli", "processos": 11, "pct": 0.9, "esperado": 33048.74, "recebido": 0 },
+    { "nome": "Luane Salazar", "processos": 11, "pct": 0.9, "esperado": 0, "recebido": 0 },
+    { "nome": "Lucas Matheus", "processos": 8, "pct": 0.7, "esperado": 523425.27, "recebido": 0 },
+    { "nome": "Ana Rafaela Gondim", "processos": 8, "pct": 0.7, "esperado": 16736.33, "recebido": 0 },
+    { "nome": "Augusto Pedreira", "processos": 7, "pct": 0.6, "esperado": 1562371.02, "recebido": 0 },
+    { "nome": "Henrique Scheller", "processos": 6, "pct": 0.5, "esperado": 21050000, "recebido": 0 },
+    { "nome": "Abmael Alves", "processos": 5, "pct": 0.4, "esperado": 16200.92, "recebido": 0 },
+    { "nome": "Bruna Shigaki", "processos": 4, "pct": 0.3, "esperado": 1315693.48, "recebido": 0 },
+    { "nome": "Isabelle Menezes", "processos": 3, "pct": 0.2, "esperado": 625660, "recebido": 0 },
+    { "nome": "Yury Gadelha", "processos": 2, "pct": 0.2, "esperado": 39437.71, "recebido": 0 }
+  ],
+  "por_fase": [
+    { "fase": "Elaboração de Documento/Peça", "processos": 331, "pct": 27.1 },
+    { "fase": "Ação/Defesa Protocolada", "processos": 313, "pct": 25.7 },
+    { "fase": "Elaboração de Peça Administrativa", "processos": 105, "pct": 8.6 },
+    { "fase": "Requerimento Protocolado", "processos": 83, "pct": 6.8 },
+    { "fase": "Elaboração de Parecer", "processos": 66, "pct": 5.4 },
+    { "fase": "Análise do Caso", "processos": 64, "pct": 5.2 },
+    { "fase": "Elaboração de Contrato", "processos": 60, "pct": 4.9 },
+    { "fase": "Recurso Protocolado/Iniciado", "processos": 56, "pct": 4.6 },
+    { "fase": "Aguardando Cópia do Processo", "processos": 56, "pct": 4.6 },
+    { "fase": "Realização de Diligência", "processos": 19, "pct": 1.6 },
+    { "fase": "Atendendo Exigências", "processos": 18, "pct": 1.5 },
+    { "fase": "Outras Fases", "processos": 49, "pct": 4.0 }
+  ],
+  "prazos_criticos": {
+    "vencidos": 32,
+    "criticos_proximos": 84,
+    "proximos_14dias": 533,
+    "destaques": [
+      { "data": "2026-03-30", "tipo": "PRAZO FATAL - CONTROLADORIA", "responsavel": "Guilherme Viana", "processo": "0811249-34.2021.8.23.0010" },
+      { "data": "2026-03-30", "tipo": "LEMBRETE DE AUDIÊNCIA", "responsavel": "Gabriel Monteiro / Welington", "processo": "0000976-40.2025.5.11.0053" },
+      { "data": "2026-03-31", "tipo": "AUDIÊNCIA DE ENCERRAMENTO", "responsavel": "Laura Rodrigues", "processo": "0000908-90.2025.5.11.0053" },
+      { "data": "2026-04-01", "tipo": "PRAZO FATAL - CONTROLADORIA", "responsavel": "Guilherme Viana", "processo": "0001303-85.2025.5.11.0052" },
+      { "data": "2026-04-01", "tipo": "AUDIÊNCIA PRELIMINAR", "responsavel": "Kairo Ícaro / Thales", "processo": "0800344-16.2024.8.23.0090" },
+      { "data": "2026-04-08", "tipo": "AUDIÊNCIA PRELIMINAR", "responsavel": "Kairo Ícaro / Thales", "processo": "0800344-16.2024.8.23.0090" },
+      { "data": "2026-04-09", "tipo": "AUDIÊNCIA DE CONTINUAÇÃO", "responsavel": "Welington Albuquerque", "processo": "1002799-43.2020.4.01.4200" },
+      { "data": "2026-04-09", "tipo": "AUDIÊNCIA DE CONCILIAÇÃO", "responsavel": "Drielly Vasques", "processo": "0850595-50.2025.8.23.0010" }
+    ]
+  }
+}

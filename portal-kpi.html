@@ -875,74 +875,129 @@
         })();
 
         // ================================================================
-        // DATA
+        // DATA — loaded from data/advbox.json (updated by GitHub Actions)
         // ================================================================
-        const lawyers = [
-            { name: 'Welington Albuquerque', cases: 738, pct: 46.9, expected: 47939076, received: 1066837 },
-            { name: 'Drielly Vasques', cases: 180, pct: 11.4, expected: 27521776, received: 75000 },
-            { name: 'Guilherme Andrade', cases: 160, pct: 10.2, expected: 913232, received: 0 },
-            { name: 'Kairo Icaro', cases: 136, pct: 8.6, expected: 8938140, received: 7837689 },
-            { name: 'Gabriel Monteiro', cases: 98, pct: 6.2, expected: 699466, received: 0 },
-            { name: 'Joao Alves', cases: 62, pct: 3.9, expected: 1048618, received: 0 },
-            { name: 'Laura Barbosa', cases: 24, pct: 1.5, expected: 370750, received: 65741 },
-            { name: 'Augusto Pedreira', cases: 21, pct: 1.3, expected: 4397019, received: 0 },
-            { name: 'Plinio Silva', cases: 20, pct: 1.3, expected: 21141954, received: 0 },
-            { name: 'Mariana Martinelli', cases: 19, pct: 1.2, expected: 114039, received: 7400 }
-        ];
+        const areaColors = {
+            'ADMINISTRATIVO': '#D97706', 'CÍVEL': '#2563EB', 'TRABALHISTA': '#DC2626',
+            'AMBIENTAL': '#16A34A', 'PENAL': '#7C3AED', 'TRIBUTÁRIO': '#0891B2',
+            'EMPRESARIAL': '#EC4899', 'JUSTIÇA FEDERAL': '#6366F1'
+        };
+        const phaseColors = ['#2563EB','#16A34A','#6366F1','#0891B2','#8B5CF6','#D97706','#EC4899','#14B8A6','#64748B','#94A3B8','#CBD5E1','#E2E8F0'];
 
-        const areas = [
-            { name: 'Trabalhista', cases: 459, pct: 29.2, expected: 16414544, color: '#DC2626' },
-            { name: 'Administrativo', cases: 390, pct: 24.8, expected: 343145, color: '#D97706' },
-            { name: 'Civel', cases: 343, pct: 21.8, expected: 94233472, color: '#2563EB' },
-            { name: 'Ambiental', cases: 212, pct: 13.5, expected: 49856406, color: '#16A34A' },
-            { name: 'Penal', cases: 61, pct: 3.9, expected: 204376, color: '#7C3AED' },
-            { name: 'Tributario', cases: 37, pct: 2.4, expected: 7056012, color: '#0891B2' }
-        ];
+        let lawyers = [];
+        let areas = [];
+        let phases = [];
+        let totalCases = 0;
+        let totalClients = 0;
+        let totalLawyers = 0;
+        let totalExpected = 0;
+        let totalReceived = 0;
+        let archivedCases = 0;
+        let overdueDeadlines = 0;
+        let criticalDeadlines = 0;
+        let pendingTasks = 0;
+        let conversionRate = '0';
+        let ticketMedio = 0;
+        let monthlyData = [];
+        let timelineDays = [];
+        let advboxData = null;
 
-        const phases = [
-            { name: 'Elaboracao Documento/Peca', cases: 331, pct: 21.0, color: '#2563EB' },
-            { name: 'Acao/Defesa Protocolada', cases: 314, pct: 20.0, color: '#16A34A' },
-            { name: 'Arquivado Consulta', cases: 131, pct: 8.3, color: '#94A3B8' },
-            { name: 'Elaboracao Peca Admin', cases: 105, pct: 6.7, color: '#6366F1' },
-            { name: 'Arquivado/Encerrado', cases: 104, pct: 6.6, color: '#64748B' },
-            { name: 'Requerimento Protocolado', cases: 83, pct: 5.3, color: '#0891B2' },
-            { name: 'Elaboracao Parecer', cases: 66, pct: 4.2, color: '#8B5CF6' },
-            { name: 'Analise do Caso', cases: 64, pct: 4.1, color: '#D97706' },
-            { name: 'Outros', cases: 275, pct: 17.5, color: '#CBD5E1' }
-        ];
+        async function loadAdvboxData() {
+            try {
+                const res = await fetch('data/advbox.json?t=' + Date.now());
+                if (!res.ok) throw new Error('fetch failed');
+                advboxData = await res.json();
 
-        const totalCases = 1573;
-        const totalClients = 1778;
-        const totalLawyers = 27;
-        const totalExpected = 168900000;
-        const totalReceived = 9050000;
-        const archivedCases = 305;
-        const overdueDeadlines = 26;
-        const criticalDeadlines = 39;
-        const pendingTasks = 409;
-        const conversionRate = ((totalReceived / totalExpected) * 100).toFixed(1);
-        const ticketMedio = Math.round(totalExpected / totalCases);
+                // Map ADVBOX data into KPI variables
+                const r = advboxData.resumo;
+                totalCases = r.processos_ativos;
+                totalClients = r.clientes_total;
+                totalLawyers = r.advogados_total;
+                archivedCases = r.processos_encerrados;
+                overdueDeadlines = r.prazos_vencidos;
+                criticalDeadlines = r.prazos_criticos_14dias;
+                pendingTasks = r.tarefas_hoje;
 
-        // Simulated monthly data
-        const monthlyData = [
-            { month: 'Out/25', expected: 24500000, received: 980000 },
-            { month: 'Nov/25', expected: 26200000, received: 1150000 },
-            { month: 'Dez/25', expected: 28100000, received: 1420000 },
-            { month: 'Jan/26', expected: 30500000, received: 1680000 },
-            { month: 'Fev/26', expected: 32800000, received: 2150000 },
-            { month: 'Mar/26', expected: 168900000, received: 9050000 }
-        ];
+                const f = advboxData.financeiro;
+                totalExpected = f.honorarios_esperados;
+                totalReceived = f.honorarios_recebidos;
+                conversionRate = ((totalReceived / totalExpected) * 100).toFixed(1);
+                ticketMedio = Math.round(totalExpected / totalCases);
 
-        // Timeline deadlines (next 7 days simulated)
-        const timelineDays = [
-            { day: 'Ontem', count: 26, color: 'var(--red)' },
-            { day: 'Hoje', count: 8, color: '#D97706' },
-            { day: 'Seg', count: 7, color: '#D97706' },
-            { day: 'Ter', count: 6, color: '#F59E0B' },
-            { day: 'Qua', count: 5, color: '#F59E0B' },
-            { day: 'Qui', count: 8, color: '#F59E0B' },
-            { day: 'Sex', count: 5, color: '#FBBF24' }
-        ];
+                // Lawyers
+                lawyers = advboxData.por_responsavel.slice(0, 15).map(l => ({
+                    name: l.nome, cases: l.processos, pct: l.pct,
+                    expected: l.esperado, received: l.recebido
+                }));
+
+                // Areas
+                areas = advboxData.por_area.filter(a => a.processos > 0).map(a => ({
+                    name: a.area, cases: a.processos, pct: a.pct,
+                    expected: a.esperado, color: areaColors[a.area] || '#94A3B8'
+                }));
+
+                // Phases
+                phases = advboxData.por_fase.map((p, i) => ({
+                    name: p.fase, cases: p.processos, pct: p.pct,
+                    color: phaseColors[i] || '#CBD5E1'
+                }));
+
+                // Timeline deadlines from prazos_criticos
+                const pc = advboxData.prazos_criticos;
+                timelineDays = [
+                    { day: 'Vencidos', count: pc.vencidos, color: 'var(--red)' },
+                    { day: 'Críticos', count: pc.criticos_proximos, color: '#D97706' },
+                    { day: '14 dias', count: pc.proximos_14dias, color: '#F59E0B' }
+                ];
+
+                // Monthly data (derived — current snapshot as latest month)
+                monthlyData = [
+                    { month: 'Mar/26', expected: totalExpected, received: totalReceived }
+                ];
+
+                // Update header badge with real date
+                const updatedAt = new Date(advboxData.updated_at);
+                const months = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+                const badge = document.querySelector('.header-badge');
+                if (badge) badge.innerHTML = '<span class="dot"></span> Dados AdvBox &mdash; ' + months[updatedAt.getMonth()] + '/' + updatedAt.getFullYear();
+
+            } catch (err) {
+                console.warn('Falha ao carregar advbox.json, usando dados de fallback:', err);
+                // Fallback: minimal data so page still renders
+                totalCases = 1220; totalClients = 1778; totalLawyers = 27;
+                totalExpected = 149679334; totalReceived = 590370;
+                archivedCases = 2985; overdueDeadlines = 32; criticalDeadlines = 84; pendingTasks = 4;
+                conversionRate = '0.4'; ticketMedio = Math.round(totalExpected / totalCases);
+                lawyers = [
+                    { name: 'Welington Albuquerque', cases: 533, pct: 43.7, expected: 42740472, received: 453628 },
+                    { name: 'Guilherme Viana', cases: 159, pct: 13.0, expected: 913232, received: 0 },
+                    { name: 'Drielly Vasques', cases: 146, pct: 12.0, expected: 25865363, received: 75000 },
+                    { name: 'Kairo Ícaro', cases: 96, pct: 7.9, expected: 8086847, received: 0 },
+                    { name: 'Gabriel Monteiro', cases: 75, pct: 6.1, expected: 138851, received: 0 }
+                ];
+                areas = [
+                    { name: 'ADMINISTRATIVO', cases: 331, pct: 27.1, expected: 343145, color: '#D97706' },
+                    { name: 'CÍVEL', cases: 299, pct: 24.5, expected: 85656740, color: '#2563EB' },
+                    { name: 'TRABALHISTA', cases: 282, pct: 23.1, expected: 11082632, color: '#DC2626' },
+                    { name: 'AMBIENTAL', cases: 201, pct: 16.5, expected: 48568434, color: '#16A34A' },
+                    { name: 'PENAL', cases: 76, pct: 6.2, expected: 205894, color: '#7C3AED' },
+                    { name: 'TRIBUTÁRIO', cases: 21, pct: 1.7, expected: 3822487, color: '#0891B2' }
+                ];
+                phases = [
+                    { name: 'Elaboração de Documento/Peça', cases: 331, pct: 27.1, color: '#2563EB' },
+                    { name: 'Ação/Defesa Protocolada', cases: 313, pct: 25.7, color: '#16A34A' },
+                    { name: 'Elab. Peça Administrativa', cases: 105, pct: 8.6, color: '#6366F1' },
+                    { name: 'Requerimento Protocolado', cases: 83, pct: 6.8, color: '#0891B2' },
+                    { name: 'Outras Fases', cases: 388, pct: 31.8, color: '#CBD5E1' }
+                ];
+                timelineDays = [
+                    { day: 'Vencidos', count: 32, color: 'var(--red)' },
+                    { day: 'Críticos', count: 84, color: '#D97706' },
+                    { day: '14 dias', count: 533, color: '#F59E0B' }
+                ];
+                monthlyData = [{ month: 'Mar/26', expected: totalExpected, received: totalReceived }];
+            }
+        }
 
         // ================================================================
         // HELPERS
@@ -979,7 +1034,10 @@
         // ================================================================
         // INIT
         // ================================================================
-        function initKPI() {
+        async function initKPI() {
+            // Load ADVBOX data before rendering
+            await loadAdvboxData();
+
             document.getElementById('loadingState').style.display = 'none';
             document.getElementById('mainContent').style.display = 'block';
 
@@ -1867,6 +1925,39 @@
             await sb.auth.signOut();
             window.location.href = 'portal-login.html';
         }
+    </script>
+
+    <!-- Event listeners replacing inline handlers (XSS hardening) -->
+    <script>
+    (function() {
+        // Skip link
+        var skipLink = document.querySelector('.skip-link');
+        if (skipLink) {
+            skipLink.addEventListener('focus', function() { this.style.top = '0'; });
+            skipLink.addEventListener('blur', function() { this.style.top = '-40px'; });
+        }
+        // Logout button
+        var logoutBtn = document.querySelector('.btn-logout');
+        if (logoutBtn) {
+            logoutBtn.removeAttribute('onclick');
+            logoutBtn.addEventListener('click', function() { handleLogout(); });
+        }
+        // Mobile toggle
+        var mobileBtn = document.querySelector('.mobile-toggle');
+        if (mobileBtn) {
+            mobileBtn.removeAttribute('onclick');
+            mobileBtn.addEventListener('click', function() { toggleSidebar(); });
+        }
+        // Sidebar nav items with localStorage
+        document.querySelectorAll('.nav-item[onclick]').forEach(function(el) {
+            var section = el.getAttribute('onclick').match(/setItem\('portalSection','(\w+)'\)/);
+            if (section) {
+                var sectionName = section[1];
+                el.removeAttribute('onclick');
+                el.addEventListener('click', function() { localStorage.setItem('portalSection', sectionName); });
+            }
+        });
+    })();
     </script>
 
 </body>

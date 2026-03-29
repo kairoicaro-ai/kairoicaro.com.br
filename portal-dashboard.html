@@ -311,6 +311,43 @@
         }
 
         /* ── Stats Grid ── */
+        /* ── ADVBOX Overview Panel ── */
+        .advbox-overview {
+            margin-bottom: 24px;
+            padding: 24px;
+        }
+        .advbox-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .advbox-cards {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .advbox-card {
+            text-align: center;
+            padding: 14px 8px;
+            background: var(--bg);
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+        .advbox-card-icon { font-size: 1.3rem; display: block; margin-bottom: 4px; }
+        .advbox-card-value { font-size: 1.1rem; font-weight: 800; color: var(--text); }
+        .advbox-card-label { font-size: 0.65rem; color: var(--text-muted); margin-top: 2px; }
+        .advbox-areas { margin-bottom: 16px; }
+        .advbox-deadlines { margin-top: 12px; }
+
+        @media (max-width: 1024px) {
+            .advbox-cards { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .advbox-cards { grid-template-columns: repeat(2, 1fr); }
+        }
+
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -1360,6 +1397,9 @@
                     </div>
                 </div>
 
+                <!-- ADVBOX Overview Panel -->
+                <div id="advboxOverview" class="card advbox-overview" style="display:none;"></div>
+
                 <!-- Recent Cases Table -->
                 <div class="card">
                     <div class="card-header">
@@ -1860,6 +1900,9 @@
         // ════════════════════════════════════════════════════════════════════
         let currentUser = null;
 
+        // ADVBOX aggregated data (loaded from advbox.json)
+        let advboxData = null;
+
         // Raw data from Supabase (loaded once)
         let allClients = [];
         let allCases = [];
@@ -1913,8 +1956,8 @@
             document.getElementById('userEmail').textContent = email;
             document.getElementById('userAvatar').textContent = initials;
 
-            // Load all data in parallel
-            await loadAllData();
+            // Load all data in parallel (Supabase + ADVBOX)
+            await Promise.all([loadAllData(), loadAdvboxData()]);
 
             // Build lookup maps
             clientMap = {};
@@ -1927,6 +1970,9 @@
 
             // Apply initial (no) filters
             applyFilters();
+
+            // Render ADVBOX overview panel
+            renderAdvboxOverview();
 
             // Load leads for credit analysis section
             loadLeads();
@@ -1953,6 +1999,103 @@
             } catch (err) {
                 console.error('Erro ao carregar dados:', err);
             }
+        }
+
+        // ════════════════════════════════════════════════════════════════════
+        // LOAD ADVBOX AGGREGATED DATA
+        // ════════════════════════════════════════════════════════════════════
+        async function loadAdvboxData() {
+            try {
+                const res = await fetch('data/advbox.json?t=' + Date.now());
+                if (!res.ok) throw new Error('fetch failed');
+                advboxData = await res.json();
+            } catch (err) {
+                console.warn('Falha ao carregar advbox.json:', err);
+                advboxData = null;
+            }
+        }
+
+        // ════════════════════════════════════════════════════════════════════
+        // RENDER: ADVBOX OVERVIEW PANEL (in dashboard section)
+        // ════════════════════════════════════════════════════════════════════
+        function renderAdvboxOverview() {
+            if (!advboxData) return;
+            const target = document.getElementById('advboxOverview');
+            if (!target) return;
+
+            const r = advboxData.resumo;
+            const f = advboxData.financeiro;
+            const pc = advboxData.prazos_criticos;
+
+            function fmtBRL(v) {
+                if (v >= 1e9) return 'R$' + (v / 1e9).toFixed(1).replace('.', ',') + 'B';
+                if (v >= 1e6) return 'R$' + (v / 1e6).toFixed(1).replace('.', ',') + 'M';
+                if (v >= 1e3) return 'R$' + (v / 1e3).toFixed(0) + 'K';
+                return 'R$' + v.toLocaleString('pt-BR');
+            }
+
+            // Overview cards
+            const cards = [
+                { label: 'Processos Ativos', value: r.processos_ativos.toLocaleString('pt-BR'), icon: '&#9878;', accent: 'var(--blue)' },
+                { label: 'Total Escritório', value: r.processos_total.toLocaleString('pt-BR'), icon: '&#128203;', accent: 'var(--text-muted)' },
+                { label: 'Honorários Esperados', value: fmtBRL(f.honorarios_esperados), icon: '&#128176;', accent: 'var(--green)' },
+                { label: 'Honorários Recebidos', value: fmtBRL(f.honorarios_recebidos), icon: '&#9989;', accent: 'var(--teal)' },
+                { label: 'Prazos Vencidos', value: pc.vencidos.toString(), icon: '&#9888;', accent: 'var(--red)' },
+                { label: 'Prazos Críticos', value: pc.criticos_proximos.toString(), icon: '&#128308;', accent: 'var(--orange)' }
+            ];
+
+            let html = '<div class="advbox-header">';
+            html += '<h3 style="font-size:1rem;font-weight:700;color:var(--text);margin:0;">Visão Geral AdvBox</h3>';
+            const updatedAt = new Date(advboxData.updated_at);
+            html += '<span style="font-size:0.7rem;color:var(--text-muted);">Atualizado: ' + updatedAt.toLocaleDateString('pt-BR') + ' ' + updatedAt.toLocaleTimeString('pt-BR', {hour:'2-digit',minute:'2-digit'}) + '</span>';
+            html += '</div>';
+
+            html += '<div class="advbox-cards">';
+            cards.forEach(c => {
+                html += '<div class="advbox-card">';
+                html += '<span class="advbox-card-icon" style="color:' + c.accent + '">' + c.icon + '</span>';
+                html += '<div class="advbox-card-value">' + c.value + '</div>';
+                html += '<div class="advbox-card-label">' + c.label + '</div>';
+                html += '</div>';
+            });
+            html += '</div>';
+
+            // Area breakdown bar
+            html += '<div class="advbox-areas">';
+            html += '<h4 style="font-size:0.8rem;font-weight:600;color:var(--text-muted);margin:0 0 8px;">Distribuição por Área</h4>';
+            const areaColors = { 'ADMINISTRATIVO':'#D97706', 'CÍVEL':'#2563EB', 'TRABALHISTA':'#DC2626', 'AMBIENTAL':'#16A34A', 'PENAL':'#7C3AED', 'TRIBUTÁRIO':'#0891B2', 'EMPRESARIAL':'#EC4899' };
+            html += '<div style="display:flex;gap:2px;height:24px;border-radius:6px;overflow:hidden;">';
+            advboxData.por_area.filter(a => a.processos > 0).forEach(a => {
+                const color = areaColors[a.area] || '#94A3B8';
+                html += '<div title="' + a.area + ': ' + a.processos + ' (' + a.pct + '%)" style="flex:' + a.pct + ';background:' + color + ';min-width:2px;transition:flex 0.3s;cursor:help;"></div>';
+            });
+            html += '</div>';
+            html += '<div style="display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:8px;">';
+            advboxData.por_area.filter(a => a.processos > 0).forEach(a => {
+                const color = areaColors[a.area] || '#94A3B8';
+                html += '<span style="display:flex;align-items:center;gap:4px;font-size:0.7rem;color:var(--text-muted);"><span style="width:8px;height:8px;border-radius:50%;background:' + color + ';display:inline-block;"></span>' + a.area + ' ' + a.pct + '%</span>';
+            });
+            html += '</div></div>';
+
+            // Upcoming critical deadlines
+            if (pc.destaques && pc.destaques.length > 0) {
+                html += '<div class="advbox-deadlines">';
+                html += '<h4 style="font-size:0.8rem;font-weight:600;color:var(--text-muted);margin:0 0 8px;">Próximos Prazos Críticos</h4>';
+                pc.destaques.slice(0, 5).forEach(d => {
+                    const dt = new Date(d.data + 'T12:00:00');
+                    const dateStr = dt.toLocaleDateString('pt-BR', { day:'2-digit', month:'short' });
+                    const isUrgent = dt <= new Date(Date.now() + 3 * 86400000);
+                    html += '<div style="display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid var(--border);">';
+                    html += '<span style="font-size:0.75rem;font-weight:700;color:' + (isUrgent ? 'var(--red)' : 'var(--orange)') + ';min-width:52px;">' + dateStr + '</span>';
+                    html += '<span style="font-size:0.75rem;color:var(--text);">' + Security.sanitizeHTML(d.tipo) + '</span>';
+                    html += '<span style="font-size:0.7rem;color:var(--text-muted);margin-left:auto;">' + Security.sanitizeHTML(d.responsavel) + '</span>';
+                    html += '</div>';
+                });
+                html += '</div>';
+            }
+
+            target.innerHTML = html;
+            target.style.display = 'block';
         }
 
         // ════════════════════════════════════════════════════════════════════
@@ -2631,6 +2774,58 @@
                     .catch(() => {});
             });
         }
+    </script>
+
+    <!-- Event listeners replacing inline handlers (XSS hardening) -->
+    <script>
+    (function() {
+        // Skip link
+        var skipLink = document.querySelector('.skip-link');
+        if (skipLink) {
+            skipLink.addEventListener('focus', function() { this.style.top = '0'; });
+            skipLink.addEventListener('blur', function() { this.style.top = '-40px'; });
+        }
+        // Logout button
+        var logoutBtn = document.querySelector('.btn-logout');
+        if (logoutBtn) {
+            logoutBtn.removeAttribute('onclick');
+            logoutBtn.addEventListener('click', function() { handleLogout(); });
+        }
+        // Mobile toggle
+        var mobileBtn = document.querySelector('.menu-toggle');
+        if (mobileBtn) {
+            mobileBtn.removeAttribute('onclick');
+            mobileBtn.addEventListener('click', function() { toggleSidebar(); });
+        }
+        // Sidebar nav items with showSection
+        document.querySelectorAll('.nav-item[data-section]').forEach(function(el) {
+            var section = el.getAttribute('data-section');
+            if (section) {
+                el.removeAttribute('onclick');
+                el.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showSection(section);
+                });
+            }
+        });
+        // Session timeout buttons
+        var btnStay = document.querySelector('.btn-stay');
+        if (btnStay) {
+            btnStay.removeAttribute('onclick');
+            btnStay.addEventListener('click', function() { Security.extendSession(); });
+        }
+        var btnLeave = document.querySelector('.btn-leave');
+        if (btnLeave) {
+            btnLeave.removeAttribute('onclick');
+            btnLeave.addEventListener('click', function() { Security.forceLogout(); });
+        }
+        // Restore section from localStorage (e.g., clicking "Processos" from KPI page)
+        var savedSection = localStorage.getItem('portalSection');
+        if (savedSection) {
+            localStorage.removeItem('portalSection');
+            setTimeout(function() { showSection(savedSection); }, 100);
+        }
+    })();
     </script>
 
 </body>

@@ -40,7 +40,8 @@ const STATIC_ASSETS = [
     '/script.js',
     '/img/icone-positivo-verde.png',
     '/img/logo-horizontal-branca.png',
-    '/img/logo-horizontal-positiva.png'
+    '/img/logo-horizontal-positiva.png',
+    '/data/advbox.json'
 ];
 
 // ── Install: pre-cache static assets ──
