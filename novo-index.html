@@ -2178,18 +2178,23 @@ window.addEventListener('load', function() {
         });
     });
 
-    // --- Cards grid: stagger from bottom with per-row timing ---
+    // --- Cards grid: simple fade-in on scroll (no stagger to avoid invisible cards) ---
     var cardsGrid = document.querySelector('.cards-grid');
     if (cardsGrid) {
+        var hubCards = cardsGrid.querySelectorAll('.card');
+        // Cards start visible (opacity:1 in CSS). Only animate if GSAP+ScrollTrigger available.
+        var cardsAnimated = false;
         ScrollTrigger.create({
             trigger: cardsGrid,
-            start: 'top 95%',
+            start: 'top 90%',
             once: true,
             onEnter: function() {
-                gsap.from(cardsGrid.querySelectorAll('.card'), {
-                    y: 40, opacity: 0, duration: 0.7,
-                    ease: 'power2.out',
-                    stagger: { amount: 0.6, grid: [3, 3], from: 'start' }
+                cardsAnimated = true;
+                hubCards.forEach(function(card, i) {
+                    gsap.fromTo(card,
+                        { y: 30, opacity: 0 },
+                        { y: 0, opacity: 1, duration: 0.5, delay: i * 0.06, ease: 'power2.out' }
+                    );
                 });
             }
         });
