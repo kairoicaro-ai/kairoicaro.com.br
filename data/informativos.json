@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-03-30T11:37:38.644898+00:00",
-  "total": 5,
+  "updated_at": "2026-03-30T16:11:20.928881+00:00",
+  "total": 8,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "STF vai decidir se constrangimento da vítima em audiência de processo por estupro pode anular provas",
+      "summary": "Tribunal admitiu a repercussão geral em recurso relacionado a um caso ocorrido em 2018, em Santa Catarina",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-vai-decidir-se-constrangimento-da-vitima-em-audiencia-de-processo-por-estupro-pode-anular-provas/",
+      "date": "2026-03-30",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "Rádio Justiça: Painel Nacional do Crime Organizado é um dos destaques desta segunda-feira (30)",
@@ -11,36 +19,52 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "Fixação de regras para pagamento de verbas indenizatórias é destaque no Supremo na Semana",
-      "summary": "Episódio #184 está disponível nas principais plataformas de áudio e no YouTube",
-      "url": "https://noticias.stf.jus.br/postsnoticias/fixacao-de-regras-para-pagamento-de-verbas-indenizatorias-e-destaque-no-supremo-na-semana/",
-      "date": "2026-03-30",
-      "category": "Constitucional"
-    },
-    {
       "tribunal": "STJ",
-      "title": "Quarta Turma afasta exigência de original de cédula de crédito bancário na execução",
-      "summary": "O colegiado considerou que a legislação equipara os documentos digitalizados aos originais para todos os efeitos legais, cabendo ao credor guardar a versão em papel até o fim do prazo para a ação rescisória.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30032026-Quarta-Turma-afasta-exigencia-de-original-de-cedula-de-credito-bancario-na-execucao.aspx",
+      "title": "Comprovação da situação de desemprego involuntário é o novo tema da Página de Repetitivos",
+      "summary": "Comprovação da situação de desemprego involuntário é o novo tema da Página de Repetitivos",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30032026-Comprovacao-da-situacao-de-desemprego-involuntario-e-o-novo-tema-da-Pagina-de-Repetitivos.aspx",
       "date": "2026-03-30",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Semana Santa: tribunal não terá expediente de 1º a 5 de abril",
-      "summary": "Semana Santa: tribunal não terá expediente de 1º a 5 de abril",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27032026-Semana-Santa-tribunal-nao-tera-expediente-de-1o-a-5-de-abril.aspx",
+      "title": "Serviços informatizados do STJ podem apresentar oscilações no início de abril",
+      "summary": "Serviços informatizados do STJ podem apresentar oscilações no início de abril",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30032026-Servicos-informatizados-do-STJ-podem-apresentar-oscilacoes-no-inicio-de-abril.aspx",
       "date": "2026-03-30",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Legitimidade de provedor para remover conteúdo que viola termos de uso é destaque do Informativo",
-      "summary": "Legitimidade de provedor para remover conteúdo que viola termos de uso é destaque do Informativo",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27032026-Legitimidade-de-provedor-para-remover-conteudo-que-viola-termos-de-uso-e-destaque-do-Informativo.aspx",
+      "title": "Repetitivo vai definir se médico residente pode pedir prorrogação de carência do Fies após iniciar amortização",
+      "summary": "Repetitivo vai definir se médico residente pode pedir prorrogação de carência do Fies após iniciar amortização",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30032026-Repetitivo-vai-definir-se-medico-residente-pode-pedir-prorrogacao-de-carencia-do-Fies-apos-iniciar-amortizacao.aspx",
       "date": "2026-03-30",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "XXIV Jornada Institucional dos Magistrados do TRT-11 promoverá reflexões sobre o papel da Justiça do Trabalho na garantia de direitos fundamentais",
+      "summary": "O evento ocorrerá de 6 a 10 de abril. Nesse período, audiências e sessões estarão suspensas; o funcionamento será exclusivamente interno no Regional, com manutenção dos prazos processuais.",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11232-xxiv-jornada-institucional-dos-magistrados-do-trt-11-promovera-reflexoes-sobre-o-papel-da-justica-do-trabalho-na-garantia-de-direitos-fundamentais",
+      "date": "2026-03-30",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "Cooperação inédita entre Cejusc-JT do TRT-11 e TRT-8 garante acesso à justiça no interior do Pará",
+      "summary": "Ação conjunta durante itinerância em Monte Alegre (PA) viabilizou a habilitação de trabalhador ao seguro-desemprego, superando barreiras geográficas e tecnológicas.",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11230-cooperacao-inedita-entre-cejusc-jt-do-trt-11-e-trt-8-garante-acesso-a-justica-no-interior-do-para",
+      "date": "2026-03-30",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TST",
+      "title": "Ir para o conteúdo",
+      "summary": "",
+      "url": "https://www.tst.jus.br#content",
+      "date": "2026-03-30",
+      "category": "Trabalhista"
     }
   ]
 }
