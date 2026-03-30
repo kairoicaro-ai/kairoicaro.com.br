@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-03-30T16:11:20.928881+00:00",
-  "total": 8,
+  "updated_at": "2026-03-30T20:07:17.911874+00:00",
+  "total": 5,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF vai decidir se constrangimento da vítima em audiência de processo por estupro pode anular provas",
-      "summary": "Tribunal admitiu a repercussão geral em recurso relacionado a um caso ocorrido em 2018, em Santa Catarina",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-vai-decidir-se-constrangimento-da-vitima-em-audiencia-de-processo-por-estupro-pode-anular-provas/",
+      "title": "STF convoca audiência pública para debater taxa e atuação da CVM",
+      "summary": "Convocada pelo ministro Flávio Dino, a audiência será realizada em 04/05/2026 na Primeira Turma do STF. Interessados em participar como expositores devem se inscrever até 08/04",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-convoca-audiencia-publica-para-debater-taxa-e-atuacao-da-cvm/",
       "date": "2026-03-30",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Rádio Justiça: Painel Nacional do Crime Organizado é um dos destaques desta segunda-feira (30)",
-      "summary": "O programa Regra do Jogo aborda proposta que prevê medidas para combater o assédio e a importunação sexual em estádios de futebol",
-      "url": "https://noticias.stf.jus.br/postsnoticias/radio-justica-painel-nacional-do-crime-organizado-e-um-dos-destaques-desta-segunda-feira-30/",
+      "title": "STF vai decidir se constrangimento da vítima em audiência de processo por estupro pode anular provas",
+      "summary": "Tribunal admitiu a repercussão geral em recurso relacionado a um caso ocorrido em 2018, em Santa Catarina",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-vai-decidir-se-constrangimento-da-vitima-em-audiencia-de-processo-por-estupro-pode-anular-provas/",
       "date": "2026-03-30",
       "category": "Constitucional"
     },
@@ -41,30 +41,6 @@
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30032026-Repetitivo-vai-definir-se-medico-residente-pode-pedir-prorrogacao-de-carencia-do-Fies-apos-iniciar-amortizacao.aspx",
       "date": "2026-03-30",
       "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "XXIV Jornada Institucional dos Magistrados do TRT-11 promoverá reflexões sobre o papel da Justiça do Trabalho na garantia de direitos fundamentais",
-      "summary": "O evento ocorrerá de 6 a 10 de abril. Nesse período, audiências e sessões estarão suspensas; o funcionamento será exclusivamente interno no Regional, com manutenção dos prazos processuais.",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11232-xxiv-jornada-institucional-dos-magistrados-do-trt-11-promovera-reflexoes-sobre-o-papel-da-justica-do-trabalho-na-garantia-de-direitos-fundamentais",
-      "date": "2026-03-30",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Cooperação inédita entre Cejusc-JT do TRT-11 e TRT-8 garante acesso à justiça no interior do Pará",
-      "summary": "Ação conjunta durante itinerância em Monte Alegre (PA) viabilizou a habilitação de trabalhador ao seguro-desemprego, superando barreiras geográficas e tecnológicas.",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11230-cooperacao-inedita-entre-cejusc-jt-do-trt-11-e-trt-8-garante-acesso-a-justica-no-interior-do-para",
-      "date": "2026-03-30",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TST",
-      "title": "Ir para o conteúdo",
-      "summary": "",
-      "url": "https://www.tst.jus.br#content",
-      "date": "2026-03-30",
-      "category": "Trabalhista"
     }
   ]
 }
