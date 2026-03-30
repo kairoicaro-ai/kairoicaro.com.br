@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-30T06:26:31.731902+00:00",
+  "updated_at": "2026-03-30T11:37:38.644898+00:00",
   "total": 5,
   "items": [
     {
@@ -20,6 +20,14 @@
     },
     {
       "tribunal": "STJ",
+      "title": "Quarta Turma afasta exigência de original de cédula de crédito bancário na execução",
+      "summary": "O colegiado considerou que a legislação equipara os documentos digitalizados aos originais para todos os efeitos legais, cabendo ao credor guardar a versão em papel até o fim do prazo para a ação rescisória.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30032026-Quarta-Turma-afasta-exigencia-de-original-de-cedula-de-credito-bancario-na-execucao.aspx",
+      "date": "2026-03-30",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
       "title": "Semana Santa: tribunal não terá expediente de 1º a 5 de abril",
       "summary": "Semana Santa: tribunal não terá expediente de 1º a 5 de abril",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27032026-Semana-Santa-tribunal-nao-tera-expediente-de-1o-a-5-de-abril.aspx",
@@ -31,14 +39,6 @@
       "title": "Legitimidade de provedor para remover conteúdo que viola termos de uso é destaque do Informativo",
       "summary": "Legitimidade de provedor para remover conteúdo que viola termos de uso é destaque do Informativo",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27032026-Legitimidade-de-provedor-para-remover-conteudo-que-viola-termos-de-uso-e-destaque-do-Informativo.aspx",
-      "date": "2026-03-30",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Podcast STJ No Seu Dia aborda impossibilidade de estender carência do Fies após início da amortização",
-      "summary": "Podcast STJ No Seu Dia aborda impossibilidade de estender carência do Fies após início da amortização",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27032026-Podcast-STJ-No-Seu-Dia-aborda-impossibilidade-de-estender-carencia-do-Fies-apos-inicio-da-amortizacao.aspx",
       "date": "2026-03-30",
       "category": "Jurisprudencia"
     }
