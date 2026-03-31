@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-31T11:13:13.934612+00:00",
-  "total": 5,
+  "updated_at": "2026-03-31T14:02:09.513579+00:00",
+  "total": 8,
   "items": [
     {
       "tribunal": "STF",
@@ -20,27 +20,51 @@
     },
     {
       "tribunal": "STJ",
-      "title": "Segunda Turma reafirma que Fazenda pode recusar bem indicado à penhora fora da ordem legal",
-      "summary": "Segunda Turma reafirma que Fazenda pode recusar bem indicado à penhora fora da ordem legal",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31032026-Segunda-Turma-reafirma-que-Fazenda-pode-recusar-bem-indicado-a-penhora-fora-da-ordem-legal.aspx",
+      "title": "STJ Notícias: fiança em contrato de aluguel não impede aplicação do penhor legal",
+      "summary": "STJ Notícias: fiança em contrato de aluguel não impede aplicação do penhor legal",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31032026-STJ-Noticias-fianca-em-contrato-de-aluguel-nao-impede-aplicacao-do-penhor-legal.aspx",
       "date": "2026-03-31",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Para Terceira Turma, procuração eletrônica sem ICP-Brasil é válida desde que não haja dúvida sobre autenticidade",
-      "summary": "O colegiado considerou que o juiz, se achar necessário, pode exigir que lhe seja apresentada uma procuração com certificação qualificada, a fim de garantir mais segurança quanto à autoria e à integridade do documento.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31032026-Para-Terceira-Turma--procuracao-eletronica-sem-ICP-Brasil-e-valida-desde-que-nao-haja-duvida-sobre-autenticidade.aspx",
+      "title": "Página de Repetitivos traz necessidade de prévia intimação pessoal para cobrança de multa coercitiva",
+      "summary": "Página de Repetitivos traz necessidade de prévia intimação pessoal para cobrança de multa coercitiva",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31032026-Pagina-de-Repetitivos-traz-necessidade-de-previa-intimacao-pessoal-para-cobranca-de-multa-coercitiva.aspx",
       "date": "2026-03-31",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Comprovação da situação de desemprego involuntário é o novo tema da Página de Repetitivos",
-      "summary": "Comprovação da situação de desemprego involuntário é o novo tema da Página de Repetitivos",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30032026-Comprovacao-da-situacao-de-desemprego-involuntario-e-o-novo-tema-da-Pagina-de-Repetitivos.aspx",
+      "title": "Acesso à Central do Processo Eletrônico muda a partir de segunda-feira (6)",
+      "summary": "Múltiplo Fator de Autenticação vai trazer mais segurança",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31032026-Acesso-a-Central-do-Processo-Eletronico-muda-a-partir-de-segunda-feira--6-.aspx",
       "date": "2026-03-31",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "Técnico de enfermagem demitido após ser acusado de assediar colega de trabalho lésbica tem justa causa mantida em Manaus",
+      "summary": "Decisão da juíza do Trabalho Larissa Carril destaca que silêncio da vítima não configura consentimento",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11233-tecnico-de-enfermagem-demitido-apos-ser-acusado-de-assediar-colega-de-trabalho-lesbica-tem-justa-causa-mantida-em-manaus",
+      "date": "2026-03-31",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "XXIV Jornada Institucional dos Magistrados do TRT-11 promoverá reflexões sobre o papel da Justiça do Trabalho na garantia de direitos fundamentais",
+      "summary": "O evento ocorrerá de 6 a 10 de abril. Nesse período, audiências e sessões estarão suspensas; o funcionamento será mantido no Regional, bem com a manutenção dos prazos processuais.",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11232-xxiv-jornada-institucional-dos-magistrados-do-trt-11-promovera-reflexoes-sobre-o-papel-da-justica-do-trabalho-na-garantia-de-direitos-fundamentais",
+      "date": "2026-03-31",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TST",
+      "title": "Ir para o conteúdo",
+      "summary": "",
+      "url": "https://www.tst.jus.br#content",
+      "date": "2026-03-31",
+      "category": "Trabalhista"
     }
   ]
 }
