@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-31T05:59:25.350504+00:00",
-  "total": 5,
+  "updated_at": "2026-03-31T07:44:47.766501+00:00",
+  "total": 8,
   "items": [
     {
       "tribunal": "STF",
@@ -41,6 +41,30 @@
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30032026-Repetitivo-vai-definir-se-medico-residente-pode-pedir-prorrogacao-de-carencia-do-Fies-apos-iniciar-amortizacao.aspx",
       "date": "2026-03-31",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "Técnico de enfermagem demitido após ser acusado de assediar colega de trabalho lésbica tem justa causa mantida em Manaus",
+      "summary": "Decisão da juíza do Trabalho Larissa Carril destaca que silêncio da vítima não configura consentimento",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11233-tecnico-de-enfermagem-demitido-apos-ser-acusado-de-assediar-colega-de-trabalho-lesbica-tem-justa-causa-mantida-em-manaus",
+      "date": "2026-03-31",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "XXIV Jornada Institucional dos Magistrados do TRT-11 promoverá reflexões sobre o papel da Justiça do Trabalho na garantia de direitos fundamentais",
+      "summary": "O evento ocorrerá de 6 a 10 de abril. Nesse período, audiências e sessões estarão suspensas; o funcionamento será mantido no Regional, bem com a manutenção dos prazos processuais.",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11232-xxiv-jornada-institucional-dos-magistrados-do-trt-11-promovera-reflexoes-sobre-o-papel-da-justica-do-trabalho-na-garantia-de-direitos-fundamentais",
+      "date": "2026-03-31",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TST",
+      "title": "Ir para o conteúdo",
+      "summary": "",
+      "url": "https://www.tst.jus.br#content",
+      "date": "2026-03-31",
+      "category": "Trabalhista"
     }
   ]
 }
