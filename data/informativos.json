@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-03-31T14:02:09.513579+00:00",
-  "total": 8,
+  "updated_at": "2026-03-31T19:19:44.300177+00:00",
+  "total": 5,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Ministro Zanin condena ex-aluno de medicina por trote que obrigou calouras a jurar não recusar ‘tentativa de coito’",
-      "summary": "Na decisão, ministro destacou que o STF, “em diversas oportunidades, tem sido provocado a decidir o óbvio, no sentido de garantir a própria existência digna das mulheres”",
-      "url": "https://noticias.stf.jus.br/postsnoticias/zanin-reve-decisao-do-stj-e-condena-ex-aluno-de-medicina-por-trote-que-obrigou-calouras-a-jurar-nao-recusar-tentativa-de-coito/",
+      "title": "STF valida incidência de imposto de importação sobre mercadoria nacional exportada que retorna ao Brasil",
+      "summary": "Plenário entendeu que a Constituição vincula a incidência do tributo à procedência do bem, não à sua origem produtiva",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-valida-incidencia-de-imposto-de-importacao-sobre-mercadoria-nacional-exportada-que-retorna-ao-brasil/",
       "date": "2026-03-31",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Rádio Justiça: entrevista sobre o Estatuto da Magistratura Brasileira Interamericana é um dos destaques desta terça-feira (31)",
-      "summary": "Confira também programa sobre as regras das Eleições Gerais de 2026",
-      "url": "https://noticias.stf.jus.br/postsnoticias/radio-justica-entrevista-sobre-o-estatuto-da-magistratura-brasileira-interamericana-e-um-dos-destaques-desta-terca-feira-31/",
+      "title": "Confira os destaques das pautas de abril e maio do Plenário do STF",
+      "summary": "Eleição para o governo do Estado do Rio de Janeiro abre a pauta de abril; em maio, um dos destaques são as ações sobre a distribuição dos royalties do petróleo",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confira-os-destaques-das-pautas-de-abril-e-maio-do-plenario-do-stf/",
       "date": "2026-03-31",
       "category": "Constitucional"
     },
@@ -41,30 +41,6 @@
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31032026-Acesso-a-Central-do-Processo-Eletronico-muda-a-partir-de-segunda-feira--6-.aspx",
       "date": "2026-03-31",
       "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Técnico de enfermagem demitido após ser acusado de assediar colega de trabalho lésbica tem justa causa mantida em Manaus",
-      "summary": "Decisão da juíza do Trabalho Larissa Carril destaca que silêncio da vítima não configura consentimento",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11233-tecnico-de-enfermagem-demitido-apos-ser-acusado-de-assediar-colega-de-trabalho-lesbica-tem-justa-causa-mantida-em-manaus",
-      "date": "2026-03-31",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "XXIV Jornada Institucional dos Magistrados do TRT-11 promoverá reflexões sobre o papel da Justiça do Trabalho na garantia de direitos fundamentais",
-      "summary": "O evento ocorrerá de 6 a 10 de abril. Nesse período, audiências e sessões estarão suspensas; o funcionamento será mantido no Regional, bem com a manutenção dos prazos processuais.",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11232-xxiv-jornada-institucional-dos-magistrados-do-trt-11-promovera-reflexoes-sobre-o-papel-da-justica-do-trabalho-na-garantia-de-direitos-fundamentais",
-      "date": "2026-03-31",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TST",
-      "title": "Ir para o conteúdo",
-      "summary": "",
-      "url": "https://www.tst.jus.br#content",
-      "date": "2026-03-31",
-      "category": "Trabalhista"
     }
   ]
 }
