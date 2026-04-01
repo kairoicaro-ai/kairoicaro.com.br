@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-04-01T14:04:55.412071+00:00",
-  "total": 8,
+  "updated_at": "2026-04-01T19:32:04.199725+00:00",
+  "total": 5,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF terá expediente alterado na Semana Santa",
-      "summary": "Prazos que começam ou terminam na quarta (1º), quinta (2) e sexta (3) serão automaticamente prorrogados para segunda (6).",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-tera-expediente-alterado-na-semana-santa/",
+      "title": "STF rejeita ações que questionavam privatização da Sabesp",
+      "summary": "Plenário levou em consideração, entre os fundamentos, a existência de outros meios processuais para questionar judicialmente a matéria",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-rejeita-acoes-que-tentavam-reverter-privatizacao-da-sabesp/",
       "date": "2026-04-01",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Rádio Justiça: entrevista sobre eleições diretas e indiretas é um dos destaques desta quarta-feira (1º)",
-      "summary": "Confira também programa sobre associação da atividade profissional a crenças religiosas",
-      "url": "https://noticias.stf.jus.br/postsnoticias/radio-justica-entrevista-sobre-eleicoes-diretas-e-indiretas-e-um-dos-destaques-desta-quarta-feira-1o/",
+      "title": "STF revoga prisão preventiva e impõe medidas cautelares a delegado",
+      "summary": "Ministro Gilmar Mendes considerou que a prisão foi baseada apenas em colaboração premiada, sem provas que justificassem a necessidade da medida restritiva",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-revoga-prisao-preventiva-e-impoe-medidas-cautelares-a-delegado/",
       "date": "2026-04-01",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "STJ e TJPB reforçam ações de enfrentamento à violência contra a mulher com seminário na Paraíba",
+      "summary": "STJ e TJPB reforçam ações de enfrentamento à violência contra a mulher com seminário na Paraíba",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01042026-STJ-e-TJPB-reforcam-acoes-de-enfrentamento-a-violencia-contra-a-mulher-com-seminario-na-Paraiba.aspx",
+      "date": "2026-04-01",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
@@ -33,38 +41,6 @@
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31032026-STJ-Noticias-fianca-em-contrato-de-aluguel-nao-impede-aplicacao-do-penhor-legal.aspx",
       "date": "2026-04-01",
       "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Página de Repetitivos traz necessidade de prévia intimação pessoal para cobrança de multa coercitiva",
-      "summary": "Página de Repetitivos traz necessidade de prévia intimação pessoal para cobrança de multa coercitiva",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31032026-Pagina-de-Repetitivos-traz-necessidade-de-previa-intimacao-pessoal-para-cobranca-de-multa-coercitiva.aspx",
-      "date": "2026-04-01",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Abril Verde: inscrições para conciliação em processos sobre acidentes de trabalho, doenças ocupacionais e assédio encerram em 3 de abril",
-      "summary": "Mutirão de audiências acontecerá de 27 a 30 de abril nos Cejuscs-JT de Manaus e de Boa Vista.",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11239-abril-verde-inscricoes-para-mutirao-de-conciliacao-sobre-acidentes-de-trabalho-doencas-ocupacionais-e-assedio-encerram-em-3-de-abril",
-      "date": "2026-04-01",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "3º Mutirão PopRuaJud amplia rede de atendimento e garante acesso a direitos para população em situação de vulnerabilidade em Boa Vista",
-      "summary": "Promover cidadania, acolhimento e acesso a direitos para pessoas em situação de rua e em condição de vulnerabilidade. Com esse objetivo, o Comitê Estadual Interinstitucional PopRuaJud realizou, o 3º Mutirão PopRuaJud – Roraima, na Paróquia Nossa Senhora da Consolata, no bairro São Vicente, em Boa Vi",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11240-3-mutirao-popruajud-amplia-rede-de-atendimento-e-garante-acesso-a-direitos-para-populacao-em-situacao-de-vulnerabilidade-em-boa-vista",
-      "date": "2026-04-01",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TST",
-      "title": "Ir para o conteúdo",
-      "summary": "",
-      "url": "https://www.tst.jus.br#content",
-      "date": "2026-04-01",
-      "category": "Trabalhista"
     }
   ]
 }
