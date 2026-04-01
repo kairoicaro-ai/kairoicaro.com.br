@@ -1,7 +1,55 @@
 {
-  "updated_at": "2026-03-31T11:13:16.619872+00:00",
+  "updated_at": "2026-04-01T08:59:28.459058+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "31.mar.2026TJ/PB: Juiz e advogado homenageiam data de início da ditadura militarReferência ao 31 de março foi feita durante sessão, em meio a risos, após juiz comentar vestimenta \"verde oliva\" de advogado.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-01",
+      "url": "https://www.migalhas.com.br/quentes/453017/tj-pb-juiz-e-advogado-homenageiam-data-de-inicio-da-ditadura-militar"
+    },
+    {
+      "setor": "empresarial",
+      "title": "31.mar.2026Juíza reconhece tráfico privilegiado e fixa pena em regime abertoDecisão aplicou o redutor do tráfico privilegiado, mas em fração intermediária, em razão da expressiva quantidade de entorpecente, fixando a pena em 2 anos e 6 meses de reclusão, em regime aberto.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-01",
+      "url": "https://www.migalhas.com.br/quentes/453014/juiza-reconhece-trafico-privilegiado-e-fixa-pena-em-regime-aberto"
+    },
+    {
+      "setor": "varejo",
+      "title": "31.mar.2026TJ/GO reconhece grãos como essenciais à atividade rural e impede penhoraDecisão reconhece que produtos agrícolas são o principal ativo econômico do produtor rural e não podem ser constritos durante o stay period.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-01",
+      "url": "https://www.migalhas.com.br/quentes/453012/tj-go-reconhece-graos-como-essenciais-a-atividade-rural-e-nega-penhora"
+    },
+    {
+      "setor": "empresarial",
+      "title": "31.mar.2026Presidente do STM relata preconceito e resistência no pleito que a elegeuMinistra afirma ter enfrentado discriminação em eleição e na Corte.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-01",
+      "url": "https://www.migalhas.com.br/quentes/452994/presidente-do-stm-relata-preconceito-e-oposicao-no-pleito-que-a-elegeu"
+    },
+    {
+      "setor": "varejo",
+      "title": "31.mar.2026Foro incorreto: Juíza extingue ação de consumidor de SC ajuizada na BAParte propôs ação indenizatório em juízo diverso de onde reside.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-01",
+      "url": "https://www.migalhas.com.br/quentes/453015/foro-incorreto-juiza-extingue-acao-de-consumidor-de-sc-ajuizada-na-ba"
+    },
+    {
+      "setor": "empresarial",
+      "title": "31.mar.2026Por atraso na entrega, juiz suspende cobranças de multipropriedade do Beach ParkEntrega do empreendimento estava prevista para 1º/7/25.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-01",
+      "url": "https://www.migalhas.com.br/quentes/453004/juiz-suspende-cobrancas-de-multipropriedade-do-beach-park-por-atraso"
+    },
     {
       "setor": "empresarial",
       "title": "31.mar.2026Zanin condena ex-aluno que fazia calouras jurar aceitar coito com veteranosMinistro do STF fixou indenização de 40 salários-mínimos por dano moral coletivo e destinou valor ao FID.",
@@ -73,54 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-03-30",
       "url": "https://www.migalhas.com.br/quentes/452746/azul-indenizara-consumidora-em-r-5-mil-por-downgrade-em-passagem"
-    },
-    {
-      "setor": "empresarial",
-      "title": "29.mar.2026Sem prova de fraude, TJ/SP manda restabelecer plano de saúde canceladoOperadora cancelou plano de idosa por suposta fraude em reembolsos feitos por clínica; TJ/SP afastou má-fé e considerou a rescisão abusiva por falta de prova e de notificação prévia.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-03-30",
-      "url": "https://www.migalhas.com.br/quentes/452428/sem-prova-de-fraude-tj-sp-manda-restabelecer-plano-de-saude-cancelado"
-    },
-    {
-      "setor": "empresarial",
-      "title": "29.mar.2026Desembargador suspende apreensão de pulverizador agrícola em alienaçãoRelator considerou essencialidade do equipamento e suspendeu medida até análise definitiva do recurso.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-03-30",
-      "url": "https://www.migalhas.com.br/quentes/452728/desembargador-suspende-apreensao-de-pulverizador-agricola-em-alienacao"
-    },
-    {
-      "setor": "empresarial",
-      "title": "29.mar.2026105 anos de Oração aos Moços: IA recria discurso histórico de Rui BarbosaVídeo convida a imaginar como foi a leitura do texto aos formandos do Largo do São Francisco, em 1921.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-03-29",
-      "url": "https://www.migalhas.com.br/quentes/452839/105-anos-de-oracao-aos-mocos-ia-recria-discurso-de-rui-barbosa"
-    },
-    {
-      "setor": "varejo",
-      "title": "28.mar.2026Bancos não indenizarão após consumidor alegar registro indevido no SCRMagistrada entendeu que não houve comprovação de irregularidades nos registros feitos pelas instituições bancárias.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-03-29",
-      "url": "https://www.migalhas.com.br/quentes/452704/bancos-nao-indenizarao-apos-consumidor-alegar-registro-indevido-no-scr"
-    },
-    {
-      "setor": "varejo",
-      "title": "28.mar.2026Mulher tem cobranças de cota imobiliária suspensas após compra sob pressãoMedida considerou risco financeiro e reconhece a possibilidade de término do contrato por decisão da consumidora.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-03-29",
-      "url": "https://www.migalhas.com.br/quentes/452589/mulher-tem-parcela-de-cota-imobiliaria-suspensa-por-compra-sob-pressao"
-    },
-    {
-      "setor": "ambiental",
-      "title": "28.mar.2026Plano deve incluir recém-nascido com cardiopatia como dependenteSob argumento de risco à vida, a juíza determinou a imediata cobertura assistencial ao paciente.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-03-29",
-      "url": "https://www.migalhas.com.br/quentes/452564/plano-deve-incluir-recem-nascido-com-cardiopatia-como-dependente"
     }
   ]
 }
