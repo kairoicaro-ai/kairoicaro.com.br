@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-02T03:25:57.204304+00:00",
-  "total": 5,
+  "updated_at": "2026-04-02T07:41:49.942663+00:00",
+  "total": 8,
   "items": [
     {
       "tribunal": "STF",
@@ -41,6 +41,30 @@
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31032026-STJ-Noticias-fianca-em-contrato-de-aluguel-nao-impede-aplicacao-do-penhor-legal.aspx",
       "date": "2026-04-02",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "Abril Verde: inscrições para conciliação em processos sobre acidentes de trabalho, doenças ocupacionais e assédio encerram em 3 de abril",
+      "summary": "Mutirão de audiências acontecerá de 27 a 30 de abril nos Cejuscs-JT de Manaus e de Boa Vista.",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11239-abril-verde-inscricoes-para-mutirao-de-conciliacao-sobre-acidentes-de-trabalho-doencas-ocupacionais-e-assedio-encerram-em-3-de-abril",
+      "date": "2026-04-02",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "3º Mutirão PopRuaJud amplia rede de atendimento e garante acesso a direitos para população em situação de vulnerabilidade em Boa Vista",
+      "summary": "Promover cidadania, acolhimento e acesso a direitos para pessoas em situação de rua e em condição de vulnerabilidade. Com esse objetivo, o Comitê Estadual Interinstitucional PopRuaJud realizou, o 3º Mutirão PopRuaJud – Roraima, na Paróquia Nossa Senhora da Consolata, no bairro São Vicente, em Boa Vi",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11240-3-mutirao-popruajud-amplia-rede-de-atendimento-e-garante-acesso-a-direitos-para-populacao-em-situacao-de-vulnerabilidade-em-boa-vista",
+      "date": "2026-04-02",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TST",
+      "title": "Ir para o conteúdo",
+      "summary": "",
+      "url": "https://www.tst.jus.br#content",
+      "date": "2026-04-02",
+      "category": "Trabalhista"
     }
   ]
 }
