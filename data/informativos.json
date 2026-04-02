@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-04-01T19:32:04.199725+00:00",
+  "updated_at": "2026-04-02T03:25:57.204304+00:00",
   "total": 5,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Operação Exfil investiga vazamento de dados sigilosos de ministros do STF e do PGR",
+      "summary": "Ação autorizada pelo ministro Alexandre de Moraes cumpre mandados de busca e apreensão em endereços ligados a empresário suspeito de financiar esquema de extração ilícita de informações fiscais",
+      "url": "https://noticias.stf.jus.br/postsnoticias/operacao-exfil-investiga-vazamento-de-dados-sigilosos-de-ministros-do-stf-e-do-pgr/",
+      "date": "2026-04-02",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "STF rejeita ações que questionavam privatização da Sabesp",
       "summary": "Plenário levou em consideração, entre os fundamentos, a existência de outros meios processuais para questionar judicialmente a matéria",
       "url": "https://noticias.stf.jus.br/postsnoticias/stf-rejeita-acoes-que-tentavam-reverter-privatizacao-da-sabesp/",
-      "date": "2026-04-01",
-      "category": "Constitucional"
-    },
-    {
-      "tribunal": "STF",
-      "title": "STF revoga prisão preventiva e impõe medidas cautelares a delegado",
-      "summary": "Ministro Gilmar Mendes considerou que a prisão foi baseada apenas em colaboração premiada, sem provas que justificassem a necessidade da medida restritiva",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-revoga-prisao-preventiva-e-impoe-medidas-cautelares-a-delegado/",
-      "date": "2026-04-01",
+      "date": "2026-04-02",
       "category": "Constitucional"
     },
     {
@@ -23,7 +23,7 @@
       "title": "STJ e TJPB reforçam ações de enfrentamento à violência contra a mulher com seminário na Paraíba",
       "summary": "STJ e TJPB reforçam ações de enfrentamento à violência contra a mulher com seminário na Paraíba",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01042026-STJ-e-TJPB-reforcam-acoes-de-enfrentamento-a-violencia-contra-a-mulher-com-seminario-na-Paraiba.aspx",
-      "date": "2026-04-01",
+      "date": "2026-04-02",
       "category": "Jurisprudencia"
     },
     {
@@ -31,7 +31,7 @@
       "title": "Podcast STJ No Seu Dia aborda dano moral presumido em casos de violência doméstica contra a mulher",
       "summary": "Podcast STJ No Seu Dia aborda dano moral presumido em casos de violência doméstica contra a mulher",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01042026-Podcast-STJ-No-Seu-Dia-aborda-dano-moral-presumido-em-casos-de-violencia-domestica-contra-a-mulher.aspx",
-      "date": "2026-04-01",
+      "date": "2026-04-02",
       "category": "Jurisprudencia"
     },
     {
@@ -39,7 +39,7 @@
       "title": "STJ Notícias: fiança em contrato de aluguel não impede aplicação do penhor legal",
       "summary": "STJ Notícias: fiança em contrato de aluguel não impede aplicação do penhor legal",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31032026-STJ-Noticias-fianca-em-contrato-de-aluguel-nao-impede-aplicacao-do-penhor-legal.aspx",
-      "date": "2026-04-01",
+      "date": "2026-04-02",
       "category": "Jurisprudencia"
     }
   ]
