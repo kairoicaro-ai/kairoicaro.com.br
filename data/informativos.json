@@ -1,21 +1,13 @@
 {
-  "updated_at": "2026-04-02T19:15:37.472044+00:00",
-  "total": 8,
+  "updated_at": "2026-04-03T03:28:18.724970+00:00",
+  "total": 4,
   "items": [
     {
       "tribunal": "STF",
       "title": "Operação Exfil investiga vazamento de dados sigilosos de ministros do STF e do PGR",
       "summary": "Ação autorizada pelo ministro Alexandre de Moraes cumpre mandados de busca e apreensão em endereços ligados a empresário suspeito de financiar esquema de extração ilícita de informações fiscais",
       "url": "https://noticias.stf.jus.br/postsnoticias/operacao-exfil-investiga-vazamento-de-dados-sigilosos-de-ministros-do-stf-e-do-pgr/",
-      "date": "2026-04-02",
-      "category": "Constitucional"
-    },
-    {
-      "tribunal": "STF",
-      "title": "STF rejeita ações que questionavam privatização da Sabesp",
-      "summary": "Plenário levou em consideração, entre os fundamentos, a existência de outros meios processuais para questionar judicialmente a matéria",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-rejeita-acoes-que-tentavam-reverter-privatizacao-da-sabesp/",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "category": "Constitucional"
     },
     {
@@ -23,7 +15,7 @@
       "title": "STJ e TJPB reforçam ações de enfrentamento à violência contra a mulher com seminário na Paraíba",
       "summary": "STJ e TJPB reforçam ações de enfrentamento à violência contra a mulher com seminário na Paraíba",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01042026-STJ-e-TJPB-reforcam-acoes-de-enfrentamento-a-violencia-contra-a-mulher-com-seminario-na-Paraiba.aspx",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "category": "Jurisprudencia"
     },
     {
@@ -31,7 +23,7 @@
       "title": "Podcast STJ No Seu Dia aborda dano moral presumido em casos de violência doméstica contra a mulher",
       "summary": "Podcast STJ No Seu Dia aborda dano moral presumido em casos de violência doméstica contra a mulher",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01042026-Podcast-STJ-No-Seu-Dia-aborda-dano-moral-presumido-em-casos-de-violencia-domestica-contra-a-mulher.aspx",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "category": "Jurisprudencia"
     },
     {
@@ -39,32 +31,8 @@
       "title": "STJ Notícias: fiança em contrato de aluguel não impede aplicação do penhor legal",
       "summary": "STJ Notícias: fiança em contrato de aluguel não impede aplicação do penhor legal",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31032026-STJ-Noticias-fianca-em-contrato-de-aluguel-nao-impede-aplicacao-do-penhor-legal.aspx",
-      "date": "2026-04-02",
+      "date": "2026-04-03",
       "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Justiça do Trabalho centraliza emissão de guias em portal único a partir desta segunda (6)",
-      "summary": "O Conselho Superior da Justiça do Trabalho (CSJT) lançou a nova plataforma GRU JT, um sistema unificado e modernizado para a emissão de Guias de Recolhimento da União. A partir desta segunda-feira (6), advogados (as) e jurisdicionados deverão utilizar exclusivamente a nova aplicação nacional para a ",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11241-justica-do-trabalho-centraliza-emissao-de-guias-em-portal-unico-a-partir-desta-segunda-6",
-      "date": "2026-04-02",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Inscrições para o processo seletivo de estágio remunerado do TRT-11 se encerram neste domingo (5/4)",
-      "summary": "Estudantes de diversas áreas do ensino superior podem se inscrever. Remuneração é de R$1 mil",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11238-inscricoes-para-o-processo-seletivo-de-estagio-remunerado-do-trt-11-se-encerram-neste-domingo-5-4",
-      "date": "2026-04-02",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TST",
-      "title": "Ir para o conteúdo",
-      "summary": "",
-      "url": "https://www.tst.jus.br#content",
-      "date": "2026-04-02",
-      "category": "Trabalhista"
     }
   ]
 }
