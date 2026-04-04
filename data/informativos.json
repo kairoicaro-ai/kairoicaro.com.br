@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-04T07:17:26.413370+00:00",
-  "total": 4,
+  "updated_at": "2026-04-04T08:36:28.709842+00:00",
+  "total": 5,
   "items": [
     {
       "tribunal": "STF",
@@ -33,6 +33,14 @@
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31032026-STJ-Noticias-fianca-em-contrato-de-aluguel-nao-impede-aplicacao-do-penhor-legal.aspx",
       "date": "2026-04-04",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TST",
+      "title": "Ir para o conteúdo",
+      "summary": "",
+      "url": "https://www.tst.jus.br#content",
+      "date": "2026-04-04",
+      "category": "Trabalhista"
     }
   ]
 }
