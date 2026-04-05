@@ -1,7 +1,47 @@
 {
-  "updated_at": "2026-04-04T08:36:31.896526+00:00",
+  "updated_at": "2026-04-05T08:37:58.551150+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "4.abr.2026Estado deve reparar erro em retirada de útero; mulher espera há 5 mesesMagistrada concedeu liminar diante da gravidade do caso e do risco de agravamento, determinando a realização da cirurgia reparadora em até 15 dias.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-05",
+      "url": "https://www.migalhas.com.br/quentes/452837/estado-deve-reparar-erro-em-cirurgia-mulher-espera-ha-5-meses"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.abr.2026TJ/SP afasta reajuste acima do índice da ANS em plano \"falso coletivo\"Para colegiado, não houve transparência quanto aos critérios utilizados para aplicação dos reajustes.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-05",
+      "url": "https://www.migalhas.com.br/quentes/453092/tj-sp-afasta-reajuste-acima-do-indice-da-ans-em-plano-falso-coletivo"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.abr.2026Idosa com câncer será indenizada em R$ 10 mil por plano de saúde canceladoJuíza reconheceu abusividade em cancelamento de contrato e fixou indenização por danos morais.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-05",
+      "url": "https://www.migalhas.com.br/quentes/452974/idosa-com-cancer-sera-indenizada-em-r-10-mil-por-plano-cancelado"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.abr.2026TJ/MG: Por erro grosseiro no preço, Booking não terá de cumprir ofertaColegiado considerou que o preço de cerca de R$ 1.300 para sete diárias em alta temporada era irreal e que o cancelamento, comunicado com antecedência, não gera dano moral",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-05",
+      "url": "https://www.migalhas.com.br/quentes/452883/erro-grosseiro-no-preco-afasta-obrigacao-da-booking-de-cumprir-oferta"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.abr.2026Advogada que injuriou funcionário do BK firma acordo e pagará R$ 8 milAcordo com o MP homologado em fevereiro também previu medidas educativas e suspensão da CNH por seis meses.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-05",
+      "url": "https://www.migalhas.com.br/quentes/453200/advogada-que-injuriou-funcionario-do-bk-firma-acordo-e-pagara-r-8-mil"
+    },
     {
       "setor": "empresarial",
       "title": "3.abr.2026TJ/RJ afasta indenização após validar recebimento de consignadoApesar de perícia apontar assinatura falsa, colegiado entendeu que depósito em conta e inércia da autora validaram a contratação.",
@@ -81,46 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-04-03",
       "url": "https://www.migalhas.com.br/quentes/453179/tj-sp-candidato-a-cargo-em-prefeitura-e-condenado-por-diploma-falso"
-    },
-    {
-      "setor": "empresarial",
-      "title": "2.abr.2026CBMA anuncia Marianna Marra como nova secretária-geral da instituiçãoMarianna possui ampla experiência em litígios, resolução de conflitos e atuação em tribunais arbitrais.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-03",
-      "url": "https://www.migalhas.com.br/quentes/453129/cbma-anuncia-marianna-marra-como-nova-secretaria-geral-da-instituicao"
-    },
-    {
-      "setor": "empresarial",
-      "title": "1.abr.2026PF faz operação contra vazamento de dados do PGR e de ministros do STFAção mira empresário suspeito de encomendar acesso ilegal a dados de autoridades.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-02",
-      "url": "https://www.migalhas.com.br/quentes/453097/pf-faz-operacao-contra-vazamento-de-dados-do-pgr-e-de-ministros-do-stf"
-    },
-    {
-      "setor": "empresarial",
-      "title": "1.abr.2026TRT-2 extingue ação de sindicato contra Uber por falta de interesse processualJuízo entende que ação se baseou em hipóteses e não comprovou lesão concreta a direitos coletivos.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-02",
-      "url": "https://www.migalhas.com.br/quentes/453089/trt-2-extingue-acao-contra-uber-por-falta-de-interesse-processual"
-    },
-    {
-      "setor": "empresarial",
-      "title": "1.abr.2026Após quase 40 anos, juiz sentencia processo 0000001 de comarca na BAOito dias após Migalhas noticiar ação iniciada em 1987, magistrado proferiu decisão.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-02",
-      "url": "https://www.migalhas.com.br/quentes/453093/apos-quase-40-anos-juiz-sentencia-processo-0000001-de-comarca-na-ba"
-    },
-    {
-      "setor": "empresarial",
-      "title": "1.abr.2026Trench Rossi Watanabe assessora Triaxis e Crescera em seedOperações envolvem aportes em sete empresas de tecnologia que atuam em diferentes segmentos da economia digital.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-02",
-      "url": "https://www.migalhas.com.br/quentes/453090/trench-rossi-watanabe-assessora-triaxis-e-crescera-em-seed"
     }
   ]
 }
