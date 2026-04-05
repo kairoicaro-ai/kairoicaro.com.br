@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-04T19:01:27.395955+00:00",
-  "total": 5,
+  "updated_at": "2026-04-05T03:37:02.236135+00:00",
+  "total": 4,
   "items": [
     {
       "tribunal": "STF",
       "title": "Operação Exfil investiga vazamento de dados sigilosos de ministros do STF e do PGR",
       "summary": "Ação autorizada pelo ministro Alexandre de Moraes cumpre mandados de busca e apreensão em endereços ligados a empresário suspeito de financiar esquema de extração ilícita de informações fiscais",
       "url": "https://noticias.stf.jus.br/postsnoticias/operacao-exfil-investiga-vazamento-de-dados-sigilosos-de-ministros-do-stf-e-do-pgr/",
-      "date": "2026-04-04",
+      "date": "2026-04-05",
       "category": "Constitucional"
     },
     {
@@ -15,7 +15,7 @@
       "title": "STJ e TJPB reforçam ações de enfrentamento à violência contra a mulher com seminário na Paraíba",
       "summary": "STJ e TJPB reforçam ações de enfrentamento à violência contra a mulher com seminário na Paraíba",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01042026-STJ-e-TJPB-reforcam-acoes-de-enfrentamento-a-violencia-contra-a-mulher-com-seminario-na-Paraiba.aspx",
-      "date": "2026-04-04",
+      "date": "2026-04-05",
       "category": "Jurisprudencia"
     },
     {
@@ -23,7 +23,7 @@
       "title": "Podcast STJ No Seu Dia aborda dano moral presumido em casos de violência doméstica contra a mulher",
       "summary": "Podcast STJ No Seu Dia aborda dano moral presumido em casos de violência doméstica contra a mulher",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01042026-Podcast-STJ-No-Seu-Dia-aborda-dano-moral-presumido-em-casos-de-violencia-domestica-contra-a-mulher.aspx",
-      "date": "2026-04-04",
+      "date": "2026-04-05",
       "category": "Jurisprudencia"
     },
     {
@@ -31,16 +31,8 @@
       "title": "STJ Notícias: fiança em contrato de aluguel não impede aplicação do penhor legal",
       "summary": "STJ Notícias: fiança em contrato de aluguel não impede aplicação do penhor legal",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31032026-STJ-Noticias-fianca-em-contrato-de-aluguel-nao-impede-aplicacao-do-penhor-legal.aspx",
-      "date": "2026-04-04",
+      "date": "2026-04-05",
       "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "TST",
-      "title": "Ir para o conteúdo",
-      "summary": "",
-      "url": "https://www.tst.jus.br#content",
-      "date": "2026-04-04",
-      "category": "Trabalhista"
     }
   ]
 }
