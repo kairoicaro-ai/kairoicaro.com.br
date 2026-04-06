@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-04-06T13:46:32.570264+00:00",
-  "total": 8,
+  "updated_at": "2026-04-06T19:19:42.538216+00:00",
+  "total": 5,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF suspende lei mineira que exigia informações adicionais em rótulos de produtos para animais",
-      "summary": "Entendimento da maioria é de que lei estadual invadiu competência da União sobre a matéria",
+      "title": "STF invalida lei mineira que exigia informações adicionais em rótulos de produtos para animais",
+      "summary": "Entendimento da maioria é de cabe à União uniformizar regras à livre circulação de mercadorias e à preservação da unidade econômica nacional",
       "url": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-lei-mineira-que-exigia-informacoes-adicionais-em-rotulos-de-produtos-para-animais/",
       "date": "2026-04-06",
       "category": "Constitucional"
@@ -17,6 +17,14 @@
       "url": "https://noticias.stf.jus.br/postsnoticias/stf-vai-decidir-se-o-estado-deve-garantir-matricula-de-aluno-com-deficiencia-em-escola-de-tempo-integral-proxima-de-casa/",
       "date": "2026-04-06",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Propostas de enunciados para a X Jornada de Direito Civil podem ser enviadas até quinta-feira (9)",
+      "summary": "Propostas de enunciados para a X Jornada de Direito Civil podem ser enviadas até quinta-feira (9)",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/06042026-Propostas-de-enunciados-para-a-X-Jornada-de-Direito-Civil-podem-ser-enviadas-ate-quinta-feira--9-.aspx",
+      "date": "2026-04-06",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
@@ -33,38 +41,6 @@
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/06042026-Assessoria-de-Apoio-a-Julgamento-Colegiado-passa-a-atender-o-publico-no-Balcao-Virtual.aspx",
       "date": "2026-04-06",
       "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Quarta Turma autoriza troca do sobrenome materno pelo dos pais socioafetivos em caso de multiparentalidade",
-      "summary": "Quarta Turma autoriza troca do sobrenome materno pelo dos pais socioafetivos em caso de multiparentalidade",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/06042026-Quarta-Turma-autoriza-troca-do-sobrenome-materno-pelo-dos-pais-socioafetivos-em-caso-de-multiparentalidade.aspx",
-      "date": "2026-04-06",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Justiça do Trabalho centraliza emissão de guias em portal único a partir desta segunda (6)",
-      "summary": "O Conselho Superior da Justiça do Trabalho (CSJT) lançou a nova plataforma GRU JT, um sistema unificado e modernizado para a emissão de Guias de Recolhimento da União. A partir desta segunda-feira (6), advogados (as) e jurisdicionados deverão utilizar exclusivamente a nova aplicação nacional para a ",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11241-justica-do-trabalho-centraliza-emissao-de-guias-em-portal-unico-a-partir-desta-segunda-6",
-      "date": "2026-04-06",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Inscrições para o processo seletivo de estágio remunerado do TRT-11 se encerram neste domingo (5/4)",
-      "summary": "Estudantes de diversas áreas do ensino superior podem se inscrever. Remuneração é de R$1 mil",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11238-inscricoes-para-o-processo-seletivo-de-estagio-remunerado-do-trt-11-se-encerram-neste-domingo-5-4",
-      "date": "2026-04-06",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TST",
-      "title": "Ir para o conteúdo",
-      "summary": "",
-      "url": "https://www.tst.jus.br#content",
-      "date": "2026-04-06",
-      "category": "Trabalhista"
     }
   ]
 }
