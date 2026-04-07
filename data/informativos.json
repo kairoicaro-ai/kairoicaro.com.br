@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-04-07T14:01:01.835889+00:00",
+  "updated_at": "2026-04-07T19:31:49.407687+00:00",
   "total": 5,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "STF rejeita ação sobre aumento de pedágio na BR-040 entre Minas Gerais e Rio de Janeiro",
+      "summary": "Ministra Cármen Lúcia considerou que ação não cumpre os requisitos para ter o mérito analisado",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-rejeita-acao-sobre-aumento-de-pedagio-na-br-040-entre-minas-gerais-e-rio-de-janeiro/",
+      "date": "2026-04-07",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "Confira os destaques do Plenário Virtual",
@@ -11,34 +19,26 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "Goiás e Tocantins suspendem processo no STF para estudo técnico sobre divisa",
-      "summary": "Estados participaram de audiência de conciliação no STF. Ação discute titularidade da área norte do Município de Cavalcante (GO)",
-      "url": "https://noticias.stf.jus.br/postsnoticias/em-audiencia-no-stf-goias-e-tocantins-concordam-em-suspender-processo-sobre-divisa-para-realizacao-de-estudo-tecnico/",
+      "tribunal": "STJ",
+      "title": "Ministra Daniela Teixeira assume presidência da Terceira Turma",
+      "summary": "Ministra Daniela Teixeira assume presidência da Terceira Turma",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07042026-Ministra-Daniela-Teixeira-assume-presidencia-da-Terceira-Turma.aspx",
       "date": "2026-04-07",
-      "category": "Constitucional"
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "STJ celebra 37 anos de compromisso com a Justiça e a cidadania",
+      "summary": "STJ celebra 37 anos de compromisso com a Justiça e a cidadania",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07042026-STJ-celebra-37-anos-de-compromisso-com-a-Justica-e-a-cidadania.aspx",
+      "date": "2026-04-07",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
       "title": "Página de Repetitivos traz dispensa de ofício a órgãos públicos para validade de citação por edital",
       "summary": "Página de Repetitivos traz dispensa de ofício a órgãos públicos para validade de citação por edital",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07042026-Pagina-de-Repetitivos-inclui-dispensa-de-oficio-a-orgaos-publicos-para-validade-de-citacao-por-edital.aspx",
-      "date": "2026-04-07",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Jurisprudência em Teses traz novos entendimentos sobre o instituto da reclamação",
-      "summary": "Jurisprudência em Teses traz novos entendimentos sobre o instituto da reclamação",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07042026-Jurisprudencia-em-Teses-traz-novos-entendimentos-sobre-o-instituto-da-reclamacao.aspx",
-      "date": "2026-04-07",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Aberto prazo para amicus curiae em repetitivo sobre penhora do faturamento nas execuções civis",
-      "summary": "Aberto prazo para amicus curiae em repetitivo sobre penhora do faturamento nas execuções civis",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07042026-Aberto-prazo-para-amicus-curiae-em-repetitivo-sobre-penhora-do-faturamento-nas-execucoes-civis.aspx",
       "date": "2026-04-07",
       "category": "Jurisprudencia"
     }
