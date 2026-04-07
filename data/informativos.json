@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-07T07:49:38.065000+00:00",
-  "total": 5,
+  "updated_at": "2026-04-07T08:57:04.610264+00:00",
+  "total": 8,
   "items": [
     {
       "tribunal": "STF",
@@ -41,6 +41,30 @@
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/06042026-Assessoria-de-Apoio-a-Julgamento-Colegiado-passa-a-atender-o-publico-no-Balcao-Virtual.aspx",
       "date": "2026-04-07",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "VT de Manacapuru funcionará em regime de teletrabalho de 6 a 27 de abril devido a reforma no prédio",
+      "summary": "",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11246-vt-de-manacapuru-funcionara-em-regime-de-teletrabalho-de-6-a-27-de-abril-devido-a-reforma-no-predio",
+      "date": "2026-04-07",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "Justiça do Trabalho centraliza emissão de guias em portal único a partir desta segunda (6)",
+      "summary": "O Conselho Superior da Justiça do Trabalho (CSJT) lançou a nova plataforma GRU JT, um sistema unificado e modernizado para a emissão de Guias de Recolhimento da União. A partir desta segunda-feira (6), advogados (as) e jurisdicionados deverão utilizar exclusivamente a nova aplicação nacional para a ",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11241-justica-do-trabalho-centraliza-emissao-de-guias-em-portal-unico-a-partir-desta-segunda-6",
+      "date": "2026-04-07",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TST",
+      "title": "Ir para o conteúdo",
+      "summary": "",
+      "url": "https://www.tst.jus.br#content",
+      "date": "2026-04-07",
+      "category": "Trabalhista"
     }
   ]
 }
