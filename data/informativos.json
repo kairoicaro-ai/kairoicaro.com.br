@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-04-08T08:56:00.802962+00:00",
+  "updated_at": "2026-04-08T14:02:35.710634+00:00",
   "total": 5,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "STF vai decidir forma de eleição para “mandato-tampão” de governador do Rio de Janeiro",
+      "summary": "Plenário vai definir se governador e vice devem ser escolhidos pela Assembleia Legislativa ou pelo voto direto dos eleitores do estado",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-vai-decidir-forma-de-eleicao-para-mandato-tampao-de-governador-do-rio-de-janeiro/",
+      "date": "2026-04-08",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "Confira a pauta do STF desta quarta-feira (8)",
@@ -11,34 +19,26 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "Decisão que determinou manutenção de auxílio às vítimas de Brumadinho é questionada no STF",
-      "summary": "Alegação é de que a Justiça mineira aplicou lei posterior ao acordo judicial firmado entre a Vale e o poder público",
-      "url": "https://noticias.stf.jus.br/postsnoticias/decisao-que-determinou-manutencao-de-auxilio-as-vitimas-de-brumadinho-e-questionada-no-stf/",
-      "date": "2026-04-08",
-      "category": "Constitucional"
-    },
-    {
       "tribunal": "STJ",
-      "title": "STJ divulga Propostas de Enunciados selecionadas para o 2º Congresso da Segunda Instância",
-      "summary": "STJ divulga Propostas de Enunciados selecionadas para o 2º Congresso da Segunda Instância",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07042026-STJ-divulga-Propostas-de-Enunciados-selecionadas-para-o-2o-Congresso-da-Segunda-Instancia.aspx",
+      "title": "Podcast STJ No Seu Dia aborda jurisprudência sobre pensão vitalícia e danos ocorridos na idade escolar",
+      "summary": "Podcast STJ No Seu Dia aborda jurisprudência sobre pensão vitalícia e danos ocorridos na idade escolar",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/08042026-Podcast-STJ-No-Seu-Dia-aborda-jurisprudencia-sobre-pensao-vitalicia-e-danos-ocorridos-na-idade-escolar.aspx",
       "date": "2026-04-08",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Ex-presidente da Vale volta a ser réu em ações penais pelo rompimento da barragem de Brumadinho (MG)",
-      "summary": "Ex-presidente da Vale volta a ser réu em ações penais pelo rompimento da barragem de Brumadinho (MG)",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07042026-Ex-presidente-da-Vale-volta-a-ser-reu-em-acoes-penais-pelo-rompimento-da-barragem-de-Brumadinho--MG-.aspx",
+      "title": "Página de Repetitivos inclui julgados sobre limite de sessões de terapia prescritas a paciente com TEA",
+      "summary": "Página de Repetitivos inclui julgados sobre limite de sessões de terapia prescritas a paciente com TEA",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/08042026-Pagina-de-Repetitivos-inclui-julgados-sobre-limite-de-sessoes-de-terapia-prescritas-a-paciente-com-TEA-.aspx",
       "date": "2026-04-08",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Ministra Daniela Teixeira assume presidência da Terceira Turma",
-      "summary": "Ministra Daniela Teixeira assume presidência da Terceira Turma",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07042026-Ministra-Daniela-Teixeira-assume-presidencia-da-Terceira-Turma.aspx",
+      "title": "Pleno escolhe novos presidente e vice do STJ no dia 14 de abril",
+      "summary": "Pleno escolhe novos presidente e vice do STJ no dia 14 de abril",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/08042026-Pleno-escolhe-novos-presidente-e-vice-do-STJ-no-dia-14-de-abril.aspx",
       "date": "2026-04-08",
       "category": "Jurisprudencia"
     }
