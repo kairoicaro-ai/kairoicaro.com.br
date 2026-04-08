@@ -1,45 +1,45 @@
 {
-  "updated_at": "2026-04-07T19:31:49.407687+00:00",
+  "updated_at": "2026-04-08T03:32:31.595630+00:00",
   "total": 5,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF rejeita ação sobre aumento de pedágio na BR-040 entre Minas Gerais e Rio de Janeiro",
-      "summary": "Ministra Cármen Lúcia considerou que ação não cumpre os requisitos para ter o mérito analisado",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-rejeita-acao-sobre-aumento-de-pedagio-na-br-040-entre-minas-gerais-e-rio-de-janeiro/",
-      "date": "2026-04-07",
+      "title": "Confira a pauta do STF desta quarta-feira (8)",
+      "summary": "Sessão terá transmissão ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quarta-feira-8/",
+      "date": "2026-04-08",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Confira os destaques do Plenário Virtual",
-      "summary": "Sessão virtual começou às 11h do dia 3/4 e termina no dia 13",
-      "url": "https://noticias.stf.jus.br/postsnoticias/confira-os-destaques-do-plenario-virtual-10/",
-      "date": "2026-04-07",
+      "title": "Decisão que determinou manutenção de auxílio às vítimas de Brumadinho é questionada no STF",
+      "summary": "Alegação é de que a Justiça mineira aplicou lei posterior ao acordo judicial firmado entre a Vale e o poder público",
+      "url": "https://noticias.stf.jus.br/postsnoticias/decisao-que-determinou-manutencao-de-auxilio-as-vitimas-de-brumadinho-e-questionada-no-stf/",
+      "date": "2026-04-08",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "STJ divulga Propostas de Enunciados selecionadas para o 2º Congresso da Segunda Instância",
+      "summary": "STJ divulga Propostas de Enunciados selecionadas para o 2º Congresso da Segunda Instância",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07042026-STJ-divulga-Propostas-de-Enunciados-selecionadas-para-o-2o-Congresso-da-Segunda-Instancia.aspx",
+      "date": "2026-04-08",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Ex-presidente da Vale volta a ser réu em ações penais pelo rompimento da barragem de Brumadinho (MG)",
+      "summary": "Ex-presidente da Vale volta a ser réu em ações penais pelo rompimento da barragem de Brumadinho (MG)",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07042026-Ex-presidente-da-Vale-volta-a-ser-reu-em-acoes-penais-pelo-rompimento-da-barragem-de-Brumadinho--MG-.aspx",
+      "date": "2026-04-08",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
       "title": "Ministra Daniela Teixeira assume presidência da Terceira Turma",
       "summary": "Ministra Daniela Teixeira assume presidência da Terceira Turma",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07042026-Ministra-Daniela-Teixeira-assume-presidencia-da-Terceira-Turma.aspx",
-      "date": "2026-04-07",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "STJ celebra 37 anos de compromisso com a Justiça e a cidadania",
-      "summary": "STJ celebra 37 anos de compromisso com a Justiça e a cidadania",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07042026-STJ-celebra-37-anos-de-compromisso-com-a-Justica-e-a-cidadania.aspx",
-      "date": "2026-04-07",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Página de Repetitivos traz dispensa de ofício a órgãos públicos para validade de citação por edital",
-      "summary": "Página de Repetitivos traz dispensa de ofício a órgãos públicos para validade de citação por edital",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07042026-Pagina-de-Repetitivos-inclui-dispensa-de-oficio-a-orgaos-publicos-para-validade-de-citacao-por-edital.aspx",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "category": "Jurisprudencia"
     }
   ]
