@@ -1,7 +1,47 @@
 {
-  "updated_at": "2026-04-08T08:56:04.285158+00:00",
+  "updated_at": "2026-04-09T09:03:22.266707+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "8.abr.2026\"Estamos julgando muito e mal\", diz Bellizze de volume de ações no STJMinistro defendeu menos casos por sessão e criticou julgamentos sem seleção criteriosa.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-09",
+      "url": "https://www.migalhas.com.br/quentes/453542/estamos-julgando-muito-e-mal--diz-bellizze-de-volume-de-acoes-no-stj"
+    },
+    {
+      "setor": "empresarial",
+      "title": "8.abr.2026Fux diz que foi perseguido pelo CV quando atuou como juiz eleitoralMinistro citou episódio ao comentar dificuldades do processo eleitoral no RJ.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-09",
+      "url": "https://www.migalhas.com.br/quentes/453541/fux-diz-que-foi-perseguido-pelo-cv-quando-atuou-como-juiz-eleitoral"
+    },
+    {
+      "setor": "empresarial",
+      "title": "8.abr.2026STJ analisa uniformização de honorários de sucumbência em juizadosMinistra Regina Helena Costa abriu divergência para negar pedido de uniformização pela natureza processual da matéria.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-09",
+      "url": "https://www.migalhas.com.br/quentes/453540/stj-analisa-uniformizacao-de-honorarios-de-sucumbencia-em-juizados"
+    },
+    {
+      "setor": "empresarial",
+      "title": "8.abr.2026Por maioria, STJ determina que caso de feminicídio de militar vá à JúriEm conflito de competência, 3ª seção entendeu ausente o nexo funcional com a atividade castrense, devendo o crime ser julgado pelo Tribunal do Júri.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-09",
+      "url": "https://www.migalhas.com.br/quentes/453528/3-secao-do-stj-determina-que-caso-de-feminicidio-de-militar-va-a-juri"
+    },
+    {
+      "setor": "empresarial",
+      "title": "8.abr.2026STF: Zanin exibe slide para mostrar que Cláudio Castro tentou burlar cassaçãoMinistro apresentou linha do tempo do processo eleitoral para reforçar tese de causa eleitoral na vacância do governo do Rio de Janeiro.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-09",
+      "url": "https://www.migalhas.com.br/quentes/453538/zanin-usa-slide-para-mostrar-que-claudio-castro-tentou-burlar-cassacao"
+    },
     {
       "setor": "empresarial",
       "title": "7.abr.2026Após divergências no STJ, ministra Regina brinca sobre ser \"a chata da sessão\"Ministra atribuiu divergências ao acúmulo atípico de julgamentos na sessão, explicando que em situações habituais costuma organizar melhor a análise dos casos ao longo do tempo.",
@@ -81,46 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-04-07",
       "url": "https://www.migalhas.com.br/quentes/453311/suprema-corte-julga-cidadania-por-nascimento-a-filhos-de-imigrantes"
-    },
-    {
-      "setor": "empresarial",
-      "title": "6.abr.2026STF: Moraes reduz pena de Delgatti em 100 dias por aprovação no EnemMinistro reconheceu a remição de pena do hacker Walter Delgatti Neto, condenado a 8 anos e 3 meses de reclusão por invasão e inserção de documentos falsos nos sistemas do CNJ.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-07",
-      "url": "https://www.migalhas.com.br/quentes/453317/stf-moraes-reduz-pena-de-delgatti-em-100-dias-por-aprovacao-no-enem"
-    },
-    {
-      "setor": "empresarial",
-      "title": "5.abr.2026TJ/SP afasta alegação de fraude em plano coletivo e mantém contratoDecisão garantiu continuidade do contrato, cobertura integral e equiparou plano coletivo ao individual.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-06",
-      "url": "https://www.migalhas.com.br/quentes/453034/tj-sp-afasta-alegacao-de-fraude-em-plano-coletivo-e-mantem-contrato"
-    },
-    {
-      "setor": "empresarial",
-      "title": "5.abr.2026Turkish Airlines indenizará passageiros por atraso de 30 horas em vooJuíza reconheceu falha no transporte e aplicou responsabilidade objetiva por atraso excessivo.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-06",
-      "url": "https://www.migalhas.com.br/quentes/453127/turkish-airlines-indenizara-passageiros-por-atraso-de-30-horas-em-voo"
-    },
-    {
-      "setor": "empresarial",
-      "title": "5.abr.2026Hospital e médica pagarão R$ 200 mil após morte de mãe e fetoTJ/GO aplicou a teoria da perda de uma chance e manteve condenação solidária.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-06",
-      "url": "https://www.migalhas.com.br/quentes/452913/hospital-e-medica-pagarao-r-200-mil-apos-morte-de-mae-e-feto"
-    },
-    {
-      "setor": "empresarial",
-      "title": "5.abr.2026TJ/SP afasta responsabilidade de município por ataque de cães de ruaMulher teve o polegar amputado após ataque dos cães ao tentar defender seu cachorro. Colegiado destacou que a responsabilidade do Estado por omissão exige prova de falha específica e nexo causal, inexistentes no caso.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-06",
-      "url": "https://www.migalhas.com.br/quentes/452956/tj-sp-afasta-responsabilidade-de-municipio-por-ataque-de-caes-de-rua"
     }
   ]
 }

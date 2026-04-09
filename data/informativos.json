@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-09T07:54:47.036453+00:00",
-  "total": 5,
+  "updated_at": "2026-04-09T09:03:19.034122+00:00",
+  "total": 8,
   "items": [
     {
       "tribunal": "STF",
@@ -41,6 +41,30 @@
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/08042026-Podcast-STJ-No-Seu-Dia-aborda-jurisprudencia-sobre-pensao-vitalicia-e-danos-ocorridos-na-idade-escolar.aspx",
       "date": "2026-04-09",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "TRT-11 inicia campanha Abril Verde com ações integradas de prevenção e alerta para aumento de processos relacionados à saúde e segurança do trabalho",
+      "summary": "Em 2025 foram iniciados 2.090 novos processos trabalhistas de doença ocupacional e 1.611 de acidentes de trabalho no TRT-11 (AM/RR).",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11255-trt-11-inicia-campanha-abril-verde-com-acoes-integradas-de-prevencao-e-alerta-para-aumento-de-processos-relacionados-a-saude-e-seguranca-do-trabalho",
+      "date": "2026-04-09",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "“Vestir para Vencer”: TRT-11 lança 2ª edição da campanha de doação de roupas e sapatos",
+      "summary": "Após arrecadar 570 itens em 2025, campanha retorna para nova mobilização solidária e sustentável.",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11252-vestir-para-vencer-trt-11-lanca-2-edicao-da-campanha-de-doacao-de-roupas-e-sapatos",
+      "date": "2026-04-09",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TST",
+      "title": "Ir para o conteúdo",
+      "summary": "",
+      "url": "https://www.tst.jus.br#content",
+      "date": "2026-04-09",
+      "category": "Trabalhista"
     }
   ]
 }
