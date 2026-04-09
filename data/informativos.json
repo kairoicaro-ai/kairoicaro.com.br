@@ -1,29 +1,37 @@
 {
-  "updated_at": "2026-04-08T19:40:59.351420+00:00",
-  "total": 7,
+  "updated_at": "2026-04-09T03:28:20.797658+00:00",
+  "total": 5,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF vai decidir forma de eleição para “mandato-tampão” de governador do Rio de Janeiro",
-      "summary": "Plenário vai definir se governador e vice devem ser escolhidos pela Assembleia Legislativa ou pelo voto direto dos eleitores do estado",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-vai-decidir-forma-de-eleicao-para-mandato-tampao-de-governador-do-rio-de-janeiro/",
-      "date": "2026-04-08",
+      "title": "STF começa a julgar formato de eleição suplementar para governador do Rio de Janeiro",
+      "summary": "Foram apresentados dois votos, um por eleições diretas e outro por eleições indiretas. O julgamento prossegue na sessão de quinta-feira (9)",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-comeca-a-julgar-formato-de-eleicao-suplementar-para-governador-do-rio-de-janeiro/",
+      "date": "2026-04-09",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Confira a pauta do STF desta quarta-feira (8)",
-      "summary": "Sessão terá transmissão ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
-      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quarta-feira-8/",
-      "date": "2026-04-08",
+      "title": "STF determina que PMDF declare perda de cargo de oficiais condenados pelos atos de 8 de janeiro",
+      "summary": "Segundo o ministro Alexandre de Moraes, não há controvérsia constitucional quanto à perda do cargo como efeito da condenação criminal",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-determina-que-pmdf-declare-perda-de-cargo-de-oficiais-condenados-pelos-atos-de-8-de-janeiro/",
+      "date": "2026-04-09",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Terceira Seção desmembra processo, e ex-soldado do Exército acusado de feminicídio vai ao tribunal do júri",
+      "summary": "Militares acompanham o julgamento que decidiu pela cisão do processo: parte dos crimes fica com a Justiça Militar, enquanto o feminicídio e a destruição de cadáver serão submetidos ao júri popular.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/08042026-Terceira-Secao-desmembra-processo--e-ex-soldado-do-Exercito-acusado-de-feminicidio-vai-ao-tribunal-do-juri.aspx",
+      "date": "2026-04-09",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
       "title": "Segurança jurídica no ambiente de negócios foi tema de encontro no STJ",
       "summary": "Segurança jurídica no ambiente de negócios foi tema de encontro no STJ",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/08042026-Seguranca-juridica-no-ambiente-de-negocios-foi-tema-de-encontro-no-STJ.aspx",
-      "date": "2026-04-08",
+      "date": "2026-04-09",
       "category": "Jurisprudencia"
     },
     {
@@ -31,32 +39,8 @@
       "title": "Podcast STJ No Seu Dia aborda jurisprudência sobre pensão vitalícia e danos ocorridos na idade escolar",
       "summary": "Podcast STJ No Seu Dia aborda jurisprudência sobre pensão vitalícia e danos ocorridos na idade escolar",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/08042026-Podcast-STJ-No-Seu-Dia-aborda-jurisprudencia-sobre-pensao-vitalicia-e-danos-ocorridos-na-idade-escolar.aspx",
-      "date": "2026-04-08",
+      "date": "2026-04-09",
       "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Página de Repetitivos inclui julgados sobre limite de sessões de terapia prescritas a paciente com TEA",
-      "summary": "Página de Repetitivos inclui julgados sobre limite de sessões de terapia prescritas a paciente com TEA",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/08042026-Pagina-de-Repetitivos-inclui-julgados-sobre-limite-de-sessoes-de-terapia-prescritas-a-paciente-com-TEA-.aspx",
-      "date": "2026-04-08",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "TRT-11 inicia campanha Abril Verde com ações integradas de prevenção e alerta para aumento de processos relacionados à saúde e segurança do trabalho",
-      "summary": "Em 2025 foram iniciados 2.090 novos processos trabalhistas de doença ocupacional e 1.611 de acidentes de trabalho no TRT-11 (AM/RR).",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11255-trt-11-inicia-campanha-abril-verde-com-acoes-integradas-de-prevencao-e-alerta-para-aumento-de-processos-relacionados-a-saude-e-seguranca-do-trabalho",
-      "date": "2026-04-08",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "“Vestir para Vencer”: TRT-11 lança 2ª edição da campanha de doação de roupas e sapatos",
-      "summary": "Após arrecadar 570 itens em 2025, campanha retorna para nova mobilização solidária e sustentável.",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11252-vestir-para-vencer-trt-11-lanca-2-edicao-da-campanha-de-doacao-de-roupas-e-sapatos",
-      "date": "2026-04-08",
-      "category": "Trabalhista"
     }
   ]
 }
