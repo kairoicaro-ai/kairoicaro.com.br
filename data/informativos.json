@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-04-10T09:04:49.885298+00:00",
-  "total": 6,
+  "updated_at": "2026-04-10T13:50:03.506907+00:00",
+  "total": 5,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "135 anos do STF: uma viagem pelas sedes do Supremo na República",
+      "summary": "Série “Tá na Nossa História” revisita os primórdios da Corte, seus marcos institucionais, a evolução de suas competências e o papel desempenhado na consolidação da República, da democracia e dos direitos fundamentais no Brasil",
+      "url": "https://noticias.stf.jus.br/postsnoticias/135-anos-do-stf-uma-viagem-pelas-sedes-do-supremo-na-republica/",
+      "date": "2026-04-10",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "STF suspende análise sobre formato de eleições suplementares para governador do Rio de Janeiro",
@@ -11,44 +19,28 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "Norma que proíbe cobrança por religação de energia no Pará é declarada inconstitucional pelo STF",
-      "summary": "Corte entendeu que tema é de competência privativa da União e já é regulado por normas federais",
-      "url": "https://noticias.stf.jus.br/postsnoticias/norma-que-proibe-cobranca-por-religacao-de-energia-no-para-e-declarada-inconstitucional-pelo-stf/",
-      "date": "2026-04-10",
-      "category": "Constitucional"
-    },
-    {
       "tribunal": "STJ",
-      "title": "Absorção entre crimes de desacato e resistência é destaque na Pesquisa Pronta",
-      "summary": "Absorção entre crimes de desacato e resistência é destaque na Pesquisa Pronta",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/09042026-Absorcao-entre-crimes-de-desacato-e-resistencia-e-destaque-na-Pesquisa-Pronta.aspx",
+      "title": "Sexta Turma antecipa sessão da próxima terça-feira (14) para as 13h",
+      "summary": "Sexta Turma antecipa sessão da próxima terça-feira (14) para as 13h",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/10042026-Sexta-Turma-antecipa-sessao-da-proxima-terca-feira--14--para-as-13h.aspx",
       "date": "2026-04-10",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Rádio Decidendi analisa precedente sobre responsabilidade do corretor em contratos imobiliários",
-      "summary": "Rádio Decidendi analisa precedente sobre responsabilidade do corretor em contratos imobiliários",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/09042026-Radio-Decidendi-analisa-precedente-sobre-responsabilidade-do-corretor-em-contratos-imobiliarios.aspx",
+      "title": "Jurisprudência sobre reconhecimento fotográfico e prova penal é tema do podcast STJ No Seu Dia",
+      "summary": "Jurisprudência sobre reconhecimento fotográfico e prova penal é tema do podcast STJ No Seu Dia",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/10042026-Jurisprudencia-sobre-reconhecimento-fotografico-e-prova-penal-e-tema-do-podcast-STJ-No-Seu-Dia.aspx",
       "date": "2026-04-10",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "STJ e TJPB promovem seminário sobre violência doméstica nesta sexta (10), em João Pessoa",
-      "summary": "STJ e TJPB promovem seminário sobre violência doméstica nesta sexta (10), em João Pessoa",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/09042026-STJ-e-TJPB-promovem-seminario-sobre-violencia-domestica-nesta-sexta--10---em-Joao-Pessoa.aspx",
+      "title": "Sistemas do tribunal podem sofrer intermitências neste domingo (12)",
+      "summary": "Sistemas do tribunal podem sofrer intermitências neste domingo (12)",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/10042026-Sistemas-do-tribunal-podem-sofrer-intermitencias-neste-domingo--12-.aspx",
       "date": "2026-04-10",
       "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "TST",
-      "title": "Ir para o conteúdo",
-      "summary": "",
-      "url": "https://www.tst.jus.br#content",
-      "date": "2026-04-10",
-      "category": "Trabalhista"
     }
   ]
 }
