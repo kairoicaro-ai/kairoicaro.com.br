@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-04-09T19:37:09.664675+00:00",
-  "total": 5,
+  "updated_at": "2026-04-10T03:41:26.373994+00:00",
+  "total": 6,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Confira a pauta do STF desta quinta-feira (9)",
-      "summary": "Sessão terá transmissão ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
-      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quinta-feira-9/",
-      "date": "2026-04-09",
+      "title": "STF suspende análise sobre formato de eleições suplementares para governador do Rio de Janeiro",
+      "summary": "Plenário vai aguardar publicação da decisão do TSE que declarou a inelegibilidade de Cláudio Castro para prosseguir o julgamento",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-analise-sobre-formato-de-eleicoes-suplementares-para-governador-do-rio-de-janeiro/",
+      "date": "2026-04-10",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF começa a julgar formato de eleição suplementar para governador do Rio de Janeiro",
-      "summary": "Foram apresentados dois votos, um por eleições diretas e outro por eleições indiretas. O julgamento prossegue na sessão de quinta-feira (9)",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-comeca-a-julgar-formato-de-eleicao-suplementar-para-governador-do-rio-de-janeiro/",
-      "date": "2026-04-09",
+      "title": "Norma que proíbe cobrança por religação de energia no Pará é declarada inconstitucional pelo STF",
+      "summary": "Corte entendeu que tema é de competência privativa da União e já é regulado por normas federais",
+      "url": "https://noticias.stf.jus.br/postsnoticias/norma-que-proibe-cobranca-por-religacao-de-energia-no-para-e-declarada-inconstitucional-pelo-stf/",
+      "date": "2026-04-10",
       "category": "Constitucional"
     },
     {
@@ -23,7 +23,7 @@
       "title": "Absorção entre crimes de desacato e resistência é destaque na Pesquisa Pronta",
       "summary": "Absorção entre crimes de desacato e resistência é destaque na Pesquisa Pronta",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/09042026-Absorcao-entre-crimes-de-desacato-e-resistencia-e-destaque-na-Pesquisa-Pronta.aspx",
-      "date": "2026-04-09",
+      "date": "2026-04-10",
       "category": "Jurisprudencia"
     },
     {
@@ -31,7 +31,7 @@
       "title": "Rádio Decidendi analisa precedente sobre responsabilidade do corretor em contratos imobiliários",
       "summary": "Rádio Decidendi analisa precedente sobre responsabilidade do corretor em contratos imobiliários",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/09042026-Radio-Decidendi-analisa-precedente-sobre-responsabilidade-do-corretor-em-contratos-imobiliarios.aspx",
-      "date": "2026-04-09",
+      "date": "2026-04-10",
       "category": "Jurisprudencia"
     },
     {
@@ -39,8 +39,16 @@
       "title": "STJ e TJPB promovem seminário sobre violência doméstica nesta sexta (10), em João Pessoa",
       "summary": "STJ e TJPB promovem seminário sobre violência doméstica nesta sexta (10), em João Pessoa",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/09042026-STJ-e-TJPB-promovem-seminario-sobre-violencia-domestica-nesta-sexta--10---em-Joao-Pessoa.aspx",
-      "date": "2026-04-09",
+      "date": "2026-04-10",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TST",
+      "title": "Ir para o conteúdo",
+      "summary": "",
+      "url": "https://www.tst.jus.br#content",
+      "date": "2026-04-10",
+      "category": "Trabalhista"
     }
   ]
 }
