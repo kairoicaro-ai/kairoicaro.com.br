@@ -1,7 +1,55 @@
 {
-  "updated_at": "2026-04-11T08:37:53.540367+00:00",
+  "updated_at": "2026-04-12T08:42:40.184820+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "11.abr.2026Juiz reintegra mulher em concurso por admitir uso de maconha na adolescênciaDecisão reconheceu excesso de rigor na avaliação de conduta e assegurou continuidade da candidata nas próximas etapas do processo seletivo.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-12",
+      "url": "https://www.migalhas.com.br/quentes/453283/juiz-reintegra-mulher-em-concurso-por-admitir-uso-de-maconha"
+    },
+    {
+      "setor": "empresarial",
+      "title": "11.abr.2026Concurso: Após falha em sistema, candidato concorrerá em vagas para PcDDecisão assegura participação do candidato nas demais etapas do certame.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-12",
+      "url": "https://www.migalhas.com.br/quentes/453492/concurso-apos-falha-em-sistema-candidato-concorrera-em-vaga-para-pcd"
+    },
+    {
+      "setor": "empresarial",
+      "title": "11.abr.2026Plano de saúde: Juiz reconhece falso coletivo e limita reajustes à ANSSentença determina revisão contratual e devolução de valores pagos a maior.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-12",
+      "url": "https://www.migalhas.com.br/quentes/453307/plano-de-saude-juiz-reconhece-falso-coletivo-e-limita-reajustes-a-ans"
+    },
+    {
+      "setor": "empresarial",
+      "title": "11.abr.2026TJ/PE: Família receberá restituição de plano de saúde por reajustes abusivosColegiado manteve a sentença que anulou reajustes indevidos por faixa etária e determinou a devolução dos valores pagos a maior nos últimos três anos.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-12",
+      "url": "https://www.migalhas.com.br/quentes/453663/tj-pe-familia-recebera-restituicao-de-plano-por-reajustes-abusivos"
+    },
+    {
+      "setor": "varejo",
+      "title": "11.abr.2026TJ/SP proíbe produtor de usar sementes de algodão com tecnologia patenteadaColegiado reconheceu violação de patentes e confirmou indenização a empresas do setor agrícola.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-12",
+      "url": "https://www.migalhas.com.br/quentes/453368/tj-sp-proibe-produtor-de-usar-sementes-com-tecnologia-patenteada"
+    },
+    {
+      "setor": "empresarial",
+      "title": "11.abr.2026Empresa indenizará após trabalhadora quebrar coluna em trajeto de ônibusJuíza reconheceu a responsabilidade objetiva da empresa pelo acidente de trajeto sofrido em transporte fornecido pela própria empregadora.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-04-12",
+      "url": "https://www.migalhas.com.br/quentes/453366/empresa-indenizara-apos-empregada-quebrar-coluna-em-trajeto-de-onibus"
+    },
     {
       "setor": "empresarial",
       "title": "10.abr.2026Incompetência de juízo não anula automaticamente atos investigatórios, reafirma STJ6ª turma ressaltou que a análise sobre eventual nulidade ou validade de provas deve ser feita pelo juízo competente.",
@@ -73,54 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-04-10",
       "url": "https://www.migalhas.com.br/quentes/453648/dino-cita-prisao-de-governadores-do-rj-e-diz-ser-cenario-unico-no-pais"
-    },
-    {
-      "setor": "empresarial",
-      "title": "9.abr.2026OAB orienta seccionais e mobiliza advocacia para Conferência dos ODSOfícios assinados por Beto Simonetti e Sóstenes Marchezine estabelecem diretrizes operacionais e incentivam a realização de etapas preparatórias em todo o país.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-10",
-      "url": "https://www.migalhas.com.br/quentes/453647/oab-orienta-seccionais-e-mobiliza-advocacia-para-conferencia-dos-ods"
-    },
-    {
-      "setor": "empresarial",
-      "title": "9.abr.2026Para especialista, manuais antirracistas fortalecem gestão e reputaçãoDione Assis explica que a ausência de diretrizes claras expõe instituições a crises, perdas financeiras e fragilidade na cultura organizacional.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-10",
-      "url": "https://www.migalhas.com.br/quentes/453646/para-especialista-manuais-antirracistas-fortalecem-gestao-e-reputacao"
-    },
-    {
-      "setor": "empresarial",
-      "title": "8.abr.2026\"Estamos julgando muito e mal\", diz Bellizze de volume de ações no STJMinistro defendeu menos casos por sessão e criticou julgamentos sem seleção criteriosa.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-09",
-      "url": "https://www.migalhas.com.br/quentes/453542/estamos-julgando-muito-e-mal--diz-bellizze-de-volume-de-acoes-no-stj"
-    },
-    {
-      "setor": "empresarial",
-      "title": "8.abr.2026Fux diz que foi perseguido pelo CV quando atuou como juiz eleitoralMinistro citou episódio ao comentar dificuldades do processo eleitoral no RJ.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-09",
-      "url": "https://www.migalhas.com.br/quentes/453541/fux-diz-que-foi-perseguido-pelo-cv-quando-atuou-como-juiz-eleitoral"
-    },
-    {
-      "setor": "empresarial",
-      "title": "8.abr.2026STJ analisa uniformização de honorários de sucumbência em juizadosMinistra Regina Helena Costa abriu divergência para negar pedido de uniformização pela natureza processual da matéria.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-09",
-      "url": "https://www.migalhas.com.br/quentes/453540/stj-analisa-uniformizacao-de-honorarios-de-sucumbencia-em-juizados"
-    },
-    {
-      "setor": "empresarial",
-      "title": "8.abr.2026Por maioria, STJ determina que caso de feminicídio de militar vá à JúriEm conflito de competência, 3ª seção entendeu ausente o nexo funcional com a atividade castrense, devendo o crime ser julgado pelo Tribunal do Júri.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-04-09",
-      "url": "https://www.migalhas.com.br/quentes/453528/3-secao-do-stj-determina-que-caso-de-feminicidio-de-militar-va-a-juri"
     }
   ]
 }
