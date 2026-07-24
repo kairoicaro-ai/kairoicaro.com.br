@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-07-24T14:12:00.536223+00:00",
+  "updated_at": "2026-07-24T19:46:00.262304+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "‘Direito sem juridiquês’: novo episódio explica o que é amicus curiae",
-      "summary": "Vídeo mostra, de forma simples, qual a função do instituto nos julgamentos do STF",
-      "url": "https://noticias.stf.jus.br/postsnoticias/direito-sem-juridiques-novo-episodio-explica-o-que-e-amicus-curiae/",
+      "title": "No Tribunal Constitucional de Portugal, Fachin defende criação de rede de cortes constitucionais em defesa da independência judicial",
+      "summary": "Presidente do STF cumpre agenda institucional em Lisboa",
+      "url": "https://noticias.stf.jus.br/postsnoticias/no-tribunal-constitucional-de-portugal-fachin-defende-criacao-de-rede-de-cortes-constitucionais-em-defesa-da-independencia-judicial/",
       "date": "2026-07-24",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Suspensa por mais 120 dias ação em que estados cobram da União recursos para irrigação",
-      "summary": "Ministro Nunes Marques acolheu pedido das partes, que buscam tentativa de acordo",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-por-mais-120-dias-acao-em-que-estados-cobram-da-uniao-percentual-minimo-de-recursos-para-irrigacao/",
+      "title": "STF revoga medidas cautelares impostas a investigados por envolvimento com grupos criminosos no RJ",
+      "summary": "Ministro Alexandre de Moraes determinou a retirada imediata dos equipamentos de monitoramento eletrônico",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-revoga-medidas-cautelares-impostas-a-investigados-por-envolvimento-com-grupos-criminosos-violentos-no-rj/",
       "date": "2026-07-24",
       "category": "Constitucional"
     },
@@ -44,17 +44,17 @@
     },
     {
       "tribunal": "TRT11",
-      "title": "Justiça do Trabalho em Roraima determina que empresa deixe de praticar assédio eleitoral contra empregados",
-      "summary": "Decisão da 3⁠ª VTBV proíbe a empregadora de pressionar trabalhadores por motivos políticos",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11543-justica-do-trabalho-em-roraima-determina-que-empresa-deixe-de-praticar-assedio-eleitoral-contra-empregados",
+      "title": "Centro de Inteligência do TRT-11 aprova duas novas notas técnicas sobre acesso à Justiça e tramitação processual",
+      "summary": "As medidas buscam aprimorar o atendimento às comunidades quilombolas e uniformizar a retomada da tramitação de processos suspensos.",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11546-centro-de-inteligencia-do-trt-11-aprova-duas-novas-notas-tecnicas-sobre-acesso-a-justica-e-tramitacao-processual",
       "date": "2026-07-24",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "TRT-11 lança campanha SOS Venezuela para arrecadar itens essenciais às famílias afetadas pelos terremotos",
-      "summary": "Mobilização solidária recebe doações de alimentos, água, medicamentos e produtos de higiene até 31 de julho",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11541-trt-11-lanca-campanha-sos-venezuela-para-arrecadar-itens-essenciais-as-familias-afetadas-pelos-terremotos",
+      "title": "Justiça do Trabalho em Roraima determina que empresa deixe de praticar assédio eleitoral contra empregados",
+      "summary": "Decisão da 3⁠ª VTBV proíbe a empregadora de pressionar trabalhadores por motivos políticos",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11543-justica-do-trabalho-em-roraima-determina-que-empresa-deixe-de-praticar-assedio-eleitoral-contra-empregados",
       "date": "2026-07-24",
       "category": "Trabalhista"
     }
