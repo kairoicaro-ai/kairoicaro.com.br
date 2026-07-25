@@ -1,7 +1,55 @@
 {
-  "updated_at": "2026-07-24T10:11:50.202894+00:00",
+  "updated_at": "2026-07-25T09:41:29.774332+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "24.jul.2026Sócio do PK Advogados inicia doutorado na PUC-SPPesquisa a ser desenvolvida por Plínio Kentaro Higasi investigará mecanismos de governança, supervisão e regulação de sistemas avançados de inteligência artificial, ampliando a atuação técnica do escritório em um dos temas mais estratégicos para empresas e para o setor jurídico.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-25",
+      "url": "https://www.migalhas.com.br/quentes/461013/socio-do-pk-advogados-inicia-doutorado-na-puc-sp"
+    },
+    {
+      "setor": "empresarial",
+      "title": "24.jul.2026Mattos Filho assessora Qualicorp na aquisição integral da Plural e da OxcorpQualicorp passa a deter 100% do capital social das empresas.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-25",
+      "url": "https://www.migalhas.com.br/quentes/461012/mattos-filho-assessora-qualicorp-na-aquisicao-da-plural-e-da-oxcorp"
+    },
+    {
+      "setor": "ambiental",
+      "title": "24.jul.2026Candidata excluída de concurso terá nova banca de heteroidentificaçãoComissão descreveu candidata como de \"pele parda\", mas concluiu que ela não possuía fenótipo compatível com as cotas sem explicar a contradição.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-25",
+      "url": "https://www.migalhas.com.br/quentes/461006/candidata-excluida-de-concurso-tera-nova-banca-de-heteroidentificacao"
+    },
+    {
+      "setor": "empresarial",
+      "title": "24.jul.2026Reduzir maioridade penal não é eficaz e fortalece crime organizado, avalia PierpaoloSegundo o criminalista, a proposta tem apelo eleitoral, mas, ao levar jovens ao sistema prisional adulto, tende a deixá-los à mercê do crime organizado, elevar a reincidência e reduzir as chances de reinserção social.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-25",
+      "url": "https://www.migalhas.com.br/quentes/461009/reduzir-maioridade-penal-fortalece-crime-organizado-avalia-pierpaolo"
+    },
+    {
+      "setor": "empresarial",
+      "title": "24.jul.2026Na Flip, juiz defende que STF garanta direito à escrita nas prisõesCoordenador do projeto Escritores e Escritoras do Cárcere, magistrado afirma que o debate deve ir além da escrita e reconhecer o acesso à arte e à cultura no sistema prisional.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-25",
+      "url": "https://www.migalhas.com.br/quentes/461011/na-flip-juiz-defende-que-stf-garanta-direito-a-escrita-nas-prisoes"
+    },
+    {
+      "setor": "empresarial",
+      "title": "24.jul.2026 Advogado defende isonomia entre juízes e advogados no uso de IAThiago Massicano sugere modelo de responsabilização isonômico e critérios uniformes para diferenciar o erro escusável da fraude.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-25",
+      "url": "https://www.migalhas.com.br/quentes/461008/advogado-defende-isonomia-entre-juizes-e-advogados-no-uso-de-ia"
+    },
     {
       "setor": "empresarial",
       "title": "24.jul.2026Sorteio da obra \"Os amadores do Brasil\"A publicação reúne contos que viajam pelo tempo e espaço para narrar a vida diversa do povo brasileiro, desde o período colonial até centenas de anos no futuro.",
@@ -73,54 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-07-23",
       "url": "https://www.migalhas.com.br/quentes/460845/tj-mt-eleva-indenizacao-de-cliente-seguida-na-c-a-por-causa-da-cor"
-    },
-    {
-      "setor": "varejo",
-      "title": "22.jul.2026Juiz não vê racismo institucional do Assaí em abordagem de cliente negroAo ser abordado por funcionários, consumidor acusado de furto precisou levantar a camisa para provar inocência.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-23",
-      "url": "https://www.migalhas.com.br/quentes/460844/juiz-nao-ve-racismo-institucional-em-abordagem-de-cliente-negro"
-    },
-    {
-      "setor": "empresarial",
-      "title": "22.jul.2026Vítima de abusos pede exclusão da mãe da certidão; caso chega ao TJ/SPDefesa sustenta que vítima não deve ser obrigada a manter vínculo jurídico com quem teria destruído sua infância.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-23",
-      "url": "https://www.migalhas.com.br/quentes/460838/vitima-de-abusos-pede-exclusao-da-mae-da-certidao-caso-chega-ao-tj-sp"
-    },
-    {
-      "setor": "empresarial",
-      "title": "22.jul.2026Criança com síndrome de Down poderá produzir conteúdo digital; juíza fixa regrasDecisão limita gravações a cinco horas semanais, preserva atividades escolares e terapêuticas e reserva ao menos 60% dos rendimentos à criança.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-23",
-      "url": "https://www.migalhas.com.br/quentes/460828/crianca-com-down-podera-produzir-conteudo-digital-juiza-fixa-regras"
-    },
-    {
-      "setor": "empresarial",
-      "title": "22.jul.2026NR-1 pode acelerar nova onda de processos trabalhistasRegras impostas pela norma obrigam empresas de todos os portes a identificar, avaliar e prevenir riscos psicossociais no ambiente de trabalho.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-22",
-      "url": "https://www.migalhas.com.br/quentes/460783/nr-1-pode-acelerar-nova-onda-de-processos-trabalhistas"
-    },
-    {
-      "setor": "empresarial",
-      "title": "22.jul.2026Defensora pública e escritora premiada: Conheça Maria Fernanda MaglioEm entrevista ao Migalhas, autora fala sobre influência da Defensoria em sua obra, processo de criação e importância da literatura na formação jurídica.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-22",
-      "url": "https://www.migalhas.com.br/quentes/460671/defensora-publica-e-escritora-premiada-conheca-maria-fernanda-maglio"
-    },
-    {
-      "setor": "empresarial",
-      "title": "21.jul.2026Estudo analisa impactos de decisões judiciais sobre contratos de seguroTese de doutorado defendida por Lucimer Coêlho de Freitas, do Jacó Coelho Advogados, analisa como o Poder Judiciário brasileiro tem aplicado o princípio da função social do contrato em demandas securitárias e quais os reflexos dessas decisões para a coletividade de segurados.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-22",
-      "url": "https://www.migalhas.com.br/quentes/460782/estudo-analisa-impacto-de-decisoes-judiciais-sobre-contratos-de-seguro"
     }
   ]
 }
