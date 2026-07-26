@@ -1,7 +1,55 @@
 {
-  "updated_at": "2026-07-25T09:41:29.774332+00:00",
+  "updated_at": "2026-07-26T09:57:05.580315+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "ambiental",
+      "title": "25.jul.2026\"Lixo careca\": Em nota, Fachin lamenta declaração de Milei contra Alexandre de MoraesPresidente do STF repudiou a manifestação, a qual considerou \"incompatível com a civilidade\" que deve reger as relações entre os Estados.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-26",
+      "url": "https://www.migalhas.com.br/quentes/461021/em-nota-fachin-lamenta-declaracao-de-milei-contra-alexandre-de-moraes"
+    },
+    {
+      "setor": "varejo",
+      "title": "25.jul.2026Banco não responde por golpe após instalação de aplicativo falsoJuizado do DF afastou a responsabilidade da instituição financeira ao concluir que as transferências ocorreram por culpa exclusiva da consumidora.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-26",
+      "url": "https://www.migalhas.com.br/quentes/460637/banco-nao-responde-por-golpe-apos-instalacao-de-aplicativo-falso"
+    },
+    {
+      "setor": "empresarial",
+      "title": "25.jul.2026TJ/SC arquiva PAD contra servidora após perícia apontar bipolaridadeLaudo concluiu que servidora com transtorno afetivo bipolar tinha comprometimento da capacidade de compreensão e autodeterminação à época dos fatos investigados.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-26",
+      "url": "https://www.migalhas.com.br/quentes/460682/tj-sc-arquiva-pad-contra-servidora-apos-pericia-apontar-bipolaridade"
+    },
+    {
+      "setor": "empresarial",
+      "title": "25.jul.2026Advogado lança obra sobre o controle das agências reguladoras pelo TCUGuilherme Dourado assina o livro \"O Controle da Função Normativa das Agências Reguladoras pelo TCU\", publicado pela Editora Lumen Juris.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-26",
+      "url": "https://www.migalhas.com.br/quentes/461019/advogado-lanca-obra-sobre-o-controle-das-agencias-reguladoras-pelo-tcu"
+    },
+    {
+      "setor": "ambiental",
+      "title": "25.jul.2026Para defensoras públicas autoras, \"deslocamento de si\" liga Literatura e DireitoNa Flip, Mariana Carrara e Maria Fernanda Maglio discutiram como ficção e Defensoria Pública dependem do exercício da alteridade para compreender personagens, réus e diferentes versões de uma história.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-26",
+      "url": "https://www.migalhas.com.br/quentes/461018/para-defensoras-autoras-deslocamento-de-si-liga-literatura-e-direito"
+    },
+    {
+      "setor": "empresarial",
+      "title": "25.jul.2026Plano de saúde: Cláusula sem percentual expresso invalida reajuste por idadeMagistrado entendeu que contrato não informava os percentuais de reajuste por faixa etária e que operadora não comprovou a base atuarial do aumento aplicado.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-26",
+      "url": "https://www.migalhas.com.br/quentes/460621/justica-anula-reajuste-por-idade-em-plano-de-saude"
+    },
     {
       "setor": "empresarial",
       "title": "24.jul.2026Sócio do PK Advogados inicia doutorado na PUC-SPPesquisa a ser desenvolvida por Plínio Kentaro Higasi investigará mecanismos de governança, supervisão e regulação de sistemas avançados de inteligência artificial, ampliando a atuação técnica do escritório em um dos temas mais estratégicos para empresas e para o setor jurídico.",
@@ -73,54 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-07-24",
       "url": "https://www.migalhas.com.br/quentes/460930/ministra-carmen-lucia-trata-da-relacao-entre-direito-e-literatura"
-    },
-    {
-      "setor": "ambiental",
-      "title": "23.jul.2026STJ: Banco responde por empréstimo fraudulento após furto de celularMinistra Nancy Andrighi concluiu que a instituição não comprovou mecanismos eficazes para identificar e impedir operações atípicas realizadas após a subtração do aparelho.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-24",
-      "url": "https://www.migalhas.com.br/quentes/460931/stj-banco-responde-por-emprestimo-fraudulento-apos-furto-de-celular"
-    },
-    {
-      "setor": "empresarial",
-      "title": "23.jul.2026TJ/MG nega usucapião de imóvel cedido à ex-mulher para gerar renda ao filhoImóvel foi cedido pelo ex-marido para ser alugado em benefício do filho comum; para o TJ/MG, a permissão afastou a posse com ânimo de dona exigida para a usucapião.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-24",
-      "url": "https://www.migalhas.com.br/quentes/460922/tj-mg-nega-usucapiao-de-imovel-cedido-a-ex-mulher-para-renda-do-filho"
-    },
-    {
-      "setor": "empresarial",
-      "title": "23.jul.2026Ministra Cármen Lúcia alerta para distância entre Brasília e o povoDurante a 24ª edição da Flip, ministra Cármen Lúcia defendeu a participação cidadã e afirmou que a democracia se fortalece para além dos gabinetes e das eleições.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-24",
-      "url": "https://www.migalhas.com.br/quentes/460928/ministra-carmen-lucia-alerta-para-distancia-entre-brasilia-e-o-povo"
-    },
-    {
-      "setor": "empresarial",
-      "title": "22.jul.2026Uso de IA: Decisões expõem contraste entre punições a advogados e magistradosTJ/SP exige conferência rigorosa de advogados que utilizam IA, mas afasta responsabilização disciplinar de juiz que cita precedentes inexistentes.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-23",
-      "url": "https://www.migalhas.com.br/quentes/460846/ia-decisoes-expoem-contraste-entre-punicoes-a-advogados-e-magistrados"
-    },
-    {
-      "setor": "empresarial",
-      "title": "22.jul.2026STF cria Estatuto da Auditoria Interna para reforçar práticas de governançaResolução estabelece princípios, competências e garantias de autonomia da Auditoria Interna, em conformidade com padrões globais e recomendações do TCU.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-23",
-      "url": "https://www.migalhas.com.br/quentes/460847/stf-cria-estatuto-da-auditoria-interna-para-reforcar-governanca"
-    },
-    {
-      "setor": "varejo",
-      "title": "22.jul.2026TJ/MT eleva indenização de consumidora seguida na C&A \"por causa da cor\"Consumidora foi acompanhada ostensivamente por funcionários e tratada de forma diferenciada no caixa; tribunal considerou grave a discriminação racial e aumentou de R$ 10 mil para R$ 20 mil a reparação.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-23",
-      "url": "https://www.migalhas.com.br/quentes/460845/tj-mt-eleva-indenizacao-de-cliente-seguida-na-c-a-por-causa-da-cor"
     }
   ]
 }
