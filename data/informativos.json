@@ -1,45 +1,37 @@
 {
-  "updated_at": "2026-07-26T19:34:16.837640+00:00",
-  "total": 7,
+  "updated_at": "2026-07-27T04:02:01.235754+00:00",
+  "total": 6,
   "items": [
     {
       "tribunal": "STF",
-      "title": "No Tribunal Constitucional de Portugal, Fachin defende criação de rede de cortes constitucionais em defesa da independência judicial",
-      "summary": "Presidente do STF cumpre agenda institucional em Lisboa",
-      "url": "https://noticias.stf.jus.br/postsnoticias/no-tribunal-constitucional-de-portugal-fachin-defende-criacao-de-rede-de-cortes-constitucionais-em-defesa-da-independencia-judicial/",
-      "date": "2026-07-26",
+      "title": "STF decreta luto oficial de três dias pelo falecimento do ministro Octávio Gallotti",
+      "summary": "Durante o período, bandeira será hasteada a meio-mastro",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-decreta-luto-oficial-de-tres-dias-pelo-falecimento-do-ministro-octavio-gallotti/",
+      "date": "2026-07-27",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF revoga medidas cautelares de investigados após comprovação de regularidade de armas aprendidas em operação no RJ",
-      "summary": "Ministro Alexandre de Moraes considerou que, no momento, não há elementos que apontem para a prática do crime",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-revoga-medidas-cautelares-impostas-a-investigados-por-envolvimento-com-grupos-criminosos-violentos-no-rj/",
-      "date": "2026-07-26",
+      "title": "Ministros do STF prestam homenagens a Octávio Gallotti",
+      "summary": "Integrantes da Corte destacam o legado do ministro aposentado, marcado pela defesa da Constituição, pela independência judicial e pela contribuição à jurisprudência da Corte",
+      "url": "https://noticias.stf.jus.br/postsnoticias/ministros-do-stf-prestam-homenagens-a-octavio-gallotti/",
+      "date": "2026-07-27",
       "category": "Constitucional"
     },
     {
       "tribunal": "STJ",
-      "title": "Rádio Decidendi explica tese sobre intimação do devedor como pressuposto para multa coercitiva",
-      "summary": "Rádio Decidendi explica tese sobre intimação do devedor como pressuposto para multa coercitiva",
+      "title": "RГЎdio Decidendi explica tese sobre intimaГ§ГЈo do devedor como pressuposto para multa coercitiva",
+      "summary": "RГЎdio Decidendi explica tese sobre intimaГ§ГЈo do devedor como pressuposto para multa coercitiva",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24072026-Radio-Decidendi-explica-tese-sobre-intimacao-do-devedor-como-pressuposto-para-multa-coercitiva.aspx",
-      "date": "2026-07-26",
+      "date": "2026-07-27",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Jurisprudência em Teses traz novos entendimentos sobre direito à educação",
-      "summary": "Jurisprudência em Teses traz novos entendimentos sobre direito à educação",
+      "title": "JurisprudГЄncia em Teses traz novos entendimentos sobre direito Г educaГ§ГЈo",
+      "summary": "JurisprudГЄncia em Teses traz novos entendimentos sobre direito Г educaГ§ГЈo",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24072026-Jurisprudencia-em-Teses-traz-novos-entendimentos-sobre-direito-a-educacao.aspx",
-      "date": "2026-07-26",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Podcast STJ No Seu Dia discute atuação do assistente de acusação e limites recursais no processo penal",
-      "summary": "Podcast STJ No Seu Dia discute atuação do assistente de acusação e limites recursais no processo penal",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24072026-Podcast-STJ-No-Seu-Dia-discute-atuacao-do-assistente-de-acusacao-e-limites-recursais-no-processo-penal.aspx",
-      "date": "2026-07-26",
+      "date": "2026-07-27",
       "category": "Jurisprudencia"
     },
     {
@@ -47,7 +39,7 @@
       "title": "Centro de Inteligência do TRT-11 aprova duas novas notas técnicas sobre acesso à Justiça e tramitação processual",
       "summary": "As medidas buscam aprimorar o atendimento às comunidades quilombolas e uniformizar a retomada da tramitação de processos suspensos.",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11546-centro-de-inteligencia-do-trt-11-aprova-duas-novas-notas-tecnicas-sobre-acesso-a-justica-e-tramitacao-processual",
-      "date": "2026-07-26",
+      "date": "2026-07-27",
       "category": "Trabalhista"
     },
     {
@@ -55,7 +47,7 @@
       "title": "Justiça do Trabalho em Roraima determina que empresa deixe de praticar assédio eleitoral contra empregados",
       "summary": "Decisão da 3⁠ª VTBV proíbe a empregadora de pressionar trabalhadores por motivos políticos",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11543-justica-do-trabalho-em-roraima-determina-que-empresa-deixe-de-praticar-assedio-eleitoral-contra-empregados",
-      "date": "2026-07-26",
+      "date": "2026-07-27",
       "category": "Trabalhista"
     }
   ]
