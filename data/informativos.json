@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-07-27T11:15:13.969637+00:00",
-  "total": 6,
+  "updated_at": "2026-07-27T15:12:34.382127+00:00",
+  "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Do Plenário à Agenda 2030: como o STF conecta inovação, cidades sustentáveis e proteção ambiental",
+      "summary": "Série de reportagens especiais mostra como os julgamentos da Corte contribuem para os Objetivos de Desenvolvimento Sustentável da ONU",
+      "url": "https://noticias.stf.jus.br/postsnoticias/do-plenario-a-agenda-2030-como-o-stf-conecta-inovacao-cidades-sustentaveis-e-protecao-ambiental/",
+      "date": "2026-07-27",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "STF decreta luto oficial de três dias pelo falecimento do ministro Octávio Gallotti",
@@ -11,42 +19,42 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "Ministros do STF prestam homenagens a Octávio Gallotti",
-      "summary": "Integrantes da Corte destacam o legado do ministro aposentado, marcado pela defesa da Constituição, pela independência judicial e pela contribuição à jurisprudência da Corte",
-      "url": "https://noticias.stf.jus.br/postsnoticias/ministros-do-stf-prestam-homenagens-a-octavio-gallotti/",
-      "date": "2026-07-27",
-      "category": "Constitucional"
-    },
-    {
       "tribunal": "STJ",
-      "title": "Sem regra específica da Susep, é válido prazo de 90 dias para indenização em contrato de proteção veicular",
-      "summary": "Sem regra específica da Susep, é válido prazo de 90 dias para indenização em contrato de proteção veicular",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27072026-Sem-regra-especifica-da-Susep--e-valido-prazo-de-90-dias-para-indenizacao-em-contrato-de-protecao-veicular.aspx",
+      "title": "Salvo-conduto para cultivo de cannabis medicinal é tema da nova edição da Pesquisa Pronta",
+      "summary": "Salvo-conduto para cultivo de cannabis medicinal é tema da nova edição da Pesquisa Pronta",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27072026-Salvo-conduto-para-cultivo-de-cannabis-medicinal-e-tema-da-nova-edicao-da-Pesquisa-Pronta.aspx",
       "date": "2026-07-27",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Valor da causa em rescisão de contrato built to suit deve seguir Lei do Inquilinato",
-      "summary": "Na locação do tipo built to suit, o imóvel é construído ou adaptado para atender às necessidades específicas do futuro locatário, geralmente uma empresa que pretende ocupá-lo por prazo longo.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27072026-Valor-da-causa-em-rescisao-de-contrato-built-to-suit-deve-seguir-Lei-do-Inquilinato.aspx",
+      "title": "Edição extra do Informativo destaca partilha do FGTS no divórcio e base de cálculo da pensão alimentícia",
+      "summary": "Edição extra do Informativo destaca partilha do FGTS no divórcio e base de cálculo da pensão alimentícia",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27072026-Edicao-extra-do-Informativo-destaca-partilha-do-FGTS-no-divorcio-e-base-de-calculo-da-pensao-alimenticia.aspx",
       "date": "2026-07-27",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "STJ capacita 891 usuários do STJ Logos para utilização de IA generativa nos gabinetes",
+      "summary": "STJ capacita 891 usuários do STJ Logos para utilização de IA generativa nos gabinetes",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27072026-STJ-capacita-891-usuarios-do-STJ-Logos-para-utilizacao-de-IA-generativa-nos-gabinetes.aspx",
+      "date": "2026-07-27",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "TRT-11 mantém nível de excelência no resultado preliminar do iGovTIC-JUD 2026 e figura entre os melhores tribunais do país",
+      "summary": "Tribunal conquistou o 9º lugar entre os 94 órgãos do Poder Judiciário avaliados pelo CNJ, além do 2º lugar na Justiça do Trabalho e da liderança entre os tribunais trabalhistas de pequeno porte",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11547-trt-11-mantem-nivel-de-excelencia-no-resultado-preliminar-do-igovtic-jud-2026-e-figura-entre-os-melhores-tribunais-do-pais",
+      "date": "2026-07-27",
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "Centro de Inteligência do TRT-11 aprova duas novas notas técnicas sobre acesso à Justiça e tramitação processual",
       "summary": "As medidas buscam aprimorar o atendimento às comunidades quilombolas e uniformizar a retomada da tramitação de processos suspensos.",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11546-centro-de-inteligencia-do-trt-11-aprova-duas-novas-notas-tecnicas-sobre-acesso-a-justica-e-tramitacao-processual",
-      "date": "2026-07-27",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Justiça do Trabalho em Roraima determina que empresa deixe de praticar assédio eleitoral contra empregados",
-      "summary": "Decisão da 3⁠ª VTBV proíbe a empregadora de pressionar trabalhadores por motivos políticos",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11543-justica-do-trabalho-em-roraima-determina-que-empresa-deixe-de-praticar-assedio-eleitoral-contra-empregados",
       "date": "2026-07-27",
       "category": "Trabalhista"
     }
