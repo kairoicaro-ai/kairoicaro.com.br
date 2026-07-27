@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-07-27T15:12:34.382127+00:00",
+  "updated_at": "2026-07-27T19:53:10.579191+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Do Plenário à Agenda 2030: como o STF conecta inovação, cidades sustentáveis e proteção ambiental",
-      "summary": "Série de reportagens especiais mostra como os julgamentos da Corte contribuem para os Objetivos de Desenvolvimento Sustentável da ONU",
-      "url": "https://noticias.stf.jus.br/postsnoticias/do-plenario-a-agenda-2030-como-o-stf-conecta-inovacao-cidades-sustentaveis-e-protecao-ambiental/",
+      "title": "Confira destaques da pauta do Plenário para o mês de agosto",
+      "summary": "STF retoma julgamentos na próxima semana, com sessões a partir de 3/8",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confira-destaques-da-pauta-do-plenario-para-o-mes-de-agosto/",
       "date": "2026-07-27",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF decreta luto oficial de três dias pelo falecimento do ministro Octávio Gallotti",
-      "summary": "Durante o período, bandeira será hasteada a meio-mastro",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-decreta-luto-oficial-de-tres-dias-pelo-falecimento-do-ministro-octavio-gallotti/",
+      "title": "Do Plenário à Agenda 2030: como o STF conecta inovação, cidades sustentáveis e proteção ambiental",
+      "summary": "Série de reportagens especiais mostra como os julgamentos da Corte contribuem para os Objetivos de Desenvolvimento Sustentável da ONU",
+      "url": "https://noticias.stf.jus.br/postsnoticias/do-plenario-a-agenda-2030-como-o-stf-conecta-inovacao-cidades-sustentaveis-e-protecao-ambiental/",
       "date": "2026-07-27",
       "category": "Constitucional"
     },
@@ -44,17 +44,17 @@
     },
     {
       "tribunal": "TRT11",
-      "title": "TRT-11 mantém nível de excelência no resultado preliminar do iGovTIC-JUD 2026 e figura entre os melhores tribunais do país",
-      "summary": "Tribunal conquistou o 9º lugar entre os 94 órgãos do Poder Judiciário avaliados pelo CNJ, além do 2º lugar na Justiça do Trabalho e da liderança entre os tribunais trabalhistas de pequeno porte",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11547-trt-11-mantem-nivel-de-excelencia-no-resultado-preliminar-do-igovtic-jud-2026-e-figura-entre-os-melhores-tribunais-do-pais",
+      "title": "Vara do Trabalho de Lábrea tem novo juiz titular",
+      "summary": "Promovido pelo critério de antiguidade, o juiz do Trabalho João Alves de Almeida Neto foi empossado pelo presidente do TRT-11",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11549-vara-do-trabalho-de-labrea-tem-novo-juiz-titular",
       "date": "2026-07-27",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "Centro de Inteligência do TRT-11 aprova duas novas notas técnicas sobre acesso à Justiça e tramitação processual",
-      "summary": "As medidas buscam aprimorar o atendimento às comunidades quilombolas e uniformizar a retomada da tramitação de processos suspensos.",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11546-centro-de-inteligencia-do-trt-11-aprova-duas-novas-notas-tecnicas-sobre-acesso-a-justica-e-tramitacao-processual",
+      "title": "TRT-11 mantém nível de excelência no resultado preliminar do iGovTIC-JUD 2026 e figura entre os melhores tribunais do país",
+      "summary": "Tribunal conquistou o 9º lugar entre os 94 órgãos do Poder Judiciário avaliados pelo CNJ, além do 2º lugar na Justiça do Trabalho e da liderança entre os tribunais trabalhistas de pequeno porte",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11547-trt-11-mantem-nivel-de-excelencia-no-resultado-preliminar-do-igovtic-jud-2026-e-figura-entre-os-melhores-tribunais-do-pais",
       "date": "2026-07-27",
       "category": "Trabalhista"
     }
