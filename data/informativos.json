@@ -1,7 +1,39 @@
 {
-  "updated_at": "2026-07-27T10:08:48.247833+00:00",
-  "total": 2,
+  "updated_at": "2026-07-27T11:15:13.969637+00:00",
+  "total": 6,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "STF decreta luto oficial de três dias pelo falecimento do ministro Octávio Gallotti",
+      "summary": "Durante o período, bandeira será hasteada a meio-mastro",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-decreta-luto-oficial-de-tres-dias-pelo-falecimento-do-ministro-octavio-gallotti/",
+      "date": "2026-07-27",
+      "category": "Constitucional"
+    },
+    {
+      "tribunal": "STF",
+      "title": "Ministros do STF prestam homenagens a Octávio Gallotti",
+      "summary": "Integrantes da Corte destacam o legado do ministro aposentado, marcado pela defesa da Constituição, pela independência judicial e pela contribuição à jurisprudência da Corte",
+      "url": "https://noticias.stf.jus.br/postsnoticias/ministros-do-stf-prestam-homenagens-a-octavio-gallotti/",
+      "date": "2026-07-27",
+      "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Sem regra específica da Susep, é válido prazo de 90 dias para indenização em contrato de proteção veicular",
+      "summary": "Sem regra específica da Susep, é válido prazo de 90 dias para indenização em contrato de proteção veicular",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27072026-Sem-regra-especifica-da-Susep--e-valido-prazo-de-90-dias-para-indenizacao-em-contrato-de-protecao-veicular.aspx",
+      "date": "2026-07-27",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Valor da causa em rescisão de contrato built to suit deve seguir Lei do Inquilinato",
+      "summary": "Na locação do tipo built to suit, o imóvel é construído ou adaptado para atender às necessidades específicas do futuro locatário, geralmente uma empresa que pretende ocupá-lo por prazo longo.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27072026-Valor-da-causa-em-rescisao-de-contrato-built-to-suit-deve-seguir-Lei-do-Inquilinato.aspx",
+      "date": "2026-07-27",
+      "category": "Jurisprudencia"
+    },
     {
       "tribunal": "TRT11",
       "title": "Centro de Inteligência do TRT-11 aprova duas novas notas técnicas sobre acesso à Justiça e tramitação processual",
