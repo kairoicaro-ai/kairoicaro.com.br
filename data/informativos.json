@@ -1,29 +1,37 @@
 {
-  "updated_at": "2026-07-27T19:53:10.579191+00:00",
+  "updated_at": "2026-07-28T03:34:05.720172+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Confira destaques da pauta do Plenário para o mês de agosto",
-      "summary": "STF retoma julgamentos na próxima semana, com sessões a partir de 3/8",
-      "url": "https://noticias.stf.jus.br/postsnoticias/confira-destaques-da-pauta-do-plenario-para-o-mes-de-agosto/",
-      "date": "2026-07-27",
+      "title": "STF rejeita reclamação de Arthur do Val contra cassação de mandato de deputado estadual",
+      "summary": "Ministro Alexandre de Moraes, no exercício da Presidência, considerou a ação incabível",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-rejeita-reclamacao-de-arthur-do-val-contra-cassacao-de-mandato-de-deputado-estadual/",
+      "date": "2026-07-28",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Do Plenário à Agenda 2030: como o STF conecta inovação, cidades sustentáveis e proteção ambiental",
-      "summary": "Série de reportagens especiais mostra como os julgamentos da Corte contribuem para os Objetivos de Desenvolvimento Sustentável da ONU",
-      "url": "https://noticias.stf.jus.br/postsnoticias/do-plenario-a-agenda-2030-como-o-stf-conecta-inovacao-cidades-sustentaveis-e-protecao-ambiental/",
-      "date": "2026-07-27",
+      "title": "STF presta última homenagem ao ministro aposentado Octavio Gallotti",
+      "summary": "Familiares, amigos e autoridades participaram da cerimônia de despedida realizada na Corte",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-presta-ultima-homenagem-ao-ministro-aposentado-octavio-gallotti/",
+      "date": "2026-07-28",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "STJ nega seguimento a recurso que pretendia levar discussão sobre caso Robinho ao STF",
+      "summary": "Em sua decisão, o ministro Luis Felipe Salomão considerou que as alegações da defesa não apontam violação direta à Constituição, mas dependem da interpretação de normas infraconstitucionais.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27072026-STJ-nega-seguimento-a-recurso-que-pretendia-levar-discussao-sobre-caso-Robinho-ao-STF.aspx",
+      "date": "2026-07-28",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
       "title": "Salvo-conduto para cultivo de cannabis medicinal é tema da nova edição da Pesquisa Pronta",
       "summary": "Salvo-conduto para cultivo de cannabis medicinal é tema da nova edição da Pesquisa Pronta",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27072026-Salvo-conduto-para-cultivo-de-cannabis-medicinal-e-tema-da-nova-edicao-da-Pesquisa-Pronta.aspx",
-      "date": "2026-07-27",
+      "date": "2026-07-28",
       "category": "Jurisprudencia"
     },
     {
@@ -31,15 +39,7 @@
       "title": "Edição extra do Informativo destaca partilha do FGTS no divórcio e base de cálculo da pensão alimentícia",
       "summary": "Edição extra do Informativo destaca partilha do FGTS no divórcio e base de cálculo da pensão alimentícia",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27072026-Edicao-extra-do-Informativo-destaca-partilha-do-FGTS-no-divorcio-e-base-de-calculo-da-pensao-alimenticia.aspx",
-      "date": "2026-07-27",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "STJ capacita 891 usuários do STJ Logos para utilização de IA generativa nos gabinetes",
-      "summary": "STJ capacita 891 usuários do STJ Logos para utilização de IA generativa nos gabinetes",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27072026-STJ-capacita-891-usuarios-do-STJ-Logos-para-utilizacao-de-IA-generativa-nos-gabinetes.aspx",
-      "date": "2026-07-27",
+      "date": "2026-07-28",
       "category": "Jurisprudencia"
     },
     {
@@ -47,7 +47,7 @@
       "title": "Vara do Trabalho de Lábrea tem novo juiz titular",
       "summary": "Promovido pelo critério de antiguidade, o juiz do Trabalho João Alves de Almeida Neto foi empossado pelo presidente do TRT-11",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11549-vara-do-trabalho-de-labrea-tem-novo-juiz-titular",
-      "date": "2026-07-27",
+      "date": "2026-07-28",
       "category": "Trabalhista"
     },
     {
@@ -55,7 +55,7 @@
       "title": "TRT-11 mantém nível de excelência no resultado preliminar do iGovTIC-JUD 2026 e figura entre os melhores tribunais do país",
       "summary": "Tribunal conquistou o 9º lugar entre os 94 órgãos do Poder Judiciário avaliados pelo CNJ, além do 2º lugar na Justiça do Trabalho e da liderança entre os tribunais trabalhistas de pequeno porte",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11547-trt-11-mantem-nivel-de-excelencia-no-resultado-preliminar-do-igovtic-jud-2026-e-figura-entre-os-melhores-tribunais-do-pais",
-      "date": "2026-07-27",
+      "date": "2026-07-28",
       "category": "Trabalhista"
     }
   ]
