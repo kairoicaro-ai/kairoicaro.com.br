@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-07-28T19:52:17.334423+00:00",
+  "updated_at": "2026-07-29T03:37:39.725189+00:00",
   "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "STF suspende decisão do TJ-SP que invalidou mudanças no IPTU de Bragança Paulista",
+      "summary": "Decisão do ministro Alexandre de Moraes considerou o impacto financeiro ao município",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-decisao-do-tj-sp-que-invalidou-decreto-sobre-iptu-de-braganca-paulista/",
+      "date": "2026-07-29",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "STF suspende retirada de famílias de imóvel urbano em Campinas (SP)",
       "summary": "Segundo ministro Alexandre de Moraes, ordem judicial não observou medidas de proteção às famílias vulneráveis estabelecidas pelo Supremo para desocupações coletivas",
       "url": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-retirada-de-familias-de-imovel-urbano-em-campinas-sp/",
-      "date": "2026-07-28",
-      "category": "Constitucional"
-    },
-    {
-      "tribunal": "STF",
-      "title": "Entidades jurídicas divulgam notas de apoio ao STF e ao ministro Alexandre de Moraes",
-      "summary": "AMB, Ajufe, Anamatra, Apamagis, IASP, APMP e Atricon manifestaram solidariedade ao Supremo e ao ministro Alexandre de Moraes, e repudiaram os ataques e declarações do presidente da Argentina, Javier Milei",
-      "url": "https://noticias.stf.jus.br/postsnoticias/entidades-juridicas-divulgam-notas-de-apoio-ao-stf-e-ao-ministro-alexandre-de-moraes/",
-      "date": "2026-07-28",
+      "date": "2026-07-29",
       "category": "Constitucional"
     },
     {
@@ -23,7 +23,7 @@
       "title": "Página de Repetitivos publica tese sobre remição de pena por aprovação no Enem e no Encceja",
       "summary": "Página de Repetitivos publica tese sobre remição de pena por aprovação no Enem e no Encceja",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28072026-Pagina-de-Repetitivos-publica-tese-sobre-remicao-de-pena-por-aprovacao-no-Enem-e-no-Encceja.aspx",
-      "date": "2026-07-28",
+      "date": "2026-07-29",
       "category": "Jurisprudencia"
     },
     {
@@ -31,7 +31,7 @@
       "title": "STJN traz decisão que suspendeu liminar e autorizou retomada da construção de ponte em Tefé (AM)",
       "summary": "STJN traz decisão que suspendeu liminar e autorizou retomada da construção de ponte em Tefé (AM)",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28072026-STJN-traz-decisao-que-suspendeu-liminar-e-autorizou-retomada-da-construcao-de-ponte-em Tefe--AM-.aspx",
-      "date": "2026-07-28",
+      "date": "2026-07-29",
       "category": "Jurisprudencia"
     },
     {
@@ -39,23 +39,23 @@
       "title": "Sindicatos não têm legitimidade para ajuizar ação civil pública sobre repasses do Fundef/ Fundeb",
       "summary": "Sindicatos não têm legitimidade para ajuizar ação civil pública sobre repasses do Fundef/ Fundeb",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28072026-Sindicatos-nao-tem-legitimidade-para-ajuizar-acao-civil-publica-sobre-repasses-do-Fundef-Fundeb.aspx",
-      "date": "2026-07-28",
+      "date": "2026-07-29",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "TRT-11 assina contratos para retomada da construção do novo Fórum Trabalhista de Manaus",
+      "summary": "Nova sede vai centralizar atendimento da Justiça do Trabalho e melhorar serviço à população",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11551-trt-11-assina-contratos-para-retomada-da-construcao-do-novo-forum-trabalhista-de-manaus",
+      "date": "2026-07-29",
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "Vara do Trabalho de Lábrea tem novo juiz titular",
       "summary": "Promovido pelo critério de antiguidade, o juiz do Trabalho João Alves de Almeida Neto foi empossado pelo presidente do TRT-11",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11549-vara-do-trabalho-de-labrea-tem-novo-juiz-titular",
-      "date": "2026-07-28",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "TRT-11 mantém nível de excelência no resultado preliminar do iGovTIC-JUD 2026 e figura entre os melhores tribunais do país",
-      "summary": "Tribunal conquistou o 9º lugar entre os 94 órgãos do Poder Judiciário avaliados pelo CNJ, além do 2º lugar na Justiça do Trabalho e da liderança entre os tribunais trabalhistas de pequeno porte",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11547-trt-11-mantem-nivel-de-excelencia-no-resultado-preliminar-do-igovtic-jud-2026-e-figura-entre-os-melhores-tribunais-do-pais",
-      "date": "2026-07-28",
+      "date": "2026-07-29",
       "category": "Trabalhista"
     }
   ]
