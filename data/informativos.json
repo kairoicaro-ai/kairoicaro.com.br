@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-07-29T14:30:27.605174+00:00",
+  "updated_at": "2026-07-29T19:42:08.769227+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF suspende decisão do TJ-SP que invalidou mudanças no IPTU de Bragança Paulista",
-      "summary": "Decisão do ministro Alexandre de Moraes considerou o impacto financeiro ao município",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-decisao-do-tj-sp-que-invalidou-decreto-sobre-iptu-de-braganca-paulista/",
+      "title": "STF suspende ordem de nomeação de policiais civis em Águas de Lindoia (SP)",
+      "summary": "Para o ministro Alexandre de Moraes, Justiça não pode predeterminar número de contratações de servidores nem distribuição por cargos",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-ordem-de-nomeacao-de-policiais-civis-em-aguas-de-lindoia-sp/",
       "date": "2026-07-29",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF suspende retirada de famílias de imóvel urbano em Campinas (SP)",
-      "summary": "Segundo ministro Alexandre de Moraes, ordem judicial não observou medidas de proteção às famílias vulneráveis estabelecidas pelo Supremo para desocupações coletivas",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-retirada-de-familias-de-imovel-urbano-em-campinas-sp/",
+      "title": "STF rejeita pedido de prefeito afastado de Ourinhos (SP) para retornar ao cargo",
+      "summary": "Ministro Alexandre de Moraes destacou que a jurisprudência da Corte não admite esse tipo de pedido quando a análise exige o reexame de fatos e provas da ação de origem",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-rejeita-pedido-de-prefeito-afastado-de-ourinhos-sp-para-retornar-ao-cargo/",
       "date": "2026-07-29",
       "category": "Constitucional"
     },
@@ -44,17 +44,17 @@
     },
     {
       "tribunal": "TRT11",
-      "title": "Seis municípios do Amazonas e um de Roraima serão atendidos pela Justiça Itinerante durante o mês de agosto",
-      "summary": "População poderá receber orientações, esclarecer dúvidas e ingressar com ações trabalhistas sem necessidade de advogado",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11553-seis-municipios-do-amazonas-e-um-de-roraima-serao-atendidos-pela-justica-itinerante-durante-o-mes-de-agosto",
+      "title": "Refinaria deve pagar R$ 151 mil a trabalhadora vítima de assédio moral praticado por gestor, decide 16ª Vara do Trabalho de Manaus",
+      "summary": "Funcionária desenvolveu Transtorno de Ansiedade Generalizada após ser vítima de assédio recorrente praticado pelo superior hierárquico",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11554-refinaria-deve-pagar-indenizacao-de-r-151-mil-a-trabalhadora-vitima-de-assedio-moral-praticado-por-gestor-decide-16-vara-do-trabalho-de-manaus",
       "date": "2026-07-29",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "TRT-11 assina contratos para retomada da construção do novo Fórum Trabalhista de Manaus",
-      "summary": "Nova sede vai centralizar atendimento da Justiça do Trabalho e melhorar serviço à população",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11551-trt-11-assina-contratos-para-retomada-da-construcao-do-novo-forum-trabalhista-de-manaus",
+      "title": "Seis municípios do Amazonas e um de Roraima serão atendidos pela Justiça Itinerante durante o mês de agosto",
+      "summary": "População poderá receber orientações, esclarecer dúvidas e ingressar com ações trabalhistas sem necessidade de advogado",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11553-seis-municipios-do-amazonas-e-um-de-roraima-serao-atendidos-pela-justica-itinerante-durante-o-mes-de-agosto",
       "date": "2026-07-29",
       "category": "Trabalhista"
     }
