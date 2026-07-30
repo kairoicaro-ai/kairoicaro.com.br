@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30T10:20:26.671819+00:00",
+  "updated_at": "2026-07-30T14:30:53.270676+00:00",
   "total": 7,
   "items": [
     {
@@ -20,25 +20,25 @@
     },
     {
       "tribunal": "STJ",
+      "title": "Valor de indenização por dano moral deve considerar convivência e dependência emocional ou econômica",
+      "summary": "Valor de indenização por dano moral deve considerar convivência e dependência emocional ou econômica",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30072026-Valor-de-indenizacao-por-dano-moral-deve-considerar-convivencia-e-dependencia-emocional-ou-economica.aspx",
+      "date": "2026-07-30",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Homologação de desistência após contestação, mesmo espontânea, não evita condenação em honorários",
+      "summary": "Segundo o relator, ministro Ricardo Villas Bôas Cueva, é possível haver condenação em honorários de sucumbência mesmo antes da citação, caso o advogado do réu já tenha praticado algum ato de defesa.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30072026-Homologacao-de-desistencia-apos-contestacao--mesmo-espontanea--nao-evita-condenacao-em-honorarios.aspx",
+      "date": "2026-07-30",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
       "title": "Podcast STJ No Seu Dia discute o FGC e a proteção dos investidores no sistema financeiro",
       "summary": "Podcast STJ No Seu Dia discute o FGC e a proteção dos investidores no sistema financeiro",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/29072026-Podcast-STJ-No-Seu-Dia-discute-o-FGC-e-a-protecao-dos-investidores-no-sistema-financeiro.aspx",
-      "date": "2026-07-30",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Boletim STJ Notícias chega a 20 mil assinantes; saiba como se cadastrar",
-      "summary": "Inscreva-se para receber as novidades do tribunal por email",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/29072026-Boletim-STJ-Noticias-chega-a-20-mil-assinantes--saiba-como-se-cadastrar.aspx",
-      "date": "2026-07-30",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Reportagem especial aborda os desafios da proteção de crianças e adolescentes no ambiente digital",
-      "summary": "Veja a reportagem especial no canal do STJ no YouTube",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/29072026-Reportagem-especial-aborda-os-desafios-da-protecao-de-criancas-e-adolescentes-no-ambiente-digital.aspx",
       "date": "2026-07-30",
       "category": "Jurisprudencia"
     },
