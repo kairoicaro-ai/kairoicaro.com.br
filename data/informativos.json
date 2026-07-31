@@ -1,29 +1,53 @@
 {
-  "updated_at": "2026-07-30T19:51:33.460402+00:00",
-  "total": 4,
+  "updated_at": "2026-07-31T03:48:39.670103+00:00",
+  "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Adepol aciona STF contra idade mínima para aposentadoria de policiais civis do AM",
-      "summary": "Entidade afirma que exigência prolonga exposição dos servidores à atividade de risco e esvazia proteção constitucional",
-      "url": "https://noticias.stf.jus.br/postsnoticias/adepol-aciona-stf-contra-idade-minima-para-aposentadoria-de-policiais-civis-do-am/",
-      "date": "2026-07-30",
+      "title": "União deve complementar informações sobre orçamento da CVM em plano a ser enviado ao STF",
+      "summary": "Determinação do ministro Flávio Dino diz respeito à ação que trata do financiamento das atividades da Comissão de Valores Mobiliários",
+      "url": "https://noticias.stf.jus.br/postsnoticias/uniao-deve-complementar-informacoes-sobre-orcamento-da-cvm-em-plano-a-ser-enviado-ao-stf/",
+      "date": "2026-07-31",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Ministro Alexandre de Moraes defende integração entre Poderes e uso de IA para prevenir feminicídios",
-      "summary": "O presidente em exercício do STF participou, no Palácio do Planalto, da solenidade de sanção de duas leis voltadas à proteção das mulheres",
-      "url": "https://noticias.stf.jus.br/postsnoticias/ministro-alexandre-de-moraes-defende-integracao-entre-poderes-e-uso-de-ia-para-prevenir-feminicidios/",
-      "date": "2026-07-30",
+      "title": "Divergência no cálculo da correção monetária leva STF a suspender cobrança contra Petrobras",
+      "summary": "ministro Alexandre de Moraes, no exercício da Presidência, entendeu que decisão do TJ-RJ contrariou entendimento já fixado pelo Supremo sobre a aplicação da taxa Selic",
+      "url": "https://noticias.stf.jus.br/postsnoticias/divergencia-no-calculo-da-correcao-monetaria-leva-stf-a-suspender-cobranca-contra-petrobras/",
+      "date": "2026-07-31",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Valor de indenização por dano moral deve considerar convivência e dependência emocional ou econômica",
+      "summary": "Valor de indenização por dano moral deve considerar convivência e dependência emocional ou econômica",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30072026-Valor-de-indenizacao-por-dano-moral-deve-considerar-convivencia-e-dependencia-emocional-ou-economica.aspx",
+      "date": "2026-07-31",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Homologação de desistência após contestação, mesmo espontânea, não evita condenação em honorários",
+      "summary": "Segundo o relator, ministro Ricardo Villas Bôas Cueva, é possível haver condenação em honorários de sucumbência mesmo antes da citação, caso o advogado do réu já tenha praticado algum ato de defesa.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30072026-Homologacao-de-desistencia-apos-contestacao--mesmo-espontanea--nao-evita-condenacao-em-honorarios.aspx",
+      "date": "2026-07-31",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Podcast STJ No Seu Dia discute o FGC e a proteção dos investidores no sistema financeiro",
+      "summary": "Podcast STJ No Seu Dia discute o FGC e a proteção dos investidores no sistema financeiro",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/29072026-Podcast-STJ-No-Seu-Dia-discute-o-FGC-e-a-protecao-dos-investidores-no-sistema-financeiro.aspx",
+      "date": "2026-07-31",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
       "title": "Justiça do Trabalho participa de inauguração do Ponto de Inclusão Digital na Vila do Equador",
       "summary": "Nova unidade inaugurada pelo TJRR encurta distâncias e permite que moradores da região sul de Roraima tenham acesso a atendimentos, orientações e audiências virtuais sem precisar se deslocar até a sede da comarca.",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11561-justica-do-trabalho-participa-de-inauguracao-do-ponto-de-inclusao-digital-na-vila-do-equador",
-      "date": "2026-07-30",
+      "date": "2026-07-31",
       "category": "Trabalhista"
     },
     {
@@ -31,7 +55,7 @@
       "title": "Refinaria deve pagar R$ 151 mil a trabalhadora vítima de assédio moral praticado por gestor, decide 16ª Vara do Trabalho de Manaus",
       "summary": "Funcionária desenvolveu Transtorno de Ansiedade Generalizada após ser vítima de assédio recorrente praticado pelo superior hierárquico",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11554-refinaria-deve-pagar-indenizacao-de-r-151-mil-a-trabalhadora-vitima-de-assedio-moral-praticado-por-gestor-decide-16-vara-do-trabalho-de-manaus",
-      "date": "2026-07-30",
+      "date": "2026-07-31",
       "category": "Trabalhista"
     }
   ]
