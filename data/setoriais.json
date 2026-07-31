@@ -1,7 +1,55 @@
 {
-  "updated_at": "2026-07-30T10:20:30.514106+00:00",
+  "updated_at": "2026-07-31T10:33:58.652337+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "31.jul.2026Sorteio da obra \"O Crepúsculo da Razão Ocidental\"A publicação examina as bases da democracia, do Direito e da República, relacionando esses temas aos debates sobre o Estado Democrático de Direito.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-31",
+      "url": "https://www.migalhas.com.br/quentes/461209/sorteio-da-obra-o-crepusculo-da-razao-ocidental"
+    },
+    {
+      "setor": "empresarial",
+      "title": "31.jul.2026Especialista analisa suspensão de multas da NR-1 pelo STF\"A decisão não elimina as responsabilidades dos empregadores em relação à saúde mental dos trabalhadores\", diz Gilson de Souza Silva.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-31",
+      "url": "https://www.migalhas.com.br/quentes/459071/especialista-analisa-suspensao-de-multas-da-nr-1-pelo-stf"
+    },
+    {
+      "setor": "empresarial",
+      "title": "31.jul.2026Como medir danos morais? Conheça os parâmetros usados pelo STJSem fórmula legal ou tabela oficial, a quantificação do dano moral continua sendo um dos maiores desafios da responsabilidade civil.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-31",
+      "url": "https://www.migalhas.com.br/quentes/461321/como-medir-danos-morais-conheca-os-parametros-usados-pelo-stj"
+    },
+    {
+      "setor": "ambiental",
+      "title": "31.jul.2026Defensora Pública aborda violência de gênero na ficção: Conheça Julia BaranskiEm entrevista ao Migalhas, a defensora pública e escritora fala sobre o início da carreira literária, a influência da Defensoria Pública em sua obra e como a violência de gênero compõe seus livros.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-31",
+      "url": "https://www.migalhas.com.br/quentes/461020/defensora-aborda-violencia-de-genero-na-ficcao-conheca-julia-baranski"
+    },
+    {
+      "setor": "empresarial",
+      "title": "30.jul.2026Mendonça autoriza investigação contra Lulinha por tráfico de influênciaApuração envolve suspeitas de favorecimento a empresa do setor de cannabis medicinal junto ao ministério da Saúde.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-31",
+      "url": "https://www.migalhas.com.br/quentes/461352/mendonca-autoriza-investigacao-de-lulinha-por-trafico-de-influencia"
+    },
+    {
+      "setor": "empresarial",
+      "title": "30.jul.2026Justiça de SP homologa plano de recuperação extrajudicial da RaízenPlano reestrutura cerca de R$ 61,4 bilhões em dívidas financeiras e prevê aumento de capital de até R$ 4 bilhões.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-07-31",
+      "url": "https://www.migalhas.com.br/quentes/461350/justica-de-sp-homologa-plano-de-recuperacao-extrajudicial-da-raizen"
+    },
     {
       "setor": "empresarial",
       "title": "30.jul.2026Bets afetam empregos: Afastamentos disparam e justas causas chegam à JustiçaLevantamento mostra alta nos afastamentos por ludopatia reconhecidos pelo INSS enquanto demissões por condutas ligadas às apostas chegam à Justiça do Trabalho.",
@@ -73,54 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-07-29",
       "url": "https://www.migalhas.com.br/quentes/461185/ia-falha-ao-degravar-audiencia-e-juiz-erra-valor-devido-a-trabalhador"
-    },
-    {
-      "setor": "empresarial",
-      "title": "28.jul.2026Ministra Nancy Andrighi é finalista do Jabuti Acadêmico com obra sobre herança digitalLivro \"Herança Digital: Acesso e Transmissão Post Mortem dos Bens\" concorre na categoria Direito da 3ª edição do Prêmio Jabuti Acadêmico.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-29",
-      "url": "https://www.migalhas.com.br/quentes/461186/ministra-nancy-e-finalista-do-jabuti-com-obra-sobre-heranca-digital"
-    },
-    {
-      "setor": "empresarial",
-      "title": "28.jul.2026STF: Ministro Nunes Marques autoriza Buser a voltar a funcionar no PRDecisão do TRF da 4ª região havia barrado a plataforma por considerar irregular o modelo de fretamento colaborativo e exigir regulamentação específica para a atividade.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-29",
-      "url": "https://www.migalhas.com.br/quentes/461168/stf-ministro-nunes-marques-autoriza-buser-a-voltar-a-funcionar-no-pr"
-    },
-    {
-      "setor": "empresarial",
-      "title": "27.jul.2026STJ diverge sobre hipóteses excepcionais que incidem PLR na pensão alimentíciaEmbora a tese que admite a incidência excepcional da PLR esteja consolidada, ministros ainda divergem sobre os casos em que a verba pode integrar a base de cálculo da pensão alimentícia.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-28",
-      "url": "https://www.migalhas.com.br/quentes/461108/stj-diverge-sobre-hipoteses-excepcionais-que-incidem-plr-na-pensao"
-    },
-    {
-      "setor": "empresarial",
-      "title": "27.jul.2026Não pagar adicional de insalubridade autoriza rescisão indireta, decide TSTColegiado concluiu que a supressão do adicional devido à recepcionista de clínica oncológica, em razão da exposição a agentes biológicos, configurou falta grave patronal e justificou a rescisão indireta.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-28",
-      "url": "https://www.migalhas.com.br/quentes/461109/tst-nao-pagar-adicional-de-insalubridade-autoriza-rescisao-indireta"
-    },
-    {
-      "setor": "varejo",
-      "title": "27.jul.2026Horas extras integram cálculo da pensão alimentícia, decide STJPara 4ª turma, verbas remuneratórias, ainda que eventuais, devem integrar a base de cálculo dos alimentos.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-28",
-      "url": "https://www.migalhas.com.br/quentes/461115/horas-extras-integram-calculo-da-pensao-alimenticia-decide-stj"
-    },
-    {
-      "setor": "empresarial",
-      "title": "27.jul.2026Livro debate impactos da desigualdade no sistema de Justiça criminalObra coletiva \"Direito Penal e Desigualdade\" é organizada pelos professores da USP Renato de Mello Jorge Silveira e Pierpaolo Cruz Bottini.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-07-28",
-      "url": "https://www.migalhas.com.br/quentes/461113/livro-debate-impactos-da-desigualdade-no-sistema-de-justica-criminal"
     }
   ]
 }
