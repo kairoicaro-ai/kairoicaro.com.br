@@ -1,60 +1,36 @@
 {
-  "updated_at": "2026-07-31T14:33:51.523217+00:00",
-  "total": 7,
+  "updated_at": "2026-07-31T19:51:52.443008+00:00",
+  "total": 4,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF realiza sessão de abertura do semestre na segunda-feira (3)",
-      "summary": "Sessão será transmitida ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-realiza-sessao-de-abertura-do-semestre-na-segunda-feira-3/",
+      "title": "Escuta territorializada aproxima STF de povos e comunidades tradicionais no Maranhão",
+      "summary": "Projeto-piloto da Ouvidoria do Tribunal percorreu territórios para ouvir demandas, identificar barreiras de acesso à Justiça e fortalecer o diálogo com as comunidades",
+      "url": "https://noticias.stf.jus.br/postsnoticias/escuta-territorializada-aproxima-stf-de-povos-e-comunidades-tradicionais-no-maranhao/",
       "date": "2026-07-31",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "União deve complementar informações sobre orçamento da CVM em plano a ser enviado ao STF",
-      "summary": "Determinação do ministro Flávio Dino diz respeito à ação que trata do financiamento das atividades da Comissão de Valores Mobiliários",
-      "url": "https://noticias.stf.jus.br/postsnoticias/uniao-deve-complementar-informacoes-sobre-orcamento-da-cvm-em-plano-a-ser-enviado-ao-stf/",
+      "title": "Do Plenário à Agenda 2030: STF conecta o fortalecimento institucional à proteção da natureza e à segurança pública",
+      "summary": "Série de reportagens especiais mostra como os julgamentos da Corte contribuem para os Objetivos de Desenvolvimento Sustentável da ONU",
+      "url": "https://noticias.stf.jus.br/postsnoticias/do-plenario-a-agenda-2030-stf-conecta-o-fortalecimento-institucional-a-protecao-da-natureza-e-a-seguranca-publica/",
       "date": "2026-07-31",
       "category": "Constitucional"
     },
     {
-      "tribunal": "STJ",
-      "title": "Podcast STJ No Seu Dia analisa decisão sobre cobertura do DPVAT em caso de crime doloso",
-      "summary": "Podcast STJ No Seu Dia analisa decisão sobre cobertura do DPVAT em caso de crime doloso",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31072026-Podcast-STJ-No-Seu-Dia-analisa-decisao-sobre-cobertura-do-DPVAT-em-caso-de-crime-doloso.aspx",
+      "tribunal": "TRT11",
+      "title": "Justiça Itinerante: TRT-11 aceita ação trabalhista após o prazo e garante pagamento a trabalhador indígena em Atalaia do Norte (AM)",
+      "summary": "Magistrada considerou as dificuldades de acesso à Justiça enfrentadas pelo trabalhador. Um acordo encerrou o conflito com o pagamento dos direitos trabalhistas.",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11563-justica-itinerante-trt-11-aceita-acao-trabalhista-apos-o-prazo-e-garante-pagamento-a-trabalhador-indigena-em-atalaia-do-norte-am",
       "date": "2026-07-31",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Corte Especial abre segundo semestre forense com sessão na segunda-feira (3), às 9h",
-      "summary": "Corte Especial abre segundo semestre forense com sessão na segunda-feira (3), às 9h",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31072026-Corte-Especial-abre-segundo-semestre-forense-com-sessao-na-proxima-segunda-feira--3---as-9h.aspx",
-      "date": "2026-07-31",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Falta de menção à taxa diária em contrato bancário não autoriza substituir capitalização por juros simples",
-      "summary": "Falta de menção à taxa diária em contrato bancário não autoriza substituir capitalização por juros simples",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31072026-Falta-de-mencao-a-taxa-diaria-em-contrato-bancario-nao-autoriza-substituir-capitalizacao-por-juros-simples.aspx",
-      "date": "2026-07-31",
-      "category": "Jurisprudencia"
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "Justiça do Trabalho participa de inauguração do Ponto de Inclusão Digital na Vila do Equador",
       "summary": "Nova unidade inaugurada pelo TJRR encurta distâncias e permite que moradores da região sul de Roraima tenham acesso a atendimentos, orientações e audiências virtuais sem precisar se deslocar até a sede da comarca.",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11561-justica-do-trabalho-participa-de-inauguracao-do-ponto-de-inclusao-digital-na-vila-do-equador",
-      "date": "2026-07-31",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Refinaria deve pagar R$ 151 mil a trabalhadora vítima de assédio moral praticado por gestor, decide 16ª Vara do Trabalho de Manaus",
-      "summary": "Funcionária desenvolveu Transtorno de Ansiedade Generalizada após ser vítima de assédio recorrente praticado pelo superior hierárquico",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11554-refinaria-deve-pagar-indenizacao-de-r-151-mil-a-trabalhadora-vitima-de-assedio-moral-praticado-por-gestor-decide-16-vara-do-trabalho-de-manaus",
       "date": "2026-07-31",
       "category": "Trabalhista"
     }
