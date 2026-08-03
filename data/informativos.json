@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-03T11:17:28.017084+00:00",
-  "total": 7,
+  "updated_at": "2026-08-03T15:15:06.346032+00:00",
+  "total": 4,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "STF recebe painel artístico que propõe reflexão sobre violência contra a mulher e dignidade feminina",
+      "summary": "Obra do artista plástico Antonio Veronese será instalada no Hall dos Bustos da Corte e aborda temas como direitos humanos, justiça e resistência feminina",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-recebe-painel-artistico-que-propoe-reflexao-sobre-violencia-contra-a-mulher-e-dignidade-feminina/",
+      "date": "2026-08-03",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "STF restabelece multas a gestor que manteve vantagens indevidas de servidores inativos no RN",
@@ -9,38 +17,6 @@
       "url": "https://noticias.stf.jus.br/postsnoticias/stf-restabelece-multas-a-gestor-que-manteve-vantagens-indevidas-de-servidores-inativos-no-rn/",
       "date": "2026-08-03",
       "category": "Constitucional"
-    },
-    {
-      "tribunal": "STF",
-      "title": "STF suspende bloqueio de verbas destinadas à saúde no Rio Grande do Sul",
-      "summary": "Para o ministro Alexandre de Moraes, recursos têm destinação pública específica e devem ser preservados",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-bloqueio-de-verbas-destinadas-a-saude-no-rio-grande-do-sul/",
-      "date": "2026-08-03",
-      "category": "Constitucional"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Tribunal afasta aplicação dos limites da Lei 9.639/1998 aos bloqueios do FPM por débitos previdenciários",
-      "summary": "Para a Primeira Seção, os limites de retenção valem apenas para os parcelamentos disciplinados pela própria Lei 9.639/1998, não alcançando os bloqueios decorrentes do não recolhimento de contribuições previdenciárias.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/03082026-Tribunal-afasta-aplicacao-dos-limites-da-Lei-9-6391998-aos-bloqueios-do-FPM-por-debitos-previdenciarios.aspx",
-      "date": "2026-08-03",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Temas do direito privado estarão em foco no 2º Congresso STJ Brasil-Japão",
-      "summary": "Temas do direito privado estarão em foco no 2º Congresso STJ Brasil-Japão",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31072026-Temas-do-direito-privado-estarao-em-foco-no-2o-Congresso-STJ-Brasil-Japao.aspx",
-      "date": "2026-08-03",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Podcast STJ No Seu Dia analisa decisão sobre cobertura do DPVAT em caso de crime doloso",
-      "summary": "Podcast STJ No Seu Dia analisa decisão sobre cobertura do DPVAT em caso de crime doloso",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31072026-Podcast-STJ-No-Seu-Dia-analisa-decisao-sobre-cobertura-do-DPVAT-em-caso-de-crime-doloso.aspx",
-      "date": "2026-08-03",
-      "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
