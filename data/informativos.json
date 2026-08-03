@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-03T15:15:06.346032+00:00",
-  "total": 4,
+  "updated_at": "2026-08-03T19:56:53.198890+00:00",
+  "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Ministro Cristiano Zanin completa três anos no STF",
+      "summary": "Ministro Edson Fachin, presidente da Corte, homenageou Zanin na primeira sessão do segundo semestre judiciário",
+      "url": "https://noticias.stf.jus.br/postsnoticias/ministro-cristiano-zanin-completa-tres-anos-no-stf/",
+      "date": "2026-08-03",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "STF recebe painel artístico que propõe reflexão sobre violência contra a mulher e dignidade feminina",
@@ -11,26 +19,42 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "STF restabelece multas a gestor que manteve vantagens indevidas de servidores inativos no RN",
-      "summary": "Para o ministro Alexandre de Moraes, anulação das sanções pelo TJ-RN compromete prerrogativas institucionais do Tribunal de Contas do estado",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-restabelece-multas-a-gestor-que-manteve-vantagens-indevidas-de-servidores-inativos-no-rn/",
+      "tribunal": "STJ",
+      "title": "Portal do STJ conta com novo assistente virtual para atendimento ao público",
+      "summary": "Portal do STJ conta com novo assistente virtual para atendimento ao público",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/03082026-Portal-do-STJ-conta-com-novo-assistente-virtual-para-atendimento-ao-publico.aspx",
       "date": "2026-08-03",
-      "category": "Constitucional"
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Proteção contra penhora de até 40 salários mínimos não se aplica a entidades sem fins lucrativos",
+      "summary": "Proteção contra penhora de até 40 salários mínimos não se aplica a entidades sem fins lucrativos",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/03082026-Protecao-contra-penhora-de-ate-40-salarios-minimos-nao-se-aplica-a-entidades-sem-fins-lucrativos.aspx",
+      "date": "2026-08-03",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Tribunal afasta aplicação dos limites da Lei 9.639/1998 aos bloqueios do FPM por débitos previdenciários",
+      "summary": "Para a Primeira Seção, os limites de retenção valem apenas para os parcelamentos disciplinados pela própria Lei 9.639/1998, não alcançando os bloqueios decorrentes do não recolhimento de contribuições previdenciárias.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/03082026-Tribunal-afasta-aplicacao-dos-limites-da-Lei-9-6391998-aos-bloqueios-do-FPM-por-debitos-previdenciarios.aspx",
+      "date": "2026-08-03",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "TRT-11 segue no Top 10 entre os Tribunais da Justiça do Trabalho que mais geram interações nas redes sociais",
+      "summary": "Resultado do primeiro semestre de 2026 coloca o TRT-11 em 4º lugar entre os perfis da Justiça Trabalhista, com crescimento de seguidores, alcance e engajamento nas redes sociais.",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11567-trt-11-segue-no-top-10-entre-os-tribunais-da-justica-do-trabalho-que-mais-geram-interacoes-nas-redes-sociais",
+      "date": "2026-08-03",
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "Justiça Itinerante: TRT-11 aceita ação trabalhista após o prazo e garante pagamento a trabalhador indígena em Atalaia do Norte (AM)",
       "summary": "Magistrada considerou as dificuldades de acesso à Justiça enfrentadas pelo trabalhador. Um acordo encerrou o conflito com o pagamento dos direitos trabalhistas.",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11563-justica-itinerante-trt-11-aceita-acao-trabalhista-apos-o-prazo-e-garante-pagamento-a-trabalhador-indigena-em-atalaia-do-norte-am",
-      "date": "2026-08-03",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Justiça do Trabalho participa de inauguração do Ponto de Inclusão Digital na Vila do Equador",
-      "summary": "Nova unidade inaugurada pelo TJRR encurta distâncias e permite que moradores da região sul de Roraima tenham acesso a atendimentos, orientações e audiências virtuais sem precisar se deslocar até a sede da comarca.",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11561-justica-do-trabalho-participa-de-inauguracao-do-ponto-de-inclusao-digital-na-vila-do-equador",
       "date": "2026-08-03",
       "category": "Trabalhista"
     }
