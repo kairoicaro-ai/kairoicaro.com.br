@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03T10:04:36.380493+00:00",
+  "updated_at": "2026-08-03T11:17:28.017084+00:00",
   "total": 7,
   "items": [
     {
@@ -20,6 +20,14 @@
     },
     {
       "tribunal": "STJ",
+      "title": "Tribunal afasta aplicação dos limites da Lei 9.639/1998 aos bloqueios do FPM por débitos previdenciários",
+      "summary": "Para a Primeira Seção, os limites de retenção valem apenas para os parcelamentos disciplinados pela própria Lei 9.639/1998, não alcançando os bloqueios decorrentes do não recolhimento de contribuições previdenciárias.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/03082026-Tribunal-afasta-aplicacao-dos-limites-da-Lei-9-6391998-aos-bloqueios-do-FPM-por-debitos-previdenciarios.aspx",
+      "date": "2026-08-03",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
       "title": "Temas do direito privado estarão em foco no 2º Congresso STJ Brasil-Japão",
       "summary": "Temas do direito privado estarão em foco no 2º Congresso STJ Brasil-Japão",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31072026-Temas-do-direito-privado-estarao-em-foco-no-2o-Congresso-STJ-Brasil-Japao.aspx",
@@ -31,14 +39,6 @@
       "title": "Podcast STJ No Seu Dia analisa decisão sobre cobertura do DPVAT em caso de crime doloso",
       "summary": "Podcast STJ No Seu Dia analisa decisão sobre cobertura do DPVAT em caso de crime doloso",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31072026-Podcast-STJ-No-Seu-Dia-analisa-decisao-sobre-cobertura-do-DPVAT-em-caso-de-crime-doloso.aspx",
-      "date": "2026-08-03",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Corte Especial abre segundo semestre forense com sessão na segunda-feira (3), às 9h",
-      "summary": "Corte Especial abre segundo semestre forense com sessão na segunda-feira (3), às 9h",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31072026-Corte-Especial-abre-segundo-semestre-forense-com-sessao-na-proxima-segunda-feira--3---as-9h.aspx",
       "date": "2026-08-03",
       "category": "Jurisprudencia"
     },
