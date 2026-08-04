@@ -1,7 +1,47 @@
 {
-  "updated_at": "2026-08-03T11:17:31.169378+00:00",
+  "updated_at": "2026-08-04T10:32:32.820520+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "4.ago.2026CNJ analisa hoje proposta de regras de conduta para magistradosProposta institui política nacional para prevenir conflitos de interesse no Judiciário e reforçar mecanismos de integridade.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-04",
+      "url": "https://www.migalhas.com.br/quentes/461554/cnj-analisa-hoje-proposta-de-regras-de-conduta-para-magistrados"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.ago.2026IASP inicia as comemorações do Bicentenário dos Cursos Jurídicos no BrasilInstituto lança selo comemorativo e mobiliza grandes nomes da vida jurídica nacional para refletir sobre o passado, o presente e os próximos 200 anos do Direito brasileiro.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-04",
+      "url": "https://www.migalhas.com.br/quentes/461486/iasp-comemora-bicentenario-dos-cursos-juridicos-no-brasil"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.ago.2026IA no Direito: o dilema entre a eficiência operacional e a essência da advocaciaEstudo revela que 87,4% dos advogados já utilizam inteligência artificial no trabalho; o grande desafio do setor agora é unir ganho de produtividade com segurança jurídica e governança.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-04",
+      "url": "https://www.migalhas.com.br/quentes/461445/o-dilema-entre-a-eficiencia-operacional-e-a-essencia-da-advocacia"
+    },
+    {
+      "setor": "empresarial",
+      "title": "3.ago.2026STF tem jogos de azar, uberização e Justiça gratuita na pauta de agostoConfira os principais julgamentos previstos para este mês.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-04",
+      "url": "https://www.migalhas.com.br/quentes/461552/stf-tem-jogo-de-azar-uberizacao-e-justica-gratuita-na-pauta-de-agosto"
+    },
+    {
+      "setor": "empresarial",
+      "title": "3.ago.2026Juíza valida contrato verbal e cliente pagará honorários a advogadoMagistrada entendeu que mensagens e pagamentos anteriores comprovaram a contratação dos serviços advocatícios.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-04",
+      "url": "https://www.migalhas.com.br/quentes/461549/juiza-valida-contrato-verbal-e-cliente-pagara-honorarios-a-advogado"
+    },
     {
       "setor": "empresarial",
       "title": "3.ago.2026TJ/SP mantém indenização a pais que velaram e enterraram bebê erradoColegiado afastou a responsabilidade da funerária e manteve a condenação do Estado ao pagamento de R$ 25 mil para cada um dos pais.",
@@ -81,46 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-08-02",
       "url": "https://www.migalhas.com.br/quentes/461196/dono-de-clinica-e-condenado-por-ministrar-tarja-preta-sem-receita"
-    },
-    {
-      "setor": "empresarial",
-      "title": "1.ago.2026Entidades criticam fala de Lula sobre advogados criminalistasManifestações ressaltaram papel constitucional da defesa e alertaram para estigmatização da profissão.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-02",
-      "url": "https://www.migalhas.com.br/quentes/461435/entidades-criticam-fala-de-lula-sobre-advogados-criminalistas"
-    },
-    {
-      "setor": "varejo",
-      "title": "1.ago.2026TJ/SP condena pesquisador da USP por estupro e morte de aluna em alojamentoColegiado considerou que relatos feitos pela vítima ainda em vida, aliados às provas médicas e periciais, demonstraram a violência sexual e o nexo entre as lesões e o óbito.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-02",
-      "url": "https://www.migalhas.com.br/quentes/461434/tj-sp-condena-pesquisador-da-usp-por-estupro-e-morte-de-aluna"
-    },
-    {
-      "setor": "empresarial",
-      "title": "31.jul.2026Júri condena torcedores do Cruzeiro por morte de rival em emboscadaPenas variam de 20 a 48 anos e seis meses de prisão. Ataque deixou um jovem morto e outras nove pessoas feridas.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-01",
-      "url": "https://www.migalhas.com.br/quentes/461383/juri-condena-torcedores-do-cruzeiro-por-morte-de-rival-em-emboscada"
-    },
-    {
-      "setor": "empresarial",
-      "title": "31.jul.2026STJ valida juros compostos sem indicação da taxa diária em contratoPara 4ª turma, a omissão da taxa diária não altera as condições pactuadas quando as taxas mensal e anual são informadas.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-01",
-      "url": "https://www.migalhas.com.br/quentes/461385/stj-valida-juros-compostos-sem-indicacao-da-taxa-diaria-em-contrato"
-    },
-    {
-      "setor": "empresarial",
-      "title": "31.jul.2026Primeira promotora de Justiça trans do Brasil toma posse no MP/AMFabi Pilate integra grupo de seis novos promotores de Justiça substitutos empossados nesta sexta-feira, 31.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-01",
-      "url": "https://www.migalhas.com.br/quentes/461430/primeira-promotora-de-justica-trans-do-brasil-toma-posse-no-mp-am"
     }
   ]
 }
