@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-08-04T14:38:37.343210+00:00",
+  "updated_at": "2026-08-04T19:55:51.390111+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Relator restabelece direitos políticos de ex-senador Acir Gurgacz",
-      "summary": "Decisão do ministro Nunes Marques levou em conta alegação da defesa que pode resultar na anulação da condenação pelo STF e proximidade do fim do prazo para registro de candidaturas",
-      "url": "https://noticias.stf.jus.br/postsnoticias/relator-restabelece-direitos-politicos-de-ex-senador-acir-gurgacz/",
+      "title": "Partido pede que STF determine plano nacional para retomar áreas sob domínio de facções",
+      "summary": "Missão sustenta que o crime organizado controla partes do território nacional e pede medidas para retomar essas áreas",
+      "url": "https://noticias.stf.jus.br/postsnoticias/partido-pede-que-stf-determine-plano-nacional-para-retomar-areas-sob-dominio-de-faccoes/",
       "date": "2026-08-04",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF afasta restrição para alíquota zero na compra de veículos por pessoas autistas e com deficiência intelectual",
-      "summary": "Plenário retirou da lei expressões que faziam distinção entre graus de deficiência e de transtorno do espectro autista",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-afasta-restricao-para-aliquota-zero-na-compra-de-veiculos-por-pessoas-autistas-e-com-deficiencia-intelectual/",
+      "title": "STF autoriza buscas em nova fase da Operação Sem Desconto",
+      "summary": "Medidas determinadas pelo ministro André Mendonça buscam apurar suposta participação dos investigados em atos de lavagem de dinheiro que teriam como beneficiário o senador Weverton Rocha (PDT-MA)",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-autoriza-buscas-e-quebra-de-sigilo-de-dados-telefonicos-em-investigacao-da-operacao-sem-desconto/",
       "date": "2026-08-04",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "STJN traz decisão que negou seguimento a recurso que pretendia levar discussão sobre caso Robinho ao STF",
+      "summary": "STJN traz decisão que negou seguimento a recurso que pretendia levar discussão sobre caso Robinho ao STF",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/04082026-STJN-traz-decisao-que-negou-seguimento-a-recurso-que-pretendia-levar-discussao-sobre-caso-Robinho-ao-STF.aspx",
+      "date": "2026-08-04",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
@@ -35,26 +43,18 @@
       "category": "Jurisprudencia"
     },
     {
-      "tribunal": "STJ",
-      "title": "Obra coletiva sobre os 20 anos da Lei Maria da Penha será lançada no dia 18 de agosto",
-      "summary": "Obra coletiva sobre os 20 anos da Lei Maria da Penha será lançada no dia 18 de agosto",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/04082026-Obra-coletiva-sobre-os-20-anos-da-Lei-Maria-da-Penha-sera-lancada-no-dia-18-de-agosto.aspx",
+      "tribunal": "TRT11",
+      "title": "Ouvidoria Regional promove workshop sobre prevenção ao assédio moral, ao assédio sexual e à discriminação",
+      "summary": "Evento aberto ao público ocorrerá no Fórum Trabalhista de Manaus em 21 de agosto",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11585-ouvidoria-regional-promove-curso-sobre-prevencao-ao-assedio-moral-ao-assedio-sexual-e-a-discriminacao",
       "date": "2026-08-04",
-      "category": "Jurisprudencia"
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "TRT-11 segue no Top 10 entre os Tribunais da Justiça do Trabalho que mais geram interações nas redes sociais",
       "summary": "Resultado do primeiro semestre de 2026 coloca o TRT-11 em 4º lugar entre os perfis da Justiça Trabalhista, com crescimento de seguidores, alcance e engajamento nas redes sociais.",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11567-trt-11-segue-no-top-10-entre-os-tribunais-da-justica-do-trabalho-que-mais-geram-interacoes-nas-redes-sociais",
-      "date": "2026-08-04",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Justiça Itinerante: TRT-11 aceita ação trabalhista após o prazo e garante pagamento a trabalhador indígena em Atalaia do Norte (AM)",
-      "summary": "Magistrada considerou as dificuldades de acesso à Justiça enfrentadas pelo trabalhador. Um acordo encerrou o conflito com o pagamento dos direitos trabalhistas.",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11563-justica-itinerante-trt-11-aceita-acao-trabalhista-apos-o-prazo-e-garante-pagamento-a-trabalhador-indigena-em-atalaia-do-norte-am",
       "date": "2026-08-04",
       "category": "Trabalhista"
     }
