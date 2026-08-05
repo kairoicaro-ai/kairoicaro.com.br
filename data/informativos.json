@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-05T10:29:43.888766+00:00",
+  "updated_at": "2026-08-05T14:31:56.287232+00:00",
   "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Confira a pauta do STF desta quarta-feira (5)",
+      "summary": "Sessão será transmitida ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quarta-feira-5-2/",
+      "date": "2026-08-05",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "Associações pedem que Justiça Federal e MPF recebam valores provenientes de ações por lavagem de dinheiro",
@@ -11,34 +19,26 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "STF mantém prisão de desembargador acusado de vazar informações sobre operação da PF no Rio de Janeiro",
-      "summary": "Ministro Alexandre de Moraes avaliou que não houve mudança na situação que motivou a prisão preventiva de Macário Ramos Júdice Neto. Caso envolve vazamento de informações para o Comando Vermelho",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-prisao-de-desembargador-acusado-de-vazar-informacoes-sobre-operacao-da-pf-no-rio-de-janeiro/",
+      "tribunal": "STJ",
+      "title": "Podcast STJ No Seu Dia discute remição de pena por estudo e o papel da educação na execução penal",
+      "summary": "Podcast STJ No Seu Dia discute remição de pena por estudo e o papel da educação na execução penal",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/05082026-Podcast-STJ-No-Seu-Dia-discute-remicao-de-pena-por-estudo-e-o-papel-da-educacao-na-execucao-penal.aspx",
       "date": "2026-08-05",
-      "category": "Constitucional"
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Falência do devedor não devolve a seu patrimônio bem anteriormente alienado em fraude à execução",
+      "summary": "Falência do devedor não devolve a seu patrimônio bem anteriormente alienado em fraude à execução",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/05082026-Falencia-do-devedor-nao-devolve-a-seu-patrimonio-bem-anteriormente-alienado-em-fraude-a-execucao.aspx",
+      "date": "2026-08-05",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
       "title": "Quarta Turma reconhece validade de tarifa de adiantamento a depositante prevista em contrato",
       "summary": "Para o colegiado, a cobrança remunera um serviço específico prestado pela instituição financeira ao disponibilizar recursos para cobrir transação que excede o saldo disponível na conta do cliente.",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/05082026-Quarta-Turma-reconhece-validade-de-tarifa-de-adiantamento-a-depositante-prevista-em-contrato.aspx",
-      "date": "2026-08-05",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "STJN traz decisão que negou seguimento a recurso que pretendia levar discussão sobre caso Robinho ao STF",
-      "summary": "STJN traz decisão que negou seguimento a recurso que pretendia levar discussão sobre caso Robinho ao STF",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/04082026-STJN-traz-decisao-que-negou-seguimento-a-recurso-que-pretendia-levar-discussao-sobre-caso-Robinho-ao-STF.aspx",
-      "date": "2026-08-05",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Informativo traz decisões sobre importunação sexual e remição da pena por aprovação no Enem",
-      "summary": "Informativo traz decisões sobre importunação sexual e remição da pena por aprovação no Enem",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/04082026-Informativo-traz-decisoes-sobre-importunacao-sexual-e-remicao-da-pena-por-aprovacao-no-Enem.aspx",
       "date": "2026-08-05",
       "category": "Jurisprudencia"
     },
