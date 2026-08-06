@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-06T09:04:53.081521+00:00",
-  "total": 7,
+  "updated_at": "2026-08-06T10:34:00.090636+00:00",
+  "total": 5,
   "items": [
     {
       "tribunal": "STF",
@@ -20,6 +20,14 @@
     },
     {
       "tribunal": "STJ",
+      "title": "STJ vê lesão a direitos difusos e mantém condenação de empresa por alterar fórmula de agrotóxicos",
+      "summary": "A Primeira Turma acompanhou o voto da ministra Regina Helena Costa, para quem a conduta da empresa trouxe riscos e prejuízos ao meio ambiente, à saúde pública e aos consumidores de forma indeterminada.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/06082026-STJ-ve-lesao-a-direitos-difusos-e-mantem-condenacao-de-empresa-por-alterar-formula-de-agrotoxicos-.aspx",
+      "date": "2026-08-06",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
       "title": "Podcast STJ No Seu Dia discute remição de pena por estudo e o papel da educação na execução penal",
       "summary": "Podcast STJ No Seu Dia discute remição de pena por estudo e o papel da educação na execução penal",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/05082026-Podcast-STJ-No-Seu-Dia-discute-remicao-de-pena-por-estudo-e-o-papel-da-educacao-na-execucao-penal.aspx",
@@ -33,30 +41,6 @@
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/05082026-Falencia-do-devedor-nao-devolve-a-seu-patrimonio-bem-anteriormente-alienado-em-fraude-a-execucao.aspx",
       "date": "2026-08-06",
       "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Quarta Turma reconhece validade de tarifa de adiantamento a depositante prevista em contrato",
-      "summary": "Para o colegiado, a cobrança remunera um serviço específico prestado pela instituição financeira ao disponibilizar recursos para cobrir transação que excede o saldo disponível na conta do cliente.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/05082026-Quarta-Turma-reconhece-validade-de-tarifa-de-adiantamento-a-depositante-prevista-em-contrato.aspx",
-      "date": "2026-08-06",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "TRT-11 apresenta marca dos 45 anos com identidade visual conectada à Amazônia",
-      "summary": "Selo comemorativo celebra aniversário de criação e instalação do Tribunal Regional do Trabalho da 11.ª Região, que atua no Amazonas e em Roraima",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11591-trt-11-apresenta-marca-dos-45-anos-com-identidade-visual-conectada-a-amazonia",
-      "date": "2026-08-06",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Ministro do TST debate em Manaus o fortalecimento da conciliação na Justiça do Trabalho",
-      "summary": "O encontro terá a presença do ministro Guilherme Augusto Caputo Bastos reunindo a comunidade jurídica para discutir soluções consensuais que tornam a Justiça mais ágil e eficiente",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11590-ministro-do-tst-debate-em-manaus-o-fortalecimento-da-conciliacao-na-justica-do-trabalho",
-      "date": "2026-08-06",
-      "category": "Trabalhista"
     }
   ]
 }
