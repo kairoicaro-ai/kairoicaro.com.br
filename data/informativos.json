@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-06T10:34:00.090636+00:00",
-  "total": 5,
+  "updated_at": "2026-08-06T14:34:12.439013+00:00",
+  "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Confira a pauta do STF desta quinta-feira (6)",
+      "summary": "Sessão será transmitida ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quinta-feira-6-2/",
+      "date": "2026-08-06",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "CESTF realiza primeira reunião dos pós-doutorandos do programa CAPES/STF",
@@ -11,36 +19,44 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "Presidente do STF recebe estudantes da UERJ e destaca compromisso das novas gerações com a democracia",
-      "summary": "Visita integra o programa STF+Cidadania, que promove a aproximação do Tribunal com a sociedade por meio de ações educativas",
-      "url": "https://noticias.stf.jus.br/postsnoticias/presidente-do-stf-recebe-estudantes-da-uerj-e-destaca-compromisso-das-novas-geracoes-com-a-democracia/",
-      "date": "2026-08-06",
-      "category": "Constitucional"
-    },
-    {
       "tribunal": "STJ",
-      "title": "STJ vê lesão a direitos difusos e mantém condenação de empresa por alterar fórmula de agrotóxicos",
-      "summary": "A Primeira Turma acompanhou o voto da ministra Regina Helena Costa, para quem a conduta da empresa trouxe riscos e prejuízos ao meio ambiente, à saúde pública e aos consumidores de forma indeterminada.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/06082026-STJ-ve-lesao-a-direitos-difusos-e-mantem-condenacao-de-empresa-por-alterar-formula-de-agrotoxicos-.aspx",
+      "title": "STJ lança pedra fundamental de último bloco projetado por Oscar Niemeyer",
+      "summary": "Prevista no projeto original do STJ, nova área vai permitir melhoria das instalações de tecnologia do tribunal.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/05082026-STJ-lanca-pedra-fundamental-de-ultimo-bloco-projetado-por-Oscar-Niemeyer.aspx",
       "date": "2026-08-06",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Podcast STJ No Seu Dia discute remição de pena por estudo e o papel da educação na execução penal",
-      "summary": "Podcast STJ No Seu Dia discute remição de pena por estudo e o papel da educação na execução penal",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/05082026-Podcast-STJ-No-Seu-Dia-discute-remicao-de-pena-por-estudo-e-o-papel-da-educacao-na-execucao-penal.aspx",
+      "title": "Ao incorporar coleções de três grandes juristas, Biblioteca STJ-Enfam aumentará acervo em 85%",
+      "summary": "Ao incorporar coleções de três grandes juristas, Biblioteca STJ-Enfam aumentará acervo em 85%",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/06082026-Ao-incorporar-colecoes-de-tres-grandes-juristas--Biblioteca-STJ-Enfam-aumentara-acervo-em-85-.aspx",
       "date": "2026-08-06",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Falência do devedor não devolve a seu patrimônio bem anteriormente alienado em fraude à execução",
-      "summary": "Falência do devedor não devolve a seu patrimônio bem anteriormente alienado em fraude à execução",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/05082026-Falencia-do-devedor-nao-devolve-a-seu-patrimonio-bem-anteriormente-alienado-em-fraude-a-execucao.aspx",
+      "title": "Entenda a Decisão traz tese sobre cancelamento pelo INSS do benefício por incapacidade obtido judicialmente",
+      "summary": "Entenda a Decisão traz tese sobre cancelamento pelo INSS do benefício por incapacidade obtido judicialmente",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/06082026-Entenda-a-Decisao-traz-tese-sobre-cancelamento-pelo-INSS-do-beneficio-por-incapacidade-obtido-judicialmente.aspx",
       "date": "2026-08-06",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "Após denúncias de assédio moral constante, supermercado em Manaus fecha acordo de R$ 50 mil em ação coletiva na Justiça do Trabalho",
+      "summary": "Além do pagamento do dano moral coletivo, a empresa deve adotar medidas permanentes de prevenção e combate ao assédio no ambiente de trabalho",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11592-apos-denuncias-de-assedio-moral-constante-supermercado-em-manaus-fecha-acordo-de-r-50-mil-em-acao-coletiva-na-justica-do-trabalho",
+      "date": "2026-08-06",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "TRT-11 apresenta marca dos 45 anos com identidade visual conectada à Amazônia",
+      "summary": "Selo comemorativo celebra aniversário de criação e instalação do Tribunal Regional do Trabalho da 11.ª Região, que atua no Amazonas e em Roraima",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11591-trt-11-apresenta-marca-dos-45-anos-com-identidade-visual-conectada-a-amazonia",
+      "date": "2026-08-06",
+      "category": "Trabalhista"
     }
   ]
 }
