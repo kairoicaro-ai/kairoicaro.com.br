@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-07T13:37:47.371823+00:00",
+  "updated_at": "2026-08-07T19:14:25.974701+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "‘Direito sem juridiquês’: o que é jurisprudência?",
-      "summary": "Vídeo da série explica, de forma simples, como decisões repetidas dos tribunais influenciam novos julgamentos",
-      "url": "https://noticias.stf.jus.br/postsnoticias/direito-sem-juridiques-o-que-e-jurisprudencia/",
+      "title": "STF aprova proposta orçamentária para 2027",
+      "summary": "Documento será encaminhado ao Executivo para consolidação e posterior envio ao Congresso Nacional",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-aprova-proposta-orcamentaria-para-2027/",
       "date": "2026-08-07",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "20 anos da Lei Maria da Penha: decisões do STF ampliaram a proteção às mulheres",
-      "summary": "Julgamentos da Corte consolidaram a lei como instrumento de enfrentamento da violência de gênero",
-      "url": "https://noticias.stf.jus.br/postsnoticias/20-anos-da-lei-maria-da-penha-decisoes-do-stf-ampliaram-a-protecao-as-mulheres/",
+      "title": "‘Direito sem juridiquês’: o que é jurisprudência?",
+      "summary": "Vídeo da série explica, de forma simples, como decisões repetidas dos tribunais influenciam novos julgamentos",
+      "url": "https://noticias.stf.jus.br/postsnoticias/direito-sem-juridiques-o-que-e-jurisprudencia/",
       "date": "2026-08-07",
       "category": "Constitucional"
     },
@@ -44,17 +44,17 @@
     },
     {
       "tribunal": "TRT11",
-      "title": "TRT-11 terá expediente suspenso nos dias 10 e 11 de agosto",
-      "summary": "Neste período, somente casos urgentes serão apreciados no plantão judiciário",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11593-trt-11-tera-expediente-suspenso-nos-dias-10-e-11-de-agosto",
+      "title": "X Seminário Roraimense do TRT-11 discute trabalho decente e inclusão de pessoas privadas de liberdade",
+      "summary": "Evento reúne representantes do Judiciário, do Executivo e do MPT para debater políticas de acesso ao trabalho, geração de renda e reinserção social",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11595-x-seminario-roraimense-do-trt-11-discute-trabalho-decente-e-inclusao-de-pessoas-privadas-de-liberdade",
       "date": "2026-08-07",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "Após denúncias de assédio moral constante, supermercado em Manaus fecha acordo de R$ 50 mil em ação coletiva na Justiça do Trabalho",
-      "summary": "Além do pagamento do dano moral coletivo, a empresa deve adotar medidas permanentes de prevenção e combate ao assédio no ambiente de trabalho",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11592-apos-denuncias-de-assedio-moral-constante-supermercado-em-manaus-fecha-acordo-de-r-50-mil-em-acao-coletiva-na-justica-do-trabalho",
+      "title": "Aliança pelo Voto Livre e Secreto: mobilização nacional busca combater assédio eleitoral no trabalho",
+      "summary": "Iniciativa reúne Justiça do Trabalho, Justiça Eleitoral e Ministério Público do Trabalho e convida toda a sociedade a integrar aliança em defesa do voto livre e da democracia",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11594-alianca-pelo-voto-livre-e-secreto-mobilizacao-nacional-busca-combater-assedio-eleitoral-no-trabalho",
       "date": "2026-08-07",
       "category": "Trabalhista"
     }
