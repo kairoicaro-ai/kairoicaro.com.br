@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-07T03:16:20.940323+00:00",
-  "total": 6,
+  "updated_at": "2026-08-07T07:40:38.000269+00:00",
+  "total": 4,
   "items": [
     {
       "tribunal": "STF",
@@ -17,22 +17,6 @@
       "url": "https://noticias.stf.jus.br/postsnoticias/livro-em-homenagem-ao-ministro-paulo-brossard-e-lancado-no-stf/",
       "date": "2026-08-07",
       "category": "Constitucional"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Tribunal não terá expediente na segunda (10) e na terça-feira (11)",
-      "summary": "Feriado de 11 de agosto lembra criação dos cursos jurídicos",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/06082026-Tribunal-nao-tera-expediente-na-segunda--10--e-na-terca-feira--11-.aspx",
-      "date": "2026-08-07",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "STJ lança pedra fundamental de último bloco projetado por Oscar Niemeyer",
-      "summary": "Prevista no projeto original do STJ, nova área vai permitir melhoria das instalações de tecnologia do tribunal, integração do CJF e acesso exclusivo à Biblioteca.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/05082026-STJ-lanca-pedra-fundamental-de-ultimo-bloco-projetado-por-Oscar-Niemeyer.aspx",
-      "date": "2026-08-07",
-      "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
