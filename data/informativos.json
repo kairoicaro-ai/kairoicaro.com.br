@@ -1,52 +1,60 @@
 {
-  "updated_at": "2026-08-07T08:53:05.663817+00:00",
-  "total": 6,
+  "updated_at": "2026-08-07T13:37:47.371823+00:00",
+  "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF inaugura painel ‘Sete Marias’, reflexão sobre luta e dignidade feminina",
-      "summary": "Obra de Antonio Veronese passa a integrar o acervo da Corte",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-inaugura-painel-sete-marias-reflexao-sobre-luta-e-dignidade-feminina/",
+      "title": "‘Direito sem juridiquês’: o que é jurisprudência?",
+      "summary": "Vídeo da série explica, de forma simples, como decisões repetidas dos tribunais influenciam novos julgamentos",
+      "url": "https://noticias.stf.jus.br/postsnoticias/direito-sem-juridiques-o-que-e-jurisprudencia/",
       "date": "2026-08-07",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Livro em homenagem ao ministro Paulo Brossard é lançado no STF",
-      "summary": "Ministros Edson Fachin e Gilmar Mendes estiveram presentes ao evento",
-      "url": "https://noticias.stf.jus.br/postsnoticias/livro-em-homenagem-ao-ministro-paulo-brossard-e-lancado-no-stf/",
+      "title": "20 anos da Lei Maria da Penha: decisões do STF ampliaram a proteção às mulheres",
+      "summary": "Julgamentos da Corte consolidaram a lei como instrumento de enfrentamento da violência de gênero",
+      "url": "https://noticias.stf.jus.br/postsnoticias/20-anos-da-lei-maria-da-penha-decisoes-do-stf-ampliaram-a-protecao-as-mulheres/",
       "date": "2026-08-07",
       "category": "Constitucional"
     },
     {
       "tribunal": "STJ",
-      "title": "Tribunal não terá expediente na segunda (10) e na terça-feira (11)",
-      "summary": "Feriado de 11 de agosto lembra criação dos cursos jurídicos",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/06082026-Tribunal-nao-tera-expediente-na-segunda--10--e-na-terca-feira--11-.aspx",
+      "title": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
+      "summary": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Terceira-Turma-antecipa-sessao-do-dia-18-de-agosto-para-as-13h-.aspx",
       "date": "2026-08-07",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "STJ lança pedra fundamental de último bloco projetado por Oscar Niemeyer",
-      "summary": "Prevista no projeto original do STJ, nova área vai permitir melhoria das instalações de tecnologia do tribunal, integração do CJF e acesso exclusivo à Biblioteca.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/05082026-STJ-lanca-pedra-fundamental-de-ultimo-bloco-projetado-por-Oscar-Niemeyer.aspx",
+      "title": "Lei Maria da Penha, 20 anos: reportagem mostra como o STJ tem fortalecido o combate à violência doméstica",
+      "summary": "Reportagem especial mostra o impacto das decisões do STJ",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Lei-Maria-da-Penha--20-anos-reportagem-mostra-como-o-STJ-tem-fortalecido-o-combate-a-violencia-domestica.aspx",
       "date": "2026-08-07",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Tribunal vai definir data-base para benefícios da execução penal em caso de prisão descontínua",
+      "summary": "Tribunal vai definir data-base para benefícios da execução penal em caso de prisão descontínua",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Tribunal-vai-definir-data-base-para-beneficios-da-execucao-penal-em-caso-de-prisao-descontinua.aspx",
+      "date": "2026-08-07",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "TRT-11 terá expediente suspenso nos dias 10 e 11 de agosto",
+      "summary": "Neste período, somente casos urgentes serão apreciados no plantão judiciário",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11593-trt-11-tera-expediente-suspenso-nos-dias-10-e-11-de-agosto",
+      "date": "2026-08-07",
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "Após denúncias de assédio moral constante, supermercado em Manaus fecha acordo de R$ 50 mil em ação coletiva na Justiça do Trabalho",
       "summary": "Além do pagamento do dano moral coletivo, a empresa deve adotar medidas permanentes de prevenção e combate ao assédio no ambiente de trabalho",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11592-apos-denuncias-de-assedio-moral-constante-supermercado-em-manaus-fecha-acordo-de-r-50-mil-em-acao-coletiva-na-justica-do-trabalho",
-      "date": "2026-08-07",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "TRT-11 apresenta marca dos 45 anos com identidade visual conectada à Amazônia",
-      "summary": "Selo comemorativo celebra aniversário de criação e instalação do Tribunal Regional do Trabalho da 11.ª Região, que atua no Amazonas e em Roraima",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11591-trt-11-apresenta-marca-dos-45-anos-com-identidade-visual-conectada-a-amazonia",
       "date": "2026-08-07",
       "category": "Trabalhista"
     }
