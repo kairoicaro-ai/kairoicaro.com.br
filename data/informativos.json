@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-08T08:34:10.967496+00:00",
-  "total": 4,
+  "updated_at": "2026-08-08T13:11:26.904851+00:00",
+  "total": 7,
   "items": [
     {
       "tribunal": "STF",
@@ -17,6 +17,30 @@
       "url": "https://noticias.stf.jus.br/postsnoticias/stf-determina-que-pf-apure-possiveis-crimes-na-execucao-de-emendas-pix/",
       "date": "2026-08-08",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
+      "summary": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Terceira-Turma-antecipa-sessao-do-dia-18-de-agosto-para-as-13h-.aspx",
+      "date": "2026-08-08",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Lei Maria da Penha, 20 anos: reportagem mostra como o STJ tem fortalecido o combate à violência doméstica",
+      "summary": "Reportagem especial mostra o impacto das decisões do STJ",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Lei-Maria-da-Penha--20-anos-reportagem-mostra-como-o-STJ-tem-fortalecido-o-combate-a-violencia-domestica.aspx",
+      "date": "2026-08-08",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Tribunal vai definir data-base para benefícios da execução penal em caso de prisão descontínua",
+      "summary": "Tribunal vai definir data-base para benefícios da execução penal em caso de prisão descontínua",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Tribunal-vai-definir-data-base-para-beneficios-da-execucao-penal-em-caso-de-prisao-descontinua.aspx",
+      "date": "2026-08-08",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
