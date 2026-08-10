@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-08-09T18:59:58.292106+00:00",
-  "total": 4,
+  "updated_at": "2026-08-10T02:33:45.384224+00:00",
+  "total": 7,
   "items": [
     {
       "tribunal": "STF",
       "title": "Supremo na Semana destaca fim de restrição a alíquota zero para compra de veículos por pessoas autistas e PcDs",
       "summary": "Episódio #197 está disponível nas principais plataformas de áudio e no YouTube",
       "url": "https://noticias.stf.jus.br/postsnoticias/supremo-na-semana-destaca-fim-de-restricao-a-aliquota-zero-para-compra-de-veiculos-por-pessoas-autistas-e-pcds/",
-      "date": "2026-08-09",
+      "date": "2026-08-10",
       "category": "Constitucional"
     },
     {
@@ -15,15 +15,39 @@
       "title": "Ponto facultativo e feriado do Dia do Advogado alteram expediente no STF",
       "summary": "Prazos processuais que começam ou terminam na segunda (10) e na terça (11) serão automaticamente prorrogados",
       "url": "https://noticias.stf.jus.br/postsnoticias/ponto-facultativo-e-feriado-do-dia-do-advogado-alteram-expediente-no-stf/",
-      "date": "2026-08-09",
+      "date": "2026-08-10",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
+      "summary": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Terceira-Turma-antecipa-sessao-do-dia-18-de-agosto-para-as-13h-.aspx",
+      "date": "2026-08-10",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Lei Maria da Penha, 20 anos: reportagem mostra como o STJ tem fortalecido o combate à violência doméstica",
+      "summary": "Reportagem especial mostra o impacto das decisões do STJ",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Lei-Maria-da-Penha--20-anos-reportagem-mostra-como-o-STJ-tem-fortalecido-o-combate-a-violencia-domestica.aspx",
+      "date": "2026-08-10",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Tribunal vai definir data-base para benefícios da execução penal em caso de prisão descontínua",
+      "summary": "Tribunal vai definir data-base para benefícios da execução penal em caso de prisão descontínua",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Tribunal-vai-definir-data-base-para-beneficios-da-execucao-penal-em-caso-de-prisao-descontinua.aspx",
+      "date": "2026-08-10",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
       "title": "\"A essência da Justiça do Trabalho é a conciliação\", afirma ministro do TST durante evento no TRT-11",
       "summary": "“Café com ministro” reuniu representantes de sindicatos, empresas do PIM, OAB e times de futebol para fortalecer a cultura do diálogo nas relações de trabalho",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11598-a-essencia-da-justica-do-trabalho-e-a-conciliacao-afirma-ministro-do-tst-durante-evento-no-trt-11",
-      "date": "2026-08-09",
+      "date": "2026-08-10",
       "category": "Trabalhista"
     },
     {
@@ -31,7 +55,7 @@
       "title": "Ministro do TST conhece projeto do novo Fórum Trabalhista de Manaus e destaca inovação e sustentabilidade",
       "summary": "Engenheiro do TRT-11 apresentou projeto adaptado à metodologia BIM durante visita do ministro Caputo Bastos",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11597-ministro-do-tst-conhece-projeto-do-novo-forum-trabalhista-de-manaus-e-destaca-inovacao-e-sustentabilidade",
-      "date": "2026-08-09",
+      "date": "2026-08-10",
       "category": "Trabalhista"
     }
   ]
