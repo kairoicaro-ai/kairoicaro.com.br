@@ -1,46 +1,22 @@
 {
-  "updated_at": "2026-08-10T13:42:46.984895+00:00",
-  "total": 7,
+  "updated_at": "2026-08-10T19:15:52.308461+00:00",
+  "total": 4,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Do Plenário à Agenda 2030: STF transforma sustentabilidade em prática institucional",
-      "summary": "Última reportagem da série mostra que descarbonização, energia limpa, consumo responsável e cooperação institucional conectam a rotina da Corte aos Objetivos de Desenvolvimento Sustentável da ONU",
-      "url": "https://noticias.stf.jus.br/postsnoticias/do-plenario-a-agenda-2030-stf-transforma-sustentabilidade-em-pratica-institucional/",
+      "title": "No Largo de São Francisco, Fachin participa da abertura das celebrações pelos 200 anos dos cursos jurídicos no Brasil",
+      "summary": "Presidente do STF ressaltou papel da Faculdade de Direito de São Paulo como espaço de defesa das liberdades públicas, dos direitos humanos e da democracia",
+      "url": "https://noticias.stf.jus.br/postsnoticias/no-largo-de-sao-francisco-presidente-do-stf-participa-da-abertura-das-celebracoes-pelos-200-anos-dos-cursos-juridicos-no-brasil/",
       "date": "2026-08-10",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF promoverá escuta de povos e comunidades tradicionais em Montes Claros (MG)",
-      "summary": "Iniciativa busca aproximar o Supremo de grupos historicamente pouco ouvidos pelo sistema de Justiça e ampliar a participação deles nos espaços de diálogo institucional",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-promovera-escuta-de-povos-e-comunidades-tradicionais-em-montes-claros-mg/",
+      "title": "Confiança pública é fundamento da autoridade legítima das instituições, afirma presidente do STF",
+      "summary": "Em seminário realizado pela Folha de S.Paulo, Fachin falou sobre confiança, integridade e transparência no Judiciário",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confianca-publica-e-fundamento-da-autoridade-legitima-das-instituicoes-afirma-presidente-do-stf/",
       "date": "2026-08-10",
       "category": "Constitucional"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
-      "summary": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Terceira-Turma-antecipa-sessao-do-dia-18-de-agosto-para-as-13h-.aspx",
-      "date": "2026-08-10",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Lei Maria da Penha, 20 anos: reportagem mostra como o STJ tem fortalecido o combate à violência doméstica",
-      "summary": "Reportagem especial mostra o impacto das decisões do STJ",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Lei-Maria-da-Penha--20-anos-reportagem-mostra-como-o-STJ-tem-fortalecido-o-combate-a-violencia-domestica.aspx",
-      "date": "2026-08-10",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Tribunal vai definir data-base para benefícios da execução penal em caso de prisão descontínua",
-      "summary": "Tribunal vai definir data-base para benefícios da execução penal em caso de prisão descontínua",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Tribunal-vai-definir-data-base-para-beneficios-da-execucao-penal-em-caso-de-prisao-descontinua.aspx",
-      "date": "2026-08-10",
-      "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
