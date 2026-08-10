@@ -1,22 +1,46 @@
 {
-  "updated_at": "2026-08-10T09:14:22.297126+00:00",
-  "total": 4,
+  "updated_at": "2026-08-10T13:42:46.984895+00:00",
+  "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Supremo na Semana destaca fim de restrição a alíquota zero para compra de veículos por pessoas autistas e PcDs",
-      "summary": "Episódio #197 está disponível nas principais plataformas de áudio e no YouTube",
-      "url": "https://noticias.stf.jus.br/postsnoticias/supremo-na-semana-destaca-fim-de-restricao-a-aliquota-zero-para-compra-de-veiculos-por-pessoas-autistas-e-pcds/",
+      "title": "Do Plenário à Agenda 2030: STF transforma sustentabilidade em prática institucional",
+      "summary": "Última reportagem da série mostra que descarbonização, energia limpa, consumo responsável e cooperação institucional conectam a rotina da Corte aos Objetivos de Desenvolvimento Sustentável da ONU",
+      "url": "https://noticias.stf.jus.br/postsnoticias/do-plenario-a-agenda-2030-stf-transforma-sustentabilidade-em-pratica-institucional/",
       "date": "2026-08-10",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Ponto facultativo e feriado do Dia do Advogado alteram expediente no STF",
-      "summary": "Prazos processuais que começam ou terminam na segunda (10) e na terça (11) serão automaticamente prorrogados",
-      "url": "https://noticias.stf.jus.br/postsnoticias/ponto-facultativo-e-feriado-do-dia-do-advogado-alteram-expediente-no-stf/",
+      "title": "STF promoverá escuta de povos e comunidades tradicionais em Montes Claros (MG)",
+      "summary": "Iniciativa busca aproximar o Supremo de grupos historicamente pouco ouvidos pelo sistema de Justiça e ampliar a participação deles nos espaços de diálogo institucional",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-promovera-escuta-de-povos-e-comunidades-tradicionais-em-montes-claros-mg/",
       "date": "2026-08-10",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
+      "summary": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Terceira-Turma-antecipa-sessao-do-dia-18-de-agosto-para-as-13h-.aspx",
+      "date": "2026-08-10",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Lei Maria da Penha, 20 anos: reportagem mostra como o STJ tem fortalecido o combate à violência doméstica",
+      "summary": "Reportagem especial mostra o impacto das decisões do STJ",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Lei-Maria-da-Penha--20-anos-reportagem-mostra-como-o-STJ-tem-fortalecido-o-combate-a-violencia-domestica.aspx",
+      "date": "2026-08-10",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Tribunal vai definir data-base para benefícios da execução penal em caso de prisão descontínua",
+      "summary": "Tribunal vai definir data-base para benefícios da execução penal em caso de prisão descontínua",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Tribunal-vai-definir-data-base-para-beneficios-da-execucao-penal-em-caso-de-prisao-descontinua.aspx",
+      "date": "2026-08-10",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
