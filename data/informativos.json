@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T08:48:43.924029+00:00",
+  "updated_at": "2026-08-11T13:41:38.471790+00:00",
   "total": 7,
   "items": [
     {
@@ -20,6 +20,14 @@
     },
     {
       "tribunal": "STJ",
+      "title": "Julgamento sobre participação de “olheiro” no tráfico de drogas é destaque do STJN",
+      "summary": "Julgamento sobre participação de “olheiro” no tráfico de drogas é destaque do STJN",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/11082026-Julgamento-sobre-participacao-de-“olheiro”-no-trafico-de-drogas-e-destaque-do-STJN.aspx",
+      "date": "2026-08-11",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
       "title": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
       "summary": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Terceira-Turma-antecipa-sessao-do-dia-18-de-agosto-para-as-13h-.aspx",
@@ -31,14 +39,6 @@
       "title": "Lei Maria da Penha, 20 anos: reportagem mostra como o STJ tem fortalecido o combate à violência doméstica",
       "summary": "Reportagem especial mostra o impacto das decisões do STJ",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Lei-Maria-da-Penha--20-anos-reportagem-mostra-como-o-STJ-tem-fortalecido-o-combate-a-violencia-domestica.aspx",
-      "date": "2026-08-11",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Tribunal vai definir data-base para benefícios da execução penal em caso de prisão descontínua",
-      "summary": "Tribunal vai definir data-base para benefícios da execução penal em caso de prisão descontínua",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Tribunal-vai-definir-data-base-para-beneficios-da-execucao-penal-em-caso-de-prisao-descontinua.aspx",
       "date": "2026-08-11",
       "category": "Jurisprudencia"
     },
