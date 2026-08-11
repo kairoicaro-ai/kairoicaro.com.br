@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T19:15:52.308461+00:00",
+  "updated_at": "2026-08-11T02:26:52.899040+00:00",
   "total": 4,
   "items": [
     {
@@ -7,7 +7,7 @@
       "title": "No Largo de São Francisco, Fachin participa da abertura das celebrações pelos 200 anos dos cursos jurídicos no Brasil",
       "summary": "Presidente do STF ressaltou papel da Faculdade de Direito de São Paulo como espaço de defesa das liberdades públicas, dos direitos humanos e da democracia",
       "url": "https://noticias.stf.jus.br/postsnoticias/no-largo-de-sao-francisco-presidente-do-stf-participa-da-abertura-das-celebracoes-pelos-200-anos-dos-cursos-juridicos-no-brasil/",
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "category": "Constitucional"
     },
     {
@@ -15,23 +15,23 @@
       "title": "Confiança pública é fundamento da autoridade legítima das instituições, afirma presidente do STF",
       "summary": "Em seminário realizado pela Folha de S.Paulo, Fachin falou sobre confiança, integridade e transparência no Judiciário",
       "url": "https://noticias.stf.jus.br/postsnoticias/confianca-publica-e-fundamento-da-autoridade-legitima-das-instituicoes-afirma-presidente-do-stf/",
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "11 de agosto: magistrados e advogados, os pilares da Justiça do Trabalho no Amazonas e Roraima",
+      "summary": "Profissionais atuam em conjunto para pacificar as relações de trabalho",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11599-11-de-agosto-magistrados-e-advogados-os-pilares-da-justica-do-trabalho-no-amazonas-e-roraima",
+      "date": "2026-08-11",
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "\"A essência da Justiça do Trabalho é a conciliação\", afirma ministro do TST durante evento no TRT-11",
       "summary": "“Café com ministro” reuniu representantes de sindicatos, empresas do PIM, OAB e times de futebol para fortalecer a cultura do diálogo nas relações de trabalho",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11598-a-essencia-da-justica-do-trabalho-e-a-conciliacao-afirma-ministro-do-tst-durante-evento-no-trt-11",
-      "date": "2026-08-10",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Ministro do TST conhece projeto do novo Fórum Trabalhista de Manaus e destaca inovação e sustentabilidade",
-      "summary": "Engenheiro do TRT-11 apresentou projeto adaptado à metodologia BIM durante visita do ministro Caputo Bastos",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11597-ministro-do-tst-conhece-projeto-do-novo-forum-trabalhista-de-manaus-e-destaca-inovacao-e-sustentabilidade",
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "category": "Trabalhista"
     }
   ]
