@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-08-12T13:45:37.485572+00:00",
+  "updated_at": "2026-08-12T19:19:14.917551+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Confira a pauta do STF desta quarta-feira (12)",
-      "summary": "Sessão será transmitida ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
-      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quarta-feira-12-2/",
+      "title": "STF prorroga até sexta (14) prazo de inscrição para audiência pública sobre Lei Antifacção",
+      "summary": "Convocada pelo ministro Alexandre de Moraes, audiência ocorrerá nos dias 24 e 25 de agosto",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-prorroga-ate-sexta-feira-14-prazo-de-inscricao-para-audiencia-publica-sobre-lei-antifaccao/",
       "date": "2026-08-12",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "CESTF prorroga prazo de inscrições para audiência acadêmica em Belém",
-      "summary": "A iniciativa tem como objetivo aprofundar debates sobre o ensino do Direito Constitucional no século XXI a partir da escuta da comunidade acadêmica",
-      "url": "https://noticias.stf.jus.br/postsnoticias/cestf-prorroga-prazo-de-inscricoes-para-audiencia-academica-em-belem/",
+      "title": "CNJ e Banco Central reforçam mecanismos de proteção na transferência de precatórios",
+      "summary": "Acordo busca desenvolver sistemática para dar mais transparência às negociações e à segurança jurídica aos credores",
+      "url": "https://noticias.stf.jus.br/postsnoticias/cnj-e-banco-central-reforcam-mecanismos-de-protecao-na-cessao-de-precatorios/",
       "date": "2026-08-12",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Nova direção do STJ toma posse em 19 de agosto; profissionais de imprensa devem se credenciar",
+      "summary": "Nova direção do STJ toma posse em 19 de agosto; profissionais de imprensa devem se credenciar",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-Nova-direcao-do-STJ-toma-posse-em-19-08-profissionais-de-imprensa-devem-se-credenciar.aspx",
+      "date": "2026-08-12",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
@@ -31,14 +39,6 @@
       "title": "Nova edição da Pesquisa Pronta destaca entendimentos sobre a aplicação da Lei Maria da Penha",
       "summary": "Nova edição da Pesquisa Pronta destaca entendimentos sobre a aplicação da Lei Maria da Penha",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-Nova-edicao-da-Pesquisa-Pronta-destaca-entendimentos-sobre-a-aplicacao-da-Lei-Maria-da-Penha.aspx",
-      "date": "2026-08-12",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Poderes para atuação extrajudicial não limitam procuração geral para o foro",
-      "summary": "Poderes para atuação extrajudicial não limitam procuração geral para o foro",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-Poderes-para-atuacao-extrajudicial-nao-limitam-procuracao-geral-para-o-foro.aspx",
       "date": "2026-08-12",
       "category": "Jurisprudencia"
     },
