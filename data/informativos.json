@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-12T09:07:05.927604+00:00",
+  "updated_at": "2026-08-12T13:45:37.485572+00:00",
   "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Confira a pauta do STF desta quarta-feira (12)",
+      "summary": "Sessão será transmitida ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quarta-feira-12-2/",
+      "date": "2026-08-12",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "CESTF prorroga prazo de inscrições para audiência acadêmica em Belém",
@@ -11,34 +19,26 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "CNJ e Banco Central lançam iniciativa para ampliar segurança nas transferências de precatórios",
-      "summary": "Sistema nacional a ser desenvolvido buscará conferir maior segurança, transparência e controle às negociações de créditos de precatórios",
-      "url": "https://noticias.stf.jus.br/postsnoticias/cnj-e-banco-central-lancam-iniciativa-para-ampliar-seguranca-nas-transferencias-de-precatorios/",
-      "date": "2026-08-12",
-      "category": "Constitucional"
-    },
-    {
       "tribunal": "STJ",
-      "title": "Julgamento sobre participação de “olheiro” no tráfico de drogas é destaque do STJN",
-      "summary": "Julgamento sobre participação de “olheiro” no tráfico de drogas é destaque do STJN",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/11082026-Julgamento-sobre-participacao-de-“olheiro”-no-trafico-de-drogas-e-destaque-do-STJN.aspx",
+      "title": "Sessão da Terceira Seção marcada para esta quarta (12) acontece no plenário da Corte Especial",
+      "summary": "Sessão da Terceira Seção marcada para esta quarta (12) acontece no plenário da Corte Especial",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-Sessao-da-Terceira-Secao-marcada-para-esta-quarta--12--acontece-no-plenario-da-Corte-Especial.aspx",
       "date": "2026-08-12",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
-      "summary": "Terceira Turma antecipa sessão do dia 18 de agosto para as 13h",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Terceira-Turma-antecipa-sessao-do-dia-18-de-agosto-para-as-13h-.aspx",
+      "title": "Nova edição da Pesquisa Pronta destaca entendimentos sobre a aplicação da Lei Maria da Penha",
+      "summary": "Nova edição da Pesquisa Pronta destaca entendimentos sobre a aplicação da Lei Maria da Penha",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-Nova-edicao-da-Pesquisa-Pronta-destaca-entendimentos-sobre-a-aplicacao-da-Lei-Maria-da-Penha.aspx",
       "date": "2026-08-12",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Lei Maria da Penha, 20 anos: reportagem mostra como o STJ tem fortalecido o combate à violência doméstica",
-      "summary": "Reportagem especial mostra o impacto das decisões do STJ",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/07082026-Lei-Maria-da-Penha--20-anos-reportagem-mostra-como-o-STJ-tem-fortalecido-o-combate-a-violencia-domestica.aspx",
+      "title": "Poderes para atuação extrajudicial não limitam procuração geral para o foro",
+      "summary": "Poderes para atuação extrajudicial não limitam procuração geral para o foro",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-Poderes-para-atuacao-extrajudicial-nao-limitam-procuracao-geral-para-o-foro.aspx",
       "date": "2026-08-12",
       "category": "Jurisprudencia"
     },
