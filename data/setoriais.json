@@ -1,7 +1,47 @@
 {
-  "updated_at": "2026-08-11T08:48:47.894987+00:00",
+  "updated_at": "2026-08-12T09:07:09.078971+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "11.ago.2026Evento na São Francisco abre comemorações dos 200 anos dos Cursos Jurídicos no BrasilEstiveram presentes os presidentes das quatro Cortes Superiores: ministro Edson Fachin, do STF; ministro Herman Benjamin, do STJ; ministra Maria Elizabeth Rocha, do STM; e ministro Luís Felipe Vieira de Melo Filho, do TST.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-12",
+      "url": "https://www.migalhas.com.br/quentes/462135/evento-na-sao-francisco-abre-festejos-de-200-anos-dos-cursos-juridicos"
+    },
+    {
+      "setor": "empresarial",
+      "title": "11.ago.2026TRT-3 afasta má-fé de empresa que esqueceu trecho de IA em contestaçãoPara colegiado, permanência de conteúdo gerado por inteligência artificial em peça revela falha de revisão, mas não comprova dolo processual.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-12",
+      "url": "https://www.migalhas.com.br/quentes/462133/trt-3-afasta-ma-fe-de-empresa-que-esqueceu-trecho-de-ia-em-contestacao"
+    },
+    {
+      "setor": "empresarial",
+      "title": "11.ago.2026Funrural e PIS/Cofins: tributarista analisa pautas de agosto do STF e STJAdvogado alerta para impactos das decisões sobre contingências e planejamento tributário das empresas.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-12",
+      "url": "https://www.migalhas.com.br/quentes/462128/funrural-e-pis-cofins-tributarista-analisa-pautas-do-stf-e-stj"
+    },
+    {
+      "setor": "empresarial",
+      "title": "11.ago.2026Julgamento no STF pode afetar licenças ambientais já emitidas, diz advogadaCorte discutirá validade de regras usadas na concessão de licenças ambientais desde fevereiro.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-12",
+      "url": "https://www.migalhas.com.br/quentes/462131/analise-julgamento-no-stf-pode-afetar-licencas-ambientais-ja-emitidas"
+    },
+    {
+      "setor": "empresarial",
+      "title": "11.ago.2026Servidora obtém remoção provisória para cuidar do marido com epilepsiaDesembargador considerou que a junta médica avaliou apenas a disponibilidade de tratamento nas duas cidades, sem examinar a necessidade da presença da servidora para prestar assistência contínua ao cônjuge.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-12",
+      "url": "https://www.migalhas.com.br/quentes/462123/servidora-obtem-remocao-provisoria-para-cuidar-do-marido-com-epilepsia"
+    },
     {
       "setor": "ambiental",
       "title": "10.ago.2026STJ: Demora em perícia psiquiátrica leva ministro a substituir prisão preventivaRéu estava preso desde janeiro e aguardava exame de sanidade mental sem data prevista; relator Carlos Pires Brandão determinou internação provisória em clínica particular indicada e custeada pela família.",
@@ -81,46 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-08-10",
       "url": "https://www.migalhas.com.br/quentes/461918/plano-pagara-remedio-para-idoso-com-alzheimer-e-indeniza-lo-por-recusa"
-    },
-    {
-      "setor": "empresarial",
-      "title": "9.ago.2026Empregada que desenvolveu transtorno de ansiedade após assédio receberá R$ 151 milJuiz reconheceu assédio praticado por gestor, doença ocupacional e omissão da empresa após denúncias.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-10",
-      "url": "https://www.migalhas.com.br/quentes/461440/empregada-que-desenvolveu-tag-apos-assedio-recebera-r-151-mil"
-    },
-    {
-      "setor": "empresarial",
-      "title": "9.ago.2026Moraes nega visita dos filhos a Bolsonaro no Dia dos PaisDefesa pediu autorização excepcional para encontro familiar, mas ministro considerou que suspensão de visitas já impede o ingresso dos filhos.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-10",
-      "url": "https://www.migalhas.com.br/quentes/461939/moraes-nega-visita-dos-filhos-a-bolsonaro-no-dia-dos-pais"
-    },
-    {
-      "setor": "empresarial",
-      "title": "8.ago.2026STF volta a julgar recursos sobre marco temporal; Fachin diverge em 7 pontos de GilmarMinistro propôs retirar prazo de um ano para novas demarcações e alterar regras sobre indenizações e processos demarcatórios.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-09",
-      "url": "https://www.migalhas.com.br/quentes/461936/stf-volta-a-julgar-recursos-sobre-marco-temporal"
-    },
-    {
-      "setor": "empresarial",
-      "title": "8.ago.2026Juiz assegura presença de advogado em oitivas de PADLiminar considerou que apresentação prévia de quesitos não substitui participação direta da defesa na produção da prova oral.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-09",
-      "url": "https://www.migalhas.com.br/quentes/461879/juiz-assegura-presenca-de-advogado-em-oitivas-de-pad"
-    },
-    {
-      "setor": "empresarial",
-      "title": "8.ago.2026Banco deve restituir cliente vítima de golpe com 13 transaçõesJuízo reconheceu falha na segurança do serviço e determinou devolução de R$ 25,9 mil, além de R$ 4 mil por danos morais.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-09",
-      "url": "https://www.migalhas.com.br/quentes/461888/banco-deve-restituir-cliente-vitima-de-golpe-com-13-transacoes"
     }
   ]
 }
