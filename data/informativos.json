@@ -1,29 +1,37 @@
 {
-  "updated_at": "2026-08-12T19:19:14.917551+00:00",
+  "updated_at": "2026-08-13T02:46:27.952534+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF prorroga até sexta (14) prazo de inscrição para audiência pública sobre Lei Antifacção",
-      "summary": "Convocada pelo ministro Alexandre de Moraes, audiência ocorrerá nos dias 24 e 25 de agosto",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-prorroga-ate-sexta-feira-14-prazo-de-inscricao-para-audiencia-publica-sobre-lei-antifaccao/",
-      "date": "2026-08-12",
+      "title": "Presidente do STF recebe embaixadores da América Latina e do Caribe para ampliar diálogo com países da região",
+      "summary": "Fachin apresentou as diretrizes da atuação internacional do Tribunal e ressaltou a importância da cooperação e do diálogo institucionais",
+      "url": "https://noticias.stf.jus.br/postsnoticias/presidente-do-stf-recebe-embaixadores-da-america-latina-e-do-caribe-para-ampliar-cooperacao-internacional/",
+      "date": "2026-08-13",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "CNJ e Banco Central reforçam mecanismos de proteção na transferência de precatórios",
-      "summary": "Acordo busca desenvolver sistemática para dar mais transparência às negociações e à segurança jurídica aos credores",
-      "url": "https://noticias.stf.jus.br/postsnoticias/cnj-e-banco-central-reforcam-mecanismos-de-protecao-na-cessao-de-precatorios/",
-      "date": "2026-08-12",
+      "title": "Julgamento sobre limites do Parque Estadual da Serra do Tabuleiro (SC) vai aguardar composição completa do STF",
+      "summary": "Diante da possibilidade de empate na votação, presidente Edson Fachin suspendeu julgamento até nomeação de novo ministro",
+      "url": "https://noticias.stf.jus.br/postsnoticias/julgamento-sobre-limites-do-parque-estadual-da-serra-do-tabuleiro-sc-vai-aguardar-composicao-completa-do-stf/",
+      "date": "2026-08-13",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "STJ afasta prescrição em ação indenizatória sobre os Crimes de Maio; pedidos serão analisados pela Justiça paulista",
+      "summary": "Para o ministro Teodoro Silva Santos, o prazo prescricional de cinco anos não pode impedir a efetivação de direitos assegurados pela Constituição e por tratados internacionais de direitos humanos.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-STJ-afasta-prescricao-em-acao-indenizatoria-sobre-os-Crimes-de-Maio--pedidos-serao-analisados-na-Justica-paulista.aspx",
+      "date": "2026-08-13",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
       "title": "Nova direção do STJ toma posse em 19 de agosto; profissionais de imprensa devem se credenciar",
       "summary": "Nova direção do STJ toma posse em 19 de agosto; profissionais de imprensa devem se credenciar",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-Nova-direcao-do-STJ-toma-posse-em-19-08-profissionais-de-imprensa-devem-se-credenciar.aspx",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "category": "Jurisprudencia"
     },
     {
@@ -31,31 +39,23 @@
       "title": "Sessão da Terceira Seção marcada para esta quarta (12) acontece no plenário da Corte Especial",
       "summary": "Sessão da Terceira Seção marcada para esta quarta (12) acontece no plenário da Corte Especial",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-Sessao-da-Terceira-Secao-marcada-para-esta-quarta--12--acontece-no-plenario-da-Corte-Especial.aspx",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "category": "Jurisprudencia"
     },
     {
-      "tribunal": "STJ",
-      "title": "Nova edição da Pesquisa Pronta destaca entendimentos sobre a aplicação da Lei Maria da Penha",
-      "summary": "Nova edição da Pesquisa Pronta destaca entendimentos sobre a aplicação da Lei Maria da Penha",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-Nova-edicao-da-Pesquisa-Pronta-destaca-entendimentos-sobre-a-aplicacao-da-Lei-Maria-da-Penha.aspx",
-      "date": "2026-08-12",
-      "category": "Jurisprudencia"
+      "tribunal": "TRT11",
+      "title": "Pleno aprova política inédita de compliance para fortalecer a governança institucional do TRT-11",
+      "summary": "A implementação do Sistema de Gestão de Compliance no tribunal está alinhada à norma internacional ISO 37301",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11601-pleno-aprova-politica-inedita-de-compliance-para-fortalecer-a-governanca-institucional-do-trt-11",
+      "date": "2026-08-13",
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "11 de agosto: magistrados e advogados, os pilares da Justiça do Trabalho no Amazonas e Roraima",
       "summary": "Profissionais atuam em conjunto para pacificar as relações de trabalho",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11599-11-de-agosto-magistrados-e-advogados-os-pilares-da-justica-do-trabalho-no-amazonas-e-roraima",
-      "date": "2026-08-12",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "\"A essência da Justiça do Trabalho é a conciliação\", afirma ministro do TST durante evento no TRT-11",
-      "summary": "“Café com ministro” reuniu representantes de sindicatos, empresas do PIM, OAB e times de futebol para fortalecer a cultura do diálogo nas relações de trabalho",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11598-a-essencia-da-justica-do-trabalho-e-a-conciliacao-afirma-ministro-do-tst-durante-evento-no-trt-11",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "category": "Trabalhista"
     }
   ]
