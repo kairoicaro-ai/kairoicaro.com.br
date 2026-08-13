@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-13T09:06:45.405093+00:00",
+  "updated_at": "2026-08-13T13:46:08.197998+00:00",
   "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Confira a pauta do STF desta quinta-feira (13)",
+      "summary": "Sessão será transmitida ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quinta-feira-13-2/",
+      "date": "2026-08-13",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "Presidente do STF recebe embaixadores da América Latina e do Caribe para ampliar diálogo com países da região",
@@ -11,50 +19,42 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "Julgamento sobre limites do Parque Estadual da Serra do Tabuleiro (SC) vai aguardar composição completa do STF",
-      "summary": "Diante da possibilidade de empate na votação, presidente Edson Fachin suspendeu julgamento até nomeação de novo ministro",
-      "url": "https://noticias.stf.jus.br/postsnoticias/julgamento-sobre-limites-do-parque-estadual-da-serra-do-tabuleiro-sc-vai-aguardar-composicao-completa-do-stf/",
-      "date": "2026-08-13",
-      "category": "Constitucional"
-    },
-    {
       "tribunal": "STJ",
-      "title": "STJ afasta prescrição em ação indenizatória sobre os Crimes de Maio; pedidos serão analisados pela Justiça paulista",
-      "summary": "Para o ministro Teodoro Silva Santos, o prazo prescricional de cinco anos não pode impedir a efetivação de direitos assegurados pela Constituição e por tratados internacionais de direitos humanos.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-STJ-afasta-prescricao-em-acao-indenizatoria-sobre-os-Crimes-de-Maio--pedidos-serao-analisados-na-Justica-paulista.aspx",
+      "title": "Sexta Turma antecipa sessão do dia 18 de agosto para as 13h",
+      "summary": "Sexta Turma antecipa sessão do dia 18 de agosto para as 13h",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/13082026-Sexta-Turma-antecipa-sessao-do-dia-18-de-agosto-para-as-13h-.aspx",
       "date": "2026-08-13",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Nova direção do STJ toma posse em 19 de agosto; profissionais de imprensa devem se credenciar",
-      "summary": "Nova direção do STJ toma posse em 19 de agosto; profissionais de imprensa devem se credenciar",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-Nova-direcao-do-STJ-toma-posse-em-19-08-profissionais-de-imprensa-devem-se-credenciar.aspx",
+      "title": "Informativo destaca decisão sobre impenhorabilidade de bem de família de alto valor",
+      "summary": "Informativo destaca decisão sobre impenhorabilidade de bem de família de alto valor",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/13082026-Informativo-destaca-decisao-sobre-impenhorabilidade-de-bem-de-familia-de-alto-valor-.aspx",
       "date": "2026-08-13",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Sessão da Terceira Seção marcada para esta quarta (12) acontece no plenário da Corte Especial",
-      "summary": "Sessão da Terceira Seção marcada para esta quarta (12) acontece no plenário da Corte Especial",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/12082026-Sessao-da-Terceira-Secao-marcada-para-esta-quarta--12--acontece-no-plenario-da-Corte-Especial.aspx",
+      "title": "Repetitivo definirá se isenção de honorários para a Fazenda Nacional abrange casos não previstos em lei",
+      "summary": "Repetitivo definirá se isenção de honorários para a Fazenda Nacional abrange casos não previstos em lei",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/13082026-Repetitivo-definira-se-isencao-de-honorarios-para-a-Fazenda-Nacional-abrange-casos-nao-previstos-em-lei.aspx",
       "date": "2026-08-13",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "TRT-11 promove plantio de 50 mudas nativas no Parque Rio Negro, em Manaus, com ministro do TST",
+      "summary": "Ação integra o Projeto Justiça Verde e a programação anual de sustentabilidade, com compensação ambiental de mais de mil mudas por ano",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11604-trt-11-promove-plantio-de-50-mudas-nativas-no-parque-rio-negro-em-manaus-com-ministro-do-tst",
+      "date": "2026-08-13",
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "Pleno aprova política inédita de compliance para fortalecer a governança institucional do TRT-11",
       "summary": "A implementação do Sistema de Gestão de Compliance no tribunal está alinhada à norma internacional ISO 37301",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11601-pleno-aprova-politica-inedita-de-compliance-para-fortalecer-a-governanca-institucional-do-trt-11",
-      "date": "2026-08-13",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "11 de agosto: magistrados e advogados, os pilares da Justiça do Trabalho no Amazonas e Roraima",
-      "summary": "Profissionais atuam em conjunto para pacificar as relações de trabalho",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11599-11-de-agosto-magistrados-e-advogados-os-pilares-da-justica-do-trabalho-no-amazonas-e-roraima",
       "date": "2026-08-13",
       "category": "Trabalhista"
     }
