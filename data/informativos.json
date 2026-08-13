@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-13T13:46:08.197998+00:00",
+  "updated_at": "2026-08-13T19:19:17.182328+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Confira a pauta do STF desta quinta-feira (13)",
-      "summary": "Sessão será transmitida ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
-      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quinta-feira-13-2/",
+      "title": "Presidente do STF manifesta apoio ao ministro Flávio Dino",
+      "summary": "No início da sessão desta quinta-feira (13), o presidente do Supremo Tribunal Federal (STF), ministro Edson Fachin afirmou que ameaças à segurança física de ministros e familiares devem ser apuradas com rigor",
+      "url": "https://noticias.stf.jus.br/postsnoticias/presidente-do-stf-manifesta-apoio-ao-ministro-flavio-dino/",
       "date": "2026-08-13",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Presidente do STF recebe embaixadores da América Latina e do Caribe para ampliar diálogo com países da região",
-      "summary": "Fachin apresentou as diretrizes da atuação internacional do Tribunal e ressaltou a importância da cooperação e do diálogo institucionais",
-      "url": "https://noticias.stf.jus.br/postsnoticias/presidente-do-stf-recebe-embaixadores-da-america-latina-e-do-caribe-para-ampliar-cooperacao-internacional/",
+      "title": "Confira a pauta do STF desta quinta-feira (13)",
+      "summary": "Sessão será transmitida ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quinta-feira-13-2/",
       "date": "2026-08-13",
       "category": "Constitucional"
     },
@@ -44,17 +44,17 @@
     },
     {
       "tribunal": "TRT11",
-      "title": "TRT-11 promove plantio de 50 mudas nativas no Parque Rio Negro, em Manaus, com ministro do TST",
-      "summary": "Ação integra o Projeto Justiça Verde e a programação anual de sustentabilidade, com compensação ambiental de mais de mil mudas por ano",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11604-trt-11-promove-plantio-de-50-mudas-nativas-no-parque-rio-negro-em-manaus-com-ministro-do-tst",
+      "title": "Empresa deverá indenizar trabalhador surdo por falhas na inclusão no ambiente de trabalho em Manaus",
+      "summary": "O juiz entendeu que a empresa não ofereceu a acessibilidade necessária para garantir a comunicação do trabalhador com deficiência auditiva",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11607-empresa-devera-indenizar-trabalhador-surdo-por-falhas-na-inclusao-no-ambiente-de-trabalho-em-manaus",
       "date": "2026-08-13",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "Pleno aprova política inédita de compliance para fortalecer a governança institucional do TRT-11",
-      "summary": "A implementação do Sistema de Gestão de Compliance no tribunal está alinhada à norma internacional ISO 37301",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11601-pleno-aprova-politica-inedita-de-compliance-para-fortalecer-a-governanca-institucional-do-trt-11",
+      "title": "TRT-11 promove seminário sobre trabalho decente e dignidade da pessoa humana",
+      "summary": "Evento ocorre no próximo dia 28 e reunirá especialistas para debater temas relacionados ao trabalho escravo, tráfico de pessoas e direitos humanos",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11606-trt-11-promove-seminario-sobre-trabalho-decente-e-dignidade-da-pessoa-humana",
       "date": "2026-08-13",
       "category": "Trabalhista"
     }
