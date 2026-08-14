@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-14T09:02:48.085399+00:00",
+  "updated_at": "2026-08-14T13:42:00.342323+00:00",
   "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "135 anos do STF: atuação de Rui Barbosa marcou os primeiros anos da Corte e da República",
+      "summary": "Série “Tá na Nossa História” revisita primórdios da Corte, marcos institucionais, evolução de competências e seu papel na consolidação da República, da democracia e dos direitos fundamentais",
+      "url": "https://noticias.stf.jus.br/postsnoticias/135-anos-do-stf-atuacao-de-rui-barbosa-marcou-os-primeiros-anos-da-corte-e-da-republica/",
+      "date": "2026-08-14",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "Presidente do STF destaca renovação do conhecimento jurídico em lançamento de obra sobre processo tributário",
@@ -11,50 +19,42 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "STF mantém aberta negociação sobre solução financeira para Banco de Brasília",
-      "summary": "Em audiência de mediação, ministro Luiz Fux ouviu representantes do Distrito Federal, da União, do BRB, do sistema financeiro e do Ministério Público",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-aberta-negociacao-sobre-solucao-financeira-para-banco-de-brasilia/",
-      "date": "2026-08-14",
-      "category": "Constitucional"
-    },
-    {
       "tribunal": "STJ",
-      "title": "Sexta Turma antecipa sessão do dia 18 de agosto para as 13h",
-      "summary": "Sexta Turma antecipa sessão do dia 18 de agosto para as 13h",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/13082026-Sexta-Turma-antecipa-sessao-do-dia-18-de-agosto-para-as-13h-.aspx",
+      "title": "Podcast STJ No Seu Dia discute jurisprudência sobre informações em rótulos de produtos",
+      "summary": "Podcast STJ No Seu Dia discute jurisprudência sobre informações em rótulos de produtos",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/14082026-Podcast-STJ-No-Seu-Dia-discute-jurisprudencia-sobre-informacoes-em-rotulos-de-produtos.aspx",
       "date": "2026-08-14",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Informativo destaca decisão sobre impenhorabilidade de bem de família de alto valor",
-      "summary": "Informativo destaca decisão sobre impenhorabilidade de bem de família de alto valor",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/13082026-Informativo-destaca-decisao-sobre-impenhorabilidade-de-bem-de-familia-de-alto-valor-.aspx",
+      "title": "Rádio Decidendi analisa precedente qualificado sobre proteção do bem de família (Tema 1.261)",
+      "summary": "Rádio Decidendi analisa precedente qualificado sobre proteção do bem de família (Tema 1.261)",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/14082026-Radio-Decidendi-analisa-precedente-qualificado-sobre-protecao-do-bem-de-familia--Tema-1-261-.aspx",
       "date": "2026-08-14",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Repetitivo definirá se isenção de honorários para a Fazenda Nacional abrange casos não previstos em lei",
-      "summary": "Repetitivo definirá se isenção de honorários para a Fazenda Nacional abrange casos não previstos em lei",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/13082026-Repetitivo-definira-se-isencao-de-honorarios-para-a-Fazenda-Nacional-abrange-casos-nao-previstos-em-lei.aspx",
+      "title": "Tribunal definirá critério para valor da causa em ações que discutem regularidade de fases de concurso público",
+      "summary": "Tribunal definirá critério para valor da causa em ações que discutem regularidade de fases de concurso público",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/14082026-Tribunal-definira-criterio-para-valor-da-causa-em-acoes-que-discutem-regularidade-de-fases-de-concurso-publico.aspx",
       "date": "2026-08-14",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "Justiça do Trabalho realiza Semana “Conciliar e Incluir” de 24 a 28 de agosto",
+      "summary": "Iniciativa incentiva soluções consensuais em processos relacionados aos direitos das pessoas com deficiência",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11611-justica-do-trabalho-realiza-semana-conciliar-e-incluir-de-24-a-28-de-agosto",
+      "date": "2026-08-14",
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "Empresa deverá indenizar trabalhador surdo por falhas na inclusão no ambiente de trabalho em Manaus",
       "summary": "O juiz entendeu que a empresa não ofereceu a acessibilidade necessária para garantir a comunicação do trabalhador com deficiência auditiva",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11607-empresa-devera-indenizar-trabalhador-surdo-por-falhas-na-inclusao-no-ambiente-de-trabalho-em-manaus",
-      "date": "2026-08-14",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "TRT-11 promove seminário sobre trabalho decente e dignidade da pessoa humana",
-      "summary": "Evento ocorre no próximo dia 28 e reunirá especialistas para debater temas relacionados ao trabalho escravo, tráfico de pessoas e direitos humanos",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11606-trt-11-promove-seminario-sobre-trabalho-decente-e-dignidade-da-pessoa-humana",
       "date": "2026-08-14",
       "category": "Trabalhista"
     }
