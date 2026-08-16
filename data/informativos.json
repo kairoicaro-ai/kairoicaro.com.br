@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T08:22:12.238157+00:00",
+  "updated_at": "2026-08-16T12:59:37.153509+00:00",
   "total": 7,
   "items": [
     {
@@ -20,6 +20,14 @@
     },
     {
       "tribunal": "STJ",
+      "title": "Os precedentes cíveis e penais do STJ sobre o uso medicinal da cannabis",
+      "summary": "Em meio a polêmicas que envolvem muitos preconceitos, o STJ vem definindo, à luz da legislação federal e dos normativos aplicáveis, o que é permitido e o que é vedado em matéria de cannabis medicinal.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/16082026-Os-precedentes-civeis-e-penais-do-STJ-sobre-o-uso-medicinal-da-cannabis.aspx",
+      "date": "2026-08-16",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
       "title": "Podcast STJ No Seu Dia discute jurisprudência sobre informações em rótulos de produtos",
       "summary": "Podcast STJ No Seu Dia discute jurisprudência sobre informações em rótulos de produtos",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/14082026-Podcast-STJ-No-Seu-Dia-discute-jurisprudencia-sobre-informacoes-em-rotulos-de-produtos.aspx",
@@ -31,14 +39,6 @@
       "title": "Rádio Decidendi analisa precedente qualificado sobre proteção do bem de família (Tema 1.261)",
       "summary": "Rádio Decidendi analisa precedente qualificado sobre proteção do bem de família (Tema 1.261)",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/14082026-Radio-Decidendi-analisa-precedente-qualificado-sobre-protecao-do-bem-de-familia--Tema-1-261-.aspx",
-      "date": "2026-08-16",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Tribunal definirá critério para valor da causa em ações que discutem regularidade de fases de concurso público",
-      "summary": "Tribunal definirá critério para valor da causa em ações que discutem regularidade de fases de concurso público",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/14082026-Tribunal-definira-criterio-para-valor-da-causa-em-acoes-que-discutem-regularidade-de-fases-de-concurso-publico.aspx",
       "date": "2026-08-16",
       "category": "Jurisprudencia"
     },
