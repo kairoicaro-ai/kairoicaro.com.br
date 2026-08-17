@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-08-16T18:46:16.800631+00:00",
-  "total": 4,
+  "updated_at": "2026-08-17T01:54:18.925607+00:00",
+  "total": 7,
   "items": [
     {
       "tribunal": "STF",
       "title": "Validade da moratória da soja é destaque no Supremo na Semana",
       "summary": "O episódio #198 do podcast está disponível nas principais plataformas de áudio e no YouTube",
       "url": "https://noticias.stf.jus.br/postsnoticias/validade-da-moratoria-da-soja-e-destaque-no-supremo-na-semana/",
-      "date": "2026-08-16",
+      "date": "2026-08-17",
       "category": "Constitucional"
     },
     {
@@ -15,15 +15,39 @@
       "title": "STF reforça integração entre tribunais em evento sobre gestão de precedentes",
       "summary": "Projeto visa fortalecer a cooperação e compartilhar soluções para desafios comuns",
       "url": "https://noticias.stf.jus.br/postsnoticias/stf-reforca-integracao-entre-tribunais-em-evento-sobre-gestao-de-precedentes/",
-      "date": "2026-08-16",
+      "date": "2026-08-17",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Os precedentes cíveis e penais do STJ sobre o uso medicinal da cannabis",
+      "summary": "Em meio a polêmicas que envolvem muitos preconceitos, o STJ vem definindo, à luz da legislação federal e dos normativos aplicáveis, o que é permitido e o que é vedado em matéria de cannabis medicinal.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/16082026-Os-precedentes-civeis-e-penais-do-STJ-sobre-o-uso-medicinal-da-cannabis.aspx",
+      "date": "2026-08-17",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Podcast STJ No Seu Dia discute jurisprudência sobre informações em rótulos de produtos",
+      "summary": "Podcast STJ No Seu Dia discute jurisprudência sobre informações em rótulos de produtos",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/14082026-Podcast-STJ-No-Seu-Dia-discute-jurisprudencia-sobre-informacoes-em-rotulos-de-produtos.aspx",
+      "date": "2026-08-17",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Rádio Decidendi analisa precedente qualificado sobre proteção do bem de família (Tema 1.261)",
+      "summary": "Rádio Decidendi analisa precedente qualificado sobre proteção do bem de família (Tema 1.261)",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/14082026-Radio-Decidendi-analisa-precedente-qualificado-sobre-protecao-do-bem-de-familia--Tema-1-261-.aspx",
+      "date": "2026-08-17",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
       "title": "Gestores do TRT-11 apresentam balanço de 52 projetos na 2ª Reunião de Análise da Estratégia de 2026",
       "summary": "Encontro avaliou resultados parciais do Plano de Gestão da Presidência e definiu próximos passos para a conclusão das entregas do biênio 2024-2026",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11616-gestores-do-trt-11-apresentam-balanco-de-52-projetos-na-2-reuniao-de-analise-da-estrategia-de-2026",
-      "date": "2026-08-16",
+      "date": "2026-08-17",
       "category": "Trabalhista"
     },
     {
@@ -31,7 +55,7 @@
       "title": "Justiça do Trabalho realiza Semana “Conciliar e Incluir” de 24 a 28 de agosto",
       "summary": "Iniciativa incentiva soluções consensuais em processos relacionados aos direitos das pessoas com deficiência",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11611-justica-do-trabalho-realiza-semana-conciliar-e-incluir-de-24-a-28-de-agosto",
-      "date": "2026-08-16",
+      "date": "2026-08-17",
       "category": "Trabalhista"
     }
   ]
