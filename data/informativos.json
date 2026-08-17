@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-17T13:04:40.828415+00:00",
-  "total": 7,
+  "updated_at": "2026-08-17T18:56:29.922435+00:00",
+  "total": 4,
   "items": [
     {
       "tribunal": "STF",
@@ -19,42 +19,18 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STJ",
-      "title": "Para Primeira Turma, falta de demonstração de dolo específico impede configuração de nepotismo",
-      "summary": "Para Primeira Turma, falta de demonstração de dolo específico impede configuração de nepotismo",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/17082026-Para-Primeira-Turma--falta-de-demonstracao-de-dolo-especifico-impede-configuracao-de-nepotismo-.aspx",
+      "tribunal": "TRT11",
+      "title": "TRT-11 abre exposição que reúne produção intelectual de integrantes da Justiça do Trabalho",
+      "summary": "Aberta ao público, a atividade segue até 31 de agosto no Fórum Trabalhista de Manaus e reúne livros, artigos e teses de magistrados, servidores e advogados",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11615-trt-11-abre-exposicao-que-reune-producao-intelectual-de-integrantes-da-justica-do-trabalho",
       "date": "2026-08-17",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "1º Fórum STJ Brasil-Argentina de Direito começa nesta segunda (17), com transmissão ao vivo",
-      "summary": "1º Fórum STJ Brasil-Argentina de Direito começa nesta segunda (17), com transmissão ao vivo",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/17082026-1o-Forum-STJ-Brasil-Argentina-de-Direito-comeca-nesta-segunda--17---com-transmissao-ao-vivo.aspx",
-      "date": "2026-08-17",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Quinta Turma reafirma que envio de pornografia pela internet pode configurar importunação sexual",
-      "summary": "Quinta Turma reafirma que envio de pornografia pela internet pode configurar importunação sexual",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/17082026-Quinta-Turma-reafirma-que-envio-de-pornografia-pela-internet-pode-configurar-importunacao-sexual.aspx",
-      "date": "2026-08-17",
-      "category": "Jurisprudencia"
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "TRT-11 abre inscrição de processos para a 16ª Semana Nacional da Execução Trabalhista",
       "summary": "Interessados podem inscrever processos para tentativa de conciliação entre 12 de agosto e 4 de setembro; mobilização nacional ocorrerá de 14 a 18 de setembro",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11618-trt-11-abre-inscricao-de-processos-para-a-16-semana-nacional-da-execucao-trabalhista",
-      "date": "2026-08-17",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Gestores do TRT-11 apresentam balanço de 52 projetos na 2ª Reunião de Análise da Estratégia de 2026",
-      "summary": "Encontro avaliou resultados parciais do Plano de Gestão da Presidência e definiu próximos passos para a conclusão das entregas do biênio 2024-2026",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11616-gestores-do-trt-11-apresentam-balanco-de-52-projetos-na-2-reuniao-de-analise-da-estrategia-de-2026",
       "date": "2026-08-17",
       "category": "Trabalhista"
     }
