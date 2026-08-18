@@ -1,37 +1,61 @@
 {
-  "updated_at": "2026-08-17T18:56:29.922435+00:00",
-  "total": 4,
+  "updated_at": "2026-08-18T01:49:53.997743+00:00",
+  "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Decisões colegiadas do STF crescem 50% em cinco anos",
-      "summary": "Julgamentos pelas Turmas e pelo Plenário já representam uma em cada cinco decisões da Corte; nova série de matérias apresenta a atuação do STF por meio de números",
-      "url": "https://noticias.stf.jus.br/postsnoticias/decisoes-colegiadas-do-stf-crescem-50-em-cinco-anos/",
-      "date": "2026-08-17",
+      "title": "CNI contesta regra sobre créditos tributários após substituição de isenção por alíquota reduzida",
+      "summary": "Entidade afirma que norma viola princípio constitucional da não cumulatividade",
+      "url": "https://noticias.stf.jus.br/postsnoticias/cni-contesta-regra-sobre-creditos-tributarios-apos-substituicao-de-isencao-por-aliquota-reduzida/",
+      "date": "2026-08-18",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF decide que municípios não podem usar área do imóvel para calcular alíquota do IPTU",
-      "summary": "Por unanimidade, o Plenário reafirmou que a progressividade fiscal do imposto deve considerar o valor do imóvel",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-decide-que-municipios-nao-podem-usar-area-do-imovel-para-calcular-aliquota-do-iptu/",
-      "date": "2026-08-17",
+      "title": "Especialistas debaterão contencioso sobre reforma tributária no STF",
+      "summary": "Iniciativa contará com representantes da União, do Estado de São Paulo, do Senado Federal e da Câmara dos Deputados",
+      "url": "https://noticias.stf.jus.br/postsnoticias/especialistas-debaterao-contencioso-sobre-reforma-tributaria-no-stf/",
+      "date": "2026-08-18",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "STJ Entrevista traz debate sobre direito civil comparado entre Brasil e Argentina",
+      "summary": "STJ Entrevista traz debate sobre direito civil comparado entre Brasil e Argentina",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/17082026-STJ-Entrevista-traz-debate-sobre-direito-civil-comparado-entre-Brasil-e-Argentina.aspx",
+      "date": "2026-08-18",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Para Primeira Turma, falta de demonstração de dolo específico impede configuração de nepotismo",
+      "summary": "Para Primeira Turma, falta de demonstração de dolo específico impede configuração de nepotismo",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/17082026-Para-Primeira-Turma--falta-de-demonstracao-de-dolo-especifico-impede-configuracao-de-nepotismo-.aspx",
+      "date": "2026-08-18",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "1º Fórum STJ Brasil-Argentina de Direito começa nesta segunda (17), com transmissão ao vivo",
+      "summary": "1º Fórum STJ Brasil-Argentina de Direito começa nesta segunda (17), com transmissão ao vivo",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/17082026-1o-Forum-STJ-Brasil-Argentina-de-Direito-comeca-nesta-segunda--17---com-transmissao-ao-vivo.aspx",
+      "date": "2026-08-18",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "Corregedor-geral do TST realizará correição ordinária no TRT-11 de 14 a 18 de setembro",
+      "summary": "Audiência com o ministro José Roberto Freire Pimenta poderá ser agendada via e-mail até 2 de setembro",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11622-corregedor-geral-do-tst-realizara-correicao-ordinaria-no-trt-11-de-14-a-18-de-setembro",
+      "date": "2026-08-18",
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "TRT-11 abre exposição que reúne produção intelectual de integrantes da Justiça do Trabalho",
       "summary": "Aberta ao público, a atividade segue até 31 de agosto no Fórum Trabalhista de Manaus e reúne livros, artigos e teses de magistrados, servidores e advogados",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11615-trt-11-abre-exposicao-que-reune-producao-intelectual-de-integrantes-da-justica-do-trabalho",
-      "date": "2026-08-17",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "TRT-11 abre inscrição de processos para a 16ª Semana Nacional da Execução Trabalhista",
-      "summary": "Interessados podem inscrever processos para tentativa de conciliação entre 12 de agosto e 4 de setembro; mobilização nacional ocorrerá de 14 a 18 de setembro",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11618-trt-11-abre-inscricao-de-processos-para-a-16-semana-nacional-da-execucao-trabalhista",
-      "date": "2026-08-17",
+      "date": "2026-08-18",
       "category": "Trabalhista"
     }
   ]
