@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-18T08:30:06.604202+00:00",
-  "total": 7,
+  "updated_at": "2026-08-18T13:06:56.632063+00:00",
+  "total": 4,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "STF veda contratação temporária de policiais penais sem concurso público no Acre",
+      "summary": "Em sessão virtual, o Plenário decidiu que o concurso é a única forma válida para ingresso na carreira, conforme a EC 104/2019",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-afasta-contratacao-temporaria-de-policiais-penais-sem-concurso-publico-no-acre/",
+      "date": "2026-08-18",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "CNI contesta regra sobre créditos tributários após substituição de isenção por alíquota reduzida",
@@ -9,38 +17,6 @@
       "url": "https://noticias.stf.jus.br/postsnoticias/cni-contesta-regra-sobre-creditos-tributarios-apos-substituicao-de-isencao-por-aliquota-reduzida/",
       "date": "2026-08-18",
       "category": "Constitucional"
-    },
-    {
-      "tribunal": "STF",
-      "title": "Especialistas debaterão contencioso sobre reforma tributária no STF",
-      "summary": "Iniciativa contará com representantes da União, do Estado de São Paulo, do Senado Federal e da Câmara dos Deputados",
-      "url": "https://noticias.stf.jus.br/postsnoticias/especialistas-debaterao-contencioso-sobre-reforma-tributaria-no-stf/",
-      "date": "2026-08-18",
-      "category": "Constitucional"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "STJ Entrevista traz debate sobre direito civil comparado entre Brasil e Argentina",
-      "summary": "STJ Entrevista traz debate sobre direito civil comparado entre Brasil e Argentina",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/17082026-STJ-Entrevista-traz-debate-sobre-direito-civil-comparado-entre-Brasil-e-Argentina.aspx",
-      "date": "2026-08-18",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Para Primeira Turma, falta de demonstração de dolo específico impede configuração de nepotismo",
-      "summary": "Para Primeira Turma, falta de demonstração de dolo específico impede configuração de nepotismo",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/17082026-Para-Primeira-Turma--falta-de-demonstracao-de-dolo-especifico-impede-configuracao-de-nepotismo-.aspx",
-      "date": "2026-08-18",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "1º Fórum STJ Brasil-Argentina de Direito começa nesta segunda (17), com transmissão ao vivo",
-      "summary": "1º Fórum STJ Brasil-Argentina de Direito começa nesta segunda (17), com transmissão ao vivo",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/17082026-1o-Forum-STJ-Brasil-Argentina-de-Direito-comeca-nesta-segunda--17---com-transmissao-ao-vivo.aspx",
-      "date": "2026-08-18",
-      "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
