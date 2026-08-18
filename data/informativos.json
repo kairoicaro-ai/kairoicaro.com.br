@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-18T13:06:56.632063+00:00",
-  "total": 4,
+  "updated_at": "2026-08-18T18:55:40.157106+00:00",
+  "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "STF Escuta debate desafios para proteger crianças e adolescentes no ambiente digital",
+      "summary": "Sexta edição do programa será realizada na próxima sexta-feira (21) e terá como tema o ECA Digital",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-escuta-debate-desafios-para-proteger-criancas-e-adolescentes-no-ambiente-digital/",
+      "date": "2026-08-18",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "STF veda contratação temporária de policiais penais sem concurso público no Acre",
@@ -11,26 +19,42 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "CNI contesta regra sobre créditos tributários após substituição de isenção por alíquota reduzida",
-      "summary": "Entidade afirma que norma viola princípio constitucional da não cumulatividade",
-      "url": "https://noticias.stf.jus.br/postsnoticias/cni-contesta-regra-sobre-creditos-tributarios-apos-substituicao-de-isencao-por-aliquota-reduzida/",
+      "tribunal": "STJ",
+      "title": "Crimes de Maio: decisão que afastou prescrição em ação indenizatória é destaque do STJ Notícias",
+      "summary": "Crimes de Maio: decisão que afastou prescrição em ação indenizatória é destaque do STJ Notícias",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/18082026-Crimes-de-Maio-decisao-que-afastou-prescricao-em-acao-indenizatoria-e-destaque-do-STJ-Noticias  -.aspx",
       "date": "2026-08-18",
-      "category": "Constitucional"
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Jurisdição em Fronteiras: o Judiciário onde o Brasil mais precisa",
+      "summary": "Documentário mostra desafios da jurisdição em fronteiras",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/18082026-Jurisdicao-em-Fronteiras-o-Judiciario-onde-o-Brasil-mais-precisa.aspx",
+      "date": "2026-08-18",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "STJ lança obra coletiva em homenagem aos 20 anos da Lei Maria da Penha nesta terça-feira (18)",
+      "summary": "STJ lança obra coletiva em homenagem aos 20 anos da Lei Maria da Penha nesta terça-feira (18)",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/18082026-STJ-lanca-obra-coletiva-em-homenagem-aos-20-anos-da-Lei-Maria-da-Penha-nesta-terca-feira--18-.aspx",
+      "date": "2026-08-18",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "TRT-11 lidera no Norte e fica em 7º lugar entre os tribunais trabalhistas no ranking de sustentabilidade do CNJ",
+      "summary": "O Tribunal avançou 9 posições entre os 24 tribunais trabalhistas, com nota de 69,42% no IDS",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11625-trt-11-lidera-no-norte-e-fica-em-7-lugar-entre-os-tribunais-trabalhistas-no-ranking-de-sustentabilidade-do-cnj",
+      "date": "2026-08-18",
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "Corregedor-geral do TST realizará correição ordinária no TRT-11 de 14 a 18 de setembro",
       "summary": "Audiência com o ministro José Roberto Freire Pimenta poderá ser agendada via e-mail até 2 de setembro",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11622-corregedor-geral-do-tst-realizara-correicao-ordinaria-no-trt-11-de-14-a-18-de-setembro",
-      "date": "2026-08-18",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "TRT-11 abre exposição que reúne produção intelectual de integrantes da Justiça do Trabalho",
-      "summary": "Aberta ao público, a atividade segue até 31 de agosto no Fórum Trabalhista de Manaus e reúne livros, artigos e teses de magistrados, servidores e advogados",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11615-trt-11-abre-exposicao-que-reune-producao-intelectual-de-integrantes-da-justica-do-trabalho",
       "date": "2026-08-18",
       "category": "Trabalhista"
     }
