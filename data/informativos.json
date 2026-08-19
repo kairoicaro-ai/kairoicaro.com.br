@@ -1,45 +1,45 @@
 {
-  "updated_at": "2026-08-18T18:55:40.157106+00:00",
+  "updated_at": "2026-08-19T01:52:30.458372+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF Escuta debate desafios para proteger crianças e adolescentes no ambiente digital",
-      "summary": "Sexta edição do programa será realizada na próxima sexta-feira (21) e terá como tema o ECA Digital",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-escuta-debate-desafios-para-proteger-criancas-e-adolescentes-no-ambiente-digital/",
-      "date": "2026-08-18",
+      "title": "STF divulga lista de participantes de audiência pública sobre Lei Antifacção",
+      "summary": "Debate será realizado em 24 e 25 de agosto e reunirá autoridades, especialistas e representantes da sociedade civil",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-divulga-lista-de-participantes-de-audiencia-publica-sobre-lei-antifaccao/",
+      "date": "2026-08-19",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF veda contratação temporária de policiais penais sem concurso público no Acre",
-      "summary": "Em sessão virtual, o Plenário decidiu que o concurso é a única forma válida para ingresso na carreira, conforme a EC 104/2019",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-afasta-contratacao-temporaria-de-policiais-penais-sem-concurso-publico-no-acre/",
-      "date": "2026-08-18",
+      "title": "2ª Turma mantém na Justiça Federal ação contra declarações de procurador da República",
+      "summary": "Caso envolve entrevista concedida em 2005 e discussão sobre aplicação de precedente do STF relativo à responsabilidade de agentes públicos",
+      "url": "https://noticias.stf.jus.br/postsnoticias/2a-turma-mantem-na-justica-federal-acao-contra-declaracoes-de-procurador-da-republica/",
+      "date": "2026-08-19",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Tribunal reinaugura obra de Vallandro Keating",
+      "summary": "Tribunal reinaugura obra de Vallandro Keating",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/18082026-Tribunal-reinaugura-obra-de-Vallandro-Keating.aspx",
+      "date": "2026-08-19",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Benedito Gonçalves é homenageado pela Primeira Turma em sua última sessão antes da posse no CNJ",
+      "summary": "Benedito Gonçalves é homenageado pela Primeira Turma em sua última sessão antes da posse no CNJ",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/18082026-Benedito-Goncalves-e-homenageado-pela-Primeira-Turma-em-sua-ultima-sessao-antes-da-posse-no-CNJ.aspx",
+      "date": "2026-08-19",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
       "title": "Crimes de Maio: decisão que afastou prescrição em ação indenizatória é destaque do STJ Notícias",
       "summary": "Crimes de Maio: decisão que afastou prescrição em ação indenizatória é destaque do STJ Notícias",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/18082026-Crimes-de-Maio-decisao-que-afastou-prescricao-em-acao-indenizatoria-e-destaque-do-STJ-Noticias  -.aspx",
-      "date": "2026-08-18",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Jurisdição em Fronteiras: o Judiciário onde o Brasil mais precisa",
-      "summary": "Documentário mostra desafios da jurisdição em fronteiras",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/18082026-Jurisdicao-em-Fronteiras-o-Judiciario-onde-o-Brasil-mais-precisa.aspx",
-      "date": "2026-08-18",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "STJ lança obra coletiva em homenagem aos 20 anos da Lei Maria da Penha nesta terça-feira (18)",
-      "summary": "STJ lança obra coletiva em homenagem aos 20 anos da Lei Maria da Penha nesta terça-feira (18)",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/18082026-STJ-lanca-obra-coletiva-em-homenagem-aos-20-anos-da-Lei-Maria-da-Penha-nesta-terca-feira--18-.aspx",
-      "date": "2026-08-18",
+      "date": "2026-08-19",
       "category": "Jurisprudencia"
     },
     {
@@ -47,7 +47,7 @@
       "title": "TRT-11 lidera no Norte e fica em 7º lugar entre os tribunais trabalhistas no ranking de sustentabilidade do CNJ",
       "summary": "O Tribunal avançou 9 posições entre os 24 tribunais trabalhistas, com nota de 69,42% no IDS",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11625-trt-11-lidera-no-norte-e-fica-em-7-lugar-entre-os-tribunais-trabalhistas-no-ranking-de-sustentabilidade-do-cnj",
-      "date": "2026-08-18",
+      "date": "2026-08-19",
       "category": "Trabalhista"
     },
     {
@@ -55,7 +55,7 @@
       "title": "Corregedor-geral do TST realizará correição ordinária no TRT-11 de 14 a 18 de setembro",
       "summary": "Audiência com o ministro José Roberto Freire Pimenta poderá ser agendada via e-mail até 2 de setembro",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11622-corregedor-geral-do-tst-realizara-correicao-ordinaria-no-trt-11-de-14-a-18-de-setembro",
-      "date": "2026-08-18",
+      "date": "2026-08-19",
       "category": "Trabalhista"
     }
   ]
