@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-08-19T13:07:39.432020+00:00",
-  "total": 7,
+  "updated_at": "2026-08-19T18:52:28.969201+00:00",
+  "total": 4,
   "items": [
     {
       "tribunal": "STF",
@@ -19,42 +19,18 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STJ",
-      "title": "Podcast discute responsabilização de presos por tráfico em presídios e perspectiva de gênero",
-      "summary": "Podcast discute responsabilização de presos por tráfico em presídios e perspectiva de gênero",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19082026-Podcast-discute-responsabilizacao-de-presos-por-trafico-em-presidios-e-perspectiva-de-genero.aspx",
-      "date": "2026-08-19",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Previdência complementar: devolução de benefícios após revogação de liminar prescreve em dez anos",
-      "summary": "Previdência complementar: devolução de benefícios após revogação de liminar prescreve em dez anos",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19082026-Previdencia-complementar-devolucao-de-beneficios-apos-revogacao-de-liminar-prescreve-em-dez-anos.aspx",
-      "date": "2026-08-19",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Primeira Turma valida controle judicial em acordo de não persecução civil e reparação conforme participação no dano",
-      "summary": "Primeira Turma valida controle judicial em acordo de não persecução civil e reparação conforme participação no dano",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19082026-STJ-valida-controle-judicial-em-acordo-de-nao-persecucao-civil-e-reparacao-conforme-participacao-no-dano.aspx",
-      "date": "2026-08-19",
-      "category": "Jurisprudencia"
-    },
-    {
       "tribunal": "TRT11",
-      "title": "TRT-11 lidera no Norte e fica em 7º lugar entre os tribunais trabalhistas no ranking de sustentabilidade do CNJ",
-      "summary": "O Tribunal avançou 9 posições entre os 24 tribunais trabalhistas, com nota de 69,42% no IDS",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11625-trt-11-lidera-no-norte-e-fica-em-7-lugar-entre-os-tribunais-trabalhistas-no-ranking-de-sustentabilidade-do-cnj",
+      "title": "Acordo firmado no Cejusc-JT de Boa Vista garante pagamento de R$ 900 mil à família de trabalhador falecido",
+      "summary": "Pela conciliação, a indenização será paga em 12 parcelas mensais aos familiares da vítima",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11628-acordo-firmado-no-cejusc-jt-de-boa-vista-garante-pagamento-de-r-900-mil-a-familia-de-trabalhador-falecido",
       "date": "2026-08-19",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "Corregedor-geral do TST realizará correição ordinária no TRT-11 de 14 a 18 de setembro",
-      "summary": "Audiência com o ministro José Roberto Freire Pimenta poderá ser agendada via e-mail até 2 de setembro",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11622-corregedor-geral-do-tst-realizara-correicao-ordinaria-no-trt-11-de-14-a-18-de-setembro",
+      "title": "Evento sobre prevenção ao assédio moral, ao assédio sexual e à discriminação ocorre nesta sexta no TRT-11",
+      "summary": "Promovido pela Ouvidoria Regional, workshop é grauito e aberto ao público",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11627-evento-sobre-prevencao-ao-assedio-moral-ao-assedio-sexual-e-a-discriminacao-ocorre-nesta-sexta-no-trt-11",
       "date": "2026-08-19",
       "category": "Trabalhista"
     }
