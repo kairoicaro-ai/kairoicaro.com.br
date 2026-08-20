@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T01:50:53.593877+00:00",
+  "updated_at": "2026-08-20T07:05:02.900897+00:00",
   "total": 7,
   "items": [
     {
@@ -20,6 +20,14 @@
     },
     {
       "tribunal": "STJ",
+      "title": "Procurador-geral da República e presidente da OAB cumprimentam a nova gestão da corte",
+      "summary": "Procurador-geral da República e presidente da OAB cumprimentam a nova gestão da corte",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19082026-Procurador-geral-da-Republica-e-presidente-da-OAB-cumprimentam-a-nova-gestao-da-corte.aspx",
+      "date": "2026-08-20",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
       "title": "Ministro Francisco Falcão enaltece qualificação dos novos dirigentes do tribunal",
       "summary": "Ministro Francisco Falcão enaltece qualificação dos novos dirigentes do tribunal",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19082026-Ministro-Francisco-Falcao-enaltece-qualificacao-dos-novos-dirigentes-do-tribunal.aspx",
@@ -31,14 +39,6 @@
       "title": "Luis Felipe Salomão assume presidência do STJ com foco em retomada da vocação da corte",
       "summary": "Em cerimônia realizada nesta quarta-feira (19), os ministros Luis Felipe Salomão e Mauro Campbell Marques tomaram posse como presidente e vice-presidente do STJ para o biênio 2026-2028.",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19082026-Luis-Felipe-Salomao-assume-presidencia-do-STJ-com-foco-em-retomada-da-vocacao-da-corte.aspx",
-      "date": "2026-08-20",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Herman Benjamin encerra gestão na presidência do STJ com homenagens na Corte Especial",
-      "summary": "Herman Benjamin encerra gestão na presidência do STJ com homenagens na Corte Especial",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19082026-Herman-Benjamin-encerra-gestao-na-presidencia-do-STJ-com-homenagens-na-Corte-Especial.aspx",
       "date": "2026-08-20",
       "category": "Jurisprudencia"
     },
