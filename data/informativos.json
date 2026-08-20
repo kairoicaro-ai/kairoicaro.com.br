@@ -1,29 +1,53 @@
 {
-  "updated_at": "2026-08-19T18:52:28.969201+00:00",
-  "total": 4,
+  "updated_at": "2026-08-20T01:50:53.593877+00:00",
+  "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Confira a pauta do STF desta quarta-feira (19)",
-      "summary": "Sessão será transmitida ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
-      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quarta-feira-19-2/",
-      "date": "2026-08-19",
+      "title": "STF vai decidir se agentes penitenciários têm direito à aposentadoria integral e reajuste igual aos da ativa",
+      "summary": "Tribunal reconheceu repercussão geral da controvérsia. Julgamento de mérito ainda será agendado",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-vai-decidir-se-agentes-penitenciarios-tem-direito-a-aposentadoria-integral-e-reajuste-igual-aos-da-ativa/",
+      "date": "2026-08-20",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF realiza audiência de conciliação sobre assentamentos em terra indígena de Rondônia",
-      "summary": "Audiência avançou no mapeamento da situação e na busca de encaminhamentos para a região",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-realiza-audiencia-de-conciliacao-sobre-assentamentos-em-terra-indigena-de-rondonia/",
-      "date": "2026-08-19",
+      "title": "OAB Nacional questiona no STF valores de custas processuais e taxa judiciária de Sergipe",
+      "summary": "Entidade sustenta que cobranças são excessivas e podem dificultar acesso à Justiça",
+      "url": "https://noticias.stf.jus.br/postsnoticias/oab-nacional-questiona-no-stf-valores-de-custas-processuais-e-taxa-judiciaria-de-sergipe/",
+      "date": "2026-08-20",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Ministro Francisco Falcão enaltece qualificação dos novos dirigentes do tribunal",
+      "summary": "Ministro Francisco Falcão enaltece qualificação dos novos dirigentes do tribunal",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19082026-Ministro-Francisco-Falcao-enaltece-qualificacao-dos-novos-dirigentes-do-tribunal.aspx",
+      "date": "2026-08-20",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Luis Felipe Salomão assume presidência do STJ com foco em retomada da vocação da corte",
+      "summary": "Em cerimônia realizada nesta quarta-feira (19), os ministros Luis Felipe Salomão e Mauro Campbell Marques tomaram posse como presidente e vice-presidente do STJ para o biênio 2026-2028.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19082026-Luis-Felipe-Salomao-assume-presidencia-do-STJ-com-foco-em-retomada-da-vocacao-da-corte.aspx",
+      "date": "2026-08-20",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Herman Benjamin encerra gestão na presidência do STJ com homenagens na Corte Especial",
+      "summary": "Herman Benjamin encerra gestão na presidência do STJ com homenagens na Corte Especial",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19082026-Herman-Benjamin-encerra-gestao-na-presidencia-do-STJ-com-homenagens-na-Corte-Especial.aspx",
+      "date": "2026-08-20",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
       "title": "Acordo firmado no Cejusc-JT de Boa Vista garante pagamento de R$ 900 mil à família de trabalhador falecido",
       "summary": "Pela conciliação, a indenização será paga em 12 parcelas mensais aos familiares da vítima",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11628-acordo-firmado-no-cejusc-jt-de-boa-vista-garante-pagamento-de-r-900-mil-a-familia-de-trabalhador-falecido",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "category": "Trabalhista"
     },
     {
@@ -31,7 +55,7 @@
       "title": "Evento sobre prevenção ao assédio moral, ao assédio sexual e à discriminação ocorre nesta sexta no TRT-11",
       "summary": "Promovido pela Ouvidoria Regional, workshop é grauito e aberto ao público",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11627-evento-sobre-prevencao-ao-assedio-moral-ao-assedio-sexual-e-a-discriminacao-ocorre-nesta-sexta-no-trt-11",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "category": "Trabalhista"
     }
   ]
