@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-21T08:33:44.546517+00:00",
+  "updated_at": "2026-08-21T13:10:04.068709+00:00",
   "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "‘Direito sem juridiquês’: entenda o que é súmula vinculante",
+      "summary": "Novo episódio trata desse instrumento jurídico, previsto na Constituição, que deve ser obrigatoriamente observado pelos órgãos do Judiciário e pela administração pública",
+      "url": "https://noticias.stf.jus.br/postsnoticias/direito-sem-juridiques-entenda-o-que-e-sumula-vinculante/",
+      "date": "2026-08-21",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "Presidente do STF abre exposição que celebra 135 anos da Biblioteca Ministro Victor Nunes Leal",
@@ -11,34 +19,26 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "STF e Interpol discutem estratégias para fortalecer combate transnacional ao crime organizado",
-      "summary": "Presidente do STF recebeu secretário-geral da Interpol; encontro tratou de cooperação internacional, sufocamento financeiro de facções e inovação tecnológica no Judiciário",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-e-interpol-discutem-estrategias-para-fortalecer-o-combate-transnacional-ao-crime-organizado/",
-      "date": "2026-08-21",
-      "category": "Constitucional"
-    },
-    {
       "tribunal": "STJ",
-      "title": "Primeira Seção se despede do ministro Benedito Gonçalves, futuro corregedor nacional de Justiça",
-      "summary": "Primeira Seção se despede do ministro Benedito Gonçalves, futuro corregedor nacional de Justiça",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/20082026-Primeira-Secao-se-despede-do-ministro-Benedito-Goncalves--futuro-corregedor-nacional-de-Justica.aspx",
+      "title": "Segunda SeГ§ГЈo definirГЎ se demora injustificada do plano de saГєde equivale Г recusa indevida de cobertura",
+      "summary": "Segunda SeГ§ГЈo definirГЎ se demora injustificada do plano de saГєde equivale Г recusa indevida de cobertura",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/21082026-Segunda-Secao-definira-se-demora-injustificada-do-plano-de-saude-equivale-a-recusa-indevida-de-cobertura.aspx",
       "date": "2026-08-21",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Podcast Rádio Decidendi discute o Tema 1.267 e a inadmissão da apelação",
-      "summary": "Podcast Rádio Decidendi discute o Tema 1.267 e a inadmissão da apelação",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/20082026-Podcast-Radio-Decidendi-discute-o-Tema-1-267-e-a-inadmissao-da-apelacao.aspx",
+      "title": "Acesso a sistema com dados contГЎbeis nГЈo dispensa dever de prestaГ§ГЈo de contas de bens em condomГ­nio",
+      "summary": "Acesso a sistema com dados contГЎbeis nГЈo dispensa dever de prestaГ§ГЈo de contas de bens em condomГ­nio",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/21082026-Acesso-a-sistema-com-dados-contabeis-nao-dispensa-dever-de-prestacao-de-contas-de-bens-em-condominio--.aspx",
       "date": "2026-08-21",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Tribunal promove fórum sobre prevenção a fraudes e segurança no ambiente virtual",
-      "summary": "Evento acontece em 3/9 no STJ; inscrições estão abertas",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/20082026-Tribunal-promove-forum-sobre-prevencao-a-fraudes-e-seguranca-no-ambiente-virtual--.aspx",
+      "title": "Para Terceira SeГ§ГЈo, crime de extorsГЈo admite forma tentada quando vГ­tima nГЈo se submete Г exigГЄncia",
+      "summary": "Seguindo o voto do ministro Ribeiro Dantas, o colegiado entendeu que o mero constrangimento psicolГіgico, sem qualquer ato da vГ­tima no sentido de cumprir a exigГЄncia, nГЈo basta para a consumaГ§ГЈo do delito.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/21082026-Para-Terceira-Secao--crime-de-extorsao-admite-forma-tentada-quando-vitima-nao-se-submete-a-exigencia-.aspx",
       "date": "2026-08-21",
       "category": "Jurisprudencia"
     },
