@@ -1,7 +1,47 @@
 {
-  "updated_at": "2026-08-21T08:33:47.135969+00:00",
+  "updated_at": "2026-08-22T08:22:36.140020+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "21.ago.2026TJ/MG: Menor será indenizada após overbooking e atraso de 8h em vooColegiado considerou que longa espera no aeroporto, somada à idade da passageira e à frustração do início das férias, ultrapassou mero aborrecimento.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-22",
+      "url": "https://www.migalhas.com.br/quentes/462920/tj-mg-menor-sera-indenizada-apos-overbooking-e-atraso-de-8h-em-voo"
+    },
+    {
+      "setor": "empresarial",
+      "title": "21.ago.2026TRT-1: Trabalhador submetido a jornada exaustiva de 13 horas será indenizadoEmpregado cumpria jornada das 7h30 às 21h, em escala 6x1, e era exposto a rankings de produtividade e ameaças de dispensa; indenizações por dano existencial e assédio moral somam R$ 17 mil.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-22",
+      "url": "https://www.migalhas.com.br/quentes/462963/trabalhador-submetido-a-jornada-exaustiva-de-13-horas-sera-indenizado"
+    },
+    {
+      "setor": "empresarial",
+      "title": "21.ago.2026TRT-2 afasta adicional de insalubridade de técnico que atuava em hospitalColegiado concluiu que trabalho em ambiente hospitalar, sem contato permanente com pacientes ou materiais infectocontagiantes, não se enquadra nas hipóteses da NR-15.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-22",
+      "url": "https://www.migalhas.com.br/quentes/462966/afastado-adicional-de-insalubridade-de-tecnico-que-atuava-em-hospital"
+    },
+    {
+      "setor": "empresarial",
+      "title": "21.ago.2026Corinthians deve pagar quase R$ 3 milhões a atleta incapacitado após lesãoJogador lesionou o joelho durante partida pelo Sub-20 e, após novos traumas e cirurgias, ficou permanentemente incapacitado para atuar profissionalmente.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-22",
+      "url": "https://www.migalhas.com.br/quentes/462919/corinthians-deve-pagar-quase-r-3-mi-a-atleta-incapacitado-apos-lesao"
+    },
+    {
+      "setor": "empresarial",
+      "title": "21.ago.2026STF retomará julgamento sobre mudanças na lei da ficha limpa em setembroCaso será retomado após devolução do pedido de vista do ministro Gilmar Mendes.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-22",
+      "url": "https://www.migalhas.com.br/quentes/462962/stf-retomara-julgamento-de-mudancas-na-lei-da-ficha-limpa-em-setembro"
+    },
     {
       "setor": "empresarial",
       "title": "20.ago.2026No STJ, fotógrafos \"somem\" e advogados registram homenagem a ministroDurante despedida do ministro Benedito Gonçalves da 1ª Seção, advogados ajudaram a registrar entrega de placa.",
@@ -81,46 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-08-20",
       "url": "https://www.migalhas.com.br/quentes/462776/toffoli-legitima-defesa-da-honra-ainda-e-invocada-em-lesao-corporal"
-    },
-    {
-      "setor": "ambiental",
-      "title": "18.ago.2026STJ afasta divisor mínimo em aposentadoria concedida após reforma da previdênciaSegurado preencheu os requisitos de carência e tempo de contribuição antes de julho de 1994.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-19",
-      "url": "https://www.migalhas.com.br/quentes/462669/stj-afasta-divisor-minimo-em-aposentadoria-concedida-apos-reforma"
-    },
-    {
-      "setor": "empresarial",
-      "title": "18.ago.2026STJ: Pagamento em criptomoeda é válido e queda no valor não indica golpePara 3ª turma, quem aceita ativo digital de forma consciente assume riscos da desvalorização.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-19",
-      "url": "https://www.migalhas.com.br/quentes/462670/stj-pagamento-em-cripto-e-valido-e-queda-no-valor-nao-indica-golpe"
-    },
-    {
-      "setor": "empresarial",
-      "title": "18.ago.20265ª turma do STJ admite sustentação oral de MP em agravo em habeas corpusPor unanimidade, colegiado entendeu que a legitimidade do órgão ministerial para recorrer de decisão concessiva da ordem também assegura o uso da palavra no julgamento.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-19",
-      "url": "https://www.migalhas.com.br/quentes/462656/stj-admite-sustentacao-oral-de-mp-estadual-em-agravo-em-habeas-corpus"
-    },
-    {
-      "setor": "empresarial",
-      "title": "18.ago.2026STJ: Decolar responde por não informar cancelamento de voo na pandemiaPassageira descobriu cancelamento no aeroporto e precisou comprar nova passagem para voltar ao Brasil.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-19",
-      "url": "https://www.migalhas.com.br/quentes/462668/stj-decolar-responde-por-nao-informar-cancelamento-de-voo-na-pandemia"
-    },
-    {
-      "setor": "empresarial",
-      "title": "18.ago.2026STJ mantém trancada ação penal contra Laerte Codonho, dono da Dolly5ª turma considerou nulos os atos praticados pelo Gedec, grupo especializado do MP/SP, fora de sua esfera territorial de atribuição e antes de designação válida, por violação ao princípio do promotor natural.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-19",
-      "url": "https://www.migalhas.com.br/quentes/462661/stj-mantem-trancada-acao-penal-contra-laerte-codonho-dono-da-dolly"
     }
   ]
 }
