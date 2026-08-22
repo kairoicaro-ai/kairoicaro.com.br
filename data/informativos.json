@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-22T08:22:33.207265+00:00",
+  "updated_at": "2026-08-22T12:59:50.953026+00:00",
   "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Confira todos os detalhes da audiência pública sobre a Lei Antifacção",
+      "summary": "Sob a condução do ministro Alexandre de Moraes, relator de quatro ações que questionam a norma no STF, serão ouvidos 48 expositores a partir de segunda (24)",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confira-todos-os-detalhes-da-audiencia-publica-sobre-a-lei-antifaccao/",
+      "date": "2026-08-22",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "‘STF Escuta’ debate desafios para proteger crianças e adolescentes no ambiente digital",
@@ -11,33 +19,25 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "STF publica acórdão sobre restrições à compra de terras por empresas brasileiras controladas por estrangeiros",
-      "summary": "DJe desta sexta (21) traz o inteiro teor da decisão do Plenário sobre a matéria",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-publica-acordao-sobre-restricoes-a-compra-de-terras-por-empresas-brasileiras-controladas-por-estrangeiros/",
-      "date": "2026-08-22",
-      "category": "Constitucional"
-    },
-    {
       "tribunal": "STJ",
-      "title": "Segunda SeГ§ГЈo definirГЎ se demora injustificada do plano de saГєde equivale Г recusa indevida de cobertura",
-      "summary": "Segunda SeГ§ГЈo definirГЎ se demora injustificada do plano de saГєde equivale Г recusa indevida de cobertura",
+      "title": "Segunda Seção definirá se demora injustificada do plano de saúde equivale à recusa indevida de cobertura",
+      "summary": "Segunda Seção definirá se demora injustificada do plano de saúde equivale à recusa indevida de cobertura",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/21082026-Segunda-Secao-definira-se-demora-injustificada-do-plano-de-saude-equivale-a-recusa-indevida-de-cobertura.aspx",
       "date": "2026-08-22",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Acesso a sistema com dados contГЎbeis nГЈo dispensa dever de prestaГ§ГЈo de contas de bens em condomГ­nio",
-      "summary": "Acesso a sistema com dados contГЎbeis nГЈo dispensa dever de prestaГ§ГЈo de contas de bens em condomГ­nio",
+      "title": "Acesso a sistema com dados contábeis não dispensa dever de prestação de contas de bens em condomínio",
+      "summary": "Acesso a sistema com dados contábeis não dispensa dever de prestação de contas de bens em condomínio",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/21082026-Acesso-a-sistema-com-dados-contabeis-nao-dispensa-dever-de-prestacao-de-contas-de-bens-em-condominio--.aspx",
       "date": "2026-08-22",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Para Terceira SeГ§ГЈo, crime de extorsГЈo admite forma tentada quando vГ­tima nГЈo se submete Г exigГЄncia",
-      "summary": "Seguindo o voto do ministro Ribeiro Dantas, o colegiado entendeu que o mero constrangimento psicolГіgico, sem qualquer ato da vГ­tima no sentido de cumprir a exigГЄncia, nГЈo basta para a consumaГ§ГЈo do delito.",
+      "title": "Para Terceira Seção, crime de extorsão admite forma tentada quando vítima não se submete à exigência",
+      "summary": "Seguindo o voto do ministro Ribeiro Dantas, o colegiado entendeu que o mero constrangimento psicológico, sem qualquer ato da vítima no sentido de cumprir a exigência, não basta para a consumação do delito.",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/21082026-Para-Terceira-Secao--crime-de-extorsao-admite-forma-tentada-quando-vitima-nao-se-submete-a-exigencia-.aspx",
       "date": "2026-08-22",
       "category": "Jurisprudencia"
