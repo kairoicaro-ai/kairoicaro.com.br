@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-24T13:11:50.099024+00:00",
+  "updated_at": "2026-08-24T18:58:21.678181+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Tempo médio para baixa de processos cai pela metade no STF em seis anos",
-      "summary": "Média passou de 194 para 92 dias entre 2020 e 2025; nova série de matérias apresenta a atuação do STF por meio de números",
-      "url": "https://noticias.stf.jus.br/postsnoticias/tempo-medio-para-baixa-de-processos-cai-pela-metade-no-stf-em-seis-anos/",
+      "title": "Ministros do STF abrem audiência pública sobre Lei Antifacção",
+      "summary": "Conduzido pelo ministro Alexandre de Moraes, debate reúne, em dois dias, 48 expositores para subsidiar julgamento de quatro ações que questionam a norma",
+      "url": "https://noticias.stf.jus.br/postsnoticias/ministros-do-stf-abrem-audiencia-publica-sobre-lei-antifaccao/",
       "date": "2026-08-24",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Aplicação da Lei Maria da Penha a todos os casos de violência de gênero é destaque no Supremo na Semana",
-      "summary": "Episódio #199 está disponível nas principais plataformas de áudio e no YouTube",
-      "url": "https://noticias.stf.jus.br/postsnoticias/aplicacao-da-lei-maria-da-penha-a-todos-os-casos-de-violencia-de-genero-e-destaque-no-supremo-na-semana/",
+      "title": "Tempo médio para baixa de processos cai pela metade no STF em seis anos",
+      "summary": "Média passou de 194 para 92 dias entre 2020 e 2025; nova série de matérias apresenta a atuação do STF por meio de números",
+      "url": "https://noticias.stf.jus.br/postsnoticias/tempo-medio-para-baixa-de-processos-cai-pela-metade-no-stf-em-seis-anos/",
       "date": "2026-08-24",
       "category": "Constitucional"
     },
@@ -44,17 +44,17 @@
     },
     {
       "tribunal": "TRT11",
-      "title": "Nota de pesar: Desembargador Lairto José Veloso",
-      "summary": "É com profundo pesar que o Tribunal Regional do Trabalho da 11ª Região (AM/RR) comunica o falecimento do desembargador Lairto José Veloso, ocorrido neste sábado, 22 de agosto, em Manaus/AM.",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11638-nota-de-pesar-desembargador-lairto-jose-veloso",
+      "title": "X Seminário Roraimense começa amanhã",
+      "summary": "Evento reúne representantes do Judiciário, do Executivo e do MPT para debater políticas de acesso ao trabalho, geração de renda e reinserção social",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11640-x-seminario-roraimense-do-trt-11-comeca-amanha",
       "date": "2026-08-24",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "Justiça do Trabalho informa acesso indevido ao DEJT",
-      "summary": "",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11636-justica-do-trabalho-informa-acesso-indevido-ao-dejt",
+      "title": "PJe ficará indisponível nos dias 29 e 30 de agosto",
+      "summary": "O Tribunal Regional do Trabalho da 11ª Região (AM/RR) informa que o Sistema Processo Judicial Eletrônico (PJe) ficará indisponível nos dias 29 e 30 de agosto (sábado e domingo), em razão da atualização do sistema para a versão 2.21.0, disponibilizada pelo Conselho Superior da Justiça do Trabalho (CS",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11639-pje-ficara-indisponivel-nos-dias-29-e-30-de-agosto",
       "date": "2026-08-24",
       "category": "Trabalhista"
     }
