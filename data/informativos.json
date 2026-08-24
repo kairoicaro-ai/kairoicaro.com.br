@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-24T08:41:16.536476+00:00",
+  "updated_at": "2026-08-24T13:11:50.099024+00:00",
   "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Tempo médio para baixa de processos cai pela metade no STF em seis anos",
+      "summary": "Média passou de 194 para 92 dias entre 2020 e 2025; nova série de matérias apresenta a atuação do STF por meio de números",
+      "url": "https://noticias.stf.jus.br/postsnoticias/tempo-medio-para-baixa-de-processos-cai-pela-metade-no-stf-em-seis-anos/",
+      "date": "2026-08-24",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "Aplicação da Lei Maria da Penha a todos os casos de violência de gênero é destaque no Supremo na Semana",
@@ -11,34 +19,26 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "Confira todos os detalhes da audiência pública sobre a Lei Antifacção",
-      "summary": "Sob a condução do ministro Alexandre de Moraes, relator de quatro ações que questionam a norma no STF, serão ouvidos 48 expositores a partir de segunda (24)",
-      "url": "https://noticias.stf.jus.br/postsnoticias/confira-todos-os-detalhes-da-audiencia-publica-sobre-a-lei-antifaccao/",
-      "date": "2026-08-24",
-      "category": "Constitucional"
-    },
-    {
       "tribunal": "STJ",
-      "title": "Segunda Seção definirá se demora injustificada do plano de saúde equivale à recusa indevida de cobertura",
-      "summary": "Segunda Seção definirá se demora injustificada do plano de saúde equivale à recusa indevida de cobertura",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/21082026-Segunda-Secao-definira-se-demora-injustificada-do-plano-de-saude-equivale-a-recusa-indevida-de-cobertura.aspx",
+      "title": "Quarta edição da Revista de Estudos Jurídicos do STJ já está disponível",
+      "summary": "Quarta edição da Revista de Estudos Jurídicos do STJ já está disponível",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24082026-Quarta-edicao-da-Revista-de-Estudos-Juridicos-do-STJ-ja-esta-disponivel.aspx",
       "date": "2026-08-24",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Acesso a sistema com dados contábeis não dispensa dever de prestação de contas de bens em condomínio",
-      "summary": "Acesso a sistema com dados contábeis não dispensa dever de prestação de contas de bens em condomínio",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/21082026-Acesso-a-sistema-com-dados-contabeis-nao-dispensa-dever-de-prestacao-de-contas-de-bens-em-condominio--.aspx",
+      "title": "Para Terceira Turma, aditamento ao plano de recuperação judicial não produz efeitos retroativos",
+      "summary": "Para Terceira Turma, aditamento ao plano de recuperação judicial não produz efeitos retroativos",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24082026-Para-Terceira-Turma--aditamento-ao-plano-de-recuperacao-judicial-nao-produz-efeitos-retroativos-.aspx",
       "date": "2026-08-24",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Para Terceira Seção, crime de extorsão admite forma tentada quando vítima não se submete à exigência",
-      "summary": "Seguindo o voto do ministro Ribeiro Dantas, o colegiado entendeu que o mero constrangimento psicológico, sem qualquer ato da vítima no sentido de cumprir a exigência, não basta para a consumação do delito.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/21082026-Para-Terceira-Secao--crime-de-extorsao-admite-forma-tentada-quando-vitima-nao-se-submete-a-exigencia-.aspx",
+      "title": "Direito à saúde não inclui garantia de acesso à melhor tecnologia nem a tratamento pelo SUS no exterior",
+      "summary": "Para a Segunda Turma, o custeio de tratamento no exterior só é possível em situações excepcionais e quando fica comprovado, entre outras coisas, que não existe alternativa eficaz no Brasil.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24082026-Direito-a-saude-nao-inclui-garantia-de-acesso-a-melhor-tecnologia-nem-a-tratamento-pelo-SUS-no-exterior-.aspx",
       "date": "2026-08-24",
       "category": "Jurisprudencia"
     },
