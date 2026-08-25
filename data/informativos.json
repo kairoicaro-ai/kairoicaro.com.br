@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-25T13:10:44.386572+00:00",
+  "updated_at": "2026-08-25T18:55:47.573469+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Lei Antifacção: audiência pública continua hoje (25)",
-      "summary": "Nessa segunda (24), ministro Alexandre de Moraes ouviu contribuição de 17 participantes",
-      "url": "https://noticias.stf.jus.br/postsnoticias/lei-antifaccao-audiencia-publica-continua-hoje-25/",
+      "title": "STF retoma debates sobre a Lei Antifacção",
+      "summary": "Segundo dia de audiência pública aborda os efeitos da nova legislação no combate ao crime organizado",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-retoma-debates-sobre-a-lei-antifaccao/",
       "date": "2026-08-25",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Presidentes de tribunais participam de reunião no STF sobre atuação do Judiciário contra crime organizado",
-      "summary": "Convocado pelo ministro Alexandre de Moraes, encontro buscou discutir propostas para aprimorar a atuação da Justiça criminal diante da nova realidade do crime organizado",
-      "url": "https://noticias.stf.jus.br/postsnoticias/presidentes-de-tribunais-participam-de-reuniao-no-stf-sobre-atuacao-do-judiciario-contra-crime-organizado/",
+      "title": "STF decide que auditores fiscais de estados e municípios devem seguir subteto salarial",
+      "summary": "Por unanimidade, Tribunal considerou que Reforma Tributária não concedeu caráter nacional à carreira",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-decide-que-auditores-fiscais-de-estados-e-municipios-devem-seguir-subteto-salarial/",
       "date": "2026-08-25",
       "category": "Constitucional"
     },
@@ -44,17 +44,17 @@
     },
     {
       "tribunal": "TRT11",
-      "title": "TRT-11 alcança 100% no Ranking da Transparência do CNJ pela primeira vez",
-      "summary": "Levantamento anual do Conselho Nacional de Justiça avalia a padronização e a clareza das informações disponibilizadas à sociedade",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11642-trt-11-alcanca-100-no-ranking-da-transparencia-do-cnj-pela-primeira-vez",
+      "title": "Indisponibilidade do DEJT: pautas de julgamento e atos correlatos deverão ser publicados no DJEN",
+      "summary": "Medida excepcional foi autorizada em ato publicado na semana passada",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11644-indisponibilidade-do-dejt-pautas-de-julgamento-e-atos-correlatos-deverao-ser-publicados-no-djen",
       "date": "2026-08-25",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "Dia Regional da Conciliação: TRT-11 realiza 135 conciliações e movimenta quase R$ 3 milhões",
-      "summary": "Mutirão realizado em 3 de agosto reuniu 56 magistrados, atendeu 2.115 pessoas e gerou mais de R$ 264 mil em recolhimentos ao INSS e ao Imposto de Renda",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11641-dia-regional-da-conciliacao-trt-11-realiza-135-conciliacoes-e-movimenta-quase-r-3-milhoes",
+      "title": "TRT-11 participa de ação em Manaus em alusão ao Dia Nacional de Luta da População em Situação de Rua",
+      "summary": "Iniciativa reuniu instituições na Praça da Matriz para ampliar o acesso a serviços, direitos e cidadania",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11643-trt-11-participa-de-acao-em-manaus-em-alusao-ao-dia-nacional-de-luta-da-populacao-em-situacao-de-rua",
       "date": "2026-08-25",
       "category": "Trabalhista"
     }
