@@ -1,29 +1,37 @@
 {
-  "updated_at": "2026-08-24T18:58:21.678181+00:00",
+  "updated_at": "2026-08-25T01:51:34.770520+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Ministros do STF abrem audiência pública sobre Lei Antifacção",
-      "summary": "Conduzido pelo ministro Alexandre de Moraes, debate reúne, em dois dias, 48 expositores para subsidiar julgamento de quatro ações que questionam a norma",
-      "url": "https://noticias.stf.jus.br/postsnoticias/ministros-do-stf-abrem-audiencia-publica-sobre-lei-antifaccao/",
-      "date": "2026-08-24",
+      "title": "Presidentes de tribunais participam de reunião no STF sobre atuação do Judiciário contra crime organizado",
+      "summary": "Convocado pelo ministro Alexandre de Moraes, encontro buscou discutir propostas para aprimorar a atuação da Justiça criminal diante da nova realidade do crime organizado",
+      "url": "https://noticias.stf.jus.br/postsnoticias/presidentes-de-tribunais-participam-de-reuniao-no-stf-sobre-atuacao-do-judiciario-contra-crime-organizado/",
+      "date": "2026-08-25",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Tempo médio para baixa de processos cai pela metade no STF em seis anos",
-      "summary": "Média passou de 194 para 92 dias entre 2020 e 2025; nova série de matérias apresenta a atuação do STF por meio de números",
-      "url": "https://noticias.stf.jus.br/postsnoticias/tempo-medio-para-baixa-de-processos-cai-pela-metade-no-stf-em-seis-anos/",
-      "date": "2026-08-24",
+      "title": "STF ouve propostas e críticas sobre endurecimento de regras contra facções",
+      "summary": "Primeiro dia da audiência pública convocada pelo ministro Alexandre de Moraes reuniu representantes do sistema de Justiça, do governo e de entidades para discutir pontos da Lei Antifacção",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-ouve-propostas-e-criticas-sobre-endurecimento-de-regras-contra-faccoes/",
+      "date": "2026-08-25",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Tribunal publica regras para exame da relevância; novo regime começa a valer no próximo dia 3",
+      "summary": "Requisito da relevância da questão federal vai fortalecer o sistema de precedentes qualificados, contribuindo para a uniformização da aplicação das leis em todo o país e tornando a Justiça mais rápida.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24082026-Tribunal-publica-regras-para-exame-da-relevancia--novo-regime-comeca-a-valer-no-proximo-dia-3.aspx",
+      "date": "2026-08-25",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
       "title": "Quarta edição da Revista de Estudos Jurídicos do STJ já está disponível",
       "summary": "Quarta edição da Revista de Estudos Jurídicos do STJ já está disponível",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24082026-Quarta-edicao-da-Revista-de-Estudos-Juridicos-do-STJ-ja-esta-disponivel.aspx",
-      "date": "2026-08-24",
+      "date": "2026-08-25",
       "category": "Jurisprudencia"
     },
     {
@@ -31,31 +39,23 @@
       "title": "Para Terceira Turma, aditamento ao plano de recuperação judicial não produz efeitos retroativos",
       "summary": "Para Terceira Turma, aditamento ao plano de recuperação judicial não produz efeitos retroativos",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24082026-Para-Terceira-Turma--aditamento-ao-plano-de-recuperacao-judicial-nao-produz-efeitos-retroativos-.aspx",
-      "date": "2026-08-24",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Direito à saúde não inclui garantia de acesso à melhor tecnologia nem a tratamento pelo SUS no exterior",
-      "summary": "Para a Segunda Turma, o custeio de tratamento no exterior só é possível em situações excepcionais e quando fica comprovado, entre outras coisas, que não existe alternativa eficaz no Brasil.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24082026-Direito-a-saude-nao-inclui-garantia-de-acesso-a-melhor-tecnologia-nem-a-tratamento-pelo-SUS-no-exterior-.aspx",
-      "date": "2026-08-24",
+      "date": "2026-08-25",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
-      "title": "X Seminário Roraimense começa amanhã",
-      "summary": "Evento reúne representantes do Judiciário, do Executivo e do MPT para debater políticas de acesso ao trabalho, geração de renda e reinserção social",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11640-x-seminario-roraimense-do-trt-11-comeca-amanha",
-      "date": "2026-08-24",
+      "title": "TRT-11 alcança 100% no Ranking da Transparência do CNJ pela primeira vez",
+      "summary": "Levantamento anual do Conselho Nacional de Justiça avalia a padronização e a clareza das informações disponibilizadas à sociedade",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11642-trt-11-alcanca-100-no-ranking-da-transparencia-do-cnj-pela-primeira-vez",
+      "date": "2026-08-25",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "PJe ficará indisponível nos dias 29 e 30 de agosto",
-      "summary": "O Tribunal Regional do Trabalho da 11ª Região (AM/RR) informa que o Sistema Processo Judicial Eletrônico (PJe) ficará indisponível nos dias 29 e 30 de agosto (sábado e domingo), em razão da atualização do sistema para a versão 2.21.0, disponibilizada pelo Conselho Superior da Justiça do Trabalho (CS",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11639-pje-ficara-indisponivel-nos-dias-29-e-30-de-agosto",
-      "date": "2026-08-24",
+      "title": "Dia Regional da Conciliação: TRT-11 realiza 135 conciliações e movimenta quase R$ 3 milhões",
+      "summary": "Mutirão realizado em 3 de agosto reuniu 56 magistrados, atendeu 2.115 pessoas e gerou mais de R$ 264 mil em recolhimentos ao INSS e ao Imposto de Renda",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11641-dia-regional-da-conciliacao-trt-11-realiza-135-conciliacoes-e-movimenta-quase-r-3-milhoes",
+      "date": "2026-08-25",
       "category": "Trabalhista"
     }
   ]
