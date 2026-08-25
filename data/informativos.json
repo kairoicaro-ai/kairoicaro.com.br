@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-25T08:35:42.403968+00:00",
+  "updated_at": "2026-08-25T13:10:44.386572+00:00",
   "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Lei Antifacção: audiência pública continua hoje (25)",
+      "summary": "Nessa segunda (24), ministro Alexandre de Moraes ouviu contribuição de 17 participantes",
+      "url": "https://noticias.stf.jus.br/postsnoticias/lei-antifaccao-audiencia-publica-continua-hoje-25/",
+      "date": "2026-08-25",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "Presidentes de tribunais participam de reunião no STF sobre atuação do Judiciário contra crime organizado",
@@ -11,34 +19,26 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "STF ouve propostas e críticas sobre endurecimento de regras contra facções",
-      "summary": "Primeiro dia da audiência pública convocada pelo ministro Alexandre de Moraes reuniu representantes do sistema de Justiça, do governo e de entidades para discutir pontos da Lei Antifacção",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-ouve-propostas-e-criticas-sobre-endurecimento-de-regras-contra-faccoes/",
-      "date": "2026-08-25",
-      "category": "Constitucional"
-    },
-    {
       "tribunal": "STJ",
-      "title": "Tribunal publica regras para exame da relevância; novo regime começa a valer no próximo dia 3",
-      "summary": "Requisito da relevância da questão federal vai fortalecer o sistema de precedentes qualificados, contribuindo para a uniformização da aplicação das leis em todo o país e tornando a Justiça mais rápida.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24082026-Tribunal-publica-regras-para-exame-da-relevancia--novo-regime-comeca-a-valer-no-proximo-dia-3.aspx",
+      "title": "STJ Notícias traz decisão que manteve multa do Ibama por importação de borboletas mortas da China",
+      "summary": "STJ Notícias traz decisão que manteve multa do Ibama por importação de borboletas mortas da China",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/25082026-STJ-Noticias-traz-decisao-que-manteve-multa-do-Ibama-por-importacao-de-borboletas-mortas-da-China--.aspx",
       "date": "2026-08-25",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Quarta edição da Revista de Estudos Jurídicos do STJ já está disponível",
-      "summary": "Quarta edição da Revista de Estudos Jurídicos do STJ já está disponível",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24082026-Quarta-edicao-da-Revista-de-Estudos-Juridicos-do-STJ-ja-esta-disponivel.aspx",
+      "title": "Recurso contra multa em agravo interno dispensa depósito prévio para ser admitido",
+      "summary": "Recurso contra multa em agravo interno dispensa depósito prévio para ser admitido",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/25082026-Recurso-contra-multa-em-agravo-interno-dispensa-deposito-previo-para-ser-admitido.aspx",
       "date": "2026-08-25",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Para Terceira Turma, aditamento ao plano de recuperação judicial não produz efeitos retroativos",
-      "summary": "Para Terceira Turma, aditamento ao plano de recuperação judicial não produz efeitos retroativos",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24082026-Para-Terceira-Turma--aditamento-ao-plano-de-recuperacao-judicial-nao-produz-efeitos-retroativos-.aspx",
+      "title": "Vítima pode atuar como terceira interessada em PAD que apura assédio sexual",
+      "summary": "Vítima pode atuar como terceira interessada em PAD que apura assédio sexual",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/25082026-Vitima-pode-atuar-como-terceira-interessada-em-PAD-que-apura-assedio-sexual.aspx",
       "date": "2026-08-25",
       "category": "Jurisprudencia"
     },
