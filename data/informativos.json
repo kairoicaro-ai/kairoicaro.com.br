@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-26T08:36:56.454119+00:00",
+  "updated_at": "2026-08-26T13:15:53.550357+00:00",
   "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Confira a pauta do STF desta quarta-feira (26)",
+      "summary": "Sessão será transmitida ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quarta-feira-26-2/",
+      "date": "2026-08-26",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "STF testa acompanhamento ambiental de eventos a partir de experiência inédita",
@@ -11,50 +19,42 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "STF mantém nova unidade de perícia criminal do Maranhão, mas afasta autonomia financeira",
-      "summary": "Corte concluiu que lei maranhense que criou nova unidade na estrutura da Polícia Civil do estado não confere, na prática, autonomia orçamentária e financeira ao órgão",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-nova-unidade-de-pericia-criminal-do-maranhao-mas-afasta-autonomia-financeira/",
-      "date": "2026-08-26",
-      "category": "Constitucional"
-    },
-    {
       "tribunal": "STJ",
-      "title": "Ministro Benedito Gonçalves toma posse como corregedor nacional de Justiça",
-      "summary": "Ministro Benedito Gonçalves toma posse como corregedor nacional de Justiça",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/25082026-Ministro-Benedito-Goncalves-toma-posse-como-corregedor-nacional-de-Justica.aspx",
+      "title": "Podcast discute jurisprudência sobre visão monocular e isenção de ICMS na compra de veículos",
+      "summary": "Podcast discute jurisprudência sobre visão monocular e isenção de ICMS na compra de veículos",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26082026-Podcast-discute-jurisprudencia-sobre-visao-monocular-e-isencao-de-ICMS-na-compra-de-veiculos.aspx",
       "date": "2026-08-26",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "Alterado o horário de início e encerramento das sessões virtuais",
-      "summary": "Alterado o horário de início e encerramento das sessões virtuais",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/25082026-Alterado-o-horario-de-inicio-e-encerramento-das-sessoes-virtuais.aspx",
+      "title": "Repetição da prova não reabre oportunidade para alegar suspeição do perito judicial",
+      "summary": "Repetição da prova não reabre oportunidade para alegar suspeição do perito judicial",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26082026-Repeticao-da-prova-nao-reabre-oportunidade-para-alegar-suspeicao-do-perito-judicial.aspx",
       "date": "2026-08-26",
       "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
-      "title": "STJ Notícias traz decisão que manteve multa do Ibama por importação de borboletas mortas da China",
-      "summary": "STJ Notícias traz decisão que manteve multa do Ibama por importação de borboletas mortas da China",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/25082026-STJ-Noticias-traz-decisao-que-manteve-multa-do-Ibama-por-importacao-de-borboletas-mortas-da-China--.aspx",
+      "title": "Defensoria habilitada durante o prazo recursal tem direito à contagem em dobro desde a intimação",
+      "summary": "A Terceira Turma decidiu que a habilitação não reinicia a contagem do prazo nem limita a prerrogativa da instituição ao dobro do período que ainda restava quando ela passou a atuar no caso.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26082026-Defensoria-habilitada-durante-o-prazo-recursal-tem-direito-a-contagem-em-dobro-desde-a-intimacao.aspx",
       "date": "2026-08-26",
       "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "Semana Regional da Conciliação em Manaus movimenta R$ 4,7 milhões em acordos",
+      "summary": "Realizada pelo Cejusc-JT de 1º Grau, ação atendeu 920 pessoas e alcançou 101 acordos homologados",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11648-semana-regional-da-conciliacao-em-manaus-movimenta-r-4-7-milhoes-em-acordos",
+      "date": "2026-08-26",
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "Indisponibilidade do DEJT: pautas de julgamento e atos correlatos deverão ser publicados no DJEN",
       "summary": "Medida excepcional foi autorizada em ato publicado na semana passada",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11644-indisponibilidade-do-dejt-pautas-de-julgamento-e-atos-correlatos-deverao-ser-publicados-no-djen",
-      "date": "2026-08-26",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "TRT-11 participa de ação em Manaus em alusão ao Dia Nacional de Luta da População em Situação de Rua",
-      "summary": "Iniciativa reuniu instituições na Praça da Matriz para ampliar o acesso a serviços, direitos e cidadania",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11643-trt-11-participa-de-acao-em-manaus-em-alusao-ao-dia-nacional-de-luta-da-populacao-em-situacao-de-rua",
       "date": "2026-08-26",
       "category": "Trabalhista"
     }
