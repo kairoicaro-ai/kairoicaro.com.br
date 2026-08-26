@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-08-26T13:15:53.550357+00:00",
+  "updated_at": "2026-08-26T20:02:33.751794+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Confira a pauta do STF desta quarta-feira (26)",
-      "summary": "Sessão será transmitida ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
-      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quarta-feira-26-2/",
+      "title": "Supremo rejeita ação sobre auxílio-refeição pago a servidores gaúchos no período de férias",
+      "summary": "Ministra Cármen Lúcia considerou que há outros meios processuais cabíveis para resolver a controvérsia",
+      "url": "https://noticias.stf.jus.br/postsnoticias/supremo-rejeita-acao-sobre-auxilio-refeicao-pago-a-servidores-gauchos-no-periodo-de-ferias/",
       "date": "2026-08-26",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF testa acompanhamento ambiental de eventos a partir de experiência inédita",
-      "summary": "Mensuração de emissões e outros indicadores de sustentabilidade passam a integrar a avaliação das atividades promovidas pela Secretaria de Relações com a Sociedade",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-testa-acompanhamento-ambiental-de-eventos-a-partir-de-experiencia-inedita/",
+      "title": "STF reúne Ministério Público e Defensorias Públicas para discutir Lei Antifacção",
+      "summary": "Encontros conduzidos pelo ministro Alexandre de Moraes trataram dos impactos da nova legislação e de medidas de enfrentamento do crime organizado",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-reune-ministerio-publico-e-defensorias-publicas-para-discutir-lei-antifaccao/",
       "date": "2026-08-26",
       "category": "Constitucional"
     },
@@ -44,17 +44,17 @@
     },
     {
       "tribunal": "TRT11",
-      "title": "Semana Regional da Conciliação em Manaus movimenta R$ 4,7 milhões em acordos",
-      "summary": "Realizada pelo Cejusc-JT de 1º Grau, ação atendeu 920 pessoas e alcançou 101 acordos homologados",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11648-semana-regional-da-conciliacao-em-manaus-movimenta-r-4-7-milhoes-em-acordos",
+      "title": "TRT-11 debate implementação do Fundo de Garantia da Execução durante 6ª Reunião Ordinária de 2026 do Coleprecor",
+      "summary": "Debate apresentou o FUNGET como alternativa para assegurar o pagamento de créditos trabalhistas quando a execução não alcançar bens do devedor",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11651-trt-11-debate-implementacao-do-fundo-de-garantia-da-execucao-durante-6-reuniao-ordinaria-de-2026-do-coleprecor",
       "date": "2026-08-26",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "Indisponibilidade do DEJT: pautas de julgamento e atos correlatos deverão ser publicados no DJEN",
-      "summary": "Medida excepcional foi autorizada em ato publicado na semana passada",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11644-indisponibilidade-do-dejt-pautas-de-julgamento-e-atos-correlatos-deverao-ser-publicados-no-djen",
+      "title": "Justiça Itinerante estará presente em 11 municípios do Amazonas e dois de Roraima durante o mês de setembro",
+      "summary": "População poderá receber orientações, esclarecer dúvidas e ingressar com ações trabalhistas sem necessidade de advogado",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11650-justica-itinerante-estara-presente-em-11-municipios-do-amazonas-e-dois-de-roraima-durante-o-mes-de-setembro",
       "date": "2026-08-26",
       "category": "Trabalhista"
     }
