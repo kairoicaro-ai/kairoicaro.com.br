@@ -1,60 +1,36 @@
 {
-  "updated_at": "2026-08-27T09:47:47.933195+00:00",
-  "total": 7,
+  "updated_at": "2026-08-27T18:46:02.333572+00:00",
+  "total": 4,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF começa a discutir regras estaduais para emendas parlamentares impositivas",
-      "summary": "Sessão desta quarta (26) foi dedicada a sustentações orais",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-comeca-a-discutir-regras-estaduais-para-emendas-parlamentares-impositivas/",
+      "title": "STF abre consulta sobre proposta de súmula vinculante relacionada a acordos de não persecução penal na Justiça Militar",
+      "summary": "Interessados podem se manifestar a respeito da proposta apresentada pela Defensoria Pública da União",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-abre-consulta-publica-sobre-acordos-de-nao-persecucao-penal-na-justica-militar/",
       "date": "2026-08-27",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Plenário suspende julgamento sobre pedidos de perícias, serviços e servidores públicos pelo MP",
-      "summary": "Antes de decidir sobre limites das requisições, ministros discutem se ação reúne condições para ter o mérito analisado",
-      "url": "https://noticias.stf.jus.br/postsnoticias/plenario-suspende-julgamento-sobre-pedidos-de-pericias-servicos-e-servidores-publicos-pelo-mp/",
+      "title": "Modernização do sistema de Justiça exige diálogo e escuta, afirma Fachin",
+      "summary": "Em lançamento de livro, ministro destacou contribuições recebidas pelo grupo de estudos coordenado pelo STF e defendeu a ampliação da participação democrática",
+      "url": "https://noticias.stf.jus.br/postsnoticias/modernizacao-do-sistema-de-justica-exige-dialogo-e-escuta-afirma-fachin/",
       "date": "2026-08-27",
       "category": "Constitucional"
     },
     {
-      "tribunal": "STJ",
-      "title": "Podcast discute jurisprudência sobre visão monocular e isenção de ICMS na compra de veículos",
-      "summary": "Podcast discute jurisprudência sobre visão monocular e isenção de ICMS na compra de veículos",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26082026-Podcast-discute-jurisprudencia-sobre-visao-monocular-e-isencao-de-ICMS-na-compra-de-veiculos.aspx",
-      "date": "2026-08-27",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Repetição da prova não reabre oportunidade para alegar suspeição do perito judicial",
-      "summary": "Repetição da prova não reabre oportunidade para alegar suspeição do perito judicial",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26082026-Repeticao-da-prova-nao-reabre-oportunidade-para-alegar-suspeicao-do-perito-judicial.aspx",
-      "date": "2026-08-27",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Defensoria habilitada durante o prazo recursal tem direito à contagem em dobro desde a intimação",
-      "summary": "A Terceira Turma decidiu que a habilitação não reinicia a contagem do prazo nem limita a prerrogativa da instituição ao dobro do período que ainda restava quando ela passou a atuar no caso.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/26082026-Defensoria-habilitada-durante-o-prazo-recursal-tem-direito-a-contagem-em-dobro-desde-a-intimacao.aspx",
-      "date": "2026-08-27",
-      "category": "Jurisprudencia"
-    },
-    {
       "tribunal": "TRT11",
-      "title": "TRT-11 debate implementação do Fundo de Garantia da Execução durante 6ª Reunião Ordinária de 2026 do Coleprecor",
-      "summary": "Debate apresentou o FUNGET como alternativa para assegurar o pagamento de créditos trabalhistas quando a execução não alcançar bens do devedor",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11651-trt-11-debate-implementacao-do-fundo-de-garantia-da-execucao-durante-6-reuniao-ordinaria-de-2026-do-coleprecor",
+      "title": "\"O silêncio também é uma voz\": workshop promovido pela Ouvidoria Regional do TRT-11 debate assédio moral, sexual e à discriminação",
+      "summary": "A iniciativa reuniu servidores e comunidade para discutir formas de identificação, canais de denúncia e a importância da escuta ativa nas relações institucionais",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11655-o-silencio-tambem-e-uma-voz-workshop-promovido-pela-ouvidoria-regional-do-trt-11-debate-assedio-moral-sexual-e-a-discriminacao",
       "date": "2026-08-27",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "Justiça Itinerante estará presente em 11 municípios do Amazonas e dois de Roraima durante o mês de setembro",
-      "summary": "População poderá receber orientações, esclarecer dúvidas e ingressar com ações trabalhistas sem necessidade de advogado",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11650-justica-itinerante-estara-presente-em-11-municipios-do-amazonas-e-dois-de-roraima-durante-o-mes-de-setembro",
+      "title": "TRT-11 disponibiliza acesso à plataforma que consulta normas da Organização Internacional do Trabalho",
+      "summary": "Plataforma LaborNexus está disponível no portal do Tribunal para consulta de magistrados, servidores e demais interessados",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11654-trt-11-disponibiliza-acesso-a-plataforma-que-consulta-normas-da-organizacao-internacional-do-trabalho-gratuitamente",
       "date": "2026-08-27",
       "category": "Trabalhista"
     }

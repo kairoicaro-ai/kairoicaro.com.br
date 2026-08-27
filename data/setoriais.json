@@ -1,7 +1,47 @@
 {
-  "updated_at": "2026-08-26T08:36:59.384176+00:00",
+  "updated_at": "2026-08-27T18:46:05.613484+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "27.ago.202617º Encontro Anual da AASP começa hoje com ministros e especialistasAté sábado, 29/8, evento debate IA, cibersegurança, reforma tributária, relações de trabalho e provas eletrônicas.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-27",
+      "url": "https://www.migalhas.com.br/quentes/463362/17-encontro-anual-da-aasp-comeca-hoje-com-ministros-e-especialistas"
+    },
+    {
+      "setor": "empresarial",
+      "title": "27.ago.2026PUC-SP lança pós-graduação 100% digital em DireitoNova frente da universidade, a PUC-SP Digital, é desenvolvida em parceria com o UOL EdTech e estreia com dez cursos de pós-graduação na área jurídica.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-27",
+      "url": "https://www.migalhas.com.br/quentes/463352/puc-sp-lanca-pos-graduacao-100-digital-em-direito"
+    },
+    {
+      "setor": "empresarial",
+      "title": "27.ago.2026OAB/MG amplia benefícios e serviços para a advocacia mineira em agostoNovas parcerias oferecem serviços de saúde, inteligência artificial e crédito, além de ações voltadas à atualização e valorização da advocacia.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-27",
+      "url": "https://www.migalhas.com.br/quentes/463334/oab-mg-amplia-beneficios-e-servicos-para-a-advocacia-mineira-em-agosto"
+    },
+    {
+      "setor": "empresarial",
+      "title": "27.ago.2026OAB/SP realiza 3ª Conferência Estadual de Direito e Agronegócio em Ribeirão PretoA 3ª edição terá dois dias de programação para discutir os desafios do agronegócio e o papel do Direito na construção de um ambiente mais seguro para negócios.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-27",
+      "url": "https://www.migalhas.com.br/quentes/463357/oab-sp-realiza-3-conferencia-estadual-de-direito-e-agronegocio-em-rp"
+    },
+    {
+      "setor": "empresarial",
+      "title": "27.ago.2026Caso Oi: Especialistas avaliam limites da recuperação judicialArmin Lohbauer explica que a decisão do TJ/RJ encerra a segunda recuperação judicial e inaugura uma nova etapa para a Oi e seus credores.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-08-27",
+      "url": "https://www.migalhas.com.br/quentes/463363/caso-oi-especialistas-avaliam-limites-da-recuperacao-judicial"
+    },
     {
       "setor": "empresarial",
       "title": "25.ago.2026Acrobata que sofreu 11 fraturas em show cobra R$ 84 milhões do Cirque du SoleilArtista russa afirma ter sofrido 11 fraturas e sequelas permanentes após cair de aproximadamente 4,5 metros durante apresentação nos Estados Unidos.",
@@ -81,46 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-08-25",
       "url": "https://www.migalhas.com.br/quentes/463060/presidente-do-stm-debate-os-20-anos-da-lei-maria-da-penha-na-oab-rj"
-    },
-    {
-      "setor": "empresarial",
-      "title": "24.ago.2026STJ afasta arbitragem contra seguradora sub-rogada Corte entendeu que cláusula arbitral não vincula seguradora em seguro amplo de riscos operacionais sem ciência e anuência à convenção.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-25",
-      "url": "https://www.migalhas.com.br/quentes/463064/stj-afasta-arbitragem-contra-seguradora-sub-rogada"
-    },
-    {
-      "setor": "ambiental",
-      "title": "24.ago.2026Juíza presume vagas em concurso da PM/PB e candidato poderá pedir nomeaçãoEstado não apresentou integralmente os dados sobre cargos vagos durante o certame, o que levou a juíza a inverter o ônus da prova e presumir a existência de vagas suficientes para alcançar a classificação do candidato.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-25",
-      "url": "https://www.migalhas.com.br/quentes/463042/juiza-presume-vaga-em-concurso-da-pm-e-candidato-podera-pedir-nomeacao"
-    },
-    {
-      "setor": "empresarial",
-      "title": "23.ago.2026TJ/MG reduz retenção em distrato de multipropriedade para 25%Colegiado considerou que entrega do empreendimento extinguiu patrimônio de afetação e afastou percentual previsto para esse regime.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-24",
-      "url": "https://www.migalhas.com.br/quentes/462837/tj-mg-reduz-retencao-em-distrato-de-multipropriedade-para-25"
-    },
-    {
-      "setor": "empresarial",
-      "title": "23.ago.20262ª Migalhas Run movimenta Ribeirão Preto com esporte e integraçãoEvento realizado neste domingo, 23, reuniu toda comunidade em provas de corrida e caminhada, com ações voltadas à saúde e ao bem-estar.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-24",
-      "url": "https://www.migalhas.com.br/quentes/462976/2-migalhas-run-movimenta-ribeirao-preto-com-esporte-e-integracao"
-    },
-    {
-      "setor": "empresarial",
-      "title": "23.ago.2026Advogado alerta para alta de recuperações judiciais no setor hospitalarSegundo causídico, custos elevados, atrasos nos recebimentos e endividamento pressionam o caixa de hospitais e ampliam a busca por reestruturação financeira.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-24",
-      "url": "https://www.migalhas.com.br/quentes/462740/advogado-destaca-alta-de-recuperacoes-judiciais-no-setor-hospitalar"
     }
   ]
 }
