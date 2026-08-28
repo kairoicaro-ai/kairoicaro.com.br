@@ -1,22 +1,38 @@
 {
-  "updated_at": "2026-08-28T11:22:55.167330+00:00",
+  "updated_at": "2026-08-28T19:50:43.594033+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF começa a discutir limites para acesso a dados sigilosos em investigações",
-      "summary": "Ações tratam de acesso a registros de usuários de internet e prerrogativa de delegados de requisitar perícias, documentos, informações e dados necessários à apuração dos fatos",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-comeca-a-discutir-limites-para-acesso-a-dados-sigilosos-em-investigacoes/",
+      "title": "STF vai decidir onde autarquias podem cobrar dívida",
+      "summary": "Dono de rede de postos de combustível de Caxias do Sul (RS) questiona cobrança do Cade no Distrito Federal",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-vai-decidir-onde-autarquias-podem-cobrar-divida/",
       "date": "2026-08-28",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF mantém regras sobre cargos em comissão no Ministério Público de Pernambuco",
-      "summary": "Decisão afastou desproporção entre cargos efetivos e comissionados e considerou as atribuições previstas nas normas compatíveis com a Constituição",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-regras-sobre-cargos-em-comissao-no-ministerio-publico-de-pernambuco/",
+      "title": "Confira os destaques do Plenário Virtual",
+      "summary": "Sessão começou às 11h desta sexta-feira (28) e termina no dia 4/9, às 23h59",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confira-os-destaques-do-plenario-virtual-23/",
       "date": "2026-08-28",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Ministra Isabel Gallotti assume presidência da Quarta Turma para o próximo biênio",
+      "summary": "Ministra Isabel Gallotti assume presidência da Quarta Turma para o próximo biênio",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28082026-Ministra-Isabel-Gallotti-assume-presidencia-da-Quarta-Turma-para-o-proximo-bienio.aspx",
+      "date": "2026-08-28",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Repetitivo discute quais ações permitem transferências voluntárias para ente com pendências fiscais",
+      "summary": "Repetitivo discute quais ações permitem transferências voluntárias para ente com pendências fiscais",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28082026-Repetitivo-discute-quais-acoes-permitem-transferencias-voluntarias-para-ente-com-pendencias-fiscais.aspx",
+      "date": "2026-08-28",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
@@ -27,34 +43,18 @@
       "category": "Jurisprudencia"
     },
     {
-      "tribunal": "STJ",
-      "title": "Bem de família não perde proteção contra penhora só porque tem alto valor no mercado imobiliário",
-      "summary": "Para a Terceira Turma, as hipóteses legais de exceção à impenhorabilidade não podem ser ampliadas pelo Poder Judiciário com base no valor, no padrão ou em outras características do imóvel.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28082026-Bem-de-familia-nao-perde-protecao-contra-penhora-so-porque-tem-alto-valor-no-mercado-imobiliario-.aspx",
-      "date": "2026-08-28",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "STJ divulga relatório técnico da audiência pública sobre fracking",
-      "summary": "STJ divulga relatório técnico da audiência pública sobre fracking",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27082026-STJ-divulga-relatorio-tecnico-da-audiencia-publica-sobre-fracking.aspx",
-      "date": "2026-08-28",
-      "category": "Jurisprudencia"
-    },
-    {
       "tribunal": "TRT11",
-      "title": "Nota da Presidência",
-      "summary": "",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11657-nota-da-presidencia",
+      "title": "Magistrados do TRT-11 recebem homenagem da OAB-RR por atuação em defesa da Justiça e da advocacia",
+      "summary": "Seis magistrados da Justiça do Trabalho foram reconhecidos durante solenidade realizada na sede da OAB/RR",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11663-magistrados-do-trt-11-recebem-homenagem-da-oab-rr-por-atuacao-em-defesa-da-justica-e-da-advocacia",
       "date": "2026-08-28",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "Justiça do Trabalho amplia ações itinerantes no Brasil e prepara próxima edição em Pacaraima (RR)",
-      "summary": "Atendimentos levam benefícios a comunidades diversas em todo o território nacional. Indígenas, ribeirinhas, quilombolas e outras com difícil acesso a serviços do Estado são atendidas",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11656-justica-do-trabalho-amplia-acoes-itinerantes-no-brasil-e-prepara-proxima-edicao-em-pacaraima-rr",
+      "title": "Visita institucional ao Projeto Renascer e à Penitenciária Agrícola de Monte Cristo integra programação do X Seminário Roraimense",
+      "summary": "Atividade aproximou magistrados e servidores da realidade do sistema prisional e destacou iniciativas de qualificação profissional e reinserção social de pessoas privadas de liberdade",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11662-visita-institucional-ao-projeto-renascer-e-a-penitenciaria-agricola-de-monte-cristo-integra-programacao-do-x-seminario-roraimense",
       "date": "2026-08-28",
       "category": "Trabalhista"
     }
