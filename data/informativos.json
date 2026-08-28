@@ -1,61 +1,61 @@
 {
-  "updated_at": "2026-08-27T22:15:35.012405+00:00",
+  "updated_at": "2026-08-28T11:22:55.167330+00:00",
   "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "STF começa a discutir limites para acesso a dados sigilosos em investigações",
+      "summary": "Ações tratam de acesso a registros de usuários de internet e prerrogativa de delegados de requisitar perícias, documentos, informações e dados necessários à apuração dos fatos",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-comeca-a-discutir-limites-para-acesso-a-dados-sigilosos-em-investigacoes/",
+      "date": "2026-08-28",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "STF mantém regras sobre cargos em comissão no Ministério Público de Pernambuco",
       "summary": "Decisão afastou desproporção entre cargos efetivos e comissionados e considerou as atribuições previstas nas normas compatíveis com a Constituição",
       "url": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-regras-sobre-cargos-em-comissao-no-ministerio-publico-de-pernambuco/",
-      "date": "2026-08-27",
+      "date": "2026-08-28",
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "STF abre consulta sobre proposta de súmula vinculante relacionada a acordos de não persecução penal na Justiça Militar",
-      "summary": "Interessados podem se manifestar a respeito da proposta apresentada pela Defensoria Pública da União",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-abre-consulta-publica-sobre-acordos-de-nao-persecucao-penal-na-justica-militar/",
-      "date": "2026-08-27",
-      "category": "Constitucional"
+      "tribunal": "STJ",
+      "title": "Quinta Turma afasta Selic e mantém atualização pela TR em restituição de valores apreendidos",
+      "summary": "Quinta Turma afasta Selic e mantém atualização pela TR em restituição de valores apreendidos",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28082026-Quinta-Turma-afasta-Selic-e-mantem-atualizacao-pela-TR-em-restituicao-de-valores-apreendidos.aspx",
+      "date": "2026-08-28",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Bem de família não perde proteção contra penhora só porque tem alto valor no mercado imobiliário",
+      "summary": "Para a Terceira Turma, as hipóteses legais de exceção à impenhorabilidade não podem ser ampliadas pelo Poder Judiciário com base no valor, no padrão ou em outras características do imóvel.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28082026-Bem-de-familia-nao-perde-protecao-contra-penhora-so-porque-tem-alto-valor-no-mercado-imobiliario-.aspx",
+      "date": "2026-08-28",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
       "title": "STJ divulga relatório técnico da audiência pública sobre fracking",
       "summary": "STJ divulga relatório técnico da audiência pública sobre fracking",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27082026-STJ-divulga-relatorio-tecnico-da-audiencia-publica-sobre-fracking.aspx",
-      "date": "2026-08-27",
+      "date": "2026-08-28",
       "category": "Jurisprudencia"
     },
     {
-      "tribunal": "STJ",
-      "title": "Rádio Decidendi discute aplicação de agravante de gênero com Lei Maria da Penha (Tema 1.197)",
-      "summary": "Rádio Decidendi discute aplicação de agravante de gênero com Lei Maria da Penha (Tema 1.197)",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27082026-Radio-Decidendi-discute-aplicacao-de-agravante-de-genero-com-Lei-Maria-da-Penha--Tema-1-197-.aspx",
-      "date": "2026-08-27",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Medida protetiva não pode impor à vítima de crime sexual o ônus de se afastar do acusado",
-      "summary": "Medida protetiva não pode impor à vítima de crime sexual o ônus de se afastar do acusado",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/27082026-Medida-protetiva-nao-pode-impor-a-vitima-de-crime-sexual-o-onus-de-se-afastar-do-acusado.aspx",
-      "date": "2026-08-27",
-      "category": "Jurisprudencia"
+      "tribunal": "TRT11",
+      "title": "Nota da Presidência",
+      "summary": "",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11657-nota-da-presidencia",
+      "date": "2026-08-28",
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "Justiça do Trabalho amplia ações itinerantes no Brasil e prepara próxima edição em Pacaraima (RR)",
       "summary": "Atendimentos levam benefícios a comunidades diversas em todo o território nacional. Indígenas, ribeirinhas, quilombolas e outras com difícil acesso a serviços do Estado são atendidas",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11656-justica-do-trabalho-amplia-acoes-itinerantes-no-brasil-e-prepara-proxima-edicao-em-pacaraima-rr",
-      "date": "2026-08-27",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "\"O silêncio também é uma voz\": workshop promovido pela Ouvidoria Regional do TRT-11 debate assédio moral, sexual e à discriminação",
-      "summary": "A iniciativa reuniu servidores e comunidade para discutir formas de identificação, canais de denúncia e a importância da escuta ativa nas relações institucionais",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11655-o-silencio-tambem-e-uma-voz-workshop-promovido-pela-ouvidoria-regional-do-trt-11-debate-assedio-moral-sexual-e-a-discriminacao",
-      "date": "2026-08-27",
+      "date": "2026-08-28",
       "category": "Trabalhista"
     }
   ]
