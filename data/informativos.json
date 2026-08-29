@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-29T16:43:01.679408+00:00",
-  "total": 3,
+  "updated_at": "2026-08-29T20:54:55.297715+00:00",
+  "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Poder de requisição de membros do MP e de delegados de polícia são destaques no Supremo na Semana",
+      "summary": "Episódio #200 do podcast está disponível nas principais plataformas de áudio e no YouTube",
+      "url": "https://noticias.stf.jus.br/postsnoticias/165771/",
+      "date": "2026-08-29",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "Confira os destaques da pauta do Plenário para setembro",
@@ -9,6 +17,30 @@
       "url": "https://noticias.stf.jus.br/postsnoticias/confira-os-destaques-da-pauta-do-plenario-para-setembro/",
       "date": "2026-08-29",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Moura Ribeiro, Regina Helena Costa e Rogerio Schietti Cruz completam 13 anos de STJ",
+      "summary": "Moura Ribeiro, Regina Helena Costa e Rogerio Schietti Cruz completam 13 anos de STJ",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28082026-Moura-Ribeiro--Regina-Helena-Costa-e-Rogerio-Schietti-Cruz-completam-13-anos-de-STJ.aspx",
+      "date": "2026-08-29",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Ministra Isabel Gallotti assume presidência da Quarta Turma para o próximo biênio",
+      "summary": "Ministra Isabel Gallotti assume presidência da Quarta Turma para o próximo biênio",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28082026-Ministra-Isabel-Gallotti-assume-presidencia-da-Quarta-Turma-para-o-proximo-bienio.aspx",
+      "date": "2026-08-29",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Repetitivo discute quais ações permitem transferências voluntárias para ente com pendências fiscais",
+      "summary": "Repetitivo discute quais ações permitem transferências voluntárias para ente com pendências fiscais",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28082026-Repetitivo-discute-quais-acoes-permitem-transferencias-voluntarias-para-ente-com-pendencias-fiscais.aspx",
+      "date": "2026-08-29",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
