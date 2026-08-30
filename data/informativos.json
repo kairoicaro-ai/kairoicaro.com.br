@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T11:54:24.055893+00:00",
+  "updated_at": "2026-08-30T13:28:47.619541+00:00",
   "total": 7,
   "items": [
     {
@@ -20,6 +20,14 @@
     },
     {
       "tribunal": "STJ",
+      "title": "Relevância da questão federal: o que muda na atuação do STJ com o novo sistema",
+      "summary": "Considerado um marco histórico para devolver o STJ à missão constitucional de corte de precedentes, o sistema da relevância trará diversas mudanças na dinâmica de julgamentos do tribunal.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30082026-Relevancia-da-questao-federal-o-que-muda-na-atuacao-do-STJ-com-o-novo-sistema.aspx",
+      "date": "2026-08-30",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
       "title": "Moura Ribeiro, Regina Helena Costa e Rogerio Schietti Cruz completam 13 anos de STJ",
       "summary": "Moura Ribeiro, Regina Helena Costa e Rogerio Schietti Cruz completam 13 anos de STJ",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28082026-Moura-Ribeiro--Regina-Helena-Costa-e-Rogerio-Schietti-Cruz-completam-13-anos-de-STJ.aspx",
@@ -31,14 +39,6 @@
       "title": "Ministra Isabel Gallotti assume presidência da Quarta Turma para o próximo biênio",
       "summary": "Ministra Isabel Gallotti assume presidência da Quarta Turma para o próximo biênio",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28082026-Ministra-Isabel-Gallotti-assume-presidencia-da-Quarta-Turma-para-o-proximo-bienio.aspx",
-      "date": "2026-08-30",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Repetitivo discute quais ações permitem transferências voluntárias para ente com pendências fiscais",
-      "summary": "Repetitivo discute quais ações permitem transferências voluntárias para ente com pendências fiscais",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28082026-Repetitivo-discute-quais-acoes-permitem-transferencias-voluntarias-para-ente-com-pendencias-fiscais.aspx",
       "date": "2026-08-30",
       "category": "Jurisprudencia"
     },
