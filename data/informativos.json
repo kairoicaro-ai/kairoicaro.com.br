@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-08-31T05:33:42.775053+00:00",
+  "updated_at": "2026-08-31T13:49:06.149089+00:00",
   "total": 7,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Ações originárias se tornam maioria no acervo do STF",
+      "summary": "Com 21 mil processos em tramitação, estoque está abaixo do registrado há três décadas",
+      "url": "https://noticias.stf.jus.br/postsnoticias/acervo-do-stf-muda-de-perfil-e-acoes-originarias-passam-a-ser-maioria/",
+      "date": "2026-08-31",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "Poder de requisição de membros do MP e de delegados de polícia são destaques no Supremo na Semana",
@@ -11,34 +19,26 @@
       "category": "Constitucional"
     },
     {
-      "tribunal": "STF",
-      "title": "Confira os destaques da pauta do Plenário para setembro",
-      "summary": "Julgamentos previstos envolvem temas como licença-maternidade, planos de saúde, tributos, acesso a dados sigilosos e recusa de transfusão de sangue",
-      "url": "https://noticias.stf.jus.br/postsnoticias/confira-os-destaques-da-pauta-do-plenario-para-setembro/",
+      "tribunal": "STJ",
+      "title": "Rejeição de desconsideração da personalidade jurídica sem impacto no crédito autoriza honorários por equidade",
+      "summary": "Rejeição de desconsideração da personalidade jurídica sem impacto no crédito autoriza honorários por equidade",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31082026-Rejeicao-de-desconsideracao-da-personalidade-juridica-sem-impacto-no-credito-autoriza-honorarios-por-equidade.aspx",
       "date": "2026-08-31",
-      "category": "Constitucional"
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Terceira Seção define interpretação restritiva do conceito de organização criminosa na execução penal",
+      "summary": "A presa condenada por associação criminosa ou associação para o tráfico não pode sofrer, na avaliação dos requisitos da progressão penal, a limitação que a lei impõe às que integraram organização criminosa.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31082026-Terceira-Secao-define-interpretacao-restritiva-do-conceito-de-organizacao-criminosa-na-execucao-penal.aspx",
+      "date": "2026-08-31",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
       "title": "Relevância da questão federal: o que muda na atuação do STJ com o novo sistema",
       "summary": "Considerado um marco histórico para devolver o STJ à missão constitucional de corte de precedentes, o sistema da relevância trará diversas mudanças na dinâmica de julgamentos do tribunal.",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30082026-Relevancia-da-questao-federal-o-que-muda-na-atuacao-do-STJ-com-o-novo-sistema.aspx",
-      "date": "2026-08-31",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Moura Ribeiro, Regina Helena Costa e Rogerio Schietti Cruz completam 13 anos de STJ",
-      "summary": "Moura Ribeiro, Regina Helena Costa e Rogerio Schietti Cruz completam 13 anos de STJ",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28082026-Moura-Ribeiro--Regina-Helena-Costa-e-Rogerio-Schietti-Cruz-completam-13-anos-de-STJ.aspx",
-      "date": "2026-08-31",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Ministra Isabel Gallotti assume presidência da Quarta Turma para o próximo biênio",
-      "summary": "Ministra Isabel Gallotti assume presidência da Quarta Turma para o próximo biênio",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/28082026-Ministra-Isabel-Gallotti-assume-presidencia-da-Quarta-Turma-para-o-proximo-bienio.aspx",
       "date": "2026-08-31",
       "category": "Jurisprudencia"
     },
