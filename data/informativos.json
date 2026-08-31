@@ -1,22 +1,38 @@
 {
-  "updated_at": "2026-08-31T15:46:21.844845+00:00",
+  "updated_at": "2026-08-31T22:50:04.480775+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Nota de pesar pelo falecimento do jornalista Carlos Monforte",
-      "summary": "Presidente do STF, ministro Edson Fachin, lamentou a perda para o jornalismo brasileiro",
-      "url": "https://noticias.stf.jus.br/postsnoticias/nota-de-pesar-pelo-falecimento-do-jornalista-carlos-monforte/",
+      "title": "Associação questiona falta de regra nacional para garantir presença de pessoas com deficiência no serviço público",
+      "summary": "ANAPcD sustenta que compromisso constitucional não se esgota com reserva de vagas em concursos e defende adoção de medidas para produzir presença efetiva nos quadros da administração",
+      "url": "https://noticias.stf.jus.br/postsnoticias/associacao-questiona-falta-de-regra-nacional-para-garantir-presenca-de-pessoas-com-deficiencia-no-servico-publico/",
       "date": "2026-08-31",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Ações originárias se tornam maioria no acervo do STF",
-      "summary": "Com 21 mil processos em tramitação, estoque está abaixo do registrado há três décadas",
-      "url": "https://noticias.stf.jus.br/postsnoticias/acervo-do-stf-muda-de-perfil-e-acoes-originarias-passam-a-ser-maioria/",
+      "title": "STF publica Inventário de Emissões de Gases de Efeito Estufa de 2025",
+      "summary": "Levantamento aprimora diagnóstico das emissões do Supremo e orienta ações de descarbonização",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-publica-inventario-de-emissoes-de-gases-de-efeito-estufa-de-2025/",
       "date": "2026-08-31",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Relator mantém prisão preventiva de tenente-coronel da PM de São Paulo acusado de matar esposa",
+      "summary": "Relator mantém prisão preventiva de tenente-coronel da PM de São Paulo acusado de matar esposa",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31082026-Relator-mantem-prisao-preventiva-de-tenente-coronel-da-PM-de-Sao-Paulo-acusado-de-matar-esposa.aspx",
+      "date": "2026-08-31",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Ministros discutem aplicação do filtro da relevância em encontro na FGV Justiça",
+      "summary": "Ministros discutem aplicação do filtro da relevância em encontro na FGV Justiça",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31082026-Ministros-discutem-aplicacao-do-criterio-da-relevancia-em-encontro-na-FGV-Justica.aspx",
+      "date": "2026-08-31",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
@@ -27,34 +43,18 @@
       "category": "Jurisprudencia"
     },
     {
-      "tribunal": "STJ",
-      "title": "Terceira Seção define interpretação restritiva do conceito de organização criminosa na execução penal",
-      "summary": "A presa condenada por associação criminosa ou associação para o tráfico não pode sofrer, na avaliação dos requisitos da progressão penal, a limitação que a lei impõe às que integraram organização criminosa.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/31082026-Terceira-Secao-define-interpretacao-restritiva-do-conceito-de-organizacao-criminosa-na-execucao-penal.aspx",
+      "tribunal": "TRT11",
+      "title": "Pedreiro defende a própria causa no TRT-11 e consegue reconhecimento de vínculo trabalhista em Manaus",
+      "summary": "Pela primeira vez, um trabalhador fez sustentação oral na Segunda Turma do TRT-11 usando o direito garantido pelo artigo 791 da CLT, em caso de reconhecimento de vínculo empregatício com construtora",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11667-pedreiro-defende-a-propria-causa-no-trt-11-e-consegue-reconhecimento-de-vinculo-trabalhista-em-manaus",
       "date": "2026-08-31",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Relevância da questão federal: o que muda na atuação do STJ com o novo sistema",
-      "summary": "Considerado um marco histórico para devolver o STJ à missão constitucional de corte de precedentes, o sistema da relevância trará diversas mudanças na dinâmica de julgamentos do tribunal.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/30082026-Relevancia-da-questao-federal-o-que-muda-na-atuacao-do-STJ-com-o-novo-sistema.aspx",
-      "date": "2026-08-31",
-      "category": "Jurisprudencia"
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "Magistrados do TRT-11 recebem homenagem da OAB-RR por atuação em defesa da Justiça e da advocacia",
       "summary": "Seis magistrados da Justiça do Trabalho foram reconhecidos durante solenidade realizada na sede da OAB/RR",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11663-magistrados-do-trt-11-recebem-homenagem-da-oab-rr-por-atuacao-em-defesa-da-justica-e-da-advocacia",
-      "date": "2026-08-31",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Visita institucional ao Projeto Renascer e à Penitenciária Agrícola de Monte Cristo integra programação do X Seminário Roraimense",
-      "summary": "Atividade aproximou magistrados e servidores da realidade do sistema prisional e destacou iniciativas de qualificação profissional e reinserção social de pessoas privadas de liberdade",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11662-visita-institucional-ao-projeto-renascer-e-a-penitenciaria-agricola-de-monte-cristo-integra-programacao-do-x-seminario-roraimense",
       "date": "2026-08-31",
       "category": "Trabalhista"
     }
