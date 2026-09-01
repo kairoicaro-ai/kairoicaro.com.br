@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-09-01T16:39:32.436983+00:00",
+  "updated_at": "2026-09-01T21:01:45.119433+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF debate impactos da inteligência artificial e desafios da governança judicial",
-      "summary": "Ministros Gilmar Mendes e André Mendonça participaram da conferência e mesa temática do II Seminário Brasil-Itália da Rede Internacional sobre Sistemas de Justiça e Democracia",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-debate-impactos-da-inteligencia-artificial-e-desafios-da-governanca-judicial/",
+      "title": "Associação questiona no STF submissão de receitas próprias da DPU aos limites do arcabouço fiscal",
+      "summary": "Para a Anadef, medida compromete autonomia financeira da instituição e pode afetar a assistência jurídica à população vulnerável",
+      "url": "https://noticias.stf.jus.br/postsnoticias/associacao-questiona-no-stf-submissao-de-receitas-proprias-da-dpu-aos-limites-do-arcabouco-fiscal/",
       "date": "2026-09-01",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF mantém competência do INSS para fixar teto de juros do crédito consignado",
-      "summary": "Para o colegiado, limitação do teto é mecanismo de proteção do consumidor vulnerável",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-competencia-do-inss-para-fixar-teto-de-juros-do-credito-consignado/",
+      "title": "STF limita porte de arma na Polícia Científica do Espírito Santo a peritos criminais",
+      "summary": "Estado não poderia ampliar autorização prevista na legislação federal para outras funções da Polícia Científica",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-limita-porte-de-arma-na-policia-cientifica-do-espirito-santo-a-peritos-criminais/",
       "date": "2026-09-01",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Após concluir gestão como presidente do STJ, ministro Herman Benjamin estreia na Primeira Turma",
+      "summary": "Após concluir gestão como presidente do STJ, ministro Herman Benjamin estreia na Primeira Turma",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01092026-Apos-concluir-gestao-como-presidente-do-STJ--ministro-Herman-Benjamin-estreia-na-Primeira-Turma-.aspx",
+      "date": "2026-09-01",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
@@ -35,26 +43,18 @@
       "category": "Jurisprudencia"
     },
     {
-      "tribunal": "STJ",
-      "title": "Impenhorabilidade da pequena propriedade rural não se estende automaticamente aos seus rendimentos",
-      "summary": "A ministra Nancy Andrighi, relatora do recurso, afirmou que é possível a penhora dos frutos de bem impenhorável, mas isso deve ser ponderado “à luz das exceções protetivas do mínimo existencial”.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01092026-Impenhorabilidade-da-pequena-propriedade-rural-nao-se-estende-automaticamente-aos-seus-rendimentos.aspx",
+      "tribunal": "TRT11",
+      "title": "Seminário no TRT-11 reúne especialistas para discutir trabalho decente e dignidade da pessoa humana",
+      "summary": "No evento foram abordados temas relacionados ao trabalho escravo, tráfico de pessoas e às novas formas de trabalho",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11669-seminario-no-trt-11-reune-especialistas-para-discutir-trabalho-decente-e-dignidade-da-pessoa-humana",
       "date": "2026-09-01",
-      "category": "Jurisprudencia"
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "TRT-11 promove ações da campanha “Onde Tem Inclusão, Não Tem Assédio” em quatro municípios do Amazonas",
       "summary": "Novas edições da iniciativa terão como eixo o enfrentamento ao capacitismo e serão realizadas em Codajás, Manicoré, Apuí e Manaus",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11668-trt-11-promove-acoes-da-campanha-onde-tem-inclusao-nao-tem-assedio-enfrentando-o-capacitismo-em-quatro-municipios-do-amazonas",
-      "date": "2026-09-01",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Pedreiro defende a própria causa no TRT-11 e consegue reconhecimento de vínculo trabalhista em Manaus",
-      "summary": "Pela primeira vez, um trabalhador fez sustentação oral na Segunda Turma do TRT-11 usando o direito garantido pelo artigo 791 da CLT, em caso de reconhecimento de vínculo empregatício com construtora",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11667-pedreiro-defende-a-propria-causa-no-trt-11-e-consegue-reconhecimento-de-vinculo-trabalhista-em-manaus",
       "date": "2026-09-01",
       "category": "Trabalhista"
     }
