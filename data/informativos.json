@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-09-01T12:59:33.562797+00:00",
+  "updated_at": "2026-09-01T16:39:32.436983+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Presidente do STF abre seminário que discute desafios do uso da IA no Judiciário do Brasil e da Itália",
-      "summary": "Segundo Fachin, resposta aos desafios não pode paralisar a inovação; ela deve ser feita por meio de uma “experimentação supervisionada”",
-      "url": "https://noticias.stf.jus.br/postsnoticias/presidente-do-stf-abre-seminario-que-discute-desafios-do-uso-da-ia-no-judiciario-do-brasil-e-da-italia/",
+      "title": "STF debate impactos da inteligência artificial e desafios da governança judicial",
+      "summary": "Ministros Gilmar Mendes e André Mendonça participaram da conferência e mesa temática do II Seminário Brasil-Itália da Rede Internacional sobre Sistemas de Justiça e Democracia",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-debate-impactos-da-inteligencia-artificial-e-desafios-da-governanca-judicial/",
       "date": "2026-09-01",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Associação questiona falta de regra nacional para garantir presença de pessoas com deficiência no serviço público",
-      "summary": "ANAPcD sustenta que compromisso constitucional não se esgota com reserva de vagas em concursos e defende adoção de medidas para produzir presença efetiva nos quadros da administração",
-      "url": "https://noticias.stf.jus.br/postsnoticias/associacao-questiona-falta-de-regra-nacional-para-garantir-presenca-de-pessoas-com-deficiencia-no-servico-publico/",
+      "title": "STF mantém competência do INSS para fixar teto de juros do crédito consignado",
+      "summary": "Para o colegiado, limitação do teto é mecanismo de proteção do consumidor vulnerável",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-competencia-do-inss-para-fixar-teto-de-juros-do-credito-consignado/",
       "date": "2026-09-01",
       "category": "Constitucional"
     },
@@ -44,17 +44,17 @@
     },
     {
       "tribunal": "TRT11",
-      "title": "Pedreiro defende a própria causa no TRT-11 e consegue reconhecimento de vínculo trabalhista em Manaus",
-      "summary": "Pela primeira vez, um trabalhador fez sustentação oral na Segunda Turma do TRT-11 usando o direito garantido pelo artigo 791 da CLT, em caso de reconhecimento de vínculo empregatício com construtora",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11667-pedreiro-defende-a-propria-causa-no-trt-11-e-consegue-reconhecimento-de-vinculo-trabalhista-em-manaus",
+      "title": "TRT-11 promove ações da campanha “Onde Tem Inclusão, Não Tem Assédio” em quatro municípios do Amazonas",
+      "summary": "Novas edições da iniciativa terão como eixo o enfrentamento ao capacitismo e serão realizadas em Codajás, Manicoré, Apuí e Manaus",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11668-trt-11-promove-acoes-da-campanha-onde-tem-inclusao-nao-tem-assedio-enfrentando-o-capacitismo-em-quatro-municipios-do-amazonas",
       "date": "2026-09-01",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "Magistrados do TRT-11 recebem homenagem da OAB-RR por atuação em defesa da Justiça e da advocacia",
-      "summary": "Seis magistrados da Justiça do Trabalho foram reconhecidos durante solenidade realizada na sede da OAB/RR",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11663-magistrados-do-trt-11-recebem-homenagem-da-oab-rr-por-atuacao-em-defesa-da-justica-e-da-advocacia",
+      "title": "Pedreiro defende a própria causa no TRT-11 e consegue reconhecimento de vínculo trabalhista em Manaus",
+      "summary": "Pela primeira vez, um trabalhador fez sustentação oral na Segunda Turma do TRT-11 usando o direito garantido pelo artigo 791 da CLT, em caso de reconhecimento de vínculo empregatício com construtora",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11667-pedreiro-defende-a-propria-causa-no-trt-11-e-consegue-reconhecimento-de-vinculo-trabalhista-em-manaus",
       "date": "2026-09-01",
       "category": "Trabalhista"
     }
