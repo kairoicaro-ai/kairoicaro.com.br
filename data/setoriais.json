@@ -1,7 +1,47 @@
 {
-  "updated_at": "2026-08-31T15:46:24.544144+00:00",
+  "updated_at": "2026-09-01T12:59:35.598598+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "1.set.2026Filtro de relevância marca \"renascer\" do STJ e abre nova era, dizem juristasNovo requisito para admissão do recurso especial começa a valer nesta quinta-feira, 3, e deve alterar a dinâmica de atuação da Corte e dos advogados.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-01",
+      "url": "https://www.migalhas.com.br/quentes/463613/filtro-de-relevancia-marca-renascer-do-stj-dizem-juristas"
+    },
+    {
+      "setor": "empresarial",
+      "title": "1.set.2026Associação aciona STF por percentual mínimo de PcD no serviço públicoEntidade alega omissão do Congresso e afirma que reserva de vagas em concursos não garante representatividade nos quadros públicos.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-01",
+      "url": "https://www.migalhas.com.br/quentes/463591/associacao-aciona-stf-por-percentual-minimo-de-pcd-no-servico-publico"
+    },
+    {
+      "setor": "empresarial",
+      "title": "1.set.2026Ministro do STJ mantém prisão de tenente-coronel acusado de matar esposa PMMilitar também é acusado de alterar a cena do crime para simular suicídio.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-01",
+      "url": "https://www.migalhas.com.br/quentes/463590/ministro-do-stj-mantem-tenente-coronel-preso-acusado-de-matar-esposa"
+    },
+    {
+      "setor": "empresarial",
+      "title": "1.set.2026TST vai definir teses sobre estabilidade financeira e supressão de gratificaçãoJulgamentos vão definir efeitos da supressão de parcelas e da Reforma Trabalhista sobre regras de incorporação de gratificações.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-01",
+      "url": "https://www.migalhas.com.br/quentes/463589/tst-vai-definir-teses-sobre-estabilidade-e-supressao-de-gratificacao"
+    },
+    {
+      "setor": "empresarial",
+      "title": "1.set.2026Congresso do IASP debate desafios jurídicos da infraestrutura brasileiraEvento em 1/9 terá debates sobre saneamento, rodovias, mobilidade, infraestrutura social, ferrovias, sustentabilidade, portos, aeroportos, órgãos de controle e infraestrutura digital.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-01",
+      "url": "https://www.migalhas.com.br/quentes/463422/congresso-do-iasp-debate-desafio-juridico-da-infraestrutura-brasileira"
+    },
     {
       "setor": "empresarial",
       "title": "31.ago.2026TRT-18 reverte justa causa de trabalhador que tomou cerveja no intervaloColegiado entendeu que episódio isolado, sem prova de embriaguez, não justificava a penalidade máxima aplicada.",
@@ -81,46 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-08-30",
       "url": "https://www.migalhas.com.br/quentes/463487/stf-definira-foro-para-autarquias-federais-cobrarem-dividas-na-justica"
-    },
-    {
-      "setor": "varejo",
-      "title": "30.ago.2026Juiz vê juros abusivos em empréstimo e reduz taxa de 7,75% para 4,38%Banco também deverá restituir valores pagos a mais e afastar negativação da consumidora.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-30",
-      "url": "https://www.migalhas.com.br/quentes/463428/juiz-ve-juros-abusivos-em-emprestimo-e-reduz-taxa-de-7-75-para-4-38"
-    },
-    {
-      "setor": "empresarial",
-      "title": "29.ago.2026Advogado é morto a tiros após ser tirado à força de imobiliária em CampinasAdvogado teria sido atraído ao local para reunião com supostos clientes; Polícia Civil investiga o crime.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-29",
-      "url": "https://www.migalhas.com.br/quentes/463485/advogado-e-morto-a-tiros-apos-ser-tirado-a-forca-de-imobiliaria"
-    },
-    {
-      "setor": "empresarial",
-      "title": "29.ago.2026TST: Cabe à Justiça comum julgar descredenciamento de motorista da UberPara ministros, pedido de reativação da conta decorre de relação contratual de natureza civil.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-29",
-      "url": "https://www.migalhas.com.br/quentes/463484/cabe-a-justica-comum-julgar-descredenciamento-de-motorista-da-uber"
-    },
-    {
-      "setor": "empresarial",
-      "title": "29.ago.2026TJ/SP garante acesso da defesa a interceptações usadas pela acusaçãoColegiado afastou preclusão ao concluir que prazo para juntada de documentos não pode impedir acesso a prova preexistente mencionada na denúncia e utilizada no processo.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-29",
-      "url": "https://www.migalhas.com.br/quentes/463198/tj-sp-garante-acesso-da-defesa-a-interceptacoes-usadas-pela-acusacao"
-    },
-    {
-      "setor": "empresarial",
-      "title": "29.ago.2026Cobasi indenizará tutor por morte de pug durante serviço de hospedagemSentença apontou falha na vigilância, ausência de protocolo de emergência e despreparo da cuidadora.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-29",
-      "url": "https://www.migalhas.com.br/quentes/463121/cobasi-indenizara-tutor-por-morte-de-pug-durante-servico-de-hospedagem"
     }
   ]
 }
