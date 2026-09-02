@@ -1,22 +1,38 @@
 {
-  "updated_at": "2026-09-02T16:34:10.115114+00:00",
+  "updated_at": "2026-09-02T21:02:27.820062+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Presidente do STF abre evento internacional sobre independência judicial nas democracias contemporâneas",
-      "summary": "Encontro realizado no Supremo reúne especialistas do Brasil, da Itália e da Espanha para discutir desafios das cortes constitucionais",
-      "url": "https://noticias.stf.jus.br/postsnoticias/presidente-do-stf-abre-evento-internacional-sobre-independencia-judicial-nas-democracias-contemporaneas/",
+      "title": "Supremo invalida vinculação da remuneração de policiais civis à de delegados do Pará",
+      "summary": "Entendimento foi de que a Constituição veda vinculação ou equiparação de remunerações entre carreiras diferentes do serviço público",
+      "url": "https://noticias.stf.jus.br/postsnoticias/supremo-invalida-vinculacao-da-remuneracao-de-policiais-civis-a-de-delegados-do-para/",
       "date": "2026-09-02",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Manifestação do presidente do STF, ministro Edson Fachin",
-      "summary": "",
-      "url": "https://noticias.stf.jus.br/postsnoticias/manifestacao-do-presidente-do-stf-ministro-edson-fachin/",
+      "title": "STF invalida trechos de resolução do CFM que interferiam no ensino de medicina",
+      "summary": "Plenário derrubou regras sobre ‘interdição ética’ de aulas, estágios para estudantes do exterior e remuneração de coordenadores",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-invalida-trechos-de-resolucao-do-cfm-que-interferiam-no-ensino-de-medicina/",
       "date": "2026-09-02",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Corte Especial realiza primeira sessão sob a presidência do ministro Luis Felipe Salomão",
+      "summary": "Corte Especial realiza primeira sessão sob a presidência do ministro Luis Felipe Salomão",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/02092026-Corte-Especial-realiza-primeira-sessao-sob-a-presidencia-do-ministro-Luis-Felipe-Salomao.aspx",
+      "date": "2026-09-02",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Lançamento de livro celebra os 10 anos do Código de Processo Civil no Espaço Cultural STJ",
+      "summary": "Lançamento de livro celebra os 10 anos do Código de Processo Civil no Espaço Cultural STJ",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/02092026-Lancamento-de-livro-celebra-os-10-anos-do-Codigo-de-Processo-Civil-no-Espaco-Cultural-STJ-.aspx",
+      "date": "2026-09-02",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
@@ -27,34 +43,18 @@
       "category": "Jurisprudencia"
     },
     {
-      "tribunal": "STJ",
-      "title": "Exigência de resumo em ações originárias e recursos ao STJ só valerá após publicação de portaria da Presidência",
-      "summary": "Exigência de resumo em ações originárias e recursos ao STJ só valerá após publicação de portaria da Presidência",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/02092026-Exigencia-de-resumo-em-acoes-originarias-e-recursos-ao-STJ-so-valera-apos-publicacao-de-portaria-da-Presidencia.aspx",
+      "tribunal": "TRT11",
+      "title": "Leilão do TRT-11 reúne terrenos, embarcações, motos, mesas de madeira e outros itens em 14 de setembro",
+      "summary": "Os valores arrecadados serão destinados à quitação de dívidas trabalhistas em processos já julgados",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11674-leilao-do-trt-11-reune-terrenos-embarcacoes-motos-mesas-de-madeira-e-outros-itens-em-14-de-setembro",
       "date": "2026-09-02",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Tribunal realizará audiência pública sobre advertência de glúten em embalagens de alimentos",
-      "summary": "Marcada para o dia 23 de setembro, audiência ocorre no âmbito de julgamento de recurso submetido ao rito dos repetitivos. Pedidos de participação devem ser enviados por e-mail.",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/Tribunal-realizara-audiencia-publica-sobre-advertencia-de-gluten-em-embalagens-de-alimentos.aspx",
-      "date": "2026-09-02",
-      "category": "Jurisprudencia"
+      "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
       "title": "Justiça do Trabalho mobiliza mais de 30 instituições para ação em Roraima no mês de novembro",
       "summary": "Iniciativa contará com serviços de cidadania à população da fronteira com a Venezuela",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11673-justica-do-trabalho-mobiliza-mais-de-30-instituicoes-para-acao-em-roraima-no-mes-de-novembro",
-      "date": "2026-09-02",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "2ª Semana Nacional de Precedentes Trabalhistas promove ações de 31/8 a 4/9",
-      "summary": "Programação inclui julgamentos, capacitações e iniciativas voltadas à uniformização das decisões e ao fortalecimento do sistema de precedentes na Justiça do Trabalho",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11671-2-semana-nacional-de-precedentes-trabalhistas-promove-acoes-de-31-8-a-4-9",
       "date": "2026-09-02",
       "category": "Trabalhista"
     }
