@@ -1,45 +1,45 @@
 {
-  "updated_at": "2026-09-01T21:01:45.119433+00:00",
+  "updated_at": "2026-09-02T04:32:47.180895+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Associação questiona no STF submissão de receitas próprias da DPU aos limites do arcabouço fiscal",
-      "summary": "Para a Anadef, medida compromete autonomia financeira da instituição e pode afetar a assistência jurídica à população vulnerável",
-      "url": "https://noticias.stf.jus.br/postsnoticias/associacao-questiona-no-stf-submissao-de-receitas-proprias-da-dpu-aos-limites-do-arcabouco-fiscal/",
-      "date": "2026-09-01",
+      "title": "STF recebe a partir desta quarta (2) 17ª edição da Jornada Ítalo-Hispano-Brasileira de Direito Público",
+      "summary": "Evento discutirá resistência democrática e justiça constitucional",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-recebe-a-partir-desta-quarta-2-17a-edicao-da-jornada-italo-hispano-brasileira-de-direito-publico/",
+      "date": "2026-09-02",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF limita porte de arma na Polícia Científica do Espírito Santo a peritos criminais",
-      "summary": "Estado não poderia ampliar autorização prevista na legislação federal para outras funções da Polícia Científica",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-limita-porte-de-arma-na-policia-cientifica-do-espirito-santo-a-peritos-criminais/",
-      "date": "2026-09-01",
+      "title": "STF rejeita ação sobre redução da jornada de servidores municipais de SP sem corte salarial",
+      "summary": "Ministro Nunes Marques considerou que há outros meios processuais para questionar as decisões da Justiça paulista",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-rejeita-acao-sobre-reducao-da-jornada-de-servidores-municipais-de-sp-sem-corte-salarial/",
+      "date": "2026-09-02",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Biblioteca STJ-Enfam recebe 1º lote de livros doados por Rosa e Nelson Nery",
+      "summary": "Biblioteca STJ-Enfam recebe 1º lote de livros doados por Rosa e Nelson Nery",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01092026-Biblioteca-STJ-Enfam-recebe-1o-lote-de-livros-doados-por-Rosa-e-Nelson-Nery.aspx",
+      "date": "2026-09-02",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "STJ amplia acesso a curso sobre equidade racial com versão em espanhol, inscrições estão abertas",
+      "summary": "STJ amplia acesso a curso sobre equidade racial com versão em espanhol, inscrições estão abertas",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01092026-STJ-amplia-acesso-a-curso-sobre-equidade-racial-com-versao-em-espanhol--Inscricoes-estao-abertas.aspx",
+      "date": "2026-09-02",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
       "title": "Após concluir gestão como presidente do STJ, ministro Herman Benjamin estreia na Primeira Turma",
       "summary": "Após concluir gestão como presidente do STJ, ministro Herman Benjamin estreia na Primeira Turma",
       "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01092026-Apos-concluir-gestao-como-presidente-do-STJ--ministro-Herman-Benjamin-estreia-na-Primeira-Turma-.aspx",
-      "date": "2026-09-01",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "STJ sedia lançamento do livro 10 anos do Código de Processo Civil – Estudos em Homenagem ao Professor Luiz Rodrigues Wambier",
-      "summary": "STJ sedia lançamento do livro 10 anos do Código de Processo Civil – Estudos em Homenagem ao Professor Luiz Rodrigues Wambier",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01092026-STJ-sedia-lancamento-do-livro-10-anos-do-Codigo-de-Processo-Civil-–-Estudos-em-Homenagem-ao-Professor.aspx",
-      "date": "2026-09-01",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "STJ equipara vítimas de Brumadinho a consumidores e fixa em cinco anos a prescrição de ações indenizatórias",
-      "summary": "STJ equipara vítimas de Brumadinho a consumidores e fixa em cinco anos a prescrição de ações indenizatórias",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/01092026-STJ-equipara-vitimas-de-Brumadinho-a-consumidores-e-fixa-em-cinco-anos-a-prescricao-de-acoes-indenizatorias.aspx",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "category": "Jurisprudencia"
     },
     {
@@ -47,7 +47,7 @@
       "title": "Seminário no TRT-11 reúne especialistas para discutir trabalho decente e dignidade da pessoa humana",
       "summary": "No evento foram abordados temas relacionados ao trabalho escravo, tráfico de pessoas e às novas formas de trabalho",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11669-seminario-no-trt-11-reune-especialistas-para-discutir-trabalho-decente-e-dignidade-da-pessoa-humana",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "category": "Trabalhista"
     },
     {
@@ -55,7 +55,7 @@
       "title": "TRT-11 promove ações da campanha “Onde Tem Inclusão, Não Tem Assédio” em quatro municípios do Amazonas",
       "summary": "Novas edições da iniciativa terão como eixo o enfrentamento ao capacitismo e serão realizadas em Codajás, Manicoré, Apuí e Manaus",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11668-trt-11-promove-acoes-da-campanha-onde-tem-inclusao-nao-tem-assedio-enfrentando-o-capacitismo-em-quatro-municipios-do-amazonas",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "category": "Trabalhista"
     }
   ]
