@@ -1,36 +1,60 @@
 {
-  "updated_at": "2026-09-02T12:28:43.240438+00:00",
-  "total": 4,
+  "updated_at": "2026-09-02T16:34:10.115114+00:00",
+  "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Confira a pauta do STF desta quarta-feira (2)",
-      "summary": "Sessão será transmitida ao vivo pela TV e Rádio Justiça e pelo canal do STF no YouTube, a partir das 14h",
-      "url": "https://noticias.stf.jus.br/postsnoticias/confira-a-pauta-do-stf-desta-quarta-feira-2/",
+      "title": "Presidente do STF abre evento internacional sobre independência judicial nas democracias contemporâneas",
+      "summary": "Encontro realizado no Supremo reúne especialistas do Brasil, da Itália e da Espanha para discutir desafios das cortes constitucionais",
+      "url": "https://noticias.stf.jus.br/postsnoticias/presidente-do-stf-abre-evento-internacional-sobre-independencia-judicial-nas-democracias-contemporaneas/",
       "date": "2026-09-02",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "STF recebe a partir desta quarta (2) 17ª edição da Jornada Ítalo-Hispano-Brasileira de Direito Público",
-      "summary": "Evento discutirá resistência democrática e justiça constitucional",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-recebe-a-partir-desta-quarta-2-17a-edicao-da-jornada-italo-hispano-brasileira-de-direito-publico/",
+      "title": "Manifestação do presidente do STF, ministro Edson Fachin",
+      "summary": "",
+      "url": "https://noticias.stf.jus.br/postsnoticias/manifestacao-do-presidente-do-stf-ministro-edson-fachin/",
       "date": "2026-09-02",
       "category": "Constitucional"
     },
     {
+      "tribunal": "STJ",
+      "title": "Herança digital: as decisões do STJ sobre o acesso a bens deixados na internet",
+      "summary": "Herança digital: as decisões do STJ sobre o acesso a bens deixados na internet",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/02092026-Heranca-digital-as-decisoes-do-STJ-sobre-o-acesso-a-bens-deixados-na-internet-.aspx",
+      "date": "2026-09-02",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Exigência de resumo em ações originárias e recursos ao STJ só valerá após publicação de portaria da Presidência",
+      "summary": "Exigência de resumo em ações originárias e recursos ao STJ só valerá após publicação de portaria da Presidência",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/02092026-Exigencia-de-resumo-em-acoes-originarias-e-recursos-ao-STJ-so-valera-apos-publicacao-de-portaria-da-Presidencia.aspx",
+      "date": "2026-09-02",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Tribunal realizará audiência pública sobre advertência de glúten em embalagens de alimentos",
+      "summary": "Marcada para o dia 23 de setembro, audiência ocorre no âmbito de julgamento de recurso submetido ao rito dos repetitivos. Pedidos de participação devem ser enviados por e-mail.",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/Tribunal-realizara-audiencia-publica-sobre-advertencia-de-gluten-em-embalagens-de-alimentos.aspx",
+      "date": "2026-09-02",
+      "category": "Jurisprudencia"
+    },
+    {
       "tribunal": "TRT11",
-      "title": "Seminário no TRT-11 reúne especialistas para discutir trabalho decente e dignidade da pessoa humana",
-      "summary": "No evento foram abordados temas relacionados ao trabalho escravo, tráfico de pessoas e às novas formas de trabalho",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11669-seminario-no-trt-11-reune-especialistas-para-discutir-trabalho-decente-e-dignidade-da-pessoa-humana",
+      "title": "Justiça do Trabalho mobiliza mais de 30 instituições para ação em Roraima no mês de novembro",
+      "summary": "Iniciativa contará com serviços de cidadania à população da fronteira com a Venezuela",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11673-justica-do-trabalho-mobiliza-mais-de-30-instituicoes-para-acao-em-roraima-no-mes-de-novembro",
       "date": "2026-09-02",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "TRT-11 promove ações da campanha “Onde Tem Inclusão, Não Tem Assédio” em quatro municípios do Amazonas",
-      "summary": "Novas edições da iniciativa terão como eixo o enfrentamento ao capacitismo e serão realizadas em Codajás, Manicoré, Apuí e Manaus",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11668-trt-11-promove-acoes-da-campanha-onde-tem-inclusao-nao-tem-assedio-enfrentando-o-capacitismo-em-quatro-municipios-do-amazonas",
+      "title": "2ª Semana Nacional de Precedentes Trabalhistas promove ações de 31/8 a 4/9",
+      "summary": "Programação inclui julgamentos, capacitações e iniciativas voltadas à uniformização das decisões e ao fortalecimento do sistema de precedentes na Justiça do Trabalho",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11671-2-semana-nacional-de-precedentes-trabalhistas-promove-acoes-de-31-8-a-4-9",
       "date": "2026-09-02",
       "category": "Trabalhista"
     }
