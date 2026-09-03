@@ -1,7 +1,55 @@
 {
-  "updated_at": "2026-09-02T12:28:59.740641+00:00",
+  "updated_at": "2026-09-03T12:30:57.565381+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "3.set.2026Ex-dirigente da Fazenda e advogado são presos em operação sobre propinaInvestigação apura pagamento de vantagens indevidas para interferir na análise e liberação de créditos tributários. Operação cumpre buscas em 47 endereços.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-03",
+      "url": "https://www.migalhas.com.br/quentes/463812/ex-dirigente-da-fazenda-e-advogado-sao-presos-em-operacao-do-mp-sp"
+    },
+    {
+      "setor": "empresarial",
+      "title": "3.set.2026Pedreiro que fez a própria defesa no TRT-11 ganha bolsa para cursar DireitoEdilson Takahara ganhou repercussão após sustentar pessoalmente seus argumentos e receber elogios do relator.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-03",
+      "url": "https://www.migalhas.com.br/quentes/463796/pedreiro-que-fez-a-propria-defesa-no-trt-11-ganha-bolsa-de-direito"
+    },
+    {
+      "setor": "ambiental",
+      "title": "3.set.2026Senado aprova mudanças na estrutura da OAB; texto vai à sançãoProjeto cria cargos de diretor administrativo e executivo, altera atribuições da corregedoria e permite diretorias temporárias nas seccionais.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-03",
+      "url": "https://www.migalhas.com.br/quentes/463793/senado-aprova-mudancas-na-estrutura-da-oab-texto-vai-a-sancao"
+    },
+    {
+      "setor": "empresarial",
+      "title": "3.set.2026OAB/RJ apoia Alerj em política de prevenção ao golpe do falso advogadoIniciativa tem apoio da Ordem, que já registrou milhares de denúncias.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-03",
+      "url": "https://www.migalhas.com.br/quentes/463742/oab-rj-apoia-alerj-em-politica-de-prevencao-ao-golpe-do-falso-advogado"
+    },
+    {
+      "setor": "empresarial",
+      "title": "3.set.2026Centenário de Paulo Bomfim é celebrado em setembroO TJ/SP, o TRE SP, a Academia Paulista de Letras e o Sesc prepararam uma homenagem inédita.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-03",
+      "url": "https://www.migalhas.com.br/quentes/463727/centenario-de-paulo-bomfim-e-celebrado-em-setembro"
+    },
+    {
+      "setor": "empresarial",
+      "title": "2.set.2026Recurso inadmissível pode ser suspenso para aguardar repetitivo? STJ julgaRelatora do caso, ministra Nancy Andrihi entendeu que não há razão para sobrestar recurso que não ultrapassa juízo de admissibilidade.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-03",
+      "url": "https://www.migalhas.com.br/quentes/463792/stj-julga-suspensao-de-recurso-inadmissivel-para-aguardar-repetitivo"
+    },
     {
       "setor": "empresarial",
       "title": "2.set.2026TST mantém justa causa de engenheiro acusado de assédio e envio de pornografiaColegiado considerou válida a apuração administrativa e afastou alegação de prejuízo à defesa.",
@@ -73,54 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-09-01",
       "url": "https://www.migalhas.com.br/quentes/463590/ministro-do-stj-mantem-tenente-coronel-preso-acusado-de-matar-esposa"
-    },
-    {
-      "setor": "empresarial",
-      "title": "1.set.2026TST vai definir teses sobre estabilidade financeira e supressão de gratificaçãoJulgamentos vão definir efeitos da supressão de parcelas e da Reforma Trabalhista sobre regras de incorporação de gratificações.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-01",
-      "url": "https://www.migalhas.com.br/quentes/463589/tst-vai-definir-teses-sobre-estabilidade-e-supressao-de-gratificacao"
-    },
-    {
-      "setor": "empresarial",
-      "title": "1.set.2026Congresso do IASP debate desafios jurídicos da infraestrutura brasileiraEvento em 1/9 terá debates sobre saneamento, rodovias, mobilidade, infraestrutura social, ferrovias, sustentabilidade, portos, aeroportos, órgãos de controle e infraestrutura digital.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-01",
-      "url": "https://www.migalhas.com.br/quentes/463422/congresso-do-iasp-debate-desafio-juridico-da-infraestrutura-brasileira"
-    },
-    {
-      "setor": "empresarial",
-      "title": "31.ago.2026TRT-18 reverte justa causa de trabalhador que tomou cerveja no intervaloColegiado entendeu que episódio isolado, sem prova de embriaguez, não justificava a penalidade máxima aplicada.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-31",
-      "url": "https://www.migalhas.com.br/quentes/463542/trabalhador-que-tomou-cerveja-no-intervalo-tem-justa-causa-revertida"
-    },
-    {
-      "setor": "empresarial",
-      "title": "31.ago.2026Bruno Dantas antecipa saída do TCU após 12 anos na CorteMinistro protocolou pedido de renúncia nesta segunda-feira, 31, e afirmou que pretende seguir dedicado à vida acadêmica e ao debate público.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-31",
-      "url": "https://www.migalhas.com.br/quentes/463554/bruno-dantas-antecipa-saida-do-tcu-apos-12-anos-na-corte"
-    },
-    {
-      "setor": "empresarial",
-      "title": "31.ago.2026TJ/MG: Banco restituirá R$ 98 mil por transações após furto de celularColegiado concluiu que banco não comprovou ter adotado medidas de segurança diante de operações atípicas, que somaram R$ 98.562 em um único dia, e fixou os danos morais em R$ 5 mil.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-31",
-      "url": "https://www.migalhas.com.br/quentes/463543/tj-mg-banco-restituira-r-98-mil-por-transacoes-apos-furto-de-celular"
-    },
-    {
-      "setor": "empresarial",
-      "title": "31.ago.2026STF: Gilmar Mendes limita contribuição de sindicato a juízes filiadosMinistro considerou haver dúvidas sobre a compatibilidade entre o regime constitucional da magistratura e a representação sindical.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-08-31",
-      "url": "https://www.migalhas.com.br/quentes/463550/stf-gilmar-mendes-limita-contribuicao-de-sindicato-a-juizes-filiados"
     }
   ]
 }
