@@ -1,22 +1,30 @@
 {
-  "updated_at": "2026-09-04T12:26:59.857046+00:00",
+  "updated_at": "2026-09-04T16:20:51.058394+00:00",
   "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "STF define critérios para concessão da justiça gratuita em todo o Judiciário",
-      "summary": "Quem recebe acima de R$ 5 mil deverá demonstrar insuficiência econômica para obter o benefício",
-      "url": "https://noticias.stf.jus.br/postsnoticias/stf-define-criterios-para-concessao-da-justica-gratuita-em-todo-o-judiciario/",
+      "title": "Presidente do STF pede novas manifestações em procedimento que apura condutas em investigações da PF",
+      "summary": "PGR terá cinco dias para se manifestar sobre informações trazidas aos autos pelo ministro Alexandre de Moraes",
+      "url": "https://noticias.stf.jus.br/postsnoticias/presidente-do-stf-pede-novas-manifestacoes-em-procedimento-que-apura-condutas-em-investigacoes-da-pf/",
       "date": "2026-09-04",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Presidente do STF dá prazo para que ministros, PGR e Polícia Federal se manifestem sobre conduta em investigações",
-      "summary": "Segundo ministro Edson Fachin, é dever da Presidência do STF zelar pelas prerrogativas da Corte, respeitando as garantias do devido processo legal, do contraditório e da ampla defesa",
-      "url": "https://noticias.stf.jus.br/postsnoticias/presidente-do-stf-da-prazo-para-que-ministros-pgr-e-policia-federal-se-manifestem-sobre-conduta-em-investigacoes/",
+      "title": "‘Direito sem juridiquês’: conheça as ações de controle concentrado de constitucionalidade",
+      "summary": "Novo episódio explica quais são e para que servem essas ações julgadas pelo STF",
+      "url": "https://noticias.stf.jus.br/postsnoticias/direito-sem-juridiques-conheca-as-acoes-de-controle-concentrado-de-constitucionalidade/",
       "date": "2026-09-04",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Presidente Lula sanciona nova lei de custas da Justiça Federal e do STJ",
+      "summary": "Presidente Lula sanciona nova lei de custas da Justiça Federal e do STJ",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/Presidente-Lula-sanciona-nova-lei-de-custas-da-Justica-Federal-e-do-STJ.aspx",
+      "date": "2026-09-04",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "STJ",
@@ -35,26 +43,18 @@
       "category": "Jurisprudencia"
     },
     {
-      "tribunal": "STJ",
-      "title": "MEC pode voltar a usar resultados do Enamed 2025 na supervisão de cursos de medicina",
-      "summary": "MEC pode voltar a usar resultados do Enamed 2025 na supervisão de cursos de medicina",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/04092026-MEC-pode-voltar-a-usar-resultados-do-Enamed-2025-na-supervisao-de-cursos-de-medicina.aspx",
-      "date": "2026-09-04",
-      "category": "Jurisprudencia"
-    },
-    {
       "tribunal": "TRT11",
-      "title": "Justiça do Trabalho valida acordo de R$ 800 mil em ação coletiva envolvendo concessionária de energia do Amazonas",
-      "summary": "Em caso de inadimplência, será aplicada multa de 50% sobre o valor devido",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11677-justica-do-trabalho-valida-acordo-de-r-800-mil-em-acao-coletiva-envolvendo-concessionaria-de-energia-do-amazonas",
+      "title": "DEJT tem funcionamento normalizado",
+      "summary": "Matérias administrativas já podem ser publicadas; pautas de julgamento voltam aos Cadernos Judiciários a partir de 14 de setembro",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11684-dejt-tem-funcionamento-normalizado",
       "date": "2026-09-04",
       "category": "Trabalhista"
     },
     {
       "tribunal": "TRT11",
-      "title": "Desembargador Lairto Veloso é homenageado em primeira sessão do Pleno do TRT-11 após falecimento",
-      "summary": "Magistrado que dedicou quatro décadas à Justiça do Trabalho faleceu em 22 de agosto, aos 72 anos; colegas relembraram trajetória e legado",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11676-desembargador-lairto-veloso-e-homenageado-em-primeira-sessao-do-pleno-do-trt-11-apos-falecimento",
+      "title": "Ouvidoria Regional do TRT-11 lança cartilha com todos os serviços disponíveis ao público",
+      "summary": "Com linguagem simples e acessível, o informativo orienta sobre o funcionamento e canais de atendimento",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11681-ouvidoria-regional-do-trt-11-lanca-cartilha-com-todos-os-servicos-disponiveis-ao-publico",
       "date": "2026-09-04",
       "category": "Trabalhista"
     }
