@@ -1,46 +1,22 @@
 {
-  "updated_at": "2026-09-04T16:20:51.058394+00:00",
-  "total": 7,
+  "updated_at": "2026-09-04T20:45:14.758849+00:00",
+  "total": 4,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Presidente do STF pede novas manifestações em procedimento que apura condutas em investigações da PF",
-      "summary": "PGR terá cinco dias para se manifestar sobre informações trazidas aos autos pelo ministro Alexandre de Moraes",
-      "url": "https://noticias.stf.jus.br/postsnoticias/presidente-do-stf-pede-novas-manifestacoes-em-procedimento-que-apura-condutas-em-investigacoes-da-pf/",
+      "title": "Confira os destaques do Plenário Virtual",
+      "summary": "Sessão começa às 11h desta sexta-feira (4) e termina em 14/9, às 23h59",
+      "url": "https://noticias.stf.jus.br/postsnoticias/confira-os-destaques-do-plenario-virtual-24/",
       "date": "2026-09-04",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "‘Direito sem juridiquês’: conheça as ações de controle concentrado de constitucionalidade",
-      "summary": "Novo episódio explica quais são e para que servem essas ações julgadas pelo STF",
-      "url": "https://noticias.stf.jus.br/postsnoticias/direito-sem-juridiques-conheca-as-acoes-de-controle-concentrado-de-constitucionalidade/",
+      "title": "Comunicado da Presidência do STF",
+      "summary": "Ministro Edson Fachin fez pronunciamento nesta sexta-feira (4), em cerimônia da lei que cria o Fundo Especial da Justiça Federal e o Fundo Especial do STJ",
+      "url": "https://noticias.stf.jus.br/postsnoticias/comunicado-da-presidencia-do-stf/",
       "date": "2026-09-04",
       "category": "Constitucional"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Presidente Lula sanciona nova lei de custas da Justiça Federal e do STJ",
-      "summary": "Presidente Lula sanciona nova lei de custas da Justiça Federal e do STJ",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/Presidente-Lula-sanciona-nova-lei-de-custas-da-Justica-Federal-e-do-STJ.aspx",
-      "date": "2026-09-04",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Informativo destaca legitimidade de associações em mandado de segurança coletivo e foro por prerrogativa",
-      "summary": "Informativo destaca legitimidade de associações em mandado de segurança coletivo e foro por prerrogativa",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/04092026-Informativo-destaca-legitimidade-de-associacoes-em-mandado-de-seguranca-coletivo-e-foro-por-prerrogativa.aspx",
-      "date": "2026-09-04",
-      "category": "Jurisprudencia"
-    },
-    {
-      "tribunal": "STJ",
-      "title": "Maria Marluce Caldas e Carlos Brandão completam um ano como ministros do STJ",
-      "summary": "Maria Marluce Caldas e Carlos Brandão completam um ano como ministros do STJ",
-      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/04092026-Maria-Marluce-Caldas-e-Carlos-Brandao-completam-um-ano-como-ministros-do-STJ.aspx",
-      "date": "2026-09-04",
-      "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
