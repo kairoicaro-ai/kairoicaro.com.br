@@ -1,29 +1,53 @@
 {
-  "updated_at": "2026-09-03T21:01:50.818153+00:00",
-  "total": 4,
+  "updated_at": "2026-09-04T04:32:58.495078+00:00",
+  "total": 7,
   "items": [
     {
       "tribunal": "STF",
-      "title": "Ministro Zanin é eleito para segundo mandato como substituto do TSE",
-      "summary": "Ministro inicia novo biênio na corte eleitoral",
-      "url": "https://noticias.stf.jus.br/postsnoticias/ministro-zanin-e-eleito-para-segundo-mandato-como-substituto-do-tse/",
-      "date": "2026-09-03",
+      "title": "STF define critérios para concessão da justiça gratuita em todo o Judiciário",
+      "summary": "Quem recebe acima de R$ 5 mil deverá demonstrar insuficiência econômica para obter o benefício",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-define-criterios-para-concessao-da-justica-gratuita-em-todo-o-judiciario/",
+      "date": "2026-09-04",
       "category": "Constitucional"
     },
     {
       "tribunal": "STF",
-      "title": "Jornada Ítalo-Hispano-Brasileira termina com debate sobre democracia e justiça constitucional",
-      "summary": "Durante dois dias, especialistas do Brasil, da Itália e da Espanha discutiram desafios contemporâneos enfrentados pelas cortes constitucionais",
-      "url": "https://noticias.stf.jus.br/postsnoticias/jornada-italo-hispano-brasileira-termina-com-debate-sobre-democracia-e-justica-constitucional/",
-      "date": "2026-09-03",
+      "title": "Presidente do STF dá prazo para que ministros, PGR e Polícia Federal se manifestem sobre conduta em investigações",
+      "summary": "Segundo ministro Edson Fachin, é dever da Presidência do STF zelar pelas prerrogativas da Corte, respeitando as garantias do devido processo legal, do contraditório e da ampla defesa",
+      "url": "https://noticias.stf.jus.br/postsnoticias/presidente-do-stf-da-prazo-para-que-ministros-pgr-e-policia-federal-se-manifestem-sobre-conduta-em-investigacoes/",
+      "date": "2026-09-04",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Tribunal marca primeiras sessões virtuais para análise de casos sob a sistemática da relevância da questão federal",
+      "summary": "Tribunal marca primeiras sessões virtuais para análise de casos sob a sistemática da relevância da questão federal",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/03092026-Tribunal-marca-primeiras-sessoes-virtuais-para-analise-de-casos-sob-a-sistematica-da-relevancia-da-questao-federal.aspx",
+      "date": "2026-09-04",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "STJ impõe multa por litigância de má-fé em recurso com prompt injection assinado por procurador municipal",
+      "summary": "STJ impõe multa por litigância de má-fé em recurso com prompt injection assinado por procurador municipal",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/03092026-STJ-impoe-multa-por-litigancia-de-ma-fe-em-recurso-com-prompt-injection-assinado-por-procurador-municipal-.aspx",
+      "date": "2026-09-04",
+      "category": "Jurisprudencia"
+    },
+    {
+      "tribunal": "STJ",
+      "title": "Entender Direito aborda a relevância da questão federal e a nova lógica para recursos especiais",
+      "summary": "Entender Direito aborda a relevância da questão federal e a nova lógica para recursos especiais",
+      "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/03092026-Entender-Direito-aborda-a-relevancia-da-questao-federal-e-a-nova-logica-para-recursos-especiais.aspx",
+      "date": "2026-09-04",
+      "category": "Jurisprudencia"
     },
     {
       "tribunal": "TRT11",
       "title": "Justiça do Trabalho valida acordo de R$ 800 mil em ação coletiva envolvendo concessionária de energia do Amazonas",
       "summary": "Em caso de inadimplência, será aplicada multa de 50% sobre o valor devido",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11677-justica-do-trabalho-valida-acordo-de-r-800-mil-em-acao-coletiva-envolvendo-concessionaria-de-energia-do-amazonas",
-      "date": "2026-09-03",
+      "date": "2026-09-04",
       "category": "Trabalhista"
     },
     {
@@ -31,7 +55,7 @@
       "title": "Desembargador Lairto Veloso é homenageado em primeira sessão do Pleno do TRT-11 após falecimento",
       "summary": "Magistrado que dedicou quatro décadas à Justiça do Trabalho faleceu em 22 de agosto, aos 72 anos; colegas relembraram trajetória e legado",
       "url": "https://portal.trt11.jus.br/index.php/comunicacao/11676-desembargador-lairto-veloso-e-homenageado-em-primeira-sessao-do-pleno-do-trt-11-apos-falecimento",
-      "date": "2026-09-03",
+      "date": "2026-09-04",
       "category": "Trabalhista"
     }
   ]
