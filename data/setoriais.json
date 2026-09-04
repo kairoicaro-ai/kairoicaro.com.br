@@ -1,7 +1,55 @@
 {
-  "updated_at": "2026-09-03T12:30:57.565381+00:00",
+  "updated_at": "2026-09-04T12:27:03.009619+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "4.set.2026Ceisc realiza Revisão de Véspera para a 1ª Fase da OABUm dia de revisão com especialistas que conhecem a prova e já contribuíram para a aprovação de mais de 290 mil alunos nas duas fases da OAB.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-04",
+      "url": "https://www.migalhas.com.br/quentes/463897/ceisc-realiza-revisao-de-vespera-para-a-1-fase-da-oab"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.set.2026Autoridades internacionais debatem futuro da advocacia sem fronteirasPainel internacional reuniu representantes da Europa, Índia e Emirados para debater os rumos da profissão.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-04",
+      "url": "https://www.migalhas.com.br/quentes/463761/autoridades-internacionais-debatem-futuro-da-advocacia-sem-fronteiras"
+    },
+    {
+      "setor": "ambiental",
+      "title": "4.set.2026Carta de 1994 revela amizade e legado de Arnaldo MalheirosEm homenagem ao advogado, morto aos 98 anos, Migalhas publica mensagem escrita por Francisco Octavio de Almeida Prado ao fim de 16 anos de sociedade.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-04",
+      "url": "https://www.migalhas.com.br/quentes/463900/carta-de-1994-revela-amizade-e-legado-de-arnaldo-malheiros"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.set.2026Dino cita Cícero e diz que STF deve enfrentar crises \"no tempo certo\"Ministro afirmou que lealdade institucional exige enfrentar problemas reais com devido processo legal e defendeu instituições jurídicas sólidas.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-04",
+      "url": "https://www.migalhas.com.br/quentes/463892/dino-cita-cicero-e-diz-que-stf-deve-enfrentar-crises-no-tempo-certo"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.set.2026Europe-Brazil Legal Summit debate IA, energia e negócios na SuíçaEvento aconteceu em Lugano nos dias 2 e 3 de setembro e reuniu profissionais do Direito e do mercado.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-04",
+      "url": "https://www.migalhas.com.br/quentes/463388/europe-brazil-legal-summit-debate-ia-energia-e-negocios-na-suica"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.set.2026Morre Arnaldo Malheiros, referência no Direito EleitoralFormado pela Faculdade de Direito do Largo de São Francisco, na turma de 1950, Malheiros construiu uma trajetória de destaque na área eleitoral.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-04",
+      "url": "https://www.migalhas.com.br/quentes/463888/morre-arnaldo-malheiros-referencia-no-direito-eleitoral"
+    },
     {
       "setor": "empresarial",
       "title": "3.set.2026Ex-dirigente da Fazenda e advogado são presos em operação sobre propinaInvestigação apura pagamento de vantagens indevidas para interferir na análise e liberação de créditos tributários. Operação cumpre buscas em 47 endereços.",
@@ -73,54 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-09-02",
       "url": "https://www.migalhas.com.br/quentes/463702/tse-define-criterios-para-deepfake-e-rejeita-multa-a-flavio-bolsonaro"
-    },
-    {
-      "setor": "empresarial",
-      "title": "2.set.2026Sorteio da obra \"Arquitetura Regulatória da Economia Digital, Marco Temporal das Bets e seus Espectros Internacionais\"A coletânea reúne 18 artigos sobre regulação das bets e temas da economia digital, como criptoativos, blockchain, plataformas e influenciadores.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-02",
-      "url": "https://www.migalhas.com.br/quentes/463536/sorteio-da-obra-arquitetura-regulatoria-da-economia-digital-e-bets"
-    },
-    {
-      "setor": "empresarial",
-      "title": "1.set.2026Og exibe em sessão comando oculto em recurso e ministros reagem: não terá êxitoComando em fonte branca instruía uma IA a acolher as razões da defesa; ministros reforçaram que não é a tecnologia quem decide processos e que \"a tentativa de manipular a jurisdição não terá êxito\".",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-02",
-      "url": "https://www.migalhas.com.br/quentes/463691/og-exibe-comando-oculto-em-recurso-e-ministros-reagem-nao-tera-exito"
-    },
-    {
-      "setor": "ambiental",
-      "title": "1.set.2026Gonet pede anulação de relatório da PF sobre contatos entre Vorcaro e MoraesPGR afirma que ordem de André Mendonça para aprofundar investigação sobre integrante do STF violou competência do plenário e sistema acusatório.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-02",
-      "url": "https://www.migalhas.com.br/quentes/463698/gonet-pede-anulacao-de-relatorio-sobre-contatos-entre-vorcaro-e-moraes"
-    },
-    {
-      "setor": "empresarial",
-      "title": "1.set.2026Filtro de relevância marca \"renascer\" do STJ e abre nova era, dizem juristasNovo requisito para admissão do recurso especial começa a valer nesta quinta-feira, 3, e deve alterar a dinâmica de atuação da Corte e dos advogados.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-01",
-      "url": "https://www.migalhas.com.br/quentes/463613/filtro-de-relevancia-marca-renascer-do-stj-dizem-juristas"
-    },
-    {
-      "setor": "empresarial",
-      "title": "1.set.2026Associação aciona STF por percentual mínimo de PcD no serviço públicoEntidade alega omissão do Congresso e afirma que reserva de vagas em concursos não garante representatividade nos quadros públicos.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-01",
-      "url": "https://www.migalhas.com.br/quentes/463591/associacao-aciona-stf-por-percentual-minimo-de-pcd-no-servico-publico"
-    },
-    {
-      "setor": "empresarial",
-      "title": "1.set.2026Ministro do STJ mantém prisão de tenente-coronel acusado de matar esposa PMMilitar também é acusado de alterar a cena do crime para simular suicídio.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-01",
-      "url": "https://www.migalhas.com.br/quentes/463590/ministro-do-stj-mantem-tenente-coronel-preso-acusado-de-matar-esposa"
     }
   ]
 }
