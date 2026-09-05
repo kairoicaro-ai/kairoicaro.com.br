@@ -1,7 +1,15 @@
 {
-  "updated_at": "2026-09-05T11:33:41.181830+00:00",
-  "total": 4,
+  "updated_at": "2026-09-05T15:13:52.970732+00:00",
+  "total": 2,
   "items": [
+    {
+      "tribunal": "STF",
+      "title": "Supremo na Semana destaca definição de critérios para concessão da justiça gratuita",
+      "summary": "O episódio #201 está disponível nas principais plataformas de áudio e no YouTube",
+      "url": "https://noticias.stf.jus.br/postsnoticias/supremo-na-semana-destaca-definicao-de-criterios-para-concessao-da-justica-gratuita/",
+      "date": "2026-09-05",
+      "category": "Constitucional"
+    },
     {
       "tribunal": "STF",
       "title": "STF mantém decisão que obriga município pernambucano a fornecer tratamento contra alergia grave",
@@ -9,30 +17,6 @@
       "url": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-decisao-que-obriga-municipio-pernambucano-a-fornecer-tratamento-contra-alergia-grave/",
       "date": "2026-09-05",
       "category": "Constitucional"
-    },
-    {
-      "tribunal": "STF",
-      "title": "Associação questiona decreto de Minas Gerais que restringe publicidade de bets",
-      "summary": "ANJL afirma que governo mineiro ultrapassou os limites do poder regulamentar ao criar regras para publicidade de apostas por decreto",
-      "url": "https://noticias.stf.jus.br/postsnoticias/associacao-questiona-decreto-de-minas-gerais-que-restringe-publicidade-de-bets/",
-      "date": "2026-09-05",
-      "category": "Constitucional"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "DEJT tem funcionamento normalizado",
-      "summary": "Matérias administrativas já podem ser publicadas; pautas de julgamento voltam aos Cadernos Judiciários a partir de 14 de setembro",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11684-dejt-tem-funcionamento-normalizado",
-      "date": "2026-09-05",
-      "category": "Trabalhista"
-    },
-    {
-      "tribunal": "TRT11",
-      "title": "Ouvidoria Regional do TRT-11 lança cartilha com todos os serviços disponíveis ao público",
-      "summary": "Com linguagem simples e acessível, o informativo orienta sobre o funcionamento e canais de atendimento",
-      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11681-ouvidoria-regional-do-trt-11-lanca-cartilha-com-todos-os-servicos-disponiveis-ao-publico",
-      "date": "2026-09-05",
-      "category": "Trabalhista"
     }
   ]
 }
