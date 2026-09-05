@@ -1,7 +1,55 @@
 {
-  "updated_at": "2026-09-04T12:27:03.009619+00:00",
+  "updated_at": "2026-09-05T11:33:44.350138+00:00",
   "total": 15,
   "items": [
+    {
+      "setor": "empresarial",
+      "title": "5.set.2026TST afasta indenização à família por morte de vendedor que invadiu pista contrária5ª turma considerou que, embora a atividade em rodovias fosse de risco, provas demonstraram culpa exclusiva do trabalhador no acidente.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-05",
+      "url": "https://www.migalhas.com.br/quentes/463562/tst-afasta-indenizacao-por-morte-de-vendedor-apos-invadir-pista-oposta"
+    },
+    {
+      "setor": "ambiental",
+      "title": "4.set.2026STJ multa município após identificar comando oculto em recurso assinado por procuradorPetição continha instrução direcionada à IA para considerar a tese vencedora e acolher o pedido.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-05",
+      "url": "https://www.migalhas.com.br/quentes/463940/stj-multa-municipio-apos-identificar-comando-oculto-em-recurso"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.set.2026NFA - Negrão Ferrari Advogados completa 15 anos e anuncia novos sóciosProfissionais construíram suas trajetórias dentro do escritório, que passa a contar com 15 sócios e fortalece atuação em Mercado de Capitais, Imobiliário, Societário e Contencioso",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-05",
+      "url": "https://www.migalhas.com.br/quentes/463959/nfa--negrao-ferrari-advogados-completa-15-anos-e-anuncia-novos-socios"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.set.2026Pessoa & Pessoa Advogados anuncia Simony Braga como nova sócia TrabalhistaAdvogada atuará a partir de Recife, com foco em contencioso estratégico, consultivo e relações sindicais",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-05",
+      "url": "https://www.migalhas.com.br/quentes/463958/pessoa--pessoa-advogados-anuncia-simony-braga-como-socia-trabalhista"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.set.2026STJ: Ministro libera uso do Enamed 2025 para avaliar cursos de medicinaDecisão apontou risco à saúde pública com paralisação da supervisão de cursos mal avaliados.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-05",
+      "url": "https://www.migalhas.com.br/quentes/463936/stj-libera-uso-do-enamed-2025-para-avaliar-cursos-de-medicina"
+    },
+    {
+      "setor": "empresarial",
+      "title": "4.set.2026TST condena empresa que coletou sangue de trabalhadora desmaiadaTrabalhadora desmaiou no trabalho e, ao recobrar a consciência, recebeu resultado de exame de sangue para gravidez que não havia autorizado; empresa foi condenada a pagar R$ 20 mil de indenização.",
+      "summary": "",
+      "source": "Migalhas / Analise KIAA",
+      "date": "2026-09-05",
+      "url": "https://www.migalhas.com.br/quentes/463935/tst-condena-empresa-que-coletou-sangue-de-trabalhadora-desmaiada"
+    },
     {
       "setor": "empresarial",
       "title": "4.set.2026Ceisc realiza Revisão de Véspera para a 1ª Fase da OABUm dia de revisão com especialistas que conhecem a prova e já contribuíram para a aprovação de mais de 290 mil alunos nas duas fases da OAB.",
@@ -73,54 +121,6 @@
       "source": "Migalhas / Analise KIAA",
       "date": "2026-09-03",
       "url": "https://www.migalhas.com.br/quentes/463793/senado-aprova-mudancas-na-estrutura-da-oab-texto-vai-a-sancao"
-    },
-    {
-      "setor": "empresarial",
-      "title": "3.set.2026OAB/RJ apoia Alerj em política de prevenção ao golpe do falso advogadoIniciativa tem apoio da Ordem, que já registrou milhares de denúncias.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-03",
-      "url": "https://www.migalhas.com.br/quentes/463742/oab-rj-apoia-alerj-em-politica-de-prevencao-ao-golpe-do-falso-advogado"
-    },
-    {
-      "setor": "empresarial",
-      "title": "3.set.2026Centenário de Paulo Bomfim é celebrado em setembroO TJ/SP, o TRE SP, a Academia Paulista de Letras e o Sesc prepararam uma homenagem inédita.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-03",
-      "url": "https://www.migalhas.com.br/quentes/463727/centenario-de-paulo-bomfim-e-celebrado-em-setembro"
-    },
-    {
-      "setor": "empresarial",
-      "title": "2.set.2026Recurso inadmissível pode ser suspenso para aguardar repetitivo? STJ julgaRelatora do caso, ministra Nancy Andrihi entendeu que não há razão para sobrestar recurso que não ultrapassa juízo de admissibilidade.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-03",
-      "url": "https://www.migalhas.com.br/quentes/463792/stj-julga-suspensao-de-recurso-inadmissivel-para-aguardar-repetitivo"
-    },
-    {
-      "setor": "empresarial",
-      "title": "2.set.2026TST mantém justa causa de engenheiro acusado de assédio e envio de pornografiaColegiado considerou válida a apuração administrativa e afastou alegação de prejuízo à defesa.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-02",
-      "url": "https://www.migalhas.com.br/quentes/463700/tst-mantem-justa-causa-de-empregado-por-assedio-e-envio-de-pornografia"
-    },
-    {
-      "setor": "empresarial",
-      "title": "2.set.2026CNJ pune desembargador que concedeu domiciliar a líder de facçãoConselho concluiu que Luiz Fernando Lima não verificou requisitos antes de conceder prisão domiciliar a homem apontado como liderança de facção criminosa.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-02",
-      "url": "https://www.migalhas.com.br/quentes/463699/cnj-pune-desembargador-que-concedeu-domiciliar-a-lider-de-faccao"
-    },
-    {
-      "setor": "ambiental",
-      "title": "2.set.2026TSE define critérios para deepfake e rejeita multa a Flávio BolsonaroCorte entendeu que a proibição do uso de conteúdo sintético exige sua caracterização como propaganda eleitoral.",
-      "summary": "",
-      "source": "Migalhas / Analise KIAA",
-      "date": "2026-09-02",
-      "url": "https://www.migalhas.com.br/quentes/463702/tse-define-criterios-para-deepfake-e-rejeita-multa-a-flavio-bolsonaro"
     }
   ]
 }
