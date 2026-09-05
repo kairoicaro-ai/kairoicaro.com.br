@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-05T15:13:52.970732+00:00",
-  "total": 2,
+  "updated_at": "2026-09-05T20:20:20.414657+00:00",
+  "total": 4,
   "items": [
     {
       "tribunal": "STF",
@@ -17,6 +17,22 @@
       "url": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-decisao-que-obriga-municipio-pernambucano-a-fornecer-tratamento-contra-alergia-grave/",
       "date": "2026-09-05",
       "category": "Constitucional"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "DEJT tem funcionamento normalizado",
+      "summary": "Matérias administrativas já podem ser publicadas; pautas de julgamento voltam aos Cadernos Judiciários a partir de 14 de setembro",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11684-dejt-tem-funcionamento-normalizado",
+      "date": "2026-09-05",
+      "category": "Trabalhista"
+    },
+    {
+      "tribunal": "TRT11",
+      "title": "Ouvidoria Regional do TRT-11 lança cartilha com todos os serviços disponíveis ao público",
+      "summary": "Com linguagem simples e acessível, o informativo orienta sobre o funcionamento e canais de atendimento",
+      "url": "https://portal.trt11.jus.br/index.php/comunicacao/11681-ouvidoria-regional-do-trt-11-lanca-cartilha-com-todos-os-servicos-disponiveis-ao-publico",
+      "date": "2026-09-05",
+      "category": "Trabalhista"
     }
   ]
 }
